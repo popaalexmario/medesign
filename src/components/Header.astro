@@ -1,0 +1,97 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { label: 'Acasă', href: '/' },
+  { label: 'Servicii', href: '/servicii' },
+  { label: 'Portofoliu', href: '/portofoliu' },
+  { label: 'Despre noi', href: '/despre' },
+  { label: 'Contact', href: '/contact' },
+];
+---
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="container">
+    <nav class="flex items-center justify-between h-20">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center group-hover:bg-accent-500 transition-colors">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-heading font-bold text-xl text-brand-500">MEDESIGN</span>
+          <span class="hidden sm:block text-[11px] text-steel-400 font-medium tracking-wider uppercase -mt-1">Proiectare Infrastructură</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'text-[15px] font-medium transition-colors hover:text-accent-500',
+              currentPath === item.href ? 'text-accent-500' : 'text-steel-600',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))}
+        <a href="/contact" class="bg-brand-500 text-white px-6 py-2.5 rounded-full text-[14px] font-semibold hover:bg-brand-600 transition-all hover:shadow-lg hover:shadow-brand-500/25">
+          Solicită ofertă
+        </a>
+      </div>
+
+      <button id="menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-steel-100 transition-colors" aria-label="Meniu">
+        <svg class="w-6 h-6 text-steel-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-steel-100 shadow-xl">
+    <div class="container py-4 flex flex-col gap-1">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            'px-4 py-3 rounded-xl text-[15px] font-medium transition-colors',
+            currentPath === item.href ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a href="/contact" class="mt-2 bg-brand-500 text-white px-6 py-3 rounded-full text-center text-[14px] font-semibold hover:bg-brand-600 transition-colors">
+        Solicită ofertă
+      </a>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const header = document.getElementById('header');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  let isOpen = false;
+
+  menuToggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+    mobileMenu.classList.toggle('hidden', !isOpen);
+    const icon = document.getElementById('menu-icon');
+    icon.setAttribute('d', isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16');
+  });
+
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) {
+      header.classList.add('bg-white/95', 'backdrop-blur-lg', 'shadow-sm');
+    } else {
+      header.classList.remove('bg-white/95', 'backdrop-blur-lg', 'shadow-sm');
+    }
+    lastScroll = scrollY;
+  });
+</script>

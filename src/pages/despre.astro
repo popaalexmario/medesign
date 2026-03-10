@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const values = [
+  { icon: '🎯', title: 'Precizie', desc: 'Fiecare detaliu contează. Proiectele noastre respectă cele mai stricte standarde tehnice.' },
+  { icon: '🤝', title: 'Parteneriat', desc: 'Nu suntem doar proiectanți — suntem parteneri pe termen lung în dezvoltarea infrastructurii.' },
+  { icon: '💡', title: 'Inovație', desc: 'Utilizăm cele mai noi tehnologii de proiectare și software-uri specializate.' },
+  { icon: '⏱️', title: 'Punctualitate', desc: 'Respectăm termenele asumate și comunicăm transparent pe tot parcursul proiectului.' },
+];
+---
+
+<Layout title="Despre noi" description="Despre MEDESIGN - echipă de profesioniști cu peste 15 ani experiență în proiectarea infrastructurii.">
+  <Header />
+
+  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Despre noi</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Experiență și dedicare<br />în proiectare
+      </h1>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800">
+            Cine suntem
+          </h2>
+          <div class="space-y-4 mt-6 text-steel-600 text-[16px] leading-relaxed">
+            <p>
+              <strong>MEDESIGN</strong> este o companie de proiectare specializată în infrastructură, fondată pe principii de excelență tehnică și dedicare față de comunitățile pe care le servim.
+            </p>
+            <p>
+              Cu o echipă de ingineri experimentați și o abordare orientată spre rezultate, am contribuit la dezvoltarea infrastructurii în numeroase localități, livrând proiecte care respectă cele mai înalte standarde de calitate.
+            </p>
+            <p>
+              De la drumuri comunale la rețele complexe de utilități, fiecare proiect beneficiază de aceeași atenție la detaliu și angajament profesional.
+            </p>
+          </div>
+        </div>
+        <div class="bg-steel-100 rounded-3xl aspect-square flex items-center justify-center" data-aos="fade-left">
+          <div class="text-steel-300 text-center">
+            <svg class="w-20 h-20 mx-auto mb-3 text-steel-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <p class="text-[14px]">Echipa MEDESIGN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-steel-50">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800" data-aos="fade-up">
+          Valorile noastre
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {values.map((item, i) => (
+          <div class="glass-card rounded-2xl p-7 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay={i * 80}>
+            <span class="text-[40px]">{item.icon}</span>
+            <h3 class="font-heading font-bold text-[17px] text-brand-800 mt-4">{item.title}</h3>
+            <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-brand-900">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-white">Vrei să lucrăm împreună?</h2>
+      <p class="text-white/60 text-[16px] mt-3 max-w-md mx-auto">Contactează-ne pentru a discuta despre proiectul tău de infrastructură.</p>
+      <a href="/contact" class="inline-flex items-center gap-2 mt-8 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all">
+        Ia legătura cu noi
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

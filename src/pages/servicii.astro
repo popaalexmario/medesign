@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    slug: 'proiectare-drumuri',
+    icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>`,
+    title: 'Proiectare drumuri',
+    desc: 'Proiecte tehnice complete pentru drumuri comunale, județene și naționale — de la studii topografice și geotehnice la detalii de execuție.',
+    features: ['Drumuri comunale și județene', 'Intersecții și sensuri giratorii', 'Parcări și platforme', 'Piste de biciclete'],
+  },
+  {
+    slug: 'retele-edilitare',
+    icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>`,
+    title: 'Rețele edilitare',
+    desc: 'Proiectare rețele de alimentare cu apă, canalizare menajeră și pluvială, gaze naturale și instalații electrice.',
+    features: ['Rețele de apă și canalizare', 'Alimentare cu gaze naturale', 'Rețele electrice', 'Stații de pompare'],
+  },
+  {
+    slug: 'studii-fezabilitate',
+    icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
+    title: 'Studii de fezabilitate',
+    desc: 'Documentații tehnico-economice complete necesare pentru obținerea finanțărilor și aprobarea investițiilor.',
+    features: ['Studii de fezabilitate (SF)', 'Documentații de avizare (DALI)', 'Proiecte tehnice (PT)', 'Analize cost-beneficiu'],
+  },
+  {
+    slug: 'asistenta-tehnica',
+    icon: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>`,
+    title: 'Asistență tehnică',
+    desc: 'Supervizare și asistență de specialitate pe toată durata execuției lucrărilor pentru asigurarea calității.',
+    features: ['Dirigenție de șantier', 'Verificare calitate lucrări', 'Recepție lucrări', 'Consultanță tehnică'],
+  },
+];
+---
+
+<Layout title="Servicii" description="Servicii complete de proiectare infrastructură: drumuri, rețele edilitare, studii de fezabilitate și asistență tehnică.">
+  <Header />
+
+  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Serviciile noastre</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Soluții complete de<br />proiectare infrastructură
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-xl" data-aos="fade-up" data-aos-delay="100">
+        De la concept la implementare, acoperim întregul ciclu de viață al unui proiect de infrastructură.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container space-y-20">
+      {services.map((service, i) => (
+        <div class={`flex flex-col ${i % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`} data-aos="fade-up">
+          <div class="flex-1">
+            <div class="w-16 h-16 bg-brand-500/10 rounded-2xl flex items-center justify-center text-brand-500 mb-6" set:html={service.icon} />
+            <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800">{service.title}</h2>
+            <p class="text-steel-500 text-[16px] mt-4 leading-relaxed">{service.desc}</p>
+            <ul class="mt-6 space-y-3">
+              {service.features.map((f) => (
+                <li class="flex items-center gap-3 text-steel-600 text-[15px]">
+                  <svg class="w-5 h-5 text-accent-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <a href="/contact" class="inline-flex items-center gap-2 mt-8 bg-brand-500 text-white px-6 py-3 rounded-full font-semibold text-[14px] hover:bg-brand-600 transition-all">
+              Solicită ofertă
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+          <div class="flex-1">
+            <div class="bg-steel-100 rounded-3xl aspect-[4/3] flex items-center justify-center">
+              <div class="text-steel-300 text-center">
+                <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-steel-200 flex items-center justify-center" set:html={service.icon} />
+                <p class="text-[14px]">Imagine proiect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
