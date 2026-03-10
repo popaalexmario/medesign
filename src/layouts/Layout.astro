@@ -199,6 +199,58 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
         transition: transform 0.1s linear;
       }
 
+      /* Hero photo parallax */
+      .hero-parallax {
+        will-change: transform;
+        transition: transform 0.15s ease-out;
+      }
+
+      /* Hero blueprint grid fade in */
+      .hero-grid-fade {
+        opacity: 0;
+        animation: fadeInSlow 2s ease-out 1s forwards;
+      }
+
+      @keyframes fadeInSlow {
+        to { opacity: 1; }
+      }
+
+      /* Hero road trace */
+      .hero-trace {
+        animation: drawHeroTrace 3s ease-out 1.5s forwards;
+      }
+
+      .hero-trace-2 {
+        animation: drawHeroTrace 2.5s ease-out 2s forwards;
+      }
+
+      @keyframes drawHeroTrace {
+        to { stroke-dashoffset: 0; }
+      }
+
+      /* Hero annotations */
+      .hero-annotation {
+        opacity: 0;
+        animation: fadeSlideAnnotation 0.8s ease-out forwards;
+        animation-delay: var(--delay, 3s);
+      }
+
+      @keyframes fadeSlideAnnotation {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Cross section panel */
+      .hero-cross-section {
+        opacity: 0;
+        transform: translateX(30px);
+        animation: slideInPanel 0.8s ease-out 4.5s forwards;
+      }
+
+      @keyframes slideInPanel {
+        to { opacity: 1; transform: translateX(0); }
+      }
+
       /* Road plan view layers - draw in */
       .road-layer {
         stroke-dasharray: 1200;

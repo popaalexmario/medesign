@@ -59,23 +59,113 @@ const reasons = [
 <Layout title="Proiectare Infrastructură">
   <Header />
 
-  <!-- HERO - Fullscreen road canvas -->
-  <section class="relative min-h-screen flex items-center overflow-hidden">
-    <!-- Canvas background - road being built -->
-    <canvas id="road-canvas" class="absolute inset-0 w-full h-full"></canvas>
+  <!-- HERO - Real photo + animated blueprint overlay -->
+  <section class="relative min-h-screen flex items-center overflow-hidden" id="hero">
+    <!-- Real photo background with parallax -->
+    <div class="absolute inset-0 hero-parallax">
+      <img src="/img/hero-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
+    </div>
 
-    <!-- Dark overlay for text readability -->
-    <div class="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-900/80 to-brand-900/40"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-transparent to-brand-900/60"></div>
+    <!-- Gradient overlays -->
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-900/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-900/30 to-brand-900/50"></div>
 
-    <div class="container relative z-10 pt-32 pb-20">
+    <!-- Animated blueprint SVG overlay -->
+    <svg class="absolute inset-0 w-full h-full pointer-events-none z-[2]" xmlns="http://www.w3.org/2000/svg">
+      <!-- Blueprint grid -->
+      <defs>
+        <pattern id="bp-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+          <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(100,200,255,0.04)" stroke-width="0.5" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#bp-grid)" class="hero-grid-fade" />
+
+      <!-- Road trace line following the road in the photo -->
+      <path d="M95%,95% Q80%,75% 70%,60% T55%,45% T45%,35% T35%,25%"
+        fill="none" stroke="rgba(217,119,6,0.5)" stroke-width="2.5" stroke-linecap="round"
+        stroke-dasharray="2000" stroke-dashoffset="2000"
+        class="hero-trace" />
+
+      <!-- Second road trace -->
+      <path d="M60%,95% Q55%,80% 50%,70% T42%,55% T38%,40%"
+        fill="none" stroke="rgba(100,200,255,0.25)" stroke-width="1.5"
+        stroke-dasharray="1500" stroke-dashoffset="1500"
+        class="hero-trace-2" />
+
+      <!-- Measurement annotations -->
+      <g class="hero-annotation" style="--delay: 3s">
+        <line x1="60%" y1="55%" x2="75%" y2="55%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
+        <line x1="60%" y1="53%" x2="60%" y2="57%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
+        <line x1="75%" y1="53%" x2="75%" y2="57%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
+        <text x="67.5%" y="53%" fill="rgba(100,200,255,0.35)" font-size="11" text-anchor="middle" font-family="monospace">1.240 m</text>
+      </g>
+
+      <!-- Roundabout annotation -->
+      <g class="hero-annotation" style="--delay: 3.5s">
+        <circle cx="48%" cy="42%" r="25" fill="none" stroke="rgba(217,119,6,0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
+        <text x="48%" y="38%" fill="rgba(217,119,6,0.35)" font-size="9" text-anchor="middle" font-family="monospace">R=22m</text>
+      </g>
+
+      <!-- Cross-section callout -->
+      <g class="hero-annotation" style="--delay: 4s">
+        <line x1="78%" y1="70%" x2="78%" y2="78%" stroke="rgba(100,200,255,0.2)" stroke-width="0.8" stroke-dasharray="3,3" />
+        <circle cx="78%" cy="70%" r="3" fill="rgba(217,119,6,0.4)" />
+        <text x="78%" y="81%" fill="rgba(100,200,255,0.3)" font-size="9" text-anchor="middle" font-family="monospace">Secțiune A-A</text>
+      </g>
+
+      <!-- Scale bar -->
+      <g class="hero-annotation" style="--delay: 4.5s">
+        <rect x="75%" y="88%" width="120" height="1" fill="rgba(255,255,255,0.2)" />
+        <rect x="75%" y="87%" width="1" height="4" fill="rgba(255,255,255,0.2)" />
+        <rect x="calc(75% + 120px)" y="87%" width="1" height="4" fill="rgba(255,255,255,0.2)" />
+        <text x="calc(75% + 60px)" y="86%" fill="rgba(255,255,255,0.2)" font-size="9" text-anchor="middle" font-family="monospace">500 m</text>
+      </g>
+    </svg>
+
+    <!-- Cross-section floating panel -->
+    <div class="absolute bottom-24 right-6 md:right-12 z-[3] hidden md:block hero-cross-section">
+      <div class="bg-brand-900/80 backdrop-blur-lg border border-white/10 rounded-2xl p-5 w-[320px]">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-1.5 h-1.5 bg-accent-400 rounded-full animate-pulse"></div>
+          <span class="text-white/40 text-[10px] font-mono uppercase tracking-wider">Profil transversal 1:50</span>
+        </div>
+        <svg viewBox="0 0 300 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,85 Q40,83 80,80 Q140,75 150,74 Q160,75 220,80 Q260,83 300,85 L300,100 L0,100 Z"
+            fill="rgba(120,80,40,0.3)" class="layer-reveal" style="--delay: 5s" />
+          <path d="M70,80 L90,73 L120,68 L150,66 L180,68 L210,73 L230,80 L230,82 L210,76 L180,71 L150,69 L120,71 L90,76 L70,82 Z"
+            fill="rgba(180,160,120,0.4)" class="layer-reveal" style="--delay: 5.5s" />
+          <path d="M90,73 L115,68 L140,65 L150,64 L160,65 L185,68 L210,73 L210,76 L185,71 L160,68 L150,67 L140,68 L115,71 L90,76 Z"
+            fill="rgba(160,170,180,0.5)" class="layer-reveal" style="--delay: 6s" />
+          <path d="M105,68 L130,64 L145,62 L150,61 L155,62 L170,64 L195,68 L195,70 L170,66 L155,64 L150,63 L145,64 L130,66 L105,70 Z"
+            fill="rgba(80,80,80,0.6)" class="layer-reveal" style="--delay: 6.5s" />
+          <path d="M110,66 L135,62 L148,60 L150,59.5 L152,60 L165,62 L190,66 L190,68 L165,64 L152,62 L150,61.5 L148,62 L135,64 L110,68 Z"
+            fill="rgba(50,50,50,0.8)" stroke="rgba(217,119,6,0.6)" stroke-width="0.8"
+            class="layer-reveal" style="--delay: 7s" />
+          <line x1="148" y1="59.5" x2="152" y2="59.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"
+            class="layer-reveal" style="--delay: 7.3s" />
+          <line x1="110" y1="52" x2="190" y2="52" stroke="rgba(100,200,255,0.3)" stroke-width="0.5"
+            class="layer-reveal" style="--delay: 7.5s" />
+          <text x="150" y="49" fill="rgba(100,200,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace" font-weight="bold"
+            class="road-text" style="--delay: 7.7s">7.00 m</text>
+          <!-- Layer labels -->
+          <text x="240" y="88" fill="rgba(120,80,40,0.4)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 5.2s">Teren</text>
+          <text x="240" y="77" fill="rgba(180,160,120,0.5)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 5.7s">Fundație</text>
+          <text x="240" y="71" fill="rgba(160,170,180,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 6.2s">Bază</text>
+          <text x="240" y="66" fill="rgba(100,100,100,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 6.7s">Binder</text>
+          <text x="240" y="61" fill="rgba(217,119,6,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 7.2s">Uzură</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container relative z-[4] pt-32 pb-20">
       <div class="max-w-2xl">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white/70 text-[13px] font-medium mb-8" data-aos="fade-down">
           <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
           Proiectare profesională de infrastructură
         </div>
 
-        <h1 class="text-[42px] md:text-[60px] lg:text-[76px] font-heading font-extrabold text-white leading-[1.05] mb-6" data-aos="fade-up">
+        <h1 class="text-[42px] md:text-[60px] lg:text-[80px] font-heading font-extrabold text-white leading-[1.05] mb-6" data-aos="fade-up">
           Construim
           <span class="relative inline-block">
             <span class="text-accent-400">fundația</span>
@@ -272,289 +362,30 @@ const reasons = [
   <Footer />
 </Layout>
 
-<!-- Road canvas animation -->
+<!-- Hero parallax on mouse + scroll -->
 <script is:inline>
 (function() {
-  const canvas = document.getElementById('road-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, progress = 0, startTime = null;
-  const DURATION = 8000;
+  const hero = document.getElementById('hero');
+  const heroBg = document.getElementById('hero-bg');
+  if (!hero || !heroBg) return;
 
-  function resize() {
-    W = canvas.width = canvas.offsetWidth * (window.devicePixelRatio || 1);
-    H = canvas.height = canvas.offsetHeight * (window.devicePixelRatio || 1);
-    ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
-  }
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    heroBg.style.transform = `scale(1.1) translate(${x * -15}px, ${y * -10}px)`;
+  });
 
-  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
-  function easeInOutQuad(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+  hero.addEventListener('mouseleave', () => {
+    heroBg.style.transform = 'scale(1.1) translate(0, 0)';
+  });
 
-  function drawTerrain(w, h, p) {
-    if (p < 0.05) return;
-    const tp = Math.min(1, p / 0.15);
-    ctx.globalAlpha = tp * 0.6;
-    const grad = ctx.createLinearGradient(0, h * 0.3, 0, h);
-    grad.addColorStop(0, '#1a3520');
-    grad.addColorStop(0.4, '#2d5a1e');
-    grad.addColorStop(0.7, '#3a6b28');
-    grad.addColorStop(1, '#1a2e15');
-    ctx.fillStyle = grad;
-
-    ctx.beginPath();
-    ctx.moveTo(0, h);
-    for (let x = 0; x <= w; x += 2) {
-      const nx = x / w;
-      const y = h * 0.55
-        + Math.sin(nx * 3) * h * 0.06
-        + Math.sin(nx * 7 + 1) * h * 0.03
-        + Math.cos(nx * 5 + 2) * h * 0.04;
-      ctx.lineTo(x, y);
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    if (scrollY < window.innerHeight) {
+      heroBg.style.transform = `scale(1.1) translateY(${scrollY * 0.2}px)`;
     }
-    ctx.lineTo(w, h);
-    ctx.closePath();
-    ctx.fill();
-    ctx.globalAlpha = 1;
-  }
-
-  function drawSky(w, h, p) {
-    if (p < 0.02) return;
-    const sp = Math.min(1, p / 0.1);
-    const grad = ctx.createLinearGradient(0, 0, 0, h * 0.6);
-    grad.addColorStop(0, `rgba(10, 22, 40, ${sp})`);
-    grad.addColorStop(0.5, `rgba(15, 32, 53, ${sp * 0.9})`);
-    grad.addColorStop(1, `rgba(20, 45, 65, ${sp * 0.4})`);
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, w, h * 0.6);
-  }
-
-  function drawRoadPerspective(w, h, p) {
-    if (p < 0.1) return;
-    const rp = easeOutCubic(Math.min(1, (p - 0.1) / 0.35));
-    const vanishX = w * 0.6;
-    const vanishY = h * 0.38;
-    const roadW = w * 0.55;
-    const roadEndW = w * 0.015;
-
-    ctx.save();
-    ctx.beginPath();
-    const leftBot = vanishX - roadW / 2;
-    const rightBot = vanishX + roadW / 2;
-    const leftTop = vanishX - roadEndW;
-    const rightTop = vanishX + roadEndW;
-
-    const currentBot = h + 20;
-    const currentTop = vanishY + (h - vanishY) * (1 - rp);
-
-    const tlx = leftBot + (leftTop - leftBot) * rp;
-    const trx = rightBot + (rightTop - rightBot) * rp;
-
-    ctx.moveTo(leftBot, currentBot);
-    ctx.lineTo(tlx, currentTop);
-    ctx.lineTo(trx, currentTop);
-    ctx.lineTo(rightBot, currentBot);
-    ctx.closePath();
-
-    const roadGrad = ctx.createLinearGradient(0, currentBot, 0, currentTop);
-    roadGrad.addColorStop(0, 'rgba(45,45,50,0.95)');
-    roadGrad.addColorStop(0.5, 'rgba(55,55,60,0.9)');
-    roadGrad.addColorStop(1, 'rgba(40,40,45,0.7)');
-    ctx.fillStyle = roadGrad;
-    ctx.fill();
-
-    if (rp > 0.3) {
-      const lp = (rp - 0.3) / 0.7;
-      ctx.strokeStyle = `rgba(255,255,255,${lp * 0.7})`;
-      ctx.lineWidth = 1.5;
-      ctx.setLineDash([]);
-      ctx.beginPath();
-      ctx.moveTo(leftBot + 15, currentBot);
-      const elx = leftBot + 15 + (leftTop + 2 - (leftBot + 15)) * rp;
-      ctx.lineTo(elx, currentTop);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(rightBot - 15, currentBot);
-      const erx = rightBot - 15 + (rightTop - 2 - (rightBot - 15)) * rp;
-      ctx.lineTo(erx, currentTop);
-      ctx.stroke();
-    }
-
-    if (rp > 0.4) {
-      const dp = (rp - 0.4) / 0.6;
-      ctx.strokeStyle = `rgba(255,255,255,${dp * 0.5})`;
-      ctx.lineWidth = 2;
-      const segments = Math.floor(dp * 20);
-      for (let i = 0; i < segments; i++) {
-        const t1 = i / 20;
-        const t2 = (i + 0.5) / 20;
-        const y1 = currentBot + (currentTop - currentBot) * t1;
-        const y2 = currentBot + (currentTop - currentBot) * t2;
-        const x1 = vanishX;
-        ctx.beginPath();
-        ctx.moveTo(x1, y1);
-        ctx.lineTo(x1, y2);
-        ctx.stroke();
-      }
-    }
-
-    ctx.restore();
-  }
-
-  function drawLayers(w, h, p) {
-    if (p < 0.55) return;
-    const lp = (p - 0.55) / 0.35;
-    const cx = w * 0.15;
-    const cy = h * 0.72;
-    const lw = w * 0.32;
-    const lh = h * 0.22;
-    const boxAlpha = Math.min(1, lp * 2);
-
-    ctx.save();
-    ctx.globalAlpha = boxAlpha * 0.85;
-    ctx.fillStyle = 'rgba(10, 22, 40, 0.75)';
-    ctx.strokeStyle = 'rgba(100, 200, 255, 0.15)';
-    ctx.lineWidth = 1;
-    const r = 12;
-    ctx.beginPath();
-    ctx.roundRect(cx - 15, cy - lh * 0.1, lw + 30, lh + 20, r);
-    ctx.fill();
-    ctx.stroke();
-    ctx.globalAlpha = boxAlpha;
-
-    const layers = [
-      { name: 'Teren natural', color: 'rgba(120,80,40,0.5)', h: 0.22 },
-      { name: 'Fundație 20cm', color: 'rgba(180,160,120,0.55)', h: 0.18 },
-      { name: 'Bază 15cm', color: 'rgba(160,170,180,0.6)', h: 0.15 },
-      { name: 'Binder 6cm', color: 'rgba(80,80,80,0.7)', h: 0.1 },
-      { name: 'Uzură 4cm', color: 'rgba(50,50,50,0.9)', h: 0.08 },
-    ];
-
-    let yOff = cy + lh * 0.85;
-    const visibleLayers = Math.floor(lp * layers.length * 1.3);
-
-    for (let i = 0; i < Math.min(visibleLayers, layers.length); i++) {
-      const layer = layers[i];
-      const layerH = lh * layer.h;
-      yOff -= layerH;
-
-      const layerP = Math.min(1, (lp * layers.length * 1.3 - i));
-      ctx.globalAlpha = boxAlpha * layerP;
-
-      const slopeL = 8 + i * 5;
-      const slopeR = 8 + i * 5;
-
-      ctx.fillStyle = layer.color;
-      ctx.beginPath();
-      ctx.moveTo(cx + slopeL, yOff + layerH);
-      ctx.lineTo(cx, yOff);
-      ctx.lineTo(cx + lw, yOff);
-      ctx.lineTo(cx + lw - slopeR, yOff + layerH);
-      ctx.closePath();
-      ctx.fill();
-
-      ctx.strokeStyle = 'rgba(255,255,255,0.15)';
-      ctx.lineWidth = 0.5;
-      ctx.stroke();
-
-      ctx.fillStyle = 'rgba(255,255,255,0.5)';
-      ctx.font = `${Math.max(9, w * 0.008)}px monospace`;
-      ctx.fillText(layer.name, cx + lw + 18, yOff + layerH * 0.6);
-    }
-
-    if (lp > 0.85) {
-      const mp = (lp - 0.85) / 0.15;
-      ctx.globalAlpha = boxAlpha * mp;
-      ctx.strokeStyle = '#d97706';
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      ctx.moveTo(cx + lw * 0.45, yOff - 2);
-      ctx.lineTo(cx + lw * 0.55, yOff - 2);
-      ctx.stroke();
-
-      ctx.strokeStyle = 'rgba(255,255,255,0.5)';
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.moveTo(cx - 2, yOff - 2);
-      ctx.lineTo(cx + 4, yOff - 2);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(cx + lw - 4, yOff - 2);
-      ctx.lineTo(cx + lw + 2, yOff - 2);
-      ctx.stroke();
-
-      ctx.fillStyle = 'rgba(100,200,255,0.5)';
-      ctx.font = `bold ${Math.max(10, w * 0.009)}px monospace`;
-      ctx.textAlign = 'center';
-      ctx.fillText('7.00 m', cx + lw / 2, yOff - 10);
-      ctx.textAlign = 'left';
-
-      ctx.fillStyle = 'rgba(255,255,255,0.25)';
-      ctx.font = `${Math.max(8, w * 0.007)}px monospace`;
-      ctx.fillText('Profil transversal 1:50', cx, cy + lh + 12);
-    }
-
-    ctx.restore();
-  }
-
-  function drawGridOverlay(w, h, p) {
-    if (p < 0.3) return;
-    const gp = Math.min(1, (p - 0.3) / 0.3) * 0.04;
-    ctx.strokeStyle = `rgba(100, 200, 255, ${gp})`;
-    ctx.lineWidth = 0.5;
-    const spacing = 50;
-    for (let x = 0; x < w; x += spacing) {
-      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
-    }
-    for (let y = 0; y < h; y += spacing) {
-      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
-    }
-  }
-
-  function draw(timestamp) {
-    if (!startTime) startTime = timestamp;
-    const elapsed = timestamp - startTime;
-    progress = Math.min(1, elapsed / DURATION);
-
-    const w = canvas.offsetWidth;
-    const h = canvas.offsetHeight;
-
-    ctx.clearRect(0, 0, W, H);
-    ctx.save();
-
-    drawSky(w, h, progress);
-    drawTerrain(w, h, progress);
-    drawGridOverlay(w, h, progress);
-    drawRoadPerspective(w, h, progress);
-    drawLayers(w, h, progress);
-
-    ctx.restore();
-
-    if (progress < 1) {
-      requestAnimationFrame(draw);
-    } else {
-      floatLoop();
-    }
-  }
-
-  let floatAngle = 0;
-  function floatLoop() {
-    floatAngle += 0.01;
-    const w = canvas.offsetWidth;
-    const h = canvas.offsetHeight;
-    ctx.clearRect(0, 0, W, H);
-    ctx.save();
-    drawSky(w, h, 1);
-    drawTerrain(w, h, 1);
-    drawGridOverlay(w, h, 1);
-    drawRoadPerspective(w, h, 1);
-    drawLayers(w, h, 1);
-    ctx.restore();
-    requestAnimationFrame(floatLoop);
-  }
-
-  resize();
-  window.addEventListener('resize', () => { resize(); if (progress >= 1) floatLoop(); });
-  requestAnimationFrame(draw);
+  });
 })();
 </script>
 
