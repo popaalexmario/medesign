@@ -75,6 +75,129 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
         margin: 0 auto;
         padding: 0 1.5rem;
       }
+
+      /* Blueprint grid animation */
+      @keyframes drawGrid {
+        0% { opacity: 0; stroke-dashoffset: 1000; }
+        50% { opacity: 0.06; }
+        100% { opacity: 0.06; stroke-dashoffset: 0; }
+      }
+
+      @keyframes drawPath {
+        to { stroke-dashoffset: 0; }
+      }
+
+      @keyframes fadeSlideUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes fadeSlideRight {
+        from { opacity: 0; transform: translateX(-30px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+
+      @keyframes countPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        33% { transform: translateY(-15px) rotate(1deg); }
+        66% { transform: translateY(-8px) rotate(-1deg); }
+      }
+
+      @keyframes progressLine {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+
+      @keyframes rotateShape {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes morphBlob {
+        0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+      }
+
+      .animate-draw-path {
+        animation: drawPath 2s ease-out forwards;
+      }
+
+      .animate-float-slow {
+        animation: floatSlow 8s ease-in-out infinite;
+      }
+
+      .animate-morph {
+        animation: morphBlob 8s ease-in-out infinite;
+      }
+
+      .animate-rotate-slow {
+        animation: rotateShape 30s linear infinite;
+      }
+
+      .animate-shimmer {
+        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+        background-size: 200% 100%;
+        animation: shimmer 3s ease-in-out infinite;
+      }
+
+      /* Tilt card effect */
+      .tilt-card {
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .tilt-card:hover {
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+      }
+
+      .tilt-card .tilt-inner {
+        transform: translateZ(30px);
+      }
+
+      /* Counter animation glow */
+      .counter-glow {
+        text-shadow: 0 0 40px rgba(217, 119, 6, 0.3);
+      }
+
+      /* Timeline connector */
+      .timeline-connector {
+        position: relative;
+      }
+
+      .timeline-connector::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: calc(100% - 2rem);
+        height: 2px;
+        background: linear-gradient(90deg, #d97706, #1e3a5f);
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.8s ease, opacity 0.3s;
+      }
+
+      .timeline-connector.animated::after {
+        opacity: 0.3;
+        transform: scaleX(1);
+      }
+
+      /* Parallax container */
+      .parallax-layer {
+        will-change: transform;
+        transition: transform 0.1s linear;
+      }
     </style>
   </head>
   <body class="bg-white">
