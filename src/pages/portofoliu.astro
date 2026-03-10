@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Lightbox from '../components/Lightbox.astro';
 
 const projects = [
   { title: 'Modernizare drum comunal DC12', category: 'Drumuri', location: 'Comuna Exemplu, Jud. Alba', year: '2024', desc: 'Proiectare completă pentru modernizarea a 5.2 km drum comunal, inclusiv sistem de drenaj și podețe.' },
@@ -68,5 +69,6 @@ const categories = ['Toate', ...new Set(projects.map(p => p.category))];
     </div>
   </section>
 
+  <Lightbox />
   <Footer />
 </Layout>

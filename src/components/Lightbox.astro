@@ -1,0 +1,126 @@
+<!-- Lightbox overlay -->
+<div id="lightbox" class="fixed inset-0 z-[9999] hidden cursor-zoom-out" role="dialog" aria-modal="true">
+  <div class="absolute inset-0 bg-black/90 backdrop-blur-sm lightbox-backdrop"></div>
+
+  <!-- Close button -->
+  <button id="lightbox-close" class="absolute top-6 right-6 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all group" aria-label="Închide">
+    <svg class="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <!-- Image container -->
+  <div class="absolute inset-0 flex items-center justify-center p-6 md:p-12">
+    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl lightbox-image" />
+  </div>
+
+  <!-- Caption -->
+  <div id="lightbox-caption" class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md border border-white/10 rounded-full px-6 py-2 text-white/80 text-[14px] font-medium lightbox-caption"></div>
+</div>
+
+<style>
+  .lightbox-backdrop {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .lightbox-image {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease 0.1s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+  }
+
+  .lightbox-caption {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    transition: opacity 0.3s ease 0.2s, transform 0.4s ease 0.2s;
+  }
+
+  #lightbox.active .lightbox-backdrop {
+    opacity: 1;
+  }
+
+  #lightbox.active .lightbox-image {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  #lightbox.active .lightbox-caption {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #lightbox.closing .lightbox-backdrop {
+    opacity: 0;
+    transition: opacity 0.25s ease 0.1s;
+  }
+
+  #lightbox.closing .lightbox-image {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.2s ease, transform 0.25s ease;
+  }
+
+  #lightbox.closing .lightbox-caption {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    transition: opacity 0.15s ease, transform 0.2s ease;
+  }
+</style>
+
+<script is:inline>
+  (function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightboxCaption.textContent = alt || '';
+      lightboxCaption.style.display = alt ? '' : 'none';
+
+      lightbox.classList.remove('hidden', 'closing');
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => {
+        lightbox.classList.add('active');
+      });
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightbox.classList.add('closing');
+      document.body.style.overflow = '';
+
+      setTimeout(() => {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('closing');
+        lightboxImg.src = '';
+      }, 350);
+    }
+
+    document.querySelectorAll('[data-lightbox]').forEach(el => {
+      el.style.cursor = 'zoom-in';
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const img = el.tagName === 'IMG' ? el : el.querySelector('img');
+        if (img) {
+          openLightbox(img.src, img.alt);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-backdrop')) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
