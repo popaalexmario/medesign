@@ -198,6 +198,45 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
         will-change: transform;
         transition: transform 0.1s linear;
       }
+
+      /* Road plan view layers - draw in */
+      .road-layer {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        opacity: 0;
+        animation: drawRoadLayer 2s ease-out forwards;
+        animation-delay: var(--delay, 1s);
+      }
+
+      @keyframes drawRoadLayer {
+        0% { stroke-dashoffset: 1200; opacity: 0; }
+        10% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 1; }
+      }
+
+      .road-text {
+        opacity: 0;
+        animation: fadeInText 0.6s ease-out forwards;
+        animation-delay: var(--delay, 1s);
+      }
+
+      @keyframes fadeInText {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      /* Cross section layers - reveal from bottom up */
+      .layer-reveal {
+        opacity: 0;
+        transform-origin: center bottom;
+        animation: revealLayer 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-delay: var(--delay, 1s);
+      }
+
+      @keyframes revealLayer {
+        0% { opacity: 0; transform: translateY(8px) scaleY(0.8); }
+        100% { opacity: 1; transform: translateY(0) scaleY(1); }
+      }
     </style>
   </head>
   <body class="bg-white">
