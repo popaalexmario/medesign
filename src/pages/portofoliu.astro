@@ -5,12 +5,13 @@ import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
 
 const projects = [
-  { title: 'Modernizare drum comunal DC12', category: 'Drumuri', location: 'Comuna Exemplu, Jud. Alba', year: '2024', desc: 'Proiectare completă pentru modernizarea a 5.2 km drum comunal, inclusiv sistem de drenaj și podețe.' },
-  { title: 'Rețea apă și canalizare', category: 'Rețele edilitare', location: 'Orașul Exemplu, Jud. Sibiu', year: '2024', desc: 'Extindere rețea de alimentare cu apă și canalizare menajeră pentru 3 zone rezidențiale noi.' },
-  { title: 'Studiu fezabilitate DJ107', category: 'Studii', location: 'Jud. Hunedoara', year: '2023', desc: 'Documentație tehnico-economică completă pentru reabilitarea a 12 km drum județean.' },
-  { title: 'Infrastructură zona industrială', category: 'Complex', location: 'Municipiul Exemplu', year: '2023', desc: 'Proiectare integrată drumuri de acces, rețele utilități și platforme pentru zona industrială de 15 ha.' },
-  { title: 'Sens giratoriu intersecție DN7', category: 'Drumuri', location: 'Jud. Vâlcea', year: '2023', desc: 'Proiect tehnic pentru amenajare sens giratoriu la intersecția DN7 cu DJ643.' },
-  { title: 'Canalizare pluvială centru civic', category: 'Rețele edilitare', location: 'Oraș Exemplu', year: '2022', desc: 'Sistem complet de canalizare pluvială pentru zona centrală, inclusiv bazine de retenție.' },
+  {
+    title: 'Modernizare drumuri de interes local în Comuna Aninoasa, Județul Dâmbovița',
+    category: 'Drumuri',
+    location: 'U.A.T. Comuna Aninoasa, Județul Dâmbovița',
+    year: '2025',
+    desc: 'Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km. Proiectul contribuie la integrarea regiunii în rețeaua europeană de infrastructură, creând premise pentru noi oportunități economice și legături eficiente între centrul urban și zonele periferice.',
+  },
 ];
 
 const categories = ['Toate', ...new Set(projects.map(p => p.category))];
