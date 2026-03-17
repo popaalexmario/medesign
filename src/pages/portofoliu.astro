@@ -12,7 +12,7 @@ const projects = [
     faza: 'DALI+DTAC+PTE',
     location: 'U.A.T. Comuna Aninoasa, Județul Dâmbovița',
     year: '2025',
-    desc: 'Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km. Proiectul contribuie la integrarea regiunii în rețeaua europeană de infrastructură, creând premise pentru noi oportunități economice și legături eficiente între centrul urban și zonele periferice.',
+    desc: 'Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km.',
   },
   {
     slug: 'bughea-de-jos-arges',
@@ -21,7 +21,7 @@ const projects = [
     faza: 'SF+DTAC+PTE',
     location: 'U.A.T. Comuna Bughea de Jos, Județul Argeș',
     year: '2025',
-    desc: 'Se amenajează albia pârâului Valea Mare pe o lungime de aproximativ 670m, albia pârâului Valea Brezoiului pe o lungime de aproximativ 722m, albia pârâului Valea Caselor pe o lungime de aproximativ 1.250m și albia pârâului Valea Ciocanului pe o lungime de aproximativ 270m.',
+    desc: 'Proiectare amenajare maluri cu ziduri de sprijin, trotuare si pasarele pentru continuitate circulatie.',
   },
   {
     slug: 'craiova-dolj',
@@ -30,7 +30,7 @@ const projects = [
     faza: 'DALI+DTAC+PTE',
     location: 'U.A.T. Municipiul Craiova, Județul Dolj',
     year: '2023 – 2025',
-    desc: 'Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere și 2 sensuri de circulație. Casetarea canalului deschis Craiovița (Râului) pe o lungime de 1.800 ml prin montarea a două șiruri paralele de casete de beton armat prefabricate (5,00 m × 2,50 m). Proiectul include 3 sensuri giratorii, piste de biciclete și spații pietonale.',
+    desc: 'Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere. Casetarea canalului deschis Craiovița (Râului) pe o lungime de 1.800 ml. Proiectul include 3 sensuri giratorii, piste de biciclete și spații pietonale.',
   },
   {
     slug: 'alba-iulia',
@@ -48,7 +48,7 @@ const projects = [
     faza: 'SF',
     location: 'U.A.T. Județul Maramureș prin Consiliul Județean Maramureș',
     year: '2023',
-    desc: 'Proiect finanțat prin Programul Național de Redresare și Reziliență (PNRR) sau surse alternative din fonduri europene. Elaborarea SF se finanțează din bugetele locale ale U.A.T. Județul Maramureș și U.A.T. Municipiul Baia Mare.',
+    desc: 'Amenajare intersectie DN1C cu DN VO BM si pasaj rutier pe DN1C impreuna cu bretele.',
   },
 ];
 
@@ -57,7 +57,7 @@ const allCats = [...new Set(projects.flatMap(p => p.categories))];
 const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
 ---
 
-<Layout title="Portofoliu" description="Portofoliul ME Design - proiecte de infrastructură finalizate cu succes în toată România.">
+<Layout title="Portofoliu" description="Portofoliul ME Design - proiecte reprezentative de infrastructură finalizate cu succes în toată România.">
   <Header />
 
   <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
