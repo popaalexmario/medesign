@@ -14,7 +14,7 @@ const values = [
 <Layout title="Despre noi" description="Despre ME Design - echipă de profesioniști cu peste 7 ani experiență în proiectarea infrastructurii.">
   <Header />
 
-  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
     <div class="container">
       <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Despre noi</span>
       <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
@@ -25,12 +25,12 @@ const values = [
 
   <section class="section-padding bg-white">
     <div class="container">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
         <div data-aos="fade-right">
           <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800">
             Cine suntem
           </h2>
-          <div class="space-y-4 mt-6 text-steel-600 text-[16px] leading-relaxed">
+          <div class="space-y-3 mt-4 text-steel-600 text-[15px] leading-relaxed">
             <p>
               <strong>Mario Engineering Design SRL</strong> este o companie de proiectare specializată în infrastructură rutieră și lucrări de artă, înființată în decembrie 2018.
             </p>
@@ -41,7 +41,7 @@ const values = [
               Fiecare proiect beneficiază de aceeași atenție la detaliu, respectând cele mai înalte standarde tehnice și legislația în vigoare.
             </p>
           </div>
-          <div class="mt-8 p-5 bg-steel-50 rounded-2xl text-[14px] text-steel-500 space-y-1.5">
+          <div class="mt-5 p-4 bg-steel-50 rounded-2xl text-[14px] text-steel-500 space-y-1">
             <p><span class="font-semibold text-steel-700">Denumire:</span> Mario Engineering Design SRL</p>
             <p><span class="font-semibold text-steel-700">CUI:</span> 40290175</p>
             <p><span class="font-semibold text-steel-700">Data înființării:</span> 12 decembrie 2018</p>
@@ -62,17 +62,17 @@ const values = [
 
   <section class="section-padding bg-steel-50">
     <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="text-center max-w-2xl mx-auto mb-7">
         <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800" data-aos="fade-up">
           Valorile noastre
         </h2>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {values.map((item, i) => (
-          <div class="glass-card rounded-2xl p-7 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay={i * 80}>
+          <div class="glass-card rounded-2xl p-4 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay={i * 80}>
             <span class="text-[40px]">{item.icon}</span>
-            <h3 class="font-heading font-bold text-[17px] text-brand-800 mt-4">{item.title}</h3>
-            <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
+            <h3 class="font-heading font-bold text-[16px] text-brand-800 mt-2">{item.title}</h3>
+            <p class="text-steel-500 text-[13px] mt-1 leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -83,7 +83,7 @@ const values = [
     <div class="container text-center" data-aos="fade-up">
       <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-white">Vrei să lucrăm împreună?</h2>
       <p class="text-white/60 text-[16px] mt-3 max-w-md mx-auto">Contactează-ne pentru a discuta despre proiectul tău de infrastructură.</p>
-      <a href="/contact" class="inline-flex items-center gap-2 mt-8 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all">
+      <a href="/contact" class="inline-flex items-center gap-2 mt-5 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all">
         Ia legătura cu noi
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

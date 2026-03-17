@@ -33,7 +33,7 @@ const services = [
 <Layout title="Servicii" description="Servicii complete de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.">
   <Header />
 
-  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
     <div class="container">
       <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Serviciile noastre</span>
       <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
@@ -46,24 +46,24 @@ const services = [
   </section>
 
   <section class="section-padding bg-white">
-    <div class="container space-y-20">
+    <div class="container space-y-10">
       {services.map((service, i) => (
-        <div class={`flex flex-col ${i % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`} data-aos="fade-up">
+        <div class={`flex flex-col ${i % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`} data-aos="fade-up">
           <div class="flex-1">
-            <div class="w-16 h-16 bg-brand-500/10 rounded-2xl flex items-center justify-center text-brand-500 mb-6" set:html={service.icon} />
-            <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800">{service.title}</h2>
-            <p class="text-steel-500 text-[16px] mt-4 leading-relaxed">{service.desc}</p>
-            <ul class="mt-6 space-y-3">
+            <div class="w-14 h-14 bg-brand-500/10 rounded-2xl flex items-center justify-center text-brand-500 mb-4" set:html={service.icon} />
+            <h2 class="text-[24px] md:text-[30px] font-heading font-bold text-brand-800">{service.title}</h2>
+            <p class="text-steel-500 text-[15px] mt-3 leading-relaxed">{service.desc}</p>
+            <ul class="mt-4 space-y-2">
               {service.features.map((f) => (
-                <li class="flex items-center gap-3 text-steel-600 text-[15px]">
-                  <svg class="w-5 h-5 text-accent-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <li class="flex items-center gap-3 text-steel-600 text-[14px]">
+                  <svg class="w-4 h-4 text-accent-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
                   {f}
                 </li>
               ))}
             </ul>
-            <a href="/contact" class="inline-flex items-center gap-2 mt-8 bg-brand-500 text-white px-6 py-3 rounded-full font-semibold text-[14px] hover:bg-brand-600 transition-all">
+            <a href="/contact" class="inline-flex items-center gap-2 mt-5 bg-brand-500 text-white px-6 py-3 rounded-full font-semibold text-[14px] hover:bg-brand-600 transition-all">
               Solicită ofertă
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
