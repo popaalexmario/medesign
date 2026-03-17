@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Politica de Cookies" description="Politica de cookies a MeDesign - cum folosim cookie-urile și cum îți poți gestiona preferințele.">
+  <Header />
+
+  <!-- Hero -->
+  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Legal</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Politica de Cookies
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-xl" data-aos="fade-up" data-aos-delay="100">
+        Informații despre cum utilizăm cookie-urile pe site-ul <strong class="text-white/80">me-design.ro</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="section-padding bg-white">
+    <div class="container max-w-3xl">
+
+      <div class="prose prose-lg max-w-none text-gray-700 space-y-10">
+
+        <!-- 1 -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-bold text-brand-500 mb-3">1. Ce sunt cookie-urile?</h2>
+          <p>
+            Cookie-urile sunt fișiere text de mici dimensiuni stocate în browserul tău atunci când vizitezi un site web.
+            Ele permit site-ului să memoreze informații despre vizita ta (de ex. preferințele de limbă sau dacă ești autentificat),
+            pentru a face experiența de navigare mai ușoară și mai personalizată.
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-bold text-brand-500 mb-3">2. Ce tipuri de cookie-uri folosim?</h2>
+          <div class="overflow-x-auto rounded-xl border border-gray-200">
+            <table class="w-full text-sm">
+              <thead class="bg-brand-500 text-white">
+                <tr>
+                  <th class="px-4 py-3 text-left font-semibold">Tip</th>
+                  <th class="px-4 py-3 text-left font-semibold">Denumire</th>
+                  <th class="px-4 py-3 text-left font-semibold">Scop</th>
+                  <th class="px-4 py-3 text-left font-semibold">Durată</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="bg-white hover:bg-gray-50 transition-colors">
+                  <td class="px-4 py-3 font-medium text-brand-600">Funcțional</td>
+                  <td class="px-4 py-3 font-mono text-xs text-gray-600">medesign_cookie_consent</td>
+                  <td class="px-4 py-3">Reține alegerea ta legată de consimțământul pentru cookie-uri</td>
+                  <td class="px-4 py-3">1 an</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">
+            În prezent, site-ul nostru nu folosește cookie-uri de analiză, publicitate sau terțe părți.
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-bold text-brand-500 mb-3">3. Cum îți poți gestiona cookie-urile?</h2>
+          <p class="mb-3">
+            Ai oricând dreptul să îți retragi consimțământul sau să ștergi cookie-urile. Poți face asta în mai multe moduri:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>
+              <strong>Din setările browserului</strong> — aproape toate browserele moderne permit vizualizarea și ștergerea cookie-urilor.
+              Consultă pagina de ajutor a browserului tău (Chrome, Firefox, Safari, Edge).
+            </li>
+            <li>
+              <strong>Prin resetarea preferințelor pe site-ul nostru</strong> — apasă butonul de mai jos pentru a șterge alegerea salvată și a afișa din nou bannerul de consimțământ.
+            </li>
+          </ul>
+
+          <div class="mt-6">
+            <button
+              id="reset-cookie-consent"
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors text-sm shadow-sm"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Resetează preferințele cookie
+            </button>
+            <p id="reset-feedback" class="mt-2 text-sm text-green-600 hidden">Preferințele au fost resetate. Reîncarcă pagina pentru a vedea bannerul.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-bold text-brand-500 mb-3">4. Temeiul legal</h2>
+          <p>
+            Utilizarea cookie-urilor funcționale necesare este permisă în baza interesului nostru legitim de a asigura funcționarea corectă a site-ului.
+            Orice alte cookie-uri (analitice, de marketing) sunt utilizate doar cu consimțământul tău explicit, conform
+            <strong>Regulamentului (UE) 2016/679 (GDPR)</strong> și
+            <strong>Directivei 2002/58/CE (ePrivacy)</strong>.
+          </p>
+        </div>
+
+        <!-- 5 -->
+        <div data-aos="fade-up">
+          <h2 class="text-2xl font-bold text-brand-500 mb-3">5. Contact</h2>
+          <p>
+            Pentru orice întrebări legate de utilizarea cookie-urilor sau de datele tale personale, ne poți contacta la:
+          </p>
+          <div class="mt-3 p-4 bg-steel-50 rounded-xl border border-steel-100 inline-block">
+            <p class="font-semibold text-brand-500">MeDesign</p>
+            <p class="text-sm text-gray-600 mt-1">
+              Email: <a href="mailto:office@me-design.ro" class="text-accent-500 hover:underline">office@me-design.ro</a>
+            </p>
+            <p class="text-sm text-gray-600">Site: <a href="https://me-design.ro" class="text-accent-500 hover:underline">me-design.ro</a></p>
+          </div>
+        </div>
+
+        <!-- Update date -->
+        <p class="text-xs text-gray-400 pt-4 border-t border-gray-100">
+          Ultima actualizare: martie 2026
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script is:inline>
+  var btn = document.getElementById('reset-cookie-consent');
+  var feedback = document.getElementById('reset-feedback');
+  btn && btn.addEventListener('click', function () {
+    try { localStorage.removeItem('medesign_cookie_consent'); } catch (e) {}
+    feedback && (feedback.style.display = 'block', feedback.classList.remove('hidden'));
+  });
+</script>

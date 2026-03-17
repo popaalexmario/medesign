@@ -1,4 +1,6 @@
 ---
+import CookieConsent from '../components/CookieConsent.astro';
+
 interface Props {
   title: string;
   description?: string;
@@ -293,6 +295,7 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
   </head>
   <body class="bg-white">
     <slot />
+    <CookieConsent />
 
     <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script is:inline>
