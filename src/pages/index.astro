@@ -37,7 +37,7 @@ const services = [
 const process = [
   { step: '01', title: 'Analiză', desc: 'Evaluăm cerințele proiectului, studiem amplasamentul și identificăm soluțiile optime.', icon: '🔍' },
   { step: '02', title: 'Proiectare', desc: 'Elaborăm documentația tehnică completă cu respectarea tuturor normativelor în vigoare.', icon: '📐' },
-  { step: '03', title: 'Avizare', desc: 'Obținem toate avizele și acordurile necesare de la autoritățile competente.', icon: '📋' },
+  { step: '03', title: 'Sprijin obținere avize', desc: 'Întocmim documentații pentru obținerea avizelor și acordurilor necesare de la autoritățile competente în concordanță cu Certificatul de Urbanism.', icon: '📋' },
   { step: '04', title: 'Livrare', desc: 'Predăm proiectul finalizat și oferim suport pe toată durata implementării.', icon: '🚀' },
 ];
 
@@ -53,7 +53,7 @@ const reasons = [
   <Header />
 
   <!-- HERO - Real photo + animated blueprint overlay -->
-  <section class="relative min-h-screen flex items-start md:items-center overflow-hidden" id="hero">
+  <section class="relative min-h-[100svh] flex items-start md:items-center overflow-hidden" id="hero">
     <!-- Real photo background with parallax -->
     <div class="absolute inset-0 hero-parallax">
       <img src="/img/hero-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
@@ -151,7 +151,7 @@ const reasons = [
     </div>
 
     <!-- Content -->
-    <div class="container relative z-[4] pt-28 md:pt-32 pb-16 md:pb-20">
+    <div class="container relative z-[4] pt-24 md:pt-32 pb-20 md:pb-20">
       <div class="max-w-2xl">
         <h1 class="text-[42px] md:text-[60px] lg:text-[80px] font-heading font-extrabold text-white leading-[1.05] mb-6" data-aos="fade-up">
           Construim
@@ -167,8 +167,11 @@ const reasons = [
           <br />de mâine
         </h1>
 
-        <p class="text-white/60 text-[18px] md:text-[20px] max-w-xl leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="100">
-          Servicii integrate de proiectare drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări. Experiență, precizie, rezultate.
+        <p class="text-white/60 text-[16px] md:text-[20px] max-w-xl leading-relaxed mb-2" data-aos="fade-up" data-aos-delay="100">
+          Servicii integrate de proiectare (CFDP): drumuri, poduri, pasaje, pasarele, lucrări de sprijin și consolidări pentru toate fazele de proiectare.
+        </p>
+        <p class="text-white/80 text-[16px] md:text-[18px] max-w-xl leading-relaxed mb-10 font-medium" data-aos="fade-up" data-aos-delay="150">
+          Experiență, precizie, rezultate.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
@@ -188,10 +191,10 @@ const reasons = [
       <!-- Stats with counter animation -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
         {stats.map((stat, i) => (
-          <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-white/20 transition-all duration-500 cursor-default"
+          <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-3 md:p-6 text-center hover:bg-white/10 hover:border-white/20 transition-all duration-500 cursor-default"
             data-aos="fade-up" data-aos-delay={150 + i * 100}>
-            <span class="text-[24px] block mb-2">{stat.icon}</span>
-            <div class="text-[32px] md:text-[40px] font-heading font-extrabold text-white counter-glow">
+            <span class="text-[20px] md:text-[24px] block mb-1 md:mb-2">{stat.icon}</span>
+            <div class="text-[26px] md:text-[40px] font-heading font-extrabold text-white counter-glow">
               <span class="counter" data-target={stat.value} data-suffix={stat.suffix}>0{stat.suffix}</span>
             </div>
             <div class="text-white/40 text-[13px] font-medium mt-1 group-hover:text-white/60 transition-colors">{stat.label}</div>
