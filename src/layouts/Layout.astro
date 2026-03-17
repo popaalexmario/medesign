@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'MeDesign - Servicii profesionale de proiectare infrastructură: drumuri, rețele edilitare, studii de fezabilitate și asistență tehnică.' } = Astro.props;
+const { title, description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,7 +23,7 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-    <title>{title} | MeDesign</title>
+    <title>{title} | ME Design</title>
 
     <style is:global>
       *, *::before, *::after {
@@ -306,5 +306,8 @@ const { title, description = 'MeDesign - Servicii profesionale de proiectare inf
         easing: 'ease-out-cubic',
       });
     </script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "bdb3f1be23d14cee9307a78d57f3bf39"}'></script>
+  <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
