@@ -298,6 +298,127 @@ const reasons = [
     </div>
   </section>
 
+  <!-- HARTA ROMANIA -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <section class="section-padding bg-white" id="harta">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Prezență națională</span>
+        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3">
+          Proiecte în toată România
+        </h2>
+        <p class="text-steel-500 text-[16px] mt-4">
+          Am realizat proiecte de infrastructură în toate colțurile țării.
+        </p>
+      </div>
+      <div id="romania-map" class="w-full rounded-2xl overflow-hidden shadow-lg border border-steel-100" style="height: 480px;" data-aos="fade-up" data-aos-delay="100"></div>
+    </div>
+  </section>
+
+  <script is:inline>
+  (function() {
+    var projects = [
+      {
+        lat: 45.18, lng: 25.35,
+        title: 'Modernizare drumuri de interes local',
+        location: 'Comuna Aninoasa, Jud. Dâmbovița',
+        categories: ['Drumuri'], faza: 'DALI+DTAC+PTE', year: '2025'
+      },
+      {
+        lat: 45.03, lng: 24.97,
+        title: 'Infrastructură Verde – Albastră',
+        location: 'Comuna Bughea de Jos, Jud. Argeș',
+        categories: ['Consolidări', 'Pasarele'], faza: 'SF+DTAC+PTE', year: '2025'
+      },
+      {
+        lat: 44.32, lng: 23.80,
+        title: 'Închidere Inel de Trafic – Zona de Sud',
+        location: 'Municipiul Craiova, Jud. Dolj',
+        categories: ['Drumuri', 'Consolidări'], faza: 'DALI+DTAC+PTE', year: '2023–2025'
+      },
+      {
+        lat: 46.07, lng: 23.57,
+        title: 'Amenajare Sens Giratoriu',
+        location: 'Municipiul Alba Iulia, Jud. Alba',
+        categories: ['Drumuri'], faza: 'DALI', year: '2024'
+      },
+      {
+        lat: 47.62, lng: 23.50,
+        title: 'Construire Pasaj „Clubul Văcarilor"',
+        location: 'Județul Maramureș',
+        categories: ['Drumuri', 'Poduri'], faza: 'SF', year: '2023'
+      },
+    ];
+
+    function initMap() {
+      if (!window.L || !document.getElementById('romania-map')) return;
+
+      var map = L.map('romania-map', {
+        center: [45.9, 24.8],
+        zoom: 7,
+        zoomControl: true,
+        scrollWheelZoom: false,
+      });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 18,
+      }).addTo(map);
+
+      var pinSvg = function(color) {
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42">' +
+          '<path d="M16 0C9.373 0 4 5.373 4 12c0 9 12 28 12 28S28 21 28 12C28 5.373 22.627 0 16 0z" fill="' + color + '" stroke="#fff" stroke-width="2"/>' +
+          '<circle cx="16" cy="12" r="5" fill="#fff"/>' +
+          '</svg>';
+      };
+
+      projects.forEach(function(p) {
+        var icon = L.divIcon({
+          html: pinSvg('#1e3a5f'),
+          className: '',
+          iconSize: [32, 42],
+          iconAnchor: [16, 42],
+          popupAnchor: [0, -44],
+        });
+
+        var cats = p.categories.map(function(c) {
+          return '<span style="background:#1e3a5f15;color:#1e3a5f;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + c + '</span>';
+        }).join(' ');
+
+        var popup = '<div style="font-family:\'Plus Jakarta Sans\',sans-serif;min-width:200px;max-width:260px;">' +
+          '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;">' + cats +
+          '<span style="background:#d9770615;color:#d97706;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + p.faza + '</span>' +
+          '</div>' +
+          '<strong style="font-size:14px;color:#0a1628;line-height:1.3;display:block;">' + p.title + '</strong>' +
+          '<p style="font-size:12px;color:#64748b;margin-top:4px;">📍 ' + p.location + '</p>' +
+          '<p style="font-size:12px;color:#94a3b8;margin-top:2px;">📅 ' + p.year + '</p>' +
+          '</div>';
+
+        L.marker([p.lat, p.lng], { icon: icon })
+          .bindPopup(popup, { maxWidth: 280 })
+          .addTo(map);
+      });
+
+      // Pulse animation on markers
+      var style = document.createElement('style');
+      style.textContent = '.leaflet-div-icon { background: none !important; border: none !important; } ' +
+        '.leaflet-div-icon svg { filter: drop-shadow(0 4px 8px rgba(30,58,95,0.4)); transition: transform 0.2s; } ' +
+        '.leaflet-div-icon:hover svg { transform: scale(1.15); }';
+      document.head.appendChild(style);
+    }
+
+    // Load Leaflet JS then init
+    if (!window.L) {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.onload = initMap;
+      document.head.appendChild(script);
+    } else {
+      initMap();
+    }
+  })();
+  </script>
+
   <!-- CTA with animated gradient -->
   <section class="section-padding bg-steel-50">
     <div class="container">
