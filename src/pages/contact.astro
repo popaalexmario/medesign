@@ -15,12 +15,16 @@ const contactInfo = [
     title: 'Telefon',
     value: '+40 746 784 156',
     sub: 'Apel gratuit în rețea',
+    iconBg: 'bg-green-100',
+    iconColor: 'text-green-600',
   },
   {
     icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>`,
     title: 'Email',
     value: 'office@me-design.ro',
     sub: 'Răspundem în max. 24h',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
   },
 ];
 ---
@@ -105,7 +109,7 @@ const contactInfo = [
           <h2 class="font-heading font-bold text-[24px] text-brand-800 mb-8">Informații contact</h2>
           {contactInfo.map((item) => (
             <div class="glass-card rounded-2xl p-6 flex gap-4">
-              <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 shrink-0" set:html={item.icon} />
+              <div class={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${item.iconBg ?? 'bg-brand-500/10'} ${item.iconColor ?? 'text-brand-500'}`} set:html={item.icon} />
               <div>
                 <h3 class="font-heading font-semibold text-[15px] text-brand-800">{item.title}</h3>
                 <p class="text-steel-700 text-[15px] font-medium mt-0.5">{item.value}</p>
