@@ -322,31 +322,36 @@ const reasons = [
         lat: 45.18, lng: 25.35,
         title: 'Modernizare drumuri de interes local',
         location: 'Comuna Aninoasa, Jud. Dâmbovița',
-        categories: ['Drumuri'], faza: 'DALI+DTAC+PTE', year: '2025'
+        categories: ['Drumuri'], faza: 'DALI+DTAC+PTE', year: '2025',
+        slug: 'aninoasa-dambovita'
       },
       {
         lat: 45.03, lng: 24.97,
         title: 'Infrastructură Verde – Albastră',
         location: 'Comuna Bughea de Jos, Jud. Argeș',
-        categories: ['Consolidări', 'Pasarele'], faza: 'SF+DTAC+PTE', year: '2025'
+        categories: ['Consolidări', 'Pasarele'], faza: 'SF+DTAC+PTE', year: '2025',
+        slug: 'bughea-de-jos-arges'
       },
       {
         lat: 44.32, lng: 23.80,
         title: 'Închidere Inel de Trafic – Zona de Sud',
         location: 'Municipiul Craiova, Jud. Dolj',
-        categories: ['Drumuri', 'Consolidări'], faza: 'DALI+DTAC+PTE', year: '2023–2025'
+        categories: ['Drumuri', 'Consolidări'], faza: 'DALI+DTAC+PTE', year: '2023–2025',
+        slug: 'craiova-dolj'
       },
       {
         lat: 46.07, lng: 23.57,
         title: 'Amenajare Sens Giratoriu',
         location: 'Municipiul Alba Iulia, Jud. Alba',
-        categories: ['Drumuri'], faza: 'DALI', year: '2024'
+        categories: ['Drumuri'], faza: 'DALI', year: '2024',
+        slug: 'alba-iulia'
       },
       {
         lat: 47.62, lng: 23.50,
         title: 'Construire Pasaj „Clubul Văcarilor"',
         location: 'Județul Maramureș',
-        categories: ['Drumuri', 'Poduri'], faza: 'SF', year: '2023'
+        categories: ['Drumuri', 'Poduri'], faza: 'SF', year: '2023',
+        slug: 'pasaj-vacari-maramures'
       },
     ];
 
@@ -392,6 +397,7 @@ const reasons = [
           '<strong style="font-size:14px;color:#0a1628;line-height:1.3;display:block;">' + p.title + '</strong>' +
           '<p style="font-size:12px;color:#64748b;margin-top:4px;">📍 ' + p.location + '</p>' +
           '<p style="font-size:12px;color:#94a3b8;margin-top:2px;">📅 ' + p.year + '</p>' +
+          '<a href="/portofoliu#' + p.slug + '" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#1e3a5f;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
           '</div>';
 
         L.marker([p.lat, p.lng], { icon: icon })

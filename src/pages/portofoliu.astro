@@ -6,6 +6,7 @@ import Lightbox from '../components/Lightbox.astro';
 
 const projects = [
   {
+    slug: 'aninoasa-dambovita',
     title: 'Modernizare drumuri de interes local în Comuna Aninoasa, Județul Dâmbovița',
     categories: ['Drumuri'],
     faza: 'DALI+DTAC+PTE',
@@ -14,6 +15,7 @@ const projects = [
     desc: 'Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km. Proiectul contribuie la integrarea regiunii în rețeaua europeană de infrastructură, creând premise pentru noi oportunități economice și legături eficiente între centrul urban și zonele periferice.',
   },
   {
+    slug: 'bughea-de-jos-arges',
     title: 'Realizare Infrastructură Verde – Albastră în Comuna Bughea de Jos, Județul Argeș',
     categories: ['Consolidări', 'Pasarele'],
     faza: 'SF+DTAC+PTE',
@@ -22,6 +24,7 @@ const projects = [
     desc: 'Se amenajează albia pârâului Valea Mare pe o lungime de aproximativ 670m, albia pârâului Valea Brezoiului pe o lungime de aproximativ 722m, albia pârâului Valea Caselor pe o lungime de aproximativ 1.250m și albia pârâului Valea Ciocanului pe o lungime de aproximativ 270m.',
   },
   {
+    slug: 'craiova-dolj',
     title: 'Închidere Inel de Trafic Zona de Sud a Municipiului Craiova – Casetare Canal Deschis, Modernizare Str. Râului cu Străpungere DN56 – DN55 Joncțiune cu Aleea 2 Bechet',
     categories: ['Drumuri', 'Consolidări'],
     faza: 'DALI+DTAC+PTE',
@@ -30,6 +33,7 @@ const projects = [
     desc: 'Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere și 2 sensuri de circulație. Casetarea canalului deschis Craiovița (Râului) pe o lungime de 1.800 ml prin montarea a două șiruri paralele de casete de beton armat prefabricate (5,00 m × 2,50 m). Proiectul include 3 sensuri giratorii, piste de biciclete și spații pietonale.',
   },
   {
+    slug: 'alba-iulia',
     title: 'Amenajare Sens Giratoriu la Intersecția Străzilor Regiment V Vânători, B-dul. Ferdinand I și DN CALB',
     categories: ['Drumuri'],
     faza: 'DALI',
@@ -38,6 +42,7 @@ const projects = [
     desc: 'Amenajare sens giratoriu pe drum național cu 2 benzi de circulație de 5,50 m.',
   },
   {
+    slug: 'pasaj-vacari-maramures',
     title: 'Construire Pasaj „Clubul Văcarilor" (Baia Mare – Recea) DN1C – DN VO BM E58',
     categories: ['Drumuri', 'Poduri'],
     faza: 'SF',
@@ -97,6 +102,7 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
         {projects.map((project, i) => (
           <div
+            id={project.slug}
             class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card"
             data-aos="fade-up"
             data-aos-delay={i * 60}
@@ -173,6 +179,21 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
       searchQuery = searchInput.value.toLowerCase().trim();
       applyFilters();
     });
+
+    // Scroll to & highlight project from map anchor
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          target.style.outline = '3px solid #d97706';
+          target.style.outlineOffset = '4px';
+          target.style.borderRadius = '1rem';
+          setTimeout(() => { target.style.outline = ''; target.style.outlineOffset = ''; }, 2500);
+        }, 400);
+      }
+    }
   </script>
 
   <Lightbox />
