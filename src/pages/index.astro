@@ -240,19 +240,19 @@ const reasons = [
   </section>
 
   <!-- PROCES with animated timeline -->
-  <section class="section-padding bg-white relative overflow-hidden">
+  <section class="section-padding bg-brand-900 text-white relative overflow-hidden">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-8">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Cum lucrăm</span>
-        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3" data-aos="fade-up" data-aos-delay="50">
+        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Cum lucrăm</span>
+        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
           Proces transparent, rezultate predictibile
         </h2>
       </div>
 
       <!-- Timeline desktop -->
       <div class="hidden md:block relative mb-8">
-        <div class="absolute top-12 left-[12%] right-[12%] h-0.5 bg-steel-100 rounded-full overflow-hidden">
-          <div class="h-full bg-gradient-to-r from-accent-500 via-brand-500 to-accent-500 rounded-full timeline-progress" style="width: 0%"></div>
+        <div class="absolute top-12 left-[12%] right-[12%] h-0.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full bg-gradient-to-r from-accent-500 via-white/40 to-accent-500 rounded-full timeline-progress" style="width: 0%"></div>
         </div>
       </div>
 
@@ -260,37 +260,12 @@ const reasons = [
         {process.map((item, i) => (
           <div class="relative process-step" data-aos="fade-up" data-aos-delay={i * 150}>
             <div class="text-center md:text-left">
-              <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-500/10 to-accent-500/10 border border-brand-500/10 mb-5 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+              <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/5 border border-white/10 mb-5 mx-auto md:mx-0">
                 <span class="text-[28px]">{item.icon}</span>
                 <span class="absolute -top-2 -right-2 w-7 h-7 rounded-lg bg-accent-500 text-white text-[11px] font-bold flex items-center justify-center shadow-lg shadow-accent-500/30">{item.step}</span>
               </div>
-              <h3 class="font-heading font-bold text-[18px] text-brand-800">{item.title}</h3>
-              <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- DE CE NOI with hover animations -->
-  <section class="section-padding bg-brand-900 text-white relative overflow-hidden">
-    <div class="container relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-8">
-        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">De ce noi</span>
-        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
-          Partenerul potrivit pentru proiectul tău
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {reasons.map((item, i) => (
-          <div class="group bg-white/5 border border-white/10 rounded-2xl p-4 hover:bg-white/10 hover:border-accent-500/30 transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay={i * 100}>
-            <span class="text-[36px] block group-hover:scale-125 transition-transform duration-300">{item.icon}</span>
-            <h3 class="font-heading font-bold text-[17px] text-white mt-4">{item.title}</h3>
-            <p class="text-white/50 text-[14px] mt-3 leading-relaxed group-hover:text-white/70 transition-colors">{item.desc}</p>
-            <div class="mt-4 h-0.5 bg-white/5 rounded-full overflow-hidden">
-              <div class="h-full w-0 group-hover:w-full bg-gradient-to-r from-accent-500 to-brand-300 transition-all duration-700 rounded-full"></div>
+              <h3 class="font-heading font-bold text-[18px] text-white">{item.title}</h3>
+              <p class="text-white/50 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
             </div>
           </div>
         ))}
