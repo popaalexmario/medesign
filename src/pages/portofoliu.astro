@@ -7,7 +7,7 @@ import Lightbox from '../components/Lightbox.astro';
 const projects = [
   {
     title: 'Modernizare drumuri de interes local în Comuna Aninoasa, Județul Dâmbovița',
-    category: 'Drumuri',
+    categories: ['Drumuri'],
     faza: 'DALI+DTAC+PTE',
     location: 'U.A.T. Comuna Aninoasa, Județul Dâmbovița',
     year: '2025',
@@ -15,14 +15,14 @@ const projects = [
   },
   {
     title: 'Realizare Infrastructură Verde – Albastră în Comuna Bughea de Jos, Județul Argeș',
-    category: 'Consolidări',
+    categories: ['Consolidări', 'Pasarele'],
     location: 'U.A.T. Comuna Bughea de Jos, Județul Argeș',
     year: '2025',
     desc: 'Se amenajează albia pârâului Valea Mare pe o lungime de aproximativ 670m, albia pârâului Valea Brezoiului pe o lungime de aproximativ 722m, albia pârâului Valea Caselor pe o lungime de aproximativ 1.250m și albia pârâului Valea Ciocanului pe o lungime de aproximativ 270m.',
   },
   {
     title: 'Închidere Inel de Trafic Zona de Sud a Municipiului Craiova – Casetare Canal Deschis, Modernizare Str. Râului cu Străpungere DN56 – DN55 Joncțiune cu Aleea 2 Bechet',
-    category: 'Drumuri',
+    categories: ['Drumuri', 'Consolidări'],
     faza: 'DALI+DTAC+PTE',
     location: 'U.A.T. Municipiul Craiova, Județul Dolj',
     year: '2023 – 2025',
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: 'Amenajare Sens Giratoriu la Intersecția Străzilor Regiment V Vânători, B-dul. Ferdinand I și DN CALB',
-    category: 'Drumuri',
+    categories: ['Drumuri'],
     faza: 'DALI',
     location: 'Municipiul Alba Iulia, Județul Alba',
     year: '2024',
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: 'Construire Pasaj „Clubul Văcarilor" (Baia Mare – Recea) DN1C – DN VO BM E58',
-    category: 'Poduri',
+    categories: ['Drumuri', 'Poduri'],
     faza: 'SF',
     location: 'U.A.T. Județul Maramureș prin Consiliul Județean Maramureș',
     year: '2023',
@@ -46,7 +46,9 @@ const projects = [
   },
 ];
 
-const categories = ['Toate', ...new Set(projects.map(p => p.category))];
+const categoryOrder = ['Drumuri', 'Consolidări', 'Poduri', 'Pasarele'];
+const allCats = [...new Set(projects.flatMap(p => p.categories))];
+const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
 ---
 
 <Layout title="Portofoliu" description="Portofoliul ME Design - proiecte de infrastructură finalizate cu succes în toată România.">
@@ -84,7 +86,9 @@ const categories = ['Toate', ...new Set(projects.map(p => p.category))];
             </div>
             <div class="p-6">
               <div class="flex items-center flex-wrap gap-2 mb-3">
-                <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-[12px] font-semibold">{project.category}</span>
+                {project.categories.map((cat) => (
+                  <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-[12px] font-semibold">{cat}</span>
+                ))}
                 {project.faza && <span class="px-3 py-1 rounded-full bg-accent-500/10 text-accent-600 text-[12px] font-semibold">Faza: {project.faza}</span>}
                 <span class="text-steel-400 text-[12px]">{project.year}</span>
               </div>
