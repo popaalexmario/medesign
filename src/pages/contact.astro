@@ -54,7 +54,7 @@ import Footer from '../components/Footer.astro';
         </a>
 
         <!-- Email -->
-        <a href="mailto:office@me-design.ro" class="glass-card rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-all group block">
+        <a href={`mailto:office@me-design.ro?subject=${encodeURIComponent('Solicitare servicii proiectare – ME Design')}&body=${encodeURIComponent('Bună ziua,\n\nMă numesc: \nReprezint compania / instituția: \nFuncția mea: \nNr. de telefon de contact: \n\n---\n\nTip proiect dorit (drumuri / poduri / consolidări / altele): \nLocalizare proiect (județ / localitate): \nFaza de proiectare solicitată (SF / DALI / DTAC / PTE / altele): \nTermen estimat de finalizare dorit: \n\nDescriere scurtă a proiectului:\n\n\n---\n\nCu stimă,\n')}`} class="glass-card rounded-2xl p-6 flex gap-4 hover:shadow-lg transition-all group block">
           <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background-color:#dbeafe; color:#2563eb;">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
