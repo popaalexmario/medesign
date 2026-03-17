@@ -69,17 +69,40 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
 
   <section class="py-8 md:py-12 bg-white">
     <div class="container">
-      <div class="flex flex-wrap gap-3 mb-12" data-aos="fade-up">
-        {categories.map((cat) => (
-          <button class="px-5 py-2 rounded-full text-[14px] font-medium bg-steel-100 text-steel-600 hover:bg-brand-500 hover:text-white transition-all">
-            {cat}
-          </button>
-        ))}
+      <!-- Search + Filters -->
+      <div class="flex flex-col gap-4 mb-10" data-aos="fade-up">
+        <div class="relative max-w-md">
+          <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-steel-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+          </svg>
+          <input
+            id="project-search"
+            type="text"
+            placeholder="Caută proiect, locație..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-full border border-steel-200 text-[14px] text-brand-800 placeholder-steel-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+          />
+        </div>
+        <div class="flex flex-wrap gap-3" id="filter-buttons">
+          {categories.map((cat, i) => (
+            <button
+              class={`filter-btn px-5 py-2 rounded-full text-[14px] font-medium transition-all ${i === 0 ? 'bg-brand-500 text-white' : 'bg-steel-100 text-steel-600 hover:bg-brand-500 hover:text-white'}`}
+              data-cat={cat}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
         {projects.map((project, i) => (
-          <div class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay={i * 60}>
+          <div
+            class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card"
+            data-aos="fade-up"
+            data-aos-delay={i * 60}
+            data-categories={project.categories.join(',')}
+            data-search={`${project.title} ${project.location} ${project.desc}`.toLowerCase()}
+          >
             <div class="bg-steel-100 aspect-[16/10] flex items-center justify-center">
               <svg class="w-12 h-12 text-steel-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -105,8 +128,52 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
           </div>
         ))}
       </div>
+
+      <p id="no-results" class="hidden text-center text-steel-400 text-[15px] py-16">Niciun proiect găsit. Încearcă alt termen de căutare.</p>
     </div>
   </section>
+
+  <script>
+    const searchInput = document.getElementById('project-search') as HTMLInputElement;
+    const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const cards = document.querySelectorAll<HTMLElement>('.project-card');
+    const noResults = document.getElementById('no-results')!;
+
+    let activeCategory = 'Toate';
+    let searchQuery = '';
+
+    function applyFilters() {
+      let visible = 0;
+      cards.forEach(card => {
+        const cats = card.dataset.categories ?? '';
+        const searchText = card.dataset.search ?? '';
+        const catMatch = activeCategory === 'Toate' || cats.split(',').includes(activeCategory);
+        const searchMatch = searchQuery === '' || searchText.includes(searchQuery);
+        const show = catMatch && searchMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      noResults.classList.toggle('hidden', visible > 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.cat ?? 'Toate';
+        filterBtns.forEach(b => {
+          b.classList.toggle('bg-brand-500', b === btn);
+          b.classList.toggle('text-white', b === btn);
+          b.classList.toggle('bg-steel-100', b !== btn);
+          b.classList.toggle('text-steel-600', b !== btn);
+        });
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.toLowerCase().trim();
+      applyFilters();
+    });
+  </script>
 
   <Lightbox />
   <Footer />
