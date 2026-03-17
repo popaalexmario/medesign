@@ -45,7 +45,7 @@ const contactInfo = [
       <div class="grid lg:grid-cols-5 gap-12">
         <div class="lg:col-span-3" data-aos="fade-right">
           <h2 class="font-heading font-bold text-[24px] text-brand-800 mb-8">Trimite-ne un mesaj</h2>
-          <form class="space-y-6" action="#" method="POST">
+          <form class="space-y-6" id="contact-form">
             <div class="grid md:grid-cols-2 gap-6">
               <div>
                 <label for="name" class="block text-[14px] font-medium text-steel-700 mb-2">Nume complet *</label>
@@ -129,4 +129,29 @@ const contactInfo = [
   </section>
 
   <Footer />
+
+  <script>
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = e.target as HTMLFormElement;
+      const name = (f.querySelector('#name') as HTMLInputElement).value;
+      const company = (f.querySelector('#company') as HTMLInputElement).value;
+      const email = (f.querySelector('#email') as HTMLInputElement).value;
+      const phone = (f.querySelector('#phone') as HTMLInputElement).value;
+      const service = (f.querySelector('#service') as HTMLSelectElement).value;
+      const message = (f.querySelector('#message') as HTMLTextAreaElement).value;
+
+      const subject = encodeURIComponent('Solicitare proiect – ME Design');
+      const body = encodeURIComponent(
+        `Nume: ${name}\n` +
+        (company ? `Companie/Instituție: ${company}\n` : '') +
+        `Email: ${email}\n` +
+        (phone ? `Telefon: ${phone}\n` : '') +
+        (service ? `Serviciu dorit: ${service}\n` : '') +
+        `\nDescriere proiect:\n${message}`
+      );
+
+      window.location.href = `mailto:office@me-design.ro?subject=${subject}&body=${body}`;
+    });
+  </script>
 </Layout>
