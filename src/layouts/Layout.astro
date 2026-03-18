@@ -4,9 +4,18 @@ import CookieConsent from '../components/CookieConsent.astro';
 interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.' } = Astro.props;
+const {
+  title,
+  description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.',
+  image = '/img/og-default.jpg',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, 'https://me-design.ro');
+const ogImage = new URL(image, 'https://me-design.ro');
+const fullTitle = `${title} | ME Design`;
 ---
 
 <!doctype html>
@@ -17,6 +26,24 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:site_name" content="ME Design" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -24,7 +51,7 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-    <title>{title} | ME Design</title>
+    <title>{fullTitle}</title>
 
     <style is:global>
       *, *::before, *::after {
@@ -293,6 +320,82 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
         100% { opacity: 1; transform: translateY(0) scaleY(1); }
       }
     </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://me-design.ro/#organization",
+          "name": "Mario Engineering Design SRL",
+          "alternateName": "ME Design",
+          "url": "https://me-design.ro",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://me-design.ro/img/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+40746784156",
+            "contactType": "customer service",
+            "email": "office@me-design.ro",
+            "availableLanguage": "Romanian"
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://me-design.ro/#localbusiness",
+          "name": "Mario Engineering Design SRL",
+          "description": "Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări în România.",
+          "url": "https://me-design.ro",
+          "telephone": "+40746784156",
+          "email": "office@me-design.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RO",
+            "addressRegion": "România"
+          },
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicii proiectare infrastructură",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Proiectare Drumuri",
+                  "description": "Proiectare drumuri municipale, județene, naționale, intersecții, sensuri giratorii, parcări și piste de biciclete.",
+                  "url": "https://me-design.ro/servicii/proiectare-drumuri"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Proiectare Poduri, Pasaje, Pasarele",
+                  "description": "Proiectare poduri rutiere și pietonale, pasaje, pasarele pentru pietoni și bicicliști, podețe.",
+                  "url": "https://me-design.ro/servicii/proiectare-poduri-pasaje"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Lucrări de Sprijin și Consolidări",
+                  "description": "Proiectare ziduri de sprijin, consolidare versanți, stabilizare teren, gabioane, ancore.",
+                  "url": "https://me-design.ro/servicii/lucrari-consolidare"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Microsoft Clarity -->
     <script type="text/javascript" is:inline>
