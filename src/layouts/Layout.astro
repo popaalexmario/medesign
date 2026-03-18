@@ -25,6 +25,15 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
 
     <title>{title} | ME Design</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZYECGEV54N');
+    </script>
+
     <style is:global>
       *, *::before, *::after {
         margin: 0;
