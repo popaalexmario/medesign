@@ -170,8 +170,17 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
             id="project-search"
             type="text"
             placeholder="Caută proiect, locație..."
-            class="w-full pl-10 pr-4 py-2.5 rounded-full border border-steel-200 text-[14px] text-brand-800 placeholder-steel-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+            class="w-full pl-10 pr-10 py-2.5 rounded-full border border-steel-200 text-[14px] text-brand-800 placeholder-steel-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
           />
+          <button
+            id="search-clear"
+            class="absolute right-3.5 top-1/2 -translate-y-1/2 w-5 h-5 hidden items-center justify-center text-steel-400 hover:text-steel-600 transition-colors"
+            aria-label="Șterge căutarea"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
         <div class="flex flex-wrap gap-3" id="filter-buttons">
           {categories.map((cat, i) => (
@@ -264,9 +273,22 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
       });
     });
 
+    const clearBtn = document.getElementById('search-clear') as HTMLButtonElement;
+
     searchInput.addEventListener('input', () => {
       searchQuery = searchInput.value.toLowerCase().trim();
+      clearBtn.classList.toggle('hidden', searchInput.value === '');
+      clearBtn.classList.toggle('flex', searchInput.value !== '');
       applyFilters();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.classList.add('hidden');
+      clearBtn.classList.remove('flex');
+      applyFilters();
+      searchInput.focus();
     });
 
     // Scroll to & highlight project from map anchor
