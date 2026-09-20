@@ -354,5 +354,17 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
   </script>
 
   <Lightbox />
+
+  <!-- Next page navigation -->
+  <section class="py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Continuă să explorezi</p>
+      <a href="/contact" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all group">
+        Contactează-ne
+        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
