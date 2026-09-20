@@ -328,6 +328,30 @@ const fullTitle = `${title} | ME Design`;
         0% { opacity: 0; transform: translateY(8px) scaleY(0.8); }
         100% { opacity: 1; transform: translateY(0) scaleY(1); }
       }
+
+      /* Next-page navigation bar */
+      @keyframes navSlideUp {
+        from { opacity: 0; transform: translateY(32px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes arrowBounce {
+        0%, 100% { transform: translateX(0); }
+        50%       { transform: translateX(6px); }
+      }
+
+      .next-nav {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+
+      .next-nav.is-visible {
+        animation: navSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      .next-nav-arrow {
+        animation: arrowBounce 1.1s ease-in-out infinite;
+      }
     </style>
 
     <!-- Schema.org JSON-LD -->
@@ -438,6 +462,19 @@ const fullTitle = `${title} | ME Design`;
         offset: 50,
         easing: 'ease-out-cubic',
       });
+    </script>
+    <script is:inline>
+      (function() {
+        var nav = document.querySelector('.next-nav');
+        if (!nav) return;
+        var observer = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            entries[0].target.classList.add('is-visible');
+            observer.disconnect();
+          }
+        }, { threshold: 0.3 });
+        observer.observe(nav);
+      })();
     </script>
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "bdb3f1be23d14cee9307a78d57f3bf39"}'></script>
