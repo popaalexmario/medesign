@@ -6,7 +6,7 @@ faza: "DE"
 location: "Comuna Gurasada, Județul Hunedoara"
 judet: "Hunedoara"
 beneficiar: "C.N.C.F. \"CFR\" S.A."
-beneficiarPrin: "prin uzinatorul structurii metalice"
+beneficiarPrin: "prin uzinatorul Marian Stanciu Internațional"
 region: "transilvania"
 year: "2020"
 image: "/img/projects/Gurasada.png"
@@ -20,7 +20,7 @@ Detalii de uzinare și execuție pentru pasajul auto GZCJ auto, deschidere de 70
 
 Pasajul superior de la km CF 506+217.83, corespunzând km local DN7 0+623.27, face parte din **Tronsonul 3: Gurasada–Simeria**, componentă a reabilitării liniei de cale ferată Frontieră–Curtici–Simeria, parte din **Coridorul IV Pan-European**.
 
-Beneficiarul final al lucrării este **Compania Națională de Căi Ferate „CFR" S.A.**, iar lucrările pe tronson sunt executate de asocierea **FCC Construcción S.A. – Astaldi – Contratas y Ventas**. Documentația a fost elaborată pentru uzinatorul structurii metalice, în lanțul de execuție al proiectului.
+Beneficiarul final al lucrării este **Compania Națională de Căi Ferate „CFR" S.A.**, iar lucrările pe tronson sunt executate de asocierea **FCC Construcción S.A. – Astaldi – Contratas y Ventas**. Documentația a fost elaborată pentru **Marian Stanciu Internațional**, uzinatorul structurii metalice, în lanțul de execuție al proiectului.
 
 ## Specificul pasajelor peste calea ferată
 
