@@ -49,3 +49,21 @@ Zona de intersecție dintre DN1C și varianta ocolitoare a municipiului Baia Mar
 ## Îmbunătățiri în amplasament
 
 Soluția studiată introduce denivelarea prin pasaj rutier pe DN1C și amenajarea bretelelor care asigură toate relațiile de circulație între cele două artere. Intersecția la nivel, cu capacitate limitată de fazele de așteptare, este înlocuită cu o configurație în care fluxul principal nu se mai oprește.
+
+## Stadiul proiectului
+
+Studiul de fezabilitate pe care l-am elaborat a stat la baza unui obiectiv care a fost realizat și dat în circulație.
+
+Potrivit comunicatului oficial de finalizare, publicat de Municipiul Baia Mare, investiția a fost implementată de **C.N.A.I.R. S.A. în parteneriat cu U.A.T. Județul Maramureș și U.A.T. Municipiul Baia Mare**, prin **PNRR — Componenta 4, Transport sustenabil**, în baza contractului de finanțare nr. 58 din 28.08.2024 încheiat cu Ministerul Transporturilor și Infrastructurii.
+
+Datele obiectivului finalizat:
+
+- **Pasaj rutier de 122 m** pe DN1C (E58), la intersecția cu Varianta de Ocolire Baia Mare
+- **Lungime totală 443,6 m**, cu două rampe de acces de 160,80 m
+- **Sens giratoriu amenajat sub pasaj**, la intersecția DN1C cu varianta de ocolire
+- **8 bretele de circulație** pentru distribuirea fluxurilor
+- Infrastructură conexă: iluminat public, trotuare, lucrări de siguranță rutieră și sistem de control și monitorizare a traficului
+- **Valoarea totală a investiției: 99.463.913,34 lei**, din care 80.365.323,99 lei fonduri europene prin PNRR
+- **Recepționat și dat în circulație la 17.07.2026**
+
+Sursa datelor: [comunicatul de presă de finalizare, Primăria Baia Mare](https://www.baiamare.ro/Baiamare/Proiecte%20noi/PNRR/Pasaj%20Clubul%20Vacarilor/Comunicat_de_presa_finalizare_proiect_Pasaj_ClubulVacarilor.pdf).
