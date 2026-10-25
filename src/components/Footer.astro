@@ -1,11 +1,9 @@
 ---
 const currentYear = new Date().getFullYear();
 
-const services = [
-  { label: 'Proiectare drumuri și platforme', href: '/servicii/proiectare-drumuri' },
-  { label: 'Proiectare poduri, pasaje, pasarele', href: '/servicii/proiectare-poduri-pasaje' },
-  { label: 'Lucrări de sprijin și consolidări', href: '/servicii/lucrari-consolidare' },
-];
+import { serviceLinks } from '../data/services';
+
+const services = serviceLinks.map((s) => ({ label: s.title, href: `/servicii/${s.slug}` }));
 
 const links = [
   { label: 'Despre noi', href: '/despre' },
