@@ -15,4 +15,24 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const projects = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    categories: z.array(z.string()).min(1),
+    faza: z.string(),
+    location: z.string(),
+    judet: z.string(),
+    region: z.enum(['muntenia', 'oltenia', 'dobrogea', 'transilvania', 'moldova']),
+    year: z.string(),
+    image: z.string().optional(),
+    gallery: z
+      .array(z.union([z.string(), z.object({ src: z.string(), caption: z.string().optional() })]))
+      .default([]),
+    order: z.number().default(999),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { blog, projects };

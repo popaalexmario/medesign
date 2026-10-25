@@ -4,185 +4,12 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
 
-const projects = [
-  // 2026
-  {
-    slug: 'pod-gogosu-ostrovul-mare',
-    title: 'Lucrări de Reparații Pod Suspendat peste Brațul Gogoșu — Dunăre',
-    categories: ['Poduri'],
-    faza: 'DALI',
-    location: 'Ostrovul Mare',
-    year: '2026',
-    desc: 'Documentații de avizare a lucrărilor de intervenție la obiectivele Hidroelectrica SA-SH Porțile de Fier. Lucrări de reparații pod suspendat peste brațul Gogoșu + Expertiză tehnică.',
-    image: '/img/projects/pod%20gogosu.jpg',
-  },
-  // 2025
-  {
-    slug: 'parc-persinari-dambovita',
-    title: 'Amenajare Parc în Comuna Perșinari, Județul Dâmbovița',
-    categories: ['Parc'],
-    faza: 'SF+PTE',
-    location: 'U.A.T. Comuna Perșinari, Județul Dâmbovița',
-    year: '2025',
-    desc: 'Proiectul propus se află în intravilan, terenul având o suprafață de 5.200 mp, aparținând domeniului public al UAT Comuna Perșinari.',
-    image: '/img/projects/parc%20persinari.png',
-  },
-  {
-    slug: 'dn7-versanti-valcea',
-    title: 'Protecție Versanți DN 7 km 198+200 – 207+000, km 216+000 – 219+000, km 224+000 – 227+300 și km 228+000 – 233+200, Județul Vâlcea',
-    categories: ['Drumuri', 'Consolidări'],
-    faza: 'PTE+AT',
-    location: 'DN 7 Lotrișor, Județul Vâlcea',
-    year: '2025–2026',
-    desc: 'Sectoarele de drum analizate fac parte din DN7 București – Titu – Târgoviște – Pitești – Arad și prezintă zone care pun în pericol siguranța circulației, datorită materialului desprins din versanți ce generează accidente soldate cu pagube materiale și vătămări corporale grave.',
-    image: '/img/projects/dn7.webp',
-  },
-  {
-    slug: 'aninoasa-dambovita',
-    title: 'Modernizare drumuri de interes local în Comuna Aninoasa, Județul Dâmbovița',
-    categories: ['Drumuri'],
-    faza: 'DALI+DTAC+PTE',
-    location: 'U.A.T. Comuna Aninoasa, Județul Dâmbovița',
-    year: '2025',
-    desc: 'Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km.',
-    image: '/img/projects/ANINOASA.jpg',
-  },
-  {
-    slug: 'bughea-de-jos-arges',
-    title: 'Realizare Infrastructură Verde – Albastră în Comuna Bughea de Jos, Județul Argeș',
-    categories: ['Consolidări', 'Pasarele', 'Amenajări Hidrotehnice', 'Parc'],
-    faza: 'SF+DTAC+PTE',
-    location: 'U.A.T. Comuna Bughea de Jos, Județul Argeș',
-    year: '2025',
-    desc: 'Proiectare amenajare maluri cu ziduri de sprijin, trotuare si pasarele pentru continuitate circulatie.',
-    image: '/img/projects/BUGHEA.png',
-  },
-  {
-    slug: 'craiova-dolj',
-    title: 'Închidere Inel de Trafic Zona de Sud a Municipiului Craiova – Casetare Canal Deschis, Modernizare Str. Râului cu Străpungere DN56 – DN55 Joncțiune cu Aleea 2 Bechet',
-    categories: ['Drumuri', 'Consolidări'],
-    faza: 'DALI+DTAC+PTE',
-    location: 'U.A.T. Municipiul Craiova, Județul Dolj',
-    year: '2023 – 2025',
-    desc: 'Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere. Casetarea canalului deschis Craiovița (Râului) pe o lungime de 1.800 ml. Proiectul include 3 sensuri giratorii, piste de biciclete și spații pietonale.',
-    image: '/img/projects/CRAIOVA.png',
-  },
-  // 2024
-  {
-    slug: 'terminal-auto-port-constanta',
-    title: 'Extindere și Modernizare Terminal Auto Dana PL6 din Portul de Lucru Municipiul Constanța',
-    categories: ['Drumuri'],
-    faza: 'DTAC+PTE',
-    location: 'Portul Constanța',
-    year: '2024',
-    desc: 'Proiectare platformă parcaje autoturisme.',
-    image: '/img/projects/PORT%20CONSTANTA.png',
-  },
-  {
-    slug: 'alba-iulia',
-    title: 'Amenajare Sens Giratoriu la Intersecția Străzilor Regiment V Vânători, B-dul. Ferdinand I și DN CALB',
-    categories: ['Drumuri'],
-    faza: 'DALI',
-    location: 'Municipiul Alba Iulia, Județul Alba',
-    year: '2024',
-    desc: 'Amenajare sens giratoriu pe drum național cu 2 benzi de circulație de 5,50 m.',
-    image: '/img/projects/GIRATIE%20ALBA.png',
-  },
-  // 2023
-  {
-    slug: 'dj101s-prahova',
-    title: 'Modernizare și Reabilitare DJ 101S în Județul Prahova',
-    categories: ['Drumuri', 'Poduri', 'Consolidări'],
-    faza: 'DALI',
-    location: 'U.A.T. Consiliul Județean Prahova',
-    year: '2023',
-    desc: 'Proiectare 12,15 km drum județean cu două poduri și consolidări terasament.',
-    image: '/img/projects/DJ101S%20NOU.png',
-  },
-  {
-    slug: 'pasaj-vacari-maramures',
-    title: 'Construire Pasaj „Clubul Văcarilor" (Baia Mare – Recea) DN1C – DN VO BM E58',
-    categories: ['Drumuri', 'Poduri'],
-    faza: 'SF',
-    location: 'U.A.T. Județul Maramureș prin Consiliul Județean Maramureș',
-    year: '2023',
-    desc: 'Amenajare intersectie DN1C cu DN VO BM si pasaj rutier pe DN1C impreuna cu bretele.',
-    image: '/img/projects/PASAJ%20MARAMURES.jpg',
-  },
-  {
-    slug: 'pod-fier-lugoj-timis',
-    title: 'Reabilitare Pod de Fier peste Râul Timiș în Municipiul Lugoj, Județul Timiș',
-    categories: ['Poduri', 'Monument Istoric'],
-    faza: 'DALI+DTAC+PTE',
-    location: 'U.A.T. Municipiul Lugoj, Județul Timiș',
-    year: '2022 – 2023',
-    desc: 'Proiectare reabilitarea podului rutier GZCJ parabolica de 64,00 m, din anul 1902.',
-    image: '/img/projects/POD%20LUGOJ.jpg',
-  },
-  // 2022
-  {
-    slug: 'pod-gladiolelor-sibiu',
-    title: 'Reparație Capitală Pod Strada Gladiolelor (Maria Tereza), Municipiul Sibiu',
-    categories: ['Poduri', 'Monument Istoric'],
-    faza: 'DTAC+PTE',
-    location: 'Municipiul Sibiu',
-    year: '2022',
-    desc: 'Obiectivul studiat este situat în intravilanul municipiului Sibiu, în zona cartierului Terezian, la capătul străzii Gladiolelor, între str. Cibinului și str. Râului.',
-    image: '/img/projects/pod%20gladiolelor.png',
-  },
-  {
-    slug: 'port-turistic-fetesti',
-    title: 'Amenajare Port Turistic în Municipiul Fetești',
-    categories: ['Drumuri', 'Amenajări Hidrotehnice'],
-    faza: 'SF',
-    location: 'Municipiul Fetești, Județul Ialomița',
-    year: '2022',
-    desc: 'Proiectare circulatii, parcaje si platforma portuara pe bratul Borcea, Dunare.',
-    image: '/img/projects/PORT.png',
-  },
-  // 2021
-  {
-    slug: 'cozieni-buzau',
-    title: 'Modernizarea Drumurilor Locale în Comuna Cozieni, Județul Buzău',
-    categories: ['Drumuri'],
-    faza: 'DALI',
-    location: 'Comuna Cozieni, Județul Buzău',
-    year: '2021',
-    desc: 'Proiectare 13 drumuri locale si comunale care insumeaza 10,35 km.',
-    image: '/img/projects/COZIENI.png',
-  },
-  {
-    slug: 'onesti-bacau',
-    title: 'Modernizarea infrastructurii din zona strada Emil Rebreanu, Saturn, George Bacovia și Libertății – Tronson 1, Municipiul Onești, Jud. Bacău',
-    categories: ['Drumuri'],
-    faza: 'DALI',
-    location: 'Municipiul Onești, Județul Bacău',
-    year: '2021',
-    desc: 'Proiectare trotuare si parcari.',
-    image: '/img/projects/ONESTI.png',
-  },
-  // 2020
-  {
-    slug: 'pasaj-a0-a2-bucuresti',
-    title: 'Pasaj pe A0 peste A2 Km 53+069',
-    categories: ['Poduri'],
-    faza: 'DE',
-    location: 'București',
-    year: '2020',
-    desc: 'Detalii de uzinare si executie pentru pasajul auto pe A0 peste A2 Km 53+069.',
-    image: '/img/projects/PASAJ%20A0.png',
-  },
-  {
-    slug: 'pasaj-gurasada-hunedoara',
-    title: 'Pasaj superior km CF 506+217.83 / km local DN7 0+623.27 — Tronsonul 3: Gurasada–Simeria',
-    categories: ['Poduri'],
-    faza: 'DE',
-    location: 'Comuna Gurasada, Județul Hunedoara',
-    year: '2020',
-    desc: 'Detalii de uzinare și execuție pentru pasajul auto GZCJ auto, deschidere de 70,00 m.',
-    image: '/img/projects/Gurasada.png',
-  },
-];
+import { getCollection } from 'astro:content';
+
+const entries = (await getCollection('projects', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const projects = entries.map((e) => ({ slug: e.slug, ...e.data, desc: e.data.description }));
 
 const categoryOrder = ['Drumuri', 'Consolidări', 'Poduri', 'Pasarele'];
 const allCats = [...new Set(projects.flatMap(p => p.categories))];
@@ -242,9 +69,10 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
         {projects.map((project, i) => (
-          <div
+          <a
             id={project.slug}
-            class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card"
+            href={`/portofoliu/${project.slug}`}
+            class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card flex flex-col"
             data-aos="fade-up"
             data-aos-delay={i * 60}
             data-categories={project.categories.join(',')}
@@ -274,8 +102,14 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
                 {project.location}
               </p>
               <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{project.desc}</p>
+              <span class="inline-flex items-center gap-1.5 text-accent-600 font-semibold text-[13px] mt-4">
+                Vezi proiectul
+                <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 

@@ -1,0 +1,215 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Lightbox from '../../components/Lightbox.astro';
+import { regionById } from '../../data/regions';
+
+export async function getStaticPaths() {
+  const all = await getCollection('projects', ({ data }) => !data.draft);
+  return all.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+
+type Props = { project: CollectionEntry<'projects'> };
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+const d = project.data;
+
+const all = (await getCollection('projects', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const sameRegion = all.filter((p) => p.slug !== project.slug && p.data.region === d.region);
+const sameCat = all.filter(
+  (p) => p.slug !== project.slug && p.data.region !== d.region && p.data.categories.some((c) => d.categories.includes(c))
+);
+const related = [...sameRegion, ...sameCat].slice(0, 3);
+
+const region = regionById(d.region);
+const url = `https://me-design.ro/portofoliu/${project.slug}`;
+const gallery = d.gallery.map((g) => (typeof g === 'string' ? { src: g, caption: undefined } : g));
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    '@id': `${url}#project`,
+    name: d.title,
+    description: d.description,
+    ...(d.image && { image: new URL(d.image, 'https://me-design.ro').href }),
+    dateCreated: d.year,
+    inLanguage: 'ro-RO',
+    creator: { '@id': 'https://me-design.ro/#organization' },
+    locationCreated: { '@type': 'Place', name: d.location, address: { '@type': 'PostalAddress', addressRegion: d.judet, addressCountry: 'RO' } },
+    about: d.categories.join(', '),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
+      { '@type': 'ListItem', position: 2, name: 'Portofoliu', item: 'https://me-design.ro/portofoliu' },
+      { '@type': 'ListItem', position: 3, name: d.title, item: url },
+    ],
+  },
+];
+---
+
+<Layout
+  title={d.title.length > 60 ? d.title.slice(0, 57).trimEnd() + '…' : d.title}
+  description={d.description}
+  image={d.image}
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="pt-28 pb-10 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container max-w-4xl">
+      <nav class="flex items-center gap-2 text-white/50 text-[13px] mb-6 flex-wrap" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Acasă</a>
+        <span>/</span>
+        <a href="/portofoliu" class="hover:text-white transition-colors">Portofoliu</a>
+        {region && (
+          <>
+            <span>/</span>
+            <a href={`/zone/${region.id}`} class="hover:text-white transition-colors">{region.shortName}</a>
+          </>
+        )}
+      </nav>
+
+      <div class="flex items-center gap-2 flex-wrap mb-4">
+        {d.categories.map((c) => (
+          <span class="bg-white/10 text-white/80 px-3 py-1 rounded-full text-[12px] font-semibold">{c}</span>
+        ))}
+        <span class="bg-accent-500/20 text-accent-400 px-3 py-1 rounded-full text-[12px] font-semibold">Faza: {d.faza}</span>
+      </div>
+
+      <h1 class="text-[26px] md:text-[40px] font-heading font-extrabold text-white leading-tight">
+        {d.title}
+      </h1>
+
+      <div class="flex items-center gap-4 text-white/55 text-[14px] mt-5 flex-wrap">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          {d.location}
+        </span>
+        <span>·</span>
+        <span>{d.year}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container max-w-4xl">
+      {d.image && (
+        <div class="rounded-2xl overflow-hidden mb-8" data-lightbox>
+          <img src={d.image} alt={d.title} class="w-full object-cover max-h-[460px]" width="900" height="460" />
+        </div>
+      )}
+
+      <div class="grid lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-2">
+          <div class="prose prose-lg max-w-none
+                      prose-headings:font-heading prose-headings:text-brand-800
+                      prose-h2:text-[22px] prose-h2:mt-8 prose-h2:mb-3
+                      prose-p:text-steel-600 prose-p:text-[16px] prose-p:leading-relaxed
+                      prose-li:text-steel-600 prose-li:marker:text-accent-500
+                      prose-strong:text-brand-800
+                      prose-a:text-accent-600 prose-a:font-semibold prose-a:no-underline hover:prose-a:underline">
+            <Content />
+          </div>
+
+          {gallery.length > 0 && (
+            <div class="mt-10">
+              <h2 class="text-[20px] font-heading font-bold text-brand-800 mb-4">Imagini din proiect</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                {gallery.map((g) => (
+                  <figure class="rounded-2xl overflow-hidden border border-steel-100" data-lightbox>
+                    <img src={g.src} alt={g.caption ?? d.title} class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    {g.caption && <figcaption class="text-steel-500 text-[13px] p-3">{g.caption}</figcaption>}
+                  </figure>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <aside class="space-y-5">
+          <div class="bg-steel-50 border border-steel-100 rounded-2xl p-5">
+            <h2 class="font-heading font-bold text-brand-800 text-[16px] mb-4">Date proiect</h2>
+            <dl class="space-y-3 text-[14px]">
+              <div>
+                <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Localizare</dt>
+                <dd class="text-steel-700 font-medium mt-0.5">{d.location}</dd>
+              </div>
+              <div>
+                <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Județ</dt>
+                <dd class="text-steel-700 font-medium mt-0.5">{d.judet}</dd>
+              </div>
+              <div>
+                <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Faza de proiectare</dt>
+                <dd class="text-steel-700 font-medium mt-0.5">{d.faza}</dd>
+              </div>
+              <div>
+                <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Perioadă</dt>
+                <dd class="text-steel-700 font-medium mt-0.5">{d.year}</dd>
+              </div>
+              <div>
+                <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Tip lucrări</dt>
+                <dd class="text-steel-700 font-medium mt-0.5">{d.categories.join(', ')}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="bg-brand-900 rounded-2xl p-5 text-white">
+            <h2 class="font-heading font-bold text-[16px] mb-2">Ai un proiect similar?</h2>
+            <p class="text-white/60 text-[14px] mb-4">Analizăm cerințele și îți spunem ce documentații sunt necesare.</p>
+            <a href="/contact" class="block text-center bg-accent-500 hover:bg-accent-600 text-white px-5 py-3 rounded-full font-semibold text-[14px] transition-all">
+              Discută proiectul tău
+            </a>
+          </div>
+
+          {region && (
+            <a href={`/zone/${region.id}`} class="block bg-white border border-steel-100 rounded-2xl p-5 hover:shadow-lg hover:border-accent-500/40 transition-all group">
+              <p class="text-steel-400 text-[12px] uppercase tracking-wide">Acoperire</p>
+              <p class="font-heading font-bold text-brand-800 text-[15px] mt-1 group-hover:text-accent-600 transition-colors">
+                Proiecte în {region.shortName} →
+              </p>
+            </a>
+          )}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="section-padding bg-steel-50">
+      <div class="container">
+        <h2 class="text-[24px] md:text-[30px] font-heading font-bold text-brand-800 mb-7" data-aos="fade-up">
+          Proiecte similare
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          {related.map((p, i) => (
+            <a href={`/portofoliu/${p.slug}`} class="group bg-white rounded-2xl overflow-hidden border border-steel-100 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay={i * 80}>
+              <div class="aspect-[16/10] bg-steel-100 overflow-hidden">
+                {p.data.image
+                  ? <img src={p.data.image} alt={p.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="250" />
+                  : <div class="w-full h-full bg-gradient-to-br from-brand-700 to-brand-900" />}
+              </div>
+              <div class="p-5">
+                <span class="text-accent-600 text-[12px] font-semibold">{p.data.categories[0]}</span>
+                <h3 class="font-heading font-bold text-[15px] text-brand-800 mt-1.5 leading-snug group-hover:text-accent-600 transition-colors">{p.data.title}</h3>
+                <p class="text-steel-400 text-[13px] mt-1.5">{p.data.location}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <Lightbox />
+  <Footer />
+</Layout>
