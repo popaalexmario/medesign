@@ -11,6 +11,15 @@ const entries = (await getCollection('projects', ({ data }) => !data.draft)).sor
 );
 const projects = entries.map((e) => ({ slug: e.slug, ...e.data, desc: e.data.description }));
 
+const beneficiari = [...new Set(entries.map((e) => e.data.beneficiar).filter(Boolean))].sort(
+  (a, b) => a.localeCompare(b, 'ro')
+);
+const esteUAT = (b) => /^(U\.A\.T\.|Consiliul Județean)/.test(b);
+const beneficiariGrupati = [
+  { titlu: 'Autorități publice locale și județene', lista: beneficiari.filter(esteUAT) },
+  { titlu: 'Companii naționale și operatori', lista: beneficiari.filter((b) => !esteUAT(b)) },
+].filter((g) => g.lista.length > 0);
+
 const categoryOrder = ['Drumuri', 'Consolidări', 'Poduri', 'Pasarele'];
 const allCats = [...new Set(projects.flatMap(p => p.categories))];
 const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
@@ -186,6 +195,41 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
       }
     }
   </script>
+
+  <section class="section-padding bg-steel-50 border-t border-steel-100">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Referințe</span>
+        <h2 class="text-[28px] md:text-[38px] font-heading font-bold text-brand-800 mt-3">
+          Beneficiarii proiectelor noastre
+        </h2>
+        <p class="text-steel-500 text-[16px] mt-3">
+          Lucrăm pentru autorități publice locale și județene, companii naționale de infrastructură și operatori de utilități.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {beneficiariGrupati.map((grup, i) => (
+          <div class="bg-white border border-steel-100 rounded-2xl p-6" data-aos="fade-up" data-aos-delay={i * 80}>
+            <h3 class="font-heading font-bold text-[16px] text-brand-800 mb-4 flex items-center gap-2">
+              <span class="w-1.5 h-5 bg-accent-500 rounded-full"></span>
+              {grup.titlu}
+            </h3>
+            <ul class="space-y-2.5">
+              {grup.lista.map((b) => (
+                <li class="flex items-start gap-2.5 text-steel-600 text-[14px] leading-snug">
+                  <svg class="w-4 h-4 text-accent-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <Lightbox />
 

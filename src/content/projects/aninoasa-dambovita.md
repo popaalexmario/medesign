@@ -5,6 +5,7 @@ categories: ["Drumuri"]
 faza: "DALI+DTAC+PTE"
 location: "U.A.T. Comuna Aninoasa, Județul Dâmbovița"
 judet: "Dâmbovița"
+beneficiar: "U.A.T. Comuna Aninoasa"
 region: "muntenia"
 year: "2025"
 image: "/img/projects/ANINOASA.jpg"

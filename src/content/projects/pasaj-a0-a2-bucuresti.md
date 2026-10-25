@@ -5,6 +5,7 @@ categories: ["Poduri"]
 faza: "DE"
 location: "București"
 judet: "București"
+beneficiar: "C.N.A.I.R. S.A."
 region: "muntenia"
 year: "2020"
 image: "/img/projects/PASAJ%20A0.png"

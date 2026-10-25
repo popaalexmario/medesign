@@ -148,6 +148,12 @@ const jsonLd = [
                 <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Județ</dt>
                 <dd class="text-steel-700 font-medium mt-0.5">{d.judet}</dd>
               </div>
+              {d.beneficiar && (
+                <div>
+                  <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Beneficiar</dt>
+                  <dd class="text-steel-700 font-medium mt-0.5">{d.beneficiar}</dd>
+                </div>
+              )}
               <div>
                 <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Faza de proiectare</dt>
                 <dd class="text-steel-700 font-medium mt-0.5">{d.faza}</dd>

@@ -5,6 +5,7 @@ categories: ["Poduri", "Monument Istoric"]
 faza: "DALI+DTAC+PTE"
 location: "U.A.T. Municipiul Lugoj, Județul Timiș"
 judet: "Timiș"
+beneficiar: "U.A.T. Municipiul Lugoj"
 region: "transilvania"
 year: "2022 – 2023"
 image: "/img/projects/POD%20LUGOJ.jpg"

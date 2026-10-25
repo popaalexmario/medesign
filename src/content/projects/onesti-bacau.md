@@ -5,6 +5,7 @@ categories: ["Drumuri"]
 faza: "DALI"
 location: "Municipiul Onești, Județul Bacău"
 judet: "Bacău"
+beneficiar: "U.A.T. Municipiul Onești"
 region: "moldova"
 year: "2021"
 image: "/img/projects/ONESTI.png"

@@ -5,6 +5,7 @@ categories: ["Poduri", "Monument Istoric"]
 faza: "DTAC+PTE"
 location: "Municipiul Sibiu"
 judet: "Sibiu"
+beneficiar: "U.A.T. Municipiul Sibiu"
 region: "transilvania"
 year: "2022"
 image: "/img/projects/pod%20gladiolelor.png"

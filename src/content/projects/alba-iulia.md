@@ -5,6 +5,7 @@ categories: ["Drumuri"]
 faza: "DALI"
 location: "Municipiul Alba Iulia, Județul Alba"
 judet: "Alba"
+beneficiar: "U.A.T. Municipiul Alba Iulia"
 region: "transilvania"
 year: "2024"
 image: "/img/projects/GIRATIE%20ALBA.png"

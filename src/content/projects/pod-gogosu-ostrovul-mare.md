@@ -5,6 +5,7 @@ categories: ["Poduri"]
 faza: "DALI"
 location: "Ostrovul Mare"
 judet: "Mehedinți"
+beneficiar: "Hidroelectrica S.A. — Sucursala Hidrocentrale Porțile de Fier"
 region: "oltenia"
 year: "2026"
 image: "/img/projects/pod%20gogosu.jpg"

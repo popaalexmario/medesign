@@ -24,6 +24,7 @@ const projects = defineCollection({
     faza: z.string(),
     location: z.string(),
     judet: z.string(),
+    beneficiar: z.string().optional(),
     region: z.enum(['muntenia', 'oltenia', 'dobrogea', 'transilvania', 'moldova']),
     year: z.string(),
     image: z.string().optional(),

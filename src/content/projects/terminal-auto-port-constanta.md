@@ -5,6 +5,7 @@ categories: ["Drumuri"]
 faza: "DTAC+PTE"
 location: "Portul Constanța"
 judet: "Constanța"
+beneficiar: "C.N. Administrația Porturilor Maritime S.A. Constanța"
 region: "dobrogea"
 year: "2024"
 image: "/img/projects/PORT%20CONSTANTA.png"

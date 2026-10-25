@@ -5,6 +5,7 @@ categories: ["Parc"]
 faza: "SF+PTE"
 location: "U.A.T. Comuna Perșinari, Județul Dâmbovița"
 judet: "Dâmbovița"
+beneficiar: "U.A.T. Comuna Perșinari"
 region: "muntenia"
 year: "2025"
 image: "/img/projects/parc%20persinari.png"

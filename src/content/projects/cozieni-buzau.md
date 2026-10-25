@@ -5,6 +5,7 @@ categories: ["Drumuri"]
 faza: "DALI"
 location: "Comuna Cozieni, Județul Buzău"
 judet: "Buzău"
+beneficiar: "U.A.T. Comuna Cozieni"
 region: "muntenia"
 year: "2021"
 image: "/img/projects/COZIENI.png"

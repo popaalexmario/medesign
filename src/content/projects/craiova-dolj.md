@@ -5,6 +5,7 @@ categories: ["Drumuri", "Consolidări"]
 faza: "DALI+DTAC+PTE"
 location: "U.A.T. Municipiul Craiova, Județul Dolj"
 judet: "Dolj"
+beneficiar: "U.A.T. Municipiul Craiova"
 region: "oltenia"
 year: "2023 – 2025"
 image: "/img/projects/CRAIOVA.png"

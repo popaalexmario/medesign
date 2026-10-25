@@ -5,6 +5,7 @@ categories: ["Consolidări", "Pasarele", "Amenajări Hidrotehnice", "Parc"]
 faza: "SF+DTAC+PTE"
 location: "U.A.T. Comuna Bughea de Jos, Județul Argeș"
 judet: "Argeș"
+beneficiar: "U.A.T. Comuna Bughea de Jos"
 region: "muntenia"
 year: "2025"
 image: "/img/projects/BUGHEA.png"

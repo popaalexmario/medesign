@@ -5,6 +5,7 @@ categories: ["Drumuri", "Poduri", "Consolidări"]
 faza: "DALI"
 location: "U.A.T. Consiliul Județean Prahova"
 judet: "Prahova"
+beneficiar: "Consiliul Județean Prahova"
 region: "muntenia"
 year: "2023"
 image: "/img/projects/DJ101S%20NOU.png"

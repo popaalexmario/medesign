@@ -5,6 +5,7 @@ categories: ["Drumuri", "Amenajări Hidrotehnice"]
 faza: "SF"
 location: "Municipiul Fetești, Județul Ialomița"
 judet: "Ialomița"
+beneficiar: "U.A.T. Municipiul Fetești"
 region: "muntenia"
 year: "2022"
 image: "/img/projects/PORT.png"

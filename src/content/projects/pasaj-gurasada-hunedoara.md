@@ -5,6 +5,7 @@ categories: ["Poduri"]
 faza: "DE"
 location: "Comuna Gurasada, Județul Hunedoara"
 judet: "Hunedoara"
+beneficiar: "C.N.C.F. \"CFR\" S.A."
 region: "transilvania"
 year: "2020"
 image: "/img/projects/Gurasada.png"
