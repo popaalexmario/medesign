@@ -113,6 +113,18 @@ Din experiența noastră, cele mai mari întârzieri apar la:
 
 Proiectarea propriu-zisă este, de regulă, partea predictibilă a procesului. Documentele conexe sunt cele care decid calendarul real.
 
+## Cum te putem ajuta
+
+La **ME Design** lucrăm constant cu primării și consilii județene pe exact acest tip de proiecte și cunoaștem punctele în care se blochează de obicei.
+
+**Coordonăm studiile de teren.** Topografic, geotehnic, de trafic, hidrologic — printr-o rețea de colaboratori autorizați, într-un singur contract, fără ca beneficiarul să gestioneze separat fiecare prestator.
+
+**Elaborăm documentația completă.** Pentru **Comuna Cozieni, Județul Buzău** am proiectat 13 drumuri locale și comunale însumând 10,35 km, într-o zonă cu relief accidentat unde tratarea unitară a scurgerii apelor a fost elementul determinant. Pentru **Comuna Aninoasa, Județul Dâmbovița** — 6 străzi locale, 2,20 km, documentație DALI, DTAC și proiect tehnic de execuție.
+
+**Sprijinim obținerea avizelor.** Întocmim documentațiile pentru avizele din certificatul de urbanism și urmărim parcursul acestora — partea care produce, în practică, cele mai multe întârzieri.
+
+**Asigurăm asistența tehnică pe șantier**, pe toată durata execuției.
+
 ---
 
 **Pregătești un proiect de modernizare a drumurilor din comună?** Putem coordona studiile de teren, documentația tehnică și sprijinul pentru obținerea avizelor, într-un singur contract. [Discută proiectul tău cu noi](/contact).

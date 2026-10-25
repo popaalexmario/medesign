@@ -127,6 +127,20 @@ Dacă pregătești o investiție nouă, parcursul se structurează pe stadiile 0
 
 Pentru intervențiile la construcții existente — categoria în care intră majoritatea lucrărilor de reabilitare de drumuri și poduri — expertiza tehnică rămâne punctul de pornire, iar acum poate avea ca rezultat prelungirea documentată a duratei de existență a construcției.
 
+## Cum te putem ajuta
+
+La **ME Design** urmărim îndeaproape tranziția la noul Cod, pentru că ne afectează direct toate proiectele aflate în lucru.
+
+**Stabilim sub ce regim intră proiectul tău.** Este prima verificare pe care o facem și, în perioada aceasta, cea mai importantă. Un obiectiv cu finanțare aprobată înainte de 25 august 2026 continuă după HG 907/2016; unul inițiat după această dată urmează stadiile CATUC.
+
+**Elaborăm documentațiile în ambele regimuri.** Avem proiecte în derulare sub ambele cadre — de la documentații DALI și proiecte tehnice contractate anterior, până la obiective noi structurate pe stadii.
+
+**Acoperim stadiile 1–4 integral.** Temă de proiectare, studiu de fezabilitate, concept, PAC și proiect tehnic de execuție, cu studiile de teren coordonate prin colaboratori autorizați.
+
+**Asigurăm asistența tehnică obligatorie** prevăzută la art. 521, ca parte a contractului de proiectare — nu ca serviciu adăugat ulterior.
+
+**Lucrăm pe obiective cu regim special.** Pentru intervențiile la construcții clasate ca monument istoric, unde CATUC cere verificatori atestați suplimentar, avem experiența proiectelor de la **Lugoj** și **Sibiu**.
+
 ---
 
 *Acest material este o sinteză informativă și nu înlocuiește consultarea textului integral al Legii nr. 169/2026. Pentru încadrarea corectă a unui proiect concret, recomandăm analiza situației specifice.*

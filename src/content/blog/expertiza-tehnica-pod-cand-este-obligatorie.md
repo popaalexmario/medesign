@@ -100,6 +100,18 @@ Nu este un impediment. Expertiza se bazează pe relevarea efectivă a structurii
 
 La podurile încadrate ca monumente istorice se adaugă cerințe specifice de avizare și restricții privind soluțiile de intervenție admisibile — un aspect care trebuie luat în calcul de la început.
 
+## Cum te putem ajuta
+
+La **ME Design** am elaborat documentații de intervenție pentru structuri de vechimi și tipuri foarte diferite, inclusiv în situațiile dificile descrise mai sus.
+
+**Poduri fără documentație inițială.** **Podul de Fier peste Râul Timiș, Municipiul Lugoj** — grindă cu zăbrele parabolică de 64,00 m, construită în 1902 și clasată ca monument istoric. Am elaborat documentația DALI, DTAC și proiectul tehnic de execuție pentru reabilitare, pornind de la relevarea efectivă a structurii.
+
+**Structuri cu regim special.** **Podul de pe strada Gladiolelor (Maria Tereza), Municipiul Sibiu** — reparație capitală la o structură cu statut de monument istoric, unde soluțiile au trebuit corelate cu cerințele de patrimoniu.
+
+**Obiective tehnice complexe.** **Podul suspendat peste brațul Gogoșu, Ostrovul Mare** — expertiză tehnică și documentație de avizare a lucrărilor de intervenție pentru obiective ale Hidroelectrica SA, Sucursala Hidrocentrale Porțile de Fier.
+
+**Parcursul complet.** Coordonăm expertiza tehnică prin experți atestați, elaborăm documentația de intervenție și proiectul tehnic de execuție și asigurăm asistența tehnică pe durata lucrărilor — astfel încât beneficiarul să nu gestioneze separat fiecare etapă.
+
 ---
 
 **Ai un pod care necesită evaluare sau intervenție?** Oferim expertiză tehnică, documentație DALI și proiect tehnic de execuție, cu asistență tehnică pe parcursul lucrărilor. [Discută proiectul tău cu noi](/contact).

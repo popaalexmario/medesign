@@ -134,6 +134,18 @@ De asemenea, potrivit art. 582, procedurile de elaborare, avizare și autorizare
 
 Pentru investițiile începute după 25 august 2026, parcursul se structurează pe cele șapte stadii introduse de CATUC.
 
+## Cum te putem ajuta
+
+La **ME Design** elaborăm documentații în toate fazele de proiectare și am parcurs, pe proiecte reale, fiecare dintre situațiile descrise mai sus.
+
+**Stabilim încadrarea corectă de la început.** Analizăm situația concretă — construcție nouă sau intervenție la existent, regim CATUC sau HG 907/2016 — înainte de contractarea documentației. Este verificarea care previne cele mai costisitoare întârzieri.
+
+**Acoperim întreg parcursul.** Pentru **Comuna Aninoasa, Județul Dâmbovița** am elaborat documentația DALI, DTAC și proiectul tehnic de execuție pentru modernizarea a 6 străzi locale. Pentru **Podul de Fier din Lugoj** am parcurs același traseu complet, pe o structură din 1902 clasată ca monument istoric.
+
+**Coordonăm studiile necesare.** Topografic, geotehnic, de trafic, hidrologic — plus expertiza tehnică acolo unde intervenția la existent o impune.
+
+**Asigurăm verificarea și asistența tehnică.** Documentațiile sunt verificate de verificatori atestați pe cerințele aplicabile, iar asistența tehnică pe parcursul execuției este parte din ce oferim.
+
 ---
 
 **Ai un proiect în pregătire și nu ești sigur ce documentație îți trebuie?** Analizăm situația concretă și îți spunem exact ce pași sunt necesari, fără obligații. [Discută proiectul tău cu noi](/contact).
