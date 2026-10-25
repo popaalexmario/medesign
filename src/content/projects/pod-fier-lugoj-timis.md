@@ -35,3 +35,16 @@ La o construcție clasată, soluțiile de intervenție nu se aleg exclusiv pe cr
 ## Documentația elaborată
 
 Am parcurs fazele DALI, DTAC și PTE, pornind de la relevarea efectivă a structurii și de la expertiza tehnică, pentru U.A.T. Municipiul Lugoj.
+
+## Ce aduce comunității
+
+Un pod din 1902, clasat ca monument istoric, are pentru Lugoj o dublă valoare:
+
+- **Menținerea traversării** peste Râul Timiș, într-un oraș în care alternativele presupun ocolișuri semnificative
+- **Conservarea unui element de identitate urbană** — structura face parte din imaginea orașului de peste un secol
+- **Siguranța utilizatorilor**, prin readucerea structurii la parametri de exploatare verificați
+- **Evitarea costului unei construcții noi**, semnificativ mai mare decât reabilitarea unei structuri recuperabile
+
+## Îmbunătățiri în amplasament
+
+Intervenția readuce grinda cu zăbrele parabolică de 64,00 m la o stare de exploatare verificată prin calcul, cu elementele degradate tratate și cu cele originale conservate acolo unde starea lor o permite. Reabilitarea unei structuri istorice înseamnă prelungirea duratei de viață a unei construcții existente, nu înlocuirea ei — soluția cu cel mai redus impact asupra orașului.

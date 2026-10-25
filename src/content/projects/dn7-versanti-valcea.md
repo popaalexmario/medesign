@@ -37,3 +37,16 @@ Cele patru tronsoane însumează peste 20 km. O soluție unică aplicată unifor
 ## Documentația și asistența
 
 Am elaborat proiectul tehnic de execuție și asigurăm **asistența tehnică** pe durata execuției — necesară în special pe lucrări de versant, unde condițiile reale descoperite la săpătură impun adaptări.
+
+## Ce aduce comunității
+
+DN7 prin defileul Oltului este o rută fără alternativă rezonabilă, iar siguranța ei are efecte directe:
+
+- **Protecția vieții participanților la trafic** pe sectoare unde materialul desprins din versanți producea accidente cu vătămări corporale grave
+- **Menținerea rutei deschise**, evitând ocolișuri de peste o sută de kilometri în cazul unei indisponibilizări
+- **Continuitatea legăturii** între Oltenia și Transilvania, pe unul dintre cele mai circulate trasee din țară
+- **Reducerea costurilor indirecte** suportate de transportatori și de comunitățile locale la fiecare blocare a drumului
+
+## Îmbunătățiri în amplasament
+
+Pe cele patru sectoare, însumând peste 20 km, soluțiile de protecție sunt diferențiate în funcție de configurația fiecărui versant și de mecanismul de desprindere identificat. Asistența tehnică pe durata execuției permite adaptarea la condițiile reale descoperite la săpătură — necesară în special pe lucrări de versant, unde investigațiile preliminare nu pot acoperi integral variabilitatea terenului.

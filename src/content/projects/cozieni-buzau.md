@@ -34,3 +34,16 @@ Am analizat rețeaua ca sistem, stabilind punctele de colectare și traseele de 
 ## Documentația elaborată
 
 Proiectul a fost elaborat în faza DALI, ca intervenție asupra drumurilor existente.
+
+## Ce aduce comunității
+
+Comuna Cozieni este așezată în subcarpații Buzăului, unde accesul depinde direct de starea drumurilor locale:
+
+- **Legătura cu exteriorul menținută pe tot parcursul anului**, inclusiv în perioadele cu precipitații abundente
+- **Accesul ambulanței și al pompierilor** în zone în care, pe drum degradat, intervenția putea deveni imposibilă
+- **Transportul elevilor** către unitățile de învățământ, fără întreruperi cauzate de starea drumului
+- **Reducerea izolării gospodăriilor** aflate pe drumurile periferice ale comunei
+
+## Îmbunătățiri în amplasament
+
+Cele 13 drumuri, însumând 10,35 km, sunt tratate ca o rețea, nu ca lucrări izolate. Sistemul de colectare și evacuare a apelor este dimensionat pe ansamblu, cu puncte de descărcare controlate — elementul decisiv într-o zonă de deal, unde apa necontrolată erodează taluzurile și antrenează material pe carosabil.

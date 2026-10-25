@@ -33,3 +33,16 @@ Documentația a acoperit:
 Într-un astfel de proiect, componenta hidrotehnică determină tot restul. Cotele de amenajare a malurilor, dimensionarea zidurilor de sprijin și poziționarea pasarelelor depind de regimul apelor — iar o soluție care tratează separat amenajarea peisagistică de cea hidrotehnică se dovedește, de obicei, nefuncțională la prima viitură.
 
 Am parcurs trei faze: studiul de fezabilitate, documentația pentru autorizare și proiectul tehnic de execuție. Fiind vorba de obiective noi amplasate în raport cu un curs de apă, încadrarea ca SF a fost cea corectă.
+
+## Ce aduce comunității
+
+Amenajarea răspunde unei probleme resimțite direct de locuitorii din apropierea cursului de apă:
+
+- **Protecția gospodăriilor** de pe maluri față de eroziune și de efectele viiturilor
+- **Continuitatea circulației pietonale** prin pasarele, acolo unde cursul de apă fragmenta deplasările
+- **Spațiu public utilizabil** într-o comună unde amenajările de acest tip lipsesc de regulă
+- **Legătura între zonele localității** separate de albie, fără ocolișuri
+
+## Îmbunătățiri în amplasament
+
+Malurile capătă o structură de sprijin care oprește eroziunea progresivă. Trotuarele introduc circulație pietonală separată de carosabil, iar pasarelele creează traversări permanente, utilizabile indiferent de nivelul apei. Componenta de spațiu verde transformă o zonă tehnică într-una folosibilă de comunitate — o combinație rar întâlnită la scara unei comune.

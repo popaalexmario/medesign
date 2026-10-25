@@ -37,3 +37,16 @@ Proiectarea corelată a celor două componente rezolvă problema la cauză: parc
 ## Documentația elaborată
 
 Proiectul a fost elaborat în faza DALI, ca intervenție asupra infrastructurii existente, pentru U.A.T. Municipiul Onești.
+
+## Ce aduce comunității
+
+Într-un cartier locuit, trotuarele și parcările determină siguranța de zi cu zi:
+
+- **Pietonii nu mai coboară pe carosabil**, acolo unde trotuarul lipsea sau era ocupat de autovehicule
+- **Siguranța copiilor și a persoanelor vârstnice**, categoriile cele mai expuse în lipsa spațiului pietonal
+- **Accesibilitate pentru persoanele cu mobilitate redusă**, prin pante și racordări conforme
+- **Ordine în staționare**, prin locuri de parcare dimensionate și amplasate corespunzător
+
+## Îmbunătățiri în amplasament
+
+Pe zona străzilor Emil Rebreanu, Saturn, George Bacovia și Libertății, intervenția introduce trotuare continue, fără întreruperi la accesele în proprietăți, și parcări care eliberează spațiul pietonal. Racordarea la cotele existente ale clădirilor și evacuarea apelor la limita dintre trotuar și carosabil elimină stagnările care degradau zona.

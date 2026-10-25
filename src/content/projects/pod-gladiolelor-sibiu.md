@@ -35,3 +35,16 @@ Aceste constrângeri se iau în calcul de la faza de proiectare, nu la execuție
 ## Documentația elaborată
 
 Proiectul a fost elaborat în fazele DTAC și PTE, pentru U.A.T. Municipiul Sibiu.
+
+## Ce aduce comunității
+
+Podul deservește cartierul Terezian, o zonă locuită din Sibiu cu valoare istorică:
+
+- **Continuitatea legăturii** între strada Cibinului și strada Râului, pentru riveranii care o folosesc zilnic
+- **Siguranța circulației**, prin intervenția asupra elementelor structurale afectate
+- **Păstrarea caracterului zonei**, prin soluții compatibile cu valoarea de patrimoniu a obiectivului
+- **Evitarea unei indisponibilizări prelungite**, prin etapizare gândită de la faza de proiectare
+
+## Îmbunătățiri în amplasament
+
+Reparația capitală intervine asupra elementelor structurale, pe baza expertizei tehnice care a stabilit starea reală a construcției. Într-un cartier locuit, organizarea de șantier și devierile de circulație au fost tratate ca parte a soluției, nu ca problemă de rezolvat la execuție — astfel încât accesul riveranilor să fie afectat cât mai puțin.

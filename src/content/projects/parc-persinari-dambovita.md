@@ -36,3 +36,16 @@ Terenul aparținând domeniului public al comunei, situația juridică a fost cl
 ## Documentația elaborată
 
 Proiectul parcurge fazele SF și PTE: studiul de fezabilitate, cu fundamentarea indicatorilor tehnico-economici, și proiectul tehnic de execuție.
+
+## Ce aduce comunității
+
+Pentru o comună, un parc amenajat este frecvent primul spațiu public organizat:
+
+- **Loc de recreere pentru toate vârstele**, într-o localitate unde alternativele lipsesc
+- **Spațiu sigur pentru copii**, separat de circulația rutieră
+- **Punct de întâlnire pentru comunitate**, cu rol în viața socială a localității
+- **Valorificarea unui teren public** de 5.200 mp, până acum neutilizat
+
+## Îmbunătățiri în amplasament
+
+Amenajarea introduce alei cu structură dimensionată pentru utilajele de întreținere, sistematizare verticală care împiedică stagnarea apei, colectarea apelor pluviale pe întreaga suprafață și accesibilitate pentru persoanele cu mobilitate redusă. Sunt elementele care fac diferența între un parc utilizabil peste zece ani și unul care se degradează după primele sezoane.

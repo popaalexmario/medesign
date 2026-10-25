@@ -33,3 +33,16 @@ Detaliile de execuție reprezintă nivelul de documentație la care proiectul de
 O intersecție între două autostrăzi impune cerințe superioare celor de pe rețeaua obișnuită: gabarite de liberă trecere mai mari, clase de încărcare superioare și condiții stricte de execuție sub trafic, întrucât autostrada traversată rămâne în exploatare.
 
 La acest nivel de detaliu, o cotă greșită nu se corectează pe șantier — se corectează prin refacerea elementului. Precizia documentației are consecință economică directă.
+
+## Ce aduce comunității
+
+Centura de autostradă a Bucureștiului are efecte la scara întregii regiuni:
+
+- **Devierea traficului de tranzit** dinspre arterele orașului, cu efect asupra congestiei și a calității aerului
+- **Reducerea traficului greu** pe centura rutieră existentă, care traversează zone locuite
+- **Legătura directă între coridoarele majore**, fără traversarea capitalei
+- **Timpi de parcurs previzibili** pentru transportul de marfă dinspre și către portul Constanța
+
+## Îmbunătățiri în amplasament
+
+Pasajul de la km 53+069 asigură supratraversarea autostrăzii A2 de către A0, cu gabaritele și clasele de încărcare impuse unei intersecții între două autostrăzi. Execuția s-a realizat în condițiile menținerii în exploatare a autostrăzii traversate, ceea ce a determinat nivelul de detaliere necesar documentației.

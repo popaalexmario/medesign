@@ -34,3 +34,16 @@ La acestea se adaugă cerințele specifice de avizare pentru lucrări în albie 
 ## Faza documentației
 
 Proiectul a fost elaborat la nivel de studiu de fezabilitate — faza în care se compară scenariile de amenajare și se fundamentează indicatorii tehnico-economici, înainte de angajarea cheltuielilor pentru proiectul tehnic.
+
+## Ce aduce comunității
+
+Amenajarea unui port turistic la brațul Borcea deschide o direcție de dezvoltare pentru Fetești:
+
+- **Acces organizat la Dunăre**, pentru locuitori și pentru vizitatori
+- **Potențial economic local** — turismul fluvial generează activitate pentru serviciile din oraș
+- **Valorificarea unui amplasament** până acum neamenajat, aflat în proximitatea orașului
+- **Infrastructură de agrement** într-o zonă unde alternativele sunt limitate
+
+## Îmbunătățiri în amplasament
+
+Studiul propune circulații și parcaje care fac zona accesibilă și utilizabilă, împreună cu platforma portuară la malul brațului Borcea. Cotele de amenajare sunt stabilite în raport cu variația nivelurilor Dunării, astfel încât amenajarea să rămână funcțională pe durata sezonului, iar malul să fie protejat împotriva eroziunii.

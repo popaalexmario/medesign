@@ -36,3 +36,16 @@ Denivelarea rezolvă capacitatea, dar introduce o problemă de altă natură —
 ## Faza documentației
 
 Proiectul a fost elaborat la nivel de studiu de fezabilitate, faza în care se analizează scenarii alternative și se fundamentează indicatorii tehnico-economici ai variantei recomandate.
+
+## Ce aduce comunității
+
+Zona de intersecție dintre DN1C și varianta ocolitoare a municipiului Baia Mare concentrează două tipuri de trafic cu nevoi diferite:
+
+- **Separarea tranzitului de traficul local**, astfel încât deplasările în interiorul zonei să nu fie blocate de fluxul de traversare
+- **Reducerea timpilor de așteptare** la un punct care funcționa la limita capacității
+- **Siguranță sporită**, prin eliminarea conflictelor directe între fluxuri cu viteze foarte diferite
+- **Condiții pentru dezvoltarea zonei** Baia Mare – Recea, deservită de această legătură
+
+## Îmbunătățiri în amplasament
+
+Soluția studiată introduce denivelarea prin pasaj rutier pe DN1C și amenajarea bretelelor care asigură toate relațiile de circulație între cele două artere. Intersecția la nivel, cu capacitate limitată de fazele de așteptare, este înlocuită cu o configurație în care fluxul principal nu se mai oprește.

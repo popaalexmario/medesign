@@ -33,3 +33,16 @@ O platformă dintr-un terminal auto nu se dimensionează ca o parcare obișnuit�
 Am parcurs fazele DTAC și PTE: documentația pentru autorizarea executării lucrărilor și proiectul tehnic de execuție, cu detaliile necesare realizării platformei de parcaje.
 
 Proiectele din perimetru portuar presupun, suplimentar față de o lucrare obișnuită, corelarea cu regulamentele de exploatare ale administrației portuare și cu restricțiile de acces specifice.
+
+## Ce aduce comunității
+
+Infrastructura portuară are efecte care depășesc perimetrul în care se află:
+
+- **Capacitate de operare crescută** pentru terminal, cu efect asupra fluxului de mărfuri prin portul Constanța
+- **Organizarea staționării**, care elimină ocuparea necontrolată a căilor de circulație interioare
+- **Siguranța manevrelor** pe o platformă proiectată pentru tipurile de vehicule care o folosesc efectiv
+- **Reducerea timpilor de așteptare**, cu efect asupra costurilor logistice
+
+## Îmbunătățiri în amplasament
+
+Platforma de parcaje introduce o suprafață dimensionată pentru încărcările reale și pentru mediul agresiv din zona portuară. Sistematizarea verticală asigură scurgerea apelor pe o suprafață întinsă cu pante reduse, iar organizarea fluxurilor separă staționarea de circulația operațională a terminalului.

@@ -34,3 +34,16 @@ La o intersecție la nivel cu trafic semnificativ, giratoriul rezolvă simultan 
 ## Documentația elaborată
 
 Proiectul a fost elaborat în faza DALI, ca intervenție asupra unei intersecții existente. Amplasarea pe drum național a impus corelarea soluției cu normativele aplicabile acestei categorii de drum și cu cerințele administratorului.
+
+## Ce aduce comunității
+
+O intersecție între o arteră urbană majoră și un drum național este un punct în care se concentrează atât traficul, cât și riscul:
+
+- **Reducerea severității accidentelor** — geometria giratoriului elimină conflictele frontale și impune viteze mai mici
+- **Fluidizarea traficului** la o intersecție care deservește simultan circulația urbană și cea de tranzit
+- **Previzibilitate pentru șoferi**, prin reguli de prioritate simple și uniforme
+- **Independența de alimentarea cu energie**, spre deosebire de o soluție semaforizată
+
+## Îmbunătățiri în amplasament
+
+Intersecția la nivel, cu prioritate semnalizată, este înlocuită cu o amenajare circulară cu două benzi de 5,50 m, dimensionată pentru gabaritele vehiculelor grele care tranzitează drumul național. Amenajarea clarifică relațiile de circulație între bulevard, strada adiacentă și drumul național.
