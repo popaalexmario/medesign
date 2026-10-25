@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
+import { servicePages } from '../data/services';
 
 const services = [
   {
@@ -100,6 +101,41 @@ const services = [
           </div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <section class="section-padding bg-steel-50 border-t border-steel-100">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Specializări</span>
+        <h2 class="text-[28px] md:text-[38px] font-heading font-bold text-brand-800 mt-3">
+          Servicii specializate
+        </h2>
+        <p class="text-steel-500 text-[16px] mt-3">
+          Domenii în care am dezvoltat competențe specifice, pe proiecte cu cerințe tehnice sau de avizare aparte.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {servicePages.map((s, i) => (
+          <a
+            href={`/servicii/${s.slug}`}
+            class="group bg-white border border-steel-100 rounded-2xl p-6 hover:shadow-xl hover:border-accent-500/40 transition-all flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay={(i % 2) * 80}
+          >
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="font-heading font-bold text-[18px] text-brand-800 group-hover:text-accent-600 transition-colors">
+                {s.title}
+              </h3>
+              <svg class="w-5 h-5 text-accent-500 shrink-0 mt-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <p class="text-steel-500 text-[14px] mt-2 leading-relaxed flex-1">{s.lead}</p>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
