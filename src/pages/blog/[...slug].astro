@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { cardSrcset, CARD_SIZES } from '../../utils/img';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -167,6 +168,8 @@ const jsonLd = [
                 {p.data.image ? (
                   <img
                     src={p.data.image}
+                    srcset={cardSrcset(p.data.image)}
+                    sizes={CARD_SIZES}
                     alt={p.data.imageAlt ?? p.data.title}
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"

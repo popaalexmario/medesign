@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
 
 import { getCollection } from 'astro:content';
+import { cardSrcset, CARD_SIZES } from '../utils/img';
 
 const entries = (await getCollection('projects', ({ data }) => !data.draft)).sort(
   (a, b) => a.data.order - b.data.order
@@ -89,7 +90,7 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
           >
             <div class="bg-steel-100 aspect-[16/10] overflow-hidden flex items-center justify-center">
               {project.image
-                ? <img src={project.image} alt={project.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                ? <img src={project.image} srcset={cardSrcset(project.image)} sizes={CARD_SIZES} alt={project.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="250" />
                 : <svg class="w-12 h-12 text-steel-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
