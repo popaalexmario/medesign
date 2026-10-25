@@ -6,6 +6,7 @@ faza: "DE"
 location: "București"
 judet: "București"
 beneficiar: "C.N.A.I.R. S.A."
+prinAntreprenor: true
 region: "muntenia"
 year: "2020"
 image: "/img/projects/PASAJ%20A0.png"
