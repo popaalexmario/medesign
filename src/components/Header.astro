@@ -1,10 +1,14 @@
 ---
-const currentPath = Astro.url.pathname;
+const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
+const currentPath = normalize(Astro.url.pathname);
+const isActive = (href: string) =>
+  currentPath === href || (href !== '/' && currentPath.startsWith(href + '/'));
 
 const navItems = [
   { label: 'Acasă', href: '/' },
   { label: 'Servicii', href: '/servicii' },
   { label: 'Portofoliu', href: '/portofoliu' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Despre noi', href: '/despre' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -26,7 +30,7 @@ const navItems = [
             href={item.href}
             class:list={[
               'text-[15px] font-medium transition-colors hover:text-accent-500',
-              currentPath === item.href ? 'text-accent-500' : 'text-steel-600',
+              isActive(item.href) ? 'text-accent-500' : 'text-steel-600',
             ]}
           >
             {item.label}
@@ -52,7 +56,7 @@ const navItems = [
           href={item.href}
           class:list={[
             'px-4 py-3 rounded-xl text-[15px] font-medium transition-colors',
-            currentPath === item.href ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
+            isActive(item.href) ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
           ]}
         >
           {item.label}

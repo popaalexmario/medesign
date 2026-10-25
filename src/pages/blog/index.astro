@@ -1,0 +1,194 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const categories = [...new Set(posts.map((p) => p.data.category))];
+
+const readingTime = (body: string) => Math.max(1, Math.ceil(body.split(/\s+/).length / 200));
+
+const fmtDate = (d: Date) =>
+  d.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': 'https://me-design.ro/blog/#blog',
+  name: 'Blog ME Design',
+  description:
+    'Ghiduri și articole tehnice despre proiectarea infrastructurii: drumuri, poduri, documentații și legislație.',
+  url: 'https://me-design.ro/blog',
+  publisher: { '@id': 'https://me-design.ro/#organization' },
+  blogPost: posts.map((p) => ({
+    '@type': 'BlogPosting',
+    headline: p.data.title,
+    description: p.data.description,
+    datePublished: p.data.pubDate.toISOString(),
+    url: `https://me-design.ro/blog/${p.slug}`,
+  })),
+};
+---
+
+<Layout
+  title="Blog — Ghiduri și articole tehnice"
+  description="Ghiduri practice despre documentații de proiectare, autorizare și execuție în infrastructura rutieră. Resurse pentru primării, consilii județene și constructori."
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Blog</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Ghiduri și articole tehnice
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+        Resurse practice despre documentații, autorizare și soluții tehnice — scrise pentru beneficiarii proiectelor de infrastructură.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      {posts.length === 0 ? (
+        <p class="text-steel-500 text-center py-12">Articolele sunt în pregătire. Revino în curând.</p>
+      ) : (
+        <>
+          <div class="flex flex-wrap gap-2 mb-8" data-aos="fade-up">
+            <button
+              type="button"
+              data-filter="all"
+              class="filter-btn px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-brand-800 text-white"
+            >
+              Toate
+            </button>
+            {categories.map((cat) => (
+              <button
+                type="button"
+                data-filter={cat}
+                class="filter-btn px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-steel-100 text-steel-600 hover:bg-steel-200"
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7" id="posts-grid">
+            {posts.map((post, i) => (
+              <article
+                class="post-card group bg-white rounded-2xl overflow-hidden border border-steel-100 hover:shadow-xl transition-all flex flex-col"
+                data-category={post.data.category}
+                data-aos="fade-up"
+                data-aos-delay={(i % 3) * 80}
+              >
+                <a href={`/blog/${post.slug}`} class="block overflow-hidden aspect-[16/10] bg-steel-100">
+                  {post.data.image ? (
+                    <img
+                      src={post.data.image}
+                      alt={post.data.imageAlt ?? post.data.title}
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading={i < 3 ? 'eager' : 'lazy'}
+                      width="640"
+                      height="400"
+                    />
+                  ) : (
+                    <div class="w-full h-full bg-gradient-to-br from-brand-700 to-brand-900" />
+                  )}
+                </a>
+
+                <div class="p-5 flex flex-col flex-1">
+                  <div class="flex items-center gap-2 flex-wrap text-[12px]">
+                    <span class="bg-accent-500/10 text-accent-600 px-3 py-1 rounded-full font-semibold">
+                      {post.data.category}
+                    </span>
+                    <time datetime={post.data.pubDate.toISOString()} class="text-steel-400">
+                      {fmtDate(post.data.pubDate)}
+                    </time>
+                    <span class="text-steel-300">·</span>
+                    <span class="text-steel-400">{readingTime(post.body)} min</span>
+                  </div>
+
+                  <h2 class="font-heading font-bold text-[18px] text-brand-800 mt-3 leading-snug">
+                    <a href={`/blog/${post.slug}`} class="hover:text-accent-600 transition-colors">
+                      {post.data.title}
+                    </a>
+                  </h2>
+
+                  <p class="text-steel-500 text-[14px] mt-2 leading-relaxed flex-1">
+                    {post.data.description}
+                  </p>
+
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="inline-flex items-center gap-2 text-accent-600 font-semibold text-[14px] mt-4 group/link"
+                  >
+                    Citește articolul
+                    <svg class="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <p class="text-steel-400 text-center text-[14px] mt-8 hidden" id="no-results">
+            Nu există articole în această categorie.
+          </p>
+        </>
+      )}
+    </div>
+  </section>
+
+  <!-- Next page navigation -->
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Ai o întrebare despre proiectul tău?</p>
+      <a href="/contact" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Contactează-ne
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script is:inline>
+  (function () {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.post-card');
+    var empty = document.getElementById('no-results');
+    if (!buttons.length) return;
+
+    var ACTIVE = ['bg-brand-800', 'text-white'];
+    var IDLE = ['bg-steel-100', 'text-steel-600', 'hover:bg-steel-200'];
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) {
+          b.classList.remove.apply(b.classList, ACTIVE);
+          b.classList.add.apply(b.classList, IDLE);
+        });
+        btn.classList.remove.apply(btn.classList, IDLE);
+        btn.classList.add.apply(btn.classList, ACTIVE);
+
+        var filter = btn.getAttribute('data-filter');
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var match = filter === 'all' || card.getAttribute('data-category') === filter;
+          card.classList.toggle('hidden', !match);
+          if (match) visible++;
+        });
+
+        if (empty) empty.classList.toggle('hidden', visible > 0);
+      });
+    });
+  })();
+</script>

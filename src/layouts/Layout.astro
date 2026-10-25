@@ -5,12 +5,22 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  keywords?: string[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title,
   description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.',
   image = '/img/og-default.jpg',
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  keywords = [],
+  jsonLd,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, 'https://me-design.ro');
@@ -29,14 +39,22 @@ const fullTitle = `${title} | ME Design`;
     <!-- Canonical -->
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Blog ME Design" href="https://me-design.ro/rss.xml" />
+
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content="ro_RO" />
     <meta property="og:site_name" content="ME Design" />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {type === 'article' && <meta property="article:author" content="Mario Engineering Design SRL" />}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -429,6 +447,10 @@ const fullTitle = `${title} | ME Design`;
       ]
     }
     </script>
+
+    {jsonLd && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+    )}
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N"></script>
