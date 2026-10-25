@@ -14,3 +14,17 @@ order: 8
 ---
 
 Proiectare 12,15 km drum județean cu două poduri și consolidări terasament.
+
+## Contextul proiectului
+
+Modernizarea și reabilitarea DJ 101S, pentru Consiliul Județean Prahova, a acoperit **12,15 km de drum județean**, incluzând două poduri și lucrări de consolidare a terasamentului.
+
+## De ce nu se pot trata separat
+
+Un drum județean de această lungime nu este o lucrare omogenă. Pe traseu se succed sectoare cu probleme diferite: zone în care structura rutieră este principala deficiență, zone în care terasamentul prezintă instabilitate, și punctele în care lucrările de artă determină întreaga soluție.
+
+Tratarea separată a celor trei componente — drum, poduri, consolidări — ar fi condus la soluții care nu se racordează. Un pod reabilitat la o cotă incompatibilă cu profilul longitudinal al drumului, sau o consolidare dimensionată fără a ține cont de încărcările din structura rutieră finală, generează lucrări suplimentare în faza de execuție.
+
+## Documentația elaborată
+
+Proiectul a fost elaborat în faza DALI, cu expertiza tehnică și studiile de teren aferente, tratând unitar cele trei categorii de lucrări. Pentru podurile existente, evaluarea stării tehnice a determinat încadrarea intervenției și soluțiile admisibile.
