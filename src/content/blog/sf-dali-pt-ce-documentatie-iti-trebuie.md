@@ -2,6 +2,7 @@
 title: "SF, DALI sau PT? Ghidul documentațiilor de proiectare"
 description: "Diferența dintre Studiu de Fezabilitate, DALI și Proiect Tehnic, explicată pe înțelesul beneficiarului. Ce documentație îți trebuie și în ce ordine."
 pubDate: 2026-08-12
+updatedDate: 2026-10-25
 category: "Ghiduri"
 image: "/img/projects/proiectare-drumuri.png"
 imageAlt: "Proiectare drumuri — documentație tehnică"
@@ -12,9 +13,11 @@ Una dintre cele mai frecvente confuzii pe care le întâlnim în discuțiile cu 
 
 Acest ghid clarifică ce înseamnă fiecare fază, când se aplică și în ce ordine se parcurg.
 
+> **Actualizare — octombrie 2026.** De la 25 august 2026 este în vigoare **CATUC (Legea nr. 169/2026)**, care restructurează parcursul unui proiect de investiții pe stadii și înlocuiește DTAC cu **PAC**. Structura SF / DALI / PT descrisă mai jos **rămâne aplicabilă** proiectelor aflate în situațiile tranzitorii prevăzute la art. 577 alin. (1) — detaliate la finalul articolului. Pentru noua structură, vezi articolul despre [fazele de proiectare după CATUC](/blog/faze-proiectare-catuc-stadii-proiect).
+
 ## Cadrul legal: HG 907/2016
 
-Etapele de elaborare și conținutul documentațiilor tehnico-economice pentru investiții finanțate din fonduri publice sunt reglementate de **Hotărârea de Guvern nr. 907/2016**. Acest act normativ stabilește exact ce documente sunt necesare și ce trebuie să conțină fiecare.
+Etapele de elaborare și conținutul documentațiilor tehnico-economice pentru investiții finanțate din fonduri publice au fost reglementate de **Hotărârea de Guvern nr. 907/2016**. Acest act normativ stabilește ce documente sunt necesare și ce trebuie să conțină fiecare, și continuă să se aplice proiectelor aflate în derulare la data intrării în vigoare a CATUC.
 
 Ordinea generală este următoarea:
 
@@ -90,6 +93,8 @@ DTAC nu înlocuiește Proiectul Tehnic. Este un extras din acesta, întocmit spe
 
 Ordinea practică este: certificat de urbanism → avize → DTAC → autorizație de construire.
 
+**Atenție la denumire:** sub CATUC, DTAC a fost înlocuit de **PAC — Proiectul pentru Autorizarea Construirii**, iar DTAD de **PAD**. Pentru proiectele noi se folosesc noile denumiri și formularele aprobate prin Ordinul MDLPA nr. 975/2026.
+
 ## Verificarea de proiect
 
 Indiferent de fază, documentațiile tehnice trebuie verificate de **verificatori de proiecte atestați**, pe cerințele esențiale aplicabile (rezistență mecanică și stabilitate, siguranță în exploatare și celelalte, în funcție de specificul lucrării).
@@ -111,6 +116,23 @@ Dacă pregătești o investiție în infrastructură, ordinea realistă a pașil
 9. Obții autorizația de construire
 
 Fiecare pas sărit se întoarce mai târziu sub formă de întârziere sau de cheltuială suplimentară.
+
+## Care proiecte rămân sub HG 907/2016
+
+După intrarea în vigoare a CATUC, prima întrebare pentru orice proiect este sub ce regim intră.
+
+Potrivit **art. 577 alin. (1) din Legea nr. 169/2026**, prevederile privind noul ciclu de viață al proiectului **nu se aplică**:
+
+- lucrărilor aflate în curs de execuție la 25 august 2026;
+- obiectivelor pentru ale căror PT, SF sau DALI au fost inițiate procedurile de achiziție publică până la acea dată, ori ale căror documentații au fost recepționate de beneficiar sau depuse spre aprobare/avizare;
+- obiectivelor cu finanțare aprobată;
+- documentațiilor elaborate și recepționate anterior, care necesită actualizare sau sunt depuse spre reaprobare.
+
+Acestor situații li se aplică legislația în vigoare la data la care au intervenit — adică structura SF / DALI / PT descrisă în acest articol.
+
+De asemenea, potrivit art. 582, procedurile de elaborare, avizare și autorizare inițiate anterior rămân supuse dispozițiilor în vigoare la data inițierii, iar certificatele de urbanism, avizele și autorizațiile emise anterior își păstrează valabilitatea.
+
+Pentru investițiile începute după 25 august 2026, parcursul se structurează pe cele șapte stadii introduse de CATUC.
 
 ---
 
