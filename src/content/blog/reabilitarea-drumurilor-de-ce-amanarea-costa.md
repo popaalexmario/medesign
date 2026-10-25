@@ -3,8 +3,8 @@ title: "Reabilitarea drumurilor locale: de ce amânarea costă mai mult"
 description: "Cum se degradează o structură rutieră, de ce traficul greu depășește dimensionarea inițială și de ce intervenția la timp costă mult mai puțin."
 pubDate: 2026-10-15
 category: "Tehnic"
-image: "/img/projects/CRAIOVA.png"
-imageAlt: "Modernizare infrastructură rutieră urbană"
+image: "/img/blog/reabilitare-drumuri.jpg"
+imageAlt: "Lucrări de lărgire și reabilitare pe un drum cu trafic intens"
 keywords: ["reabilitare drum", "modernizare drum comunal", "structura rutiera", "degradare drum", "trafic greu"]
 ---
 

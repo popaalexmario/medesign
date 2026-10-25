@@ -3,8 +3,8 @@ title: "Ce lucrări de infrastructură se pot face fără autorizație"
 description: "CATUC introduce trei regimuri: autorizație, notificare simplificată sau nicio formalitate. Ce intră în fiecare pentru drumuri, poduri și lucrări de sprijin."
 pubDate: 2026-10-25
 category: "Legislație"
-image: "/img/projects/ANINOASA.jpg"
-imageAlt: "Lucrări de întreținere și reparații la infrastructura rutieră"
+image: "/img/blog/lucrari-autorizatie.jpg"
+imageAlt: "Lucrări de intervenție pe o arteră rutieră urbană"
 keywords: ["lucrari fara autorizatie", "CATUC notificare", "intretinere drumuri", "interventie prima urgenta", "Legea 169/2026"]
 ---
 
