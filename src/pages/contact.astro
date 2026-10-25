@@ -71,5 +71,160 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <section class="section-padding bg-steel-50 border-t border-steel-100">
+    <div class="container max-w-2xl mx-auto">
+      <h2 class="font-heading font-bold text-[24px] text-brand-800" data-aos="fade-up">Scrie-ne despre proiectul tău</h2>
+      <p class="text-steel-500 text-[15px] mt-2 mb-6" data-aos="fade-up" data-aos-delay="50">
+        Completează formularul și revenim cu un răspuns în maximum 24 de ore lucrătoare.
+        Câmpurile marcate cu <span class="text-accent-600">*</span> sunt obligatorii.
+      </p>
+
+      <form id="contact-form" class="space-y-4" novalidate data-aos="fade-up" data-aos-delay="100">
+        <!-- honeypot anti-spam -->
+        <div class="absolute w-px h-px overflow-hidden -left-[9999px]" aria-hidden="true">
+          <label>Nu completa acest câmp<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="nume" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Nume și prenume <span class="text-accent-600">*</span>
+            </label>
+            <input id="nume" name="nume" type="text" required maxlength="120" autocomplete="name"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+          <div>
+            <label for="organizatie" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Instituție / companie
+            </label>
+            <input id="organizatie" name="organizatie" type="text" maxlength="160" autocomplete="organization"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Email <span class="text-accent-600">*</span>
+            </label>
+            <input id="email" name="email" type="email" required maxlength="160" autocomplete="email"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+          <div>
+            <label for="telefon" class="block text-[14px] font-semibold text-brand-800 mb-1.5">Telefon</label>
+            <input id="telefon" name="telefon" type="tel" maxlength="40" autocomplete="tel"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+        </div>
+
+        <div>
+          <label for="locatie" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+            Localizarea proiectului
+          </label>
+          <input id="locatie" name="locatie" type="text" maxlength="160" placeholder="Județ, localitate"
+            class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] placeholder:text-steel-300 focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+        </div>
+
+        <div>
+          <label for="mesaj" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+            Descrierea proiectului <span class="text-accent-600">*</span>
+          </label>
+          <textarea id="mesaj" name="mesaj" rows="6" required maxlength="5000"
+            placeholder="Tipul lucrării (drumuri, poduri, consolidări), faza de proiectare necesară, termenul estimat și orice alt detaliu util."
+            class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] leading-relaxed placeholder:text-steel-300 focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all resize-y"></textarea>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
+          <button type="submit" id="contact-submit"
+            class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 disabled:opacity-60 disabled:cursor-not-allowed text-white px-7 py-3.5 rounded-full font-semibold text-[15px] transition-all group">
+            <span id="contact-submit-text">Trimite solicitarea</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+          <p class="text-steel-400 text-[13px]">
+            Datele sunt folosite doar pentru a-ți răspunde.
+            <a href="/politica-de-confidentialitate" class="text-accent-600 hover:underline">Politica de confidențialitate</a>
+          </p>
+        </div>
+
+        <p id="contact-status" role="status" aria-live="polite" class="hidden rounded-xl px-4 py-3 text-[14px]"></p>
+      </form>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var btn = document.getElementById('contact-submit');
+    var btnText = document.getElementById('contact-submit-text');
+    var status = document.getElementById('contact-status');
+
+    function show(kind, msg) {
+      status.className =
+        'rounded-xl px-4 py-3 text-[14px] ' +
+        (kind === 'ok'
+          ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+          : 'bg-red-50 text-red-800 border border-red-200');
+      status.innerHTML = msg;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var fd = new FormData(form);
+      var payload = {};
+      fd.forEach(function (v, k) { payload[k] = v; });
+
+      if (!payload.nume || !payload.email || !payload.mesaj) {
+        show('err', 'Completează numele, emailul și descrierea proiectului.');
+        return;
+      }
+
+      btn.disabled = true;
+      btnText.textContent = 'Se trimite...';
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+        .then(function (res) {
+          if (res.ok && res.body.ok) {
+            form.reset();
+            show('ok', 'Mesajul a fost trimis. Revenim cu un răspuns în maximum 24 de ore lucrătoare.');
+            if (window.gtag) window.gtag('event', 'generate_lead', { method: 'formular_contact' });
+          } else {
+            var body =
+              'Nume: ' + (payload.nume || '') + '\n' +
+              'Instituție / companie: ' + (payload.organizatie || '') + '\n' +
+              'Email: ' + (payload.email || '') + '\n' +
+              'Telefon: ' + (payload.telefon || '') + '\n' +
+              'Localizare proiect: ' + (payload.locatie || '') + '\n\n' +
+              'Descrierea proiectului:\n' + (payload.mesaj || '') + '\n';
+            var link =
+              'mailto:office@me-design.ro?subject=' +
+              encodeURIComponent('Solicitare proiectare — ' + (payload.nume || '')) +
+              '&body=' + encodeURIComponent(body);
+            show(
+              'err',
+              ((res.body && res.body.error) || 'Mesajul nu a putut fi trimis automat.') +
+                ' <a href="' + link + '" class="underline font-semibold">Trimite-l prin emailul tău</a> — datele completate sunt deja incluse.'
+            );
+          }
+        })
+        .catch(function () {
+          show('err', 'Conexiunea a eșuat. Scrie-ne la <a href="mailto:office@me-design.ro" class="underline font-semibold">office@me-design.ro</a>.');
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btnText.textContent = 'Trimite solicitarea';
+        });
+    });
+  })();
+</script>
