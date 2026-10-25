@@ -1,0 +1,197 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const profile = [
+  {
+    id: 'consultanti',
+    eticheta: 'Consultanți de fonduri',
+    titlu: 'Pentru consultanți de fonduri europene',
+    intro:
+      'Aduci unei primării o axă de finanțare, dar dosarul stă sau cade pe documentația tehnică. Avem experiență cu obiective finanțate prin PNRR și prin programe naționale, și știm ce cere un dosar ca să treacă de evaluare.',
+    oferim: [
+      'Documentații tehnico-economice corelate cu cerințele ghidului solicitantului',
+      'Coordonarea studiilor de teren necesare depunerii',
+      'Răspuns la solicitările de clarificări, în termenele evaluării',
+      'Continuitate după contractare — proiect tehnic, autorizare, asistență tehnică',
+    ],
+    dovada: {
+      text:
+        'Studiul de fezabilitate pe care l-am elaborat pentru pasajul „Clubul Văcarilor" a stat la baza unui obiectiv implementat de C.N.A.I.R. în parteneriat cu Consiliul Județean Maramureș și Municipiul Baia Mare, finanțat prin PNRR — Componenta 4, cu o valoare totală de 99.463.913,34 lei. Investiția a fost recepționată și dată în circulație în iulie 2026.',
+      href: '/portofoliu/pasaj-vacari-maramures',
+      link: 'Vezi proiectul',
+    },
+  },
+  {
+    id: 'antreprenori',
+    eticheta: 'Antreprenori',
+    titlu: 'Pentru antreprenori și constructori',
+    intro:
+      'În contractele de proiectare și execuție, proiectantul trebuie să țină pasul cu șantierul, nu invers. Lucrăm frecvent ca proiectant în cadrul contractelor atribuite antreprenorilor generali.',
+    oferim: [
+      'Proiect tehnic de execuție în contracte de proiectare și execuție',
+      'Adaptarea documentației la condițiile reale descoperite la săpătură',
+      'Asistență tehnică pe durata execuției, cu prezență în teren',
+      'Soluționarea rapidă a neconformităților identificate pe parcurs',
+    ],
+    dovada: {
+      text:
+        'Pe DN 7, în județul Vâlcea, am elaborat proiectul tehnic de execuție pentru protecția versanților pe patru sectoare însumând peste 20 km și asigurăm asistența tehnică pe durata lucrărilor. Beneficiarul final este C.N.A.I.R. S.A., iar contractul de proiectare a fost încheiat cu antreprenorul general.',
+      href: '/portofoliu/dn7-versanti-valcea',
+      link: 'Vezi proiectul',
+    },
+  },
+  {
+    id: 'uzinatori',
+    eticheta: 'Uzinatori',
+    titlu: 'Pentru uzinatori de structuri metalice',
+    intro:
+      'Detaliile de uzinare sunt documentația la care o cotă greșită nu se corectează pe șantier, ci refăcând elementul. Elaborăm detalii pentru structuri metalice de poduri și pasaje, direct pentru atelierul care le execută.',
+    oferim: [
+      'Detalii de uzinare cu geometrie, toleranțe și detalii de îmbinare',
+      'Planuri de montaj și succesiune tehnologică de execuție',
+      'Documentație corelată cu cerințele beneficiarului final și ale finanțatorului',
+      'Disponibilitate pentru clarificări pe parcursul fabricației',
+    ],
+    dovada: {
+      text:
+        'Am elaborat detaliile de uzinare și execuție pentru pasajul de pe A0 peste A2, pentru MS Interproiect Engineering SRL, și pentru pasajul superior din Tronsonul 3 Gurasada–Simeria, pentru Marian Stanciu Internațional, în lanțul de execuție al asocierii FCC Construcción – Astaldi – Contratas y Ventas, cu beneficiar final C.F.R. S.A.',
+      href: '/portofoliu/pasaj-gurasada-hunedoara',
+      link: 'Vezi proiectul',
+    },
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
+    { '@type': 'ListItem', position: 2, name: 'Colaborări', item: 'https://me-design.ro/colaborari' },
+  ],
+};
+---
+
+<Layout
+  title="Colaborări — partener de proiectare pentru profesioniști"
+  description="Proiectare pentru consultanți de fonduri europene, antreprenori generali și uzinatori de structuri metalice. Documentații, detalii de execuție și asistență tehnică."
+  keywords={['partener proiectare', 'proiectant subcontractant', 'detalii de uzinare', 'consultant fonduri europene infrastructura']}
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="pt-28 pb-10 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Colaborări</span>
+      <h1 class="text-[32px] md:text-[48px] font-heading font-extrabold text-white mt-3 leading-tight" data-aos="fade-up" data-aos-delay="50">
+        Partener de proiectare<br />pentru profesioniști
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+        O parte importantă din proiectele noastre vine prin colaborări — cu consultanți care pregătesc
+        dosare de finanțare, cu antreprenori în contracte de proiectare și execuție, și cu uzinatori
+        de structuri metalice.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mt-7" data-aos="fade-up" data-aos-delay="150">
+        {profile.map((p) => (
+          <a href={`#${p.id}`} class="bg-white/10 hover:bg-white/20 text-white/80 px-4 py-2 rounded-full text-[13px] font-semibold transition-all">
+            {p.eticheta}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container max-w-4xl space-y-14">
+      {profile.map((p, i) => (
+        <div id={p.id} class="scroll-mt-28" data-aos="fade-up">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="w-9 h-9 rounded-xl bg-accent-500/10 text-accent-600 font-heading font-bold text-[15px] flex items-center justify-center">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <h2 class="text-[22px] md:text-[28px] font-heading font-bold text-brand-800">{p.titlu}</h2>
+          </div>
+
+          <p class="text-steel-600 text-[16px] leading-relaxed">{p.intro}</p>
+
+          <div class="grid md:grid-cols-2 gap-5 mt-6">
+            <div class="bg-steel-50 border border-steel-100 rounded-2xl p-5">
+              <h3 class="font-heading font-bold text-brand-800 text-[15px] mb-3">Ce livrăm</h3>
+              <ul class="space-y-2.5">
+                {p.oferim.map((o) => (
+                  <li class="flex items-start gap-2.5 text-steel-600 text-[14px] leading-snug">
+                    <svg class="w-4 h-4 text-accent-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {o}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="bg-brand-900 rounded-2xl p-5 flex flex-col">
+              <h3 class="font-heading font-bold text-white text-[15px] mb-3">Un exemplu concret</h3>
+              <p class="text-white/70 text-[14px] leading-relaxed flex-1">{p.dovada.text}</p>
+              <a href={p.dovada.href} class="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 font-semibold text-[14px] mt-4 group">
+                {p.dovada.link}
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-padding bg-steel-50 border-t border-steel-100">
+    <div class="container max-w-3xl">
+      <h2 class="text-[24px] md:text-[32px] font-heading font-bold text-brand-800 text-center" data-aos="fade-up">
+        De ce contează cu cine lucrezi
+      </h2>
+      <div class="grid sm:grid-cols-3 gap-5 mt-8">
+        {[
+          { t: 'Răspundem la termen', d: 'Într-un dosar de finanțare sau pe un șantier în desfășurare, o întârziere de două săptămâni la documentație costă mult mai mult decât documentația însăși.' },
+          { t: 'Acoperim toate fazele', d: 'De la studii și expertiză până la detalii de execuție și asistență tehnică — fără să schimbi proiectantul la mijlocul drumului.' },
+          { t: 'Cunoaștem lanțul', d: 'Am lucrat atât direct cu beneficiari publici, cât și ca subcontractant pentru antreprenori și uzinatori. Știm ce așteaptă fiecare verigă.' },
+        ].map((c, i) => (
+          <div class="bg-white border border-steel-100 rounded-2xl p-5" data-aos="fade-up" data-aos-delay={i * 80}>
+            <h3 class="font-heading font-bold text-brand-800 text-[15px]">{c.t}</h3>
+            <p class="text-steel-500 text-[14px] mt-2 leading-relaxed">{c.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-brand-900">
+    <div class="container text-center max-w-2xl" data-aos="fade-up">
+      <h2 class="text-[26px] md:text-[34px] font-heading font-bold text-white">
+        Ai nevoie de un proiectant în echipă?
+      </h2>
+      <p class="text-white/60 text-[16px] mt-3">
+        Spune-ne despre ce lucrare e vorba, în ce fază ești și care e termenul.
+        Îți răspundem dacă putem prelua și în ce interval.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+        <a href="/contact" class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-white px-7 py-4 rounded-full font-semibold text-[15px] transition-all group">
+          Discută colaborarea
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        <a href="/portofoliu" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-7 py-4 rounded-full font-semibold text-[15px] border border-white/25 hover:bg-white/20 transition-all">
+          Vezi portofoliul
+        </a>
+      </div>
+      <p class="text-white/40 text-[13px] mt-5">
+        Sau direct la <a href="mailto:office@me-design.ro" class="text-accent-400 hover:underline">office@me-design.ro</a>
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
