@@ -6,7 +6,7 @@ faza: "DE"
 location: "București"
 judet: "București"
 beneficiar: "C.N.A.I.R. S.A."
-beneficiarPrin: "prin uzinatorul structurii metalice"
+beneficiarPrin: "prin uzinatorul MS Interproiect Engineering SRL"
 region: "muntenia"
 year: "2020"
 image: "/img/projects/PASAJ%20A0.png"
@@ -20,7 +20,7 @@ Detalii de uzinare si executie pentru pasajul auto pe A0 peste A2 Km 53+069.
 
 Pasajul de pe Autostrada A0 peste Autostrada A2, la km 53+069, face parte din centura de autostradă a Municipiului București. Am elaborat **detaliile de uzinare și de execuție** pentru structura pasajului rutier.
 
-Beneficiarul final al lucrării este **C.N.A.I.R. S.A.**, iar execuția lotului a revenit constructorului **Alsim Alarko Sanayi Tesisleri ve Ticaret A.Ş.** Documentația a fost elaborată pentru uzinatorul structurii metalice, în lanțul de execuție al proiectului.
+Beneficiarul final al lucrării este **C.N.A.I.R. S.A.**, iar execuția lotului a revenit constructorului **Alsim Alarko Sanayi Tesisleri ve Ticaret A.Ş.** Documentația a fost elaborată pentru **MS Interproiect Engineering SRL**, uzinatorul structurii metalice, în lanțul de execuție al proiectului.
 
 ## Ce înseamnă faza DE
 
