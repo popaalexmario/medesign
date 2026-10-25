@@ -46,7 +46,7 @@ export async function onRequestPost({ request, env }) {
   const to = env.CONTACT_TO || 'office@me-design.ro';
   const from = env.CONTACT_FROM || 'Formular site <formular@me-design.ro>';
 
-  if (!env.RESEND_API_KEY) {
+  if (!env.RESEND_API_KEY && !env.WEB3FORMS_KEY) {
     return json(503, {
       ok: false,
       error: 'Formularul nu este încă activat. Scrie-ne direct la office@me-design.ro.',
@@ -75,25 +75,31 @@ export async function onRequestPost({ request, env }) {
     <div style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.6;white-space:pre-wrap;border-left:3px solid #d97706;padding-left:14px">${esc(f.mesaj)}</div>
   `;
 
+  const subject = `Solicitare site — ${f.nume}${f.organizatie ? ` (${f.organizatie})` : ''}`;
+
+  const provider = env.RESEND_API_KEY
+    ? [
+        'https://api.resend.com/emails',
+        { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+        { from, to: [to], reply_to: f.email, subject, html },
+      ]
+    : [
+        'https://api.web3forms.com/submit',
+        { 'content-type': 'application/json', accept: 'application/json' },
+        { access_key: env.WEB3FORMS_KEY, subject, from_name: f.nume, replyto: f.email, ...f, html },
+      ];
+
   try {
-    const res = await fetch('https://api.resend.com/emails', {
+    const [endpoint, headers, body] = provider;
+    const res = await fetch(endpoint, {
       method: 'POST',
-      headers: {
-        authorization: `Bearer ${env.RESEND_API_KEY}`,
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: f.email,
-        subject: `Solicitare site — ${f.nume}${f.organizatie ? ` (${f.organizatie})` : ''}`,
-        html,
-      }),
+      headers,
+      body: JSON.stringify(body),
     });
 
     if (!res.ok) {
       const detail = await res.text();
-      console.error('Resend a respins cererea:', res.status, detail);
+      console.error('Serviciul de email a respins cererea:', res.status, detail);
       return json(502, {
         ok: false,
         error: 'Mesajul nu a putut fi trimis. Scrie-ne direct la office@me-design.ro.',
