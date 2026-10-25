@@ -5,62 +5,66 @@ import Footer from '../components/Footer.astro';
 
 const stats = [
   { value: 7, suffix: '+', label: 'Ani experiență', icon: '📐' },
-  { value: 200, suffix: '+', label: 'Proiecte finalizate', icon: '🏗️' },
-  { value: 50, suffix: '+', label: 'Km drumuri proiectate', icon: '🛣️' },
-  { value: 100, suffix: '%', label: 'Proiecte la termen', icon: '✅' },
+  { value: 150, suffix: '+', label: 'Proiecte finalizate', icon: '🏗️' },
+  { value: 2000, suffix: '+', label: 'Km drumuri proiectate', icon: '🛣️' },
+  { value: 100, suffix: '+', label: 'Poduri proiectate', icon: '🌉' },
 ];
 
 const services = [
   {
     icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>`,
-    title: 'Proiectare drumuri',
-    desc: 'Proiectare completă drumuri comunale, județene și naționale. De la studiu topografic la detalii de execuție.',
-    href: '/servicii/proiectare-drumuri',
+    title: 'Proiectare drumuri și platforme',
+    desc: 'Documentații tehnice complete pentru drumuri comunale, județene și naționale — de la studii topografice, geotehnice, de trafic și gospodărirea apelor, până la proiectul tehnic de execuție, verificarea de proiect și asistența tehnică pe șantier.',
+    href: '/servicii#proiectare-drumuri',
     color: 'from-blue-500 to-blue-700',
   },
   {
-    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>`,
-    title: 'Rețele edilitare',
-    desc: 'Proiectare rețele de apă, canalizare, gaze naturale și alimentare cu energie electrică.',
-    href: '/servicii/retele-edilitare',
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 17h18M3 17V9a2 2 0 012-2h4m10 10V9a2 2 0 00-2-2h-4m-4 0V5m0 2v10m0-10h4m-4 0H7" /></svg>`,
+    title: 'Proiectare poduri, pasaje, pasarele',
+    desc: 'Documentații tehnice complete pentru poduri, pasaje și pasarele — de la studii topografice, hidrologice și geotehnice, până la proiectul tehnic de execuție, verificarea de proiect și asistența tehnică pe șantier.',
+    href: '/servicii#proiectare-poduri',
     color: 'from-emerald-500 to-emerald-700',
   },
   {
-    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>`,
-    title: 'Studii de fezabilitate',
-    desc: 'Analize tehnico-economice complete, documentații pentru finanțări europene și guvernamentale.',
-    href: '/servicii/studii-fezabilitate',
+    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-2M5 21H3m2 0h2m0-16h6m-6 4h6m-6 4h6" /></svg>`,
+    title: 'Proiectare lucrări de sprijin și consolidări',
+    desc: 'Documentații tehnice complete pentru lucrări de sprijin și consolidare — de la studii geotehnice, expertiză tehnică și calcule de stabilitate, până la proiectul tehnic de execuție, verificarea de proiect și asistența tehnică pe șantier.',
+    href: '/servicii#lucrari-sprijin-consolidari',
     color: 'from-amber-500 to-amber-700',
-  },
-  {
-    icon: `<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>`,
-    title: 'Asistență tehnică',
-    desc: 'Supraveghere și asistență tehnică pe toată durata execuției lucrărilor de infrastructură.',
-    href: '/servicii/asistenta-tehnica',
-    color: 'from-violet-500 to-violet-700',
   },
 ];
 
 const process = [
   { step: '01', title: 'Analiză', desc: 'Evaluăm cerințele proiectului, studiem amplasamentul și identificăm soluțiile optime.', icon: '🔍' },
   { step: '02', title: 'Proiectare', desc: 'Elaborăm documentația tehnică completă cu respectarea tuturor normativelor în vigoare.', icon: '📐' },
-  { step: '03', title: 'Avizare', desc: 'Obținem toate avizele și acordurile necesare de la autoritățile competente.', icon: '📋' },
+  { step: '03', title: 'Sprijin obținere avize', desc: 'Întocmim documentații pentru obținerea avizelor și acordurilor necesare de la autoritățile competente în concordanță cu Certificatul de Urbanism.', icon: '📋' },
   { step: '04', title: 'Livrare', desc: 'Predăm proiectul finalizat și oferim suport pe toată durata implementării.', icon: '🚀' },
 ];
 
 const reasons = [
-  { icon: '🏗️', title: 'Experiență dovedită', desc: 'Peste 15 ani în proiectarea infrastructurii, cu sute de proiecte livrate cu succes.' },
+  { icon: '🏗️', title: 'Experiență dovedită', desc: 'Peste 7 ani în proiectarea infrastructurii, cu sute de proiecte livrate cu succes.' },
   { icon: '📋', title: 'Documentație completă', desc: 'Proiecte tehnice conforme cu legislația în vigoare, gata pentru autorizare și licitații.' },
   { icon: '⏱️', title: 'Respectăm termenele', desc: 'Livrare la termen, fără surprize. Planificare riguroasă și comunicare constantă.' },
   { icon: '🤝', title: 'Partener de încredere', desc: 'Colaborăm strâns cu autoritățile locale, constructorii și beneficiarii finali.' },
 ];
 ---
 
+<style is:global>
+  #hero-content {
+    padding-top: 6.5rem; /* 104px: header 80px + 24px breathing room */
+  }
+  @media (min-width: 768px) {
+    #hero-content {
+      padding-top: 10rem;
+    }
+  }
+</style>
+
 <Layout title="Proiectare Infrastructură">
   <Header />
 
   <!-- HERO - Real photo + animated blueprint overlay -->
-  <section class="relative min-h-screen flex items-center overflow-hidden" id="hero">
+  <section class="relative min-h-screen flex items-start md:items-center overflow-hidden" id="hero" style="min-height: 100vh; min-height: 100svh">
     <!-- Real photo background with parallax -->
     <div class="absolute inset-0 hero-parallax">
       <img src="/img/hero-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
@@ -158,34 +162,31 @@ const reasons = [
     </div>
 
     <!-- Content -->
-    <div class="container relative z-[4] pt-32 pb-20">
+    <div id="hero-content" class="container relative z-[4] pb-20">
       <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white/70 text-[13px] font-medium mb-8" data-aos="fade-down">
-          <span class="w-2 h-2 bg-accent-400 rounded-full animate-pulse"></span>
-          Proiectare profesională de infrastructură
-        </div>
-
         <h1 class="text-[42px] md:text-[60px] lg:text-[80px] font-heading font-extrabold text-white leading-[1.05] mb-6" data-aos="fade-up">
-          Construim
-          <span class="relative inline-block">
-            <span class="text-accent-400">fundația</span>
-            <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
+          Proiectăm cu
+          <span class="relative inline-block mb-4">
+            <span class="text-accent-400">responsabilitate</span>
+            <svg class="absolute -bottom-6 left-0 w-full" viewBox="0 0 200 12" fill="none">
               <path d="M2 10C50 2 150 2 198 10" stroke="#d97706" stroke-width="3" stroke-linecap="round"
                 stroke-dasharray="200" stroke-dashoffset="200"
                 class="animate-draw-path" style="animation-delay: 1s; animation-duration: 1.5s" />
             </svg>
           </span>
-          <br />infrastructurii
-          <br />de mâine
+          <br />pentru comunități.
         </h1>
 
-        <p class="text-white/60 text-[18px] md:text-[20px] max-w-xl leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="100">
-          Servicii integrate de proiectare drumuri, rețele edilitare, studii de fezabilitate și asistență tehnică. Experiență, precizie, rezultate.
+        <p class="text-white/60 text-[16px] md:text-[20px] max-w-xl leading-relaxed mb-2" data-aos="fade-up" data-aos-delay="100">
+          Servicii integrate de proiectare (CFDP): drumuri, poduri, pasaje, pasarele, lucrări de sprijin și consolidări pentru toate fazele de proiectare.
+        </p>
+        <p class="text-white/80 text-[16px] md:text-[18px] max-w-xl leading-relaxed mb-10 font-medium" data-aos="fade-up" data-aos-delay="150">
+          Experiență, precizie, rezultate.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
           <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all hover:shadow-lg hover:shadow-accent-500/25 relative overflow-hidden">
-            <span class="relative z-10">Solicită ofertă</span>
+            <span class="relative z-10">Discută proiectul tău</span>
             <svg class="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -198,12 +199,12 @@ const reasons = [
       </div>
 
       <!-- Stats with counter animation -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
         {stats.map((stat, i) => (
-          <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-white/20 transition-all duration-500 cursor-default"
+          <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-3 md:p-6 text-center hover:bg-white/10 hover:border-white/20 transition-all duration-500 cursor-default"
             data-aos="fade-up" data-aos-delay={150 + i * 100}>
-            <span class="text-[24px] block mb-2">{stat.icon}</span>
-            <div class="text-[32px] md:text-[40px] font-heading font-extrabold text-white counter-glow">
+            <span class="text-[20px] md:text-[24px] block mb-1 md:mb-2">{stat.icon}</span>
+            <div class="text-[26px] md:text-[40px] font-heading font-extrabold text-white counter-glow">
               <span class="counter" data-target={stat.value} data-suffix={stat.suffix}>0{stat.suffix}</span>
             </div>
             <div class="text-white/40 text-[13px] font-medium mt-1 group-hover:text-white/60 transition-colors">{stat.label}</div>
@@ -220,25 +221,25 @@ const reasons = [
     <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-accent-500/3 rounded-full blur-[80px]"></div>
 
     <div class="container relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-8">
         <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Ce facem</span>
         <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3" data-aos="fade-up" data-aos-delay="50">
-          Servicii de proiectare
+          Servicii de proiectare complete
         </h2>
         <p class="text-steel-500 text-[16px] mt-4 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
           Oferim soluții complete de proiectare infrastructură, de la concept la implementare.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-3 gap-6">
         {services.map((service, i) => (
-          <a href={service.href} class="group tilt-card glass-card rounded-2xl p-8 relative overflow-hidden" data-aos="fade-up" data-aos-delay={i * 100}>
+          <a href={service.href} class="group tilt-card glass-card rounded-2xl p-5 relative overflow-hidden" data-aos="fade-up" data-aos-delay={i * 100}>
             <div class={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 rounded-full blur-[40px] transition-opacity duration-500 -translate-y-8 translate-x-8`}></div>
             <div class="tilt-inner relative z-10">
               <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 group-hover:bg-accent-500 group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" set:html={service.icon} />
-              <h3 class="font-heading font-bold text-[20px] text-brand-800 mt-5 group-hover:text-accent-500 transition-colors">{service.title}</h3>
-              <p class="text-steel-500 text-[15px] mt-3 leading-relaxed">{service.desc}</p>
-              <div class="flex items-center gap-1 text-accent-500 font-semibold text-[14px] mt-5 translate-x-0 group-hover:translate-x-2 transition-transform">
+              <h3 class="font-heading font-bold text-[18px] text-brand-800 mt-3 group-hover:text-accent-500 transition-colors">{service.title}</h3>
+              <p class="text-steel-500 text-[14px] mt-2 leading-relaxed">{service.desc}</p>
+              <div class="flex items-center gap-1 text-accent-500 font-semibold text-[14px] mt-3 translate-x-0 group-hover:translate-x-2 transition-transform">
                 Detalii
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -252,19 +253,19 @@ const reasons = [
   </section>
 
   <!-- PROCES with animated timeline -->
-  <section class="section-padding bg-white relative overflow-hidden">
+  <section class="section-padding bg-brand-900 text-white relative overflow-hidden">
     <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Cum lucrăm</span>
-        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3" data-aos="fade-up" data-aos-delay="50">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Cum lucrăm</span>
+        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
           Proces transparent, rezultate predictibile
         </h2>
       </div>
 
       <!-- Timeline desktop -->
       <div class="hidden md:block relative mb-8">
-        <div class="absolute top-12 left-[12%] right-[12%] h-0.5 bg-steel-100 rounded-full overflow-hidden">
-          <div class="h-full bg-gradient-to-r from-accent-500 via-brand-500 to-accent-500 rounded-full timeline-progress" style="width: 0%"></div>
+        <div class="absolute top-12 left-[12%] right-[12%] h-0.5 bg-white/10 rounded-full overflow-hidden">
+          <div class="h-full bg-gradient-to-r from-accent-500 via-white/40 to-accent-500 rounded-full timeline-progress" style="width: 0%"></div>
         </div>
       </div>
 
@@ -272,12 +273,12 @@ const reasons = [
         {process.map((item, i) => (
           <div class="relative process-step" data-aos="fade-up" data-aos-delay={i * 150}>
             <div class="text-center md:text-left">
-              <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-500/10 to-accent-500/10 border border-brand-500/10 mb-5 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+              <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/5 border border-white/10 mb-5 mx-auto md:mx-0">
                 <span class="text-[28px]">{item.icon}</span>
                 <span class="absolute -top-2 -right-2 w-7 h-7 rounded-lg bg-accent-500 text-white text-[11px] font-bold flex items-center justify-center shadow-lg shadow-accent-500/30">{item.step}</span>
               </div>
-              <h3 class="font-heading font-bold text-[18px] text-brand-800">{item.title}</h3>
-              <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
+              <h3 class="font-heading font-bold text-[18px] text-white">{item.title}</h3>
+              <p class="text-white/50 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -285,52 +286,241 @@ const reasons = [
     </div>
   </section>
 
-  <!-- DE CE NOI with hover animations -->
-  <section class="section-padding bg-brand-900 text-white relative overflow-hidden">
-    <!-- Parallax floating elements -->
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute top-20 left-[10%] w-2 h-2 bg-accent-400/20 rounded-full parallax-layer" data-speed="2"></div>
-      <div class="absolute top-40 right-[15%] w-3 h-3 bg-white/5 rounded-full parallax-layer" data-speed="3"></div>
-      <div class="absolute bottom-32 left-[20%] w-4 h-4 bg-accent-400/10 rounded-full parallax-layer" data-speed="1.5"></div>
-      <div class="absolute top-[60%] right-[30%] w-1.5 h-1.5 bg-white/10 rounded-full parallax-layer" data-speed="4"></div>
-      <div class="absolute top-[30%] left-[40%] w-24 h-24 border border-white/[0.03] rounded-full animate-rotate-slow"></div>
-      <div class="absolute bottom-[20%] right-[10%] w-32 h-32 border border-white/[0.02] rounded-2xl animate-rotate-slow" style="animation-direction: reverse; animation-duration: 45s"></div>
-    </div>
-
-    <div class="container relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">De ce noi</span>
-        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
-          Partenerul potrivit pentru proiectul tău
+  <!-- HARTA ROMANIA -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <section class="section-padding bg-white" id="harta">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-6" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Prezență națională</span>
+        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3">
+          Proiecte în toată România
         </h2>
+        <p class="text-steel-500 text-[16px] mt-4">
+          Am realizat proiecte de infrastructură în toate colțurile țării.
+        </p>
       </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {reasons.map((item, i) => (
-          <div class="group bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-accent-500/30 transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay={i * 100}>
-            <span class="text-[36px] block group-hover:scale-125 transition-transform duration-300">{item.icon}</span>
-            <h3 class="font-heading font-bold text-[17px] text-white mt-4">{item.title}</h3>
-            <p class="text-white/50 text-[14px] mt-3 leading-relaxed group-hover:text-white/70 transition-colors">{item.desc}</p>
-            <div class="mt-4 h-0.5 bg-white/5 rounded-full overflow-hidden">
-              <div class="h-full w-0 group-hover:w-full bg-gradient-to-r from-accent-500 to-brand-300 transition-all duration-700 rounded-full"></div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <div id="romania-map" class="w-full rounded-2xl overflow-hidden shadow-lg border border-steel-100" style="height: 525px;" data-aos="fade-up" data-aos-delay="100"></div>
     </div>
   </section>
+
+  <script is:inline>
+  (function() {
+    var projects = [
+      {
+        lat: 45.18, lng: 25.35,
+        title: 'Modernizare drumuri de interes local',
+        location: 'Comuna Aninoasa, Jud. Dâmbovița',
+        categories: ['Drumuri'], faza: 'DALI+DTAC+PTE', year: '2025',
+        slug: 'aninoasa-dambovita',
+        image: '/img/projects/ANINOASA.jpg'
+      },
+      {
+        lat: 45.03, lng: 24.97,
+        title: 'Infrastructură Verde – Albastră',
+        location: 'Comuna Bughea de Jos, Jud. Argeș',
+        categories: ['Consolidări', 'Pasarele', 'Amenajări Hidrotehnice', 'Parc'], faza: 'SF+DTAC+PTE', year: '2025',
+        slug: 'bughea-de-jos-arges',
+        image: '/img/projects/BUGHEA.png'
+      },
+      {
+        lat: 44.32, lng: 23.80,
+        title: 'Închidere Inel de Trafic – Zona de Sud',
+        location: 'Municipiul Craiova, Jud. Dolj',
+        categories: ['Drumuri', 'Consolidări'], faza: 'DALI+DTAC+PTE', year: '2023–2025',
+        slug: 'craiova-dolj',
+        image: '/img/projects/CRAIOVA.png'
+      },
+      {
+        lat: 46.07, lng: 23.57,
+        title: 'Amenajare Sens Giratoriu',
+        location: 'Municipiul Alba Iulia, Jud. Alba',
+        categories: ['Drumuri'], faza: 'DALI', year: '2024',
+        slug: 'alba-iulia',
+        image: '/img/projects/GIRATIE%20ALBA.png'
+      },
+      {
+        lat: 47.62, lng: 23.50,
+        title: 'Construire Pasaj „Clubul Văcarilor"',
+        location: 'Județul Maramureș',
+        categories: ['Drumuri', 'Poduri'], faza: 'SF', year: '2023',
+        slug: 'pasaj-vacari-maramures',
+        image: '/img/projects/PASAJ%20MARAMURES.jpg'
+      },
+      {
+        lat: 44.17, lng: 28.65,
+        title: 'Terminal Auto Dana PL6 – Portul Constanța',
+        location: 'Portul Constanța',
+        categories: ['Drumuri'], faza: 'DTAC+PTE', year: '2024',
+        slug: 'terminal-auto-port-constanta',
+        image: '/img/projects/PORT%20CONSTANTA.png'
+      },
+      {
+        lat: 44.94, lng: 26.02,
+        title: 'Modernizare și Reabilitare DJ 101S',
+        location: 'Județul Prahova',
+        categories: ['Drumuri', 'Poduri', 'Consolidări'], faza: 'DALI', year: '2023',
+        slug: 'dj101s-prahova',
+        image: '/img/projects/DJ101S%20NOU.png'
+      },
+      {
+        lat: 45.793, lng: 24.141,
+        title: 'Reparație Capitală Pod Strada Gladiolelor (Maria Tereza)',
+        location: 'Municipiul Sibiu',
+        categories: ['Poduri', 'Monument Istoric'], faza: 'DTAC+PTE', year: '2022',
+        slug: 'pod-gladiolelor-sibiu',
+        image: '/img/projects/pod%20gladiolelor.png'
+      },
+      {
+        lat: 45.69, lng: 21.90,
+        title: 'Reabilitare Pod de Fier peste Râul Timiș',
+        location: 'Municipiul Lugoj, Jud. Timiș',
+        categories: ['Poduri', 'Monument Istoric'], faza: 'DALI+DTAC+PTE', year: '2022–2023',
+        slug: 'pod-fier-lugoj-timis',
+        image: '/img/projects/POD%20LUGOJ.jpg'
+      },
+      {
+        lat: 44.37, lng: 27.84,
+        title: 'Amenajare Port Turistic Fetești',
+        location: 'Municipiul Fetești, Jud. Ialomița',
+        categories: ['Drumuri', 'Amenajări Hidrotehnice'], faza: 'SF', year: '2022',
+        slug: 'port-turistic-fetesti',
+        image: '/img/projects/PORT.png'
+      },
+      {
+        lat: 45.27, lng: 26.47,
+        title: 'Modernizarea Drumurilor Locale în Comuna Cozieni',
+        location: 'Comuna Cozieni, Jud. Buzău',
+        categories: ['Drumuri'], faza: 'DALI', year: '2021',
+        slug: 'cozieni-buzau',
+        image: '/img/projects/COZIENI.png'
+      },
+      {
+        lat: 46.25, lng: 26.73,
+        title: 'Modernizare infrastructură str. Emil Rebreanu – Tronson 1',
+        location: 'Municipiul Onești, Jud. Bacău',
+        categories: ['Drumuri'], faza: 'DALI', year: '2021',
+        slug: 'onesti-bacau',
+        image: '/img/projects/ONESTI.png'
+      },
+      {
+        lat: 44.43, lng: 26.10,
+        title: 'Pasaj pe A0 peste A2 Km 53+069',
+        location: 'București',
+        categories: ['Poduri'], faza: 'DE', year: '2020',
+        slug: 'pasaj-a0-a2-bucuresti',
+        image: '/img/projects/PASAJ%20A0.png'
+      },
+      {
+        lat: 45.76, lng: 22.77,
+        title: 'Pasaj superior Gurasada–Simeria',
+        location: 'Comuna Gurasada, Jud. Hunedoara',
+        categories: ['Poduri'], faza: 'DE', year: '2020',
+        slug: 'pasaj-gurasada-hunedoara',
+        image: '/img/projects/Gurasada.png'
+      },
+      {
+        lat: 44.32028, lng: 22.57472,
+        title: 'Lucrări de Reparații Pod Suspendat peste Brațul Gogoșu',
+        location: 'Ostrovul Mare',
+        categories: ['Poduri'], faza: 'DALI', year: '2026',
+        slug: 'pod-gogosu-ostrovul-mare',
+        image: '/img/projects/pod%20gogosu.jpg'
+      },
+      {
+        lat: 44.83, lng: 25.33,
+        title: 'Amenajare Parc în Comuna Perșinari',
+        location: 'U.A.T. Comuna Perșinari, Județul Dâmbovița',
+        categories: ['Parc'], faza: 'SF+PTE', year: '2025',
+        slug: 'parc-persinari-dambovita',
+        image: '/img/projects/parc%20persinari.png'
+      },
+      {
+        lat: 45.37, lng: 24.16,
+        title: 'Protecție Versanți DN 7 km 198+200 – 233+200',
+        location: 'DN 7 Lotrișor, Județul Vâlcea',
+        categories: ['Drumuri', 'Consolidări'], faza: 'PTE+AT', year: '2025–2026',
+        slug: 'dn7-versanti-valcea',
+        image: '/img/projects/dn7.webp'
+      },
+    ];
+
+    function initMap() {
+      if (!window.L || !document.getElementById('romania-map')) return;
+
+      var map = L.map('romania-map', {
+        center: [45.9, 24.8],
+        zoom: 7,
+        zoomControl: true,
+        scrollWheelZoom: false,
+      });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(map);
+
+      var pinSvg = function(color) {
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" width="32" height="42">' +
+          '<path d="M16 0C9.373 0 4 5.373 4 12c0 9 12 28 12 28S28 21 28 12C28 5.373 22.627 0 16 0z" fill="' + color + '" stroke="#fff" stroke-width="2"/>' +
+          '<circle cx="16" cy="12" r="5" fill="#fff"/>' +
+          '</svg>';
+      };
+
+      projects.forEach(function(p) {
+        var icon = L.divIcon({
+          html: pinSvg('#1e3a5f'),
+          className: '',
+          iconSize: [32, 42],
+          iconAnchor: [16, 42],
+          popupAnchor: [0, -44],
+        });
+
+        var cats = p.categories.map(function(c) {
+          return '<span style="background:#1e3a5f15;color:#1e3a5f;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + c + '</span>';
+        }).join(' ');
+
+        var popup = '<div style="font-family:\'Plus Jakarta Sans\',sans-serif;min-width:220px;max-width:280px;">' +
+          (p.image ? '<img src="' + p.image + '" alt="' + p.title + '" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:8px;display:block;" />' : '') +
+          '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;">' + cats +
+          '<span style="background:#d9770615;color:#d97706;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + p.faza + '</span>' +
+          '</div>' +
+          '<strong style="font-size:14px;color:#0a1628;line-height:1.3;display:block;">' + p.title + '</strong>' +
+          '<p style="font-size:12px;color:#64748b;margin-top:4px;">📍 ' + p.location + '</p>' +
+          '<p style="font-size:12px;color:#94a3b8;margin-top:2px;">📅 ' + p.year + '</p>' +
+          '<a href="/portofoliu/' + p.slug + '" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#1e3a5f;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
+          '</div>';
+
+        L.marker([p.lat, p.lng], { icon: icon })
+          .bindPopup(popup, { maxWidth: 280 })
+          .addTo(map);
+      });
+
+      // Pulse animation on markers
+      var style = document.createElement('style');
+      style.textContent = '.leaflet-div-icon { background: none !important; border: none !important; } ' +
+        '.leaflet-div-icon svg { filter: drop-shadow(0 4px 8px rgba(30,58,95,0.4)); transition: transform 0.2s; } ' +
+        '.leaflet-div-icon:hover svg { transform: scale(1.15); }';
+      document.head.appendChild(style);
+    }
+
+    // Load Leaflet JS then init
+    if (!window.L) {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.onload = initMap;
+      document.head.appendChild(script);
+    } else {
+      initMap();
+    }
+  })();
+  </script>
 
   <!-- CTA with animated gradient -->
   <section class="section-padding bg-steel-50">
     <div class="container">
-      <div class="relative bg-gradient-to-br from-brand-500 to-brand-700 rounded-3xl p-12 md:p-16 text-center overflow-hidden" data-aos="fade-up">
+      <div class="relative bg-gradient-to-br from-brand-500 to-brand-700 rounded-3xl p-8 md:p-10 text-center overflow-hidden" data-aos="fade-up">
         <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-accent-500/20 rounded-full blur-[80px] animate-morph"></div>
         <div class="absolute bottom-0 left-0 w-[200px] h-[200px] bg-brand-300/20 rounded-full blur-[60px] animate-morph" style="animation-delay: -4s"></div>
-
-        <!-- Floating dots -->
-        <div class="absolute top-8 left-8 w-2 h-2 bg-white/20 rounded-full animate-float-slow"></div>
-        <div class="absolute bottom-8 right-8 w-3 h-3 bg-accent-400/20 rounded-full animate-float-slow" style="animation-delay: -2s"></div>
-        <div class="absolute top-1/2 left-[15%] w-1.5 h-1.5 bg-white/10 rounded-full animate-float-slow" style="animation-delay: -5s"></div>
 
         <div class="relative z-10">
           <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-white">
@@ -339,7 +529,7 @@ const reasons = [
           <p class="text-white/60 text-[16px] mt-4 max-w-lg mx-auto">
             Contactează-ne pentru o consultanță gratuită. Analizăm cerințele și îți oferim o soluție personalizată.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-5">
             <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all hover:shadow-lg relative overflow-hidden">
               <span class="relative z-10">Solicită consultanță gratuită</span>
               <svg class="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -356,6 +546,17 @@ const reasons = [
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Next page navigation -->
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Continuă să explorezi</p>
+      <a href="/servicii" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Serviciile noastre
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
     </div>
   </section>
 

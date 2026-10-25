@@ -2,14 +2,16 @@
 const currentYear = new Date().getFullYear();
 
 const services = [
-  { label: 'Proiectare drumuri', href: '/servicii#proiectare-drumuri' },
-  { label: 'Proiectare poduri, pasaje, pasarele', href: '/servicii#proiectare-poduri' },
-  { label: 'Lucrări de sprijin și consolidări', href: '/servicii#lucrari-sprijin-consolidari' },
+  { label: 'Proiectare drumuri și platforme', href: '/servicii/proiectare-drumuri' },
+  { label: 'Proiectare poduri, pasaje, pasarele', href: '/servicii/proiectare-poduri-pasaje' },
+  { label: 'Lucrări de sprijin și consolidări', href: '/servicii/lucrari-consolidare' },
 ];
 
 const links = [
   { label: 'Despre noi', href: '/despre' },
   { label: 'Portofoliu', href: '/portofoliu' },
+  { label: 'Zone acoperite', href: '/zone' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 ---
@@ -19,7 +21,7 @@ const links = [
     <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <div class="lg:col-span-1">
         <div class="mb-4">
-          <img src="/img/logo-brand.png" alt="Mario Engineering Design SRL" class="h-14 w-auto object-contain brightness-0 invert" />
+          <img src="/img/logo.png" alt="Mario Engineering Design SRL" class="h-14 w-auto object-contain" />
         </div>
         <p class="text-white/50 text-[14px] leading-relaxed max-w-xs">
           Mario Engineering Design SRL — Proiectare Infrastructură România. Servicii profesionale cu experiență dovedită în proiecte de anvergură.
@@ -66,7 +68,7 @@ const links = [
             <svg class="w-5 h-5 text-accent-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:office@me-design.ro" class="text-white/50 hover:text-accent-400 transition-colors">office@me-design.ro</a>
+            <a href="mailto:office@me-design.ro?subject=Solicitare%20oferta%20proiect&body=Buna%20ziua%2C%0A%0ADorim%20sa%20va%20contactam%20pentru%20un%20proiect%20de%20infrastructura.%0A%0AVa%20rugam%20sa%20ne%20contactati.%0A%0AMultumim!" class="text-white/50 hover:text-accent-400 transition-colors">office@me-design.ro</a>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-accent-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,9 +84,11 @@ const links = [
       <p class="text-white/30 text-[13px]">
         &copy; {currentYear} Mario Engineering Design SRL. Toate drepturile rezervate.
       </p>
-      <p class="text-white/20 text-[12px]">
-        Proiectat cu profesionalism
-      </p>
+      <div class="flex items-center gap-5">
+        <a href="/termeni-si-conditii" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">Termeni și Condiții</a>
+        <a href="/politica-de-confidentialitate" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">Politica de Confidențialitate</a>
+        <a href="/politica-cookies" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">Politica de Cookies</a>
+      </div>
     </div>
   </div>
 </footer>

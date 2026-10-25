@@ -1,0 +1,204 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { regions, type Region } from '../../data/regions';
+
+export async function getStaticPaths() {
+  return regions.map((region) => ({ params: { region: region.id }, props: { region } }));
+}
+
+type Props = { region: Region };
+
+const { region } = Astro.props;
+
+const projects = (await getCollection('projects', ({ data }) => !data.draft && data.region === region.id))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const judeteCuProiecte = [...new Set(projects.map((p) => p.data.judet))];
+const tipuriLucrari = [...new Set(projects.flatMap((p) => p.data.categories))];
+
+const servicii = [
+  { title: 'Proiectare drumuri și platforme', href: '/servicii/proiectare-drumuri' },
+  { title: 'Proiectare poduri, pasaje, pasarele', href: '/servicii/proiectare-poduri-pasaje' },
+  { title: 'Lucrări de sprijin și consolidări', href: '/servicii/lucrari-consolidare' },
+];
+
+const url = `https://me-design.ro/zone/${region.id}`;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${url}#service`,
+    name: `Proiectare infrastructură rutieră în ${region.name}`,
+    description: `Servicii de proiectare drumuri, poduri, pasaje și lucrări de consolidare în ${region.name}.`,
+    provider: { '@id': 'https://me-design.ro/#organization' },
+    areaServed: region.judete.map((j) => ({
+      '@type': 'AdministrativeArea',
+      name: j,
+      address: { '@type': 'PostalAddress', addressRegion: j, addressCountry: 'RO' },
+    })),
+    serviceType: ['Proiectare drumuri', 'Proiectare poduri', 'Lucrări de consolidare'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
+      { '@type': 'ListItem', position: 2, name: 'Zone acoperite', item: 'https://me-design.ro/zone' },
+      { '@type': 'ListItem', position: 3, name: region.name, item: url },
+    ],
+  },
+];
+---
+
+<Layout
+  title={`Proiectare drumuri și poduri în ${region.shortName}`}
+  description={`Proiectare infrastructură rutieră în ${region.name}: drumuri, poduri, pasaje și lucrări de consolidare. Documentații complete și asistență tehnică pe șantier.`}
+  keywords={[`proiectare drumuri ${region.shortName}`, `proiectare poduri ${region.shortName}`, ...region.judete.slice(0, 4).map((j) => `proiectare infrastructura ${j}`)]}
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="pt-28 pb-10 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <nav class="flex items-center gap-2 text-white/50 text-[13px] mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Acasă</a>
+        <span>/</span>
+        <a href="/zone" class="hover:text-white transition-colors">Zone acoperite</a>
+      </nav>
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Acoperire</span>
+      <h1 class="text-[32px] md:text-[48px] font-heading font-extrabold text-white mt-3 leading-tight" data-aos="fade-up" data-aos-delay="50">
+        Proiectare drumuri și poduri<br />în {region.shortName}
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+        {region.intro}
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-2">
+          <h2 class="text-[24px] md:text-[30px] font-heading font-bold text-brand-800" data-aos="fade-up">
+            {projects.length > 0
+              ? `Proiecte realizate în ${region.shortName}`
+              : `Disponibili pentru proiecte în ${region.shortName}`}
+          </h2>
+
+          {projects.length > 0 ? (
+            <div class="grid sm:grid-cols-2 gap-6 mt-6">
+              {projects.map((p, i) => (
+                <a href={`/portofoliu/${p.slug}`} class="group bg-white rounded-2xl overflow-hidden border border-steel-100 hover:shadow-lg transition-all flex flex-col" data-aos="fade-up" data-aos-delay={(i % 2) * 80}>
+                  <div class="aspect-[16/10] bg-steel-100 overflow-hidden">
+                    {p.data.image
+                      ? <img src={p.data.image} alt={p.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="250" />
+                      : <div class="w-full h-full bg-gradient-to-br from-brand-700 to-brand-900" />}
+                  </div>
+                  <div class="p-5 flex flex-col flex-1">
+                    <div class="flex items-center gap-2 flex-wrap">
+                      {p.data.categories.slice(0, 2).map((c) => (
+                        <span class="bg-brand-500/10 text-brand-600 px-2.5 py-0.5 rounded-full text-[11px] font-semibold">{c}</span>
+                      ))}
+                      <span class="text-steel-400 text-[12px]">{p.data.year}</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-[15px] text-brand-800 mt-2 leading-snug group-hover:text-accent-600 transition-colors">{p.data.title}</h3>
+                    <p class="text-steel-400 text-[13px] mt-1.5">{p.data.location}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <p class="text-steel-500 text-[15px] mt-4 leading-relaxed" data-aos="fade-up">
+              Nu avem încă un proiect finalizat în această regiune, dar o acoperim integral.
+              Deplasările pentru ridicări în teren, verificări și asistență tehnică se fac pe {region.acces}.
+            </p>
+          )}
+
+          <div class="mt-10" data-aos="fade-up">
+            <h2 class="text-[22px] font-heading font-bold text-brand-800 mb-4">Județe acoperite</h2>
+            <div class="flex flex-wrap gap-2">
+              {region.judete.map((j) => (
+                <span class:list={[
+                  'px-3.5 py-1.5 rounded-full text-[13px] font-medium',
+                  judeteCuProiecte.includes(j)
+                    ? 'bg-accent-500/10 text-accent-700 border border-accent-500/30'
+                    : 'bg-steel-100 text-steel-600',
+                ]}>
+                  {j}
+                  {judeteCuProiecte.includes(j) && ' ✓'}
+                </span>
+              ))}
+            </div>
+            {judeteCuProiecte.length > 0 && (
+              <p class="text-steel-400 text-[13px] mt-3">
+                Marcate cu ✓ sunt județele în care am proiecte finalizate.
+              </p>
+            )}
+          </div>
+
+          <div class="mt-10 bg-steel-50 border border-steel-100 rounded-2xl p-6" data-aos="fade-up">
+            <h2 class="text-[20px] font-heading font-bold text-brand-800 mb-2">Cum ajungem</h2>
+            <p class="text-steel-600 text-[15px] leading-relaxed">
+              Sediul nostru este în București. Accesul către {region.shortName} se face pe {region.acces},
+              ceea ce ne permite deplasări rapide pentru ridicări în teren, verificări pe parcursul proiectării
+              și asistență tehnică pe durata execuției.
+            </p>
+          </div>
+        </div>
+
+        <aside class="space-y-5">
+          <div class="bg-white border border-steel-100 rounded-2xl p-5" data-aos="fade-up">
+            <h2 class="font-heading font-bold text-brand-800 text-[16px] mb-4">Servicii disponibile</h2>
+            <div class="space-y-3">
+              {servicii.map((s) => (
+                <a href={s.href} class="flex items-center gap-3 text-steel-600 hover:text-accent-600 text-[14px] transition-colors group">
+                  <svg class="w-4 h-4 shrink-0 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                  {s.title}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {tipuriLucrari.length > 0 && (
+            <div class="bg-white border border-steel-100 rounded-2xl p-5" data-aos="fade-up">
+              <h2 class="font-heading font-bold text-brand-800 text-[16px] mb-3">Tipuri de lucrări în regiune</h2>
+              <div class="flex flex-wrap gap-2">
+                {tipuriLucrari.map((t) => (
+                  <span class="bg-steel-100 text-steel-600 px-3 py-1 rounded-full text-[12px] font-medium">{t}</span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div class="bg-brand-900 rounded-2xl p-5 text-white" data-aos="fade-up">
+            <h2 class="font-heading font-bold text-[16px] mb-2">Ai un proiect în {region.shortName}?</h2>
+            <p class="text-white/60 text-[14px] mb-4">Analizăm cerințele și îți spunem ce documentații sunt necesare.</p>
+            <a href="/contact" class="block text-center bg-accent-500 hover:bg-accent-600 text-white px-5 py-3 rounded-full font-semibold text-[14px] transition-all">
+              Discută proiectul tău
+            </a>
+            <a href="mailto:office@me-design.ro" class="block text-center text-white/50 hover:text-accent-400 text-[13px] mt-3 transition-colors">
+              office@me-design.ro
+            </a>
+          </div>
+
+          <div class="bg-white border border-steel-100 rounded-2xl p-5" data-aos="fade-up">
+            <h2 class="font-heading font-bold text-brand-800 text-[16px] mb-3">Alte zone</h2>
+            <div class="space-y-2">
+              {regions.filter((r) => r.id !== region.id).map((r) => (
+                <a href={`/zone/${r.id}`} class="block text-steel-600 hover:text-accent-600 text-[14px] transition-colors">
+                  {r.shortName}
+                </a>
+              ))}
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

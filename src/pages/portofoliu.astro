@@ -4,54 +4,94 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
 
-const projects = [
-  { title: 'Modernizare drum comunal DC12', category: 'Drumuri', location: 'Comuna Exemplu, Jud. Alba', year: '2024', desc: 'Proiectare completă pentru modernizarea a 5.2 km drum comunal, inclusiv sistem de drenaj și podețe.' },
-  { title: 'Rețea apă și canalizare', category: 'Rețele edilitare', location: 'Orașul Exemplu, Jud. Sibiu', year: '2024', desc: 'Extindere rețea de alimentare cu apă și canalizare menajeră pentru 3 zone rezidențiale noi.' },
-  { title: 'Studiu fezabilitate DJ107', category: 'Studii', location: 'Jud. Hunedoara', year: '2023', desc: 'Documentație tehnico-economică completă pentru reabilitarea a 12 km drum județean.' },
-  { title: 'Infrastructură zona industrială', category: 'Complex', location: 'Municipiul Exemplu', year: '2023', desc: 'Proiectare integrată drumuri de acces, rețele utilități și platforme pentru zona industrială de 15 ha.' },
-  { title: 'Sens giratoriu intersecție DN7', category: 'Drumuri', location: 'Jud. Vâlcea', year: '2023', desc: 'Proiect tehnic pentru amenajare sens giratoriu la intersecția DN7 cu DJ643.' },
-  { title: 'Canalizare pluvială centru civic', category: 'Rețele edilitare', location: 'Oraș Exemplu', year: '2022', desc: 'Sistem complet de canalizare pluvială pentru zona centrală, inclusiv bazine de retenție.' },
-];
+import { getCollection } from 'astro:content';
 
-const categories = ['Toate', ...new Set(projects.map(p => p.category))];
+const entries = (await getCollection('projects', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const projects = entries.map((e) => ({ slug: e.slug, ...e.data, desc: e.data.description }));
+
+const categoryOrder = ['Drumuri', 'Consolidări', 'Poduri', 'Pasarele'];
+const allCats = [...new Set(projects.flatMap(p => p.categories))];
+const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
 ---
 
-<Layout title="Portofoliu" description="Portofoliul ME Design - proiecte de infrastructură finalizate cu succes în toată România.">
+<Layout title="Portofoliu" description="Portofoliul ME Design - proiecte reprezentative de infrastructură finalizate cu succes în toată România.">
   <Header />
 
-  <section class="pt-32 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
     <div class="container">
       <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Portofoliu</span>
       <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
-        Proiecte realizate
+        Proiecte reprezentative
       </h1>
       <p class="text-white/60 text-[17px] mt-4 max-w-xl" data-aos="fade-up" data-aos-delay="100">
-        O selecție din proiectele noastre de infrastructură finalizate cu succes.
+        O selecție din cele mai importante proiecte de infrastructură realizate de echipa ME Design.
       </p>
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="py-8 md:py-12 bg-white">
     <div class="container">
-      <div class="flex flex-wrap gap-3 mb-12" data-aos="fade-up">
-        {categories.map((cat) => (
-          <button class="px-5 py-2 rounded-full text-[14px] font-medium bg-steel-100 text-steel-600 hover:bg-brand-500 hover:text-white transition-all">
-            {cat}
+      <!-- Search + Filters -->
+      <div class="flex flex-col gap-3 mb-6" data-aos="fade-up">
+        <div class="relative max-w-md">
+          <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-steel-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+          </svg>
+          <input
+            id="project-search"
+            type="text"
+            placeholder="Caută proiect, locație..."
+            class="w-full pl-10 pr-10 py-2.5 rounded-full border border-steel-200 text-[14px] text-brand-800 placeholder-steel-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+          />
+          <button
+            id="search-clear"
+            class="absolute right-3.5 top-1/2 -translate-y-1/2 w-5 h-5 hidden items-center justify-center text-steel-400 hover:text-steel-600 transition-colors"
+            aria-label="Șterge căutarea"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
-        ))}
+        </div>
+        <div class="flex flex-wrap gap-3" id="filter-buttons">
+          {categories.map((cat, i) => (
+            <button
+              class={`filter-btn px-5 py-2 rounded-full text-[14px] font-medium transition-all ${i === 0 ? 'bg-brand-500 text-white' : 'bg-steel-100 text-steel-600 hover:bg-brand-500 hover:text-white'}`}
+              data-cat={cat}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
         {projects.map((project, i) => (
-          <div class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay={i * 60}>
-            <div class="bg-steel-100 aspect-[16/10] flex items-center justify-center">
-              <svg class="w-12 h-12 text-steel-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+          <a
+            id={project.slug}
+            href={`/portofoliu/${project.slug}`}
+            class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay={i * 60}
+            data-categories={project.categories.join(',')}
+            data-search={`${project.title} ${project.location} ${project.desc}`.toLowerCase()}
+          >
+            <div class="bg-steel-100 aspect-[16/10] overflow-hidden flex items-center justify-center">
+              {project.image
+                ? <img src={project.image} alt={project.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                : <svg class="w-12 h-12 text-steel-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+              }
             </div>
-            <div class="p-6">
-              <div class="flex items-center gap-2 mb-3">
-                <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-[12px] font-semibold">{project.category}</span>
+            <div class="p-4">
+              <div class="flex items-center flex-wrap gap-2 mb-3">
+                {project.categories.map((cat) => (
+                  <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-[12px] font-semibold">{cat}</span>
+                ))}
+                {project.faza && <span class="px-3 py-1 rounded-full bg-accent-500/10 text-accent-600 text-[12px] font-semibold">Faza: {project.faza}</span>}
                 <span class="text-steel-400 text-[12px]">{project.year}</span>
               </div>
               <h3 class="font-heading font-bold text-[17px] text-brand-800 group-hover:text-accent-500 transition-colors">{project.title}</h3>
@@ -62,13 +102,103 @@ const categories = ['Toate', ...new Set(projects.map(p => p.category))];
                 {project.location}
               </p>
               <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{project.desc}</p>
+              <span class="inline-flex items-center gap-1.5 text-accent-600 font-semibold text-[13px] mt-4">
+                Vezi proiectul
+                <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
+
+      <p id="no-results" class="hidden text-center text-steel-400 text-[15px] py-16">Niciun proiect găsit. Încearcă alt termen de căutare.</p>
     </div>
   </section>
 
+  <script>
+    const searchInput = document.getElementById('project-search') as HTMLInputElement;
+    const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const cards = document.querySelectorAll<HTMLElement>('.project-card');
+    const noResults = document.getElementById('no-results')!;
+
+    let activeCategory = 'Toate';
+    let searchQuery = '';
+
+    function applyFilters() {
+      let visible = 0;
+      cards.forEach(card => {
+        const cats = card.dataset.categories ?? '';
+        const searchText = card.dataset.search ?? '';
+        const catMatch = activeCategory === 'Toate' || cats.split(',').includes(activeCategory);
+        const searchMatch = searchQuery === '' || searchText.includes(searchQuery);
+        const show = catMatch && searchMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      noResults.classList.toggle('hidden', visible > 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.cat ?? 'Toate';
+        filterBtns.forEach(b => {
+          b.classList.toggle('bg-brand-500', b === btn);
+          b.classList.toggle('text-white', b === btn);
+          b.classList.toggle('bg-steel-100', b !== btn);
+          b.classList.toggle('text-steel-600', b !== btn);
+        });
+        applyFilters();
+      });
+    });
+
+    const clearBtn = document.getElementById('search-clear') as HTMLButtonElement;
+
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.toLowerCase().trim();
+      clearBtn.classList.toggle('hidden', searchInput.value === '');
+      clearBtn.classList.toggle('flex', searchInput.value !== '');
+      applyFilters();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.classList.add('hidden');
+      clearBtn.classList.remove('flex');
+      applyFilters();
+      searchInput.focus();
+    });
+
+    // Scroll to & highlight project from map anchor
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          target.style.outline = '3px solid #d97706';
+          target.style.outlineOffset = '4px';
+          target.style.borderRadius = '1rem';
+          setTimeout(() => { target.style.outline = ''; target.style.outlineOffset = ''; }, 2500);
+        }, 400);
+      }
+    }
+  </script>
+
   <Lightbox />
+
+  <!-- Next page navigation -->
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Continuă să explorezi</p>
+      <a href="/contact" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Contactează-ne
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
   <Footer />
 </Layout>

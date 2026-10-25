@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { regions } from '../../data/regions';
+
+const all = await getCollection('projects', ({ data }) => !data.draft);
+const countByRegion = Object.fromEntries(
+  regions.map((r) => [r.id, all.filter((p) => p.data.region === r.id).length])
+);
+const totalJudete = new Set(all.map((p) => p.data.judet)).size;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
+    { '@type': 'ListItem', position: 2, name: 'Zone acoperite', item: 'https://me-design.ro/zone' },
+  ],
+};
+---
+
+<Layout
+  title="Zone acoperite — proiectare infrastructură în toată țara"
+  description="Proiectăm infrastructură rutieră în Muntenia, Oltenia, Dobrogea, Transilvania și Moldova. Vezi proiectele realizate în fiecare regiune."
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="pt-28 pb-10 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Acoperire</span>
+      <h1 class="text-[32px] md:text-[48px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Unde proiectăm
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+        Avem sediul în București și lucrăm în toată țara. Până acum am realizat proiecte
+        în <strong class="text-white/85">{totalJudete} județe</strong>, de la Portul Constanța până la Lugoj.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {regions.map((r, i) => (
+          <a
+            href={`/zone/${r.id}`}
+            class="group bg-white border border-steel-100 rounded-2xl p-6 hover:shadow-xl hover:border-accent-500/40 transition-all flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay={(i % 3) * 80}
+          >
+            <div class="flex items-start justify-between gap-3">
+              <h2 class="font-heading font-bold text-[20px] text-brand-800 group-hover:text-accent-600 transition-colors">
+                {r.name}
+              </h2>
+              <svg class="w-5 h-5 text-accent-500 shrink-0 mt-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+
+            <p class="text-steel-500 text-[14px] mt-3 leading-relaxed flex-1">{r.intro}</p>
+
+            <div class="flex items-center gap-3 mt-5 pt-4 border-t border-steel-100 text-[13px]">
+              <span class="font-semibold text-brand-700">
+                {countByRegion[r.id] > 0
+                  ? `${countByRegion[r.id]} ${countByRegion[r.id] === 1 ? 'proiect' : 'proiecte'}`
+                  : 'Zonă acoperită'}
+              </span>
+              <span class="text-steel-300">·</span>
+              <span class="text-steel-400">{r.judete.length} județe</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Ai un proiect în zona ta?</p>
+      <a href="/contact" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Discută proiectul tău
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

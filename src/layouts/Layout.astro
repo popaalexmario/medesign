@@ -4,9 +4,28 @@ import CookieConsent from '../components/CookieConsent.astro';
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  keywords?: string[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.' } = Astro.props;
+const {
+  title,
+  description = 'ME Design - Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.',
+  image = '/img/og-default.jpg',
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  keywords = [],
+  jsonLd,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, 'https://me-design.ro');
+const ogImage = new URL(image, 'https://me-design.ro');
+const fullTitle = `${title} | ME Design`;
 ---
 
 <!doctype html>
@@ -17,16 +36,43 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Blog ME Design" href="https://me-design.ro/rss.xml" />
+
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:site_name" content="ME Design" />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {type === 'article' && <meta property="article:author" content="Mario Engineering Design SRL" />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-    <title>{title} | ME Design</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <title>{fullTitle}</title>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N" is:inline></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -78,7 +124,7 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
       }
 
       .section-padding {
-        padding: 6rem 0;
+        padding: 3rem 0;
       }
 
       .container {
@@ -300,7 +346,139 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
         0% { opacity: 0; transform: translateY(8px) scaleY(0.8); }
         100% { opacity: 1; transform: translateY(0) scaleY(1); }
       }
+
+      /* Next-page navigation bar */
+      @keyframes navSlideUp {
+        from { opacity: 0; transform: translateY(32px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes arrowBounce {
+        0%, 100% { transform: translateX(0); }
+        50%       { transform: translateX(6px); }
+      }
+
+      .next-nav {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+
+      .next-nav.is-visible {
+        animation: navSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      .next-nav-arrow {
+        animation: arrowBounce 1.1s ease-in-out infinite;
+      }
     </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://me-design.ro/#organization",
+          "name": "Mario Engineering Design SRL",
+          "alternateName": "ME Design",
+          "url": "https://me-design.ro",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://me-design.ro/img/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+40746784156",
+            "contactType": "customer service",
+            "email": "office@me-design.ro",
+            "availableLanguage": "Romanian"
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://me-design.ro/#localbusiness",
+          "name": "Mario Engineering Design SRL",
+          "description": "Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări în România.",
+          "url": "https://me-design.ro",
+          "telephone": "+40746784156",
+          "email": "office@me-design.ro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Str. Avionului 26, Et. 1, Ap. B",
+            "addressLocality": "București",
+            "addressRegion": "Sectorul 1",
+            "addressCountry": "RO"
+          },
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Muntenia" },
+            { "@type": "AdministrativeArea", "name": "Oltenia" },
+            { "@type": "AdministrativeArea", "name": "Dobrogea" },
+            { "@type": "AdministrativeArea", "name": "Transilvania" },
+            { "@type": "AdministrativeArea", "name": "Banat" },
+            { "@type": "AdministrativeArea", "name": "Moldova" },
+            { "@type": "Country", "name": "România" }
+          ],
+          "knowsAbout": [
+            "Proiectare drumuri",
+            "Proiectare poduri și pasaje",
+            "Lucrări de sprijin și consolidări",
+            "Expertiză tehnică construcții",
+            "Documentații tehnico-economice"
+          ],
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicii proiectare infrastructură",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Proiectare Drumuri",
+                  "description": "Proiectare drumuri municipale, județene, naționale, intersecții, sensuri giratorii, parcări și piste de biciclete.",
+                  "url": "https://me-design.ro/servicii/proiectare-drumuri"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Proiectare Poduri, Pasaje, Pasarele",
+                  "description": "Proiectare poduri rutiere și pietonale, pasaje, pasarele pentru pietoni și bicicliști, podețe.",
+                  "url": "https://me-design.ro/servicii/proiectare-poduri-pasaje"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Lucrări de Sprijin și Consolidări",
+                  "description": "Proiectare ziduri de sprijin, consolidare versanți, stabilizare teren, gabioane, ancore.",
+                  "url": "https://me-design.ro/servicii/lucrari-consolidare"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    {jsonLd && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+    )}
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript" is:inline>
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "vxoibgwub2");
+    </script>
+    <!-- End Microsoft Clarity -->
   </head>
   <body class="bg-white">
     <slot />
@@ -314,6 +492,19 @@ const { title, description = 'ME Design - Servicii profesionale de proiectare in
         offset: 50,
         easing: 'ease-out-cubic',
       });
+    </script>
+    <script is:inline>
+      (function() {
+        var nav = document.querySelector('.next-nav');
+        if (!nav) return;
+        var observer = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            entries[0].target.classList.add('is-visible');
+            observer.disconnect();
+          }
+        }, { threshold: 0.3 });
+        observer.observe(nav);
+      })();
     </script>
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "bdb3f1be23d14cee9307a78d57f3bf39"}'></script>
