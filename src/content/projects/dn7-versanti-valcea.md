@@ -6,7 +6,7 @@ faza: "PTE+AT"
 location: "DN 7 Lotrișor, Județul Vâlcea"
 judet: "Vâlcea"
 beneficiar: "C.N.A.I.R. S.A."
-prinAntreprenor: true
+beneficiarPrin: "prin antreprenorul general"
 region: "oltenia"
 year: "2025–2026"
 image: "/img/projects/dn7.webp"
