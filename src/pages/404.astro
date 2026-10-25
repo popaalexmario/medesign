@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const links = [
+  { label: 'Servicii', href: '/servicii', desc: 'Proiectare drumuri, poduri și consolidări' },
+  { label: 'Portofoliu', href: '/portofoliu', desc: 'Proiecte reprezentative realizate' },
+  { label: 'Blog', href: '/blog', desc: 'Ghiduri și articole tehnice' },
+  { label: 'Contact', href: '/contact', desc: 'Discută proiectul tău cu noi' },
+];
+---
+
+<Layout title="Pagină negăsită" description="Pagina căutată nu există. Descoperă serviciile, portofoliul și articolele ME Design.">
+  <Header />
+
+  <section class="pt-36 pb-16 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container max-w-2xl text-center">
+      <span class="text-accent-400 font-heading font-extrabold text-[64px] md:text-[88px] leading-none block">404</span>
+      <h1 class="text-[28px] md:text-[40px] font-heading font-extrabold text-white mt-3">
+        Pagina nu a fost găsită
+      </h1>
+      <p class="text-white/60 text-[16px] mt-4">
+        Adresa accesată nu există sau a fost mutată. Mai jos găsești secțiunile principale ale site-ului.
+      </p>
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 mt-7 bg-accent-500 text-white px-7 py-3.5 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all"
+      >
+        Înapoi la pagina principală
+      </a>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container max-w-3xl">
+      <div class="grid sm:grid-cols-2 gap-5">
+        {links.map((l) => (
+          <a
+            href={l.href}
+            class="group border border-steel-100 rounded-2xl p-5 hover:shadow-lg hover:border-accent-500/40 transition-all"
+          >
+            <div class="flex items-center justify-between">
+              <h2 class="font-heading font-bold text-[17px] text-brand-800 group-hover:text-accent-600 transition-colors">
+                {l.label}
+              </h2>
+              <svg class="w-4 h-4 text-accent-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <p class="text-steel-500 text-[14px] mt-1.5">{l.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
