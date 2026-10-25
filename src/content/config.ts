@@ -25,6 +25,9 @@ const projects = defineCollection({
     location: z.string(),
     judet: z.string(),
     beneficiar: z.string().optional(),
+    // true când contractul de proiectare a fost încheiat cu antreprenorul,
+    // iar `beneficiar` este beneficiarul final al lucrării.
+    prinAntreprenor: z.boolean().default(false),
     region: z.enum(['muntenia', 'oltenia', 'dobrogea', 'transilvania', 'moldova']),
     year: z.string(),
     image: z.string().optional(),

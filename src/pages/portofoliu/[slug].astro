@@ -150,8 +150,13 @@ const jsonLd = [
               </div>
               {d.beneficiar && (
                 <div>
-                  <dt class="text-steel-400 text-[12px] uppercase tracking-wide">Beneficiar</dt>
+                  <dt class="text-steel-400 text-[12px] uppercase tracking-wide">
+                    {d.prinAntreprenor ? 'Beneficiar final' : 'Beneficiar'}
+                  </dt>
                   <dd class="text-steel-700 font-medium mt-0.5">{d.beneficiar}</dd>
+                  {d.prinAntreprenor && (
+                    <dd class="text-steel-400 text-[12px] mt-0.5">prin antreprenorul general</dd>
+                  )}
                 </div>
               )}
               <div>

@@ -6,6 +6,7 @@ faza: "PTE+AT"
 location: "DN 7 Lotrișor, Județul Vâlcea"
 judet: "Vâlcea"
 beneficiar: "C.N.A.I.R. S.A."
+prinAntreprenor: true
 region: "oltenia"
 year: "2025–2026"
 image: "/img/projects/dn7.webp"
@@ -17,7 +18,7 @@ Sectoarele de drum analizate fac parte din DN7 București – Titu – Târgovi�
 
 ## Contextul proiectului
 
-Sectoarele analizate — km 198+200–207+000, km 216+000–219+000, km 224+000–227+300 și km 228+000–233+200 — fac parte din DN7, în zona Lotrișor, județul Vâlcea. Beneficiarul lucrării este C.N.A.I.R. S.A.
+Sectoarele analizate — km 198+200–207+000, km 216+000–219+000, km 224+000–227+300 și km 228+000–233+200 — fac parte din DN7, în zona Lotrișor, județul Vâlcea. Beneficiarul final al lucrării este C.N.A.I.R. S.A., iar documentația a fost elaborată în cadrul contractului de proiectare și execuție, pentru antreprenorul general.
 
 Pe aceste tronsoane, materialul desprins din versanți ajunge pe partea carosabilă, generând accidente soldate cu pagube materiale și vătămări corporale grave.
 
