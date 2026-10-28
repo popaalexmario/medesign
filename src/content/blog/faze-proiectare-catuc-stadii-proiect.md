@@ -8,141 +8,135 @@ imageAlt: "Sens giratoriu în execuție — vedere aeriană a unui proiect de in
 keywords: ["CATUC", "Legea 169/2026", "faze de proiectare", "stadii proiect", "PAC", "clase de consecinte"]
 ---
 
-De la **25 august 2026**, Codul amenajării teritoriului, urbanismului și construcțiilor — **Legea nr. 169/2026**, pe scurt CATUC — a înlocuit cadrul legislativ după care s-a proiectat și construit în România în ultimii treizeci și cinci de ani.
+Din 25 august 2026 lucrăm după alt cod. Legea nr. 169/2026, pe scurt CATUC, a înlocuit cadrul după care s-a proiectat și construit în România în ultimii treizeci și cinci de ani.
 
-Pentru cei care lucrează în infrastructură, schimbarea nu este cosmetică. Dispare împărțirea familiară pe faze de proiectare și apare o structură pe **stadii ale ciclului de viață al proiectului**. Acest articol explică noua structură și, la fel de important, cine **nu** este încă afectat de ea.
+Pentru cine lucrează în infrastructură, schimbarea nu e cosmetică. Dispare împărțirea pe faze cu care ne-am obișnuit și apare o structură pe stadii ale ciclului de viață al proiectului. Mai jos, ce înseamnă asta, și cine nu e încă afectat.
 
-> **Reper legislativ.** Legea nr. 169/2026 a fost publicată în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026 și a intrat în vigoare la 25 august 2026. Potrivit art. 575 alin. (2), aplicarea ei nu a fost condiționată de adoptarea normelor de aplicare. Un set de 74 de rectificări a fost publicat ulterior în Monitorul Oficial nr. 862 din 14 octombrie 2026.
+> **Reper legislativ.** Legea nr. 169/2026 a fost publicată în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026 și a intrat în vigoare la 25 august 2026. Potrivit art. 575 alin. (2), aplicarea ei nu a fost condiționată de adoptarea normelor de aplicare. Un set de 74 de rectificări a apărut ulterior în Monitorul Oficial nr. 862 din 14 octombrie 2026.
 
 ## De la faze la stadii
 
-Până acum, documentațiile erau organizate pe faze: studiu de fezabilitate, DALI, proiect tehnic, detalii de execuție — structură dată în principal de HG nr. 907/2016 pentru investițiile din fonduri publice.
+Până acum documentațiile erau organizate pe faze: studiu de fezabilitate, DALI, proiect tehnic, detalii de execuție. Structura venea în principal din HG nr. 907/2016, pentru investițiile din fonduri publice.
 
-CATUC schimbă logica. Proiectul este privit ca un parcurs continuu, împărțit în **șapte stadii**, de la ideea inițială până la predarea construcției. Documentațiile nu mai sunt scopul în sine, ci rezultatul fiecărui stadiu.
+CATUC schimbă logica. Proiectul e privit ca un parcurs continuu, împărțit în șapte stadii, de la idee până la predarea construcției. Documentațiile nu mai sunt scopul, ci rezultatul fiecărui stadiu.
 
-Potrivit art. 424 alin. (2), proiectantul este responsabil de conceperea și elaborarea documentațiilor aferente **stadiilor 1, 2, 3 și 4**, poate avea responsabilități în stadiul 0 conform contractului și poate presta, la cerere, activități din stadiile 5 și 6.
+Art. 424 alin. (2) spune clar unde intră proiectantul: răspunde de documentațiile aferente stadiilor 1, 2, 3 și 4, poate avea responsabilități în stadiul 0 dacă așa prevede contractul, și poate presta la cerere activități din stadiile 5 și 6.
 
 ## Cele șapte stadii
 
-### Stadiul 0 — Definirea strategică
+### Stadiul 0, definirea strategică
 
-Este stadiul beneficiarului. Se stabilește necesitatea investiției, se formulează strategiile privind sustenabilitatea, siguranța, riscurile și modul de atribuire a contractelor.
+E stadiul beneficiarului. Se stabilește necesitatea investiției și se formulează strategiile privind sustenabilitatea, siguranța, riscurile, modul de atribuire a contractelor.
 
-Tot aici se ia o decizie cu efect asupra întregului parcurs: **se construiește ceva nou sau se intervine asupra unei construcții existente?** Pentru infrastructura rutieră, aceasta este alegerea între un traseu nou și modernizarea unuia existent.
+Tot aici se ia decizia care influențează tot restul: construiești ceva nou sau intervii pe ceva existent? Pentru infrastructura rutieră, asta e alegerea între traseu nou și modernizarea unuia existent.
 
-### Stadiul 1 — Definirea temei de proiectare și determinarea fezabilității
+### Stadiul 1, tema de proiectare și fezabilitatea
 
-Se elaborează **tema de proiectare** (art. 490) și **studiul de fezabilitate** (art. 492).
+Se elaborează tema de proiectare (art. 490) și studiul de fezabilitate (art. 492).
 
-Tema de proiectare identifică procesele funcționale și amplasamentele posibile. Pentru fiecare amplasament identificat se obține **certificat de urbanism** — pentru construire sau pentru lucrări inginerești, după caz.
+Tema identifică procesele funcționale și amplasamentele posibile. Pentru fiecare amplasament se obține certificat de urbanism, pentru construire sau pentru lucrări inginerești, după caz.
 
-Tot în acest stadiu se realizează primele studii preliminare de amplasament: **geotehnic, hidrologic, hidrogeologic și topografic** (art. 490 alin. 4), care pot fi aprofundate în funcție de complexitatea obiectivului.
+Tot acum se fac primele studii de amplasament: geotehnic, hidrologic, hidrogeologic și topografic, potrivit art. 490 alin. (4). Pot fi aprofundate în funcție de complexitatea obiectivului.
 
-Pentru intervențiile la construcții existente se adaugă **studiile de obiect**: expertize tehnice, analize diagnostic, audit energetic și, unde e cazul, studii istorice.
+La intervenții pe construcții existente se adaugă studiile de obiect: expertize tehnice, analize diagnostic, audit energetic, iar unde e cazul studii istorice.
 
-Un detaliu important pentru domeniul nostru: **art. 493** stabilește cerințe suplimentare pentru studiul de fezabilitate aferent proiectelor de infrastructură de transport rutier. Acesta trebuie să trateze obligatoriu modalitatea de asigurare a accesului la municipiile reședință de județ sau la căile de comunicație existente și să includă propuneri privind protecția monumentelor istorice și a patrimoniului arheologic, respectiv reducerea fragmentării habitatelor, prin ecoducte sau sisteme echivalente.
+Un detaliu care ne privește direct: art. 493 pune cerințe suplimentare pentru studiul de fezabilitate la proiectele de infrastructură de transport rutier. Trebuie tratată obligatoriu modalitatea de asigurare a accesului la municipiile reședință de județ sau la căile de comunicație existente. Și trebuie incluse propuneri privind protecția monumentelor istorice și a patrimoniului arheologic, respectiv reducerea fragmentării habitatelor, prin ecoducte sau sisteme echivalente.
 
-Indicatorii tehnico-economici ai scenariului optim se stabilesc potrivit art. 496, iar studiul de fezabilitate se aprobă conform competențelor din Legea nr. 500/2002 și Legea nr. 273/2006 privind finanțele publice locale.
+Indicatorii tehnico-economici ai scenariului optim se stabilesc potrivit art. 496. Studiul se aprobă conform competențelor din Legea nr. 500/2002 și Legea nr. 273/2006 privind finanțele publice locale.
 
-### Stadiul 2 — Dezvoltarea conceptului proiectului
+### Stadiul 2, dezvoltarea conceptului
 
-Se dezvoltă conceptul tehnic al soluției alese și se face estimarea bugetară corespunzătoare (art. 502). Pentru intervențiile la construcții existente, aici se consolidează studiile diagnostic și de specialitate.
+Se dezvoltă conceptul tehnic al soluției alese și se face estimarea bugetară corespunzătoare, potrivit art. 502. La intervenții pe existent, aici se consolidează studiile diagnostic și cele de specialitate.
 
-### Stadiul 3 — Definirea soluțiilor de bază și autorizarea
+### Stadiul 3, soluțiile de bază și autorizarea
 
-Stadiul începe odată cu aprobarea temei de proiectare finale de către beneficiar.
+Începe odată cu aprobarea temei de proiectare finale de către beneficiar.
 
-Aici se elaborează **PAC — Proiectul pentru Autorizarea Construirii**, documentația care înlocuiește fostul DTAC. În mod similar, fostul DTAD devine **PAD**.
+Aici se elaborează PAC, Proiectul pentru Autorizarea Construirii, care înlocuiește fostul DTAC. Similar, fostul DTAD devine PAD.
 
-Un principiu nou și cu efect practic important: PAC urmează să fie dezvoltat tehnic în stadiul următor, **fără modificarea elementelor tehnice de bază definite în stadiul 3**. Cu alte cuvinte, ce se autorizează în stadiul 3 nu se mai poate reconfigura structural în stadiul 4.
+Un principiu nou, cu efect practic serios: PAC urmează să fie dezvoltat tehnic în stadiul următor, fără modificarea elementelor tehnice de bază definite în stadiul 3. Adică ce autorizezi acum nu mai poate fi reconfigurat structural mai târziu.
 
-### Stadiul 4 — Dezvoltarea tehnică a proiectului
+### Stadiul 4, dezvoltarea tehnică
 
-PAC-ul se definitivează în vederea execuției, prin coordonarea completă a tuturor specialităților. Este stadiul în care se elaborează **proiectul tehnic de execuție** și detaliile aferente.
+PAC-ul se definitivează pentru execuție, prin coordonarea completă a tuturor specialităților. Aici se elaborează proiectul tehnic de execuție și detaliile aferente.
 
-### Stadiul 5 — Execuția construcției
+### Stadiul 5, execuția
 
 Lucrările se execută exclusiv în baza proiectului tehnic de execuție, cu respectarea autorizației de construire.
 
-Proiectarea nu se oprește: art. 522 definește activitatea de proiectare din stadiul 5 ca **adaptarea proiectului tehnic la condițiile concrete din teren** și la tehnologia executantului, prin detalii de execuție altele decât cele din stadiul 4. Detaliile de fabricație se elaborează de executant și se supun aprobării proiectantului.
+Proiectarea nu se oprește însă. Art. 522 definește activitatea de proiectare din stadiul 5 ca adaptare a proiectului tehnic la condițiile concrete din teren și la tehnologia executantului, prin detalii de execuție altele decât cele din stadiul 4. Detaliile de fabricație le face executantul și le supune aprobării proiectantului.
 
-### Stadiul 6 — Predarea construcției
+### Stadiul 6, predarea
 
-Începe imediat după recepția la terminarea lucrărilor și se finalizează cu recepția finală. Aici începe utilizarea construcției.
+Începe imediat după recepția la terminarea lucrărilor și se încheie cu recepția finală. De aici începe utilizarea construcției.
 
-## Asistența tehnică devine obligatorie
+## Asistența tehnică nu mai e opțională
 
-Una dintre cele mai importante schimbări practice: potrivit **art. 521**, asistența tehnică se realizează de proiectant pe toată perioada de execuție, până la recepția lucrărilor, și este de **două tipuri — obligatorie și opțională**.
+Probabil cea mai importantă schimbare practică. Art. 521 prevede că asistența tehnică se realizează de proiectant pe toată perioada de execuție, până la recepție, și că e de două tipuri: obligatorie și opțională.
 
-Asistența obligatorie se prevede în contractul încheiat cu proiectantul general. Ea poate fi contractată separat doar prin excepție, când din motive obiective neimputabile proiectantului acesta nu o poate realiza.
+Cea obligatorie se prevede în contractul încheiat cu proiectantul general. Poate fi contractată separat doar prin excepție, când din motive obiective neimputabile proiectantului acesta nu o poate realiza.
 
-Pentru beneficiari, consecința este directă: asistența tehnică nu mai este un serviciu opțional de adăugat ulterior, ci o componentă a contractului de proiectare.
+Pentru beneficiari consecința e directă. Asistența tehnică nu mai e un serviciu pe care îl adaugi dacă îți dai seama că ai nevoie de el. E parte din contractul de proiectare.
 
-## Clasele de consecințe înlocuiesc categoriile de importanță
+## Clase de consecințe în loc de categorii de importanță
 
-**Art. 370** înlocuiește sistemul categoriilor de importanță A–D cu **clasele de consecințe CC1–CC4** și stabilește regulile de echivalare.
+Art. 370 înlocuiește categoriile de importanță A–D cu clasele de consecințe CC1–CC4 și stabilește regulile de echivalare.
 
-Până la intrarea în vigoare a metodologiei de încadrare, aceasta se face exclusiv conform **anexei nr. 6 la Cod**. Dacă o construcție nu se regăsește acolo, proiectantul o asimilează construcției din cea mai apropiată clasă, pe criteriile de la art. 370 alin. (17).
+Până intră în vigoare metodologia de încadrare, aceasta se face exclusiv conform anexei nr. 6 la Cod. Dacă o construcție nu se regăsește acolo, proiectantul o asimilează construcției din cea mai apropiată clasă, pe criteriile de la art. 370 alin. (17).
 
-Regulamentul privind categoria de importanță din anexa nr. 3 la HG nr. 766/1997 rămâne în vigoare până la modificare, însă se aplică **numai în măsura în care nu contravine CATUC**.
+Regulamentul privind categoria de importanță din anexa nr. 3 la HG nr. 766/1997 rămâne în vigoare până la modificare, dar se aplică numai în măsura în care nu contravine CATUC.
 
-## Verificarea de proiect se corelează cu clasa de consecințe
+## Verificarea se leagă de clasa de consecințe
 
-Articolele 440–444 stabilesc niveluri de verificare corelate cu clasele de consecințe. Răspunderea verificatorului este proporțională cu nivelul de verificare — art. 446 alin. (2) diferențiază răspunderea limitată la NVP2 de răspunderea avansată la NVP3 și NVP4.
+Articolele 440–444 stabilesc niveluri de verificare corelate cu clasele de consecințe. Răspunderea verificatorului e proporțională cu nivelul: art. 446 alin. (2) diferențiază răspunderea limitată la NVP2 de cea avansată la NVP3 și NVP4.
 
-Se menține termenul de 10 ani de la predarea construcției pentru concluziile verificărilor, respectiv răspunderea pe toată durata de existență pentru viciile structurii de rezistență.
+Se menține termenul de 10 ani de la predarea construcției pentru concluziile verificărilor, și răspunderea pe toată durata de existență pentru viciile structurii de rezistență.
 
-Pentru domeniul nostru, o prevedere cu efect direct: verificarea tehnică a proiectelor care vizează **intervenții la construcții înscrise în Lista Monumentelor Istorice** se face numai de verificatori atestați suplimentar în domeniul protejării monumentelor istorice (art. 440 alin. 5).
+O prevedere care ne atinge direct: verificarea tehnică a proiectelor de intervenție la construcții înscrise în Lista Monumentelor Istorice se face numai de verificatori atestați suplimentar în domeniul protejării monumentelor istorice, potrivit art. 440 alin. (5).
 
-## Expertiza tehnică poate prelungi durata de existență
+## Expertiza poate prelungi durata de existență
 
-O prevedere nouă cu impact major asupra infrastructurii existente: potrivit **art. 439 alin. (3)–(5)**, dacă o construcție existentă este evaluată la cererea beneficiarului la sfârșitul duratei de existență proiectate și prin expertiză se constată îndeplinirea cerințelor fundamentale, expertul tehnic stabilește un program de urmărire în timp și precizează perioada pentru care construcția mai poate funcționa.
+Asta e noutatea cu cel mai mare impact asupra infrastructurii existente.
 
-**Rezultatul expertizei poate fi prelungirea duratei de existență proiectate**, cu indicarea perioadei maxime până la o nouă evaluare.
+Art. 439 alin. (3)–(5) prevede că, dacă o construcție existentă e evaluată la cererea beneficiarului la sfârșitul duratei de existență proiectate și prin expertiză se constată îndeplinirea cerințelor fundamentale, expertul stabilește un program de urmărire în timp și precizează perioada pentru care construcția mai poate funcționa. Rezultatul poate fi prelungirea duratei de existență proiectate, cu indicarea termenului până la o nouă evaluare.
 
-Art. 435 introduce și o cerință explicită de independență: expertizarea unui proiect nu poate fi realizată de aceeași entitate care l-a elaborat sau l-a verificat.
+Art. 435 adaugă și o cerință de independență: expertizarea unui proiect nu poate fi făcută de aceeași entitate care l-a elaborat sau l-a verificat.
 
-## Cine lucrează încă după vechile reguli
+## Cine lucrează încă după regulile vechi
 
-Aceasta este partea care contează cel mai mult pentru proiectele aflate în derulare.
+Partea care contează cel mai mult dacă ai ceva în derulare.
 
-Potrivit **art. 577 alin. (1)**, prevederile privind ciclul de viață al proiectului **nu se aplică** în patru situații:
+Art. 577 alin. (1) spune că prevederile privind ciclul de viață al proiectului nu se aplică în patru situații:
 
 1. Lucrările aflate în curs de execuție la 25 august 2026
-2. Obiectivele pentru ale căror PT, SF sau DALI au fost **inițiate procedurile de achiziție publică** până la acea dată, ori ale căror documentații au fost recepționate de beneficiar sau depuse spre aprobare/avizare
-3. Obiectivele cu **finanțare aprobată**
+2. Obiectivele pentru ale căror PT, SF sau DALI au fost inițiate procedurile de achiziție publică până la acea dată, ori ale căror documentații au fost recepționate de beneficiar sau depuse spre aprobare ori avizare
+3. Obiectivele cu finanțare aprobată
 4. Documentațiile elaborate și recepționate anterior, care necesită actualizare sau sunt depuse spre reaprobare
 
-Acestora li se aplică legislația în vigoare la data la care a intervenit situația respectivă — practic, HG nr. 907/2016.
+Acestora li se aplică legislația în vigoare la data la care a intervenit situația. Practic, HG nr. 907/2016.
 
-În plus, **art. 582** prevede că procedurile de elaborare, avizare și autorizare inițiate anterior rămân supuse dispozițiilor în vigoare la data inițierii. Certificatele de urbanism, avizele și autorizațiile emise anterior își păstrează valabilitatea.
+Art. 582 adaugă că procedurile de elaborare, avizare și autorizare începute anterior rămân supuse dispozițiilor de la data inițierii. Certificatele de urbanism, avizele și autorizațiile emise înainte își păstrează valabilitatea.
 
-Modelele noilor formulare de autorizare au fost aprobate prin **Ordinul MDLPA nr. 975/2026**, publicat în Monitorul Oficial nr. 711 din 26 august 2026.
+Formularele noi de autorizare au fost aprobate prin Ordinul MDLPA nr. 975/2026, publicat în Monitorul Oficial nr. 711 din 26 august 2026.
 
-## Ce înseamnă practic
+## Pe scurt, ce faci
 
-Dacă ai un proiect în derulare, primul lucru de stabilit nu este cum arată noile stadii, ci **sub ce regim intră proiectul tău**. Un obiectiv cu finanțare aprobată sau cu achiziția inițiată înainte de 25 august 2026 continuă după regulile vechi.
+Dacă ai un proiect în derulare, primul lucru de stabilit nu e cum arată stadiile noi, ci sub ce regim intră proiectul tău. Un obiectiv cu finanțare aprobată sau cu achiziția inițiată înainte de 25 august 2026 continuă pe vechiul drum.
 
-Dacă pregătești o investiție nouă, parcursul se structurează pe stadiile 0–6, iar contractul de proiectare trebuie să includă asistența tehnică obligatorie.
+Dacă pregătești o investiție nouă, parcursul se structurează pe stadiile 0–6, iar contractul de proiectare trebuie să cuprindă asistența tehnică obligatorie.
 
-Pentru intervențiile la construcții existente — categoria în care intră majoritatea lucrărilor de reabilitare de drumuri și poduri — expertiza tehnică rămâne punctul de pornire, iar acum poate avea ca rezultat prelungirea documentată a duratei de existență a construcției.
+Pentru intervențiile la construcții existente, categoria în care intră majoritatea reabilitărilor de drumuri și poduri, expertiza tehnică rămâne punctul de pornire. Doar că acum poate avea ca rezultat și prelungirea documentată a duratei de existență.
 
-## Cum te putem ajuta
+## Cum lucrăm noi în perioada asta
 
-La **ME Design** urmărim îndeaproape tranziția la noul Cod, pentru că ne afectează direct toate proiectele aflate în lucru.
+Urmărim tranziția îndeaproape, fiindcă ne afectează direct toate proiectele în lucru.
 
-**Stabilim sub ce regim intră proiectul tău.** Este prima verificare pe care o facem și, în perioada aceasta, cea mai importantă. Un obiectiv cu finanțare aprobată înainte de 25 august 2026 continuă după HG 907/2016; unul inițiat după această dată urmează stadiile CATUC.
+Prima verificare pe care o facem la orice solicitare e sub ce regim intră obiectivul. Avem în derulare proiecte sub ambele cadre: documentații DALI și proiecte tehnice contractate anterior, alături de obiective noi structurate pe stadii.
 
-**Elaborăm documentațiile în ambele regimuri.** Avem proiecte în derulare sub ambele cadre — de la documentații DALI și proiecte tehnice contractate anterior, până la obiective noi structurate pe stadii.
+Acoperim stadiile 1–4 integral, de la tema de proiectare și studiul de fezabilitate până la PAC și proiectul tehnic de execuție, cu studiile de teren coordonate prin colaboratori autorizați. Asistența tehnică prevăzută la art. 521 intră în contractul de proiectare, nu se adaugă ulterior.
 
-**Acoperim stadiile 1–4 integral.** Temă de proiectare, studiu de fezabilitate, concept, PAC și proiect tehnic de execuție, cu studiile de teren coordonate prin colaboratori autorizați.
+Pentru intervențiile la construcții clasate, unde CATUC cere verificatori atestați suplimentar, avem experiența proiectelor de la Lugoj și Sibiu.
 
-**Asigurăm asistența tehnică obligatorie** prevăzută la art. 521, ca parte a contractului de proiectare — nu ca serviciu adăugat ulterior.
+*Materialul e o sinteză și nu înlocuiește consultarea textului integral al Legii nr. 169/2026. Pentru încadrarea unui proiect concret, situația se analizează de la caz la caz.*
 
-**Lucrăm pe obiective cu regim special.** Pentru intervențiile la construcții clasate ca monument istoric, unde CATUC cere verificatori atestați suplimentar, avem experiența proiectelor de la **Lugoj** și **Sibiu**.
-
----
-
-*Acest material este o sinteză informativă și nu înlocuiește consultarea textului integral al Legii nr. 169/2026. Pentru încadrarea corectă a unui proiect concret, recomandăm analiza situației specifice.*
-
-**Ai un proiect în derulare și nu știi sub ce regim intră?** Analizăm situația și îți spunem exact ce documentații sunt necesare. [Discută proiectul tău cu noi](/contact).
+Dacă ai ceva în derulare și nu ești sigur sub ce regim intră, [scrie-ne](/contact) și ne uităm împreună.

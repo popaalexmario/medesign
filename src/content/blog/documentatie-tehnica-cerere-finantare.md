@@ -8,63 +8,52 @@ imageAlt: "Plan de situație pentru un proiect de infrastructură finanțat"
 keywords: ["dosar finantare infrastructura", "documentatie cerere finantare", "studiu de fezabilitate finantare", "indicatori tehnico-economici"]
 ---
 
-Un consultant bun știe ghidul solicitantului mai bine decât oricine. Partea care îi scapă controlului este documentația tehnică — pentru că depinde de altcineva, iar termenele cererii nu se negociază.
+Un consultant bun știe ghidul solicitantului mai bine decât oricine. Partea care îi scapă de sub control e documentația tehnică, fiindcă depinde de altcineva, iar termenele cererii nu se negociază.
 
-Acest articol descrie ce trebuie să existe la depunere, ce se poate rezolva ulterior și unde cad dosarele din motive tehnice.
+Mai jos, ce trebuie să existe la depunere, ce se poate lăsa pe mai târziu și unde cad dosarele din motive care n-au legătură cu eligibilitatea.
 
-## Ce trebuie gata înainte de depunere
+## La depunere
 
-Indiferent de program, un dosar pentru o investiție în infrastructură are nevoie de:
+Indiferent de program, un dosar pentru infrastructură are nevoie de documentația tehnico-economică **aprobată** prin hotărâre a autorității deliberative. Nu doar recepționată de beneficiar. Studiu de fezabilitate pentru obiective noi, documentație de avizare pentru intervenții la construcții existente.
 
-**Documentația tehnico-economică aprobată.** Studiu de fezabilitate pentru obiective noi, documentație de avizare pentru intervenții la construcții existente. Aprobată prin hotărâre a autorității deliberative, nu doar recepționată.
+Odată cu ea se aprobă și indicatorii tehnico-economici. Aceia sunt cifrele cu care evaluatorul compară bugetul solicitat, și primul loc unde apar neconcordanțe.
 
-**Indicatorii tehnico-economici**, aprobați în aceeași procedură. Sunt cifrele pe care evaluatorul le compară cu bugetul solicitat.
+Mai trebuie clarificată situația juridică a terenului: extras de carte funciară, dovada apartenenței la domeniul public, iar unde e cazul procedura de expropriere măcar inițiată.
 
-**Situația juridică a terenului**, clarificată. Extras de carte funciară, dovada apartenenței la domeniul public, iar acolo unde e cazul procedura de expropriere cel puțin inițiată.
+Și studiile de fundamentare. Topografic, geotehnic, după caz hidrologic sau de trafic. Un SF construit pe studii lipsă sau vechi de cinci ani e contestabil la evaluare, chiar dacă soluția e bună.
 
-**Studiile de fundamentare** — topografic, geotehnic, și, după caz, hidrologic sau de trafic. Un SF fundamentat pe studii lipsă sau vechi este contestabil la evaluare.
+Pentru orice intervenție la o construcție existentă se adaugă expertiza tehnică. Fără ea, documentația de intervenție nu se poate elabora corect.
 
-**Expertiza tehnică**, pentru orice intervenție la o construcție existentă. Fără ea, documentația de intervenție nu se poate elabora corect.
+## După contractare
 
-## Ce se poate face după contractare
+Nu tot trebuie pregătit înainte. De regulă rămân pentru după semnare proiectul tehnic de execuție cu detaliile aferente, documentația pentru autorizare și obținerea autorizației, verificarea tehnică a proiectului și procedura de achiziție a execuției.
 
-Nu tot trebuie pregătit înainte. De regulă rămân pentru după semnarea contractului de finanțare:
+Distincția contează la buget: cheltuielile din faza de proiect tehnic sunt, în majoritatea programelor, eligibile. Cele anterioare depunerii, nu întotdeauna.
 
-- Proiectul tehnic de execuție și detaliile aferente
-- Documentația pentru autorizarea construirii și obținerea autorizației
-- Verificarea tehnică a proiectului
-- Procedura de achiziție a execuției
+## Unde cad dosarele
 
-Distincția contează pentru calendar și pentru buget: cheltuielile din faza de proiect tehnic sunt, în majoritatea programelor, eligibile — cele anterioare depunerii, nu întotdeauna.
+Din ce am văzut la proiectele la care am lucrat, motivele se repetă.
 
-## Unde cad dosarele din motive tehnice
+Cel mai frecvent, încadrarea greșită a documentației: un obiectiv tratat ca investiție nouă deși se intervine pe ceva existent, sau invers. Se descoperă la evaluare și înseamnă reluarea documentației, adică sesiunea pierdută.
 
-Din experiența proiectelor la care am contribuit, cauzele se repetă:
+Apoi indicatorii tehnico-economici necorelați cu bugetul din cerere. Diferențele dintre devizul general și sumele solicitate sunt printre primele lucruri verificate.
 
-**Încadrarea greșită a documentației.** Un obiectiv tratat ca investiție nouă deși se intervine asupra unei construcții existente — sau invers. Se descoperă la evaluare și înseamnă reluarea documentației.
+Urmează studiile de teren expirate sau inexistente, pe baza cărora soluția nu se susține. Situația juridică neclarificată, cu terenuri private neexpropriate pe traseu sau limite din acte care nu corespund realității. Și graficele de implementare care ignoră cât durează obținerea avizelor.
 
-**Indicatori tehnico-economici necorelați** cu bugetul din cererea de finanțare. Diferențele dintre devizul general și sumele solicitate sunt printre primele verificate.
+## Ce ajută, concret
 
-**Studii de teren expirate sau inexistente**, pe baza cărora soluția tehnică nu se susține.
+Trei lucruri fac diferența pentru un consultant.
 
-**Situație juridică neclarificată** — terenuri private neexpropriate pe traseu, sau diferențe între limita din acte și cea reală.
+Primul: implică proiectantul înainte să fixezi calendarul. Durata elaborării și a obținerii avizelor se estimează de cine le face, nu se presupune.
 
-**Termene nerealiste** în graficul de implementare, care ignoră durata obținerii avizelor.
+Al doilea: disponibilitatea la clarificări. Evaluatorii revin cu solicitări în termene scurte. Un proiectant care răspunde în două zile salvează dosarul. Unul care răspunde în două săptămâni, nu.
 
-## Cum se lucrează realist cu un proiectant
+Al treilea: continuitatea. Dacă proiectul prinde finanțare, documentația trebuie dusă mai departe. Schimbarea proiectantului la mijloc costă timp exact când nu ai.
 
-Pentru un consultant, trei lucruri fac diferența:
+## Cum lucrăm
 
-1. **Implicarea proiectantului înainte de a fixa calendarul.** Durata elaborării documentației și a obținerii avizelor se estimează de cel care le face, nu se presupune.
-2. **Disponibilitatea la clarificări.** Evaluatorii revin cu solicitări în termene scurte. Un proiectant care răspunde în două zile salvează dosarul; unul care răspunde în două săptămâni nu.
-3. **Continuitatea după contractare.** Dacă proiectul prinde finanțare, documentația trebuie dusă mai departe — proiect tehnic, autorizare, asistență tehnică. Schimbarea proiectantului la mijloc costă timp.
+Am elaborat documentații pentru obiective finanțate din fonduri europene și din programe naționale. Studiul de fezabilitate pe care l-am făcut pentru pasajul „Clubul Văcarilor" a stat la baza unei investiții de 99,46 milioane lei prin PNRR, Componenta 4, recepționată în iulie 2026.
 
-## Cum colaborăm
+Despre cum colaborăm cu consultanții, pe [pagina de colaborări](/colaborari#consultanti).
 
-Am elaborat documentații pentru obiective finanțate din fonduri europene și din programe naționale. Studiul de fezabilitate pe care l-am realizat pentru pasajul „Clubul Văcarilor" a stat la baza unei investiții de 99,46 milioane lei prin PNRR — Componenta 4, recepționată în iulie 2026.
-
-Detalii despre modul în care lucrăm cu consultanții, pe [pagina de colaborări](/colaborari#consultanti).
-
----
-
-**Pregătești un dosar și ai nevoie de documentație tehnică la termen?** Spune-ne despre ce obiectiv e vorba și care e data limită. [Discută colaborarea](/contact).
+Dacă pregătești un dosar și ai nevoie de documentație până la o dată fixă, [spune-ne despre ce obiectiv e vorba](/contact).

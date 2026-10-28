@@ -8,54 +8,40 @@ imageAlt: "Pod rutier — proiectare infrastructură"
 keywords: ["cost proiectare pod", "pret proiectare drum", "oferta proiectare infrastructura", "onorariu proiectant"]
 ---
 
-Este prima întrebare pe care o primim și singura la care nu putem răspunde într-un email de două rânduri. Nu din reticență — ci pentru că un „preț pe kilometru" nu există, iar cine îți dă unul pe loc probabil nu a citit tema de proiectare.
+E prima întrebare pe care o primim. Și singura la care nu putem răspunde într-un email de două rânduri.
 
-Acest articol explică ce determină costul, ca să poți estima singur ordinul de mărime și să compari ofertele corect.
+Nu din reticență. Pur și simplu nu există preț pe kilometru, iar cine îți dă unul pe loc nu a citit tema de proiectare. Ce putem face e să explicăm de la ce pornește calculul, ca să poți estima singur ordinul de mărime.
 
-## Ce mișcă efectiv prețul
+## De ce variază atât de mult
 
-**Faza de proiectare.** O expertiză tehnică, un studiu de fezabilitate și un proiect tehnic de execuție sunt trei livrabile de volum complet diferit. Un PT complet poate însemna de câteva ori efortul unui SF.
+Cea mai mare diferență o face **faza**. O expertiză tehnică, un studiu de fezabilitate și un proiect tehnic de execuție sunt trei livrabile de volum complet diferit. Un PT complet poate însemna de câteva ori efortul unui SF, pentru același obiectiv.
 
-**Dimensiunea și complexitatea.** La drumuri contează lungimea, dar mai ales numărul de lucrări de artă, intersecțiile și sectoarele cu probleme de stabilitate. La poduri, deschiderea și tipul structurii contează mai mult decât lungimea totală.
+Apoi contează ce proiectezi. La drumuri, lungimea e mai puțin importantă decât numărul de lucrări de artă, intersecțiile și sectoarele cu probleme de stabilitate. Zece kilometri de drum de câmpie, fără poduri, sunt o lucrare mai simplă decât trei kilometri prin zonă de deal. La poduri, deschiderea și tipul structurii cântăresc mai mult decât lungimea totală.
 
-**Construcție nouă sau intervenție.** O intervenție la o structură existentă cere expertiză tehnică, relevare în teren și, frecvent, investigații — pași care nu există la un obiectiv nou.
+Contează și dacă e construcție nouă sau intervenție. Intervenția cere expertiză tehnică, relevare în teren, frecvent investigații asupra materialelor. Pași care la un obiectiv nou pur și simplu nu există.
 
-**Studiile necesare.** Topografic, geotehnic, hidrologic, de trafic. Pot fi incluse în contract sau comandate separat de beneficiar. Este diferența care face ca două oferte să pară foarte diferite.
+Studiile sunt al patrulea factor, și cel care face ca două oferte să pară foarte diferite. Topografic, geotehnic, hidrologic, de trafic: pot fi incluse în contract sau comandate separat de beneficiar. Dacă o ofertă le include și alta nu, compari mere cu pere.
 
-**Regimul amplasamentului.** Zonă protejată, monument istoric, apropiere de cale ferată sau de un curs de apă — fiecare adaugă avize și cerințe de documentație.
+În fine, regimul amplasamentului. Zonă protejată, monument istoric, apropiere de calea ferată sau de un curs de apă. Fiecare adaugă avize și cerințe de documentație.
 
-## Ce ar trebui să conțină o ofertă serioasă
+## Ce verifici într-o ofertă
 
-Când primești o ofertă, verifică dacă spune explicit:
+Înainte să te uiți la sumă, uită-te dacă oferta spune explicit ce fază sau faze acoperă, dacă include documentația pentru autorizare, care studii intră în preț și care rămân în sarcina ta, dacă verificarea de proiect e inclusă sau se contractează separat, dacă asistența tehnică pe durata execuției e cuprinsă, și câte revizuiri intră după observațiile avizatorilor.
 
-- **Fazele acoperite** — SF, DALI, PT, DE, și dacă include documentația pentru autorizare
-- **Studiile incluse** și care rămân în sarcina ta
-- **Verificarea de proiect** — e inclusă sau o contractezi separat
-- **Asistența tehnică** pe durata execuției
-- **Numărul de revizuiri** incluse după observațiile avizatorilor
+O ofertă care dă doar o sumă globală, fără să spună ce acoperă, nu e comparabilă cu nimic. Nici măcar cu ea însăși, peste șase luni.
 
-O ofertă care dă doar o sumă globală, fără să spună ce acoperă, nu e comparabilă cu nimic.
+## Despre ofertele foarte mici
 
-## Capcana ofertei foarte mici
+La licitații, criteriul e frecvent prețul. Rezultatul e previzibil: apar oferte sub costul real al muncii.
 
-La licitațiile publice, criteriul este frecvent prețul. Rezultatul previzibil: oferte sub costul real al muncii.
+Ce urmează e la fel de previzibil. Documentație incompletă, care nu trece de avizare din prima. Revizuiri taxate suplimentar. Asistență tehnică absentă exact când apar problemele pe șantier. Economia de la proiectare se plătește înmulțit la execuție, doar că din alt capitol de buget și de obicei după ce a plecat cine a semnat.
 
-Ce se întâmplă apoi este consecvent — documentație incompletă, care nu trece de avizare din prima; revizuiri taxate suplimentar; asistență tehnică absentă exact când apar problemele pe șantier. Economia de la proiectare se plătește înmulțit la execuție.
+Proiectarea e un procent mic din valoarea investiției. E și componenta care decide dacă restul bugetului e cheltuit bine.
 
-Proiectarea reprezintă, de regulă, un procent mic din valoarea totală a investiției. Este și componenta care decide dacă restul bugetului e cheltuit bine.
+## Ca să primești un număr care înseamnă ceva
 
-## Cum ceri o estimare utilă
+Trimite-ne, pe scurt, ce vrei să realizezi, unde, și dacă intervii pe ceva existent sau construiești nou. Adaugă dimensiunile aproximative, ce documente ai deja (carte funciară, certificat de urbanism, studii mai vechi) și până când ai nevoie de documentație.
 
-Ca să primești un număr care înseamnă ceva, trimite:
+Cu atât, o estimare realistă se poate da în câteva zile. Fără, orice cifră e ghicit.
 
-1. **Ce vrei să realizezi** — pe scurt, în cuvintele tale
-2. **Unde** — localitate, și dacă intervii pe ceva existent sau construiești nou
-3. **Dimensiunile aproximative** — lungime de drum, deschidere de pod
-4. **Ce documente ai deja** — carte funciară, certificat de urbanism, studii anterioare
-5. **Termenul** la care ai nevoie de documentație
-
-Cu acestea, o estimare realistă se poate da în câteva zile.
-
----
-
-**Vrei un reper pentru proiectul tău?** Trimite-ne datele de mai sus și îți spunem ce documentații sunt necesare și în ce interval de cost se încadrează — fără obligații. [Discută proiectul tău cu noi](/contact).
+[Scrie-ne](/contact) și ne uităm peste ce ai.
