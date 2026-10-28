@@ -87,3 +87,7 @@ Diferența dintre o rețea întreținută planificat și una reparată reactiv n
 Despre documentele cu care pornești un astfel de proiect am scris în [ghidul despre modernizarea unui drum comunal](/blog/documente-necesare-modernizare-drum-comunal).
 
 Dacă pregătești un program de modernizare, [scrie-ne](/contact). Putem evalua rețeaua și prelua documentațiile.
+
+---
+
+**Surse.** Cerințele specifice pentru studiul de fezabilitate la infrastructura de transport rutier, art. 493, se regăsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf).

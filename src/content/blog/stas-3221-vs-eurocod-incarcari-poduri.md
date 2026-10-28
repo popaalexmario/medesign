@@ -80,6 +80,6 @@ Despre când devine obligatorie expertiza și ce trebuie să conțină, am scris
 
 ---
 
-**Surse:** [Reglementarea tehnică din 20.09.2022, Metodologie de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie), publicată în Monitorul Oficial, Partea I, nr. 988 bis; [catalogul ASRO pentru STAS 3221-86](https://magazin.asro.ro/ro/standard/17634).
+**Surse:** [Reglementarea tehnică din 20.09.2022, Metodologie de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie), publicată în Monitorul Oficial, Partea I, nr. 988 bis. Data anulării STAS 3221-86 este cea din catalogul Asociației de Standardizare din România (ASRO), fișa standardului.
 
 Ai un pod la care expertiza ridică semne de întrebare pe partea de încărcări? [Scrie-ne](/contact).

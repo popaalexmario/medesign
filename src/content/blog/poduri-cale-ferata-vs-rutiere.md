@@ -45,3 +45,7 @@ Am elaborat detaliile de uzinare și execuție pentru pasajul superior de la km 
 Detalii pe [pagina proiectului](/portofoliu/pasaj-gurasada-hunedoara).
 
 Dacă ai o lucrare care traversează calea ferată, [scrie-ne](/contact). Cunoaștem cerințele și lanțul de avizare.
+
+---
+
+**Surse.** Stadiul și datele tronsonului Gurasada–Simeria, parte din reabilitarea liniei Frontieră–Curtici–Simeria, pe [pagina de proiect a CFR SA](https://cfr.ro/proiecte-pt-stadiu-implementare-km614-gurasada-simeria/).

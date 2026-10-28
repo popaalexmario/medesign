@@ -121,3 +121,7 @@ Acoperim parcursul întreg. Pentru Comuna Aninoasa, județul Dâmbovița, am fă
 Coordonăm și studiile necesare, topografic, geotehnic, de trafic, hidrologic, plus expertiza acolo unde intervenția pe existent o cere. Documentațiile sunt verificate de verificatori atestați, iar asistența tehnică pe durata execuției intră în ce oferim.
 
 Dacă pregătești un proiect și nu ești sigur ce documentație îți trebuie, [scrie-ne](/contact) și îți spunem ce pași sunt necesari.
+
+---
+
+**Surse.** Dispozițiile tranzitorii de la art. 577 și 582 se regăsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf). Structura SF / DALI / PT rămâne cea din HG nr. 907/2016. Formularele noi de autorizare sunt aprobate prin Ordinul MDLPA nr. 975/2026, publicat în Monitorul Oficial nr. 711 din 26 august 2026.

@@ -107,3 +107,7 @@ Analizăm intervenția și spunem ce regim se aplică înainte să angajezi chel
 Pentru sectoarele cu risc cunoscut facem documentația din timp. Și avem experiență pe structuri clasate, unde avizarea e o poveste mai lungă.
 
 *Materialul e informativ și nu înlocuiește consultarea textului integral al Legii nr. 169/2026. Încadrarea unei lucrări concrete se stabilește de la caz la caz, iar pentru situațiile de graniță confirmarea cu autoritatea emitentă rămâne cea mai sigură cale.*
+
+---
+
+**Surse.** Citatele provin din [capitolul privind realizarea lucrărilor de construire în lipsa oricărei formalități](https://lege5.ro/gratuit/ge4tanjtgazti/realizarea-lucrarilor-de-construire-in-lipsa-oricarei-formalitati-codul-amenajarii-teritoriului-urbanismului-si-constructiilor), parte din Legea nr. 169/2026. Textul integral, în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf).

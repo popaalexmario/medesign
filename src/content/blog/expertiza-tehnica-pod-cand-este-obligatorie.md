@@ -91,3 +91,7 @@ Iar la podul suspendat peste brațul Gogoșu, pentru Hidroelectrica SA, Sucursal
 Coordonăm expertiza prin experți atestați, elaborăm documentația de intervenție și proiectul tehnic, și asigurăm asistența tehnică pe durata lucrărilor, ca să nu gestionezi tu fiecare etapă separat.
 
 Ai un pod pe care nu l-a evaluat nimeni de ani buni? [Scrie-ne](/contact).
+
+---
+
+**Surse.** Obligativitatea expertizei la intervenții asupra construcțiilor existente decurge din Legea nr. 10/1995 privind calitatea în construcții și din HG nr. 907/2016. Pentru evaluarea la încărcările actuale, [Metodologia de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri (20.09.2022)](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie).

@@ -140,3 +140,7 @@ Pentru intervențiile la construcții clasate, unde CATUC cere verificatori ates
 *Materialul e o sinteză și nu înlocuiește consultarea textului integral al Legii nr. 169/2026. Pentru încadrarea unui proiect concret, situația se analizează de la caz la caz.*
 
 Dacă ai ceva în derulare și nu ești sigur sub ce regim intră, [scrie-ne](/contact) și ne uităm împreună.
+
+---
+
+**Surse.** Articolele citate se regăsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf), cu [rectificările publicate în Monitorul Oficial nr. 862 din 14 octombrie 2026](https://www.aicps.ro/media/content/2026-10/monitorul-oficial-partea-i-nr-862-rectificari_6ad0f839c6b13.pdf). Pentru o sinteză pe înțelesul proiectantului, [sinteza AICPS privind modificările aduse de CATUC](https://www.aicps.ro/stiri/tehnic/a-intrat-in-vigoare-codul-amenajarii-teritoriului-urbanismului-si-constructiilor-catuc-25-august-2026).

@@ -43,3 +43,7 @@ Decolmatarea unui podeț, refacerea unui timpan, curățarea albiei la intrare: 
 Am scris pe larg despre încadrare în articolul despre [lucrările care se pot executa fără autorizație](/blog/lucrari-infrastructura-fara-autorizatie-catuc).
 
 Dacă ai podețe care nu mai fac față la ploi, dimensionarea corectă pleacă de la studiul hidrologic, nu de la ce era acolo înainte. [Scrie-ne](/contact).
+
+---
+
+**Surse.** Regimul lucrărilor de întreținere și reparații curente este cel din [capitolul privind realizarea lucrărilor de construire în lipsa oricărei formalități](https://lege5.ro/gratuit/ge4tanjtgazti/realizarea-lucrarilor-de-construire-in-lipsa-oricarei-formalitati-codul-amenajarii-teritoriului-urbanismului-si-constructiilor).

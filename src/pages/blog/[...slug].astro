@@ -229,3 +229,13 @@ const jsonLd = [
 
   <Footer />
 </Layout>
+
+<script is:inline>
+  // Citarile duc in afara site-ului; nu scoatem cititorul din articol.
+  document.querySelectorAll('.prose a[href^="http"]').forEach(function (a) {
+    if (a.hostname !== window.location.hostname) {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+    }
+  });
+</script>

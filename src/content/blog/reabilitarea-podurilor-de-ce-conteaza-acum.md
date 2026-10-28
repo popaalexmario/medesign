@@ -83,3 +83,7 @@ Pentru un pod despre care nu ai informații recente, pasul următor e expertiza 
 Despre când devine obligatorie expertiza și ce conține, am scris separat în [articolul despre expertiza tehnică la poduri](/blog/expertiza-tehnica-pod-cand-este-obligatorie).
 
 Dacă administrezi poduri pe care nu le-a evaluat nimeni de mult, [scrie-ne](/contact).
+
+---
+
+**Surse.** Pentru evaluarea podurilor existente la încărcările actuale, vezi [Metodologia de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri (20.09.2022)](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie). Prevederea privind prelungirea duratei de existență, art. 439, se află în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf). STAS 3221-86 figurează ca anulat în catalogul ASRO.

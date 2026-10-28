@@ -87,3 +87,7 @@ Costă mai puțin decât refacerea. Stabilizarea unui versant cu semne incipient
 Apoi mai e ceva ce nu apare în deviz. Pe rute fără alternativă rezonabilă, un sector închis înseamnă acces întrerupt la servicii medicale, transport școlar deviat și activitate economică locală afectată, pe toată durata refacerii.
 
 Dacă ai sectoare cu probleme de stabilitate, [scrie-ne](/contact). Coordonăm investigațiile geotehnice, facem documentația și rămânem pe fază la execuție.
+
+---
+
+**Surse.** Definițiile rezilienței și ale riscurilor din hazarduri naturale, art. 384–386 și 388, se găsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf).

@@ -57,3 +57,7 @@ Am elaborat documentații pentru obiective finanțate din fonduri europene și d
 Despre cum colaborăm cu consultanții, pe [pagina de colaborări](/colaborari#consultanti).
 
 Dacă pregătești un dosar și ai nevoie de documentație până la o dată fixă, [spune-ne despre ce obiectiv e vorba](/contact).
+
+---
+
+**Surse.** Datele despre pasajul „Clubul Văcarilor" (valoare totală, sursă de finanțare, dată de recepție) provin din [comunicatul de presă de finalizare publicat de Municipiul Baia Mare](https://www.baiamare.ro/Baiamare/Proiecte%20noi/PNRR/Pasaj%20Clubul%20Vacarilor/Comunicat_de_presa_finalizare_proiect_Pasaj_ClubulVacarilor.pdf).

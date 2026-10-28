@@ -68,3 +68,7 @@ Promisiuni de termene care nu țin cont de avize. Proiectarea e partea predictib
 Facem documentații de infrastructură din 2018, pentru primării, consilii județene, companii naționale, și ca subcontractant pentru antreprenori și uzinatori. Beneficiarii fiecărui proiect sunt trecuți în [portofoliu](/portofoliu), cu fază și perioadă, ca să poți verifica.
 
 Dacă ai de ales între oferte și vrei o a doua opinie pe partea tehnică, [scrie-ne](/contact). Spunem și când o lucrare nu e pentru noi.
+
+---
+
+**Surse.** Cerința de independență a expertului (art. 435), atestarea suplimentară pentru monumente istorice (art. 440 alin. 5) și regimul asistenței tehnice (art. 521) se află în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf).
