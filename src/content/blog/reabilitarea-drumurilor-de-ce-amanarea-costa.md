@@ -8,105 +8,82 @@ imageAlt: "Lucrări de lărgire și reabilitare pe un drum cu trafic intens"
 keywords: ["reabilitare drum", "modernizare drum comunal", "structura rutiera", "degradare drum", "trafic greu"]
 ---
 
-Un drum local care arată acceptabil astăzi poate necesita reconstrucție integrală peste cinci ani, sau doar un tratament de suprafață — în funcție de momentul în care se intervine.
+Un drum local care arată acceptabil azi poate avea nevoie peste cinci ani fie de un tratament de suprafață, fie de reconstrucție completă. Depinde doar de când intervii.
 
-Diferența de cost între cele două scenarii este de câteva ori, nu de câteva procente. Acest articol explică de ce.
+Diferența de cost între cele două nu e de câteva procente. E de câteva ori.
 
-## Structurile rutiere existente au fost dimensionate pentru alt trafic
+## Dimensionate pentru alt trafic
 
-Majoritatea drumurilor comunale și județene din România au fost realizate în perioade în care traficul greu era semnificativ mai redus. Dimensionarea structurii rutiere s-a făcut pe ipoteze de trafic care astăzi sunt depășite în multe situații.
+Majoritatea drumurilor comunale și județene de la noi s-au făcut când traficul greu era mult mai mic. Structura rutieră s-a dimensionat pe ipoteze care azi, în multe locuri, nu mai stau în picioare.
 
-Ce s-a schimbat între timp:
+Ce s-a schimbat între timp: tonajul vehiculelor comerciale a crescut, iar sarcina pe osie e factorul care degradează structura. Transportul agricol folosește utilaje mult mai grele decât cele pentru care s-au proiectat drumurile de acces. Traficul de tranzit s-a redistribuit, și drumuri gândite pentru deservire locală preiau acum fluxuri pentru care nu au fost făcute. Iar exploatările, depozitele și carierele generează trafic concentrat pe rute nepregătite.
 
-- **Tonajul vehiculelor comerciale** a crescut, iar sarcina pe osie este factorul determinant în degradarea structurii rutiere
-- **Transportul agricol** folosește utilaje mult mai grele decât cele pentru care au fost proiectate drumurile de acces
-- **Traficul de tranzit** s-a redistribuit, iar drumuri concepute pentru deservire locală preiau fluxuri pentru care nu au fost gândite
-- **Activitățile economice locale** — exploatări, depozite, cariere — generează trafic concentrat pe rute nepregătite
+Partea care surprinde: degradarea nu e proporțională cu traficul. O creștere moderată a sarcinii pe osie produce o creștere disproporționat mai mare a solicitării. De aceea un drum poate merge bine ani la rând și apoi să se ducă rapid, odată ce s-a depășit un prag.
 
-Efectul degradării nu este proporțional cu traficul. O creștere moderată a sarcinii pe osie produce o creștere disproporționat mai mare a solicitării structurii. Un drum poate funcționa bine ani la rând și apoi să se degradeze rapid, după ce pragul de solicitare a fost depășit.
+## Apa, nu traficul
 
-## Apa este principala cauză de degradare
+Din proiectele pe care le-am făcut, cauza reală a degradării drumurilor locale nu e traficul în sine. E evacuarea proastă a apelor.
 
-Din experiența proiectelor pe care le-am elaborat, cea mai frecventă cauză reală a degradării drumurilor locale nu este traficul în sine, ci **evacuarea defectuoasă a apelor**.
+Mecanismul e mereu același. Șanțurile și rigolele se colmatează sau pur și simplu lipsesc. Apa stagnează la marginea carosabilului și pătrunde în structură. Terenul de fundare își pierde capacitatea portantă. Sub trafic apar deformații, apoi fisuri. Prin fisuri intră mai multă apă. Îngheț-dezghețul desprinde materialul și apar gropile.
 
-Mecanismul este consecvent:
+Un drum cu scurgere funcțională și structură corect dimensionată ține decenii. Același drum, cu șanțurile înfundate, se duce în câțiva ani.
 
-1. Șanțurile și rigolele se colmatează sau lipsesc
-2. Apa stagnează la marginea părții carosabile și pătrunde în structură
-3. Terenul de fundare își pierde capacitatea portantă
-4. Sub trafic apar deformații, apoi fisuri
-5. Prin fisuri pătrunde mai multă apă, iar ciclul se accelerează
-6. Îngheț-dezghețul desprinde materialul și apar gropile
+De asta un proiect serios tratează sistemul de colectare și evacuare a apelor ca element principal, nu ca anexă la final. O reabilitare care pune un covor de asfalt peste o structură îmbibată cu apă e bani aruncați. Se vede în două-trei sezoane.
 
-Un drum cu scurgere funcțională și o structură corect dimensionată poate funcționa decenii. Același drum, cu șanțuri colmatate, se degradează în câțiva ani.
+## Cât costă amânarea
 
-De aceea, un proiect serios de modernizare tratează **sistemul de colectare și evacuare a apelor** ca element principal, nu ca anexă. Reabilitarea care se limitează la un strat nou de asfalt peste o structură îmbibată cu apă este o cheltuială care se pierde în două-trei sezoane.
+Asta e partea cu cel mai mare impact pe buget.
 
-## Costul creșterii degradării nu este liniar
+Dacă intervii devreme, pe o structură cu degradări de suprafață și fundația intactă, vorbim de tratamente, plombări, refacerea scurgerii, covor asfaltic. O fracțiune din valoarea structurii.
 
-Aceasta este observația cu cel mai mare impact bugetar pentru o primărie.
+Dacă intervii târziu, cu degradări ajunse în straturile de bază, trebuie frezare și refacerea straturilor superioare, poate stabilizări locale ale fundației.
 
-**Intervenție la timp** — pe o structură cu degradări de suprafață, fără afectarea fundației: tratamente, plombări, refacerea sistemului de scurgere, covor asfaltic. Costul este o fracțiune din valoarea structurii.
+Dacă intervii foarte târziu, cu terenul de fundare compromis, refaci structura integral: săpături, stabilizări sau înlocuirea materialului de fundare. Costul se apropie de cel al unui drum nou.
 
-**Intervenție întârziată** — cu degradări propagate în straturile de bază: se impune frezarea și refacerea straturilor superioare, eventual stabilizări locale ale fundației.
+Între prima și ultima situație pot trece cinci ani. Diferența de cost e argumentul pentru care merită un program de intervenții planificate, în loc de reacție la sesizări.
 
-**Intervenție tardivă** — cu terenul de fundare compromis: structura rutieră se reface integral, inclusiv săpături, stabilizări sau înlocuirea materialului de fundare. Costul se apropie de cel al unui drum nou.
+## Nu e doar carosabilul
 
-Între prima și ultima situație pot trece cinci ani de amânare. Diferența de cost justifică, de regulă, un program de intervenții planificate în locul reacției la sesizări.
+Un proiect bun tratează drumul ca sistem. Ce face diferența între o lucrare care ține și una care se degradează repede:
 
-## Modernizarea nu înseamnă doar carosabil
+Sistemul de scurgere, cu șanțuri, rigole, podețe și racorduri la emisar dimensionate pe baza unui studiu hidrologic. Nu copiate după ce era acolo.
 
-Un proiect de modernizare bine conceput tratează drumul ca sistem, nu ca suprafață asfaltată. Elementele care fac diferența între o lucrare durabilă și una care se degradează rapid:
+Structura rutieră dimensionată pe traficul real, pe baza studiului de trafic și a celui geotehnic, nu pe o soluție-tip luată de undeva.
 
-**Sistemul de scurgere.** Șanțuri, rigole, podețe, racorduri la emisar — dimensionate pe baza unui studiu hidrologic, nu reproduse după situația existentă.
+Siguranța circulației: amenajarea intersecțiilor, vizibilitatea în curbe, semnalizarea, parapetele unde profilul le cere.
 
-**Structura rutieră dimensionată pe trafic real.** Pe baza studiului de trafic și a studiului geotehnic, nu pe baza unei soluții-tip.
+Accesele și racordurile la proprietăți, la drumuri laterale, la obiective publice. Tratate în proiect, nu improvizate pe șantier.
 
-**Siguranța circulației.** Amenajarea intersecțiilor, vizibilitatea în curbe, semnalizarea, parapetele acolo unde profilul o cere.
+Și spațiul pietonal, trotuare și treceri în zonele locuite. Schimbă mult siguranța în interiorul localității.
 
-**Accesele și racordurile.** La proprietăți, la drumuri laterale, la obiective publice — tratate în proiect, nu improvizate la execuție.
+## Proiecte
 
-**Spațiul pietonal.** Trotuare și treceri de pietoni în zonele locuite, element care schimbă semnificativ siguranța în interiorul localităților.
+La **Cozieni, județul Buzău**, am proiectat 13 drumuri locale și comunale însumând 10,35 km. Zonă de deal, unde tratarea unitară a scurgerii apelor pe toată rețeaua a fost elementul decisiv.
 
-## Proiecte în care am tratat aceste aspecte
+La **Aninoasa, județul Dâmbovița**, 6 străzi locale pe 2,20 km, cu DALI, documentație pentru autorizare și proiect tehnic de execuție.
 
-La **ME Design** am elaborat documentații de modernizare pentru drumuri locale de dimensiuni și complexități foarte diferite.
+Pe **DJ 101S, în Prahova**, modernizare și reabilitare pe 12,15 km, cu două poduri și consolidări de terasament în aceeași documentație. Un caz clar în care drumul, lucrările de artă și consolidările nu se pot trata separat.
 
-**Comuna Cozieni, Județul Buzău** — proiectare pentru 13 drumuri locale și comunale, însumând 10,35 km. Un proiect în care tratarea unitară a scurgerii apelor pe întreaga rețea a fost elementul determinant, într-o zonă cu relief accidentat.
+La **Craiova**, închiderea inelului de trafic din zona de sud: stradă nouă de 2,18 km cu patru benzi, casetarea canalului Craiovița pe 1.800 ml, trei sensuri giratorii, piste de biciclete și spații pietonale. Aici componenta hidrotehnică a cântărit cât cea rutieră.
 
-**Comuna Aninoasa, Județul Dâmbovița** — modernizarea a 6 străzi locale, cu lungime totală de 2,20 km, documentație DALI, DTAC și proiect tehnic de execuție.
+La **Onești, județul Bacău**, modernizarea infrastructurii pe zona străzilor Emil Rebreanu, Saturn, George Bacovia și Libertății, cu accent pe trotuare și parcări. Iar la **Alba Iulia**, un sens giratoriu la intersecția străzilor Regiment V Vânători, B-dul Ferdinand I și DN, cu două benzi de 5,50 m.
 
-**DJ 101S, Județul Prahova** — modernizare și reabilitare pe 12,15 km de drum județean, cu două poduri și lucrări de consolidare a terasamentului integrate în aceeași documentație. Un exemplu de proiect în care drumul, lucrările de artă și consolidările nu pot fi tratate separat.
+## Ce aduce CATUC aici
 
-**Municipiul Craiova** — închiderea inelului de trafic în zona de sud: o stradă nouă de 2,18 km cu patru benzi, casetarea canalului deschis Craiovița pe 1.800 ml, trei sensuri giratorii, piste de biciclete și spații pietonale. Un proiect în care componenta hidrotehnică a fost la fel de importantă ca cea rutieră.
+Legea nr. 169/2026, în vigoare din 25 august 2026, a restructurat parcursul unui proiect de investiții pe stadii.
 
-**Municipiul Onești, Județul Bacău** — modernizarea infrastructurii pe zona străzilor Emil Rebreanu, Saturn, George Bacovia și Libertății, cu accent pe trotuare și parcări.
+Pentru infrastructura rutieră există și o prevedere specifică. Art. 493 cere ca studiul de fezabilitate să trateze obligatoriu modalitatea de asigurare a accesului la municipiile reședință de județ sau la căile de comunicație existente, și să includă propuneri privind protecția patrimoniului arheologic și reducerea fragmentării habitatelor.
 
-**Municipiul Alba Iulia** — amenajarea unui sens giratoriu la intersecția străzilor Regiment V Vânători, B-dul Ferdinand I și DN, cu două benzi de circulație de 5,50 m.
+Dacă ai ceva în derulare, reține că obiectivele cu finanțare aprobată sau cu achiziția inițiată înainte de 25 august 2026 continuă după legislația anterioară.
 
-## Ce înseamnă CATUC pentru aceste proiecte
+Noua structură am detaliat-o în [articolul despre fazele de proiectare după CATUC](/blog/faze-proiectare-catuc-stadii-proiect).
 
-Codul amenajării teritoriului, urbanismului și construcțiilor — **Legea nr. 169/2026**, în vigoare din 25 august 2026 — a restructurat parcursul unui proiect de investiții pe stadii.
+## Ce recomandăm
 
-Pentru proiectele de infrastructură rutieră există și o prevedere specifică: potrivit art. 493, studiul de fezabilitate trebuie să trateze obligatoriu modalitatea de asigurare a accesului la municipiile reședință de județ sau la căile de comunicație existente și să includă propuneri privind protecția patrimoniului arheologic și reducerea fragmentării habitatelor.
+Pentru o primărie cu o rețea de drumuri locale, ordinea care dă cel mai bun raport cost-efect e: evaluezi toată rețeaua, nu doar tronsoanele de unde au venit sesizări; ierarhizezi pe criterii tehnice, adică stare reală, trafic și importanță funcțională; tratezi prioritar scurgerea apelor pe tronsoanele încă recuperabile; și programezi multianual intervențiile mari, corelat cu sursele de finanțare.
 
-Important pentru proiectele aflate în derulare: obiectivele cu finanțare aprobată sau pentru care procedurile de achiziție au fost inițiate înainte de 25 august 2026 continuă după legislația anterioară.
+Diferența dintre o rețea întreținută planificat și una reparată reactiv nu se vede în bugetul pe un an. Se vede în cel pe zece.
 
-Am detaliat noua structură în articolul despre [fazele de proiectare după CATUC](/blog/faze-proiectare-catuc-stadii-proiect).
+Despre documentele cu care pornești un astfel de proiect am scris în [ghidul despre modernizarea unui drum comunal](/blog/documente-necesare-modernizare-drum-comunal).
 
-## Recomandarea practică
-
-Pentru o primărie care gestionează o rețea de drumuri locale, abordarea cu cel mai bun raport cost-efect este:
-
-1. **Evaluarea întregii rețele**, nu doar a tronsoanelor cu sesizări
-2. **Ierarhizarea pe criterii tehnice** — stare reală, trafic, importanță funcțională
-3. **Tratarea prioritară a scurgerii apelor** pe tronsoanele încă recuperabile
-4. **Programarea multianuală** a intervențiilor majore, corelată cu sursele de finanțare
-
-Diferența dintre o rețea întreținută planificat și una reparată reactiv se vede în bugetul pe zece ani, nu în cel pe un an.
-
-Despre documentele necesare pentru a porni un astfel de proiect am scris în ghidul despre [modernizarea unui drum comunal](/blog/documente-necesare-modernizare-drum-comunal).
-
----
-
-**Pregătești un program de modernizare a drumurilor din localitate?** Putem evalua rețeaua, elabora documentațiile și asigura asistența tehnică pe parcursul execuției. [Discută proiectul tău cu noi](/contact).
+Dacă pregătești un program de modernizare, [scrie-ne](/contact). Putem evalua rețeaua și prelua documentațiile.
