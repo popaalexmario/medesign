@@ -2,10 +2,10 @@
 title: "SF, DALI sau PT? Ghidul documentațiilor de proiectare"
 description: "Diferența dintre Studiu de Fezabilitate, DALI și Proiect Tehnic, explicată pe înțelesul beneficiarului. Ce documentație îți trebuie și în ce ordine."
 pubDate: 2026-08-12
-updatedDate: 2026-10-25
+updatedDate: 2026-11-12
 category: "Ghiduri"
 image: "/img/projects/proiectare-drumuri.png"
-imageAlt: "Proiectare drumuri — documentație tehnică"
+imageAlt: "Planșă de proiectare pentru un drum"
 keywords: ["studiu de fezabilitate", "DALI", "proiect tehnic", "HG 907/2016", "documentatie proiectare drum"]
 ---
 
@@ -70,7 +70,7 @@ SF-ul și DALI răspund la ce și de ce. Proiectul tehnic răspunde la cum.
 
 ## Documentația pentru autorizare
 
-În paralel există documentația pentru autorizarea executării lucrărilor de construire, reglementată de Legea nr. 50/1991 și cunoscută până acum ca DTAC.
+În paralel există documentația pentru autorizarea executării lucrărilor de construire, reglementată până la 25 august 2026 de Legea nr. 50/1991, acum abrogată și înlocuită de CATUC, și cunoscută până atunci ca DTAC.
 
 Nu înlocuiește proiectul tehnic. E un extras din el, făcut special pentru obținerea autorizației. Conținutul e stabilit prin lege și urmărește conformitatea cu documentațiile de urbanism și cu avizele.
 
@@ -80,9 +80,9 @@ O precizare de denumire: sub CATUC, DTAC a devenit PAC, Proiectul pentru Autoriz
 
 ## Verificarea de proiect
 
-Indiferent de fază, documentațiile se verifică de verificatori de proiecte atestați, pe cerințele esențiale aplicabile: rezistență mecanică și stabilitate, siguranță în exploatare, și celelalte, după specificul lucrării.
+Documentațiile se verifică de verificatori de proiecte atestați, pe cerințele fundamentale aplicabile: rezistență mecanică și stabilitate, siguranță în exploatare și celelalte, după specificul lucrării.
 
-Nu e opțională și nu e o formalitate administrativă. O cere Legea nr. 10/1995 privind calitatea în construcții, și condiționează legalitatea execuției.
+Nu e o formalitate administrativă. Până la 25 august 2026 o cerea Legea nr. 10/1995. Acum o cere CATUC, pe patru niveluri legate de clasa de consecințe, iar proiectele încadrate în CC1 nu mai au obligația verificării (art. 440). Diferențele, în articolul despre [expertiză și verificare](/blog/expertiza-tehnica-vs-verificare-proiect).
 
 ## Ordinea, pentru o primărie
 

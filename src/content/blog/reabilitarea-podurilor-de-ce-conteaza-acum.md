@@ -4,7 +4,7 @@ description: "Podurile proiectate după normele vechi se confruntă cu încărc�
 pubDate: 2026-10-22
 category: "Tehnic"
 image: "/img/projects/pod%20gladiolelor.png"
-imageAlt: "Reparație capitală pod — reabilitare structuri existente"
+imageAlt: "Reparație capitală la un pod existent"
 keywords: ["reabilitare pod", "Eurocod poduri", "SR EN 1991-2", "STAS 3221", "capacitate portanta pod", "durata de existenta"]
 ---
 

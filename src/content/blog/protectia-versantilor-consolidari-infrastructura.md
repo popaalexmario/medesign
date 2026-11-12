@@ -4,7 +4,7 @@ description: "Căderi de piatră, alunecări și eroziune afectează tot mai mul
 pubDate: 2026-10-08
 category: "Tehnic"
 image: "/img/projects/dn7.webp"
-imageAlt: "Protecție versanți pe drum național — lucrări de consolidare"
+imageAlt: "Lucrări de protecție a versanților pe un drum național"
 keywords: ["protectie versanti", "consolidare taluz", "zid de sprijin", "alunecare de teren", "caderi de piatra", "reziliența constructiilor"]
 ---
 

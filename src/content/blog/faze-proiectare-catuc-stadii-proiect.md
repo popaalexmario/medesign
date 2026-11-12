@@ -4,7 +4,7 @@ description: "CATUC (Legea 169/2026) a înlocuit fazele clasice cu 7 stadii. Ce 
 pubDate: 2026-10-25
 category: "Legislație"
 image: "/img/blog/faze-proiectare.jpg"
-imageAlt: "Sens giratoriu în execuție — vedere aeriană a unui proiect de infrastructură rutieră"
+imageAlt: "Sens giratoriu în execuție, vedere aeriană a unui proiect de infrastructură rutieră"
 keywords: ["CATUC", "Legea 169/2026", "faze de proiectare", "stadii proiect", "PAC", "clase de consecinte"]
 ---
 

@@ -4,7 +4,7 @@ description: "De ce nu există un preț fix, ce factori mișcă efectiv costul d
 pubDate: 2026-10-25
 category: "Ghiduri"
 image: "/img/projects/pod.jpg"
-imageAlt: "Pod rutier — proiectare infrastructură"
+imageAlt: "Pod rutier în proiectare"
 keywords: ["cost proiectare pod", "pret proiectare drum", "oferta proiectare infrastructura", "onorariu proiectant"]
 ---
 

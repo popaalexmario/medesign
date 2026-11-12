@@ -1,6 +1,6 @@
 ---
 title: "Podețe: ce tip alegi și cum se dimensionează"
-description: "Tubular, dalat sau casetat — ce determină alegerea, cum se stabilește secțiunea și de ce un podeț subdimensionat distruge drumul din amonte."
+description: "Tubular, dalat sau casetat: ce determină alegerea, cum se stabilește secțiunea și de ce un podeț subdimensionat distruge drumul din amonte."
 pubDate: 2026-10-25
 category: "Tehnic"
 keywords: ["podet tubular", "podet dalat", "podet casetat", "dimensionare podet", "scurgere ape drum"]

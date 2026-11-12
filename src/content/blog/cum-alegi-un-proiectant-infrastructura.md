@@ -16,7 +16,7 @@ Mai jos, ce ne-am uita noi dacă am fi de cealaltă parte a mesei.
 
 Confuzia cea mai costisitoare e între cele trei roluri, fiindcă nu sunt interschimbabile și fiecare cere altă atestare.
 
-Proiectantul elaborează documentația. Expertul tehnic, atestat nominal de ministerul de resort, întocmește expertizele la construcții existente. Verificatorul de proiecte, atestat separat, verifică documentația pe cerințele esențiale.
+Proiectantul elaborează documentația. Expertul tehnic, atestat nominal de ministerul de resort, întocmește expertizele la construcții existente. Verificatorul de proiecte, atestat separat, verifică documentația pe cerințele fundamentale.
 
 Un inginer foarte bun nu poate semna o expertiză fără atestatul de expert, oricâtă experiență ar avea. Iar CATUC adaugă o cerință de independență la art. 435: expertizarea unui proiect nu se face de aceeași entitate care l-a elaborat sau l-a verificat.
 

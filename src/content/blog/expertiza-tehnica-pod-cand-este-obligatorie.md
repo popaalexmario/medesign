@@ -2,9 +2,10 @@
 title: "Când este obligatorie expertiza tehnică la un pod"
 description: "Expertiza tehnică la poduri: când o cere legea, ce conține, cine o poate întocmi și de ce fără ea nu poți începe lucrările de reparație sau consolidare."
 pubDate: 2026-10-20
+updatedDate: 2026-11-12
 category: "Tehnic"
 image: "/img/projects/POD%20LUGOJ.jpg"
-imageAlt: "Reabilitare pod — expertiză tehnică"
+imageAlt: "Pod de Fier din Lugoj, structură metalică supusă expertizei tehnice"
 keywords: ["expertiza tehnica pod", "reabilitare pod", "consolidare pod", "stare tehnica pod", "expert tehnic atestat"]
 ---
 
@@ -14,11 +15,11 @@ Mai jos: când devine obligatorie, ce conține, și de ce momentul în care o co
 
 ## De ce o cere legea
 
-Cadrul vine din Legea nr. 10/1995 privind calitatea în construcții, care stabilește că intervențiile asupra construcțiilor existente se fac pe baza unei expertize întocmite de experți tehnici atestați.
+De la 25 august 2026, regula e în CATUC. Art. 285 alin. (2) cere ca lucrările de intervenție să se facă pe baza expertizelor tehnice întocmite de experți tehnici atestați. Articolul e scris pentru clădiri, iar art. 327 alin. (2) îl aplică și lucrărilor inginerești, deci și podurilor. Până atunci aceeași obligație venea din Legea nr. 10/1995 privind calitatea în construcții, abrogată în cea mai mare parte de Cod.
 
 Raționamentul e simplu. Nu poți proiecta o intervenție fără să știi în ce stare e structura. Un pod de cincizeci de ani are o alcătuire, o degradare și o capacitate portantă care nu se deduc din documentația inițială, presupunând că aceasta mai există undeva.
 
-HG nr. 907/2016 o prevede, la rândul ei, ca document obligatoriu la baza documentației DALI.
+Pentru proiectele rămase sub regimul HG nr. 907/2016, hotărârea o prevede, la rândul ei, ca document obligatoriu la baza documentației DALI.
 
 ## Când e obligatorie
 
@@ -76,7 +77,7 @@ Se întâmplă des la poduri vechi, mai ales cele dinainte de 1990 sau preluate 
 
 Nu e un impediment. Expertiza se face pe relevare efectivă și investigații în teren. Costul și durata cresc, fiindcă volumul de investigații e mai mare, dar evaluarea rămâne posibilă.
 
-La podurile clasate ca monument istoric apar în plus cerințe de avizare și restricții privind soluțiile admisibile. De luat în calcul de la început, nu când ai terminat proiectul.
+La podurile clasate ca monument istoric apar în plus cerințe de avizare și restricții privind soluțiile admisibile. Iar expertiza o poate face numai un expert atestat suplimentar în protejarea monumentelor istorice (art. 436 alin. (2) din CATUC). De luat în calcul de la început, nu când ai terminat proiectul. Detalii în articolul despre [podurile monument istoric](/blog/poduri-monument-istoric-interventii).
 
 ## Ce am lucrat
 
@@ -94,4 +95,4 @@ Ai un pod pe care nu l-a evaluat nimeni de ani buni? [Scrie-ne](/contact).
 
 ---
 
-**Surse.** Obligativitatea expertizei la intervenții asupra construcțiilor existente decurge din Legea nr. 10/1995 privind calitatea în construcții și din HG nr. 907/2016. Pentru evaluarea la încărcările actuale, [Metodologia de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri (20.09.2022)](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie).
+**Surse.** Obligativitatea expertizei la intervenții asupra construcțiilor existente: [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 285 alin. (2), art. 327 alin. (2) și art. 436, iar pentru proiectele în regim tranzitoriu HG nr. 907/2016. Pentru evaluarea la încărcările actuale, [Metodologia de evaluare a aptitudinii de exploatare a podurilor rutiere, clasa E de încărcare – conform Eurocoduri (20.09.2022)](https://lege5.ro/Gratuit/gezdsmrxga2dq/eneralitati-metodologie).

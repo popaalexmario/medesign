@@ -67,6 +67,17 @@ eroare se vede.
   Până la metodologie, încadrarea se face **exclusiv după anexa 6**.
 - Asistența tehnică obligatorie: art. 521.
 - Art. 577 alin. (1) listează cine rămâne sub **HG 907/2016**.
+- **Legea 50/1991 abrogată integral** și **Legea 10/1995 abrogată aproape
+  integral** (rămân doar art. 10 și 41) de CATUC, la 25.08.2026. Nu le cita ca
+  drept în vigoare. Expertiza la intervenții: art. 285 alin. (2), extins la
+  lucrări inginerești prin art. 327 alin. (2).
+- Verificarea de proiect are 4 niveluri NVP1–NVP4 legate de CC1–CC4
+  (art. 440–444). CC1 nu se mai verifică. NVP4: calcul paralel, abatere max 5%.
+- Monumente istorice: expert și verificator cu atestare suplimentară MC
+  (art. 436 alin. (2), art. 440 alin. (5)); avizul MC 15 zile la lucrări
+  inginerești de interes local/județean (art. 316 alin. (3)).
+- Termene: CU lucrări inginerești 15 zile lucrătoare (art. 258), AC 30 zile
+  (art. 273), 15 zile la infrastructură de transport (art. 334).
 - STAS 3221-86 anulat 31.07.2018. Pentru poduri existente se aplică
   Metodologia din 20.09.2022 (M. Of. nr. 988 bis): convoaie vechi clasa E +
   verificare după Eurocoduri.
@@ -93,5 +104,9 @@ eroare se vede.
 - Recomandări de la beneficiari (Lugoj, Craiova, Cozieni) — cel mai mare câștig
   de conversie disponibil.
 - Codul poștal al sediului, pentru schema LocalBusiness.
-- Articole propuse și nescrise: ziduri de sprijin vs gabioane, poduri monument
-  istoric.
+- Toate articolele propuse sunt publicate (21 în total la 12.11.2026).
+
+## Surse online
+
+`legislatie.just.ro` nu răspunde din containerul de lucru. Pentru linkuri se
+folosesc paginile lege5.ro, testate cu curl înainte de publicare.

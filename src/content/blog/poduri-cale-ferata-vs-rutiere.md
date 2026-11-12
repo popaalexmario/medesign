@@ -1,6 +1,6 @@
 ---
 title: "Poduri de cale ferată: ce diferă față de cele rutiere"
-description: "Încărcări, gabarit de liberă trecere, electrificare și execuție fără oprirea circulației — de ce un pod CF nu se proiectează ca unul de șosea."
+description: "Încărcări, gabarit de liberă trecere, electrificare și execuție fără oprirea circulației. De ce un pod CF nu se proiectează ca unul de șosea."
 pubDate: 2026-10-25
 category: "Tehnic"
 image: "/img/projects/Gurasada.png"

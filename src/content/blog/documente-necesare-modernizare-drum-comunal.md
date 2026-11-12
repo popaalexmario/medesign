@@ -2,6 +2,7 @@
 title: "Ce documente îți trebuie pentru modernizarea unui drum comunal"
 description: "Lista completă a documentelor și studiilor necesare pentru un proiect de modernizare drum comunal, de la certificatul de urbanism la autorizația de construire."
 pubDate: 2026-09-18
+updatedDate: 2026-11-12
 category: "Ghiduri"
 image: "/img/projects/ANINOASA.jpg"
 imageAlt: "Modernizare drumuri de interes local"
@@ -60,7 +61,7 @@ Distincția asta o explicăm pe larg în [ghidul despre SF, DALI și Proiect Teh
 
 După aprobarea indicatorilor tehnico-economici urmează proiectul tehnic de execuție și documentația pentru autorizare.
 
-Documentația se verifică de verificatori de proiecte atestați, pe cerințele esențiale aplicabile. Referatele de verificare intră în dosarul depus pentru autorizație.
+Documentația se verifică de verificatori de proiecte atestați, pe cerințele fundamentale aplicabile, la nivelul cerut de clasa de consecințe (sub CATUC, proiectele în CC1 nu mai au obligația verificării). Referatele de verificare intră în dosarul depus pentru autorizație.
 
 ## Autorizația
 
