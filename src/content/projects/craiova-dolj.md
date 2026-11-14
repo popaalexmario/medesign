@@ -34,11 +34,11 @@ Proiectul a fost elaborat în fazele DALI, DTAC și PTE, pentru U.A.T. Municipiu
 
 ## Finanțare și execuție
 
-Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care 22 de milioane de euro reprezintă finanțare nerambursabilă.
+Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului colector și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care aproximativ 22 de milioane de euro reprezintă finanțare nerambursabilă. Potrivit primarului, finanțarea vine prin Programul Dezvoltare Durabilă și Tranziție Justă.
 
-Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi.
+Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi. Noua arteră asigură o ieșire modernă din municipiu și fluidizează traficul în această zonă.
 
-Datele despre finanțare provin din comunicarea publică a primarului Municipiului Craiova la semnarea contractului.
+Datele despre finanțare provin din anunțul public al primarului Municipiului Craiova la semnarea contractului, preluat și de presa locală.
 
 ## Ce aduce comunității
 
