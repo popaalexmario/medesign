@@ -1,6 +1,6 @@
 ---
 title: "Protecție Versanți DN 7 km 198+200 – 207+000, km 216+000 – 219+000, km 224+000 – 227+300 și km 228+000 – 233+200, Județul Vâlcea"
-description: "Sectoarele de drum analizate fac parte din DN7 București – Titu – Târgoviște – Pitești – Arad și prezintă zone care pun în pericol siguranța circulației, dat..."
+description: "Protecție versanți pe DN7, defileul Oltului: plase ancorate pe 65.965 mp, sisteme de reținere a blocurilor și gabioane noi, finalizate cu 9 luni înainte de termen."
 categories: ["Drumuri", "Consolidări"]
 faza: "PTE+AT"
 location: "DN 7 Lotrișor, Județul Vâlcea"
@@ -37,7 +37,19 @@ Cele patru tronsoane însumează peste 20 km. O soluție unică aplicată unifor
 
 ## Documentația și asistența
 
-Am elaborat proiectul tehnic de execuție și asigurăm **asistența tehnică** pe durata execuției — necesară în special pe lucrări de versant, unde condițiile reale descoperite la săpătură impun adaptări.
+Am elaborat proiectul tehnic de execuție și am asigurat **asistența tehnică** pe durata execuției, necesară în special pe lucrări de versant, unde condițiile reale descoperite la săpătură impun adaptări.
+
+## Lucrarea finalizată
+
+Lucrările de consolidare și protecție a versanților au fost finalizate cu aproximativ 9 luni înainte de termenul contractual, care era august 2027. Pe baza proiectului s-au executat:
+
+- 6.000 mp de sisteme de reținere a blocurilor cu risc de prăbușire
+- 65.965 mp de sisteme de protecție cu plase ancorate
+- 2.650 mc de gabioane degradate înlocuite
+
+Restricțiile de circulație pe DN7 nu au durat pe toată perioada contractului. Au fost instituite etapizat, pe sectoarele în lucru, și ridicate pe măsură ce intervențiile de pe fiecare sector se încheiau. Pe o rută fără alternativă rezonabilă, asta a contat la fel de mult ca termenul.
+
+Datele provin din comunicarea publică a DRDP Craiova privind finalizarea lucrărilor.
 
 ## Ce aduce comunității
 
@@ -50,4 +62,4 @@ DN7 prin defileul Oltului este o rută fără alternativă rezonabilă, iar sigu
 
 ## Îmbunătățiri în amplasament
 
-Pe cele patru sectoare, însumând peste 20 km, soluțiile de protecție sunt diferențiate în funcție de configurația fiecărui versant și de mecanismul de desprindere identificat. Asistența tehnică pe durata execuției permite adaptarea la condițiile reale descoperite la săpătură — necesară în special pe lucrări de versant, unde investigațiile preliminare nu pot acoperi integral variabilitatea terenului.
+Pe cele patru sectoare, însumând peste 20 km, soluțiile de protecție sunt diferențiate în funcție de configurația fiecărui versant și de mecanismul de desprindere identificat: plase ancorate pe aproape 66.000 mp de versant, sisteme de reținere pentru blocurile cu risc de prăbușire și gabioane noi în locul celor degradate. Asistența tehnică pe durata execuției a permis adaptarea la condițiile reale descoperite la săpătură, necesară în special pe lucrări de versant, unde investigațiile preliminare nu pot acoperi integral variabilitatea terenului.
