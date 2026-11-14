@@ -4,6 +4,9 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { cardSrcset, CARD_SIZES } from '../../utils/img';
+import Lightbox from '../../components/Lightbox.astro';
+import PhotoGrid from '../../components/PhotoGrid.astro';
+import { blogPhotos } from '../../utils/autoGallery';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -14,6 +17,7 @@ type Props = { post: CollectionEntry<'blog'> };
 
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
+const photos = await blogPhotos(post.slug);
 
 const allPosts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -147,8 +151,10 @@ const jsonLd = [
       >
         <Content />
       </div>
+      <PhotoGrid photos={photos} alt={post.data.title} title="Imagini" />
     </div>
   </article>
+  <Lightbox />
 
   {related.length > 0 && (
     <section class="section-padding bg-steel-50">

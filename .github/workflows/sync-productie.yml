@@ -1,0 +1,21 @@
+# Cloudflare Pages publică din branch-ul claude/remove-phone-production-3uuKc.
+# Pozele urcate din interfața GitHub ajung implicit în main, așa că orice push în
+# main se copiază automat și în branch-ul de producție.
+name: Sincronizare main → producție
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push main în branch-ul de producție
+        run: git push origin HEAD:refs/heads/claude/remove-phone-production-3uuKc

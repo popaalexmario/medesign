@@ -106,7 +106,7 @@
         e.preventDefault();
         const img = el.tagName === 'IMG' ? el : el.querySelector('img');
         if (img) {
-          openLightbox(img.src, img.alt);
+          openLightbox(img.dataset.full || img.src, img.alt);
         }
       });
     });

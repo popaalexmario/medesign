@@ -28,6 +28,11 @@ proiectul Pages `medesign`. Contul Cloudflare: `968493b1cd03d86452b1536d257b0e92
 | `src/data/regions.ts` | Cele 5 regiuni pentru paginile `/zone`. |
 | `src/utils/img.ts` | `cardSrcset()` pentru imaginile din carduri. |
 | `functions/api/contact.js` | Backendul formularului. Vezi `functions/README.md`. |
+| `poze/proiecte/<slug>/`, `poze/blog/<slug>/` | Poze urcate de Mario din GitHub. Apar automat în galeria paginii (`src/utils/autoGallery.ts`), redimensionate la build. Vezi `poze/README.md`. |
+
+Workflow-ul `.github/workflows/sync-productie.yml` copiază orice push din `main`
+în branch-ul de producție, ca pozele urcate din interfața GitHub să ajungă pe site.
+La un proiect sau articol nou, creează și folderul lui în `poze/` cu un `.gitkeep`.
 
 Paginile de serviciu și cele de zonă se generează din fișierele de date. Când
 adaugi un serviciu, apare automat peste tot.
