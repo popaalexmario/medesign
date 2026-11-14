@@ -1,6 +1,6 @@
 ---
 title: "Închidere Inel de Trafic Zona de Sud a Municipiului Craiova – Casetare Canal Deschis, Modernizare Str. Râului cu Străpungere DN56 – DN55 Joncțiune cu Aleea 2 Bechet"
-description: "Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere. Casetarea canalului deschis Craiovița (Râului) pe o lungime de 1.800 ml. Proiectul incl..."
+description: "Stradă nouă de 2,18 km cu 4 benzi și casetarea canalului Craiovița pe 1.800 m, în sudul Craiovei. Investiție de peste 39 mil. euro, cu finanțare europeană."
 categories: ["Drumuri", "Consolidări"]
 faza: "DALI+DTAC+PTE"
 location: "U.A.T. Municipiul Craiova, Județul Dolj"
@@ -32,6 +32,14 @@ Casetarea unui canal deschis pe aproape doi kilometri, sub o arteră cu patru be
 
 Proiectul a fost elaborat în fazele DALI, DTAC și PTE, pentru U.A.T. Municipiul Craiova. Străpungerea între DN56 și DN55, cu joncțiune la Aleea 2 Bechet, a impus corelarea cu administratorul drumurilor naționale.
 
+## Finanțare și execuție
+
+Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care 22 de milioane de euro reprezintă finanțare nerambursabilă.
+
+Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi.
+
+Datele despre finanțare provin din comunicarea publică a primarului Municipiului Craiova la semnarea contractului.
+
 ## Ce aduce comunității
 
 Proiectul schimbă modul în care funcționează întreaga zonă de sud a Craiovei:
@@ -40,6 +48,7 @@ Proiectul schimbă modul în care funcționează întreaga zonă de sud a Craiov
 - **Eliminarea canalului deschis**, cu efect direct asupra mirosurilor, a riscului de accidente și a insectelor din zonele locuite adiacente
 - **Teren recuperat** pentru circulație și spațiu public, pe traseul fostului canal
 - **Alternative reale de deplasare** pentru bicicliști și pietoni, nu doar pentru autovehicule
+- **O nouă ieșire din oraș** și o zonă de periferie modernizată, cu spații verzi în lungul noii artere
 
 ## Îmbunătățiri în amplasament
 
