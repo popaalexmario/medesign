@@ -9,10 +9,8 @@ import { categoryEn } from '../../i18n/paths';
 import { cardSrcset, CARD_SIZES } from '../../utils/img';
 
 const stats = [
-  { value: '8+', label: 'Years in practice' },
+  { value: '2018', label: 'In business since' },
   { value: '200+', label: 'Projects delivered' },
-  { value: '1,000+', label: 'km of roads designed' },
-  { value: '100+', label: 'Bridges designed' },
 ];
 
 const tr = new Map((await getCollection('projects-en')).map((e) => [e.slug, e.data]));
@@ -86,7 +84,7 @@ const jsonLd = {
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+      <div class="grid grid-cols-2 gap-4 mt-12 max-w-xl">
         {stats.map((s, i) => (
           <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6 text-center" data-aos="fade-up" data-aos-delay={150 + i * 80}>
             <div class="text-[26px] md:text-[38px] font-heading font-extrabold text-white">{s.value}</div>
