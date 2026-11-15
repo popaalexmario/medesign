@@ -44,6 +44,10 @@ Mai sunt drumurile pentru cicliști de interes local.
 
 Le clasifică și le administrează consiliul local, prin hotărâre (art. 8 alin. (2) și art. 22). Când drumul trece prin mai multe comune, hotărârea o dau toate consiliile implicate (art. 8 alin. (3)).
 
+![Comparație între drumurile naționale, județene și locale: proprietar, administrator, excepții](/img/blog/schite/categorii-drumuri-administratori.svg)
+
+*După OG nr. 43/1997.*
+
 ## De ce contează înainte de proiect
 
 Pentru că cine comandă documentația trebuie să fie administratorul drumului. Și pentru că un drum care există în teren, dar nu e clasificat și nu figurează în inventarul domeniului public, nu poate primi bani publici fără probleme. Situația juridică a terenului e unul dintre motivele frecvente de respingere la finanțare, despre care am scris în articolul despre [documentația pentru un dosar de finanțare](/blog/documentatie-tehnica-cerere-finantare).

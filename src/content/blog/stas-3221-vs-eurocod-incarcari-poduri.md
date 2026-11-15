@@ -46,6 +46,10 @@ Pare un hibrid ciudat. Nu e, și motivul e explicat tot acolo:
 
 Ambele sisteme stau pe aceeași fundație teoretică. Ce s-a schimbat e forma în care se exprimă siguranța: coeficienți de supraîncărcare înainte, coeficienți parțiali de siguranță acum. Asta permite să le cuplezi fără să încalci logica niciunuia.
 
+![Abordarea hibridă pentru podurile existente: convoaie vechi de clasa E plus verificarea materialelor după Eurocoduri](/img/blog/schite/stas-eurocod-hibrid.svg)
+
+*Schemă după Metodologia din 20.09.2022.*
+
 ## Ce acoperă metodologia și ce nu
 
 Două limitări importante, pe care merită să le știi înainte să te bazezi pe ea.

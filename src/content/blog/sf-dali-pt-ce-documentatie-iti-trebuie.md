@@ -60,6 +60,10 @@ Aici e diferența care contează: DALI cere obligatoriu expertiză tehnică prea
 
 Atenție la situațiile mixte. Un proiect poate avea și intervenții pe existent, și obiecte complet noi. Atunci documentația se structurează pe obiecte, iar încadrarea se face separat pentru fiecare.
 
+![Drumul unei documentații: SF pentru ce e nou, expertiză și DALI pentru ce există](/img/blog/schite/sf-dali-alegere.svg)
+
+*Schemă după HG nr. 907/2016, pentru proiectele rămase în regimul ei.*
+
 ## Proiectul tehnic de execuție
 
 După aprobarea indicatorilor tehnico-economici din SF sau DALI și după ce ai finanțarea, urmează proiectul tehnic de execuție.

@@ -24,6 +24,10 @@ Studiile sunt al patrulea factor, și cel care face ca două oferte să pară fo
 
 În fine, regimul amplasamentului. Zonă protejată, monument istoric, apropiere de calea ferată sau de un curs de apă. Fiecare adaugă avize și cerințe de documentație.
 
+![Cei cinci factori care decid prețul unei proiectări](/img/blog/schite/cost-proiectare-factori.svg)
+
+*Factorii din articol, în ordinea importanței.*
+
 ## Ce verifici într-o ofertă
 
 Înainte să te uiți la sumă, uită-te dacă oferta spune explicit ce fază sau faze acoperă, dacă include documentația pentru autorizare, care studii intră în preț și care rămân în sarcina ta, dacă verificarea de proiect e inclusă sau se contractează separat, dacă asistența tehnică pe durata execuției e cuprinsă, și câte revizuiri intră după observațiile avizatorilor.

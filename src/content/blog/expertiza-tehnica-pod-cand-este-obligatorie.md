@@ -65,6 +65,10 @@ Ordinea corectă e expertiza întâi, care stabilește starea reală și soluți
 
 Expertiza nu e o hârtie care se adaugă la dosar. E fundamentul pe care stă tot restul.
 
+![Situațiile în care expertiza la un pod e obligatorie și ordinea expertiză, DALI, proiect tehnic](/img/blog/schite/expertiza-pod-cand-si-ordinea.svg)
+
+*Pe scurt: când și în ce ordine.*
+
 ## Nu înlocuiește proiectul
 
 Confuzie frecventă. Expertiza recomandă soluția, dar nu o detaliază pentru execuție.

@@ -30,6 +30,10 @@ Pe sectoarele care traversează defilee sau zone cu versanți stâncoși, materi
 
 Pentru administratorul drumului mai există o dimensiune, una de răspundere. Un sector cu istoric cunoscut de căderi, pentru care nu s-a luat nicio măsură, e greu de explicat după ce s-a întâmplat ceva.
 
+![Barieră de reținere a căderilor de piatră în lungul unui drum de pădure](/img/blog/foto/plasa-retinere-versant.webp)
+
+*Barieră de reținere a căderilor de piatră, Götzis, Austria. Foto: [Asurnipal](https://commons.wikimedia.org/wiki/File:Goetzis-Balittaweg-rockfall_catchment_fence-01ASD.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.*
+
 ## Ce aduce CATUC
 
 Până recent, legislația-cadru din construcții nu trata explicit expunerea la hazarduri naturale.
@@ -55,6 +59,10 @@ Nu există o soluție universală. Alegerea pleacă de la mecanismul de instabil
 **Drenajele și lucrările de colectare a apelor** sunt rareori suficiente singure, dar aproape întotdeauna necesare. Majoritatea instabilităților au apa drept factor declanșator. O soluție structurală fără tratarea regimului hidric tratează simptomul.
 
 **Protecțiile de maluri**, unde eroziunea hidraulică atacă terasamentul sau fundațiile lucrărilor de artă.
+
+![Secțiune printr-un drum la baza unui versant stâncos: plasă ancorată, barieră, gabioane, rigolă](/img/blog/schite/versant-protectie.svg)
+
+*Schiță de principiu a unui sistem de protecție la căderi de piatră.*
 
 ## Ce trebuie investigat înainte
 

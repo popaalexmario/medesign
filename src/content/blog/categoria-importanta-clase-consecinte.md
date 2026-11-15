@@ -66,6 +66,10 @@ Regulamentul vechi din anexa nr. 3 la HG nr. 766/1997 rămâne în vigoare pân�
 
 Practic, algoritmul de punctaj pe șase factori nu mai e instrumentul care stabilește clasa. Rămâne un exercițiu util pentru a înțelege miza unei construcții, dar nu el dă răspunsul în documentație.
 
+![Comparație între încadrarea prin punctaj în categoriile A–D și încadrarea după anexa 6 în clasele CC1–CC4](/img/blog/schite/categorii-vs-clase-consecinte.svg)
+
+*Sistemul vechi și cel din CATUC, alături.*
+
 ## De ce contează încadrarea
 
 Nu e o formalitate de completat în memoriu. Clasa de consecințe determină nivelul de verificare a proiectului.

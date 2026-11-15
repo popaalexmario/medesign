@@ -80,6 +80,10 @@ Dar pentru infrastructura din categoria asta, poduri clasate sau lucrări în zo
 
 Am lucrat la Podul de Fier peste Râul Timiș din Lugoj, structură din 1902, și la podul de pe strada Gladiolelor din Sibiu. Experiența spune clar: aici termenele se lungesc. Avizele de patrimoniu dictează calendarul.
 
+![Trei întrebări pentru a afla dacă o lucrare la infrastructura de transport cere autorizație](/img/blog/schite/fara-autorizatie-trei-intrebari.svg)
+
+*Cele trei întrebări din secțiunea de mai jos, într-o imagine.*
+
 ## Unde se greșește
 
 Problema cea mai frecventă nu e că oamenii nu cunosc prevederile. E că le folosesc dincolo de limite.

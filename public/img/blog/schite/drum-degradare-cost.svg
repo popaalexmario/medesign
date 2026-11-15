@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Inter, Arial, sans-serif">
+  <rect width="1200" height="640" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Cu cât amâni, cu atât intervenția e mai adâncă</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Grafic ilustrativ, fără valori: starea drumului în timp și tipul de lucrare necesar</text>
+
+  <!-- axe -->
+  <line x1="120" y1="520" x2="1140" y2="520" stroke="#0a1628" stroke-width="2"/>
+  <line x1="120" y1="520" x2="120" y2="120" stroke="#0a1628" stroke-width="2"/>
+  <text x="1140" y="550" font-size="16" fill="#0a1628" text-anchor="end">timp</text>
+  <text x="70" y="130" font-size="16" fill="#0a1628" transform="rotate(-90 70 130)" text-anchor="end">starea drumului</text>
+  <!-- zone -->
+  <rect x="121" y="140" width="1019" height="125" fill="#dcfce7" opacity="0.7"/>
+  <rect x="121" y="265" width="1019" height="125" fill="#fef3c7" opacity="0.8"/>
+  <rect x="121" y="390" width="1019" height="129" fill="#fee2e2" opacity="0.8"/>
+  <!-- curba -->
+  <path d="M130,150 C400,165 600,215 760,310 C880,385 960,450 1110,500" fill="none" stroke="#1e3a5f" stroke-width="5"/>
+  <!-- puncte de intervenție -->
+  <g font-size="15" font-weight="700" fill="#fff" text-anchor="middle">
+    <circle cx="500" cy="200" r="18" fill="#16a34a"/><text x="500" y="206">1</text>
+    <circle cx="790" cy="330" r="18" fill="#d97706"/><text x="790" y="336">2</text>
+    <circle cx="1040" cy="478" r="18" fill="#b91c1c"/><text x="1040" y="484">3</text>
+  </g>
+  <g font-size="16" fill="#0a1628">
+    <text x="1125" y="172" font-weight="700" fill="#166534" text-anchor="end">Degradări de suprafață, fundația intactă</text>
+    <text x="1125" y="194" fill="#166534" text-anchor="end">tratamente, plombări, refacerea scurgerii, covor asfaltic</text>
+    <text x="140" y="292" font-weight="700" fill="#92400e">Degradări în straturile de bază</text>
+    <text x="140" y="314" fill="#92400e">frezare, refacerea straturilor, stabilizări locale</text>
+    <text x="140" y="418" font-weight="700" fill="#991b1b">Terenul de fundare compromis</text>
+    <text x="140" y="440" fill="#991b1b">refacere integrală, cost apropiat de un drum nou</text>
+  </g>
+  <text x="40" y="590" font-size="16" fill="#475569">Între prima și ultima situație pot trece câțiva ani. De aici argumentul pentru intervenții planificate, nu pentru reacție la sesizări.</text>
+</svg>

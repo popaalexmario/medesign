@@ -58,6 +58,10 @@ O structură metalică de peste o sută de ani nu se evaluează din tabele. Mate
 
 Pentru capacitatea portantă a podurilor existente se aplică Metodologia din 2022, care evaluează la convoaiele vechi de clasa E și verifică după Eurocoduri. Am scris despre ea în articolul despre [STAS 3221 și Eurocod](/blog/stas-3221-vs-eurocod-incarcari-poduri).
 
+![Pașii pentru o intervenție la un pod monument istoric, de la verificarea în listă la autorizație](/img/blog/schite/monument-ordinea-pasilor.svg)
+
+*Ordinea pașilor, cu temeiul fiecăruia.*
+
 ## Ce am lucrat
 
 La Podul de Fier peste Râul Timiș din Lugoj, grindă cu zăbrele parabolică de 64,00 m din 1902, am elaborat DALI, documentația pentru autorizare și proiectul tehnic. Am pornit de la relevarea efectivă a structurii și de la expertiza tehnică. Detalii pe [pagina proiectului](/portofoliu/pod-fier-lugoj-timis).

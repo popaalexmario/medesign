@@ -18,6 +18,10 @@ Se suprapun mai multe efecte. Coborârea generală a albiei pe tronson, contrac�
 
 Exploatările de agregate din albie agravează lucrurile, pentru că adâncesc talvegul și pun în mișcare materialul de pe fund. Legea apelor ține cont de asta: pentru exploatările situate la mai puțin de 1 km amonte și 2 km aval de lucrările de artă se cere și avizul administratorului acestora (art. 33 alin. (2) din Legea nr. 107/1996).
 
+![Afuierea la o pilă de pod, fără protecție și cu protecție din anrocamente](/img/blog/schite/afuiere-pila.svg)
+
+*Schiță de principiu, fără scară.*
+
 ## Ce lucrări însoțesc un pod sau un drum
 
 Apărările de mal țin albia în poziția pe care s-a bazat proiectul. Pot fi din anrocamente, din saltele și ziduri de gabioane, din pereuri, din ziduri de sprijin. Alegerea depinde de viteza apei, de ce cară râul și de spațiul disponibil.

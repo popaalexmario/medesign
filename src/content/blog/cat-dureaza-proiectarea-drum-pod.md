@@ -24,6 +24,10 @@ Excepția notabilă sunt actele autorității de mediu, care au procedura lor ș
 
 Pe hârtie, cu documentații complete din prima, circuitul de la certificat la autorizație se măsoară în săptămâni, nu în ani.
 
+![Termenele legale din CATUC pentru certificat de urbanism, avize și autorizația de construire](/img/blog/schite/termene-legale-autorizare.svg)
+
+*Termenele din secțiunea de mai sus, într-o imagine.*
+
 ## Ce nu fixează legea
 
 Studiile de teren. Topografia, geotehnica, studiul hidrologic, după caz studiul de trafic. Forajele depind de accesul utilajului și de vreme, iar rezultatele de laborator vin când vin. Un geotehnic făcut în grabă e cel mai scump document din dosar, pentru că totul se sprijină pe el.

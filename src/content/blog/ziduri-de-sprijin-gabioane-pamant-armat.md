@@ -24,6 +24,10 @@ Pământul armat folosește straturi de geogrile sau benzi care lucrează împre
 
 Când niciuna nu încape sau terenul e slab pe adâncime mare, se trece la pereți pe piloți sau micropiloți, eventual ancorați. Costă mai mult. Uneori e singura variantă care se poate executa fără să închizi drumul.
 
+![Secțiuni prin zid de greutate, zid în consolă, gabioane și pământ armat, plus o alunecare pe sub fundație](/img/blog/schite/ziduri-sprijin-tipuri.svg)
+
+*Schiță de principiu, fără scară.*
+
 ## Ce decide alegerea
 
 Înălțimea e primul filtru, dar nu cel mai important.
@@ -33,6 +37,10 @@ Spațiul disponibil elimină des jumătate din variante. Un zid în consolă sau
 Terenul de fundare. Pe argile moi, un zid rigid de greutate tasează inegal și fisurează. O structură flexibilă tolerează mai bine. Pe teren foarte slab, nici una nici alta, și se ajunge la fundare indirectă.
 
 Apa, la final, dar poate cel mai important. Un zid în spatele căruia se acumulează apă preia o presiune pentru care adesea nu a fost dimensionat. Barbacanele înfundate, drenul lipsă sau colmatat, rigola care descarcă exact în spatele zidului. La foarte multe ziduri cedate, cauza e apa, nu betonul.
+
+![Zid de sprijin din gabioane în lungul unui drum](/img/blog/foto/gabioane-zid-sprijin.webp)
+
+*Zid de sprijin din gabioane pe latura de nord a drumului A66, Anglia. Foto: [Trevor Littlewood](https://commons.wikimedia.org/wiki/File:Gabions_used_as_retaining_wall_on_north_side_of_A66_-_geograph.org.uk_-_7625345.jpg), licență [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), Wikimedia Commons.*
 
 ## Gabioanele, onest
 

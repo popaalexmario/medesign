@@ -30,6 +30,10 @@ Nu tot trebuie pregătit înainte. De regulă rămân pentru după semnare proie
 
 Distincția contează la buget: cheltuielile din faza de proiect tehnic sunt, în majoritatea programelor, eligibile. Cele anterioare depunerii, nu întotdeauna.
 
+![Ce documentație tehnică trebuie la depunerea unui dosar de finanțare și ce poate aștepta contractarea](/img/blog/schite/finantare-depunere-vs-contract.svg)
+
+*Rezumatul celor două secțiuni de mai sus.*
+
 ## Unde cad dosarele
 
 Din ce am văzut la proiectele la care am lucrat, motivele se repetă.

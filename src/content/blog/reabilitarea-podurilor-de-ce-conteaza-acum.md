@@ -30,6 +30,10 @@ Coroziunea armăturii, accelerată de infiltrațiile prin hidroizolații depăș
 
 Niciunul nu produce efecte bruște. Toate reduc treptat capacitatea portantă și, mai important, marja de siguranță. Adică exact rezerva care acoperă ce nu știi.
 
+![Grafic ilustrativ: capacitatea unui pod scade în timp, iar cerința crește la trecerea la Eurocoduri](/img/blog/schite/pod-capacitate-cerinta.svg)
+
+*Grafic ilustrativ, fără valori.*
+
 ## Ce s-a schimbat în lege
 
 Până recent, sfârșitul duratei de existență proiectate a unei construcții era o chestiune fără rezolvare clară în legislație. Ajungeai acolo și nu era limpede ce faci.

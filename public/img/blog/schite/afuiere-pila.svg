@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <pattern id="bed" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#e7dcc8"/><circle cx="4" cy="4" r="1.8" fill="#b8a582"/><circle cx="11" cy="10" r="1.5" fill="#b8a582"/>
+    </pattern>
+    <pattern id="conc" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#cbd5e1"/><circle cx="5" cy="6" r="1.2" fill="#94a3b8"/><circle cx="12" cy="12" r="1" fill="#94a3b8"/>
+    </pattern>
+    <marker id="fl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="680" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Afuierea la o pilă de pod</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Secțiune în lungul curentului, schiță de principiu, fără scară</text>
+
+  <!-- STÂNGA: neprotejat -->
+  <text x="40" y="128" font-size="20" font-weight="700" fill="#b91c1c">Fără protecție, la ape mari</text>
+  <rect x="40" y="200" width="520" height="190" fill="#bfdbfe" opacity="0.7"/>
+  <path d="M200,389 C240,389 250,470 300,470 C350,470 360,389 400,389 Z" fill="#bfdbfe" opacity="0.7"/><path d="M40,390 L200,390 C240,390 250,470 300,470 C350,470 360,390 400,390 L560,390 L560,560 L40,560 Z" fill="url(#bed)"/>
+  <path d="M200,390 C240,390 250,470 300,470 C350,470 360,390 400,390" fill="none" stroke="#b91c1c" stroke-width="3" stroke-dasharray="10 6"/>
+  <line x1="40" y1="390" x2="560" y2="390" stroke="#78716c" stroke-width="2" stroke-dasharray="4 6"/>
+  <rect x="275" y="150" width="50" height="300" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+  <rect x="245" y="450" width="110" height="40" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+  <path d="M60,260 L230,260" stroke="#2563eb" stroke-width="4" marker-end="url(#fl)"/>
+  <path d="M230,300 C250,330 255,380 260,410" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#fl)"/>
+  <text x="400" y="500" font-size="15" fill="#b91c1c">groapă de afuiere:</text>
+  <text x="400" y="520" font-size="15" fill="#b91c1c">fundația rămâne descoperită</text>
+  <text x="430" y="383" font-size="14" fill="#57534e">fundul inițial al albiei</text>
+
+  <!-- DREAPTA: protejat -->
+  <text x="640" y="128" font-size="20" font-weight="700" fill="#1e3a5f">Cu protecție din anrocamente</text>
+  <rect x="640" y="200" width="520" height="190" fill="#bfdbfe" opacity="0.7"/>
+  <path d="M640,390 L1160,390 L1160,560 L640,560 Z" fill="url(#bed)"/>
+  <rect x="875" y="150" width="50" height="300" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+  <rect x="845" y="450" width="110" height="40" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+  <g fill="#78716c" stroke="#57534e" stroke-width="1.5">
+    <ellipse cx="770" cy="392" rx="22" ry="12"/><ellipse cx="808" cy="390" rx="20" ry="13"/><ellipse cx="845" cy="392" rx="22" ry="12"/>
+    <ellipse cx="955" cy="392" rx="22" ry="12"/><ellipse cx="992" cy="390" rx="20" ry="13"/><ellipse cx="1030" cy="392" rx="22" ry="12"/>
+    <ellipse cx="790" cy="410" rx="20" ry="11"/><ellipse cx="828" cy="412" rx="20" ry="11"/><ellipse cx="972" cy="412" rx="20" ry="11"/><ellipse cx="1010" cy="410" rx="20" ry="11"/>
+  </g>
+  <path d="M660,260 L830,260" stroke="#2563eb" stroke-width="4" marker-end="url(#fl)"/>
+  <text x="900" y="530" font-size="15" fill="#1e3a5f" text-anchor="middle">fundul albiei rămâne la cotă în jurul pilei</text>
+
+  <text x="40" y="610" font-size="16" fill="#475569">După viitură groapa se umple la loc cu aluviuni afânate, iar albia pare normală. De aceea afuierea se vede greu.</text>
+  <text x="40" y="634" font-size="16" fill="#475569">Fundația trebuie să ajungă sub adâncimea de afuiere de calcul sau să fie protejată.</text>
+</svg>

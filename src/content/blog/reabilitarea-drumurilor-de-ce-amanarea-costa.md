@@ -42,6 +42,10 @@ Dacă intervii foarte târziu, cu terenul de fundare compromis, refaci structura
 
 Între prima și ultima situație pot trece cinci ani. Diferența de cost e argumentul pentru care merită un program de intervenții planificate, în loc de reacție la sesizări.
 
+![Grafic ilustrativ: starea unui drum în timp și cele trei niveluri de intervenție](/img/blog/schite/drum-degradare-cost.svg)
+
+*Grafic ilustrativ, fără valori.*
+
 ## Nu e doar carosabilul
 
 Un proiect bun tratează drumul ca sistem. Ce face diferența între o lucrare care ține și una care se degradează repede:

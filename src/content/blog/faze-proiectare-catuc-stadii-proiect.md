@@ -24,6 +24,10 @@ Art. 424 alin. (2) spune clar unde intră proiectantul: răspunde de documentaț
 
 ## Cele șapte stadii
 
+![Axa celor șapte stadii CATUC, de la 0 la 6, cu proiectantul responsabil de stadiile 1–4](/img/blog/schite/catuc-stadii-0-6.svg)
+
+*Stadiile 0–6 după CATUC. Proiectantul răspunde de stadiile 1–4.*
+
 ### Stadiul 0, definirea strategică
 
 E stadiul beneficiarului. Se stabilește necesitatea investiției și se formulează strategiile privind sustenabilitatea, siguranța, riscurile, modul de atribuire a contractelor.

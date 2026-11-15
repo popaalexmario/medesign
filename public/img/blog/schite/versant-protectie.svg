@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <pattern id="rock" width="24" height="18" patternUnits="userSpaceOnUse">
+      <rect width="24" height="18" fill="#a8a29e"/><path d="M0,9 L12,9 M12,0 L12,9 M0,18 L24,18 M18,9 L18,18" stroke="#78716c" stroke-width="1.5"/>
+    </pattern>
+    <pattern id="net" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#1e3a5f" stroke-width="1.6"/><line x1="0" y1="0" x2="12" y2="0" stroke="#1e3a5f" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="gab" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#d6d3d1"/><circle cx="5" cy="5" r="4" fill="#a8a29e"/><circle cx="12" cy="12" r="3.5" fill="#a8a29e"/>
+      <path d="M0,0 L16,16 M16,0 L0,16" stroke="#57534e" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Protecția unui drum la baza unui versant stâncos</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Secțiune transversală, schiță de principiu, fără scară</text>
+
+  <!-- versant -->
+  <path d="M40,640 L40,130 L150,120 L230,200 L300,260 L360,360 L420,450 L470,530 L480,560 L480,640 Z" fill="url(#rock)"/>
+  <!-- plasă ancorată pe versant -->
+  <path d="M150,120 L230,200 L300,260 L360,360 L420,450 L455,505 L475,505 L440,450 L380,355 L320,255 L250,193 L168,112 Z" fill="url(#net)" opacity="0.9"/>
+  <!-- ancore -->
+  <g stroke="#0a1628" stroke-width="4">
+    <line x1="190" y1="155" x2="140" y2="175"/><line x1="270" y1="228" x2="215" y2="250"/><line x1="335" y1="315" x2="280" y2="335"/><line x1="395" y1="405" x2="340" y2="428"/>
+  </g>
+  <g fill="#0a1628"><circle cx="190" cy="155" r="5"/><circle cx="270" cy="228" r="5"/><circle cx="335" cy="315" r="5"/><circle cx="395" cy="405" r="5"/></g>
+  <!-- gabioane la bază -->
+  <rect x="480" y="560" width="50" height="40" fill="url(#gab)" stroke="#57534e" stroke-width="2"/>
+  <rect x="480" y="520" width="40" height="40" fill="url(#gab)" stroke="#57534e" stroke-width="2"/>
+  <!-- rigolă -->
+  <path d="M530,600 L545,618 L575,618 L590,600" fill="#bfdbfe" stroke="#475569" stroke-width="2"/>
+  <!-- barieră de reținere -->
+  <line x1="610" y1="600" x2="610" y2="520" stroke="#334155" stroke-width="6"/>
+  <path d="M598,525 L622,525 L622,598 L598,598 Z" fill="url(#net)" opacity="0.9"/>
+  <!-- drum -->
+  <rect x="630" y="600" width="530" height="16" fill="#334155"/>
+  <rect x="630" y="616" width="530" height="24" fill="#cbd5e1"/>
+  <rect x="480" y="600" width="50" height="40" fill="#cbd5e1"/>
+  <rect x="590" y="600" width="40" height="40" fill="#cbd5e1"/>
+  <g stroke="#f8fafc" stroke-width="4" stroke-dasharray="26 18"><line x1="650" y1="608" x2="1150" y2="608"/></g>
+  <!-- bloc căzut oprit -->
+  <circle cx="585" cy="580" r="13" fill="#78716c"/>
+
+  <!-- numere -->
+  <g font-size="17" font-weight="700" fill="#fff" text-anchor="middle">
+    <circle cx="300" cy="200" r="17" fill="#1e3a5f"/><text x="300" y="206">1</text>
+    <circle cx="245" cy="290" r="17" fill="#1e3a5f"/><text x="245" y="296">2</text>
+    <circle cx="610" cy="485" r="17" fill="#d97706"/><text x="610" y="491">3</text>
+    <circle cx="505" cy="490" r="17" fill="#1e3a5f"/><text x="505" y="496">4</text>
+    <circle cx="560" cy="650" r="17" fill="#2563eb"/><text x="560" y="656">5</text>
+  </g>
+  <!-- legendă -->
+  <g font-size="18" fill="#0a1628" transform="translate(720 170)">
+    <circle cx="0" cy="-6" r="14" fill="#1e3a5f"/><text x="0" y="0" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="26" y="0">Plasă de protecție pe suprafața versantului</text>
+    <text x="26" y="22" font-size="15" fill="#64748b">ține blocurile pe loc sau le dirijează spre bază</text>
+    <circle cx="0" cy="60" r="14" fill="#1e3a5f"/><text x="0" y="66" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="26" y="66">Ancore care fixează plasa în rocă</text>
+    <circle cx="0" cy="110" r="14" fill="#d97706"/><text x="0" y="116" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <text x="26" y="116">Barieră de oprire între versant și carosabil</text>
+    <text x="26" y="138" font-size="15" fill="#64748b">reține ce scapă de plasă</text>
+    <circle cx="0" cy="176" r="14" fill="#1e3a5f"/><text x="0" y="182" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <text x="26" y="182">Gabioane la piciorul versantului</text>
+    <circle cx="0" cy="226" r="14" fill="#2563eb"/><text x="0" y="232" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+    <text x="26" y="232">Rigolă pentru apa de pe versant</text>
+    <text x="26" y="254" font-size="15" fill="#64748b">apa e de cele mai multe ori factorul declanșator</text>
+  </g>
+  <text x="720" y="470" font-size="16" fill="#475569">Soluțiile se aleg pe sectoare, după mecanismul</text>
+  <text x="720" y="492" font-size="16" fill="#475569">de desprindere identificat pe fiecare.</text>
+</svg>

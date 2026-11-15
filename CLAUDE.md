@@ -43,6 +43,15 @@ cel care e citat apare primul.
 
 **Schițe.** Desenele SVG din articole sunt în `public/img/blog/schite/`, în
 culorile site-ului, cu legendă numerotată și mențiunea „schiță de principiu”.
+Schemele de tip flux/tabel/coloane se generează cu
+`node scripts/schite/generate.mjs` din `scripts/schite/data.mjs`; textul din
+ele se ia doar din articol. Desenele tehnice (secțiuni, profile) sunt făcute de
+mână. Fiecare articol publicat are cel puțin o schiță.
+
+**Fotografii de pe net.** Doar Wikimedia Commons cu licență liberă (CC0, CC BY,
+CC BY-SA), verificată pe pagina fișierului. Sub poză: autorul și licența, cu
+link. Se stochează în `public/img/blog/foto/`, webp ~1100px. API-ul Commons
+limitează des cererile din container; paginile fișierelor se pot citi cu WebFetch.
 
 Paginile de serviciu și cele de zonă se generează din fișierele de date. Când
 adaugi un serviciu, apare automat peste tot.

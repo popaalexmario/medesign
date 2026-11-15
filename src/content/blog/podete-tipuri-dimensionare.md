@@ -18,6 +18,10 @@ Pe drumurile comunale podețele sunt cea mai frecventă lucrare de artă. Și ce
 
 **Podețul casetat** are secțiune dreptunghiulară închisă, din beton armat. Preia debite mari și se descurcă bine la umplutură mică. Costă mai mult. E soluția când celelalte două nu ajung.
 
+![Secțiuni transversale prin podeț tubular, dalat și casetat sub același drum](/img/blog/schite/podete-tipuri.svg)
+
+*Schiță de principiu, fără scară.*
+
 ## Ordinea în care se decide
 
 Nu costul e primul criteriu, oricât de tentant ar fi.
@@ -25,6 +29,10 @@ Nu costul e primul criteriu, oricât de tentant ar fi.
 Primul e **debitul de calcul**, care rezultă din studiul hidrologic: suprafața bazinului care se descarcă în acel punct și probabilitatea de depășire admisă. Al doilea e înălțimea de umplutură disponibilă între talpa albiei și cota drumului. Urmează geometria albiei (lățime, pantă la traversare), încărcările din trafic care se transmit prin rambleu, și terenul de fundare, care poate exclude din start anumite soluții.
 
 Costul intră în discuție abia după ce astea au restrâns variantele. De obicei rămân una sau două.
+
+![Podeț casetat prefabricat din beton, cu ieșirea protejată cu piatră spartă](/img/blog/foto/podet-casetat-prefabricat.webp)
+
+*Podeț casetat prefabricat, cu ieșirea protejată cu piatră. Foto: [Wikideas1](https://commons.wikimedia.org/wiki/File:Pre-cast_concrete_box_culvert.jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/), Wikimedia Commons.*
 
 ## Greșeala care se repetă
 

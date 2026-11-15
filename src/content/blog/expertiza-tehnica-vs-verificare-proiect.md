@@ -44,6 +44,10 @@ Consecința practică e că încadrarea în clasa de consecințe nu mai e un det
 
 Verificatorul răspunde 10 ani de la recepție pentru concluziile verificării și, pe toată durata de existență a construcției, pentru viciile structurii de rezistență rezultate din nerespectarea normelor de proiectare (art. 446 alin. (1)).
 
+![Tabel cu cele patru niveluri de verificare NVP1–NVP4 pe clasele de consecințe](/img/blog/schite/niveluri-verificare-nvp.svg)
+
+*Cele patru niveluri, după art. 440–444 din CATUC.*
+
 ## Când ai nevoie de amândouă
 
 La orice intervenție pe o construcție existentă încadrată peste CC1. Expertiza la început, ca să știi ce ai. Verificarea la final, ca să confirmi că proiectul de intervenție e corect.

@@ -30,6 +30,10 @@ Electrificarea mai aduce și obligații care la poduri rutiere nu există: prote
 
 De aceea, la pasajele peste calea ferată se merge frecvent pe structuri metalice uzinate. Se fac integral în atelier, se transportă, se montează rapid, cu o fereastră de închidere minimă.
 
+![Secțiune printr-un pasaj superior peste o cale ferată electrificată, cu gabaritul și linia de contact](/img/blog/schite/pasaj-cale-ferata.svg)
+
+*Schiță de principiu, fără scară.*
+
 ## Ce înseamnă pentru documentație
 
 Faza de detalii de uzinare capătă o importanță pe care la un pod rutier din beton n-o are. Aici se stabilesc geometria fiecărui element, toleranțele de fabricație, detaliile de îmbinare, succesiunea de montaj.

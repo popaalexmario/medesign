@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <pattern id="earth" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#e7dcc8"/><circle cx="4" cy="4" r="1.6" fill="#b8a582"/><circle cx="11" cy="10" r="1.3" fill="#b8a582"/>
+    </pattern>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d97706"/>
+    </marker>
+    <marker id="dm" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0a1628"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Pasaj superior peste o cale ferată electrificată</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Secțiune transversală pe calea ferată, schiță de principiu, fără scară</text>
+
+  <!-- teren și culee -->
+  <path d="M40,520 L40,250 L230,250 L330,520 Z" fill="url(#earth)"/>
+  <path d="M1160,520 L1160,250 L970,250 L870,520 Z" fill="url(#earth)"/>
+  <rect x="40" y="520" width="1120" height="40" fill="url(#earth)"/>
+  <!-- șine -->
+  <g fill="#334155">
+    <rect x="455" y="508" width="110" height="10"/><rect x="635" y="508" width="110" height="10"/>
+  </g>
+  <!-- stâlp catenară + fir -->
+  <rect x="380" y="330" width="10" height="190" fill="#475569"/>
+  <line x1="385" y1="345" x2="700" y2="345" stroke="#475569" stroke-width="3"/>
+  <line x1="510" y1="345" x2="510" y2="370" stroke="#475569" stroke-width="2"/><line x1="690" y1="345" x2="690" y2="370" stroke="#475569" stroke-width="2"/>
+  <line x1="440" y1="372" x2="760" y2="372" stroke="#d97706" stroke-width="3"/>
+  <text x="772" y="378" font-size="15" fill="#b45309">linie de contact sub tensiune</text>
+  <!-- gabarit -->
+  <path d="M440,518 L440,330 Q440,300 470,300 L730,300 Q760,300 760,330 L760,518" fill="none" stroke="#b91c1c" stroke-width="3" stroke-dasharray="12 7"/>
+  <text x="600" y="292" font-size="15" fill="#b91c1c" text-anchor="middle">gabarit de liberă trecere + distanțe de siguranță</text>
+  <!-- tablier metalic -->
+  <rect x="200" y="222" width="800" height="28" fill="#1e3a5f"/>
+  <rect x="230" y="250" width="740" height="18" fill="#334155"/>
+  <rect x="200" y="206" width="800" height="16" fill="#475569"/>
+  <!-- cota -->
+  <line x1="820" y1="268" x2="820" y2="508" stroke="#0a1628" stroke-width="2" marker-start="url(#dm)" marker-end="url(#dm)"/>
+  <text x="830" y="420" font-size="15" fill="#0a1628">înălțimea liberă</text>
+  <text x="830" y="440" font-size="15" fill="#0a1628">e o condiție strictă</text>
+  <!-- montaj lateral -->
+  <g opacity="0.55">
+    <rect x="40" y="140" width="320" height="20" fill="#1e3a5f"/>
+  </g>
+  <path d="M370,150 L520,150" stroke="#d97706" stroke-width="5" marker-end="url(#ar)"/>
+  <text x="40" y="128" font-size="15" fill="#b45309">structura se montează lateral și se lansează într-o fereastră scurtă</text>
+
+  <text x="40" y="600" font-size="16" fill="#475569">Geometria căii decide cota pasajului; drumul se adaptează. Structurile metalice uzinate se aleg des</text>
+  <text x="40" y="622" font-size="16" fill="#475569">pentru că se montează repede, cu o închidere minimă a liniei.</text>
+</svg>

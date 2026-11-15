@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <pattern id="earth" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#e7dcc8"/><circle cx="4" cy="4" r="1.6" fill="#b8a582"/><circle cx="11" cy="10" r="1.3" fill="#b8a582"/>
+    </pattern>
+    <pattern id="conc" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#cbd5e1"/><circle cx="5" cy="6" r="1.2" fill="#94a3b8"/><circle cx="12" cy="12" r="1" fill="#94a3b8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Trei tipuri de podeț, în secțiune transversală</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Schiță de principiu, fără scară. Cota drumului e aceeași, se schimbă umplutura disponibilă.</text>
+
+  <!-- PANOU: tubular -->
+  <g transform="translate(40 120)">
+    <rect x="0" y="40" width="350" height="300" fill="url(#earth)"/>
+    <rect x="0" y="28" width="350" height="12" fill="#334155"/>
+    <circle cx="175" cy="235" r="62" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+    <circle cx="175" cy="235" r="48" fill="#f8fafc"/>
+    <path d="M131,255 Q175,268 219,255 L219,262 Q175,280 131,262 Z" fill="#93c5fd"/>
+    <line x1="300" y1="40" x2="300" y2="173" stroke="#d97706" stroke-width="2"/>
+    <line x1="292" y1="40" x2="308" y2="40" stroke="#d97706" stroke-width="2"/><line x1="292" y1="173" x2="308" y2="173" stroke="#d97706" stroke-width="2"/>
+    <text x="270" y="112" font-size="14" fill="#b45309" text-anchor="end">umplutură</text>
+    <text x="270" y="130" font-size="14" fill="#b45309" text-anchor="end">mare</text>
+    <text x="175" y="378" font-size="21" font-weight="700" fill="#0a1628" text-anchor="middle">Tubular</text>
+    <text x="175" y="402" font-size="15" fill="#64748b" text-anchor="middle">debite mici, umplutură suficientă</text>
+    <text x="175" y="422" font-size="15" fill="#64748b" text-anchor="middle">cel mai ieftin și mai rapid</text>
+  </g>
+
+  <!-- PANOU: dalat -->
+  <g transform="translate(425 120)">
+    <rect x="0" y="40" width="350" height="300" fill="url(#earth)"/>
+    <rect x="0" y="28" width="350" height="12" fill="#334155"/>
+    <rect x="65" y="95" width="45" height="245" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+    <rect x="240" y="95" width="45" height="245" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+    <rect x="55" y="70" width="240" height="25" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+    <rect x="110" y="95" width="130" height="245" fill="#f8fafc"/>
+    <path d="M110,300 L240,300 L240,340 L110,340 Z" fill="#93c5fd"/>
+    <text x="175" y="200" font-size="14" fill="#475569" text-anchor="middle">dală pe culee</text>
+    <text x="175" y="378" font-size="21" font-weight="700" fill="#0a1628" text-anchor="middle">Dalat</text>
+    <text x="175" y="402" font-size="15" fill="#64748b" text-anchor="middle">umplutură prea mică pentru tub</text>
+    <text x="175" y="422" font-size="15" fill="#64748b" text-anchor="middle">sau secțiune mai mare</text>
+  </g>
+
+  <!-- PANOU: casetat -->
+  <g transform="translate(810 120)">
+    <rect x="0" y="40" width="350" height="300" fill="url(#earth)"/>
+    <rect x="0" y="28" width="350" height="12" fill="#334155"/>
+    <rect x="45" y="90" width="260" height="200" fill="url(#conc)" stroke="#64748b" stroke-width="2"/>
+    <rect x="70" y="112" width="210" height="156" fill="#f8fafc"/>
+    <path d="M70,220 L280,220 L280,268 L70,268 Z" fill="#93c5fd"/>
+    <text x="175" y="180" font-size="14" fill="#475569" text-anchor="middle">secțiune închisă</text>
+    <text x="175" y="378" font-size="21" font-weight="700" fill="#0a1628" text-anchor="middle">Casetat</text>
+    <text x="175" y="402" font-size="15" fill="#64748b" text-anchor="middle">debite mari, umplutură mică</text>
+    <text x="175" y="422" font-size="15" fill="#64748b" text-anchor="middle">costă mai mult</text>
+  </g>
+  <text x="40" y="580" font-size="16" fill="#475569">Primul criteriu e debitul de calcul din studiul hidrologic, al doilea înălțimea de umplutură. Costul vine abia după.</text>
+</svg>

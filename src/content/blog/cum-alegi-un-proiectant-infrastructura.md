@@ -22,6 +22,10 @@ Un inginer foarte bun nu poate semna o expertiză fără atestatul de expert, or
 
 Pentru intervențiile la construcții din Lista Monumentelor Istorice, art. 440 alin. (5) cere ca verificarea să fie făcută de verificatori atestați **suplimentar** în domeniul protejării monumentelor. Dacă ai un pod clasat, întreabă explicit despre asta. E genul de detaliu care blochează un dosar la final.
 
+![Rolurile de proiectant, expert tehnic și verificator de proiecte, cu atestările lor](/img/blog/schite/roluri-proiectant-expert-verificator.svg)
+
+*Trei roluri, trei atestări.*
+
 ## Experiența pe tipul tău de lucrare
 
 „Experiență în infrastructură" nu înseamnă mare lucru. Domeniul e destul de larg încât cineva să aibă douăzeci de ani de drumuri și zero poduri.

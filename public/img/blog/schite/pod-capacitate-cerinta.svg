@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Inter, Arial, sans-serif">
+  <rect width="1200" height="620" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">De ce un pod corect la construcție poate să nu mai fie</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Grafic ilustrativ, fără valori</text>
+
+  <line x1="120" y1="500" x2="1140" y2="500" stroke="#0a1628" stroke-width="2"/>
+  <line x1="120" y1="500" x2="120" y2="120" stroke="#0a1628" stroke-width="2"/>
+  <text x="1140" y="530" font-size="16" fill="#0a1628" text-anchor="end">timp</text>
+  <!-- capacitate -->
+  <path d="M130,170 C450,175 700,215 1120,330" fill="none" stroke="#1e3a5f" stroke-width="5"/>
+  <text x="140" y="155" font-size="17" font-weight="700" fill="#1e3a5f">Capacitatea portantă a podului</text>
+  <text x="140" y="200" font-size="15" fill="#1e3a5f">scade odată cu degradarea:</text><text x="140" y="220" font-size="15" fill="#1e3a5f">coroziune, beton fisurat, aparate blocate</text>
+  <!-- cerință -->
+  <path d="M130,330 L560,330 L560,250 L1120,250" fill="none" stroke="#d97706" stroke-width="5"/>
+  <text x="140" y="360" font-size="17" font-weight="700" fill="#b45309">Cerința: încărcările de calcul</text>
+  <text x="140" y="382" font-size="15" fill="#b45309">convoaiele din STAS 3221-86</text>
+  <line x1="560" y1="200" x2="560" y2="500" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="570" y="470" font-size="15" fill="#475569">trecerea la Eurocoduri,</text>
+  <text x="570" y="490" font-size="15" fill="#475569">modele de încărcare mai severe</text>
+  <!-- zona deficit -->
+  <path d="M802,250 L1120,250 L1120,330 C1000,300 900,275 802,250 Z" fill="#fecaca"/>
+  <text x="1040" y="280" font-size="15" font-weight="700" fill="#991b1b" text-anchor="middle">deficit</text>
+  <text x="40" y="570" font-size="16" fill="#475569">Pentru podurile existente, metodologia din 2022 permite evaluarea la convoaiele vechi de clasa E, cu verificarea materialelor după Eurocoduri.</text>
+</svg>

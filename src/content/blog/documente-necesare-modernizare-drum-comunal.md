@@ -82,6 +82,10 @@ Un detaliu care scapă: autorizația are termen de valabilitate, iar lucrările 
 9. Asiguri verificarea de proiect
 10. Depui pentru autorizație
 
+![Cei zece pași pentru modernizarea unui drum comunal, de la teren la autorizație](/img/blog/schite/drum-comunal-ordinea-documentelor.svg)
+
+*Ordinea din articol, într-o singură imagine.*
+
 ## Ce durează, de fapt
 
 Din ce am văzut, întârzierile mari vin aproape întotdeauna din aceleași trei locuri: clarificarea situației juridice a terenurilor, mai ales cu exproprieri la mijloc; avizele de la operatorii de rețele, care depind de termene pe care nu le controlezi; și acordul de mediu, acolo unde se cere evaluare.
