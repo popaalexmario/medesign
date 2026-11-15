@@ -1,23 +1,39 @@
 ---
+import { serviceLinks } from '../data/services';
+import { regions } from '../data/regions';
+
 const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
 const currentPath = normalize(Astro.url.pathname);
 const isActive = (href: string) =>
   currentPath === href || (href !== '/' && currentPath.startsWith(href + '/'));
 
 const navItems = [
-  { label: 'Acasă', href: '/' },
   { label: 'Servicii', href: '/servicii' },
   { label: 'Portofoliu', href: '/portofoliu' },
   { label: 'Blog', href: '/blog' },
   { label: 'Despre noi', href: '/despre' },
   { label: 'Contact', href: '/contact' },
 ];
+
+// Serviciile din dropdown, grupate pe trei coloane.
+const svc = (slug: string) => serviceLinks.find((s) => s.slug === slug)!;
+const serviceGroups = [
+  { title: 'Drumuri și poduri', items: ['proiectare-drumuri', 'proiectare-poduri-pasaje', 'poduri-cale-ferata'].map(svc) },
+  { title: 'Consolidări și ape', items: ['lucrari-consolidare', 'amenajari-hidrotehnice'].map(svc) },
+  { title: 'Expertiză și patrimoniu', items: ['expertize-tehnice', 'monumente-istorice'].map(svc) },
+];
+const portfolioLinks = [
+  { label: 'Toate proiectele', href: '/portofoliu', strong: true },
+  ...regions.map((r) => ({ label: r.name, href: `/zone/${r.id}`, strong: false })),
+  { label: 'Colaborări', href: '/colaborari', strong: false },
+];
+const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
 ---
 
 <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
   <div class="container">
     <nav class="flex items-center justify-between h-20">
-      <a href="/" class="flex items-center gap-3 group">
+      <a href="/" class="flex items-center gap-3 group" aria-label="ME Design, prima pagină">
         <div>
           <span class="font-heading font-bold text-xl text-brand-500">ME Design</span>
           <span class="hidden sm:block text-[11px] text-steel-400 font-medium tracking-wider uppercase -mt-1">Proiectare Infrastructură</span>
@@ -25,17 +41,60 @@ const navItems = [
       </a>
 
       <div class="hidden lg:flex items-center gap-8">
-        {navItems.map((item) => (
-          <a
-            href={item.href}
-            class:list={[
-              'text-[15px] font-medium transition-colors hover:text-accent-500',
-              isActive(item.href) ? 'text-accent-500' : 'text-steel-600',
-            ]}
-          >
-            {item.label}
-          </a>
-        ))}
+        {navItems.map((item) => {
+          const linkCls = [
+            'inline-flex items-center gap-1.5 text-[15px] font-medium transition-colors hover:text-accent-500 py-7',
+            isActive(item.href) ? 'text-accent-500' : 'text-steel-600',
+          ];
+          if (item.href === '/servicii') return (
+            <div class="relative group" data-dropdown>
+              <a href={item.href} class:list={linkCls} aria-haspopup="true">{item.label}<Fragment set:html={chevron} /></a>
+              <div class="dropdown-panel absolute left-1/2 top-full -translate-x-1/2 pt-1 w-[760px] max-w-[90vw]">
+                <div class="bg-white rounded-2xl shadow-2xl shadow-brand-900/15 border border-steel-100 p-6">
+                  <div class="grid grid-cols-3 gap-6">
+                    {serviceGroups.map((g) => (
+                      <div>
+                        <p class="text-accent-600 text-[11px] font-semibold uppercase tracking-[0.18em] pb-3 mb-2 border-b border-steel-100">{g.title}</p>
+                        <ul class="space-y-0.5">
+                          {g.items.map((s) => (
+                            <li>
+                              <a href={`/servicii/${s.slug}`} class:list={['block rounded-lg px-3 py-2 -mx-3 hover:bg-steel-50 transition-colors', isActive(`/servicii/${s.slug}`) && 'bg-steel-50']}>
+                                <span class="block text-[14px] font-semibold text-brand-800">{s.title}</span>
+                                <span class="block text-[12.5px] text-steel-500 mt-0.5">{s.short}</span>
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                  <div class="mt-5 pt-4 border-t border-steel-100 flex items-center justify-between text-[13px]">
+                    <span class="text-steel-500">Proiectare completă, de la studii de teren la asistență tehnică pe șantier.</span>
+                    <a href="/servicii" class="font-semibold text-accent-600 hover:text-accent-700 whitespace-nowrap">Toate serviciile →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+          if (item.href === '/portofoliu') return (
+            <div class="relative group" data-dropdown>
+              <a href={item.href} class:list={linkCls} aria-haspopup="true">{item.label}<Fragment set:html={chevron} /></a>
+              <div class="dropdown-panel absolute left-1/2 top-full -translate-x-1/2 pt-1 w-[260px]">
+                <div class="bg-white rounded-2xl shadow-2xl shadow-brand-900/15 border border-steel-100 p-3">
+                  <p class="text-accent-600 text-[11px] font-semibold uppercase tracking-[0.18em] px-3 pt-2 pb-2">Proiecte pe regiuni</p>
+                  <ul>
+                    {portfolioLinks.map((l) => (
+                      <li>
+                        <a href={l.href} class:list={['block rounded-lg px-3 py-2 text-[14px] hover:bg-steel-50 transition-colors', l.strong ? 'font-semibold text-brand-800' : 'text-steel-600', isActive(l.href) && 'bg-steel-50']}>{l.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          );
+          return <a href={item.href} class:list={linkCls}>{item.label}</a>;
+        })}
         <a href="/contact" class="bg-brand-500 text-white px-6 py-2.5 rounded-full text-[14px] font-semibold hover:bg-brand-600 transition-all hover:shadow-lg hover:shadow-brand-500/25">
           Solicită ofertă
         </a>
@@ -52,15 +111,24 @@ const navItems = [
   <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-steel-100 shadow-xl">
     <div class="container pt-4 pb-8 flex flex-col gap-1">
       {navItems.map((item) => (
-        <a
-          href={item.href}
-          class:list={[
-            'px-4 py-3 rounded-xl text-[15px] font-medium transition-colors',
-            isActive(item.href) ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
-          ]}
-        >
-          {item.label}
-        </a>
+        <>
+          <a
+            href={item.href}
+            class:list={[
+              'px-4 py-3 rounded-xl text-[15px] font-medium transition-colors',
+              isActive(item.href) ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
+            ]}
+          >
+            {item.label}
+          </a>
+          {item.href === '/servicii' && (
+            <div class="ml-4 mb-1 pl-3 border-l-2 border-steel-100 flex flex-col">
+              {serviceLinks.map((s) => (
+                <a href={`/servicii/${s.slug}`} class="px-3 py-2 rounded-lg text-[14px] text-steel-500 hover:bg-steel-50 hover:text-accent-500">{s.title}</a>
+              ))}
+            </div>
+          )}
+        </>
       ))}
       <a href="/contact" class="mt-2 bg-brand-500 text-white px-6 py-3 rounded-full text-center text-[14px] font-semibold hover:bg-brand-600 transition-colors">
         Solicită ofertă
@@ -68,6 +136,23 @@ const navItems = [
     </div>
   </div>
 </header>
+
+<style>
+  /* Dropdown-urile se deschid la trecerea mouse-ului (și la focus, pentru tastatură). */
+  .dropdown-panel {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 8px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+  }
+  [data-dropdown]:hover > .dropdown-panel,
+  [data-dropdown]:focus-within > .dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s;
+  }
+</style>
 
 <script is:inline>
   const header = document.getElementById('header');
