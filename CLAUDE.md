@@ -70,7 +70,12 @@ eroare se vede.
 - **PAC** înlocuiește DTAC, **PAD** înlocuiește DTAD.
 - Clase de consecințe **CC1–CC4** (art. 370) în locul categoriilor A–D.
   Până la metodologie, încadrarea se face **exclusiv după anexa 6**.
-- Asistența tehnică obligatorie: art. 521.
+- Asistența tehnică: art. 521 (obligatorie + opțională, rămâne la proiectant);
+  activitățile obligatorii sunt art. 426 alin. (1) lit. e), h), i), j), k).
+  Art. 426 alin. (4): proiectantul nu răspunde de controlul calității execuției.
+- Expertiza obligatorie: art. 437 alin. (2); intervenții pe existent doar cu
+  expertiză: art. 438. Foraje geotehnice fără AC: art. 299 alin. (9)–(10).
+- NP 074-2022 (documentații geotehnice): Ordinul MDLPA nr. 27/2023, M. Of. 56/2023.
 - Art. 577 alin. (1) listează cine rămâne sub **HG 907/2016**.
 - **Legea 50/1991 abrogată integral** și **Legea 10/1995 abrogată aproape
   integral** (rămân doar art. 10 și 41) de CATUC, la 25.08.2026. Nu le cita ca
@@ -109,9 +114,11 @@ eroare se vede.
 - Recomandări de la beneficiari (Lugoj, Craiova, Cozieni) — cel mai mare câștig
   de conversie disponibil.
 - Codul poștal al sediului, pentru schema LocalBusiness.
-- Toate articolele propuse sunt publicate (21 în total la 12.11.2026).
+- 26 de articole publicate la 15.11.2026.
 
 ## Surse online
 
 `legislatie.just.ro` nu răspunde din containerul de lucru. Pentru linkuri se
-folosesc paginile lege5.ro, testate cu curl înainte de publicare.
+folosesc paginile lege5.ro, testate cu curl înainte de publicare. Pagina
+gratuită lege5 a CATUC conține textul integral în forma din Monitorul Oficial
+(fără rectificări): se poate descărca și căuta local pentru verificări.
