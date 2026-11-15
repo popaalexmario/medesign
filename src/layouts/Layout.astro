@@ -11,6 +11,7 @@ interface Props {
   modifiedTime?: string;
   keywords?: string[];
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   modifiedTime,
   keywords = [],
   jsonLd,
+  noindex = false,
 } = Astro.props;
 
 const lang = langFromPath(Astro.url.pathname);
@@ -45,6 +47,7 @@ const fullTitle = `${title} | ME Design`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={desc} />
     <meta name="generator" content={Astro.generator} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalURL} />

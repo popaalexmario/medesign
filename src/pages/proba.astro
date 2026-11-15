@@ -1,0 +1,225 @@
+---
+// Probă de prima pagină în stil „Apple”: tipografie mare, mult spațiu alb,
+// proiectele ca plăci mari cu fotografie, fără animații decorative.
+// Pagină ascunsă (noindex, scoasă din sitemap) până decide Mario.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import LogoMarquee from '../components/LogoMarquee.astro';
+import { serviceLinks } from '../data/services';
+
+const hero = { img: '/img/projects/pod%20gogosu.jpg', alt: 'Podul suspendat peste brațul Gogoșu al Dunării, văzut de sus' };
+
+// Plăcile mari, pe toată lățimea.
+const big = [
+  {
+    slug: 'pod-fier-lugoj-timis',
+    eyebrow: 'Monument istoric · Lugoj',
+    title: 'Podul de Fier, 1902.',
+    sub: 'Grindă cu zăbrele parabolică de 64 m peste Timiș. Reabilitare de la expertiză la proiectul de execuție.',
+    img: '/img/projects/POD%20LUGOJ.jpg',
+    dark: true,
+  },
+  {
+    slug: 'craiova-dolj',
+    eyebrow: 'Infrastructură urbană · Craiova',
+    title: '2,18 km de stradă nouă. Un canal sub ea.',
+    sub: 'Patru benzi și casetarea canalului Craiovița pe 1.800 m. Investiție de peste 39 mil. euro.',
+    img: '/img/projects/craiova-santier.webp',
+    dark: false,
+  },
+];
+
+// Plăcile pe două coloane.
+const grid = [
+  { slug: 'dn7-versanti-valcea', eyebrow: 'Consolidări · DN7', title: 'Defileul Oltului.', sub: '65.965 mp de plase ancorate. Gata cu 9 luni înainte de termen.', img: '/img/projects/dn7.webp', dark: true },
+  { slug: 'pasaj-a0-a2-bucuresti', eyebrow: 'Pasaje · Centura București', title: 'A0 peste A2.', sub: 'Detalii de uzinare și execuție pentru pasajul metalic.', img: '/img/projects/PASAJ%20A0.png', dark: false },
+  { slug: 'pasaj-gurasada-hunedoara', eyebrow: 'Cale ferată · Hunedoara', title: '70 m peste calea ferată.', sub: 'Pasaj metalic cu cale jos, pe tronsonul Gurasada–Simeria.', img: '/img/projects/Gurasada.png', dark: false },
+  { slug: 'aninoasa-dambovita', eyebrow: 'Drumuri locale · Dâmbovița', title: 'Înainte și după.', sub: 'Șase străzi modernizate în comuna Aninoasa, 2,20 km.', img: '/img/projects/ANINOASA.jpg', dark: true },
+];
+
+const stats = [
+  { v: '2018', l: 'anul înființării' },
+  { v: '200+', l: 'proiecte livrate' },
+  { v: '1.000+', l: 'km de drumuri' },
+  { v: '100+', l: 'poduri' },
+];
+---
+
+<Layout title="Proiectare Infrastructură" noindex>
+  <Header />
+
+  <main class="apple bg-white">
+    <!-- Deschidere -->
+    <section class="bg-[#f5f5f7] pt-32 md:pt-40 pb-0 text-center overflow-hidden">
+      <div class="container">
+        <p class="eyebrow">ME Design · proiectare infrastructură</p>
+        <h1 class="display mt-3">Drumuri și poduri,<br class="hidden sm:block" /> proiectate până la capăt.</h1>
+        <p class="lead mt-5 max-w-2xl mx-auto">De la studiul de fezabilitate la asistența pe șantier, pentru primării, consilii județene, companii naționale și constructori.</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 mt-8">
+          <a href="/portofoliu" class="pill">Vezi proiectele</a>
+          <a href="/contact" class="more">Solicită ofertă</a>
+        </div>
+      </div>
+      <div class="mt-12 md:mt-16 mx-auto max-w-[1200px] px-4 md:px-6">
+        <img src={hero.img} alt={hero.alt} class="w-full aspect-[4/3] md:aspect-[16/8] object-cover rounded-t-[28px]" width="1200" height="600" fetchpriority="high" />
+      </div>
+    </section>
+
+    <!-- Cifre -->
+    <section class="py-14 md:py-20 border-b border-black/[0.06]">
+      <div class="container">
+        <dl class="grid grid-cols-2 md:grid-cols-4 gap-y-10 text-center">
+          {stats.map((s) => (
+            <div>
+              <dt class="sr-only">{s.l}</dt>
+              <dd class="stat">{s.v}</dd>
+              <dd class="text-[#6e6e73] text-[15px] mt-1">{s.l}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <!-- Plăci mari -->
+    <div class="p-3 md:p-3 space-y-3">
+      {big.map((t) => (
+        <section class:list={['tile text-center rounded-[28px] overflow-hidden', t.dark ? 'bg-black text-white' : 'bg-[#f5f5f7]']}>
+          <div class="pt-12 md:pt-16 px-6">
+            <p class:list={['eyebrow', t.dark && '!text-white/60']}>{t.eyebrow}</p>
+            <h2 class="headline mt-2">{t.title}</h2>
+            <p class:list={['sub mt-3 max-w-xl mx-auto', t.dark && '!text-white/70']}>{t.sub}</p>
+            <div class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 mt-6">
+              <a href={`/portofoliu/${t.slug}`} class="pill">Vezi proiectul</a>
+              <a href="/contact" class:list={['more', t.dark && '!text-accent-400']}>Ai un proiect similar</a>
+            </div>
+          </div>
+          <img src={t.img} alt="" class="mt-10 md:mt-12 w-full aspect-[4/3] md:aspect-[16/7] object-cover" loading="lazy" width="1400" height="612" />
+        </section>
+      ))}
+
+      <!-- Plăci pe două coloane -->
+      <div class="grid md:grid-cols-2 gap-3">
+        {grid.map((t) => (
+          <a href={`/portofoliu/${t.slug}`} class:list={['tile group text-center rounded-[28px] overflow-hidden flex flex-col', t.dark ? 'bg-black text-white' : 'bg-[#f5f5f7]']}>
+            <div class="pt-10 md:pt-12 px-6">
+              <p class:list={['eyebrow', t.dark && '!text-white/60']}>{t.eyebrow}</p>
+              <h3 class="headline-sm mt-2">{t.title}</h3>
+              <p class:list={['sub-sm mt-2 max-w-md mx-auto', t.dark && '!text-white/70']}>{t.sub}</p>
+              <span class:list={['more mt-4 inline-block', t.dark && '!text-accent-400']}>Vezi proiectul</span>
+            </div>
+            <div class="mt-8 flex-1 min-h-[220px] overflow-hidden">
+              <img src={t.img} alt="" class="w-full h-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]" loading="lazy" width="700" height="525" />
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Servicii -->
+    <section class="py-20 md:py-28">
+      <div class="container max-w-5xl">
+        <h2 class="headline text-center">Ce proiectăm.</h2>
+        <ul class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-black/[0.08]">
+          {serviceLinks.map((s) => (
+            <li class="border-b border-black/[0.08]">
+              <a href={`/servicii/${s.slug}`} class="group flex items-baseline justify-between gap-4 py-5 pr-2">
+                <span>
+                  <span class="block text-[17px] font-semibold text-[#1d1d1f] group-hover:text-accent-600 transition-colors">{s.title}</span>
+                  <span class="block text-[14px] text-[#6e6e73] mt-0.5">{s.short}</span>
+                </span>
+                <span class="text-accent-600 text-[20px] leading-none" aria-hidden="true">›</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- Beneficiari -->
+    <section class="bg-[#f5f5f7] py-16 md:py-20">
+      <div class="container text-center mb-8">
+        <h2 class="headline-sm">Pentru cine am proiectat.</h2>
+      </div>
+      <LogoMarquee title={false} variant="light" />
+    </section>
+
+    <!-- Final -->
+    <section class="py-20 md:py-28 text-center">
+      <div class="container max-w-3xl">
+        <h2 class="headline">Trimite-ne amplasamentul.</h2>
+        <p class="lead mt-4">Îți spunem ce documentații îți trebuie și în ce ordine. Răspundem în cel mult o zi lucrătoare.</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 mt-8">
+          <a href="/contact" class="pill">Solicită ofertă</a>
+          <a href="tel:+40746784156" class="more">+40 746 784 156</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .apple { color: #1d1d1f; }
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #b45309;
+  }
+  .display {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.5rem, 6.5vw, 5rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+  }
+  .headline {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 4.6vw, 3.5rem);
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+  }
+  .headline-sm {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+  .lead { font-size: clamp(1.125rem, 1.8vw, 1.5rem); line-height: 1.4; color: #6e6e73; letter-spacing: -0.01em; }
+  .sub { font-size: clamp(1.0625rem, 1.5vw, 1.3125rem); line-height: 1.4; color: #6e6e73; }
+  .sub-sm { font-size: 17px; line-height: 1.45; color: #6e6e73; }
+  .stat {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.4rem;
+    border-radius: 9999px;
+    background: #d97706;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background-color 150ms ease-out, transform 100ms ease-out;
+  }
+  .pill:hover { background: #b45309; }
+  .pill:active { transform: scale(0.97); }
+  .more {
+    color: #b45309;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .more::after { content: ' ›'; }
+  a.more:hover, .group:hover .more { text-decoration: underline; text-underline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    .pill, .tile img { transition: none; }
+  }
+</style>
