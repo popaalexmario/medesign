@@ -6,13 +6,6 @@ import LogoMarquee from '../../components/LogoMarquee.astro';
 
 // Aceiași diferențiatori ca pe /despre, fiecare legat de o pagină care îi susține.
 
-const steps = [
-  { title: 'The brief', desc: 'We start from the actual need and the site, and tell you which documents are needed and in what order.' },
-  { title: 'Studies and assessment', desc: 'Survey, geotechnics, hydrology, traffic and, for existing structures, the structural assessment.' },
-  { title: 'Solution and design', desc: 'Feasibility study or intervention approval documentation, then the permit design and the detailed design.' },
-  { title: 'Approvals and checking', desc: 'We prepare the documentation for the approvals and coordinate the independent design check.' },
-  { title: 'Site assistance', desc: 'We stay with the client and the contractor until the works are handed over.' },
-];
 ---
 
 <Layout title="About us" description="Mario Engineering Design SRL, Bucharest: infrastructure design firm founded in 2018, ISO 9001, 14001 and 45001 certified. Roads, bridges, retaining works.">
@@ -54,27 +47,6 @@ const steps = [
           <img src="/img/projects/NOI.jpg" alt="The ME Design team" class="w-full h-full object-cover" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Process</span>
-        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">How we work</h2>
-      </div>
-      <ol class="relative grid md:grid-cols-5 gap-6 md:gap-4">
-        <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-accent-500/20 via-accent-500/60 to-accent-500/20" aria-hidden="true"></div>
-        {steps.map((e, i) => (
-          <li class="relative flex md:flex-col items-start md:items-center md:text-center gap-4 md:gap-0" data-aos="fade-up" data-aos-delay={i * 80}>
-            <span class="relative z-10 w-12 h-12 shrink-0 rounded-full bg-accent-500 text-white font-heading font-bold text-[18px] flex items-center justify-center shadow-lg shadow-accent-500/30 ring-4 ring-white">{i + 1}</span>
-            <div class="md:mt-4">
-              <h3 class="font-heading font-bold text-[16px] text-brand-800">{e.title}</h3>
-              <p class="text-steel-500 text-[14px] leading-relaxed mt-1.5">{e.desc}</p>
-            </div>
-          </li>
-        ))}
-      </ol>
     </div>
   </section>
 

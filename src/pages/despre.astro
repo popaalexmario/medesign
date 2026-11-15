@@ -13,13 +13,6 @@ import LogoMarquee from '../components/LogoMarquee.astro';
 
 
 // Etapele unei colaborări.
-const etape = [
-  { title: 'Discutăm tema', desc: 'Pornim de la nevoia reală și de la amplasament. Îți spunem ce documentații sunt necesare și în ce ordine.' },
-  { title: 'Studii și expertiză', desc: 'Topografie, geotehnică, hidrologie, trafic și, la construcțiile existente, expertiza tehnică.' },
-  { title: 'Soluția și documentația', desc: 'SF sau DALI, apoi proiectul pentru autorizare și proiectul tehnic de execuție.' },
-  { title: 'Avize și verificare', desc: 'Pregătim documentațiile pentru avize și coordonăm verificarea de proiect.' },
-  { title: 'Asistență pe șantier', desc: 'Rămânem alături de beneficiar și constructor până la recepția lucrărilor.' },
-];
 ---
 
 <Layout title="Despre noi" description="Despre ME Design - echipă de profesioniști cu peste 8 ani experiență în proiectarea infrastructurii.">
@@ -118,28 +111,6 @@ const etape = [
           </div>
         ))}
       </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Proces</span>
-        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">Cum lucrăm</h2>
-        <p class="text-steel-500 text-[16px] mt-3">De la prima discuție până la recepția lucrării.</p>
-      </div>
-      <ol class="relative grid md:grid-cols-5 gap-6 md:gap-4">
-        <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-accent-500/20 via-accent-500/60 to-accent-500/20" aria-hidden="true"></div>
-        {etape.map((e, i) => (
-          <li class="relative flex md:flex-col items-start md:items-center md:text-center gap-4 md:gap-0" data-aos="fade-up" data-aos-delay={i * 80}>
-            <span class="relative z-10 w-12 h-12 shrink-0 rounded-full bg-accent-500 text-white font-heading font-bold text-[18px] flex items-center justify-center shadow-lg shadow-accent-500/30 ring-4 ring-white">{i + 1}</span>
-            <div class="md:mt-4">
-              <h3 class="font-heading font-bold text-[16px] text-brand-800">{e.title}</h3>
-              <p class="text-steel-500 text-[14px] leading-relaxed mt-1.5">{e.desc}</p>
-            </div>
-          </li>
-        ))}
-      </ol>
     </div>
   </section>
 
