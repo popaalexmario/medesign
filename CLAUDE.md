@@ -137,8 +137,13 @@ eroare se vede.
 
 ## Bara cu logouri
 
-`src/components/LogoMarquee.astro` pe „Despre noi”, date în `src/data/clienti.ts`.
-Logoul unei firme se urcă în `poze/logouri/<id>.png`; fără fișier apare numele.
+`src/components/LogoMarquee.astro` pe „Despre noi”, denumiri oficiale complete în
+`src/data/clienti.ts`. Fiecare colaborator are folderul `poze/logouri/<id>/`:
+fișierul urcat de Mario are prioritate, altfel `_site-oficial.png` (luat de pe
+site-ul oficial sau Commons; stemele sunt simboluri oficiale, art. 9 din Legea
+8/1996). Folder gol = apare numele pe card. Lipsesc: Hidroelectrica, APM
+Constanța, Fetești, Perșinari, Bughea de Jos.
+„Marian Stanciu Internațional” (uzinator Gurasada) nu s-a confirmat în registre.
 
 ## Configurare externă
 

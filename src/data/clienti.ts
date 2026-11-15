@@ -1,32 +1,31 @@
 /**
  * Beneficiarii și partenerii din proiectele portofoliului, pentru bara de pe
- * „Despre noi”. Logoul se ia din poze/logouri/<id>.(png|jpg|webp|svg); până
- * apare un fișier, se afișează numele, stilizat.
+ * „Despre noi”. Fiecare are un folder poze/logouri/<id>/. Logoul urcat de Mario
+ * acolo are prioritate; altfel se folosește `_site-oficial.png` (descărcat de pe
+ * site-ul oficial sau Wikimedia Commons); dacă folderul e gol, apare doar numele.
  */
 export interface Client {
   id: string;
-  /** Rândul mare */
+  /** Denumirea oficială completă */
   name: string;
-  /** Rândul mic, opțional */
-  sub?: string;
 }
 
 export const clienti: Client[] = [
-  { id: 'cnair', name: 'CNAIR', sub: 'Infrastructură rutieră' },
-  { id: 'cfr', name: 'CFR SA', sub: 'Infrastructură feroviară' },
-  { id: 'hidroelectrica', name: 'Hidroelectrica', sub: 'Porțile de Fier' },
-  { id: 'apm-constanta', name: 'Portul Constanța', sub: 'Administrația Porturilor Maritime' },
-  { id: 'cj-prahova', name: 'Consiliul Județean', sub: 'Prahova' },
-  { id: 'cj-maramures', name: 'Consiliul Județean', sub: 'Maramureș' },
+  { id: 'cnair', name: 'Compania Națională de Administrare a Infrastructurii Rutiere S.A.' },
+  { id: 'cfr', name: 'Compania Națională de Căi Ferate „CFR” S.A.' },
+  { id: 'hidroelectrica', name: 'S.P.E.E.H. Hidroelectrica S.A.' },
+  { id: 'apm-constanta', name: 'C.N. Administrația Porturilor Maritime S.A. Constanța' },
+  { id: 'cj-prahova', name: 'Consiliul Județean Prahova' },
+  { id: 'cj-maramures', name: 'Consiliul Județean Maramureș' },
   { id: 'craiova', name: 'Municipiul Craiova' },
   { id: 'lugoj', name: 'Municipiul Lugoj' },
   { id: 'sibiu', name: 'Municipiul Sibiu' },
   { id: 'alba-iulia', name: 'Municipiul Alba Iulia' },
   { id: 'onesti', name: 'Municipiul Onești' },
   { id: 'fetesti', name: 'Municipiul Fetești' },
-  { id: 'aninoasa', name: 'Comuna Aninoasa', sub: 'Dâmbovița' },
-  { id: 'persinari', name: 'Comuna Perșinari', sub: 'Dâmbovița' },
-  { id: 'bughea-de-jos', name: 'Comuna Bughea de Jos', sub: 'Argeș' },
-  { id: 'cozieni', name: 'Comuna Cozieni', sub: 'Buzău' },
-  { id: 'ms-interproiect', name: 'MS Interproiect', sub: 'Engineering' },
+  { id: 'aninoasa', name: 'Comuna Aninoasa, județul Dâmbovița' },
+  { id: 'persinari', name: 'Comuna Perșinari, județul Dâmbovița' },
+  { id: 'bughea-de-jos', name: 'Comuna Bughea de Jos, județul Argeș' },
+  { id: 'cozieni', name: 'Comuna Cozieni, județul Buzău' },
+  { id: 'ms-interproiect', name: 'MS Interproiect Engineering S.R.L.' },
 ];
