@@ -1,0 +1,211 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import LogoMarquee from '../../components/LogoMarquee.astro';
+import { servicePagesEn } from '../../data/services.en';
+import { categoryEn } from '../../i18n/paths';
+import { cardSrcset, CARD_SIZES } from '../../utils/img';
+
+const stats = [
+  { value: '8+', label: 'Years in practice' },
+  { value: '200+', label: 'Projects delivered' },
+  { value: '1,000+', label: 'km of roads designed' },
+  { value: '100+', label: 'Bridges designed' },
+];
+
+const tr = new Map((await getCollection('projects-en')).map((e) => [e.slug, e.data]));
+const featured = (await getCollection('projects', ({ data }) => !data.draft))
+  .filter((p) => tr.has(p.slug) && p.data.image)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+
+// Proiectele în care am lucrat în lanțul unui constructor sau uzinator.
+const chain = [
+  {
+    slug: 'pasaj-gurasada-hunedoara',
+    text: '70 m through-truss road overbridge over the railway on the Gurasada–Simeria section, a works package built by an FCC Construcción and Astaldi joint venture. We produced the fabrication and execution details for the steel fabricator.',
+  },
+  {
+    slug: 'pasaj-a0-a2-bucuresti',
+    text: 'Steel overpass carrying the Bucharest ring motorway (A0) over the A2. Fabrication and execution details, delivered to the steel fabricator.',
+  },
+  {
+    slug: 'dn7-versanti-valcea',
+    text: 'Slope protection along DN7 in the Olt Gorge, under a design-and-build contract. Detailed design and technical assistance on site; the works finished 9 months ahead of schedule.',
+  },
+];
+
+const steps = [
+  { title: 'Romanian permits and approvals', desc: 'We know the permitting chain under the new Planning and Construction Code (Law 169/2026) and prepare the documentation that the authorities, utility owners and Apele Române ask for.' },
+  { title: 'Design to Romanian and EU standards', desc: 'Eurocodes with the Romanian national annexes, plus the national road, bridge and railway regulations that apply on top of them.' },
+  { title: 'Independent checking', desc: 'We coordinate the certified checkers (verificatori atestați) that Romanian law requires before a design can be built.' },
+  { title: 'Site support', desc: 'Technical assistance during construction: answers to site queries, design adjustments when the ground differs, attendance at the key inspections.' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://me-design.ro/en/#webpage',
+  url: 'https://me-design.ro/en/',
+  name: 'ME Design, infrastructure design in Romania',
+  inLanguage: 'en',
+  about: { '@id': 'https://me-design.ro/#organization' },
+};
+---
+
+<Layout
+  title="Infrastructure Design in Romania"
+  description="Romanian design firm for roads, bridges, railway structures and slope stabilisation. Local design partner for contractors building in Romania."
+  jsonLd={jsonLd}
+>
+  <Header />
+
+  <section class="relative overflow-hidden">
+    <img src="/img/hero-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-900/80 to-brand-900/40"></div>
+    <div class="container relative z-10">
+      <div class="pt-32 md:pt-40"></div>
+      <div class="max-w-3xl">
+        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-[0.25em]" data-aos="fade-up">Mario Engineering Design SRL · Bucharest</span>
+        <h1 class="text-[38px] md:text-[58px] font-heading font-extrabold text-white leading-[1.08] mt-4" data-aos="fade-up" data-aos-delay="50">
+          Infrastructure design in Romania, <span class="text-accent-400">from feasibility to site</span>
+        </h1>
+        <p class="text-white/70 text-[16px] md:text-[19px] max-w-2xl leading-relaxed mt-6" data-aos="fade-up" data-aos-delay="100">
+          Roads, bridges, railway overbridges, retaining structures and slope stabilisation. We design for Romanian public clients and work as the local design partner for contractors and steel fabricators.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-9" data-aos="fade-up" data-aos-delay="150">
+          <a href="/en/contact" class="inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all">
+            Discuss your project
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </a>
+          <a href="/en/portfolio" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-[15px] border border-white/20 hover:bg-white/20 transition-all">
+            See the portfolio
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+        {stats.map((s, i) => (
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6 text-center" data-aos="fade-up" data-aos-delay={150 + i * 80}>
+            <div class="text-[26px] md:text-[38px] font-heading font-extrabold text-white">{s.value}</div>
+            <div class="text-white/50 text-[13px] font-medium mt-1">{s.label}</div>
+          </div>
+        ))}
+      </div>
+      <div class="pb-14 md:pb-20"></div>
+    </div>
+  </section>
+
+  <!-- Proiecte -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+        <div class="max-w-2xl" data-aos="fade-up">
+          <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Portfolio</span>
+          <h2 class="text-[30px] md:text-[42px] font-heading font-bold text-brand-800 mt-3">Selected projects</h2>
+          <p class="text-steel-500 text-[16px] mt-3">Each project page lists the design phase, the client and the scope we delivered.</p>
+        </div>
+        <a href="/en/portfolio" class="text-accent-600 font-semibold text-[15px] hover:text-accent-700 whitespace-nowrap" data-aos="fade-up">All projects →</a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featured.map((p, i) => {
+          const t = tr.get(p.slug)!;
+          return (
+            <a href={`/en/portfolio/${p.slug}`} class="group bg-white rounded-2xl overflow-hidden border border-steel-100 hover:shadow-xl transition-all flex flex-col" data-aos="fade-up" data-aos-delay={(i % 3) * 80}>
+              <div class="aspect-[16/10] bg-steel-100 overflow-hidden">
+                <img src={p.data.image} srcset={cardSrcset(p.data.image!)} sizes={CARD_SIZES} alt={t.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="250" />
+              </div>
+              <div class="p-5 flex flex-col flex-1">
+                <div class="flex items-center gap-2 flex-wrap text-[12px] font-semibold">
+                  <span class="text-accent-600">{p.data.categories.map((c) => categoryEn[c] ?? c).join(' · ')}</span>
+                  <span class="text-steel-400 font-normal">{p.data.year}</span>
+                </div>
+                <h3 class="font-heading font-bold text-[16px] text-brand-800 mt-2 leading-snug group-hover:text-accent-600 transition-colors">{t.title}</h3>
+                <p class="text-steel-400 text-[13px] mt-1.5">{t.location}</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Lucrul cu constructorii -->
+  <section class="section-padding bg-brand-900 text-white">
+    <div class="container">
+      <div class="max-w-2xl" data-aos="fade-up">
+        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest">For contractors</span>
+        <h2 class="text-[30px] md:text-[42px] font-heading font-bold mt-3">Building in Romania? We already work inside contractor supply chains.</h2>
+        <p class="text-white/60 text-[16px] mt-4 leading-relaxed">
+          Part of our work is commissioned not by the final client but by the contractor or the steel fabricator. Three recent examples:
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        {chain.map((c, i) => {
+          const t = tr.get(c.slug)!;
+          return (
+            <a href={`/en/portfolio/${c.slug}`} class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all flex flex-col" data-aos="fade-up" data-aos-delay={i * 80}>
+              <p class="text-accent-400 text-[12px] font-semibold uppercase tracking-wider">{t.faza}</p>
+              <h3 class="font-heading font-bold text-[17px] mt-2 leading-snug">{t.title}</h3>
+              <p class="text-white/60 text-[14px] mt-3 leading-relaxed flex-1">{c.text}</p>
+              <span class="text-accent-400 font-semibold text-[13px] mt-4 group-hover:translate-x-1 transition-transform">Project page →</span>
+            </a>
+          );
+        })}
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 pt-10 border-t border-white/10">
+        {steps.map((s, i) => (
+          <div data-aos="fade-up" data-aos-delay={i * 80}>
+            <span class="text-accent-400 font-heading font-extrabold text-[22px]">0{i + 1}</span>
+            <h3 class="font-heading font-bold text-[16px] mt-2">{s.title}</h3>
+            <p class="text-white/55 text-[14px] mt-2 leading-relaxed">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicii -->
+  <section class="section-padding bg-steel-50">
+    <div class="container">
+      <div class="max-w-2xl mb-8" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Services</span>
+        <h2 class="text-[30px] md:text-[42px] font-heading font-bold text-brand-800 mt-3">What we design</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {servicePagesEn.map((s, i) => (
+          <a href={`/en/services/${s.slug}`} class="group bg-white border border-steel-100 rounded-2xl p-5 hover:shadow-lg hover:border-accent-500/40 transition-all" data-aos="fade-up" data-aos-delay={(i % 4) * 60}>
+            <h3 class="font-heading font-bold text-[15px] text-brand-800 group-hover:text-accent-600 transition-colors">{s.title}</h3>
+            <p class="text-steel-500 text-[13px] mt-1.5">{s.short}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Clients</span>
+        <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800 mt-3">Who we have designed for</h2>
+      </div>
+    </div>
+    <LogoMarquee title={false} variant="light" />
+  </section>
+
+  <section class="py-16 bg-gradient-to-br from-brand-800 to-brand-900">
+    <div class="container text-center max-w-2xl">
+      <h2 class="text-[28px] md:text-[38px] font-heading font-bold text-white">Send us the location and the brief</h2>
+      <p class="text-white/60 text-[16px] mt-4">We reply within one working day, in English, with the design stages and studies the project needs.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <a href="/en/contact" class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-full font-semibold text-[15px] transition-all">Contact us</a>
+        <a href="tel:+40746784156" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-full font-semibold text-[15px] transition-all">+40 746 784 156</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

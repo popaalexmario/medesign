@@ -1,4 +1,6 @@
 ---
+interface Props { lang?: 'ro' | 'en' }
+const en = Astro.props.lang === 'en';
 ---
 
 <!-- Cookie Consent Banner -->
@@ -6,7 +8,7 @@
   id="cookie-banner"
   class="fixed bottom-0 left-0 right-0 z-[9999] hidden"
   role="dialog"
-  aria-label="Consimțământ cookie-uri"
+  aria-label={en ? 'Cookie consent' : 'Consimțământ cookie-uri'}
 >
   <div class="bg-white border-t border-gray-200 shadow-2xl">
     <div class="container mx-auto px-6 py-4 max-w-[1200px]">
@@ -21,8 +23,8 @@
           </div>
           <div>
             <p class="text-sm text-gray-700 leading-relaxed">
-              Folosim cookie-uri pentru a îmbunătăți experiența ta pe site. Prin continuarea navigării, ești de acord cu utilizarea acestora conform
-              <a href="/politica-cookies" class="text-accent-500 hover:text-accent-600 underline underline-offset-2 font-medium transition-colors">Politicii de Cookies</a>.
+              {en ? 'We use cookies to improve your experience on this site. By continuing to browse you agree to their use under our ' : 'Folosim cookie-uri pentru a îmbunătăți experiența ta pe site. Prin continuarea navigării, ești de acord cu utilizarea acestora conform '}
+              <a href="/politica-cookies" class="text-accent-500 hover:text-accent-600 underline underline-offset-2 font-medium transition-colors">{en ? 'Cookie Policy (in Romanian)' : 'Politicii de Cookies'}</a>.
             </p>
           </div>
         </div>
@@ -33,7 +35,7 @@
             id="cookie-decline"
             class="flex-1 sm:flex-none px-4 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
           >
-            Refuz
+            {en ? 'Decline' : 'Refuz'}
           </button>
           <button
             id="cookie-accept"

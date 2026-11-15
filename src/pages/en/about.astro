@@ -1,0 +1,165 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import LogoMarquee from '../../components/LogoMarquee.astro';
+
+// Aceiași diferențiatori ca pe /despre, fiecare legat de o pagină care îi susține.
+const points = [
+  {
+    nr: '01',
+    title: 'The whole design package under one contract',
+    desc: 'Topographic, geotechnical, hydrological and traffic studies, structural assessment and independent checking, coordinated by us. You do not have to find each specialist separately.',
+    href: '/en/services', link: 'Our services',
+  },
+  {
+    nr: '02',
+    title: 'We stay on site until handover',
+    desc: 'Technical assistance throughout construction: solutions for what turns up in the excavation, approval of materials, attendance at the key inspection stages.',
+    href: '/en/portfolio/dn7-versanti-valcea', link: 'Example: DN7, Olt Gorge',
+  },
+  {
+    nr: '03',
+    title: 'From small communes to national companies',
+    desc: 'We have worked for commune and city councils, county councils, CNAIR, CFR and Hidroelectrica, and inside contractor and fabricator supply chains. We know how their requirements differ.',
+    href: '/en/portfolio', link: 'Portfolio',
+  },
+  {
+    nr: '04',
+    title: 'Work that few firms take on',
+    desc: 'Listed historic bridges, steel structures over electrified railway lines, slope stabilisation on roads with no diversion route.',
+    href: '/en/portfolio/pod-fier-lugoj-timis', link: 'Example: the Iron Bridge, Lugoj',
+  },
+  {
+    nr: '05',
+    title: 'Up to date with Romanian law',
+    desc: 'We already work under the new Planning and Construction Code (Law 169/2026), which replaced the permitting and quality laws that applied until August 2026.',
+    href: '/en/contact', link: 'Ask us about your case',
+  },
+  {
+    nr: '06',
+    title: 'Certified quality management',
+    desc: 'Management systems certified to ISO 9001, ISO 14001 and ISO 45001 for quality, environment and occupational health and safety.',
+    href: '#certifications', link: 'Certifications',
+  },
+];
+
+const steps = [
+  { title: 'The brief', desc: 'We start from the actual need and the site, and tell you which documents are needed and in what order.' },
+  { title: 'Studies and assessment', desc: 'Survey, geotechnics, hydrology, traffic and, for existing structures, the structural assessment.' },
+  { title: 'Solution and design', desc: 'Feasibility study or intervention approval documentation, then the permit design and the detailed design.' },
+  { title: 'Approvals and checking', desc: 'We prepare the documentation for the approvals and coordinate the independent design check.' },
+  { title: 'Site assistance', desc: 'We stay with the client and the contractor until the works are handed over.' },
+];
+---
+
+<Layout title="About us" description="Mario Engineering Design SRL, Bucharest: infrastructure design firm founded in 2018, ISO 9001, 14001 and 45001 certified. Roads, bridges, retaining works.">
+  <Header />
+
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">About us</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        A Romanian design firm<br />for roads and bridges
+      </h1>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white overflow-x-clip">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div data-aos="fade-up">
+          <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-brand-800">Who we are</h2>
+          <div class="space-y-3 mt-4 text-steel-600 text-[15px] leading-relaxed">
+            <p>
+              <strong>Mario Engineering Design SRL</strong> is a design firm specialising in road infrastructure and civil structures, founded in Bucharest in December 2018.
+            </p>
+            <p>
+              Over more than eight years we have delivered complete designs for commune, county and national roads, bridges, overpasses, footbridges, retaining structures and slope stabilisation across Romania.
+            </p>
+            <p>
+              The firm holds ISO 9001 (quality), ISO 14001 (environment) and ISO 45001 (occupational health and safety) certification.
+            </p>
+          </div>
+          <div class="mt-5 p-4 bg-steel-50 rounded-2xl text-[14px] text-steel-500 space-y-1">
+            <p><span class="font-semibold text-steel-700">Company:</span> Mario Engineering Design SRL</p>
+            <p><span class="font-semibold text-steel-700">Tax ID (CUI):</span> 40290175</p>
+            <p><span class="font-semibold text-steel-700">Founded:</span> 12 December 2018</p>
+            <p><span class="font-semibold text-steel-700">Registered office:</span> Str. Avionului 26, Et. 1, Ap. B, Sector 1, Bucharest, Romania</p>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden aspect-square" data-aos="fade-up">
+          <img src="/img/projects/NOI.jpg" alt="The ME Design team" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-steel-50">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Why ME Design</span>
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">What you get, in practice</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {points.map((d, i) => (
+          <div class="group bg-white border border-steel-100 rounded-2xl p-6 hover:border-accent-500/40 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay={(i % 3) * 80}>
+            <span class="font-heading font-extrabold text-[40px] leading-none text-accent-500/20 group-hover:text-accent-500/40 transition-colors">{d.nr}</span>
+            <h3 class="font-heading font-bold text-[18px] text-brand-800 mt-3">{d.title}</h3>
+            <p class="text-steel-500 text-[14.5px] leading-relaxed mt-2">{d.desc}</p>
+            <a href={d.href} class="inline-flex items-center gap-1.5 mt-4 text-accent-600 text-[14px] font-semibold hover:gap-2.5 transition-all">{d.link} <span aria-hidden="true">→</span></a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Process</span>
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">How we work</h2>
+      </div>
+      <ol class="relative grid md:grid-cols-5 gap-6 md:gap-4">
+        <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-accent-500/20 via-accent-500/60 to-accent-500/20" aria-hidden="true"></div>
+        {steps.map((e, i) => (
+          <li class="relative flex md:flex-col items-start md:items-center md:text-center gap-4 md:gap-0" data-aos="fade-up" data-aos-delay={i * 80}>
+            <span class="relative z-10 w-12 h-12 shrink-0 rounded-full bg-accent-500 text-white font-heading font-bold text-[18px] flex items-center justify-center shadow-lg shadow-accent-500/30 ring-4 ring-white">{i + 1}</span>
+            <div class="md:mt-4">
+              <h3 class="font-heading font-bold text-[16px] text-brand-800">{e.title}</h3>
+              <p class="text-steel-500 text-[14px] leading-relaxed mt-1.5">{e.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <LogoMarquee title="Clients and partners on our projects" />
+
+  <section id="certifications" class="section-padding bg-white scroll-mt-24">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-7">
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800" data-aos="fade-up">Certifications</h2>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-10" data-aos="fade-up" data-aos-delay="100">
+        <img src="/img/projects/ISO%209001.png" alt="ISO 9001, quality management" class="h-28 object-contain" />
+        <img src="/img/projects/ISO%2014001.png" alt="ISO 14001, environmental management" class="h-28 object-contain" />
+        <img src="/img/projects/ISO%2045001.png" alt="ISO 45001, occupational health and safety management" class="h-28 object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-brand-900">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="text-[28px] md:text-[36px] font-heading font-bold text-white">Working on a project in Romania?</h2>
+      <p class="text-white/60 text-[16px] mt-3 max-w-md mx-auto">Send us the location and the brief. We reply in English within one working day.</p>
+      <a href="/en/contact" class="inline-flex items-center gap-2 mt-5 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all">
+        Get in touch
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

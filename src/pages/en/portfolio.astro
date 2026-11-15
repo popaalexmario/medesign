@@ -1,0 +1,263 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Lightbox from '../../components/Lightbox.astro';
+import LogoMarquee from '../../components/LogoMarquee.astro';
+
+import { getCollection } from 'astro:content';
+import { cardSrcset, CARD_SIZES } from '../../utils/img';
+import { categoryEn } from '../../i18n/paths';
+
+const tr = new Map((await getCollection('projects-en')).map((e) => [e.slug, e.data]));
+const entries = (await getCollection('projects', ({ data }) => !data.draft))
+  .filter((e) => tr.has(e.slug))
+  .sort((a, b) => a.data.order - b.data.order);
+const cat = (c: string) => categoryEn[c] ?? c;
+const projects = entries.map((e) => {
+  const t = tr.get(e.slug)!;
+  return { slug: e.slug, ...e.data, ...t, categories: e.data.categories.map(cat), desc: t.description };
+});
+
+// Grupare după numele românesc (U.A.T. / Consiliul Județean), afișare cu numele traduse.
+const isLocal = (b: string) => /^(U\.A\.T\.|Consiliul Județean)/.test(b);
+const uniq = (xs: string[]) => [...new Set(xs)].sort((a, b) => a.localeCompare(b, 'en'));
+const withClient = entries.filter((e) => e.data.beneficiar && tr.get(e.slug)!.beneficiar);
+const beneficiariGrupati = [
+  { titlu: 'Local and county authorities', lista: uniq(withClient.filter((e) => isLocal(e.data.beneficiar!)).map((e) => tr.get(e.slug)!.beneficiar!)) },
+  { titlu: 'National companies and operators', lista: uniq(withClient.filter((e) => !isLocal(e.data.beneficiar!)).map((e) => tr.get(e.slug)!.beneficiar!)) },
+].filter((g) => g.lista.length > 0);
+
+const categoryOrder = ['Roads', 'Retaining & stabilisation', 'Bridges', 'Footbridges'];
+const allCats = [...new Set(projects.flatMap(p => p.categories))];
+const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
+---
+
+<Layout title="Portfolio" description="ME Design portfolio: roads, bridges, railway overbridges, slope stabilisation and hydraulic works designed across Romania, with phases and clients.">
+  <Header />
+
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Portfolio</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Selected projects
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-xl" data-aos="fade-up" data-aos-delay="100">
+        Roads, bridges, railway structures and slope works we have designed in Romania, for local authorities, national companies and contractors. Each page lists the design phase and the client.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 md:py-12 bg-white">
+    <div class="container">
+      <!-- Search + Filters -->
+      <div class="flex flex-col gap-3 mb-6" data-aos="fade-up">
+        <div class="relative max-w-md">
+          <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-steel-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 111 11a6 6 0 0116 0z" />
+          </svg>
+          <input
+            id="project-search"
+            type="text"
+            placeholder="Search project, location..."
+            class="w-full pl-10 pr-10 py-2.5 rounded-full border border-steel-200 text-[14px] text-brand-800 placeholder-steel-400 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 transition-all"
+          />
+          <button
+            id="search-clear"
+            class="absolute right-3.5 top-1/2 -translate-y-1/2 w-5 h-5 hidden items-center justify-center text-steel-400 hover:text-steel-600 transition-colors"
+            aria-label="Clear search"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-wrap gap-3" id="filter-buttons">
+          {categories.map((cat, i) => (
+            <button
+              class={`filter-btn px-5 py-2 rounded-full text-[14px] font-medium transition-all ${i === 0 ? 'bg-brand-500 text-white' : 'bg-steel-100 text-steel-600 hover:bg-brand-500 hover:text-white'}`}
+              data-cat={cat}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+        {projects.map((project, i) => (
+          <a
+            id={project.slug}
+            href={`/en/portfolio/${project.slug}`}
+            class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay={i * 60}
+            data-categories={project.categories.join(',')}
+            data-search={`${project.title} ${project.location} ${project.desc}`.toLowerCase()}
+          >
+            <div class="bg-steel-100 aspect-[16/10] overflow-hidden flex items-center justify-center">
+              {project.image
+                ? <img src={project.image} srcset={cardSrcset(project.image)} sizes={CARD_SIZES} alt={project.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="250" />
+                : <svg class="w-12 h-12 text-steel-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+              }
+            </div>
+            <div class="p-4">
+              <div class="flex items-center flex-wrap gap-2 mb-3">
+                {project.categories.map((cat) => (
+                  <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-[12px] font-semibold">{cat}</span>
+                ))}
+                {project.faza && <span class="px-3 py-1 rounded-full bg-accent-500/10 text-accent-600 text-[12px] font-semibold">{project.faza}</span>}
+                <span class="text-steel-400 text-[12px]">{project.year}</span>
+              </div>
+              <h3 class="font-heading font-bold text-[17px] text-brand-800 group-hover:text-accent-500 transition-colors">{project.title}</h3>
+              <p class="text-steel-400 text-[13px] mt-1 flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                {project.location}
+              </p>
+              <p class="text-steel-500 text-[14px] mt-3 leading-relaxed">{project.desc}</p>
+              <span class="inline-flex items-center gap-1.5 text-accent-600 font-semibold text-[13px] mt-4">
+                View project
+                <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <p id="no-results" class="hidden text-center text-steel-400 text-[15px] py-16">No project found. Try another search term.</p>
+    </div>
+  </section>
+
+  <script>
+    const searchInput = document.getElementById('project-search') as HTMLInputElement;
+    const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const cards = document.querySelectorAll<HTMLElement>('.project-card');
+    const noResults = document.getElementById('no-results')!;
+
+    let activeCategory = 'All';
+    let searchQuery = '';
+
+    function applyFilters() {
+      let visible = 0;
+      cards.forEach(card => {
+        const cats = card.dataset.categories ?? '';
+        const searchText = card.dataset.search ?? '';
+        const catMatch = activeCategory === 'All' || cats.split(',').includes(activeCategory);
+        const searchMatch = searchQuery === '' || searchText.includes(searchQuery);
+        const show = catMatch && searchMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      noResults.classList.toggle('hidden', visible > 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.dataset.cat ?? 'All';
+        filterBtns.forEach(b => {
+          b.classList.toggle('bg-brand-500', b === btn);
+          b.classList.toggle('text-white', b === btn);
+          b.classList.toggle('bg-steel-100', b !== btn);
+          b.classList.toggle('text-steel-600', b !== btn);
+        });
+        applyFilters();
+      });
+    });
+
+    const clearBtn = document.getElementById('search-clear') as HTMLButtonElement;
+
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.toLowerCase().trim();
+      clearBtn.classList.toggle('hidden', searchInput.value === '');
+      clearBtn.classList.toggle('flex', searchInput.value !== '');
+      applyFilters();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.classList.add('hidden');
+      clearBtn.classList.remove('flex');
+      applyFilters();
+      searchInput.focus();
+    });
+
+    // Scroll to & highlight project from map anchor
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const target = document.getElementById(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          target.style.outline = '3px solid #d97706';
+          target.style.outlineOffset = '4px';
+          target.style.borderRadius = '1rem';
+          setTimeout(() => { target.style.outline = ''; target.style.outlineOffset = ''; }, 2500);
+        }, 400);
+      }
+    }
+  </script>
+
+  <section class="section-padding bg-steel-50 border-t border-steel-100">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">References</span>
+        <h2 class="text-[28px] md:text-[38px] font-heading font-bold text-brand-800 mt-3">
+          Clients we have worked for
+        </h2>
+        <p class="text-steel-500 text-[16px] mt-3">
+          Local and county authorities, national infrastructure companies, utility operators and contractors.
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-10">
+      <LogoMarquee title={false} variant="light" />
+    </div>
+
+    <div class="container">
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {beneficiariGrupati.map((grup, i) => (
+          <div class="bg-white border border-steel-100 rounded-2xl p-6" data-aos="fade-up" data-aos-delay={i * 80}>
+            <h3 class="font-heading font-bold text-[16px] text-brand-800 mb-4 flex items-center gap-2">
+              <span class="w-1.5 h-5 bg-accent-500 rounded-full"></span>
+              {grup.titlu}
+            </h3>
+            <ul class="space-y-2.5">
+              {grup.lista.map((b) => (
+                <li class="flex items-start gap-2.5 text-steel-600 text-[14px] leading-snug">
+                  <svg class="w-4 h-4 text-accent-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Lightbox />
+
+  <!-- Next page navigation -->
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between">
+      <p class="text-steel-500 text-[14px]">Have a project in Romania?</p>
+      <a href="/en/contact" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Contact us
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

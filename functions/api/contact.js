@@ -35,6 +35,9 @@ export async function onRequestPost({ request, env }) {
     f[k] = String(data[k] ?? '').trim().slice(0, limit);
   }
 
+  // Formularul din versiunea în engleză trimite lang=en.
+  const en = data.lang === 'en';
+
   const missing = ['nume', 'email', 'mesaj'].filter((k) => !f[k]);
   if (missing.length) {
     return json(400, { ok: false, error: 'Completează numele, emailul și mesajul.' });
@@ -59,6 +62,7 @@ export async function onRequestPost({ request, env }) {
     ['Telefon', f.telefon],
     ['Organizație', f.organizatie],
     ['Localizare proiect', f.locatie],
+    ['Limba formularului', en ? 'engleză (client străin, răspunde în engleză)' : ''],
   ].filter(([, v]) => v);
 
   const html = `
@@ -75,7 +79,7 @@ export async function onRequestPost({ request, env }) {
     <div style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.6;white-space:pre-wrap;border-left:3px solid #d97706;padding-left:14px">${esc(f.mesaj)}</div>
   `;
 
-  const subject = `Solicitare site — ${f.nume}${f.organizatie ? ` (${f.organizatie})` : ''}`;
+  const subject = `${en ? '[EN] ' : ''}Solicitare site — ${f.nume}${f.organizatie ? ` (${f.organizatie})` : ''}`;
 
   const provider = env.RESEND_API_KEY
     ? [

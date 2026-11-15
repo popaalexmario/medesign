@@ -42,4 +42,18 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, projects };
+// Traducerea în engleză a fișelor de proiect. Restul datelor (imagini,
+// categorii, regiune, an) se iau din fișierul românesc cu același nume.
+const projectsEn = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    faza: z.string(),
+    location: z.string(),
+    beneficiar: z.string().optional(),
+    beneficiarPrin: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, projects, 'projects-en': projectsEn };

@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { servicePagesEn } from '../../data/services.en';
+---
+
+<Layout title="Services" description="Design services for infrastructure in Romania: roads, bridges and overpasses, railway structures, retaining works, hydraulic works, heritage structures and assessments.">
+  <Header />
+
+  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+    <div class="container">
+      <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Services</span>
+      <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
+        Infrastructure design<br />in Romania
+      </h1>
+      <p class="text-white/60 text-[17px] mt-4 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
+        We prepare the full design package under Romanian regulations, from feasibility study to detailed design, and stay on site through construction. For contractors working in Romania we also act as the local design partner on design-and-build contracts.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {servicePagesEn.map((s, i) => (
+          <a
+            href={`/en/services/${s.slug}`}
+            class="group bg-white border border-steel-100 rounded-2xl overflow-hidden hover:shadow-xl hover:border-accent-500/40 transition-all flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay={(i % 3) * 80}
+          >
+            {s.image && (
+              <div class="aspect-[16/9] bg-steel-100 overflow-hidden">
+                <img src={s.image} alt={s.imageAlt ?? s.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="225" />
+              </div>
+            )}
+            <div class="p-6 flex flex-col flex-1">
+              <h2 class="font-heading font-bold text-[18px] text-brand-800 group-hover:text-accent-600 transition-colors">{s.title}</h2>
+              <p class="text-steel-500 text-[14px] mt-2 leading-relaxed flex-1">{s.lead}</p>
+              <span class="inline-flex items-center gap-1.5 text-accent-600 font-semibold text-[13px] mt-4">
+                Details
+                <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+    <div class="container flex items-center justify-between gap-4">
+      <p class="text-steel-500 text-[14px]">See the work behind each service</p>
+      <a href="/en/portfolio" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-all border-4 border-accent-500 hover:shadow-[0_0_18px_rgba(217,119,6,0.45)] group">
+        Portfolio
+        <svg class="next-nav-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

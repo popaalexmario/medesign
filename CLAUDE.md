@@ -62,6 +62,18 @@ limitează des cererile din container; paginile fișierelor se pot citi cu WebFe
 Paginile de serviciu și cele de zonă se generează din fișierele de date. Când
 adaugi un serviciu, apare automat peste tot.
 
+## Versiunea în engleză
+
+`/en/` acoperă prima pagină, serviciile, portofoliul, „Despre” și contactul.
+Blogul, zonele, colaborările și paginile legale rămân doar în română.
+Corespondența RO↔EN e în `src/i18n/paths.ts` (folosită de Header, Footer,
+Layout pentru `hreflang` și butonul RO/EN). Serviciile EN: `src/data/services.en.ts`.
+Proiectele EN: `src/content/projects-en/<slug>.md`, doar textul (titlu,
+descriere, fază, localizare, beneficiar); pozele, categoriile și anul vin din
+fișierul românesc. **La un proiect nou, adaugă și fișierul EN**, altfel nu apare
+în portofoliul englez. Formularul EN trimite `lang=en`; emailul vine cu „[EN]”
+în subiect.
+
 ## Reguli de scriere pentru articole
 
 Stabilite după ce textele inițiale au fost comparate cu ghidul Wikipedia

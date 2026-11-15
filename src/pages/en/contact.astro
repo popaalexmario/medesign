@@ -1,0 +1,224 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Contact" description="Contact ME Design, infrastructure design firm in Bucharest, Romania. Send the project location and brief; we reply within one working day.">
+  <Header />
+
+  <section class="relative pt-28 md:pt-32 pb-16 md:pb-24 bg-gradient-to-br from-brand-900 via-brand-900 to-brand-700 overflow-hidden">
+    <div class="container">
+      <div class="grid lg:grid-cols-[1fr_1.15fr] gap-10 lg:gap-16 items-start">
+
+        <!-- Left: contact details -->
+        <div class="lg:pt-6" data-aos="fade-up">
+          <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-[0.25em]">Contact details</span>
+          <h1 class="text-[36px] md:text-[48px] font-heading font-extrabold text-white mt-4 leading-tight">Let's talk</h1>
+          <p class="text-white/60 text-[16px] md:text-[17px] mt-4 max-w-md leading-relaxed">
+            Working on an infrastructure project in Romania? Write to us through the form or by email and we will reply within one working day.
+          </p>
+
+          <ul class="mt-10 space-y-6">
+            <li class="flex items-center gap-4">
+              <span class="w-12 h-12 rounded-full bg-accent-500 text-white flex items-center justify-center shrink-0 shadow-lg shadow-accent-500/25">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              </span>
+              <div>
+                <span class="block text-accent-400 text-[11px] font-semibold uppercase tracking-[0.2em]">Registered office</span>
+                <span class="block text-white text-[16px] font-semibold mt-0.5">Str. Avionului 26, Et. 1, Ap. B</span>
+                <span class="block text-white/50 text-[14px]">Sector 1, Bucharest, Romania</span>
+              </div>
+            </li>
+            <li>
+              <a href="tel:+40746784156" class="flex items-center gap-4 group">
+                <span class="w-12 h-12 rounded-full bg-accent-500 text-white flex items-center justify-center shrink-0 shadow-lg shadow-accent-500/25">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              </span>
+                <div>
+                  <span class="block text-accent-400 text-[11px] font-semibold uppercase tracking-[0.2em]">Phone</span>
+                  <span class="block text-white text-[16px] font-semibold mt-0.5 group-hover:text-accent-400 transition-colors">+40 746 784 156</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href={`mailto:office@me-design.ro?subject=${encodeURIComponent('Design services enquiry, ME Design')}&body=${encodeURIComponent('Hello,\n\nName: \nCompany: \nRole: \nPhone: \n\n---\n\nType of project (roads / bridges / retaining works / other): \nLocation (county / town): \nDesign stage needed (feasibility / permit design / detailed design / other): \nTarget date: \n\nShort description:\n\n\n---\n\nBest regards,\n')}`} class="flex items-center gap-4 group">
+                <span class="w-12 h-12 rounded-full bg-accent-500 text-white flex items-center justify-center shrink-0 shadow-lg shadow-accent-500/25">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              </span>
+                <div>
+                  <span class="block text-accent-400 text-[11px] font-semibold uppercase tracking-[0.2em]">Email</span>
+                  <span class="block text-white text-[16px] font-semibold mt-0.5 group-hover:text-accent-400 transition-colors">office@me-design.ro</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="mt-10 pt-6 border-t border-white/10 text-[14px] leading-relaxed">
+            <p class="text-white font-semibold">Mario Engineering Design SRL</p>
+            <p class="text-white/50">Infrastructure design: roads, bridges, retaining works</p>
+          </div>
+        </div>
+
+        <!-- Right: enquiry form -->
+        <div class="bg-white rounded-3xl shadow-2xl shadow-black/30 p-6 sm:p-8 md:p-10" data-aos="fade-up" data-aos-delay="100">
+          <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-[0.25em]">Request a quote</span>
+          <h2 class="font-heading font-bold text-[26px] md:text-[30px] text-brand-800 mt-3 leading-tight">Tell us about your project</h2>
+          <p class="text-steel-500 text-[15px] mt-2 mb-7">
+            We reply within one working day.
+            Fields marked <span class="text-accent-600">*</span> are required.
+          </p>
+
+      <form id="contact-form" class="space-y-4" novalidate>
+        <!-- honeypot anti-spam -->
+        <div class="absolute w-px h-px overflow-hidden -left-[9999px]" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+        </div>
+        <input type="hidden" name="lang" value="en" />
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="nume" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Full name <span class="text-accent-600">*</span>
+            </label>
+            <input id="nume" name="nume" type="text" required maxlength="120" autocomplete="name"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+          <div>
+            <label for="organizatie" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Company / organisation
+            </label>
+            <input id="organizatie" name="organizatie" type="text" maxlength="160" autocomplete="organization"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+              Email <span class="text-accent-600">*</span>
+            </label>
+            <input id="email" name="email" type="email" required maxlength="160" autocomplete="email"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+          <div>
+            <label for="telefon" class="block text-[14px] font-semibold text-brand-800 mb-1.5">Phone</label>
+            <input id="telefon" name="telefon" type="tel" maxlength="40" autocomplete="tel"
+              class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+          </div>
+        </div>
+
+        <div>
+          <label for="locatie" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+            Project location
+          </label>
+          <input id="locatie" name="locatie" type="text" maxlength="160" placeholder="County, town"
+            class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] placeholder:text-steel-300 focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all" />
+        </div>
+
+        <div>
+          <label for="mesaj" class="block text-[14px] font-semibold text-brand-800 mb-1.5">
+            Project description <span class="text-accent-600">*</span>
+          </label>
+          <textarea id="mesaj" name="mesaj" rows="6" required maxlength="5000"
+            placeholder="Type of works (roads, bridges, retaining works), design stage needed, your role (contractor, client, designer), target date and anything else useful."
+            class="w-full px-4 py-3 rounded-xl border border-steel-200 bg-white text-[15px] leading-relaxed placeholder:text-steel-300 focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all resize-y"></textarea>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
+          <button type="submit" id="contact-submit"
+            class="inline-flex items-center justify-center gap-2 shrink-0 whitespace-nowrap bg-accent-500 hover:bg-accent-600 disabled:opacity-60 disabled:cursor-not-allowed text-white px-7 py-3.5 rounded-full font-semibold text-[15px] transition-all group">
+            <span id="contact-submit-text">Send enquiry</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+          <p class="text-steel-400 text-[13px]">
+            Your details are used only to reply to you.
+            <a href="/politica-de-confidentialitate" class="text-accent-600 hover:underline">Privacy policy (RO)</a>
+          </p>
+        </div>
+
+        <p id="contact-status" role="status" aria-live="polite" class="hidden rounded-xl px-4 py-3 text-[14px]"></p>
+      </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var btn = document.getElementById('contact-submit');
+    var btnText = document.getElementById('contact-submit-text');
+    var status = document.getElementById('contact-status');
+
+    function show(kind, msg) {
+      status.className =
+        'rounded-xl px-4 py-3 text-[14px] ' +
+        (kind === 'ok'
+          ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+          : 'bg-red-50 text-red-800 border border-red-200');
+      status.innerHTML = msg;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var fd = new FormData(form);
+      var payload = {};
+      fd.forEach(function (v, k) { payload[k] = v; });
+
+      if (!payload.nume || !payload.email || !payload.mesaj) {
+        show('err', 'Please fill in your name, email and project description.');
+        return;
+      }
+
+      btn.disabled = true;
+      btnText.textContent = 'Sending...';
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+        .then(function (r) { return r.json().then(function (b) { return { ok: r.ok, body: b }; }); })
+        .then(function (res) {
+          if (res.ok && res.body.ok) {
+            form.reset();
+            show('ok', 'Message sent. We will reply within one working day.');
+            if (window.gtag) window.gtag('event', 'generate_lead', { method: 'formular_contact_en' });
+          } else {
+            var body =
+              'Name: ' + (payload.nume || '') + '\n' +
+              'Company: ' + (payload.organizatie || '') + '\n' +
+              'Email: ' + (payload.email || '') + '\n' +
+              'Phone: ' + (payload.telefon || '') + '\n' +
+              'Project location: ' + (payload.locatie || '') + '\n\n' +
+              'Project description:\n' + (payload.mesaj || '') + '\n';
+            var link =
+              'mailto:office@me-design.ro?subject=' +
+              encodeURIComponent('Design enquiry, ' + (payload.nume || '')) +
+              '&body=' + encodeURIComponent(body);
+            show(
+              'err',
+              'The message could not be sent automatically. ' +
+                '<a href="' + link + '" class="underline font-semibold">Send it from your email</a>; the details you entered are already included.'
+            );
+          }
+        })
+        .catch(function () {
+          show('err', 'Connection failed. Write to us at <a href="mailto:office@me-design.ro" class="underline font-semibold">office@me-design.ro</a>.');
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btnText.textContent = 'Send enquiry';
+        });
+    });
+  })();
+</script>
