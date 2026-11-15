@@ -14,6 +14,10 @@ Un om care merge apasă pe pasarelă de aproape două ori pe secundă. Dacă fre
 
 Cel mai cunoscut caz e Millennium Bridge din Londra, închis la două zile după inaugurarea din 2000 din cauza oscilațiilor laterale. Pietonii, simțind mișcarea, își sincronizau pașii cu ea și o amplificau. A fost redeschis după aproape doi ani, cu amortizoare montate.
 
+![Millennium Bridge din Londra, pasarelă pietonală peste Tamisa, văzută de sus](/img/blog/foto/millennium-bridge-londra.webp)
+
+*Millennium Bridge, Londra. Foto: [Jan Kameníček](https://commons.wikimedia.org/wiki/File:London_Millennium_Bridge_from_Saint_Paul's.jpg), licență [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), Wikimedia Commons.*
+
 Eurocodul tratează problema în EN 1990, Anexa A2. Confortul pietonilor trebuie verificat dacă frecvența fundamentală a tablierului e sub 5 Hz pe verticală sau sub 2,5 Hz pe orizontală și la torsiune. Pentru vibrațiile laterale, valoarea recomandată a accelerației e de 0,2 m/s² în utilizare normală și 0,4 m/s² în condiții excepționale de aglomerare. Sunt parametri pe care anexa națională îi poate modifica.
 
 Practic, o pasarelă metalică zveltă, cu deschidere mare, aproape sigur trebuie verificată dinamic. Soluțiile sunt rigidizarea, mărirea masei sau amortizoarele. Toate se decid din proiect, nu după ce pasarela e montată.

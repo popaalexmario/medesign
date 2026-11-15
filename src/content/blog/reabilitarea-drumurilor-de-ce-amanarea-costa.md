@@ -30,6 +30,10 @@ Un drum cu scurgere funcțională și structură corect dimensionată ține dece
 
 De asta un proiect serios tratează sistemul de colectare și evacuare a apelor ca element principal, nu ca anexă la final. O reabilitare care pune un covor de asfalt peste o structură îmbibată cu apă e bani aruncați. Se vede în două-trei sezoane.
 
+![Echipă care plombează gropi pe o autostradă](/img/blog/foto/plombare-gropi-drum.webp)
+
+*Plombarea gropilor pe autostrada I-93, Massachusetts. Foto: [MassDOT](https://commons.wikimedia.org/wiki/File:MassDOT_Pothole_Repairs_on_I-93,_Andover_Methuen,_March_5,_2010_%284408556649%29.jpg), domeniu public, Wikimedia Commons.*
+
 ## Cât costă amânarea
 
 Asta e partea cu cel mai mare impact pe buget.

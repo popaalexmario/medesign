@@ -46,6 +46,10 @@ Pentru administratorii de drumuri asta schimbă perspectiva. Expertiza nu mai r�
 
 Expertizele la construcțiile existente se consemnează obligatoriu în cartea tehnică, iar sinteza raportului se înregistrează în Registrul național al construcțiilor.
 
+![Intradosul unui pod din beton armat, cu beton desprins și armătură expusă](/img/blog/foto/beton-degradat-armatura-pod.webp)
+
+*Beton desprins și armătură expusă la intradosul unui pod, Pennsylvania. Foto: [Jet Lowe, HAER / Library of Congress](https://commons.wikimedia.org/wiki/File:VIEW_LOOKING_ENE_OF_UNDERSIDE_SHOWING_RIBS_AND_BEAMS._NOTE_SPALLING_ON_NORTHERN_EDGE_AND_EXPOSED_REBAR._-_Morris_Run_Bridge,_Rickert_Road_%28TR_417%29_spanning_Morris_Run_in_Hilltown_HAER_PA-619-4.tif), domeniu public, Wikimedia Commons.*
+
 ## Reabilitare sau pod nou
 
 E întrebarea pe care o primim cel mai des de la primării și consilii județene.

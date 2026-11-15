@@ -16,6 +16,10 @@ Stabilește ce straturi de pământ sau rocă sunt sub amplasament, cât de groa
 
 Conținutul documentațiilor geotehnice e reglementat de normativul NP 074-2022, aprobat prin Ordinul MDLPA nr. 27/2023. Studiul se verifică separat, de un verificator atestat pe cerința Af, cea care privește terenul de fundare. CATUC îl trece printre documentațiile complementare la autorizare, „inclusiv referatul de verificare cu cerința Af" (art. 265 alin. (2) lit. a)).
 
+![Instalație de foraj pentru investigații geotehnice pe un amplasament urban](/img/blog/foto/foraj-geotehnic.webp)
+
+*Instalație de foraj pentru investigații geotehnice înaintea unei linii de tramvai, Helsinki. Foto: [Coen](https://commons.wikimedia.org/wiki/File:GM100_GT_drill_rig_by_Hermannin_rantatie_in_Kyläsaari,_Helsinki,_Finland,_2021.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.*
+
 ## Unde se face primul
 
 CATUC îl pune foarte devreme. Studiul geotehnic, hidrologic și topografic apar printre studiile preliminare de amplasament, făcute încă din etapa de elaborare a temei de proiectare (art. 490 și 491). Logica e corectă: nu poți compara variante de traseu sau de fundare fără să știi pe ce teren stau.

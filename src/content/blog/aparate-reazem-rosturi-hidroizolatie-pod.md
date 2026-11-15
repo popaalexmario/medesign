@@ -22,6 +22,10 @@ Un rost de dilatație permite tablierului să se lungească vara și să se scur
 
 Cele mai multe degradări serioase pe care le vezi la culeele podurilor vechi sunt exact sub rosturi. Nu e o coincidență.
 
+![Rost de dilatație metalic pe carosabilul unui pod](/img/blog/foto/rost-dilatatie-pod.webp)
+
+*Rost de dilatație pe podul peste Dunăre de la Krems, Austria. Foto: [GT1976](https://commons.wikimedia.org/wiki/File:2018-10-22_%28835%29_Bridge_expansion_joint_at_Donaubrücke_in_Krems_an_der_Donau,_Austria.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.*
+
 ## Hidroizolația
 
 Între placa de beton și asfalt e o membrană care ține apa departe de beton. Are viață limitată și nu se vede. Primul semn că a cedat sunt eflorescențele albe și petele de umezeală pe fața inferioară a plăcii.
