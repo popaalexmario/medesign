@@ -10,6 +10,55 @@ const values = [
   { icon: '✍️', title: 'Asumare', desc: 'Putem pune numele nostru pe ceea ce proiectăm.' },
 ];
 import LogoMarquee from '../components/LogoMarquee.astro';
+
+// Diferențiatori: fiecare e susținut de proiecte și pagini existente pe site.
+const diferentiatori = [
+  {
+    nr: '01',
+    title: 'Proiectul complet, într-un singur contract',
+    desc: 'Studii topografice, geotehnice, hidrologice și de trafic, expertiză tehnică și verificare de proiect, coordonate de noi. Nu cauți separat fiecare specialist.',
+    href: '/servicii', link: 'Serviciile noastre',
+  },
+  {
+    nr: '02',
+    title: 'Rămânem pe șantier până la recepție',
+    desc: 'Asigurăm asistența tehnică pe durata execuției: soluții pentru ce apare la săpătură, avizarea materialelor, prezență la fazele determinante.',
+    href: '/portofoliu/dn7-versanti-valcea', link: 'Exemplu: DN7, defileul Oltului',
+  },
+  {
+    nr: '03',
+    title: 'De la comune la companii naționale',
+    desc: 'Am lucrat pentru primării de comună și de municipiu, consilii județene, CNAIR, CFR și Hidroelectrica. Știm cum diferă cerințele fiecăruia.',
+    href: '/portofoliu', link: 'Portofoliul',
+  },
+  {
+    nr: '04',
+    title: 'Lucrări pe care puțini le iau',
+    desc: 'Poduri monument istoric, structuri metalice peste calea ferată electrificată, consolidări de versanți pe drumuri fără alternativă.',
+    href: '/portofoliu/pod-fier-lugoj-timis', link: 'Exemplu: Podul de Fier, Lugoj',
+  },
+  {
+    nr: '05',
+    title: 'Documentații pe legislația la zi',
+    desc: 'Lucrăm deja pe noul Cod al amenajării teritoriului, urbanismului și construcțiilor și scriem public despre ce schimbă el.',
+    href: '/blog', link: 'Articolele noastre',
+  },
+  {
+    nr: '06',
+    title: 'Calitate certificată',
+    desc: 'Sisteme de management certificate ISO 9001, ISO 14001 și ISO 45001 pentru calitate, mediu și securitate ocupațională.',
+    href: '#certificari', link: 'Certificările',
+  },
+];
+
+// Etapele unei colaborări.
+const etape = [
+  { title: 'Discutăm tema', desc: 'Pornim de la nevoia reală și de la amplasament. Îți spunem ce documentații sunt necesare și în ce ordine.' },
+  { title: 'Studii și expertiză', desc: 'Topografie, geotehnică, hidrologie, trafic și, la construcțiile existente, expertiza tehnică.' },
+  { title: 'Soluția și documentația', desc: 'SF sau DALI, apoi proiectul pentru autorizare și proiectul tehnic de execuție.' },
+  { title: 'Avize și verificare', desc: 'Pregătim documentațiile pentru avize și coordonăm verificarea de proiect.' },
+  { title: 'Asistență pe șantier', desc: 'Rămânem alături de beneficiar și constructor până la recepția lucrărilor.' },
+];
 ---
 
 <Layout title="Despre noi" description="Despre ME Design - echipă de profesioniști cu peste 8 ani experiență în proiectarea infrastructurii.">
@@ -92,6 +141,26 @@ import LogoMarquee from '../components/LogoMarquee.astro';
     </div>
   </section>
 
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Diferențiatori</span>
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">De ce ME Design</h2>
+        <p class="text-steel-500 text-[16px] mt-3">Ce primești concret când lucrezi cu noi.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {diferentiatori.map((d, i) => (
+          <div class="group relative bg-white border border-steel-100 rounded-2xl p-6 hover:border-accent-500/40 hover:shadow-xl hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay={(i % 3) * 80}>
+            <span class="font-heading font-extrabold text-[40px] leading-none text-accent-500/20 group-hover:text-accent-500/40 transition-colors">{d.nr}</span>
+            <h3 class="font-heading font-bold text-[18px] text-brand-800 mt-3">{d.title}</h3>
+            <p class="text-steel-500 text-[14.5px] leading-relaxed mt-2">{d.desc}</p>
+            <a href={d.href} class="inline-flex items-center gap-1.5 mt-4 text-accent-600 text-[14px] font-semibold hover:gap-2.5 transition-all">{d.link} <span aria-hidden="true">→</span></a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="section-padding bg-steel-50">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-7">
@@ -111,9 +180,31 @@ import LogoMarquee from '../components/LogoMarquee.astro';
     </div>
   </section>
 
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up">
+        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Proces</span>
+        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 mt-3">Cum lucrăm</h2>
+        <p class="text-steel-500 text-[16px] mt-3">De la prima discuție până la recepția lucrării.</p>
+      </div>
+      <ol class="relative grid md:grid-cols-5 gap-6 md:gap-4">
+        <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-accent-500/20 via-accent-500/60 to-accent-500/20" aria-hidden="true"></div>
+        {etape.map((e, i) => (
+          <li class="relative flex md:flex-col items-start md:items-center md:text-center gap-4 md:gap-0" data-aos="fade-up" data-aos-delay={i * 80}>
+            <span class="relative z-10 w-12 h-12 shrink-0 rounded-full bg-accent-500 text-white font-heading font-bold text-[18px] flex items-center justify-center shadow-lg shadow-accent-500/30 ring-4 ring-white">{i + 1}</span>
+            <div class="md:mt-4">
+              <h3 class="font-heading font-bold text-[16px] text-brand-800">{e.title}</h3>
+              <p class="text-steel-500 text-[14px] leading-relaxed mt-1.5">{e.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
   <LogoMarquee />
 
-  <section class="section-padding bg-white">
+  <section id="certificari" class="section-padding bg-white scroll-mt-24">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-7">
         <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800" data-aos="fade-up">
