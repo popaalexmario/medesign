@@ -1,0 +1,77 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+import { clienti } from '../data/clienti';
+
+// Logourile urcate în poze/logouri/<id>.<ext>; restul apar ca text.
+const files = import.meta.glob<{ default: ImageMetadata }>(
+  '/poze/logouri/*.{png,jpg,jpeg,webp,svg,PNG,JPG,JPEG,WEBP,SVG}',
+  { eager: true }
+);
+const byId: Record<string, ImageMetadata> = {};
+for (const [path, mod] of Object.entries(files)) {
+  const id = path.split('/').pop()!.replace(/\.[^.]+$/, '').toLowerCase();
+  byId[id] = mod.default;
+}
+
+const items = await Promise.all(
+  clienti.map(async (c) => {
+    const img = byId[c.id];
+    if (!img) return { ...c, src: undefined };
+    const out = img.format === 'svg' ? { src: img.src } : await getImage({ src: img, height: Math.min(120, img.height), format: 'webp' });
+    return { ...c, src: out.src };
+  })
+);
+
+interface Props {
+  title?: string;
+}
+const { title = 'Beneficiari și parteneri ai proiectelor noastre' } = Astro.props;
+---
+
+<section class="py-12 md:py-14 bg-brand-900 overflow-hidden" aria-label={title}>
+  <div class="container">
+    <h2 class="text-white/90 font-heading font-bold text-[18px] md:text-[20px] mb-8">{title}</h2>
+  </div>
+  <div class="marquee group relative">
+    <div class="marquee-track flex w-max items-center group-hover:[animation-play-state:paused]">
+      {[0, 1].map((copy) => (
+        <ul class="flex items-center shrink-0" aria-hidden={copy === 1 ? 'true' : undefined}>
+          {items.map((c) => (
+            <li class="shrink-0 px-8 md:px-10">
+              {c.src ? (
+                <img
+                  src={c.src}
+                  alt={copy === 0 ? c.name + (c.sub ? ' ' + c.sub : '') : ''}
+                  class="h-10 md:h-12 w-auto max-w-[180px] object-contain grayscale brightness-0 invert opacity-60 hover:opacity-100 transition"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="text-center leading-tight opacity-60 hover:opacity-100 transition select-none">
+                  <div class="text-white font-heading font-extrabold text-[17px] md:text-[19px] tracking-tight whitespace-nowrap">{c.name}</div>
+                  {c.sub && <div class="text-white/70 text-[11px] uppercase tracking-[0.14em] mt-0.5 whitespace-nowrap">{c.sub}</div>}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+    <div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-brand-900 to-transparent"></div>
+    <div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-brand-900 to-transparent"></div>
+  </div>
+</section>
+
+<style>
+  .marquee-track {
+    animation: marquee 55s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+    .marquee { overflow-x: auto; }
+  }
+</style>

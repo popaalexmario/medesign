@@ -9,6 +9,7 @@ const values = [
   { icon: '🧠', title: 'Gândire inginerească', desc: 'Nu copiem soluții. Înțelegem problema și alegem soluția potrivită.' },
   { icon: '✍️', title: 'Asumare', desc: 'Putem pune numele nostru pe ceea ce proiectăm.' },
 ];
+import LogoMarquee from '../components/LogoMarquee.astro';
 ---
 
 <Layout title="Despre noi" description="Despre ME Design - echipă de profesioniști cu peste 8 ani experiență în proiectarea infrastructurii.">
@@ -23,7 +24,7 @@ const values = [
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-white overflow-x-clip">
     <div class="container">
       <div class="grid lg:grid-cols-2 gap-8 items-center">
         <div data-aos="fade-right">
@@ -109,6 +110,8 @@ const values = [
       </div>
     </div>
   </section>
+
+  <LogoMarquee />
 
   <section class="section-padding bg-white">
     <div class="container">

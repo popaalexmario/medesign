@@ -125,6 +125,21 @@ eroare se vede.
 - Imagini: maximum 1600px lățime, variantă de 800px în `sm/` pentru `srcset`.
   Nu pune planșe CAD ca thumbnail, sunt ilizibile la dimensiunea cardului.
 
+## Vizibilitate în asistenții AI
+
+- `public/robots.txt` permite explicit boții AI de căutare (OAI-SearchBot,
+  ChatGPT-User, PerplexityBot, Claude-SearchBot etc.).
+- `src/pages/llms.txt.ts` generează `/llms.txt` la fiecare build din servicii,
+  proiecte și articolele publicate. Nu se editează de mână.
+- Cloudflare adaugă peste robots.txt un bloc „Cloudflare Managed content” care
+  blochează boții de training și poate da 403 boților AI. Se controlează din
+  dashboard (AI Crawl Control / Bots), nu din repo.
+
+## Bara cu logouri
+
+`src/components/LogoMarquee.astro` pe „Despre noi”, date în `src/data/clienti.ts`.
+Logoul unei firme se urcă în `poze/logouri/<id>.png`; fără fișier apare numele.
+
 ## Configurare externă
 
 - `WEB3FORMS_KEY` în Cloudflare Pages → Settings → Variables (Production).
