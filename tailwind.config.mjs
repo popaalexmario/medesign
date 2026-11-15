@@ -34,6 +34,12 @@ export default {
           900: '#0f172a',
         },
       },
+      // Colțuri mai generoase, în stilul plăcilor Apple.
+      borderRadius: {
+        xl: '0.875rem',
+        '2xl': '1.25rem',
+        '3xl': '1.75rem',
+      },
       fontFamily: {
         heading: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],

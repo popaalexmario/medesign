@@ -119,7 +119,7 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
           return <a href={item.href} class:list={linkCls}>{item.label}</a>;
         })}
         <a href={otherLang.href} hreflang={otherLang.hreflang} title={otherLang.title} class="text-[13px] font-semibold tracking-wider text-steel-500 hover:text-accent-500 border border-steel-200 rounded-full px-3 py-1.5 transition-colors">{otherLang.label}</a>
-        <a href={contactHref} class="bg-brand-500 text-white px-6 py-2.5 rounded-full text-[14px] font-semibold hover:bg-brand-600 transition-all hover:shadow-lg hover:shadow-brand-500/25">
+        <a href={contactHref} class="bg-brand-500 text-white px-5 py-2 rounded-full text-[14px] font-semibold hover:bg-brand-600">
           {t.cta}
         </a>
       </div>
@@ -199,9 +199,9 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     if (scrollY > 50) {
-      header.classList.add('bg-white/95', 'backdrop-blur-lg', 'shadow-sm');
+      header.classList.add('header-glass');
     } else {
-      header.classList.remove('bg-white/95', 'backdrop-blur-lg', 'shadow-sm');
+      header.classList.remove('header-glass');
     }
     lastScroll = scrollY;
   });
