@@ -3,6 +3,8 @@ title: "Categoria de importanță și clasele de consecințe CC1–CC4"
 description: "Vechiul algoritm de punctaj pe șase factori, noul sistem din CATUC și ce se aplică în practică la încadrarea unei construcții."
 pubDate: 2026-10-28
 category: "Legislație"
+image: "/img/blog/cover-pod-armaturi-1967.webp"
+imageAlt: "Pod din beton armat în execuție, cu armăturile la vedere"
 keywords: ["categoria de importanta", "clase de consecinte", "CC1 CC2 CC3 CC4", "HG 766/1997", "punctaj categorie importanta", "CATUC art 370"]
 ---
 
@@ -91,3 +93,5 @@ Despre restul schimbărilor aduse de Cod am scris în [articolul despre fazele d
 **Surse:** Legea nr. 169/2026 (CATUC), art. 370, 440–444, 446, 577 și 583; Regulamentul privind stabilirea categoriei de importanță a construcțiilor, anexa nr. 3 la HG nr. 766/1997; metodologia aprobată prin Ordinul MLPAT nr. 31/N/1995. Exemplul de punctaj provine dintr-o fișă de stabilire a categoriei de importanță pentru o lucrare de drumuri, [publicată de Primăria Gornet](https://www.primariagornet.ro/files/47673_Stabilirea%20clasei%20de%20importanta.pdf).
 
 Dacă ai un proiect la care încadrarea e discutabilă, [scrie-ne](/contact).
+
+Imagine de copertă: pod pe I-24 peste râul Tennessee, în execuție, 1967. Foto: [Federal Highway Administration](https://commons.wikimedia.org/wiki/File:TN_3_I24_FHWA_1967_707.jpg), domeniu public, Wikimedia Commons.

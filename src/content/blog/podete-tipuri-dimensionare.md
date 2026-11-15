@@ -3,6 +3,8 @@ title: "Podețe: ce tip alegi și cum se dimensionează"
 description: "Tubular, dalat sau casetat: ce determină alegerea, cum se stabilește secțiunea și de ce un podeț subdimensionat distruge drumul din amonte."
 pubDate: 2026-10-25
 category: "Tehnic"
+image: "/img/blog/cover-podet-casetat.webp"
+imageAlt: "Podeț casetat prefabricat din beton, cu ieșirea protejată cu piatră"
 keywords: ["podet tubular", "podet dalat", "podet casetat", "dimensionare podet", "scurgere ape drum"]
 ---
 
@@ -30,10 +32,6 @@ Primul e **debitul de calcul**, care rezultă din studiul hidrologic: suprafața
 
 Costul intră în discuție abia după ce astea au restrâns variantele. De obicei rămân una sau două.
 
-![Podeț casetat prefabricat din beton, cu ieșirea protejată cu piatră spartă](/img/blog/foto/podet-casetat-prefabricat.webp)
-
-*Podeț casetat prefabricat, cu ieșirea protejată cu piatră. Foto: [Wikideas1](https://commons.wikimedia.org/wiki/File:Pre-cast_concrete_box_culvert.jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/), Wikimedia Commons.*
-
 ## Greșeala care se repetă
 
 Cel mai des întâlnim asta: podețul nou se face cu aceeași secțiune ca cel vechi, pe motiv că „așa a fost și a ținut".
@@ -55,3 +53,5 @@ Dacă ai podețe care nu mai fac față la ploi, dimensionarea corectă pleacă 
 ---
 
 **Surse.** Regimul lucrărilor de întreținere și reparații curente este cel din [capitolul privind realizarea lucrărilor de construire în lipsa oricărei formalități](https://lege5.ro/gratuit/ge4tanjtgazti/realizarea-lucrarilor-de-construire-in-lipsa-oricarei-formalitati-codul-amenajarii-teritoriului-urbanismului-si-constructiilor).
+
+Imagine de copertă: podeț casetat prefabricat. Foto: [Wikideas1](https://commons.wikimedia.org/wiki/File:Pre-cast_concrete_box_culvert.jpg), [CC0](https://creativecommons.org/publicdomain/zero/1.0/), Wikimedia Commons.

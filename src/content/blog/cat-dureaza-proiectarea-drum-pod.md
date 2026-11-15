@@ -3,6 +3,8 @@ title: "Cât durează un proiect de drum sau pod, realist"
 description: "Termenele legale pentru certificat de urbanism, avize și autorizație după CATUC, ce depinde de proiectant și unde se pierd de fapt lunile."
 pubDate: 2026-11-12
 category: "Ghiduri"
+image: "/img/blog/cover-santier-pod-1967.webp"
+imageAlt: "Șantier de pod peste un râu, cu macarale și pile în execuție"
 keywords: ["durata proiectare drum", "termen autorizatie de construire", "termen certificat de urbanism", "termen avize CATUC", "calendar proiect infrastructura"]
 ---
 
@@ -63,3 +65,5 @@ Iar dacă ai un termen fix, de exemplu o sesiune de finanțare, spune-l de la î
 ---
 
 **Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 258, 273, 316 și 334, în forma rectificată prin M. Of. nr. 862 din 14 octombrie 2026. [Legea apelor nr. 107/1996](https://lege5.ro/Gratuit/ge3demru/legea-apelor-nr-107-1996), art. 53.
+
+Imagine de copertă: șantierul podului I-64 peste râul Elizabeth, Virginia, 1967. Foto: [Federal Highway Administration](https://commons.wikimedia.org/wiki/File:VA_9_I64_FHWA_1967_820.jpg), domeniu public, Wikimedia Commons.

@@ -3,6 +3,8 @@ title: "Pasarele pietonale: de ce o structură ușoară e mai greu de proiectat"
 description: "Vibrațiile din pașii oamenilor, cota față de ape mari, accesul pentru cărucioare și biciclete. Ce decide proiectarea unei pasarele, dincolo de încărcare."
 pubDate: 2026-11-19
 category: "Tehnic"
+image: "/img/blog/cover-pasarela-orava.webp"
+imageAlt: "Pasarelă pietonală suspendată peste râul Orava"
 keywords: ["pasarela pietonala", "proiectare pasarela", "vibratii pasarela", "pod pietonal", "pasarela peste rau"]
 ---
 
@@ -55,3 +57,5 @@ O pasarelă bună e una pe care nimeni nu o observă. Oamenii trec, nu simt nimi
 ---
 
 **Surse.** EN 1990, Anexa A2, clauza A2.4.3.2, criterii de confort pentru pasarele, așa cum sunt rezumate în ghidurile Steel Construction Institute pentru [vibrațiile laterale ale pasarelelor](https://www.newsteelconstruction.com/wp/ad-428-draft-guidance-lateral-and-torsional-vibration-of-half-through-truss-footbridges/). Valorile sunt parametri determinați național; se verifică în anexa națională SR EN 1990/NA.
+
+Imagine de copertă: pasarela peste râul Orava, Dolný Kubín, Slovacia. Foto: [Oto Zapletal](https://commons.wikimedia.org/wiki/File:Footbridge_over_the_Orava_river_in_Dolný_Kubín.jpg), licență [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), Wikimedia Commons.

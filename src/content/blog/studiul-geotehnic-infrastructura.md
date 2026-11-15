@@ -3,6 +3,8 @@ title: "Studiul geotehnic: documentul pe care nu economisești"
 description: "De ce studiul geotehnic decide costul real al unui drum, pod sau zid de sprijin, ce prevede CATUC despre foraje și unde se taie greșit din buget."
 pubDate: 2026-11-18
 category: "Tehnic"
+image: "/img/blog/cover-foraj-geotehnic.webp"
+imageAlt: "Instalație de foraj pentru investigații geotehnice"
 keywords: ["studiu geotehnic", "foraj geotehnic", "NP 074-2022", "studiu geotehnic drum", "studiu geotehnic pod", "verificare Af"]
 ---
 
@@ -15,10 +17,6 @@ Toate calculele de fundații, de stabilitate a taluzurilor, de dimensionare a st
 Stabilește ce straturi de pământ sau rocă sunt sub amplasament, cât de groase sunt, ce caracteristici au și unde e apa subterană. Pe baza forajelor, a sondajelor și a încercărilor de laborator dă parametrii cu care lucrează proiectantul: capacitatea portantă, comportarea la umezire, sensibilitatea la îngheț, potențialul de alunecare.
 
 Conținutul documentațiilor geotehnice e reglementat de normativul NP 074-2022, aprobat prin Ordinul MDLPA nr. 27/2023. Studiul se verifică separat, de un verificator atestat pe cerința Af, cea care privește terenul de fundare. CATUC îl trece printre documentațiile complementare la autorizare, „inclusiv referatul de verificare cu cerința Af" (art. 265 alin. (2) lit. a)).
-
-![Instalație de foraj pentru investigații geotehnice pe un amplasament urban](/img/blog/foto/foraj-geotehnic.webp)
-
-*Instalație de foraj pentru investigații geotehnice înaintea unei linii de tramvai, Helsinki. Foto: [Coen](https://commons.wikimedia.org/wiki/File:GM100_GT_drill_rig_by_Hermannin_rantatie_in_Kyläsaari,_Helsinki,_Finland,_2021.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.*
 
 ## Unde se face primul
 
@@ -57,3 +55,5 @@ Dacă trebuie să tai din bugetul unei documentații, taie din altă parte. Un f
 ---
 
 **Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 265, 299, 490 și 491. [Ordinul MDLPA nr. 27/2023](https://lege5.ro/gratuit/geztemrzha2dk/ordinul-nr-27-2023-pentru-aprobarea-reglementarii-tehnice-normativ-privind-documentatiile-geotehnice-pentru-constructii-indicativ-np-074-2022) pentru aprobarea normativului NP 074-2022, publicat în M. Of. nr. 56 din 20 ianuarie 2023.
+
+Imagine de copertă: instalație de foraj pentru investigații geotehnice, Helsinki. Foto: [Coen](https://commons.wikimedia.org/wiki/File:GM100_GT_drill_rig_by_Hermannin_rantatie_in_Kyläsaari,_Helsinki,_Finland,_2021.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.

@@ -3,6 +3,8 @@ title: "Drum comunal, județean sau național: cine răspunde de el"
 description: "Cine deține, cine administrează și cine poate interveni pe fiecare categorie de drum, după OG 43/1997. Plus excepțiile din intravilan care încurcă des primăriile."
 pubDate: 2026-11-12
 category: "Ghiduri"
+image: "/img/projects/ANINOASA.jpg"
+imageAlt: "Drum comunal modernizat în comuna Aninoasa, județul Dâmbovița"
 keywords: ["drum comunal", "drum judetean", "drum national", "administrator drum", "OG 43/1997", "clasificare drumuri", "drum vicinal"]
 ---
 

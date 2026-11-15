@@ -3,6 +3,8 @@ title: "Apa și infrastructura: afuieri, apărări de mal, avize"
 description: "De ce podurile peste râuri cad de jos în sus, ce lucrări hidrotehnice însoțesc un drum sau un pod și ce cere Legea apelor înainte de execuție."
 pubDate: 2026-11-12
 category: "Tehnic"
+image: "/img/blog/cover-craiova-casetare.webp"
+imageAlt: "Vedere aeriană a casetării canalului Craiovița în execuție, Craiova"
 keywords: ["afuiere pod", "aparare de mal", "aviz gospodarirea apelor", "amenajari hidrotehnice", "regularizare albie", "traversare curs de apa"]
 ---
 
@@ -51,10 +53,6 @@ CATUC păstrează avizul de gospodărire a apelor în lista avizelor pentru auto
 ## Ce am lucrat
 
 La Craiova am proiectat casetarea canalului Craiovița pe 1.800 m, sub o stradă nouă cu patru benzi. Caseta trebuia să răspundă simultan debitului de calcul și încărcărilor din trafic ([proiectul](/portofoliu/craiova-dolj)).
-
-![Vedere aeriană a casetării canalului Craiovița în execuție](/img/blog/foto/craiova-casetare-canal.webp)
-
-*Casetarea canalului Craiovița, Craiova, în execuție.*
 
 La Bughea de Jos, în Argeș, malurile au fost amenajate cu ziduri de sprijin, iar pasarelele au fost poziționate în funcție de regimul apelor ([proiectul](/portofoliu/bughea-de-jos-arges)). La Fetești, pentru portul turistic de pe brațul Borcea, cotele platformei au fost stabilite în raport cu variația nivelurilor Dunării ([proiectul](/portofoliu/port-turistic-fetesti)).
 
