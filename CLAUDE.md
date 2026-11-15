@@ -137,7 +137,8 @@ eroare se vede.
 
 ## Bara cu logouri
 
-`src/components/LogoMarquee.astro` pe „Despre noi”, denumiri oficiale complete în
+`src/components/LogoMarquee.astro` pe „Despre noi” (variant dark) și pe „Portofoliu”
+(variant light, sub „Beneficiarii proiectelor noastre”), denumiri oficiale complete în
 `src/data/clienti.ts`. Fiecare colaborator are folderul `poze/logouri/<id>/`:
 fișierul urcat de Mario are prioritate, altfel `_site-oficial.png` (luat de pe
 site-ul oficial sau Commons; stemele sunt simboluri oficiale, art. 9 din Legea

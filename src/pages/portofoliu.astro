@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
+import LogoMarquee from '../components/LogoMarquee.astro';
 
 import { getCollection } from 'astro:content';
 import { cardSrcset, CARD_SIZES } from '../utils/img';
@@ -208,6 +209,13 @@ const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), 
           Lucrăm pentru autorități publice locale și județene, companii naționale de infrastructură și operatori de utilități.
         </p>
       </div>
+    </div>
+
+    <div class="mb-10">
+      <LogoMarquee title={false} variant="light" />
+    </div>
+
+    <div class="container">
 
       <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {beneficiariGrupati.map((grup, i) => (
