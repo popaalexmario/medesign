@@ -30,6 +30,12 @@ proiectul Pages `medesign`. Contul Cloudflare: `968493b1cd03d86452b1536d257b0e92
 | `functions/api/contact.js` | Backendul formularului. Vezi `functions/README.md`. |
 | `poze/proiecte/<slug>/`, `poze/blog/<slug>/` | Poze urcate de Mario din GitHub. Apar automat în galeria paginii (`src/utils/autoGallery.ts`), redimensionate la build. Vezi `poze/README.md`. |
 
+**Fișa de proiect** începe cu o galerie derulabilă (`PhotoGrid.astro`): coperta
+(`image`), apoi imaginile din `gallery` (planșe CAD, randări, afișate întregi),
+apoi pozele urcate în `poze/proiecte/<slug>/`. Planșele CAD nu se șterg niciodată
+din fișă, chiar dacă nu mai sunt copertă (cerința lui Mario). Când coperta se
+face dintr-o poză urcată, numele ei se trece în `coverFrom`, ca să nu apară dublat.
+
 Workflow-ul `.github/workflows/sync-productie.yml` copiază orice push din `main`
 în branch-ul de producție, ca pozele urcate din interfața GitHub să ajungă pe site.
 La un proiect sau articol nou, creează și folderul lui în `poze/` cu un `.gitkeep`.

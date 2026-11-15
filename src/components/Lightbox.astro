@@ -9,6 +9,15 @@
     </svg>
   </button>
 
+  <!-- Navigare în galerie -->
+  <button id="lightbox-prev" class="hidden absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 items-center justify-center transition-all" aria-label="Imaginea anterioară">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+  </button>
+  <button id="lightbox-next" class="hidden absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/25 items-center justify-center transition-all" aria-label="Imaginea următoare">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+  </button>
+  <div id="lightbox-count" class="hidden absolute top-8 left-1/2 -translate-x-1/2 z-10 text-white/70 text-[14px] font-medium"></div>
+
   <!-- Image container -->
   <div class="absolute inset-0 flex items-center justify-center p-6 md:p-12">
     <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl lightbox-image" />
@@ -74,25 +83,46 @@
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxCaption = document.getElementById('lightbox-caption');
     const lightboxClose = document.getElementById('lightbox-close');
+    const btnPrev = document.getElementById('lightbox-prev');
+    const btnNext = document.getElementById('lightbox-next');
+    const counter = document.getElementById('lightbox-count');
 
-    function openLightbox(src, alt) {
-      lightboxImg.src = src;
-      lightboxImg.alt = alt || '';
-      lightboxCaption.textContent = alt || '';
-      lightboxCaption.style.display = alt ? '' : 'none';
+    // Galeria curentă: imaginile din același container [data-gallery].
+    let group = [];
+    let index = 0;
 
+    const imgOf = (el) => (el.tagName === 'IMG' ? el : el.querySelector('img'));
+
+    function show(i) {
+      if (!group.length) return;
+      index = (i + group.length) % group.length;
+      const img = imgOf(group[index]);
+      const cap = group[index].dataset.caption || img.alt || '';
+      lightboxImg.src = img.dataset.full || img.src;
+      lightboxImg.alt = img.alt || '';
+      lightboxCaption.textContent = cap;
+      lightboxCaption.style.display = cap ? '' : 'none';
+      const many = group.length > 1;
+      [btnPrev, btnNext, counter].forEach((b) => {
+        b.classList.toggle('hidden', !many);
+        if (b !== counter) b.classList.toggle('flex', many);
+      });
+      counter.textContent = many ? (index + 1) + ' / ' + group.length : '';
+    }
+
+    function openLightbox(el) {
+      const box = el.closest('[data-gallery]');
+      group = box ? Array.from(box.querySelectorAll('[data-lightbox]')) : [el];
+      show(Math.max(0, group.indexOf(el)));
       lightbox.classList.remove('hidden', 'closing');
       document.body.style.overflow = 'hidden';
-      requestAnimationFrame(() => {
-        lightbox.classList.add('active');
-      });
+      requestAnimationFrame(() => lightbox.classList.add('active'));
     }
 
     function closeLightbox() {
       lightbox.classList.remove('active');
       lightbox.classList.add('closing');
       document.body.style.overflow = '';
-
       setTimeout(() => {
         lightbox.classList.add('hidden');
         lightbox.classList.remove('closing');
@@ -100,27 +130,35 @@
       }, 350);
     }
 
-    document.querySelectorAll('[data-lightbox]').forEach(el => {
+    document.querySelectorAll('[data-lightbox]').forEach((el) => {
       el.style.cursor = 'zoom-in';
       el.addEventListener('click', (e) => {
         e.preventDefault();
-        const img = el.tagName === 'IMG' ? el : el.querySelector('img');
-        if (img) {
-          openLightbox(img.dataset.full || img.src, img.alt);
-        }
+        if (imgOf(el)) openLightbox(el);
       });
     });
 
+    btnPrev.addEventListener('click', (e) => { e.stopPropagation(); show(index - 1); });
+    btnNext.addEventListener('click', (e) => { e.stopPropagation(); show(index + 1); });
     lightboxClose.addEventListener('click', closeLightbox);
     lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox || e.target.classList.contains('lightbox-backdrop')) {
-        closeLightbox();
-      }
+      if (e.target === lightbox || e.target.classList.contains('lightbox-backdrop')) closeLightbox();
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-        closeLightbox();
-      }
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') show(index - 1);
+      if (e.key === 'ArrowRight') show(index + 1);
+    });
+
+    // Swipe pe telefon
+    let x0 = null;
+    lightbox.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    lightbox.addEventListener('touchend', (e) => {
+      if (x0 === null || group.length < 2) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+      x0 = null;
     });
   })();
 </script>

@@ -52,6 +52,10 @@ CATUC păstrează avizul de gospodărire a apelor în lista avizelor pentru auto
 
 La Craiova am proiectat casetarea canalului Craiovița pe 1.800 m, sub o stradă nouă cu patru benzi. Caseta trebuia să răspundă simultan debitului de calcul și încărcărilor din trafic ([proiectul](/portofoliu/craiova-dolj)).
 
+![Vedere aeriană a casetării canalului Craiovița în execuție](/img/blog/foto/craiova-casetare-canal.webp)
+
+*Casetarea canalului Craiovița, Craiova, în execuție.*
+
 La Bughea de Jos, în Argeș, malurile au fost amenajate cu ziduri de sprijin, iar pasarelele au fost poziționate în funcție de regimul apelor ([proiectul](/portofoliu/bughea-de-jos-arges)). La Fetești, pentru portul turistic de pe brațul Borcea, cotele platformei au fost stabilite în raport cu variația nivelurilor Dunării ([proiectul](/portofoliu/port-turistic-fetesti)).
 
 Serviciul e descris pe pagina de [amenajări hidrotehnice](/servicii/amenajari-hidrotehnice).

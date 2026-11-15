@@ -52,6 +52,10 @@ Aspectul exterior face parte din valoarea monumentului: parapeți, console, prof
 
 Iar capacitatea portantă are o limită pe care nu o forțezi. Uneori răspunsul corect e un pod istoric care rămâne pietonal sau cu restricție de tonaj, cu traficul greu mutat pe o structură nouă alături. E o decizie de administrator, dar proiectantul trebuie să o pună pe masă.
 
+![Calea Podului de Fier din Lugoj, între grinzile cu zăbrele](/img/blog/foto/lugoj-pod-fier-cale.webp)
+
+*Podul de Fier peste Timiș, Lugoj: grindă cu zăbrele din 1902, clasată monument istoric.*
+
 ## Ce diferă tehnic
 
 O structură metalică de peste o sută de ani nu se evaluează din tabele. Materialul nu corespunde oțelurilor normate azi, așa că rezistența se stabilește prin prelevări și încercări. Oboseala acumulată pe un secol de trafic trebuie estimată explicit. Documentația originală, dacă există, rar mai corespunde cu ce e în teren după intervențiile succesive.

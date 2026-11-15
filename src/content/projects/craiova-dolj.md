@@ -8,8 +8,11 @@ judet: "Dolj"
 beneficiar: "U.A.T. Municipiul Craiova"
 region: "oltenia"
 year: "2023 – 2025"
-image: "/img/projects/CRAIOVA.png"
-gallery: []
+image: "/img/projects/craiova-santier.webp"
+coverFrom: "2026-11-10 23.34.31.jpg"
+gallery:
+  - src: "/img/projects/CRAIOVA.png"
+    caption: "Planșă din proiect"
 order: 5
 ---
 

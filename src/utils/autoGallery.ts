@@ -22,12 +22,16 @@ const GENERIC = /^(img|dsc|dscn|pxl|photo|foto|image|whatsapp|screenshot|captura
 function captionFrom(file: string): string | undefined {
   const base = file.replace(/\.[^.]+$/, '').replace(/^\d+[-_ .]*/, '');
   if (GENERIC.test(base)) return undefined;
+  // Nume generate automat (Facebook, WhatsApp, camere): aproape numai cifre.
+  if ((base.match(/\p{L}/gu) ?? []).length < 3) return undefined;
   const text = base.replace(/[-_]+/g, ' ').trim();
   if (text.length < 3) return undefined;
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-export type Photo = { thumb: string; full: string; caption?: string };
+// fit: 'cover' pentru fotografii, 'contain' pentru planșe și randări, care
+// trebuie văzute întregi. name: numele fișierului urcat, ca să evităm dublurile.
+export type Photo = { thumb: string; full: string; caption?: string; fit?: 'cover' | 'contain'; name?: string };
 
 async function build(map: Record<string, Mod>, slug: string): Promise<Photo[]> {
   const entries = Object.entries(map)
@@ -39,7 +43,8 @@ async function build(map: Record<string, Mod>, slug: string): Promise<Photo[]> {
       const img = mod.default;
       const thumb = await getImage({ src: img, width: Math.min(800, img.width), format: 'webp', quality: 78 });
       const full = await getImage({ src: img, width: Math.min(1600, img.width), format: 'webp', quality: 82 });
-      return { thumb: thumb.src, full: full.src, caption: captionFrom(p.split('/').pop()!) };
+      const name = p.split('/').pop()!;
+      return { thumb: thumb.src, full: full.src, caption: captionFrom(name), fit: 'cover' as const, name };
     })
   );
 }

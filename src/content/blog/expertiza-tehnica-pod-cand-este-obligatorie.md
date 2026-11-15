@@ -83,6 +83,10 @@ Nu e un impediment. Expertiza se face pe relevare efectivă și investigații î
 
 La podurile clasate ca monument istoric apar în plus cerințe de avizare și restricții privind soluțiile admisibile. Iar expertiza o poate face numai un expert atestat suplimentar în protejarea monumentelor istorice (art. 436 alin. (2) din CATUC). De luat în calcul de la început, nu când ai terminat proiectul. Detalii în articolul despre [podurile monument istoric](/blog/poduri-monument-istoric-interventii).
 
+![Podul de Fier peste Râul Timiș din Lugoj, vedere laterală](/img/blog/foto/lugoj-pod-fier-lateral.webp)
+
+*Podul de Fier din Lugoj, structură metalică din 1902.*
+
 ## Ce am lucrat
 
 Am elaborat documentații de intervenție pentru structuri de vechimi și tipuri foarte diferite, inclusiv în situațiile dificile de mai sus.

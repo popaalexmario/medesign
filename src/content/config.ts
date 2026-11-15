@@ -31,6 +31,9 @@ const projects = defineCollection({
     region: z.enum(['muntenia', 'oltenia', 'dobrogea', 'transilvania', 'moldova']),
     year: z.string(),
     image: z.string().optional(),
+    // Numele fișierului din poze/proiecte/<slug>/ din care s-a făcut coperta,
+    // ca să nu apară de două ori în galeria fișei.
+    coverFrom: z.string().optional(),
     gallery: z
       .array(z.union([z.string(), z.object({ src: z.string(), caption: z.string().optional() })]))
       .default([]),

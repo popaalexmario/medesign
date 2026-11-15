@@ -40,6 +40,10 @@ Proiectul stabilește fazele de execuție determinante (art. 426 alin. (1) lit. 
 
 La fiecare, proiectantul de specialitate e prezent și semnează. Dacă nu vine nimeni, constructorul fie așteaptă, fie continuă pe răspunderea lui. Ambele variante costă.
 
+![Platformă de lucru la înălțime pe un versant stâncos de lângă DN7](/img/blog/foto/dn7-versant-platforma.webp)
+
+*Lucrări pe versant la DN7. Soluțiile s-au adaptat la condițiile găsite pe fiecare sector.*
+
 ## Unde se termină răspunderea
 
 Art. 426 alin. (4) e scurt: proiectantul nu răspunde de controlul calității lucrărilor de execuție. Acela e rolul dirigintelui de șantier și al responsabilului tehnic cu execuția.

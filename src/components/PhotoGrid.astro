@@ -1,33 +1,142 @@
 ---
 import type { Photo } from '../utils/autoGallery';
 
+// Galerie derulabilă: o poză mare pe rând, săgeți, miniaturi, swipe pe telefon
+// (scroll-snap nativ), iar click pe poză o deschide mărită în Lightbox, unde se
+// poate naviga în continuare prin toată galeria.
 interface Props {
   photos: Photo[];
   alt: string;
-  title?: string;
+  /** false = fără titlu (galeria din capul fișei de proiect) */
+  title?: string | false;
+  class?: string;
 }
 
-const { photos, alt, title = 'Imagini din proiect' } = Astro.props;
+const { photos, alt, title = 'Imagini din proiect', class: cls = 'mt-10' } = Astro.props;
+const many = photos.length > 1;
 ---
 
 {photos.length > 0 && (
-  <div class="mt-10 not-prose">
-    <h2 class="text-[20px] font-heading font-bold text-brand-800 mb-4">{title}</h2>
-    <div class="grid sm:grid-cols-2 gap-4">
-      {photos.map((p) => (
-        <figure class="rounded-2xl overflow-hidden border border-steel-100 cursor-zoom-in" data-lightbox>
-          <img
-            src={p.thumb}
-            data-full={p.full}
-            alt={p.caption ?? alt}
-            class="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500"
-            loading="lazy"
-            width="800"
-            height="600"
-          />
-          {p.caption && <figcaption class="text-steel-500 text-[13px] p-3">{p.caption}</figcaption>}
-        </figure>
-      ))}
+  <div class:list={['not-prose', cls]} data-carousel data-gallery>
+    {title !== false && (
+      <div class="flex items-end justify-between mb-4 gap-4">
+        <h2 class="text-[20px] font-heading font-bold text-brand-800">{title}</h2>
+      </div>
+    )}
+
+    <div class="relative group">
+      <div
+        class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-2xl bg-steel-100 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        data-track
+      >
+        {photos.map((p, i) => (
+          <figure class="relative shrink-0 w-full snap-center" data-lightbox data-caption={p.caption ?? ''}>
+            <img
+              src={p.thumb}
+              data-full={p.full}
+              alt={p.caption ?? `${alt}, imaginea ${i + 1}`}
+              class:list={['w-full aspect-[16/10]', p.fit === 'contain' ? 'object-contain bg-white' : 'object-cover']}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              width="800"
+              height="500"
+            />
+            {p.caption && (
+              <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-[14px] px-5 pt-10 pb-4">
+                {p.caption}
+              </figcaption>
+            )}
+          </figure>
+        ))}
+      </div>
+
+      {many && (
+        <>
+          <span class="absolute top-3 right-3 bg-black/55 text-white text-[13px] font-medium px-3 py-1 rounded-full tabular-nums" data-counter>1 / {photos.length}</span>
+          <button
+            type="button"
+            class="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-brand-800 hover:bg-white transition disabled:opacity-0"
+            aria-label="Imaginea anterioară"
+            data-prev
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" /></svg>
+          </button>
+          <button
+            type="button"
+            class="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 shadow-lg flex items-center justify-center text-brand-800 hover:bg-white transition disabled:opacity-0"
+            aria-label="Imaginea următoare"
+            data-next
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+          </button>
+        </>
+      )}
     </div>
+
+    {many && (
+      <div class="flex gap-2 mt-3 overflow-x-auto pb-1 [scrollbar-width:thin]" data-thumbs>
+        {photos.map((p, i) => (
+          <button
+            type="button"
+            class="shrink-0 w-20 h-14 md:w-24 md:h-16 rounded-lg overflow-hidden border-2 border-transparent opacity-60 hover:opacity-100 transition data-[active=true]:border-accent-500 data-[active=true]:opacity-100"
+            aria-label={`Imaginea ${i + 1}`}
+            data-thumb={i}
+            data-active={i === 0 ? 'true' : 'false'}
+          >
+            <img src={p.thumb} alt="" class="w-full h-full object-cover" loading="lazy" width="96" height="64" />
+          </button>
+        ))}
+      </div>
+    )}
   </div>
 )}
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll('[data-carousel]').forEach(function (root) {
+      if (root.dataset.ready) return;
+      root.dataset.ready = '1';
+      var track = root.querySelector('[data-track]');
+      var slides = track ? track.children : [];
+      if (!track || slides.length < 2) return;
+      var prev = root.querySelector('[data-prev]');
+      var next = root.querySelector('[data-next]');
+      var counter = root.querySelector('[data-counter]');
+      var thumbs = root.querySelectorAll('[data-thumb]');
+      var current = 0;
+
+      function go(i) {
+        i = Math.max(0, Math.min(slides.length - 1, i));
+        track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+      }
+      function update() {
+        var i = Math.round(track.scrollLeft / track.clientWidth);
+        if (i === current && root.dataset.init) return;
+        root.dataset.init = '1';
+        current = i;
+        if (counter) counter.textContent = (i + 1) + ' / ' + slides.length;
+        if (prev) prev.disabled = i === 0;
+        if (next) next.disabled = i === slides.length - 1;
+        thumbs.forEach(function (t, k) {
+          t.dataset.active = k === i ? 'true' : 'false';
+          // Derulează doar banda de miniaturi, nu pagina.
+          if (k === i && t.parentElement) {
+            var bar = t.parentElement;
+            bar.scrollTo({ left: t.offsetLeft - (bar.clientWidth - t.clientWidth) / 2, behavior: 'smooth' });
+          }
+        });
+      }
+      prev && prev.addEventListener('click', function () { go(current - 1); });
+      next && next.addEventListener('click', function () { go(current + 1); });
+      thumbs.forEach(function (t) {
+        t.addEventListener('click', function () { go(Number(t.dataset.thumb)); });
+      });
+      var raf;
+      track.addEventListener('scroll', function () {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(update);
+      }, { passive: true });
+      window.addEventListener('resize', function () { go(current); });
+      update();
+    });
+  })();
+</script>

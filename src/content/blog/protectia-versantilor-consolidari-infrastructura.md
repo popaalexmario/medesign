@@ -72,6 +72,10 @@ O consolidare proiectată fără investigații e o presupunere scumpă.
 
 Pentru intervențiile la construcții existente, CATUC prevede elaborarea studiilor diagnostic și a celor de specialitate, expertiza tehnică și, după caz, altele în funcție de obiectiv.
 
+![Utilaj care lucrează la protecția unui versant stâncos lângă carosabilul DN7](/img/blog/foto/dn7-versanti-lucrari.webp)
+
+*Lucrări de protecție a versanților pe DN7, în defileul Oltului.*
+
 ## Ce am lucrat
 
 Pe **DN 7, în județul Vâlcea**, am elaborat proiectul tehnic de execuție și asigurăm asistența tehnică pentru patru sectoare: km 198+200–207+000, km 216+000–219+000, km 224+000–227+300 și km 228+000–233+200, în zona Lotrișor. Sectoare de drum național unde materialul desprins din versanți ajunge pe carosabil și pune în pericol circulația. Soluțiile au trebuit adaptate pe fiecare sector, după configurația versantului și mecanismul de desprindere.
