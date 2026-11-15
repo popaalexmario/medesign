@@ -1,7 +1,7 @@
 ---
 title: "Studiul geotehnic: documentul pe care nu economisești"
 description: "De ce studiul geotehnic decide costul real al unui drum, pod sau zid de sprijin, ce prevede CATUC despre foraje și unde se taie greșit din buget."
-pubDate: 2026-11-15
+pubDate: 2026-11-18
 category: "Tehnic"
 keywords: ["studiu geotehnic", "foraj geotehnic", "NP 074-2022", "studiu geotehnic drum", "studiu geotehnic pod", "verificare Af"]
 ---
@@ -27,6 +27,10 @@ CATUC îl pune foarte devreme. Studiul geotehnic, hidrologic și topografic apar
 Forajele geotehnice și celelalte investigații necesare studiilor pentru fezabilitate, proiect tehnic sau detalii de execuție se pot face fără autorizație de construire și fără aviz de mediu (art. 299 alin. (9)).
 
 Iar pentru obiectivele de infrastructură, proprietarii terenurilor sunt obligați să permită accesul celor care fac investigațiile geotehnice, cu despăgubiri pentru eventualele deteriorări dovedite ale terenului (art. 299 alin. (10)). Pe un traseu de drum care trece prin zeci de parcele private, prevederea asta deblochează lucruri care altfel ar fi stat luni.
+
+![Profil geotehnic cu patru foraje, o lentilă de argilă moale nedetectată între ele și variația sezonieră a apei subterane](/img/blog/schite/geotehnic-foraje-profil.svg)
+
+*Schiță de principiu: ce poate rata un studiu cu foraje prea rare sau prea scurte.*
 
 ## Unde se taie greșit
 

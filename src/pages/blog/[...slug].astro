@@ -1,5 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { isPublished } from '../../utils/published';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -9,7 +10,7 @@ import PhotoGrid from '../../components/PhotoGrid.astro';
 import { blogPhotos } from '../../utils/autoGallery';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = await getCollection('blog', isPublished);
   return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
 }
 
@@ -19,7 +20,7 @@ const { post } = Astro.props;
 const { Content, headings } = await post.render();
 const photos = await blogPhotos(post.slug);
 
-const allPosts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+const allPosts = (await getCollection('blog', isPublished)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 

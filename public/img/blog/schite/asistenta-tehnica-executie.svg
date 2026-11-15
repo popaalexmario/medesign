@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1e3a5f"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="#f8fafc"/>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0a1628">Proiectantul pe șantier, de la începere la recepție</text>
+  <text x="40" y="82" font-size="17" fill="#64748b">Asistența tehnică după CATUC, art. 426 și 521. Schemă simplificată.</text>
+
+  <!-- axa timpului -->
+  <line x1="80" y1="210" x2="1110" y2="210" stroke="#1e3a5f" stroke-width="5" marker-end="url(#ar)"/>
+  <g font-size="16" fill="#0a1628" text-anchor="middle">
+    <circle cx="110" cy="210" r="13" fill="#1e3a5f"/>
+    <text x="110" y="170" font-weight="700">Începerea</text><text x="110" y="190" font-weight="700">execuției</text>
+    <circle cx="1040" cy="210" r="13" fill="#1e3a5f"/>
+    <text x="1040" y="170" font-weight="700">Recepția la</text><text x="1040" y="190" font-weight="700">terminarea lucrărilor</text>
+  </g>
+  <!-- faze determinante -->
+  <g font-size="15" fill="#b45309" text-anchor="middle" font-weight="700">
+    <rect x="290" y="196" width="28" height="28" fill="#d97706" transform="rotate(45 304 210)"/>
+    <rect x="530" y="196" width="28" height="28" fill="#d97706" transform="rotate(45 544 210)"/>
+    <rect x="770" y="196" width="28" height="28" fill="#d97706" transform="rotate(45 784 210)"/>
+    <text x="304" y="258">fază determinantă</text><text x="304" y="276" font-weight="400" fill="#64748b">ex. fundul săpăturii</text>
+    <text x="544" y="258">fază determinantă</text><text x="544" y="276" font-weight="400" fill="#64748b">ex. armătura înainte de turnare</text>
+    <text x="784" y="258">fază determinantă</text><text x="784" y="276" font-weight="400" fill="#64748b">ex. ancoraje înainte de injectare</text>
+  </g>
+
+  <!-- ce face proiectantul -->
+  <text x="40" y="340" font-size="20" font-weight="700" fill="#1e3a5f">Ce face proiectantul pe parcurs</text>
+  <g font-size="17" fill="#0a1628">
+    <rect x="40" y="360" width="540" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <text x="60" y="388">Analizează materialele și mostrele propuse</text>
+    <text x="60" y="410" font-size="15" fill="#64748b">recomandă: acceptare, cu condiții, respingere</text>
+    <rect x="40" y="434" width="540" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <text x="60" y="462">Analizează proiectele de fabricație</text>
+    <text x="60" y="484" font-size="15" fill="#64748b">de exemplu desenele de uzinare ale unei structuri metalice</text>
+    <rect x="40" y="508" width="540" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <text x="60" y="536">Dă soluții pentru situațiile neprevăzute</text>
+    <text x="60" y="558" font-size="15" fill="#64748b">modifică documentația și urmărește aplicarea pe șantier</text>
+    <rect x="40" y="582" width="540" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <text x="60" y="610">Emite dispoziții de șantier și note de constatare</text>
+    <text x="60" y="632" font-size="15" fill="#64748b">participă la ședințele periodice de coordonare</text>
+  </g>
+
+  <!-- ordinea semnăturilor -->
+  <text x="640" y="340" font-size="20" font-weight="700" fill="#1e3a5f">Cine semnează procesul-verbal</text>
+  <g font-size="17" fill="#0a1628">
+    <rect x="640" y="360" width="520" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <circle cx="675" cy="391" r="16" fill="#1e3a5f"/><text x="675" y="397" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="705" y="397">Dirigintele de șantier</text>
+    <rect x="640" y="434" width="520" height="62" rx="10" fill="#fff" stroke="#cbd5e1"/>
+    <circle cx="675" cy="465" r="16" fill="#1e3a5f"/><text x="675" y="471" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="705" y="471">Responsabilul tehnic cu execuția</text>
+    <rect x="640" y="508" width="520" height="62" rx="10" fill="#fff" stroke="#d97706" stroke-width="2"/>
+    <circle cx="675" cy="539" r="16" fill="#d97706"/><text x="675" y="545" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="705" y="545">Proiectantul, numai după ei (art. 426 alin. (3))</text>
+  </g>
+  <text x="640" y="610" font-size="16" fill="#475569">Proiectantul nu răspunde de controlul calității execuției</text>
+  <text x="640" y="632" font-size="16" fill="#475569">(art. 426 alin. (4)). Răspunde pentru soluția lui.</text>
+</svg>

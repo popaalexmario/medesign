@@ -1,0 +1,40 @@
+# Articolele cu pubDate în viitor nu apar pe site (vezi src/utils/published.ts).
+# În fiecare dimineață, la 07:07 ora României (05:07 UTC iarna), workflow-ul
+# caută articolele programate pentru ziua curentă. Dacă găsește, face un commit
+# gol în main și în branch-ul de producție, iar Cloudflare Pages reconstruiește
+# site-ul cu articolul nou. În zilele fără nimic programat nu face nimic.
+name: Publicare programată
+
+on:
+  schedule:
+    - cron: '7 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Caută articolele programate pentru azi
+        id: azi
+        run: |
+          AZI=$(date -u +%F)
+          LISTA=$(grep -l "^pubDate: ${AZI}\s*$" src/content/blog/*.md | xargs -r -n1 basename | sed 's/\.md$//' | paste -sd ' ' -)
+          echo "Azi: ${AZI}. Programate: ${LISTA:-niciunul}"
+          echo "lista=${LISTA}" >> "$GITHUB_OUTPUT"
+
+      - name: Declanșează publicarea
+        if: steps.azi.outputs.lista != ''
+        run: |
+          git config user.name "publicare-programata"
+          git config user.email "actions@users.noreply.github.com"
+          git commit --allow-empty -m "Publicare programată: ${{ steps.azi.outputs.lista }}"
+          git push origin HEAD:main
+          git push origin HEAD:refs/heads/claude/remove-phone-production-3uuKc

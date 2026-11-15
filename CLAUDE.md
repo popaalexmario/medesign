@@ -34,6 +34,16 @@ Workflow-ul `.github/workflows/sync-productie.yml` copiază orice push din `main
 în branch-ul de producție, ca pozele urcate din interfața GitHub să ajungă pe site.
 La un proiect sau articol nou, creează și folderul lui în `poze/` cu un `.gitkeep`.
 
+**Publicare programată.** Un articol cu `pubDate` în viitor nu apare nicăieri
+(pagină, listă, RSS, sitemap), prin `src/utils/published.ts`. Workflow-ul
+`.github/workflows/publicare-programata.yml` rulează zilnic la 05:07 UTC și, dacă
+are ceva programat azi, face un commit gol în ambele branch-uri ca să pornească
+build-ul. Articolele între ele se programează în ordinea linkurilor interne:
+cel care e citat apare primul.
+
+**Schițe.** Desenele SVG din articole sunt în `public/img/blog/schite/`, în
+culorile site-ului, cu legendă numerotată și mențiunea „schiță de principiu”.
+
 Paginile de serviciu și cele de zonă se generează din fișierele de date. Când
 adaugi un serviciu, apare automat peste tot.
 

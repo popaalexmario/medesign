@@ -1,7 +1,7 @@
 ---
 title: "Rosturi, aparate de reazem, hidroizolație: unde începe un pod să moară"
 description: "Piesele mici ale unui pod cedează primele și, neînlocuite la timp, iau structura cu ele. Ce se degradează, de ce și ce se face fără reparație capitală."
-pubDate: 2026-11-15
+pubDate: 2026-11-17
 category: "Tehnic"
 image: "/img/projects/pod%20gladiolelor.png"
 imageAlt: "Podul de pe strada Gladiolelor din Sibiu"
@@ -9,6 +9,10 @@ keywords: ["aparate de reazem pod", "rost de dilatatie pod", "hidroizolatie pod"
 ---
 
 Grinzile unui pod din beton armat pot ține o sută de ani. Rostul de dilatație de deasupra lor ține mult mai puțin. Diferența dintre un pod care îmbătrânește frumos și unul care ajunge la reparație capitală stă de cele mai multe ori în cât de repede s-au schimbat piesele mici.
+
+![Secțiune prin culeea unui pod: rost de dilatație, hidroizolație, aparat de reazem și zonele unde apa degradează betonul](/img/blog/schite/pod-rost-aparat-reazem.svg)
+
+*Schiță de principiu: drumul apei printr-un rost neetanș și printr-o gură de scurgere cu tub prea scurt.*
 
 ## Apa intră pe la rosturi
 

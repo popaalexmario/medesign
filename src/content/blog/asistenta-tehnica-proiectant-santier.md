@@ -1,7 +1,7 @@
 ---
 title: "Asistența tehnică: ce face proiectantul după ce predă proiectul"
 description: "Ce cuprinde asistența tehnică pe șantier după CATUC, ce e obligatoriu, de ce rămâne la proiectant și unde se termină răspunderea lui."
-pubDate: 2026-11-15
+pubDate: 2026-11-16
 category: "Ghiduri"
 image: "/img/projects/dn7.webp"
 imageAlt: "Lucrări de protecție a versanților pe DN7, în defileul Oltului"
@@ -29,6 +29,10 @@ Când apare o neconformitate în execuție, proiectantul analizează și recoman
 Dă soluții pentru situațiile neprevăzute și modifică documentația de execuție în consecință. Apoi urmărește că soluția se aplică pe șantier.
 
 Formalizează totul prin dispoziții de șantier și note de constatare. Și participă la ședințele periodice de coordonare.
+
+![Schemă: activitățile proiectantului pe durata execuției și ordinea semnăturilor pe procesul-verbal](/img/blog/schite/asistenta-tehnica-executie.svg)
+
+*Schemă simplificată după art. 426 și 521 din CATUC.*
 
 ## Fazele determinante
 

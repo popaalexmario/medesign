@@ -1,11 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../utils/published';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { cardSrcset, CARD_SIZES } from '../../utils/img';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+const posts = (await getCollection('blog', isPublished)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 

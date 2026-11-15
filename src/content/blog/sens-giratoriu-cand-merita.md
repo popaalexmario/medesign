@@ -1,7 +1,7 @@
 ---
 title: "Sens giratoriu sau semafor? Ce decide de fapt"
 description: "Când un sens giratoriu e soluția bună pentru o intersecție, când nu e, și ce trebuie verificat înainte: trafic, spațiu, vehicule grele, pietoni și ape pluviale."
-pubDate: 2026-11-15
+pubDate: 2026-11-20
 category: "Tehnic"
 image: "/img/projects/BRAILA.PNG"
 imageAlt: "Sens giratoriu în execuție, vedere aeriană"
@@ -29,6 +29,10 @@ Când nu e loc. Un giratoriu eficient are nevoie de un diametru minim, iar în z
 Când intersecția e foarte apropiată de alta. Coada de la giratoriu ajunge în intersecția vecină și le blochează pe amândouă.
 
 Și când volumul de pietoni e mare și continuu. Trecerile de pietoni de pe brațe opresc ieșirile, iar giratoriul se încarcă din interior.
+
+![Plan de principiu al unui sens giratoriu cu insula centrală, zona carosabilă pentru vehicule lungi, treceri de pietoni și gabaritul de virare](/img/blog/schite/giratoriu-elemente.svg)
+
+*Schiță de principiu: elementele care se verifică la proiectarea unui giratoriu.*
 
 ## Ce se verifică în proiect
 

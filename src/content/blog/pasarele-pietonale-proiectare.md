@@ -1,7 +1,7 @@
 ---
 title: "Pasarele pietonale: de ce o structură ușoară e mai greu de proiectat"
 description: "Vibrațiile din pașii oamenilor, cota față de ape mari, accesul pentru cărucioare și biciclete. Ce decide proiectarea unei pasarele, dincolo de încărcare."
-pubDate: 2026-11-15
+pubDate: 2026-11-19
 category: "Tehnic"
 keywords: ["pasarela pietonala", "proiectare pasarela", "vibratii pasarela", "pod pietonal", "pasarela peste rau"]
 ---
@@ -17,6 +17,10 @@ Cel mai cunoscut caz e Millennium Bridge din Londra, închis la două zile după
 Eurocodul tratează problema în EN 1990, Anexa A2. Confortul pietonilor trebuie verificat dacă frecvența fundamentală a tablierului e sub 5 Hz pe verticală sau sub 2,5 Hz pe orizontală și la torsiune. Pentru vibrațiile laterale, valoarea recomandată a accelerației e de 0,2 m/s² în utilizare normală și 0,4 m/s² în condiții excepționale de aglomerare. Sunt parametri pe care anexa națională îi poate modifica.
 
 Practic, o pasarelă metalică zveltă, cu deschidere mare, aproape sigur trebuie verificată dinamic. Soluțiile sunt rigidizarea, mărirea masei sau amortizoarele. Toate se decid din proiect, nu după ce pasarela e montată.
+
+![Pasarelă peste un râu cu spațiul liber față de apele mari și diagrama frecvențelor proprii față de ritmul pașilor](/img/blog/schite/pasarela-cota-frecvente.svg)
+
+*Stânga: spațiul liber sub pasarelă. Dreapta: pragurile de frecvență sub care EN 1990 cere verificarea confortului.*
 
 ## Cota față de apă
 

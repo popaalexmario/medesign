@@ -34,3 +34,14 @@ la urcare din Safari, iPhone-ul le convertește de regulă singur în JPG.
 Dacă nu, în Setări → Cameră → Formate alege „Cel mai compatibil”.
 
 Nu pune planșe CAD aici, sunt ilizibile la dimensiunea din galerie.
+
+## Grafice, infografice, schițe
+
+Se urcă în același folder ca pozele și apar în aceeași galerie. Merg imagini
+`.png` sau `.jpg` exportate din Excel, PowerPoint, Canva sau AutoCAD (ca imagine,
+nu ca planșă întreagă).
+
+Dacă vrei ca un grafic să apară **în interiorul textului**, la un anumit
+paragraf, și nu în galeria de la final, urcă-l aici și spune-i lui Claude
+unde să-l pună. Schițele desenate de Claude stau în
+`public/img/blog/schite/`.
