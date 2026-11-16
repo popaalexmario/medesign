@@ -4,7 +4,7 @@ const en = Astro.props.lang === 'en';
 ---
 
 <!-- Banner de consimțământ. Nimic din ce trimite date către terți (Google
-     Analytics, Microsoft Clarity, harta OpenStreetMap) nu pornește înainte de
+     Analytics, Microsoft Clarity) nu pornește înainte de
      „Accept”. „Refuz” are aceeași greutate vizuală ca „Accept”. -->
 <div
   id="cookie-banner"
@@ -23,8 +23,8 @@ const en = Astro.props.lang === 'en';
           </div>
           <p class="text-sm text-gray-700 leading-relaxed">
             {en
-              ? 'With your consent we use Google Analytics and Microsoft Clarity to see how the site is used, and we show the OpenStreetMap map. None of them load until you accept. Details in the '
-              : 'Cu acordul tău folosim Google Analytics și Microsoft Clarity ca să vedem cum e folosit site-ul și afișăm harta OpenStreetMap. Niciunul nu se încarcă până nu accepți. Detalii în '}
+              ? 'With your consent we use Google Analytics and Microsoft Clarity to see how the site is used. Neither loads until you accept. Details in the '
+              : 'Cu acordul tău folosim Google Analytics și Microsoft Clarity ca să vedem cum e folosit site-ul. Niciunul nu se încarcă până nu accepți. Detalii în '}
             <a href="/politica-cookies" class="text-accent-600 hover:text-accent-700 underline underline-offset-2 font-medium">{en ? 'Cookie Policy (in Romanian)' : 'Politica de Cookies'}</a>.
           </p>
         </div>

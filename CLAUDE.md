@@ -170,8 +170,9 @@ Constanța, Fetești, Perșinari, Bughea de Jos.
   linkuri către fonts.googleapis.com / fonts.gstatic.com.
 - **Consimțământ.** Google Analytics și Clarity se încarcă doar după „Accept”
   (`window.meAnalytics.load()` din `Layout.astro`, apelat din `CookieConsent.astro`).
-  Harta de pe prima pagină (dale OpenStreetMap) pornește doar cu acord sau din
-  butonul „Afișează harta”. AOS și Leaflet sunt în `public/vendor/` (fără unpkg).
+  Harta de pe prima pagină e afișată mereu (cerința lui Mario): dalele OSM vin
+  prin proxy-ul `functions/tiles/[[path]].js`, cu cache, deci vizitatorul nu
+  contactează OpenStreetMap. AOS și Leaflet sunt în `public/vendor/` (fără unpkg).
   Orice serviciu terț nou trebuie legat de consimțământ și trecut în cele două politici.
 
 ## Rămas de făcut
