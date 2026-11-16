@@ -209,7 +209,10 @@ const jsonLd = [
                   : <div class="w-full h-full bg-gradient-to-br from-brand-700 to-brand-900" />}
               </div>
               <div class="p-5">
-                <span class="text-accent-600 text-[12px] font-semibold">{categoryEn[p.data.categories[0]] ?? p.data.categories[0]}</span>
+                <div class="flex items-center flex-wrap gap-2">
+                  <span class="text-accent-600 text-[12px] font-semibold">{categoryEn[p.data.categories[0]] ?? p.data.categories[0]}</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-accent-500/15 text-accent-700 text-[12px] font-semibold">Phase: {p.data.faza}</span>
+                </div>
                 <h3 class="font-heading font-bold text-[15px] text-brand-800 mt-1.5 leading-snug group-hover:text-accent-600 transition-colors">{enTitles.get(p.slug)!.title}</h3>
                 <p class="text-steel-400 text-[13px] mt-1.5">{enTitles.get(p.slug)!.location}</p>
               </div>
