@@ -2,7 +2,7 @@
 title: "Teren de sport multifuncțional pentru Școala Gimnazială Bădeni, Comuna Scobinți, Județul Iași"
 seoTitle: "Teren de sport multifuncțional, Școala Bădeni (Iași)"
 description: "Teren de minifotbal și tenis cu piciorul, cu gazon sintetic, pentru Școala Gimnazială Bădeni, în proiectul Interreg ROMD00552. Suprafață amenajată de 770 mp."
-categories: ["Baze sportive"]
+categories: ["Parc"]
 faza: "SF+DTAC+PTE"
 location: "Comuna Scobinți, Județul Iași"
 judet: "Iași"
