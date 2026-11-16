@@ -4,22 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Varianta C (aleasă de Mario, nov. 2026): grafit ca asfaltul + galben de marcaj.
         brand: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#1e3a5f',
-          600: '#172e4a',
-          700: '#0f2035',
-          800: '#0a1628',
-          900: '#050c16',
+          50: '#f4f4f2',
+          100: '#e8e9ea',
+          200: '#d1d4d8',
+          300: '#a9aeb5',
+          400: '#7d838c',
+          500: '#22262b',
+          600: '#1a1d21',
+          700: '#16191c',
+          800: '#121417',
+          900: '#0c0d0f',
         },
         accent: {
-          400: '#f59e0b',
-          500: '#d97706',
-          600: '#b45309',
+          300: '#f8dc80',
+          400: '#f5c93f',
+          500: '#f2c12e',
+          // 600/700: auriu închis, pentru text pe fundal deschis (contrast AA)
+          600: '#8a6200',
+          700: '#6e4e00',
         },
         steel: {
           50: '#f8fafc',

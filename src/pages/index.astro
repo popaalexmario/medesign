@@ -63,101 +63,12 @@ const reasons = [
 
   <!-- HERO - Real photo + animated blueprint overlay -->
   <section class="relative min-h-screen flex items-start md:items-center overflow-hidden" id="hero" style="min-height: 100vh; min-height: 100svh">
-    <!-- Real photo background with parallax -->
-    <div class="absolute inset-0 hero-parallax">
-      <img src="/img/hero-bg.webp" srcset="/img/hero-bg-800.webp 800w, /img/hero-bg.webp 1376w" sizes="100vw" fetchpriority="high" decoding="async" alt="Șantier de autostradă cu pasaje rutiere, fotografie aeriană" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
+    <!-- Fotografie de fundal (varianta C): se apropie foarte lent. -->
+    <div class="absolute inset-0 overflow-hidden">
+      <img src="/img/hero-noapte.webp" srcset="/img/hero-noapte-800.webp 800w, /img/hero-noapte.webp 1600w" sizes="100vw" fetchpriority="high" decoding="async" alt="Drum național cu pasaj rutier noaptea, fotografie aeriană" class="hero-kb absolute inset-0 w-full h-full object-cover" id="hero-bg" />
     </div>
-
-    <!-- Gradient overlays -->
-    <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-900/70 to-transparent"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-900/30 to-brand-900/50"></div>
-
-    <!-- Animated blueprint SVG overlay -->
-    <svg class="absolute inset-0 w-full h-full pointer-events-none z-[2]" xmlns="http://www.w3.org/2000/svg">
-      <!-- Blueprint grid -->
-      <defs>
-        <pattern id="bp-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-          <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(100,200,255,0.04)" stroke-width="0.5" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#bp-grid)" class="hero-grid-fade" />
-
-      <!-- Road trace line following the road in the photo -->
-      <path d="M95%,95% Q80%,75% 70%,60% T55%,45% T45%,35% T35%,25%"
-        fill="none" stroke="rgba(217,119,6,0.5)" stroke-width="2.5" stroke-linecap="round"
-        stroke-dasharray="2000" stroke-dashoffset="2000"
-        class="hero-trace" />
-
-      <!-- Second road trace -->
-      <path d="M60%,95% Q55%,80% 50%,70% T42%,55% T38%,40%"
-        fill="none" stroke="rgba(100,200,255,0.25)" stroke-width="1.5"
-        stroke-dasharray="1500" stroke-dashoffset="1500"
-        class="hero-trace-2" />
-
-      <!-- Measurement annotations -->
-      <g class="hero-annotation" style="--delay: 3s">
-        <line x1="60%" y1="55%" x2="75%" y2="55%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
-        <line x1="60%" y1="53%" x2="60%" y2="57%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
-        <line x1="75%" y1="53%" x2="75%" y2="57%" stroke="rgba(100,200,255,0.3)" stroke-width="0.8" />
-        <text x="67.5%" y="53%" fill="rgba(100,200,255,0.35)" font-size="11" text-anchor="middle" font-family="monospace">1.240 m</text>
-      </g>
-
-      <!-- Roundabout annotation -->
-      <g class="hero-annotation" style="--delay: 3.5s">
-        <circle cx="48%" cy="42%" r="25" fill="none" stroke="rgba(217,119,6,0.3)" stroke-width="1.5" stroke-dasharray="4,4" />
-        <text x="48%" y="38%" fill="rgba(217,119,6,0.35)" font-size="9" text-anchor="middle" font-family="monospace">R=22m</text>
-      </g>
-
-      <!-- Cross-section callout -->
-      <g class="hero-annotation" style="--delay: 4s">
-        <line x1="78%" y1="70%" x2="78%" y2="78%" stroke="rgba(100,200,255,0.2)" stroke-width="0.8" stroke-dasharray="3,3" />
-        <circle cx="78%" cy="70%" r="3" fill="rgba(217,119,6,0.4)" />
-        <text x="78%" y="81%" fill="rgba(100,200,255,0.3)" font-size="9" text-anchor="middle" font-family="monospace">Secțiune A-A</text>
-      </g>
-
-      <!-- Scale bar -->
-      <g class="hero-annotation" style="--delay: 4.5s">
-        <rect x="75%" y="88%" width="120" height="1" fill="rgba(255,255,255,0.2)" />
-        <rect x="75%" y="87%" width="1" height="4" fill="rgba(255,255,255,0.2)" />
-        <rect x="calc(75% + 120px)" y="87%" width="1" height="4" fill="rgba(255,255,255,0.2)" />
-        <text x="calc(75% + 60px)" y="86%" fill="rgba(255,255,255,0.2)" font-size="9" text-anchor="middle" font-family="monospace">500 m</text>
-      </g>
-    </svg>
-
-    <!-- Cross-section floating panel -->
-    <div class="absolute bottom-24 right-6 md:right-12 z-[3] hidden md:block hero-cross-section">
-      <div class="bg-brand-900/80 backdrop-blur-lg border border-white/10 rounded-2xl p-5 w-[320px]">
-        <div class="flex items-center gap-2 mb-3">
-          <div class="w-1.5 h-1.5 bg-accent-400 rounded-full animate-pulse"></div>
-          <span class="text-white/40 text-[10px] font-mono uppercase tracking-wider">Profil transversal 1:50</span>
-        </div>
-        <svg viewBox="0 0 300 100" class="w-full" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,85 Q40,83 80,80 Q140,75 150,74 Q160,75 220,80 Q260,83 300,85 L300,100 L0,100 Z"
-            fill="rgba(120,80,40,0.3)" class="layer-reveal" style="--delay: 5s" />
-          <path d="M70,80 L90,73 L120,68 L150,66 L180,68 L210,73 L230,80 L230,82 L210,76 L180,71 L150,69 L120,71 L90,76 L70,82 Z"
-            fill="rgba(180,160,120,0.4)" class="layer-reveal" style="--delay: 5.5s" />
-          <path d="M90,73 L115,68 L140,65 L150,64 L160,65 L185,68 L210,73 L210,76 L185,71 L160,68 L150,67 L140,68 L115,71 L90,76 Z"
-            fill="rgba(160,170,180,0.5)" class="layer-reveal" style="--delay: 6s" />
-          <path d="M105,68 L130,64 L145,62 L150,61 L155,62 L170,64 L195,68 L195,70 L170,66 L155,64 L150,63 L145,64 L130,66 L105,70 Z"
-            fill="rgba(80,80,80,0.6)" class="layer-reveal" style="--delay: 6.5s" />
-          <path d="M110,66 L135,62 L148,60 L150,59.5 L152,60 L165,62 L190,66 L190,68 L165,64 L152,62 L150,61.5 L148,62 L135,64 L110,68 Z"
-            fill="rgba(50,50,50,0.8)" stroke="rgba(217,119,6,0.6)" stroke-width="0.8"
-            class="layer-reveal" style="--delay: 7s" />
-          <line x1="148" y1="59.5" x2="152" y2="59.5" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"
-            class="layer-reveal" style="--delay: 7.3s" />
-          <line x1="110" y1="52" x2="190" y2="52" stroke="rgba(100,200,255,0.3)" stroke-width="0.5"
-            class="layer-reveal" style="--delay: 7.5s" />
-          <text x="150" y="49" fill="rgba(100,200,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace" font-weight="bold"
-            class="road-text" style="--delay: 7.7s">7.00 m</text>
-          <!-- Layer labels -->
-          <text x="240" y="88" fill="rgba(120,80,40,0.4)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 5.2s">Teren</text>
-          <text x="240" y="77" fill="rgba(180,160,120,0.5)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 5.7s">Fundație</text>
-          <text x="240" y="71" fill="rgba(160,170,180,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 6.2s">Bază</text>
-          <text x="240" y="66" fill="rgba(100,100,100,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 6.7s">Binder</text>
-          <text x="240" y="61" fill="rgba(217,119,6,0.6)" font-size="5.5" font-family="monospace" class="road-text" style="--delay: 7.2s">Uzură</text>
-        </svg>
-      </div>
-    </div>
+    <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(18,20,23,.95) 0%, rgba(18,20,23,.78) 42%, rgba(18,20,23,.30) 100%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(0deg, #121417, transparent)"></div>
 
     <!-- Content -->
     <div id="hero-content" class="container relative z-[4] pb-20">
@@ -167,7 +78,7 @@ const reasons = [
           <span class="relative inline-block mb-4">
             <span class="text-accent-400">responsabilitate</span>
             <svg class="absolute -bottom-6 left-0 w-full" viewBox="0 0 200 12" fill="none">
-              <path d="M2 10C50 2 150 2 198 10" stroke="#d97706" stroke-width="3" stroke-linecap="round"
+              <path d="M2 10C50 2 150 2 198 10" stroke="#f2c12e" stroke-width="3" stroke-linecap="round"
                 stroke-dasharray="200" stroke-dashoffset="200"
                 class="animate-draw-path" style="animation-delay: 1s; animation-duration: 1.5s" />
             </svg>
@@ -180,7 +91,7 @@ const reasons = [
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all relative overflow-hidden">
+          <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-brand-800 px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-400 transition-all relative overflow-hidden">
             <span class="relative z-10">Discută proiectul tău</span>
             <svg class="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -215,7 +126,7 @@ const reasons = [
 
     <div class="container relative z-10">
       <div class="text-center max-w-2xl mx-auto mb-8">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Ce facem</span>
+        <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Ce facem</span>
         <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3" data-aos="fade-up" data-aos-delay="50">
           Servicii de proiectare complete
         </h2>
@@ -229,10 +140,10 @@ const reasons = [
           <a href={service.href} class="group tilt-card glass-card rounded-2xl p-5 relative overflow-hidden" data-aos="fade-up" data-aos-delay={i * 100}>
             <div class={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 rounded-full blur-[40px] transition-opacity duration-500 -translate-y-8 translate-x-8`}></div>
             <div class="tilt-inner relative z-10">
-              <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 group-hover:bg-accent-500 group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" set:html={service.icon} />
-              <h3 class="font-heading font-bold text-[18px] text-brand-800 mt-3 group-hover:text-accent-500 transition-colors">{service.title}</h3>
+              <div class="w-14 h-14 bg-brand-500/10 rounded-xl flex items-center justify-center text-brand-500 group-hover:bg-accent-500 group-hover:text-brand-800 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3" set:html={service.icon} />
+              <h3 class="font-heading font-bold text-[18px] text-brand-800 mt-3 group-hover:text-accent-600 transition-colors">{service.title}</h3>
               <p class="text-steel-500 text-[14px] mt-2 leading-relaxed">{service.desc}</p>
-              <div class="flex items-center gap-1 text-accent-500 font-semibold text-[14px] mt-3 translate-x-0 group-hover:translate-x-2 transition-transform">
+              <div class="flex items-center gap-1 text-accent-600 font-semibold text-[14px] mt-3 translate-x-0 group-hover:translate-x-2 transition-transform">
                 Detalii
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -268,7 +179,7 @@ const reasons = [
             <div class="text-center md:text-left">
               <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/5 border border-white/10 mb-5 mx-auto md:mx-0">
                 <span class="text-[28px]">{item.icon}</span>
-                <span class="absolute -top-2 -right-2 w-7 h-7 rounded-lg bg-accent-500 text-white text-[11px] font-bold flex items-center justify-center shadow-lg shadow-accent-500/30">{item.step}</span>
+                <span class="absolute -top-2 -right-2 w-7 h-7 rounded-lg bg-accent-500 text-brand-800 text-[11px] font-bold flex items-center justify-center shadow-lg shadow-accent-500/30">{item.step}</span>
               </div>
               <h3 class="font-heading font-bold text-[18px] text-white">{item.title}</h3>
               <p class="text-white/50 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
@@ -283,7 +194,7 @@ const reasons = [
   <section class="section-padding bg-white" id="harta">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-6" data-aos="fade-up">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">Prezență națională</span>
+        <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest">Prezență națională</span>
         <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-brand-800 mt-3">
           Proiecte în toată România
         </h2>
@@ -461,7 +372,7 @@ const reasons = [
 
       projects.forEach(function(p) {
         var icon = L.divIcon({
-          html: pinSvg('#1e3a5f'),
+          html: pinSvg('#121417'),
           className: '',
           iconSize: [32, 42],
           iconAnchor: [16, 42],
@@ -469,18 +380,18 @@ const reasons = [
         });
 
         var cats = p.categories.map(function(c) {
-          return '<span style="background:#1e3a5f15;color:#1e3a5f;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + c + '</span>';
+          return '<span style="background:#12141712;color:#121417;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + c + '</span>';
         }).join(' ');
 
         var popup = '<div style="font-family:\'Plus Jakarta Sans\',sans-serif;min-width:220px;max-width:280px;">' +
           (p.image ? '<img src="' + p.image + '" alt="' + p.title + '" style="width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:8px;display:block;" />' : '') +
           '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px;">' + cats +
-          '<span style="background:#d9770615;color:#d97706;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + p.faza + '</span>' +
+          '<span style="background:#f2c12e33;color:#6e4e00;padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600;">' + p.faza + '</span>' +
           '</div>' +
           '<strong style="font-size:14px;color:#0a1628;line-height:1.3;display:block;">' + p.title + '</strong>' +
           '<p style="font-size:12px;color:#64748b;margin-top:4px;">📍 ' + p.location + '</p>' +
           '<p style="font-size:12px;color:#94a3b8;margin-top:2px;">📅 ' + p.year + '</p>' +
-          '<a href="/portofoliu/' + p.slug + '/" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#1e3a5f;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
+          '<a href="/portofoliu/' + p.slug + '/" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#121417;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
           '</div>';
 
         L.marker([p.lat, p.lng], { icon: icon })
@@ -537,7 +448,7 @@ const reasons = [
             Contactează-ne pentru o consultanță gratuită. Analizăm cerințele și îți oferim o soluție personalizată.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center mt-5">
-            <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-white px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-600 transition-all relative overflow-hidden">
+            <a href="/contact" class="group inline-flex items-center justify-center gap-2 bg-accent-500 text-brand-800 px-8 py-4 rounded-full font-semibold text-[15px] hover:bg-accent-400 transition-all relative overflow-hidden">
               <span class="relative z-10">Solicită consultanță gratuită</span>
               <svg class="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -569,32 +480,11 @@ const reasons = [
   <Footer />
 </Layout>
 
-<!-- Hero parallax on mouse + scroll -->
-<script is:inline>
-(function() {
-  const hero = document.getElementById('hero');
-  const heroBg = document.getElementById('hero-bg');
-  if (!hero || !heroBg) return;
-
-  hero.addEventListener('mousemove', (e) => {
-    const rect = hero.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    heroBg.style.transform = `scale(1.1) translate(${x * -15}px, ${y * -10}px)`;
-  });
-
-  hero.addEventListener('mouseleave', () => {
-    heroBg.style.transform = 'scale(1.1) translate(0, 0)';
-  });
-
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    if (scrollY < window.innerHeight) {
-      heroBg.style.transform = `scale(1.1) translateY(${scrollY * 0.2}px)`;
-    }
-  });
-})();
-</script>
+<style>
+  .hero-kb { animation: heroKb 24s ease-in-out infinite alternate; transform-origin: 50% 50%; will-change: transform; }
+  @keyframes heroKb { from { transform: scale(1); } to { transform: scale(1.09) translate3d(-1.5%, -1%, 0); } }
+  @media (prefers-reduced-motion: reduce) { .hero-kb { animation: none; } }
+</style>
 
 <!-- Animations script -->
 <script is:inline>

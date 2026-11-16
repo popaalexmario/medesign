@@ -41,7 +41,7 @@ import Footer from '../components/Footer.astro';
           <h2 class="text-2xl font-bold text-brand-500 mb-3">2. Ce tipuri de cookie-uri folosim?</h2>
           <div class="overflow-x-auto rounded-xl border border-gray-200">
             <table class="w-full text-sm">
-              <thead class="bg-brand-500 text-white">
+              <thead class="bg-brand-500 text-white [&_th]:!text-white">
                 <tr>
                   <th class="px-4 py-3 text-left font-semibold">Tip</th>
                   <th class="px-4 py-3 text-left font-semibold">Denumire</th>
@@ -105,7 +105,7 @@ import Footer from '../components/Footer.astro';
           <div class="mt-6">
             <button
               id="reset-cookie-consent"
-              class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors text-sm shadow-sm"
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent-500 hover:bg-accent-400 text-brand-800 font-semibold rounded-lg transition-colors text-sm shadow-sm"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -136,9 +136,9 @@ import Footer from '../components/Footer.astro';
           <div class="mt-3 p-4 bg-steel-50 rounded-xl border border-steel-100 inline-block">
             <p class="font-semibold text-brand-500">ME Design</p>
             <p class="text-sm text-gray-600 mt-1">
-              Email: <a href="mailto:office@me-design.ro" class="text-accent-500 hover:underline">office@me-design.ro</a>
+              Email: <a href="mailto:office@me-design.ro" class="text-accent-600 hover:underline">office@me-design.ro</a>
             </p>
-            <p class="text-sm text-gray-600">Site: <a href="https://me-design.ro" class="text-accent-500 hover:underline">me-design.ro</a></p>
+            <p class="text-sm text-gray-600">Site: <a href="https://me-design.ro" class="text-accent-600 hover:underline">me-design.ro</a></p>
           </div>
         </div>
 

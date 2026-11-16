@@ -50,16 +50,16 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
     <nav class="flex items-center justify-between h-20">
       <a href={home} class="flex items-center gap-3 group" aria-label={t.homeLabel}>
         <div>
-          <span class="font-heading font-bold text-xl text-brand-500">ME Design</span>
-          <span class="hidden sm:block text-[11px] text-steel-400 font-medium tracking-wider uppercase -mt-1">{t.tagline}</span>
+          <span class="hdr-logo font-heading font-bold text-xl text-brand-800">ME Design</span>
+          <span class="hdr-tag hidden sm:block text-[11px] text-steel-400 font-medium tracking-wider uppercase -mt-1">{t.tagline}</span>
         </div>
       </a>
 
       <div class="hidden lg:flex items-center gap-8">
         {navItems.map((item) => {
           const linkCls = [
-            'inline-flex items-center gap-1.5 text-[15px] font-medium transition-colors hover:text-accent-500 py-7',
-            isActive(item.href) ? 'text-accent-500' : 'text-steel-600',
+            'hdr-link inline-flex items-center gap-1.5 text-[15px] font-medium transition-colors hover:text-accent-600 py-7',
+            isActive(item.href) ? 'is-active text-accent-600' : 'text-steel-600',
           ];
           if (item.href === servicesHref) return (
             <div class="relative group" data-dropdown>
@@ -93,16 +93,16 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
           );
           return <a href={item.href} class:list={linkCls}>{item.label}</a>;
         })}
-        <a href={otherLang.href} hreflang={otherLang.hreflang} title={otherLang.title} class="text-[13px] font-semibold tracking-wider text-steel-500 hover:text-accent-500 border border-steel-200 rounded-full px-3 py-1.5 transition-colors">{otherLang.label}</a>
-        <a href={contactHref} class="bg-brand-500 text-white px-5 py-2 rounded-full text-[14px] font-semibold hover:bg-brand-600">
+        <a href={otherLang.href} hreflang={otherLang.hreflang} title={otherLang.title} class="hdr-pill text-[13px] font-semibold tracking-wider text-steel-500 hover:text-accent-600 border border-steel-200 rounded-full px-3 py-1.5 transition-colors">{otherLang.label}</a>
+        <a href={contactHref} class="bg-accent-500 text-brand-800 px-5 py-2 rounded-full text-[14px] font-semibold hover:bg-accent-400">
           {t.cta}
         </a>
       </div>
 
       <div class="lg:hidden flex items-center gap-2">
-      <a href={otherLang.href} hreflang={otherLang.hreflang} title={otherLang.title} class="text-[13px] font-semibold tracking-wider text-steel-500 border border-steel-200 rounded-full px-3 py-1.5">{otherLang.label}</a>
+      <a href={otherLang.href} hreflang={otherLang.hreflang} title={otherLang.title} class="hdr-pill text-[13px] font-semibold tracking-wider text-steel-500 border border-steel-200 rounded-full px-3 py-1.5">{otherLang.label}</a>
       <button id="menu-toggle" class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-steel-100 transition-colors" aria-label={t.menu}>
-        <svg class="w-6 h-6 text-steel-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="hdr-icon w-6 h-6 text-steel-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
@@ -118,7 +118,7 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
             href={item.href}
             class:list={[
               'px-4 py-3 rounded-xl text-[15px] font-medium transition-colors',
-              isActive(item.href) ? 'bg-brand-50 text-accent-500' : 'text-steel-600 hover:bg-steel-50',
+              isActive(item.href) ? 'bg-brand-50 text-accent-600' : 'text-steel-600 hover:bg-steel-50',
             ]}
           >
             {item.label}
@@ -126,7 +126,7 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
           {item.href === servicesHref && (
             <div class="ml-4 mb-1 pl-3 border-l-2 border-steel-100 flex flex-col">
               {links.map((s) => (
-                <a href={`${servicesHref}/${s.slug}`} class="px-3 py-2 rounded-lg text-[14px] text-steel-500 hover:bg-steel-50 hover:text-accent-500">{s.title}</a>
+                <a href={`${servicesHref}/${s.slug}`} class="px-3 py-2 rounded-lg text-[14px] text-steel-500 hover:bg-steel-50 hover:text-accent-600">{s.title}</a>
               ))}
             </div>
           )}
@@ -140,6 +140,16 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
 </header>
 
 <style>
+  /* Sus, peste fundalul închis al paginilor: text deschis. La derulare bara
+     devine albă (header-glass) și revin culorile închise. */
+  #header:not(.header-glass) .hdr-logo { color: #fff; }
+  #header:not(.header-glass) .hdr-tag { color: rgba(255, 255, 255, 0.55); }
+  #header:not(.header-glass) .hdr-link { color: rgba(255, 255, 255, 0.8); }
+  #header:not(.header-glass) .hdr-link:hover,
+  #header:not(.header-glass) .hdr-link.is-active { color: #f2c12e; }
+  #header:not(.header-glass) .hdr-pill { color: #fff; border-color: rgba(255, 255, 255, 0.3); }
+  #header:not(.header-glass) .hdr-icon { color: #fff; }
+
   /* Dropdown-urile se deschid la trecerea mouse-ului (și la focus, pentru tastatură). */
   .dropdown-panel {
     opacity: 0;
@@ -166,6 +176,7 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
   menuToggle.addEventListener('click', () => {
     isOpen = !isOpen;
     mobileMenu.classList.toggle('hidden', !isOpen);
+    header.classList.toggle('header-glass', isOpen || window.scrollY > 50);
     const icon = document.getElementById('menu-icon');
     icon.setAttribute('d', isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16');
   });

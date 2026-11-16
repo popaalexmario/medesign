@@ -117,7 +117,7 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
                 {project.faza && <span class="px-3 py-1 rounded-full bg-accent-500/10 text-accent-600 text-[12px] font-semibold">{project.faza}</span>}
                 <span class="text-steel-400 text-[12px]">{project.year}</span>
               </div>
-              <h3 class="font-heading font-bold text-[17px] text-brand-800 group-hover:text-accent-500 transition-colors">{project.title}</h3>
+              <h3 class="font-heading font-bold text-[17px] text-brand-800 group-hover:text-accent-600 transition-colors">{project.title}</h3>
               <p class="text-steel-400 text-[13px] mt-1 flex items-center gap-1">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -201,7 +201,7 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          target.style.outline = '3px solid #d97706';
+          target.style.outline = '3px solid #f2c12e';
           target.style.outlineOffset = '4px';
           target.style.borderRadius = '1rem';
           setTimeout(() => { target.style.outline = ''; target.style.outlineOffset = ''; }, 2500);
@@ -213,7 +213,7 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
   <section class="section-padding bg-steel-50 border-t border-steel-100">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
-        <span class="text-accent-500 font-semibold text-[13px] uppercase tracking-widest">References</span>
+        <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest">References</span>
         <h2 class="text-[28px] md:text-[38px] font-heading font-bold text-brand-800 mt-3">
           Clients we have worked for
         </h2>
@@ -239,7 +239,7 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
             <ul class="space-y-2.5">
               {grup.lista.map((b) => (
                 <li class="flex items-start gap-2.5 text-steel-600 text-[14px] leading-snug">
-                  <svg class="w-4 h-4 text-accent-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-4 h-4 text-accent-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
                   {b}

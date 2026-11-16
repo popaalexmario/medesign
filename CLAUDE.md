@@ -147,6 +147,16 @@ eroare se vede.
   blochează boții de training și poate da 403 boților AI. Se controlează din
   dashboard (AI Crawl Control / Bots), nu din repo.
 
+## Culori și prima pagină
+
+- Varianta C, aleasă de Mario (nov. 2026): grafit (`brand-*`, #121417 etc.) și
+  galben de marcaj (`accent-500` #f2c12e). `accent-600/700` sunt auriu închis,
+  pentru text pe fundal deschis; pe butoanele galbene textul e închis (`text-brand-800`).
+- Fundalul primei pagini: `public/img/hero-noapte.webp` (drum noaptea, din dronă),
+  cu zoom lent (CSS). Bara de sus e albă cu text închis la derulare și
+  transparentă cu text alb peste fundalul închis (`Header.astro`).
+- Pagina /proba e doar pentru previzualizări (noindex, fără sitemap).
+
 ## SEO tehnic
 
 - Linkurile interne primesc „/” final la build (`integrations/trailing-slash.mjs`),
