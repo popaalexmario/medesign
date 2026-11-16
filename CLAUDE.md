@@ -80,8 +80,11 @@ Pe lângă autoritățile publice, articolele noi țintesc: investitori privați
 au nevoie de sistematizare verticală, platforme, curți, parcări și accese la drum;
 birouri de arhitectură care au nevoie doar de partea de drumuri; constructori de
 lucrări mici care au nevoie de asistență tehnică, optimizare sau reproiectare.
-Articolele din seria asta: acces-drum-public, ape-pluviale, sistematizare-verticala,
+Articolele din seria asta: lucrari-fara-proiect-fara-autorizatie, acces-drum-public, ape-pluviale, sistematizare-verticala,
 proiectare-parcare (art. 406 CATUC), specialitatea-drumuri, optimizare-reproiectare.
+Articolele NU descriu proiectele firmei (cerința lui Mario, nov. 2026): fără
+exemple din portofoliu, ci explicații generale despre utilitatea proiectului
+făcut de specialiști și a intrării în legalitate (art. 280, 301 CATUC).
 OG 43/1997 art. 46 verificat pe legeaz.net (lege5 nu afișează articolul gratuit).
 
 ## Reguli de scriere pentru articole

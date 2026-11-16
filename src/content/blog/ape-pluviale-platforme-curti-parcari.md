@@ -1,7 +1,7 @@
 ---
 title: "Apa pe platforme, curți și parcări: unde o duci"
 description: "Cum se preiau apele pluviale de pe o platformă carosabilă, o curte sau o parcare: pante, rigole, șanțuri absorbante, infiltrare. Cu exemple din proiecte reale."
-pubDate: 2026-11-19
+pubDate: 2026-11-20
 category: "Tehnic"
 keywords: ["ape pluviale platformă", "scurgerea apelor curte", "rigolă carosabilă", "șanț absorbant", "infiltrare ape pluviale", "drenaj parcare"]
 ---
@@ -28,15 +28,13 @@ Un șanț absorbant e un șanț în care apa nu e transportată mai departe, ci 
 
 Asta n-o spune proiectantul de drumuri din ochi. O spune [studiul geotehnic](/blog/studiul-geotehnic-infrastructura), dacă i s-a cerut. Merită cerut explicit, pentru că de la 1 ianuarie 2027, art. 406 din CATUC obligă parcările exterioare de peste 500 mp asociate clădirilor de birouri, comerciale, industriale sau de depozitare să încorporeze dispozitive care favorizează permeabilitatea și infiltrarea apei pluviale sau evaporarea acesteia.
 
-## Ce am folosit, concret
+## De ce nu se rezolvă din ochi
 
-La hala din Brașov, apele din incintă sunt preluate printr-o rigolă carosabilă și prin șanțuri absorbante de 72 m și 130 m. La ieșirea spre stradă, șanțurile pereate cu beton se racordează la șanțul existent, iar sub acces am prevăzut un podeț tubular ([proiectul](/portofoliu/hala-timisul-sec-brasov)).
+Pe șantierele fără proiect, apa o rezolvă cine toarnă betonul: „dăm o pantă spre stradă". E soluția cea mai ieftină în ziua turnării și cea mai scumpă după aceea.
 
-La stația de tratare a apei Uzina 5 din Oradea, pentru platformele și drumurile din incintă am prevăzut șanțuri absorbante de pământ, pe 405 m și 167 m ([proiectul](/portofoliu/uzina-5-oradea)).
+Un proiectant calculează cât plouă pe suprafața ta și ce debit trebuie să ducă rigola sau șanțul. Verifică, pe baza studiului geotehnic, dacă terenul absoarbe. Alege unde se adună apa și pe unde pleacă. Iar soluția ajunge pe planșă, cu cote, ca echipa de execuție să o poată construi și dirigintele de șantier să o poată verifica.
 
-Pe strada Călărași din Fetești, locurile de parcare sunt pe dale înierbate, o suprafață carosabilă prin care apa trece în pământ ([proiectul](/portofoliu/parcari-strada-calarasi-fetesti)).
-
-Trei amplasamente, trei soluții. Nu pentru că una e mai modernă decât alta, ci pentru că terenul, spațiul și debitul au fost altele.
+Nu e o diferență de birocrație. E diferența dintre o platformă care trece de prima ploaie torențială și una care trebuie refăcută după ea.
 
 ## Unde se greșește
 

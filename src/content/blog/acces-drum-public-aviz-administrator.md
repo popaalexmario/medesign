@@ -1,7 +1,7 @@
 ---
 title: "Accesul din drumul public: acordul administratorului drumului"
 description: "Ce acte cere administratorul drumului pentru accesul la o hală, o curte sau o parcare, ce spune OG 43/1997 și de ce accesul se proiectează primul."
-pubDate: 2026-11-17
+pubDate: 2026-11-19
 category: "Legislație"
 keywords: ["acces drum public", "acord prealabil administrator drum", "autorizație de acces în zona drumului", "acces din drum județean", "acces din DN", "OG 43/1997 art. 46"]
 ---
@@ -18,6 +18,8 @@ Deci sunt două acte de la administrator, nu unul. Acordul prealabil, care permi
 
 Pe partea de autorizare, CATUC trece „acordul de racordare la reţeaua căilor de comunicaţii" printre avizele și acordurile care se pot cere prin certificatul de urbanism (art. 266 alin. (2) lit. a)). Tot acolo, la alin. (4), e interzisă cererea de avize care nu au temei legal și tehnic față de lucrare.
 
+Iar fără autorizație de acces, legea e dură. Administratorul drumului notifică titularul autorizației de construire să desființeze lucrările în 5 zile, iar dacă nu o face, le desființează el, pe cheltuiala titularului (art. 46 alin. (2) din OG 43/1997).
+
 ![Pașii pentru un acces nou din drumul public, de la certificatul de urbanism la execuție](/img/blog/schite/acces-drum-public-pasi.svg)
 
 *Schiță de principiu după art. 46 din OG 43/1997 și art. 266 din CATUC.*
@@ -32,7 +34,7 @@ Diferența se simte în calendar. Un acces dintr-o stradă de cartier e de obice
 
 Vizibilitatea la ieșire. Distanța față de intersecții și de alte accese. Dacă vehiculele care intră și ies încurcă circulația, mai ales cele lungi. Cum e preluată apa de pe acces, ca să nu ajungă pe carosabil. Și ce se întâmplă cu șanțul drumului, care de regulă trece exact pe unde vrei să intri.
 
-Ultimul punct pare un detaliu. La o hală din Brașov, pentru care am proiectat sistematizarea verticală și drumurile, racordul la stradă a cerut un podeț tubular de 9 m sub acces, șanțuri pereate racordate la șanțul existent și semnalizarea ieșirii ([proiectul](/portofoliu/hala-timisul-sec-brasov)). Toate astea sunt lucrări în zona drumului, cu acordul administratorului.
+Ultimul punct pare un detaliu. Nu e. Un acces făcut din ochi, cu un tub pus de echipa care a turnat betonul, fără calculul debitului și fără cotele șanțului, se înfundă la prima ploaie mare. Apa iese pe carosabil, iar administratorul drumului cere refacerea. Podețul, racordul la șanț și semnalizarea ieșirii sunt lucrări în zona drumului: se proiectează și se aprobă.
 
 ## Funcțiunea contează
 
@@ -52,4 +54,4 @@ Facem proiectul accesului și al racordului la drum, împreună cu sistematizare
 
 ---
 
-**Surse.** Ordonanța Guvernului nr. 43/1997 privind regimul drumurilor, [art. 46](https://legeaz.net/og-43-1997-regimul-drumurilor/art-46-aprobarea-amplasarii-de-constructii-si-instalatii-in-zona-drumului-public-administrarea-drumurilor) alin. (1), (4) și (5). [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 266, în forma publicată în M. Of. nr. 661 din 10 august 2026.
+**Surse.** Ordonanța Guvernului nr. 43/1997 privind regimul drumurilor, [art. 46](https://legeaz.net/og-43-1997-regimul-drumurilor/art-46-aprobarea-amplasarii-de-constructii-si-instalatii-in-zona-drumului-public-administrarea-drumurilor) alin. (1), (2), (4) și (5). [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 266, în forma publicată în M. Of. nr. 661 din 10 august 2026.

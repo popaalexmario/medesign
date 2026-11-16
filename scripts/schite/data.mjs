@@ -306,4 +306,17 @@ export const DIAGRAMS = [
     ],
     footer: 'Autorizația de modificare se cere înainte de lucrările modificate și în valabilitatea autorizației inițiale.',
   },
+  {
+    file: 'regularizare-pasi', kind: 'steps', cols: 1,
+    title: 'O lucrare făcută fără autorizație: ce urmează',
+    subtitle: 'CATUC, art. 301',
+    steps: [
+      { t: 'Titularul are obligația să ceară autorizația de regularizare', s: 'alin. (1)' },
+      { t: 'Regim normal: doar categorii mici', s: 'locuințe P/P+1 și anexe de maximum 150 mp, închideri de balcoane (alin. (2))' },
+      { t: 'Celelalte construcții: fereastră de un an, până în august 2027', s: 'urbanism, cerințe fundamentale, taxe plătite; taxe și cote de 10 ori (alin. (7)–(8))', hi: true },
+      { t: 'Expertize tehnice pe fiecare cerință fundamentală', s: 'de la experți atestați (alin. (9))' },
+      { t: 'Lucrări de aducere la conformitate, dacă le cere primăria', s: 'alin. (10)' },
+      { t: 'Fără regularizare: desființare', s: 'de către autoritate sau prin instanță (alin. (5), (12))' },
+    ],
+  },
 ];

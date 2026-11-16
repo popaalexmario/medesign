@@ -1,7 +1,7 @@
 ---
 title: "Partea de drumuri dintr-un proiect de arhitectură"
 description: "Pentru arhitecți: ce acoperă specialitatea drumuri și sistematizare verticală la o hală sau un ansamblu, când o chemi în proiect și ce documente îți cere."
-pubDate: 2026-11-22
+pubDate: 2026-11-23
 category: "Ghiduri"
 keywords: ["specialitatea drumuri", "proiectant drumuri pentru arhitecți", "sistematizare verticală PAC", "colaborare arhitect inginer drumuri", "proiect drumuri hală", "subcontractare proiectare drumuri"]
 ---
@@ -46,9 +46,11 @@ Pentru autorizare, planul de sistematizare verticală și drumuri, cu cote și p
 
 Lucrăm pe planul tău de situație, ca proiectul să se predea unitar.
 
-## Unde am făcut asta
+## De ce merită un inginer de drumuri în echipă
 
-La hala din Brașov am proiectat sistematizarea verticală și drumurile, alături de proiectul de arhitectură al halei: platforma carosabilă, accesul de 50 m, podețul și apele din incintă ([proiectul](/portofoliu/hala-timisul-sec-brasov)). La Terminalul Auto PL6 din Portul Constanța am făcut sistematizarea verticală ([proiectul](/portofoliu/terminal-auto-port-constanta)). La Uzina 5 din Oradea, partea de drumuri dintr-un proiect mare de reabilitare a unei stații de tratare a apei ([proiectul](/portofoliu/uzina-5-oradea)).
+Alternativa, des întâlnită, e ca platforma și accesul să fie lăsate pe execuție: arhitectul desenează conturul, iar constructorul hotărăște restul pe șantier. Pentru beneficiar pare o economie. Pentru arhitect e un risc, pentru că la recepție problemele de afară se văd primele, iar întrebarea care urmează e cine a proiectat.
+
+Un plan de sistematizare verticală și drumuri dă execuției cote, pante, structuri și detalii. Îi dă și dirigintelui de șantier ceva concret de verificat. Iar proiectul tău rămâne coerent până la gard.
 
 Dacă ai un proiect în lucru, [trimite-ne](/contact) planul de situație. Îți spunem ce lipsește și cât durează partea noastră.
 

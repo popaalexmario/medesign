@@ -1,10 +1,10 @@
 ---
 title: "Proiectarea unei parcări: ce decide și ce se schimbă din 2027"
 description: "Ce contează la o parcare sau o platformă: vehicule, teren, apă, acces. Plus obligațiile din art. 406 CATUC pentru parcările de peste 500 mp."
-pubDate: 2026-11-21
+pubDate: 2026-11-22
 category: "Ghiduri"
 image: "/img/projects/fetesti-calarasi.webp"
-imageAlt: "Parcare amenajată cu dale înierbate pe strada Călărași din Fetești"
+imageAlt: "Parcare amenajată cu dale înierbate lângă un trotuar"
 keywords: ["proiectare parcare", "proiect parcare", "platformă carosabilă", "parcare art. 406 CATUC", "drenaj sustenabil parcare", "parcare 500 mp"]
 ---
 
@@ -38,11 +38,13 @@ Accesul. Racordul la stradă, cu acordul administratorului drumului, vizibilitat
 
 Și cotele. Parcarea se leagă de clădire, de stradă și de terenul vecin. Asta e [sistematizarea verticală](/blog/sistematizare-verticala-ce-este).
 
-## Un exemplu din oraș
+## De ce proiect, nu doar execuție
 
-Pe strada Călărași din Fetești, mașinile riveranilor stăteau parcate pe prima bandă de circulație. Proiectul tehnic pe care l-am făcut pentru tronsonul de 490 m dintre străzile Bănățenilor și Siretului a mutat parcarea în locuri amenajate lângă carosabil, cu locuri pentru persoane cu dizabilități, și a refăcut trotuarele, accesele către blocuri și spațiile verzi dintre ele.
+O parcare făcută fără proiect se recunoaște după câțiva ani. Bălți în aceleași locuri. Pavele tasate pe traseul camioanelor. Borduri sparte la colțurile pe care nu le-a verificat nimeni pentru raza de viraj. Apă scursă pe trotuar sau la vecin.
 
-Locurile de parcare din fotografia de sus sunt pe dale înierbate, adică o suprafață carosabilă prin care apa trece în pământ. Lucrarea e din 2022, dinaintea art. 406, dar ideea e aceeași ([proiectul](/portofoliu/parcari-strada-calarasi-fetesti)).
+Niciuna nu e inevitabilă. Toate vin din decizii care nu s-au luat pe hârtie: ce structură duce vehiculele reale, ce pante are suprafața, unde pleacă apa. Un proiect le ia înainte, iar execuția are după ce să se ghideze și după ce să fie verificată.
+
+Locurile de parcare din fotografia de sus sunt pe dale înierbate, o suprafață carosabilă prin care apa trece în pământ. E genul de soluție pe care art. 406 o încurajează, dar care funcționează doar dacă terenul de dedesubt a fost verificat.
 
 ## Ce ne trimiți ca să începem
 

@@ -1,7 +1,7 @@
 ---
 title: "Sistematizarea verticală: ce este și când îți trebuie"
 description: "Ce conține proiectul de sistematizare verticală pentru o hală, o curte sau o platformă, ce cere CATUC la autorizare și unde se greșește cel mai des."
-pubDate: 2026-11-20
+pubDate: 2026-11-21
 category: "Ghiduri"
 keywords: ["sistematizare verticală", "proiect sistematizare verticală", "cote teren amenajat", "platformă hală", "scurgerea apelor pluviale", "plan de situație PAC"]
 ---
@@ -48,13 +48,13 @@ Bilanțul de pământ ignorat. Zece centimetri de cotă, pe o platformă de 3.00
 
 Și vecinii. Dacă ridici terenul, apa care curgea pe la tine ajunge la ei. Asta se vede rar pe proiect și foarte des în reclamații.
 
-## Unde am aplicat-o
+## Ce se întâmplă fără ea
 
-La o hală de producție și depozitare din Brașov am făcut sistematizarea verticală și drumurile pentru o platformă carosabilă de aproximativ 46 x 40 m, legată de stradă printr-un acces de 50 m, cu podeț sub acces și șanțuri absorbante pentru apele din incintă ([proiectul](/portofoliu/hala-timisul-sec-brasov)).
+Pe multe șantiere mici, cotele le dă echipa de execuție, cu nivela, în ziua turnării. Uneori iese bine. Des iese o platformă care ține apa în colțul de lângă ușă, un acces pe care camionul atinge cu spatele sau pământ cărat de două ori: o dată afară, apoi înapoi.
 
-La Terminalul Auto de la dana PL6, în Portul Constanța, problema a fost inversă: o suprafață întinsă, cu pante foarte mici, unde fiecare centimetru de cotă contează pentru scurgerea apei ([proiectul](/portofoliu/terminal-auto-port-constanta)).
+Problemele astea au ceva în comun: nu se mai repară ieftin. O platformă turnată greșit nu se ajustează. Se sparge și se toarnă din nou.
 
-Iar la stația de tratare a apei Uzina 5 din Oradea, circulația interioară și platformele au trebuit așezate printre construcții existente care se reabilitează și obiecte noi, supraterane și subterane ([proiectul](/portofoliu/uzina-5-oradea)).
+Mai e și partea legală. Construcțiile executate fără autorizație de construire sau cu nerespectarea ei nu pot fi recepționate și nu se consideră finalizate (art. 280 alin. (8) din CATUC). Pentru o hală care trebuie să intre în funcțiune, asta nu e un detaliu. Ce urmează pentru lucrările făcute fără autorizație am explicat în [articolul despre intrarea în legalitate](/blog/lucrari-fara-proiect-fara-autorizatie-riscuri).
 
 ## Pentru arhitecți și investitori
 
@@ -62,4 +62,4 @@ Dacă lucrezi la o documentație pentru autorizare și îți lipsește partea de
 
 ---
 
-**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), anexa nr. 2 (conținutul-cadru al proiectului pentru autorizarea construirii), în forma publicată în M. Of. nr. 661 din 10 august 2026.
+**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 280 și anexa nr. 2 (conținutul-cadru al proiectului pentru autorizarea construirii), în forma publicată în M. Of. nr. 661 din 10 august 2026.
