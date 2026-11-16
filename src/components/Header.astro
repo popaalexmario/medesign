@@ -1,7 +1,6 @@
 ---
 import { serviceLinks } from '../data/services';
 import { serviceLinksEn } from '../data/services.en';
-import { regions } from '../data/regions';
 import { langFromPath, switchLink } from '../i18n/paths';
 
 const normalize = (p: string) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
@@ -40,16 +39,9 @@ const serviceGroups = [
   { title: en ? 'Retaining and water' : 'Consolidări și ape', items: ['lucrari-consolidare', 'amenajari-hidrotehnice'].map(svc) },
   { title: en ? 'Assessment and heritage' : 'Expertiză și patrimoniu', items: ['expertize-tehnice', 'monumente-istorice'].map(svc) },
 ];
-const portfolioLinks = en
-  ? [{ label: 'All projects', href: portfolioHref, strong: true }]
-  : [
-      { label: 'Toate proiectele', href: '/portofoliu', strong: true },
-      ...regions.map((r) => ({ label: r.name, href: `/zone/${r.id}`, strong: false })),
-      { label: 'Colaborări', href: '/colaborari', strong: false },
-    ];
 const t = en
-  ? { homeLabel: 'ME Design, home page', tagline: 'Infrastructure Design', svcNote: 'Complete design, from site investigations to technical assistance during construction.', allSvc: 'All services →', byRegion: 'Projects', cta: 'Request a quote', menu: 'Menu' }
-  : { homeLabel: 'ME Design, prima pagină', tagline: 'Proiectare Infrastructură', svcNote: 'Proiectare completă, de la studii de teren la asistență tehnică pe șantier.', allSvc: 'Toate serviciile →', byRegion: 'Proiecte pe regiuni', cta: 'Solicită ofertă', menu: 'Meniu' };
+  ? { homeLabel: 'ME Design, home page', tagline: 'Infrastructure Design', svcNote: 'Complete design, from site investigations to technical assistance during construction.', allSvc: 'All services →', cta: 'Request a quote', menu: 'Menu' }
+  : { homeLabel: 'ME Design, prima pagină', tagline: 'Proiectare Infrastructură', svcNote: 'Proiectare completă, de la studii de teren la asistență tehnică pe șantier.', allSvc: 'Toate serviciile →', cta: 'Solicită ofertă', menu: 'Meniu' };
 const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
 ---
 
@@ -95,23 +87,6 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
                     <span class="text-steel-500">{t.svcNote}</span>
                     <a href={servicesHref} class="font-semibold text-accent-600 hover:text-accent-700 whitespace-nowrap">{t.allSvc}</a>
                   </div>
-                </div>
-              </div>
-            </div>
-          );
-          if (item.href === portfolioHref) return (
-            <div class="relative group" data-dropdown>
-              <a href={item.href} class:list={linkCls} aria-haspopup="true">{item.label}<Fragment set:html={chevron} /></a>
-              <div class="dropdown-panel absolute left-1/2 top-full -translate-x-1/2 pt-1 w-[260px]">
-                <div class="bg-white rounded-2xl shadow-2xl shadow-brand-900/15 border border-steel-100 p-3">
-                  <p class="text-accent-600 text-[11px] font-semibold uppercase tracking-[0.18em] px-3 pt-2 pb-2">{t.byRegion}</p>
-                  <ul>
-                    {portfolioLinks.map((l) => (
-                      <li>
-                        <a href={l.href} class:list={['block rounded-lg px-3 py-2 text-[14px] hover:bg-steel-50 transition-colors', l.strong ? 'font-semibold text-brand-800' : 'text-steel-600', isActive(l.href) && 'bg-steel-50']}>{l.label}</a>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </div>
