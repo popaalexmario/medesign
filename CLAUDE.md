@@ -158,7 +158,7 @@ eroare se vede.
   nu se mai menționează anul absolvirii; fără alte atestări declarate deocamdată). Apare pe „Despre” (#mario-popa), ca autor al articolelor
   și ca Person în schema globală. Nu adăuga atestări sau ani de experiență nedeclarați.
 - Schema globală (WebSite, Organization, Person, ProfessionalService) e construită în
-  `Layout.astro` din `services.ts`. `sameAs` e gol până primim profilurile firmei.
+  `Layout.astro` din `services.ts`. `sameAs` al firmei e gol până primim profilurile firmei; Person are LinkedIn-ul lui Mario (LinkedIn răspunde 999 la curl, e normal).
 - Sitemap cu `<lastmod>` pentru articole (din `astro.config.mjs`).
 - IndexNow: `.github/workflows/indexnow.yml` anunță Bing la fiecare push în
   branch-ul de producție; cheia e fișierul din `public/<cheie>.txt`.
