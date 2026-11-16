@@ -1,0 +1,34 @@
+# Anunță Bing (și prin el ChatGPT / Copilot), Yandex, Seznam și Naver când se
+# publică site-ul, prin protocolul IndexNow. Trimite toate adresele din sitemap.
+# Cheia e publică prin definiție: fișierul https://me-design.ro/ee4dcb57028494c67141e4dfc4387578.txt.
+name: IndexNow
+
+on:
+  push:
+    branches: [claude/remove-phone-production-3uuKc]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Așteaptă publicarea pe Cloudflare
+        run: sleep 240
+      - name: Trimite adresele din sitemap
+        env:
+          KEY: ee4dcb57028494c67141e4dfc4387578
+        run: |
+          set -e
+          curl -fsS https://me-design.ro/sitemap-0.xml | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' > urls.txt
+          echo "Adrese: $(wc -l < urls.txt)"
+          python3 - <<'PY'
+          import json, os
+          urls = [u.strip() for u in open('urls.txt') if u.strip()]
+          body = {"host": "me-design.ro", "key": os.environ["KEY"],
+                  "keyLocation": f"https://me-design.ro/{os.environ['KEY']}.txt", "urlList": urls}
+          open('body.json', 'w').write(json.dumps(body))
+          PY
+          code=$(curl -s -o resp.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data @body.json)
+          echo "IndexNow: HTTP $code"; cat resp.txt || true
+          case "$code" in 200|202) ;; *) exit 1 ;; esac

@@ -1,5 +1,6 @@
 ---
 title: "Upgrading and Rehabilitation of County Road DJ 101S, Prahova County"
+seoTitle: "County road DJ 101S upgrade, Prahova"
 description: "Design of 12.15 km of county road with two bridges and embankment stabilisation."
 faza: "Intervention approval documentation (DALI)"
 location: "Prahova County Council"

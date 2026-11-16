@@ -26,7 +26,7 @@ const servicii = [
   { title: 'Lucrări de sprijin și consolidări', href: '/servicii/lucrari-consolidare' },
 ];
 
-const url = `https://me-design.ro/zone/${region.id}`;
+const url = `https://me-design.ro/zone/${region.id}/`;
 
 const jsonLd = [
   {
@@ -48,7 +48,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
-      { '@type': 'ListItem', position: 2, name: 'Zone acoperite', item: 'https://me-design.ro/zone' },
+      { '@type': 'ListItem', position: 2, name: 'Zone acoperite', item: 'https://me-design.ro/zone/' },
       { '@type': 'ListItem', position: 3, name: region.name, item: url },
     ],
   },

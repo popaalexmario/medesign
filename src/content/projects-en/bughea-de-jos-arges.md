@@ -1,5 +1,6 @@
 ---
 title: "Green-Blue Infrastructure in Bughea de Jos Commune, Argeș County"
+seoTitle: "Green-blue infrastructure, Bughea de Jos"
 description: "Design of riverbank works with retaining walls, sidewalks and footbridges for continuity of movement."
 faza: "Feasibility study + building permit design + detailed design (SF+DTAC+PTE)"
 location: "Bughea de Jos commune, Argeș County"

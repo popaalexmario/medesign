@@ -1,5 +1,6 @@
 ---
 title: "Modernizare și Reabilitare DJ 101S în Județul Prahova"
+seoTitle: "Modernizare și reabilitare DJ 101S, Prahova"
 description: "Proiectare 12,15 km drum județean cu două poduri și consolidări terasament."
 categories: ["Drumuri", "Poduri", "Consolidări"]
 faza: "DALI"

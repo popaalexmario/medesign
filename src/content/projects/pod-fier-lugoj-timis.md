@@ -1,5 +1,6 @@
 ---
 title: "Reabilitare Pod de Fier peste Râul Timiș în Municipiul Lugoj, Județul Timiș"
+seoTitle: "Reabilitare Podul de Fier, Lugoj"
 description: "Proiectare reabilitarea podului rutier GZCJ parabolica de 64,00 m, din anul 1902."
 categories: ["Poduri", "Monument Istoric"]
 faza: "DALI+DTAC+PTE"

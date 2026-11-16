@@ -1,5 +1,6 @@
 ---
 title: "Road Overbridge at Railway km 506+217.83 / DN7 Local km 0+623.27, Section 3: Gurasada–Simeria"
+seoTitle: "Railway overbridge, Gurasada–Simeria"
 description: "Fabrication and execution details for the through-truss road overbridge, 70.00 m span."
 faza: "Execution details (DE)"
 location: "Gurasada commune, Hunedoara County"

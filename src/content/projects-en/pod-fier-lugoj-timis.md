@@ -1,5 +1,6 @@
 ---
 title: "Rehabilitation of the Iron Bridge over the Timiș River, Lugoj Municipality, Timiș County"
+seoTitle: "Iron Bridge rehabilitation, Lugoj"
 description: "Rehabilitation design for a 64.00 m parabolic through-truss road bridge built in 1902."
 faza: "Intervention approval documentation + building permit design + detailed design (DALI+DTAC+PTE)"
 location: "Lugoj Municipality, Timiș County"

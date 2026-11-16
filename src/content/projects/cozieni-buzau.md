@@ -1,5 +1,6 @@
 ---
 title: "Modernizarea Drumurilor Locale în Comuna Cozieni, Județul Buzău"
+seoTitle: "Modernizare drumuri locale, Cozieni (Buzău)"
 description: "Proiectare 13 drumuri locale si comunale care insumeaza 10,35 km."
 categories: ["Drumuri"]
 faza: "DALI"

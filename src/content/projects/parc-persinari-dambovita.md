@@ -1,5 +1,6 @@
 ---
 title: "Amenajare Parc în Comuna Perșinari, Județul Dâmbovița"
+seoTitle: "Amenajare parc, comuna Perșinari"
 description: "Proiectul propus se află în intravilan, terenul având o suprafață de 5.200 mp, aparținând domeniului public al UAT Comuna Perșinari."
 categories: ["Parc"]
 faza: "SF+PTE"

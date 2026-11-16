@@ -21,7 +21,7 @@ export const servicePagesEn: ServicePage[] = [
     lead: "Complete design packages for local, county and national roads, from feasibility study to execution details.",
     description: "Design of local, county and national roads in Romania: pavement structures, junctions, roundabouts, car parks and cycle lanes.",
     keywords: ["road design Romania", "local road upgrade design", "county road design", "roundabout design", "highway engineering consultant Romania"],
-    image: "/img/projects/proiectare-drumuri.png",
+    image: "/img/projects/proiectare-drumuri.webp",
     imageAlt: "Road and platform design",
     intro: [
       "ME Design provides integrated design services for every category of public road in Romania, in line with the technical standards in force (AND road standards, SR, STAS). We cover the whole design process, from preliminary studies and site investigations to the documentation needed for the building permit and the execution design.",

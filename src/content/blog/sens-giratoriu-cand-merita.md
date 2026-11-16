@@ -3,7 +3,7 @@ title: "Sens giratoriu sau semafor? Ce decide de fapt"
 description: "Când un sens giratoriu e soluția bună pentru o intersecție, când nu e, și ce trebuie verificat înainte: trafic, spațiu, vehicule grele, pietoni și ape pluviale."
 pubDate: 2026-11-20
 category: "Tehnic"
-image: "/img/projects/BRAILA.PNG"
+image: "/img/projects/BRAILA.webp"
 imageAlt: "Sens giratoriu în execuție, vedere aeriană"
 keywords: ["sens giratoriu", "proiectare sens giratoriu", "intersectie giratorie", "sens giratoriu vs semafor", "amenajare intersectie"]
 ---

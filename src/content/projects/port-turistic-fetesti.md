@@ -1,5 +1,6 @@
 ---
 title: "Amenajare Port Turistic în Municipiul Fetești"
+seoTitle: "Port turistic Fetești, brațul Borcea"
 description: "Proiectare circulatii, parcaje si platforma portuara pe bratul Borcea, Dunare."
 categories: ["Drumuri", "Amenajări Hidrotehnice"]
 faza: "SF"

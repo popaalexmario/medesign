@@ -147,6 +147,19 @@ eroare se vede.
   blochează boții de training și poate da 403 boților AI. Se controlează din
   dashboard (AI Crawl Control / Bots), nu din repo.
 
+## SEO tehnic
+
+- Linkurile interne primesc „/” final la build (`integrations/trailing-slash.mjs`),
+  ca să nu treacă prin redirecționarea 308 a Cloudflare. URL-urile din schema
+  JSON-LD se scriu tot cu „/” final.
+- Proiectele au `seoTitle` (max ~52 caractere) în RO și EN; titlul lung rămâne
+  în pagină. Titlurile care depășesc 65 de caractere cu sufix pierd „| ME Design”.
+- Schema globală (WebSite, Organization, ProfessionalService) e construită în
+  `Layout.astro` din `services.ts`. `sameAs` e gol până primim profilurile firmei.
+- Sitemap cu `<lastmod>` pentru articole (din `astro.config.mjs`).
+- IndexNow: `.github/workflows/indexnow.yml` anunță Bing la fiecare push în
+  branch-ul de producție; cheia e fișierul din `public/<cheie>.txt`.
+
 ## Bara cu logouri
 
 `src/components/LogoMarquee.astro` pe „Despre noi” (variant dark) și pe „Portofoliu”

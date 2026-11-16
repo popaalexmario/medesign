@@ -4,7 +4,7 @@ description: "Diferența dintre Studiu de Fezabilitate, DALI și Proiect Tehnic,
 pubDate: 2026-08-12
 updatedDate: 2026-11-12
 category: "Ghiduri"
-image: "/img/projects/proiectare-drumuri.png"
+image: "/img/projects/proiectare-drumuri.webp"
 imageAlt: "Planșă de proiectare pentru un drum"
 keywords: ["studiu de fezabilitate", "DALI", "proiect tehnic", "HG 907/2016", "documentatie proiectare drum"]
 ---

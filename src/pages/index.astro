@@ -65,7 +65,7 @@ const reasons = [
   <section class="relative min-h-screen flex items-start md:items-center overflow-hidden" id="hero" style="min-height: 100vh; min-height: 100svh">
     <!-- Real photo background with parallax -->
     <div class="absolute inset-0 hero-parallax">
-      <img src="/img/hero-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
+      <img src="/img/hero-bg.webp" srcset="/img/hero-bg-800.webp 800w, /img/hero-bg.webp 1376w" sizes="100vw" fetchpriority="high" decoding="async" alt="" class="absolute inset-0 w-full h-full object-cover scale-110" id="hero-bg" />
     </div>
 
     <!-- Gradient overlays -->
@@ -481,7 +481,7 @@ const reasons = [
           '<strong style="font-size:14px;color:#0a1628;line-height:1.3;display:block;">' + p.title + '</strong>' +
           '<p style="font-size:12px;color:#64748b;margin-top:4px;">📍 ' + p.location + '</p>' +
           '<p style="font-size:12px;color:#94a3b8;margin-top:2px;">📅 ' + p.year + '</p>' +
-          '<a href="/portofoliu/' + p.slug + '" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#1e3a5f;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
+          '<a href="/portofoliu/' + p.slug + '/" style="display:inline-flex;align-items:center;gap:4px;margin-top:10px;background:#1e3a5f;color:#fff;padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;text-decoration:none;">Vezi proiect →</a>' +
           '</div>';
 
         L.marker([p.lat, p.lng], { icon: icon })

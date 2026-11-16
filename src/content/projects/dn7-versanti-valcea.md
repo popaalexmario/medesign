@@ -1,5 +1,6 @@
 ---
 title: "Protecție Versanți DN 7 km 198+200 – 207+000, km 216+000 – 219+000, km 224+000 – 227+300 și km 228+000 – 233+200, Județul Vâlcea"
+seoTitle: "Protecție versanți DN7, defileul Oltului"
 description: "Protecție versanți pe DN7, defileul Oltului: plase ancorate pe 65.965 mp, sisteme de reținere a blocurilor și gabioane noi, finalizate cu 9 luni înainte de termen."
 categories: ["Drumuri", "Consolidări"]
 faza: "PTE+AT"

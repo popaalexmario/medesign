@@ -1,5 +1,6 @@
 ---
 title: "Extindere și Modernizare Terminal Auto Dana PL6 din Portul de Lucru Municipiul Constanța"
+seoTitle: "Terminal auto Dana PL6, Portul Constanța"
 description: "Proiectare platformă parcaje autoturisme."
 categories: ["Drumuri"]
 faza: "DTAC+PTE"

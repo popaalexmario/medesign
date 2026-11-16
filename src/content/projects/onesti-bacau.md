@@ -1,5 +1,6 @@
 ---
 title: "Modernizarea infrastructurii din zona strada Emil Rebreanu, Saturn, George Bacovia și Libertății – Tronson 1, Municipiul Onești, Jud. Bacău"
+seoTitle: "Modernizare străzi Emil Rebreanu, Onești"
 description: "Proiectare trotuare si parcari."
 categories: ["Drumuri"]
 faza: "DALI"

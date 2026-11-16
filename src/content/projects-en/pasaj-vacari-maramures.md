@@ -1,5 +1,6 @@
 ---
 title: "\"Clubul Văcarilor\" Overpass (Baia Mare – Recea), DN1C – Baia Mare Bypass, E58"
+seoTitle: "\"Clubul Văcarilor\" overpass, Baia Mare"
 description: "Reconfiguration of the DN1C junction with the Baia Mare bypass and a road overpass on DN1C with slip roads."
 faza: "Feasibility study (SF)"
 location: "Maramureș County (local authority), through the Maramureș County Council"

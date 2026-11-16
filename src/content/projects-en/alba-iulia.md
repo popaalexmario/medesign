@@ -1,5 +1,6 @@
 ---
 title: "Roundabout at the Intersection of Regiment V Vânători Street, Ferdinand I Boulevard and DN CALB"
+seoTitle: "Ferdinand I roundabout, Alba Iulia"
 description: "Roundabout on a national road with 2 traffic lanes of 5.50 m."
 faza: "Intervention approval documentation (DALI)"
 location: "Alba Iulia Municipality, Alba County"

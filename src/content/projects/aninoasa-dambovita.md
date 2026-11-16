@@ -1,5 +1,6 @@
 ---
 title: "Modernizare drumuri de interes local în Comuna Aninoasa, Județul Dâmbovița"
+seoTitle: "Modernizare drumuri locale, Aninoasa (Dâmbovița)"
 description: "Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km."
 categories: ["Drumuri"]
 faza: "DALI+DTAC+PTE"

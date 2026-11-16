@@ -1,5 +1,6 @@
 ---
 title: "Realizare Infrastructură Verde – Albastră în Comuna Bughea de Jos, Județul Argeș"
+seoTitle: "Infrastructură verde-albastră, Bughea de Jos"
 description: "Proiectare amenajare maluri cu ziduri de sprijin, trotuare si pasarele pentru continuitate circulatie."
 categories: ["Consolidări", "Pasarele", "Amenajări Hidrotehnice", "Parc"]
 faza: "SF+DTAC+PTE"

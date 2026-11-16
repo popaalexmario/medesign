@@ -1,5 +1,6 @@
 ---
 title: "Extension and Upgrade of the PL6 Berth Car Terminal, Constanța Working Port"
+seoTitle: "PL6 car terminal, Port of Constanța"
 description: "Design of a car parking platform."
 faza: "Building permit design + detailed design (DTAC+PTE)"
 location: "Port of Constanța"

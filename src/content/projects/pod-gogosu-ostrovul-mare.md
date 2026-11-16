@@ -1,5 +1,6 @@
 ---
 title: "Lucrări de Reparații Pod Suspendat peste Brațul Gogoșu — Dunăre"
+seoTitle: "Reparații pod suspendat Gogoșu, Dunăre"
 description: "Documentații de avizare a lucrărilor de intervenție la obiectivele Hidroelectrica SA-SH Porțile de Fier. Lucrări de reparații pod suspendat peste brațul Gogo..."
 categories: ["Poduri"]
 faza: "DALI"

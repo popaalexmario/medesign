@@ -1,5 +1,6 @@
 ---
 title: "Closing the Southern Traffic Ring of Craiova: Culverting of an Open Canal, Upgrading of Râului Street with a Link between DN56 and DN55, Junction with Aleea 2 Bechet"
+seoTitle: "Craiova southern traffic ring and canal culvert"
 description: "A new 2.18 km four-lane street and the culverting of the Craiovița canal over 1,800 m in southern Craiova. An investment of more than EUR 39 million, with EU funding."
 faza: "Intervention approval documentation + building permit design + detailed design (DALI+DTAC+PTE)"
 location: "Craiova Municipality, Dolj County"

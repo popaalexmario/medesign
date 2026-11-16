@@ -1,5 +1,6 @@
 ---
 title: "Overpass on the A0 over the A2, Km 53+069"
+seoTitle: "A0 over A2 overpass, km 53+069"
 description: "Fabrication and execution details for the road overpass carrying the A0 over the A2 at Km 53+069."
 faza: "Execution details (DE)"
 location: "Bucharest"

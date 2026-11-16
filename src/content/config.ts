@@ -19,6 +19,8 @@ const projects = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    // Titlul scurt pentru <title> și rezultatele Google (max ~52 caractere).
+    seoTitle: z.string().max(55).optional(),
     description: z.string(),
     categories: z.array(z.string()).min(1),
     faza: z.string(),
@@ -48,6 +50,7 @@ const projectsEn = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().max(55).optional(),
     description: z.string(),
     faza: z.string(),
     location: z.string(),

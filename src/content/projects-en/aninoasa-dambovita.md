@@ -1,5 +1,6 @@
 ---
 title: "Upgrading of Local Roads in Aninoasa Commune, Dâmbovița County"
+seoTitle: "Local road upgrade, Aninoasa (Dâmbovița)"
 description: "Design for the upgrading of 6 local streets with a total length of 2.20 km."
 faza: "Intervention approval documentation + building permit design + detailed design (DALI+DTAC+PTE)"
 location: "Aninoasa commune, Dâmbovița County"

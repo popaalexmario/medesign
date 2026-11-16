@@ -1,5 +1,6 @@
 ---
 title: "Tourist Port Development in Fetești Municipality"
+seoTitle: "Fetești tourist port, Borcea branch"
 description: "Design of access roads, parking and a port platform on the Borcea branch of the Danube."
 faza: "Feasibility study (SF)"
 location: "Fetești Municipality, Ialomița County"

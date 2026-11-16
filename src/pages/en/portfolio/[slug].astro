@@ -37,7 +37,7 @@ const sameCat = all.filter(
 );
 const related = [...sameRegion, ...sameCat].slice(0, 3);
 
-const url = `https://me-design.ro/en/portfolio/${project.slug}`;
+const url = `https://me-design.ro/en/portfolio/${project.slug}/`;
 // Galeria din capul fișei: coperta, apoi imaginile existente din `gallery`
 // (planșe, randări), apoi pozele urcate în poze/proiecte/<slug>/.
 const uploaded = (await projectPhotos(project.slug))
@@ -54,6 +54,10 @@ const gallery: Photo[] = [
 ];
 // Coperta e de obicei o fotografie: o afișăm umplând cadrul.
 if (gallery[0] && d.image && !/\.(png|svg)$/i.test(d.image)) gallery[0].fit = 'cover';
+
+const metaDescription = (d.description.length < 110
+  ? `${d.description.replace(/\.*$/, '')}. ${d.faza}. ${d.location}, ${d.year}. Design by ME Design.`
+  : d.description).slice(0, 165);
 
 const jsonLd = [
   {
@@ -74,7 +78,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://me-design.ro/en/' },
-      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://me-design.ro/en/portfolio' },
+      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://me-design.ro/en/portfolio/' },
       { '@type': 'ListItem', position: 3, name: d.title, item: url },
     ],
   },
@@ -82,8 +86,8 @@ const jsonLd = [
 ---
 
 <Layout
-  title={d.title.length > 60 ? d.title.slice(0, 57).trimEnd() + '…' : d.title}
-  description={d.description}
+  title={d.seoTitle ?? (d.title.length > 60 ? d.title.slice(0, 57).trimEnd() + '…' : d.title)}
+  description={metaDescription}
   image={d.image}
   jsonLd={jsonLd}
 >

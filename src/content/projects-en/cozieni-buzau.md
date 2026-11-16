@@ -1,5 +1,6 @@
 ---
 title: "Upgrading of Local Roads in Cozieni Commune, Buzău County"
+seoTitle: "Local road upgrade, Cozieni (Buzău)"
 description: "Design of 13 local and commune roads totalling 10.35 km."
 faza: "Intervention approval documentation (DALI)"
 location: "Cozieni commune, Buzău County"

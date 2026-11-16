@@ -21,6 +21,7 @@ import '@fontsource/inter/latin-ext-400.css';
 import '@fontsource/inter/latin-ext-500.css';
 import '@fontsource/inter/latin-ext-600.css';
 import { langFromPath, alternatePath } from '../i18n/paths';
+import { serviceLinks } from '../data/services';
 
 interface Props {
   title: string;
@@ -57,7 +58,83 @@ const alt = alternatePath(Astro.url.pathname);
 const roPath = lang === 'ro' ? Astro.url.pathname : alt;
 const enPath = lang === 'en' ? Astro.url.pathname : alt;
 const ogImage = new URL(image, 'https://me-design.ro');
-const fullTitle = `${title} | ME Design`;
+// Google afișează ~60 de caractere: la titlurile lungi renunțăm la sufixul de brand.
+const fullTitle = title.length + 12 > 65 ? title : `${title} | ME Design`;
+
+// Datele firmei pentru Google și asistenții AI (schema.org), aceleași pe toate
+// paginile. Serviciile vin din src/data/services.ts, deci rămân sincronizate.
+const SITE = 'https://me-design.ro';
+const siteGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#website`,
+      url: `${SITE}/`,
+      name: 'ME Design',
+      alternateName: 'Mario Engineering Design',
+      inLanguage: ['ro-RO', 'en'],
+      publisher: { '@id': `${SITE}/#organization` },
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE}/#organization`,
+      name: 'Mario Engineering Design SRL',
+      alternateName: 'ME Design',
+      legalName: 'Mario Engineering Design SRL',
+      url: SITE,
+      logo: { '@type': 'ImageObject', url: `${SITE}/img/logo.png` },
+      image: `${SITE}/img/og-default.jpg`,
+      foundingDate: '2018-12-12',
+      taxID: '40290175',
+      email: 'office@me-design.ro',
+      telephone: '+40746784156',
+      address: { '@id': `${SITE}/#address` },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+40746784156',
+        email: 'office@me-design.ro',
+        contactType: 'sales',
+        areaServed: 'RO',
+        availableLanguage: ['Romanian', 'English'],
+      },
+      sameAs: [],
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${SITE}/#localbusiness`,
+      name: 'Mario Engineering Design SRL',
+      alternateName: 'ME Design',
+      description:
+        'Proiectare infrastructură în toată România: drumuri, poduri și pasaje, poduri de cale ferată, lucrări de sprijin și consolidări, intervenții la monumente istorice, expertize tehnice și amenajări hidrotehnice. Sisteme de management certificate ISO 9001, ISO 14001 și ISO 45001.',
+      url: SITE,
+      image: `${SITE}/img/og-default.jpg`,
+      logo: `${SITE}/img/logo.png`,
+      telephone: '+40746784156',
+      email: 'office@me-design.ro',
+      foundingDate: '2018-12-12',
+      parentOrganization: { '@id': `${SITE}/#organization` },
+      address: {
+        '@type': 'PostalAddress',
+        '@id': `${SITE}/#address`,
+        streetAddress: 'Str. Avionului 26, Et. 1, Ap. B',
+        addressLocality: 'București',
+        addressRegion: 'Sector 1',
+        addressCountry: 'RO',
+      },
+      areaServed: { '@type': 'Country', name: 'România' },
+      knowsAbout: serviceLinks.map((x) => x.title),
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Servicii de proiectare infrastructură',
+        itemListElement: serviceLinks.map((x) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: x.title, description: x.short, url: `${SITE}/servicii/${x.slug}/` },
+        })),
+      },
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -468,98 +545,7 @@ const fullTitle = `${title} | ME Design`;
     </style>
 
     <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json" is:inline>
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://me-design.ro/#organization",
-          "name": "Mario Engineering Design SRL",
-          "alternateName": "ME Design",
-          "url": "https://me-design.ro",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://me-design.ro/img/logo.png"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+40746784156",
-            "contactType": "customer service",
-            "email": "office@me-design.ro",
-            "availableLanguage": "Romanian"
-          },
-          "sameAs": []
-        },
-        {
-          "@type": "LocalBusiness",
-          "@id": "https://me-design.ro/#localbusiness",
-          "name": "Mario Engineering Design SRL",
-          "description": "Servicii profesionale de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări în România.",
-          "url": "https://me-design.ro",
-          "telephone": "+40746784156",
-          "email": "office@me-design.ro",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Str. Avionului 26, Et. 1, Ap. B",
-            "addressLocality": "București",
-            "addressRegion": "Sectorul 1",
-            "addressCountry": "RO"
-          },
-          "areaServed": [
-            { "@type": "AdministrativeArea", "name": "Muntenia" },
-            { "@type": "AdministrativeArea", "name": "Oltenia" },
-            { "@type": "AdministrativeArea", "name": "Dobrogea" },
-            { "@type": "AdministrativeArea", "name": "Transilvania" },
-            { "@type": "AdministrativeArea", "name": "Banat" },
-            { "@type": "AdministrativeArea", "name": "Moldova" },
-            { "@type": "Country", "name": "România" }
-          ],
-          "knowsAbout": [
-            "Proiectare drumuri",
-            "Proiectare poduri și pasaje",
-            "Lucrări de sprijin și consolidări",
-            "Expertiză tehnică construcții",
-            "Documentații tehnico-economice"
-          ],
-          "priceRange": "$$",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servicii proiectare infrastructură",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Proiectare Drumuri",
-                  "description": "Proiectare drumuri municipale, județene, naționale, intersecții, sensuri giratorii, parcări și piste de biciclete.",
-                  "url": "https://me-design.ro/servicii/proiectare-drumuri"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Proiectare Poduri, Pasaje, Pasarele",
-                  "description": "Proiectare poduri rutiere și pietonale, pasaje, pasarele pentru pietoni și bicicliști, podețe.",
-                  "url": "https://me-design.ro/servicii/proiectare-poduri-pasaje"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Lucrări de Sprijin și Consolidări",
-                  "description": "Proiectare ziduri de sprijin, consolidare versanți, stabilizare teren, gabioane, ancore.",
-                  "url": "https://me-design.ro/servicii/lucrari-consolidare"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-    </script>
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(siteGraph)} />
 
     {jsonLd && (
       <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />

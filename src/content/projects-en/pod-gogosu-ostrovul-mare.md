@@ -1,5 +1,6 @@
 ---
 title: "Repair Works to the Suspension Bridge over the Gogoșu Branch, Danube"
+seoTitle: "Gogoșu suspension bridge repair, Danube"
 description: "Intervention approval documentation for Hidroelectrica SA, Porțile de Fier Hydropower Branch assets. Repair works to the suspension bridge over the Gogoșu branch..."
 faza: "Intervention approval documentation (DALI)"
 location: "Ostrovul Mare"

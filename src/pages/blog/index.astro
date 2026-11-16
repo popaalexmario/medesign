@@ -24,14 +24,14 @@ const jsonLd = {
   name: 'Blog ME Design',
   description:
     'Ghiduri și articole tehnice despre proiectarea infrastructurii: drumuri, poduri, documentații și legislație.',
-  url: 'https://me-design.ro/blog',
+  url: 'https://me-design.ro/blog/',
   publisher: { '@id': 'https://me-design.ro/#organization' },
   blogPost: posts.map((p) => ({
     '@type': 'BlogPosting',
     headline: p.data.title,
     description: p.data.description,
     datePublished: p.data.pubDate.toISOString(),
-    url: `https://me-design.ro/blog/${p.slug}`,
+    url: `https://me-design.ro/blog/${p.slug}/`,
   })),
 };
 ---

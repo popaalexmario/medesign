@@ -1,5 +1,6 @@
 ---
 title: "Major Repair of the Gladiolelor Street Bridge (Maria Tereza), Sibiu Municipality"
+seoTitle: "Gladiolelor Street bridge repair, Sibiu"
 description: "The structure is located within the built-up area of Sibiu, in the Terezian district, at the end of Gladiolelor Street, between Cibinului Street and Râului Street."
 faza: "Building permit design + detailed design (DTAC+PTE)"
 location: "Sibiu Municipality"

@@ -1,5 +1,6 @@
 ---
 title: "Reparație Capitală Pod Strada Gladiolelor (Maria Tereza), Municipiul Sibiu"
+seoTitle: "Reparație capitală pod Gladiolelor, Sibiu"
 description: "Obiectivul studiat este situat în intravilanul municipiului Sibiu, în zona cartierului Terezian, la capătul străzii Gladiolelor, între str. Cibinului și str...."
 categories: ["Poduri", "Monument Istoric"]
 faza: "DTAC+PTE"

@@ -1,5 +1,6 @@
 ---
 title: "Construire Pasaj „Clubul Văcarilor\" (Baia Mare – Recea) DN1C – DN VO BM E58"
+seoTitle: "Pasaj „Clubul Văcarilor”, Baia Mare"
 description: "Amenajare intersectie DN1C cu DN VO BM si pasaj rutier pe DN1C impreuna cu bretele."
 categories: ["Drumuri", "Poduri"]
 faza: "SF"

@@ -33,7 +33,7 @@ const related = [...sameCategory, ...others].slice(0, 3);
 const readingTime = Math.max(1, Math.ceil(post.body.split(/\s+/).length / 200));
 const toc = headings.filter((h) => h.depth === 2);
 
-const url = `https://me-design.ro/blog/${post.slug}`;
+const url = `https://me-design.ro/blog/${post.slug}/`;
 const ogImage = post.data.image ?? '/img/og-default.jpg';
 
 const fmtDate = (d: Date) =>
@@ -60,7 +60,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://me-design.ro/blog' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://me-design.ro/blog/' },
       { '@type': 'ListItem', position: 3, name: post.data.title, item: url },
     ],
   },

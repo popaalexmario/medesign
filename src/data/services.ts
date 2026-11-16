@@ -39,7 +39,7 @@ export const servicePages: ServicePage[] = [
     lead: "Proiecte tehnice complete pentru drumuri comunale, județene și naționale — de la studii de fezabilitate la detalii de execuție.",
     description: "Proiectare drumuri comunale, județene și naționale: structuri rutiere, intersecții, sensuri giratorii, parcări și piste de biciclete.",
     keywords: ["proiectare drumuri", "modernizare drum comunal", "proiectare drum judetean", "sens giratoriu proiectare"],
-    image: "/img/projects/proiectare-drumuri.png",
+    image: "/img/projects/proiectare-drumuri.webp",
     imageAlt: "Proiectare drumuri și platforme",
     intro: [
       "ME Design oferă servicii integrate de proiectare pentru toate categoriile de drumuri publice din România, conform normativelor tehnice în vigoare (AND, SR, STAS). Echipa noastră acoperă întreg procesul de proiectare — de la studii preliminare și investigații de teren până la documentațiile necesare pentru autorizația de construire și proiectul de execuție.",

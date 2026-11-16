@@ -12,7 +12,7 @@ type Props = { service: ServicePage };
 
 const { service } = Astro.props;
 const altele = serviceLinks.filter((s) => s.slug !== service.slug);
-const url = `https://me-design.ro/servicii/${service.slug}`;
+const url = `https://me-design.ro/servicii/${service.slug}/`;
 
 const jsonLd = [
   {
@@ -39,7 +39,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Acasă', item: 'https://me-design.ro' },
-      { '@type': 'ListItem', position: 2, name: 'Servicii', item: 'https://me-design.ro/servicii' },
+      { '@type': 'ListItem', position: 2, name: 'Servicii', item: 'https://me-design.ro/servicii/' },
       { '@type': 'ListItem', position: 3, name: service.title, item: url },
     ],
   },

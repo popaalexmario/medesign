@@ -1,5 +1,6 @@
 ---
 title: "Pasaj pe A0 peste A2 Km 53+069"
+seoTitle: "Pasaj A0 peste A2, km 53+069"
 description: "Detalii de uzinare si executie pentru pasajul auto pe A0 peste A2 Km 53+069."
 categories: ["Poduri"]
 faza: "DE"

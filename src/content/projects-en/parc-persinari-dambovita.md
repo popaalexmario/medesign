@@ -1,5 +1,6 @@
 ---
 title: "Park Development in Perșinari Commune, Dâmbovița County"
+seoTitle: "Park development, Perșinari commune"
 description: "The proposed project is within the built-up area, on a 5,200 m² plot in the public domain of Perșinari commune."
 faza: "Feasibility study + detailed design (SF+PTE)"
 location: "Perșinari commune, Dâmbovița County"

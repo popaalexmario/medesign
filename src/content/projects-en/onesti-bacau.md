@@ -1,5 +1,6 @@
 ---
 title: "Upgrading of Infrastructure around Emil Rebreanu, Saturn, George Bacovia and Libertății Streets, Section 1, Onești Municipality, Bacău County"
+seoTitle: "Emil Rebreanu street upgrade, Onești"
 description: "Design of sidewalks and parking."
 faza: "Intervention approval documentation (DALI)"
 location: "Onești Municipality, Bacău County"

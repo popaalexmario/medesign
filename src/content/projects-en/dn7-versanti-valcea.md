@@ -1,5 +1,6 @@
 ---
 title: "Slope Protection on DN 7, km 198+200 to 207+000, km 216+000 to 219+000, km 224+000 to 227+300 and km 228+000 to 233+200, Vâlcea County"
+seoTitle: "DN7 slope protection, Olt Gorge"
 description: "Slope protection on DN7 in the Olt Gorge: anchored mesh over 65,965 m², rockfall barrier systems and new gabions, completed 9 months ahead of schedule."
 faza: "Detailed design + technical assistance during construction (PTE+AT)"
 location: "DN 7 Lotrișor, Vâlcea County"
