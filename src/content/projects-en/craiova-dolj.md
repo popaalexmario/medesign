@@ -11,41 +11,25 @@ Construction of a new 2.18 km street with 4 traffic lanes. Culverting of the ope
 
 ## Project background
 
-Closing the traffic ring in the south of Craiova was one of the most complex projects we have prepared, carried out over three years. It combined a new road artery with a large-scale hydraulic structure.
+The new artery closes the traffic ring in the south of Craiova, between the junction of Râului Street with Popoveni (the Popoveni bridge) and the junction of Nicolae Romanescu Boulevard with Aleea 2 Bechet, with a link between DN56 and DN55. Along this route the Craiovița collector canal ran in the open. The ring connects fragmented routes and takes heavy through traffic out of the city.
 
-## Project components
+## What we designed
 
-- **New 2.18 km street** with four traffic lanes
-- **Culverting of the open Craiovița (Râului) canal** over a length of 1,800 m
-- Three roundabouts to keep the intersections flowing
-- Cycle tracks and pedestrian areas built into the cross-section
+We prepared the intervention approval documentation (DALI), the building permit design (DTAC) and the detailed technical design (PTE) for Craiova Municipality, over three years:
 
-## The technical challenge
+- a new 2.18 km street with four traffic lanes
+- culverting of the open Craiovița (Râului) canal over 1,800 m
+- three roundabouts
+- cycle tracks and pedestrian areas built into the cross-section
 
-Culverting an open canal for almost two kilometres under a four-lane artery means the hydraulic structure becomes part of the road foundation. The box section has to be sized for the design flows and for the traffic loads at the same time, and an error in either assumption compromises both functions.
+The canal box becomes part of the road foundation, so it was sized for the design flows and for the traffic loads at the same time. The link between DN56 and DN55 required coordination with the administrator of the national roads.
 
-The project was prepared at the intervention approval documentation (DALI), building permit design (DTAC) and detailed technical design (PTE) stages, for Craiova Municipality. The link between DN56 and DN55, with a junction at Aleea 2 Bechet, required coordination with the administrator of the national roads.
+## Funding
 
-## Funding and construction
+Work started with money from the local budget. Craiova Municipality later signed an EU funding contract for culverting the entire collector canal and building the new artery. The total value of the project is more than EUR 39 million, of which about EUR 22 million is non-reimbursable funding through the Sustainable Development and Just Transition Programme.
 
-Work started with money from the local budget. Craiova Municipality later signed an EU funding contract for culverting the entire collector canal and building the new artery. The total value of the project is more than EUR 39 million, of which about EUR 22 million is non-reimbursable funding. According to the mayor, the funding comes through the Sustainable Development and Just Transition Programme.
+## Status
 
-The construction contract was signed on 14 July 2026, worth RON 149,077,584 excluding VAT, with a contractors' joint venture led by Omega Star Sistems SRL.
+The construction contract was signed on 14 July 2026, worth RON 149,077,584 excluding VAT, with a contractors' joint venture led by Omega Star Sistems SRL. On site, the canal is being closed with precast concrete box units placed in the existing channel, and the four-lane artery will run on top.
 
-On site, the canal is being closed with precast concrete box units placed in the existing channel, and the four-lane artery will run on top. The new artery gives the city a modern exit and eases traffic in this area.
-
-Sources for the funding and construction figures: the public announcement by the Mayor of Craiova, reported by [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 November 2026, in Romanian) and by fonduri-structurale.ro.
-
-## What it brings to the community
-
-The project changes the way the whole southern part of Craiova works:
-
-- Relief for the existing arteries, by closing the traffic ring and diverting through traffic
-- Removal of the open canal, with a direct effect on odours, accident risk and insects in the adjacent residential areas
-- Land recovered for traffic and public space along the former canal
-- Real travel options for cyclists and pedestrians, not only for cars
-- A new exit from the city and an upgraded edge-of-town area, with green spaces along the new artery
-
-## Improvements on site
-
-The Craiovița canal, until now an open barrier in the urban fabric, becomes underground infrastructure with a four-lane artery on top. The three roundabouts replace intersections that were running at the limit of their capacity. The cycle tracks and pedestrian areas are part of the cross-section from the design stage, not added later on whatever space was left.
+Sources: the public announcement by the Mayor of Craiova, reported by [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 November 2026, in Romanian) and by fonduri-structurale.ro (in Romanian).

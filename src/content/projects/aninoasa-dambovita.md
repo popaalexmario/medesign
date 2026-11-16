@@ -14,39 +14,26 @@ gallery: []
 order: 3
 ---
 
-Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km.
+Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km, de la avizarea intervenției până la proiectul tehnic de execuție.
 
 ## Contextul proiectului
 
-Comuna Aninoasa, din județul Dâmbovița, a inițiat modernizarea a șase străzi locale, însumând 2,20 km. Drumurile de interes local din mediul rural ajung frecvent în situația în care structura rutieră existentă nu mai corespunde traficului actual, iar sistemul de colectare a apelor pluviale este incomplet sau colmatat.
+Comuna Aninoasa, din județul Dâmbovița, a inițiat modernizarea a șase străzi locale, însumând 2,20 km. Lucrarea a fost încadrată de la început ca intervenție la construcții existente, nu ca obiectiv nou, ceea ce a stabilit tipul documentației.
+
+## Ce am proiectat
+
+Am elaborat documentația completă, în trei faze succesive pentru același obiectiv:
+
+- DALI, precedată de expertiza tehnică și de studiile de teren, cu scenariul optim și indicatorii tehnico-economici
+- DTAC, documentația pentru autorizarea executării lucrărilor
+- PTE, cu memorii pe specialități, caiete de sarcini, liste de cantități și detalii
+
+Pe fiecare stradă, intervenția cuprinde o structură rutieră dimensionată pentru traficul real, colectarea și evacuarea apelor pluviale și accese amenajate la proprietăți. Fiecare tronson a fost analizat în raport cu cotele terenului și cu punctele de descărcare, astfel încât scurgerea apelor să funcționeze continuu pe toată rețeaua, nu pe șase lucrări separate.
 
 ## Finanțare
 
-Investiția este finanțată prin Programul Național de Investiții „Anghel Saligny” și figurează pe lista proiectelor în derulare a Primăriei Aninoasa ([sursa](https://aninoasa.com/primaria-aninoasa/proiecte/proiecte-in-derulare/)). Fotografiile din galerie arată străzile după execuție.
+Investiția este finanțată prin Programul Național de Investiții „Anghel Saligny” și figurează pe lista proiectelor în derulare a Primăriei Aninoasa ([sursa](https://aninoasa.com/primaria-aninoasa/proiecte/proiecte-in-derulare/)).
 
-## Ce a cuprins documentația
+## Stadiu
 
-Am elaborat documentația completă, parcurgând trei faze succesive pentru același obiectiv:
-
-- **DALI** — documentația de avizare a lucrărilor de intervenții, precedată de expertiza tehnică și de studiile de teren, cu stabilirea scenariului optim și a indicatorilor tehnico-economici
-- **DTAC** — documentația tehnică pentru autorizarea executării lucrărilor
-- **PTE** — proiectul tehnic de execuție, cu memorii pe specialități, caiete de sarcini, liste de cantități și detalii
-
-## Aspecte specifice
-
-Pe o rețea de șase străzi tratate unitar, elementul care determină durata de viață a investiției este continuitatea scurgerii apelor. Fiecare tronson a fost analizat în raport cu cotele terenului și cu posibilitățile de descărcare, astfel încât soluția să funcționeze ca sistem, nu ca șase lucrări independente.
-
-Încadrarea ca intervenție la construcții existente — și nu ca obiectiv nou — a fost stabilită de la început, ceea ce a determinat tipul de documentație și a evitat reluarea procedurii.
-
-## Ce aduce comunității
-
-Modernizarea străzilor locale schimbă lucruri concrete în viața de zi cu zi a unei comune:
-
-- **Accesul serviciilor de urgență** devine predictibil, inclusiv pe vreme rea, când un drum neamenajat poate deveni impracticabil
-- **Transportul școlar** circulă pe traseu sigur, fără ocolișuri impuse de porțiuni degradate
-- **Costurile locuitorilor** scad — uzura autovehiculelor pe drum modernizat este semnificativ mai mică
-- **Praful** dispare din gospodăriile aflate la marginea drumului, cu efect direct asupra calității vieții
-
-## Îmbunătățiri în amplasament
-
-Pe cele șase străzi, intervenția aduce o structură rutieră dimensionată pentru traficul real, un sistem de colectare și evacuare a apelor care protejează investiția, și accese amenajate către proprietăți. Racordarea corectă la rețeaua existentă elimină punctele în care apa stagna și degrada progresiv carosabilul.
+Lucrările au fost executate. Fotografiile din galerie arată străzile după execuție.

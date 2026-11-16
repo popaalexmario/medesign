@@ -1,7 +1,7 @@
 ---
 title: "Realizare Infrastructură Verde – Albastră în Comuna Bughea de Jos, Județul Argeș"
 seoTitle: "Infrastructură verde-albastră, Bughea de Jos"
-description: "Proiectare amenajare maluri cu ziduri de sprijin, trotuare si pasarele pentru continuitate circulatie."
+description: "Ziduri de sprijin pentru maluri, trotuare și pasarele pietonale, în proiectul de infrastructură verde-albastră al comunei Bughea de Jos."
 categories: ["Consolidări", "Pasarele", "Amenajări Hidrotehnice", "Parc"]
 faza: "SF+DTAC+PTE"
 location: "U.A.T. Comuna Bughea de Jos, Județul Argeș"
@@ -14,36 +14,20 @@ gallery: []
 order: 4
 ---
 
-Proiectare amenajare maluri cu ziduri de sprijin, trotuare si pasarele pentru continuitate circulatie.
+Proiectare pentru amenajarea malurilor cu ziduri de sprijin, trotuare și pasarele care asigură continuitatea circulației pietonale, în cadrul proiectului de infrastructură verde-albastră al comunei Bughea de Jos.
 
 ## Contextul proiectului
 
-Proiectul de infrastructură verde-albastră din Comuna Bughea de Jos, județul Argeș, a reunit într-o singură documentație componente care de regulă se tratează separat: amenajarea malurilor, lucrări de sprijin, circulație pietonală și spațiu public.
+Proiectul „Realizare infrastructură verde-albastră în comuna Bughea de Jos” reunește într-o singură documentație componente care de regulă se tratează separat: amenajarea malurilor, lucrări de sprijin, circulație pietonală și spațiu public. Investiția urmărește și reabilitarea unor terenuri degradate din comună ca spații verzi.
 
-## Soluția proiectată
+## Ce am proiectat
 
-Documentația a acoperit:
+Documentația a acoperit ziduri de sprijin pentru stabilizarea malurilor, trotuare pentru circulația pietonală separată de carosabil, pasarele peste cursul de apă și amenajarea spațiului public adiacent.
 
-- **Ziduri de sprijin** pentru amenajarea și stabilizarea malurilor
-- **Trotuare** pentru circulația pietonală în siguranță
-- **Pasarele** care asigură continuitatea circulației peste cursul de apă
-- **Amenajarea spațiului public** adiacent
+Componenta hidrotehnică a stabilit restul soluției: cotele de amenajare a malurilor, dimensionarea zidurilor de sprijin și poziția pasarelelor depind de regimul apelor. Fiind obiective noi amplasate în raport cu un curs de apă, am parcurs studiul de fezabilitate, documentația pentru autorizarea lucrărilor și proiectul tehnic de execuție.
 
-## De ce a contat abordarea integrată
+## Finanțare
 
-Într-un astfel de proiect, componenta hidrotehnică determină tot restul. Cotele de amenajare a malurilor, dimensionarea zidurilor de sprijin și poziționarea pasarelelor depind de regimul apelor — iar o soluție care tratează separat amenajarea peisagistică de cea hidrotehnică se dovedește, de obicei, nefuncțională la prima viitură.
+Valoarea estimată a investiției este de 29.044.330 lei, iar proiectul a fost depus pentru finanțare din fonduri europene. În martie 2026, cererea de finanțare a primit decizia de admitere după evaluarea tehnică și financiară.
 
-Am parcurs trei faze: studiul de fezabilitate, documentația pentru autorizare și proiectul tehnic de execuție. Fiind vorba de obiective noi amplasate în raport cu un curs de apă, încadrarea ca SF a fost cea corectă.
-
-## Ce aduce comunității
-
-Amenajarea răspunde unei probleme resimțite direct de locuitorii din apropierea cursului de apă:
-
-- **Protecția gospodăriilor** de pe maluri față de eroziune și de efectele viiturilor
-- **Continuitatea circulației pietonale** prin pasarele, acolo unde cursul de apă fragmenta deplasările
-- **Spațiu public utilizabil** într-o comună unde amenajările de acest tip lipsesc de regulă
-- **Legătura între zonele localității** separate de albie, fără ocolișuri
-
-## Îmbunătățiri în amplasament
-
-Malurile capătă o structură de sprijin care oprește eroziunea progresivă. Trotuarele introduc circulație pietonală separată de carosabil, iar pasarelele creează traversări permanente, utilizabile indiferent de nivelul apei. Componenta de spațiu verde transformă o zonă tehnică într-una folosibilă de comunitate — o combinație rar întâlnită la scara unei comune.
+Surse: Evenimentul Muscelean, „Proiect de peste 29 de milioane de lei la Bughea de Jos, pentru infrastructura verde-albastră” (17 aprilie 2025); [Ziarul din Muscel](https://www.ziaruldinmuscel.ro/s-a-dat-ok-ul-la-bughea-de-jos-terenurile-degradate-din-comuna-vor-fi-reabilitate-ca-spatii-verzi/) (31 martie 2026).

@@ -1,7 +1,7 @@
 ---
 title: "Modernizarea Drumurilor Locale în Comuna Cozieni, Județul Buzău"
 seoTitle: "Modernizare drumuri locale, Cozieni (Buzău)"
-description: "Proiectare 13 drumuri locale si comunale care insumeaza 10,35 km."
+description: "Proiectare pentru modernizarea a 13 drumuri locale și comunale din Cozieni, 10,35 km, inclusiv DC 60, finanțat prin PNI „Anghel Saligny”."
 categories: ["Drumuri"]
 faza: "DALI"
 location: "Comuna Cozieni, Județul Buzău"
@@ -14,43 +14,18 @@ gallery: []
 order: 13
 ---
 
-Proiectare 13 drumuri locale si comunale care insumeaza 10,35 km.
+Proiectare pentru modernizarea a 13 drumuri locale și comunale din comuna Cozieni, însumând 10,35 km, în subcarpații Buzăului.
 
 ## Contextul proiectului
 
-Pentru Comuna Cozieni, din județul Buzău, am proiectat modernizarea a **13 drumuri locale și comunale**, însumând **10,35 km**.
+Cozieni se află în subcarpații Buzăului, un areal cu relief accidentat și versanți predispuși la instabilitate. Accesul gospodăriilor depinde direct de starea drumurilor locale. Aici problema principală a drumurilor nu este structura rutieră în sine, ci apa: pe pante, apa de suprafață capătă viteză, ajunge pe carosabil, pătrunde în structură și antrenează material din taluzuri.
 
-## Provocarea reliefului
+## Ce am proiectat
 
-Zona Cozieni se află în subcarpații Buzăului, un areal cu relief accidentat și cu versanți predispuși la instabilitate. Într-un asemenea context, problema principală a drumurilor locale nu este structura rutieră în sine, ci **apa**.
+Am elaborat documentația în faza DALI pentru 13 drumuri existente, cu o lungime totală de 10,35 km. Rețeaua a fost analizată ca sistem: punctele de colectare și traseele de evacuare a apelor au fost stabilite înaintea dimensionării structurilor rutiere, pentru că descărcarea de pe un tronson devine problema tronsonului din aval. Sistemul de colectare și evacuare a apelor este dimensionat pe ansamblu, cu puncte de descărcare controlate.
 
-Pe pante, apa de suprafață capătă viteză și energie de eroziune. Fără șanțuri dimensionate corect, fără podețe la fiecare vale și fără puncte de descărcare controlate, apa ajunge pe carosabil, pătrunde în structură și antrenează material din taluzuri.
+## Finanțare
 
-## Abordarea unitară
+Printre cele 13 drumuri este și DC 60, drumul comunal Cozieni – Punga – Pănătău, pe tronsonul din comuna Cozieni, de la satul Pietrosu (joncțiunea cu DJ 203L) până la limita cu comuna Pănătău. Pentru acest tronson, comuna Cozieni a obținut finanțare prin Programul Național de Investiții „Anghel Saligny”, în valoare de circa 11 milioane de lei. Tronsonul de pe teritoriul comunei Pănătău, de 5,7 km, între satele Plăișoru și Punga, a fost finanțat separat, prin Compania Națională de Investiții, și este executat. Împreună, cele două tronsoane leagă zona de DN10, pe Valea Buzăului, în arealul Geoparcului UNESCO „Ținutul Buzăului”.
 
-Treisprezece drumuri pe un teritoriu cu relief variat nu pot fi tratate ca treisprezece proiecte independente. Descărcarea apelor de pe un tronson devine problema tronsonului din aval.
-
-Am analizat rețeaua ca sistem, stabilind punctele de colectare și traseele de evacuare înainte de dimensionarea structurilor rutiere. Ordinea este esențială: o structură rutieră corect dimensionată, dar amplasată într-un teren îmbibat cu apă, se degradează în primele sezoane.
-
-## DC 60, legătura cu Pănătău
-
-Printre cele 13 drumuri este și DC 60, drumul comunal Cozieni – Punga – Pănătău, pe tronsonul din comuna Cozieni, de la satul Pietrosu (joncțiunea cu DJ 203L) până la limita cu comuna Pănătău. Pentru acest tronson, comuna Cozieni a obținut finanțare prin Programul Național de Investiții „Anghel Saligny”, în valoare de circa 11 milioane de lei. Tronsonul de 5,7 km de pe teritoriul comunei Pănătău a fost finanțat separat, prin Compania Națională de Investiții. Împreună, cele două tronsoane leagă zona de DN10, pe Valea Buzăului.
-
-Sursa: [Opinia Buzău](https://opiniabuzau.ro/primaria-cozieni-poate-pierde-o-finantare-de-110-miliarde-lei/) (27 noiembrie 2024).
-
-## Documentația elaborată
-
-Proiectul a fost elaborat în faza DALI, ca intervenție asupra drumurilor existente.
-
-## Ce aduce comunității
-
-Comuna Cozieni este așezată în subcarpații Buzăului, unde accesul depinde direct de starea drumurilor locale:
-
-- **Legătura cu exteriorul menținută pe tot parcursul anului**, inclusiv în perioadele cu precipitații abundente
-- **Accesul ambulanței și al pompierilor** în zone în care, pe drum degradat, intervenția putea deveni imposibilă
-- **Transportul elevilor** către unitățile de învățământ, fără întreruperi cauzate de starea drumului
-- **Reducerea izolării gospodăriilor** aflate pe drumurile periferice ale comunei
-
-## Îmbunătățiri în amplasament
-
-Cele 13 drumuri, însumând 10,35 km, sunt tratate ca o rețea, nu ca lucrări izolate. Sistemul de colectare și evacuare a apelor este dimensionat pe ansamblu, cu puncte de descărcare controlate — elementul decisiv într-o zonă de deal, unde apa necontrolată erodează taluzurile și antrenează material pe carosabil.
+Sursa: Opinia Buzău (28 noiembrie 2024).

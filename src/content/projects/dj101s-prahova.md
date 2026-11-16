@@ -14,31 +14,18 @@ gallery: []
 order: 8
 ---
 
-Proiectare 12,15 km drum județean cu două poduri și consolidări terasament.
+Proiectare pentru modernizarea și reabilitarea a 12,15 km din DJ 101S, cu două poduri și consolidări de terasament, pentru Consiliul Județean Prahova.
 
 ## Contextul proiectului
 
-Modernizarea și reabilitarea DJ 101S, pentru Consiliul Județean Prahova, a acoperit **12,15 km de drum județean**, incluzând două poduri și lucrări de consolidare a terasamentului.
+DJ 101S pornește din Comarnic, de la intersecția cu DN1, și trece prin Secăria spre Valea Doftanei. Pe traseu se succed sectoare cu probleme diferite: zone în care structura rutieră este principala deficiență, zone cu terasament instabil și cele două poduri.
 
-## De ce nu se pot trata separat
+## Ce am proiectat
 
-Un drum județean de această lungime nu este o lucrare omogenă. Pe traseu se succed sectoare cu probleme diferite: zone în care structura rutieră este principala deficiență, zone în care terasamentul prezintă instabilitate, și punctele în care lucrările de artă determină întreaga soluție.
+Proiectul a fost elaborat în faza DALI, cu expertiza tehnică și studiile de teren aferente, și a tratat unitar cele trei categorii de lucrări: structura rutieră pe 12,15 km, cele două poduri și consolidările de terasament. Pentru podurile existente, evaluarea stării tehnice a stabilit încadrarea intervenției și soluțiile admisibile. Cotele podurilor au fost racordate la profilul longitudinal al drumului, iar consolidările au fost corelate cu încărcările din structura rutieră finală.
 
-Tratarea separată a celor trei componente — drum, poduri, consolidări — ar fi condus la soluții care nu se racordează. Un pod reabilitat la o cotă incompatibilă cu profilul longitudinal al drumului, sau o consolidare dimensionată fără a ține cont de încărcările din structura rutieră finală, generează lucrări suplimentare în faza de execuție.
+## Finanțare
 
-## Documentația elaborată
+Consiliul Județean Prahova a aprobat documentația și indicatorii tehnico-economici în ședința din 31 octombrie 2023. Investiția acoperă sectorul dintre km 0+000 (Comarnic, intersecția cu DN1) și km 12+122, include și iluminat public eficient energetic și are o valoare totală de 75,5 milioane de lei. Potrivit președintelui Consiliului Județean, drumurile județene aprobate în acea ședință urmau să fie finanțate prin noul Program Operațional Regional 2021–2027.
 
-Proiectul a fost elaborat în faza DALI, cu expertiza tehnică și studiile de teren aferente, tratând unitar cele trei categorii de lucrări. Pentru podurile existente, evaluarea stării tehnice a determinat încadrarea intervenției și soluțiile admisibile.
-
-## Ce aduce comunității
-
-Un drum județean de 12,15 km leagă localități care depind de el pentru aproape orice deplasare:
-
-- **Accesul la serviciile din reședința de județ** — medicale, administrative, educaționale
-- **Continuitatea legăturii**, asigurată prin reabilitarea celor două poduri de pe traseu, acolo unde o indisponibilizare ar fi însemnat ocolișuri de zeci de kilometri
-- **Siguranța circulației** pe sectoarele unde instabilitatea terasamentului reprezenta un risc
-- **Condiții pentru activitatea economică locală**, care depinde de transportul pe acest traseu
-
-## Îmbunătățiri în amplasament
-
-Intervenția tratează unitar cele trei componente: structura rutieră pe întreaga lungime, cele două lucrări de artă și consolidările de terasament în zonele cu instabilitate. Racordarea podurilor la profilul longitudinal al drumului și corelarea consolidărilor cu încărcările din structura finală elimină lucrările suplimentare care apar de obicei când componentele se proiectează separat.
+Surse: [Prahova Business](https://www.prahovabusiness.ro/cj-prahova-unda-verde-pentru-reabilitarea-si-modernizarea-a-opt-sectoare-de-drumuri-judetene-importante-si-a-giratoriului-dj-102-cu-dn-1b-suspendat/) (31 octombrie 2023), [Prahova Economică](https://prahovaeconomica.eu/giratoriul-suspendat-de-la-paulesti-va-fi-largit-la-3-benzi-alte-7-dj-uri-vor-fi-modernizate-prin-atragere-de-fonduri-europene) (31 octombrie 2023).

@@ -21,41 +21,25 @@ Construirea unei străzi noi în lungime de 2,18 km cu 4 benzi rutiere. Casetare
 
 ## Contextul proiectului
 
-Închiderea inelului de trafic în zona de sud a Municipiului Craiova a fost unul dintre cele mai complexe proiecte pe care le-am elaborat, derulat pe parcursul a trei ani. Obiectivul a combinat o arteră rutieră nouă cu o lucrare hidrotehnică de anvergură.
+Noua arteră închide inelul de trafic din sudul Craiovei, între intersecția străzii Râului cu Popoveni (podul Popoveni) și intersecția B-dul Nicolae Romanescu cu Aleea 2 Bechet, cu străpungere între DN56 și DN55. Pe acest traseu, canalul colector Craiovița curgea descoperit. Inelul leagă trasee fragmentate și scoate traficul greu de tranzit din oraș.
 
-## Componentele proiectului
+## Ce am proiectat
 
-- **Stradă nouă de 2,18 km**, cu patru benzi de circulație
-- **Casetarea canalului deschis Craiovița (Râului)** pe o lungime de 1.800 ml
-- **Trei sensuri giratorii** pentru fluidizarea intersecțiilor
-- **Piste de biciclete și spații pietonale** integrate în profilul transversal
+Am elaborat documentația în fazele DALI, DTAC și PTE pentru U.A.T. Municipiul Craiova, pe parcursul a trei ani:
 
-## Provocarea tehnică
+- stradă nouă de 2,18 km, cu patru benzi de circulație
+- casetarea canalului deschis Craiovița (Râului) pe 1.800 ml
+- trei sensuri giratorii
+- piste de biciclete și spații pietonale integrate în profilul transversal
 
-Casetarea unui canal deschis pe aproape doi kilometri, sub o arteră cu patru benzi, înseamnă că structura hidrotehnică devine parte din fundația drumului. Dimensionarea casetei trebuie să răspundă simultan debitelor de calcul și încărcărilor din trafic, iar orice eroare într-una dintre cele două ipoteze compromite ambele funcțiuni.
+Caseta canalului devine parte din fundația drumului, așa că a fost dimensionată simultan pentru debitele de calcul și pentru încărcările din trafic. Străpungerea între DN56 și DN55 a impus corelarea cu administratorul drumurilor naționale.
 
-Proiectul a fost elaborat în fazele DALI, DTAC și PTE, pentru U.A.T. Municipiul Craiova. Străpungerea între DN56 și DN55, cu joncțiune la Aleea 2 Bechet, a impus corelarea cu administratorul drumurilor naționale.
+## Finanțare
 
-## Finanțare și execuție
+Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului colector și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care aproximativ 22 de milioane de euro reprezintă finanțare nerambursabilă prin Programul Dezvoltare Durabilă și Tranziție Justă.
 
-Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului colector și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care aproximativ 22 de milioane de euro reprezintă finanțare nerambursabilă. Potrivit primarului, finanțarea vine prin Programul Dezvoltare Durabilă și Tranziție Justă.
+## Stadiu
 
-Contractul de execuție a fost semnat pe 14 iulie 2026, în valoare de 149.077.584 lei fără TVA, cu o asociere de constructori condusă de Omega Star Sistems SRL.
+Contractul de execuție a fost semnat pe 14 iulie 2026, în valoare de 149.077.584 lei fără TVA, cu o asociere de constructori condusă de Omega Star Sistems SRL. Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi.
 
-Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi. Noua arteră asigură o ieșire modernă din municipiu și fluidizează traficul în această zonă.
-
-Sursele datelor despre finanțare și execuție: anunțul public al primarului Municipiului Craiova, preluat de [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 noiembrie 2026) și de fonduri-structurale.ro („Peste 39 de milioane de euro pentru modernizarea canalului colector de pe strada Râului din Craiova”).
-
-## Ce aduce comunității
-
-Proiectul schimbă modul în care funcționează întreaga zonă de sud a Craiovei:
-
-- **Degrevarea arterelor existente**, prin închiderea inelului de trafic și devierea fluxurilor de tranzit
-- **Eliminarea canalului deschis**, cu efect direct asupra mirosurilor, a riscului de accidente și a insectelor din zonele locuite adiacente
-- **Teren recuperat** pentru circulație și spațiu public, pe traseul fostului canal
-- **Alternative reale de deplasare** pentru bicicliști și pietoni, nu doar pentru autovehicule
-- **O nouă ieșire din oraș** și o zonă de periferie modernizată, cu spații verzi în lungul noii artere
-
-## Îmbunătățiri în amplasament
-
-Canalul Craiovița, până atunci o barieră deschisă în țesutul urban, devine o infrastructură subterană peste care trece o arteră cu patru benzi. Cele trei sensuri giratorii înlocuiesc intersecții care funcționau la limita capacității. Pistele de biciclete și spațiile pietonale sunt integrate în profilul transversal de la proiectare, nu adăugate ulterior pe spațiul rămas.
+Surse: anunțul public al primarului Municipiului Craiova, preluat de [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 noiembrie 2026) și de fonduri-structurale.ro („Peste 39 de milioane de euro pentru modernizarea canalului colector de pe strada Râului din Craiova”).
