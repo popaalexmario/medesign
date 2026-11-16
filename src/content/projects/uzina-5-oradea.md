@@ -2,7 +2,7 @@
 title: "BH-CL-1 Reabilitare Uzina 5 Oradea, stația de tratare a apei potabile"
 seoTitle: "Reabilitare Uzina 5 Oradea, stație de tratare apă"
 description: "Drumurile și platformele din incinta stației de tratare a apei Uzina 5 Oradea (DTAC+PTE): platformă nouă de 2.775 mp, circulație interioară, trotuare, șanțuri."
-categories: ["Drumuri", "Infrastructură apă"]
+categories: ["Drumuri"]
 faza: "DTAC+PTE"
 location: "Municipiul Oradea, Județul Bihor"
 judet: "Bihor"
