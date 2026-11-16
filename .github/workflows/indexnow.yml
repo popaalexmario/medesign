@@ -12,15 +12,24 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
+      # Lista de adrese se ia din build-ul local, nu de pe site: protecția
+      # anti-boți Cloudflare poate bloca cererile venite de pe serverele GitHub.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci && npm run build
       - name: Așteaptă publicarea pe Cloudflare
-        run: sleep 240
+        run: sleep 150
       - name: Trimite adresele din sitemap
         env:
           KEY: ee4dcb57028494c67141e4dfc4387578
         run: |
           set -e
-          curl -fsS https://me-design.ro/sitemap-0.xml | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' > urls.txt
+          grep -o '<loc>[^<]*</loc>' dist/sitemap-0.xml | sed 's/<[^>]*>//g' > urls.txt
           echo "Adrese: $(wc -l < urls.txt)"
+          [ -s urls.txt ] || { echo 'Sitemap gol'; exit 1; }
           python3 - <<'PY'
           import json, os
           urls = [u.strip() for u in open('urls.txt') if u.strip()]
