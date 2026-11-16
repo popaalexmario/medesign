@@ -1,13 +1,13 @@
 ---
 title: "BH-CL-1 Rehabilitation of Uzina 5, Oradea drinking water treatment plant"
 seoTitle: "Uzina 5 water treatment plant rehabilitation, Oradea"
-description: "Rehabilitation of the Uzina 5 drinking water treatment plant in Oradea, for Compania de Apă Oradea S.A. The 29,267 m² site is extended by 5,524 m²."
+description: "Roads and hardstandings within the Uzina 5 water treatment plant, Oradea (DTAC+PTE): new 2,775 m² platform, internal circulation, footways, ditches."
 faza: "Building permit design + detailed design (DTAC+PTE)"
 location: "Oradea Municipality, Bihor County"
 beneficiar: "Compania de Apă Oradea S.A. (Oradea water utility)"
 ---
 
-Building permit design (DTAC) and detailed technical design (PTE) for the rehabilitation of the Uzina 5 drinking water treatment plant in Oradea, under the investment "BH-CL-1 Reabilitare Uzina 5 Oradea".
+The roads discipline, at building permit (DTAC) and detailed design (PTE) stage, of the rehabilitation of the Uzina 5 drinking water treatment plant in Oradea, under the investment "BH-CL-1 Reabilitare Uzina 5 Oradea": internal circulation, hardstandings and site drainage.
 
 ## Project context
 
@@ -17,9 +17,9 @@ Uzina 5 is the newest of the city's water plants and treats water taken directly
 
 ## What we designed
 
-The works are carried out within the existing site, which is extended by 5,524 m² so that the minimum sanitary protection distances required by law are met. We prepared the documentation at the DTAC and PTE stages.
+Within the site, existing structures of the plant are rehabilitated, including the rapid filters, the pipe gallery and the filtered water tanks, and new above-ground and underground structures are built. The site is extended by 5,524 m² to meet the minimum sanitary protection distances.
 
-The internal circulation site plan includes a new 2,775 m² platform, roads and hardstandings along three alignments, footways linking the buildings, and earth soakaway ditches of 405 m and 167 m for stormwater. Within the site, existing structures of the plant are rehabilitated, including the rapid filters, the pipe gallery and the filtered water tanks, and new above-ground and underground structures are built.
+We designed the internal circulation serving these structures, at the DTAC and PTE stages: a new 2,775 m² platform, roads and hardstandings along three alignments, footways linking the buildings, and earth soakaway ditches of 405 m and 167 m for stormwater.
 
 ## Funding
 

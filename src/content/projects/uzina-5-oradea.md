@@ -1,8 +1,8 @@
 ---
 title: "BH-CL-1 Reabilitare Uzina 5 Oradea, stația de tratare a apei potabile"
 seoTitle: "Reabilitare Uzina 5 Oradea, stație de tratare apă"
-description: "Reabilitarea stației de tratare a apei potabile Uzina 5 din Oradea, pentru Compania de Apă Oradea S.A. Incinta de 29.267 mp se extinde cu 5.524 mp."
-categories: ["Infrastructură apă"]
+description: "Drumurile și platformele din incinta stației de tratare a apei Uzina 5 Oradea (DTAC+PTE): platformă nouă de 2.775 mp, circulație interioară, trotuare, șanțuri."
+categories: ["Drumuri", "Infrastructură apă"]
 faza: "DTAC+PTE"
 location: "Municipiul Oradea, Județul Bihor"
 judet: "Bihor"
@@ -14,7 +14,7 @@ gallery: []
 order: 0.5
 ---
 
-Documentația pentru autorizarea executării lucrărilor (DTAC) și proiectul tehnic de execuție (PTE) pentru reabilitarea stației de tratare a apei potabile Uzina 5 din Oradea, obiectivul „BH-CL-1 Reabilitare Uzina 5 Oradea”.
+Partea de drumuri, în fazele DTAC și PTE, din proiectul de reabilitare a stației de tratare a apei potabile Uzina 5 din Oradea, obiectivul „BH-CL-1 Reabilitare Uzina 5 Oradea”: circulația interioară, platformele și scurgerea apelor din incintă.
 
 ## Contextul proiectului
 
@@ -24,9 +24,9 @@ Uzina 5 este cea mai nouă uzină de apă a orașului și tratează apă preluat
 
 ## Ce am proiectat
 
-Lucrările se execută în incinta existentă, care se extinde cu 5.524 mp, astfel încât să fie respectate distanțele minime de protecție sanitară cerute de legislația în vigoare. Am elaborat documentația în fazele DTAC și PTE.
+În incintă se reabilitează construcții existente ale stației, între care filtrele rapide, galeria tehnologică și rezervoarele de apă filtrată, și se construiesc obiecte noi, supraterane și subterane. Incinta se extinde cu 5.524 mp, ca să fie respectate distanțele minime de protecție sanitară.
 
-Planul de situație al circulației interioare cuprinde o platformă nouă de 2.775 mp, drumuri și platforme pe trei axe, trotuare care leagă clădirile și șanțuri absorbante de pământ pe 405 m și 167 m pentru apele pluviale. În incintă se reabilitează construcții existente ale stației, între care filtrele rapide, galeria tehnologică și rezervoarele de apă filtrată, și se construiesc obiecte noi, supraterane și subterane.
+Am proiectat circulația interioară care deservește aceste obiecte, în fazele DTAC și PTE: o platformă nouă de 2.775 mp, drumuri și platforme pe trei axe, trotuare care leagă clădirile și șanțuri absorbante de pământ pe 405 m și 167 m pentru apele pluviale.
 
 ## Finanțare
 
