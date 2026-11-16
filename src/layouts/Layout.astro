@@ -103,18 +103,38 @@ const fullTitle = `${title} | ME Design`;
     <meta name="twitter:image" content={ogImage} />
 
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="/vendor/aos/aos.css" />
 
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <title>{fullTitle}</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N" is:inline></script>
+    <!-- Google Analytics și Microsoft Clarity: se încarcă DOAR după ce vizitatorul
+         apasă „Accept” în bannerul de cookie-uri (CookieConsent.astro). -->
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZYECGEV54N');
+      (function () {
+        var loaded = false;
+        function load() {
+          if (loaded) return;
+          loaded = true;
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () { window.dataLayer.push(arguments); };
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-ZYECGEV54N');
+          var g = document.createElement('script');
+          g.async = true;
+          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZYECGEV54N';
+          document.head.appendChild(g);
+          (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+          })(window, document, 'clarity', 'script', 'vxoibgwub2');
+        }
+        window.meAnalytics = { load: load };
+        try {
+          if (localStorage.getItem('medesign_cookie_consent') === 'accepted') load();
+        } catch (e) {}
+      })();
     </script>
 
     <style is:global>
@@ -545,21 +565,12 @@ const fullTitle = `${title} | ME Design`;
       <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
     )}
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript" is:inline>
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "vxoibgwub2");
-    </script>
-    <!-- End Microsoft Clarity -->
   </head>
   <body class="bg-white">
     <slot />
     <CookieConsent lang={lang} />
 
-    <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script is:inline src="/vendor/aos/aos.js"></script>
     <script is:inline>
       AOS.init({
         duration: 700,

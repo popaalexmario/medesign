@@ -281,7 +281,6 @@ const reasons = [
   </section>
 
   <!-- HARTA ROMANIA -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <section class="section-padding bg-white" id="harta">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-6" data-aos="fade-up">
@@ -293,7 +292,17 @@ const reasons = [
           Am realizat proiecte de infrastructură în toate colțurile țării.
         </p>
       </div>
-      <div id="romania-map" class="w-full rounded-2xl overflow-hidden shadow-lg border border-steel-100" style="height: 525px;" data-aos="fade-up" data-aos-delay="100"></div>
+      <div id="romania-map" class="relative w-full rounded-2xl overflow-hidden shadow-lg border border-steel-100 bg-steel-50" style="height: 525px;" data-aos="fade-up" data-aos-delay="100">
+        <!-- Harta descarcă imagini de la OpenStreetMap, deci pornește doar cu acordul vizitatorului. -->
+        <div id="map-consent" class="absolute inset-0 flex items-center justify-center p-6 text-center">
+          <div class="max-w-md">
+            <svg class="w-12 h-12 mx-auto text-brand-500/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+            <p class="text-steel-600 text-[15px] mt-4 leading-relaxed">Harta folosește imagini de la OpenStreetMap. Afișarea ei transmite adresa ta IP serverelor OpenStreetMap.</p>
+            <button type="button" id="map-load" class="mt-5 inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-full font-semibold text-[14px]">Afișează harta</button>
+            <p class="text-steel-400 text-[13px] mt-4">Sau vezi toate proiectele în <a href="/portofoliu" class="text-accent-600 font-semibold hover:underline">portofoliu</a>.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -497,15 +506,45 @@ const reasons = [
       document.head.appendChild(style);
     }
 
-    // Load Leaflet JS then init
-    if (!window.L) {
+    // Leaflet e găzduit pe domeniul propriu și se încarcă abia când harta e
+    // aproape de ecran și vizitatorul a acceptat (banner sau butonul de pe hartă).
+    var started = false;
+    function startMap() {
+      if (started) return;
+      started = true;
+      var placeholder = document.getElementById('map-consent');
+      if (placeholder) placeholder.remove();
+      var css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = '/vendor/leaflet/leaflet.css';
+      document.head.appendChild(css);
       var script = document.createElement('script');
-      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.src = '/vendor/leaflet/leaflet.js';
       script.onload = initMap;
       document.head.appendChild(script);
-    } else {
-      initMap();
     }
+    function consented() {
+      try { return localStorage.getItem('medesign_cookie_consent') === 'accepted'; } catch (e) { return false; }
+    }
+    var mapEl = document.getElementById('romania-map');
+    var near = false;
+    if (mapEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting) {
+          near = true;
+          obs.disconnect();
+          if (consented()) startMap();
+        }
+      }, { rootMargin: '400px' }).observe(mapEl);
+    } else {
+      near = true;
+      if (consented()) startMap();
+    }
+    window.addEventListener('medesign:consent', function (e) {
+      if (e.detail === 'accepted' && near) startMap();
+    });
+    var btn = document.getElementById('map-load');
+    if (btn) btn.addEventListener('click', startMap);
   })();
   </script>
 

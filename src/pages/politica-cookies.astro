@@ -51,16 +51,33 @@ import Footer from '../components/Footer.astro';
               </thead>
               <tbody class="divide-y divide-gray-100">
                 <tr class="bg-white hover:bg-gray-50 transition-colors">
-                  <td class="px-4 py-3 font-medium text-brand-600">Funcțional</td>
+                  <td class="px-4 py-3 font-medium text-brand-600">Necesar (stocare locală)</td>
                   <td class="px-4 py-3 font-mono text-xs text-gray-600">medesign_cookie_consent</td>
-                  <td class="px-4 py-3">Reține alegerea ta legată de consimțământul pentru cookie-uri</td>
-                  <td class="px-4 py-3">1 an</td>
+                  <td class="px-4 py-3">Reține alegerea ta din bannerul de cookie-uri</td>
+                  <td class="px-4 py-3">Până o ștergi sau o schimbi</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-50 transition-colors">
+                  <td class="px-4 py-3 font-medium text-brand-600">Analiză (Google)</td>
+                  <td class="px-4 py-3 font-mono text-xs text-gray-600">_ga, _ga_&lt;ID&gt;</td>
+                  <td class="px-4 py-3">Google Analytics: statistici despre vizite. Se setează doar după „Accept”.</td>
+                  <td class="px-4 py-3">2 ani</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-50 transition-colors">
+                  <td class="px-4 py-3 font-medium text-brand-600">Analiză (Microsoft)</td>
+                  <td class="px-4 py-3 font-mono text-xs text-gray-600">_clck, _clsk; pe domeniile Microsoft: CLID, MUID, MR, SM, SRM_B, ANONCHK</td>
+                  <td class="px-4 py-3">Microsoft Clarity: cum sunt folosite paginile (clicuri, derulare). Se setează doar după „Accept”.</td>
+                  <td class="px-4 py-3">_clsk: 1 zi; celelalte: până la 1 an</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p class="mt-4 text-sm text-gray-500">
-            În prezent, site-ul nostru nu folosește cookie-uri de analiză, publicitate sau terțe părți.
+            Nu folosim cookie-uri de publicitate. Cookie-urile de analiză și harta OpenStreetMap de pe prima pagină
+            (care descarcă imagini de pe serverele OpenStreetMap și le transmite adresa ta IP) pornesc doar după
+            ce apeși „Accept”; harta poate fi afișată și separat, din butonul ei. Fonturile și celelalte resurse
+            ale site-ului sunt servite de pe me-design.ro. Cloudflare, care găzduiește site-ul, colectează statistici
+            agregate fără cookie-uri. Îți poți schimba oricând alegerea din linkul „Setări cookie-uri” din subsolul
+            oricărei pagini.
           </p>
         </div>
 
@@ -122,7 +139,7 @@ import Footer from '../components/Footer.astro';
 
         <!-- Update date -->
         <p class="text-xs text-gray-400 pt-4 border-t border-gray-100">
-          Ultima actualizare: martie 2026
+          Ultima actualizare: noiembrie 2026
         </p>
 
       </div>
@@ -136,6 +153,7 @@ import Footer from '../components/Footer.astro';
   var btn = document.getElementById('reset-cookie-consent');
   var feedback = document.getElementById('reset-feedback');
   btn && btn.addEventListener('click', function () {
+    if (window.meCookieSettings) { window.meCookieSettings(); return; }
     try { localStorage.removeItem('medesign_cookie_consent'); } catch (e) {}
     feedback && (feedback.style.display = 'block', feedback.classList.remove('hidden'));
   });

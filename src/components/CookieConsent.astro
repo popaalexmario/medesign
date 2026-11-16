@@ -3,7 +3,9 @@ interface Props { lang?: 'ro' | 'en' }
 const en = Astro.props.lang === 'en';
 ---
 
-<!-- Cookie Consent Banner -->
+<!-- Banner de consimțământ. Nimic din ce trimite date către terți (Google
+     Analytics, Microsoft Clarity, harta OpenStreetMap) nu pornește înainte de
+     „Accept”. „Refuz” are aceeași greutate vizuală ca „Accept”. -->
 <div
   id="cookie-banner"
   class="fixed bottom-0 left-0 right-0 z-[9999] hidden"
@@ -13,38 +15,27 @@ const en = Astro.props.lang === 'en';
   <div class="bg-white border-t border-gray-200 shadow-2xl">
     <div class="container mx-auto px-6 py-4 max-w-[1200px]">
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-
-        <!-- Icon + Text -->
         <div class="flex items-start gap-3 flex-1">
           <div class="mt-0.5 shrink-0 w-8 h-8 bg-accent-500 rounded-lg flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div>
-            <p class="text-sm text-gray-700 leading-relaxed">
-              {en ? 'We use cookies to improve your experience on this site. By continuing to browse you agree to their use under our ' : 'Folosim cookie-uri pentru a îmbunătăți experiența ta pe site. Prin continuarea navigării, ești de acord cu utilizarea acestora conform '}
-              <a href="/politica-cookies" class="text-accent-500 hover:text-accent-600 underline underline-offset-2 font-medium transition-colors">{en ? 'Cookie Policy (in Romanian)' : 'Politicii de Cookies'}</a>.
-            </p>
-          </div>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            {en
+              ? 'With your consent we use Google Analytics and Microsoft Clarity to see how the site is used, and we show the OpenStreetMap map. None of them load until you accept. Details in the '
+              : 'Cu acordul tău folosim Google Analytics și Microsoft Clarity ca să vedem cum e folosit site-ul și afișăm harta OpenStreetMap. Niciunul nu se încarcă până nu accepți. Detalii în '}
+            <a href="/politica-cookies" class="text-accent-600 hover:text-accent-700 underline underline-offset-2 font-medium">{en ? 'Cookie Policy (in Romanian)' : 'Politica de Cookies'}</a>.
+          </p>
         </div>
-
-        <!-- Buttons -->
         <div class="flex items-center gap-3 shrink-0 w-full sm:w-auto">
-          <button
-            id="cookie-decline"
-            class="flex-1 sm:flex-none px-4 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
-          >
+          <button id="cookie-decline" class="flex-1 sm:flex-none px-5 py-2.5 text-sm font-semibold text-brand-800 bg-steel-100 rounded-full hover:bg-steel-200">
             {en ? 'Decline' : 'Refuz'}
           </button>
-          <button
-            id="cookie-accept"
-            class="flex-1 sm:flex-none px-5 py-2 text-sm font-semibold text-white bg-accent-500 rounded-lg hover:bg-accent-600 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 shadow-sm"
-          >
+          <button id="cookie-accept" class="flex-1 sm:flex-none px-5 py-2.5 text-sm font-semibold text-white bg-brand-500 rounded-full hover:bg-brand-600">
             Accept
           </button>
         </div>
-
       </div>
     </div>
   </div>
@@ -52,40 +43,59 @@ const en = Astro.props.lang === 'en';
 
 <script is:inline>
   (function () {
-    var COOKIE_KEY = 'medesign_cookie_consent';
+    var KEY = 'medesign_cookie_consent';
     var banner = document.getElementById('cookie-banner');
-    var btnAccept = document.getElementById('cookie-accept');
-    var btnDecline = document.getElementById('cookie-decline');
+    if (!banner) return;
 
-    function getConsent() {
-      try { return localStorage.getItem(COOKIE_KEY); } catch (e) { return null; }
+    function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+    function show() { banner.style.opacity = '1'; banner.style.display = 'block'; }
+    function hide() {
+      banner.style.transition = 'opacity 0.3s ease';
+      banner.style.opacity = '0';
+      setTimeout(function () { banner.style.display = 'none'; }, 300);
+    }
+    function announce(v) {
+      try { window.dispatchEvent(new CustomEvent('medesign:consent', { detail: v })); } catch (e) {}
+    }
+    // La retragerea acordului: șterge cookie-urile de analiză deja puse.
+    function clearAnalyticsCookies() {
+      var names = document.cookie.split(';').map(function (c) { return c.split('=')[0].trim(); });
+      var host = location.hostname.replace(/^www\./, '');
+      names.forEach(function (n) {
+        if (/^(_ga|_gid|_gat|_clck|_clsk|CLID|ANONCHK|MR|MUID|SM)/.test(n)) {
+          ['', '; domain=' + host, '; domain=.' + host].forEach(function (d) {
+            document.cookie = n + '=; Max-Age=0; path=/' + d;
+          });
+        }
+      });
     }
 
-    function setConsent(value) {
-      try { localStorage.setItem(COOKIE_KEY, value); } catch (e) {}
-    }
+    if (!get()) show();
 
-    function hideBanner() {
-      if (banner) {
-        banner.style.opacity = '0';
-        banner.style.transition = 'opacity 0.3s ease';
-        setTimeout(function () { banner.style.display = 'none'; }, 300);
-      }
-    }
-
-    // Show banner only if no decision yet
-    if (!getConsent()) {
-      banner.style.display = 'block';
-    }
-
-    btnAccept && btnAccept.addEventListener('click', function () {
-      setConsent('accepted');
-      hideBanner();
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      set('accepted');
+      hide();
+      if (window.meAnalytics) window.meAnalytics.load();
+      announce('accepted');
     });
 
-    btnDecline && btnDecline.addEventListener('click', function () {
-      setConsent('declined');
-      hideBanner();
+    document.getElementById('cookie-decline').addEventListener('click', function () {
+      var wasAccepted = get() === 'accepted';
+      set('declined');
+      hide();
+      announce('declined');
+      if (wasAccepted) {
+        clearAnalyticsCookies();
+        location.reload();
+      }
+    });
+
+    // Linkul „Setări cookie-uri” din subsol redeschide bannerul.
+    window.meCookieSettings = show;
+    document.addEventListener('click', function (e) {
+      var t = e.target && e.target.closest && e.target.closest('[data-cookie-settings]');
+      if (t) { e.preventDefault(); show(); }
     });
   })();
 </script>
