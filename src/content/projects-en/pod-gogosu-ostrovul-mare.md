@@ -1,35 +1,20 @@
 ---
 title: "Repair Works to the Suspension Bridge over the Gogoșu Branch, Danube"
 seoTitle: "Gogoșu suspension bridge repair, Danube"
-description: "Intervention approval documentation for Hidroelectrica SA, Porțile de Fier Hydropower Branch assets. Repair works to the suspension bridge over the Gogoșu branch..."
+description: "Structural assessment and DALI for repairs to the suspension bridge over the Gogoșu branch of the Danube at Ostrovul Mare, for Hidroelectrica."
 faza: "Intervention approval documentation (DALI)"
 location: "Ostrovul Mare"
 beneficiar: "Hidroelectrica S.A., Porțile de Fier Hydropower Plants Branch"
 ---
 
-Intervention approval documentation for Hidroelectrica SA, Porțile de Fier Hydropower Branch assets. Repair works to the suspension bridge over the Gogoșu branch + structural assessment.
+Structural assessment and intervention approval documentation (DALI) for repairs to the suspension bridge over the Gogoșu branch of the Danube, at Ostrovul Mare.
 
 ## Project context
 
-The suspension bridge over the Gogoșu branch, in the Ostrovul Mare area, is one of the assets of Hidroelectrica S.A., Porțile de Fier Hydropower Plants Branch. The work covered the structural assessment and the intervention approval documentation.
+The bridge is one of the assets of Hidroelectrica S.A., Porțile de Fier Hydropower Plants Branch. It is a suspension bridge with a total length of 360 m and a 240 m main span, on county road DJ606G between Balta Verde and Ostrovul Mare island. It provides access to the island and to the Iron Gate II hydropower plant, and there are few alternative crossings in the area.
 
-## Operating context
+## What we designed
 
-Since the asset belongs to an energy operator, the intervention has to fit the operating regime of the hydropower scheme and the beneficiary's internal procedures.
+The work started with the structural assessment, which is mandatory for interventions on existing structures. On a suspension bridge, the condition of the cables, anchorages and towers decides which solutions are admissible. On that basis we prepared the DALI, which sets out the repair works. The intervention is coordinated with the operating regime of the hydropower scheme and with the beneficiary's internal procedures.
 
-## Documentation prepared
-
-The project was prepared as intervention approval documentation (DALI), preceded by the structural assessment. The expertise is mandatory for interventions on existing structures and, for a suspension structure, decisive in establishing the admissible solutions.
-
-## What it brings to the community
-
-The suspension bridge over the Gogoșu branch serves an area where the alternative crossings are limited:
-
-- **Keeping access** to and from Ostrovul Mare
-- **User safety**, by assessing the actual condition of the elements the structure depends on
-- **Continuity of operation** of the hydropower scheme, which depends on access to its assets
-- **Extending the life** of an existing structure, instead of paying for a new one
-
-## Improvements on site
-
-The technical expertise establishes the condition of the cables, anchorages and towers, the critical elements of a suspension structure, where losing one component usually leaves no reserve. The intervention documentation sets out the works needed to bring the structure back to verified parameters, coordinated with the operating regime of the scheme.
+Source for the bridge data: [Wikipedia, Ostrovul Mare Bridge](https://en.wikipedia.org/wiki/Ostrovul_Mare_Bridge).

@@ -1,7 +1,7 @@
 ---
 title: "Extindere și Modernizare Terminal Auto Dana PL6 din Portul de Lucru Municipiul Constanța"
 seoTitle: "Terminal auto Dana PL6, Portul Constanța"
-description: "Proiectare platformă parcaje autoturisme."
+description: "DTAC și PTE pentru platforma de parcare a autoturismelor la extinderea și modernizarea Terminalului Auto Dana PL6 din Portul Constanța."
 categories: ["Drumuri"]
 faza: "DTAC+PTE"
 location: "Portul Constanța"
@@ -14,36 +14,12 @@ gallery: []
 order: 6
 ---
 
-Proiectare platformă parcaje autoturisme.
+Platforma de parcare pentru autoturisme din cadrul extinderii și modernizării Terminalului Auto Dana PL6, în Portul Constanța.
 
 ## Contextul proiectului
 
-Extinderea și modernizarea Terminalului Auto Dana PL6 din Portul Constanța a vizat proiectarea unei platforme de parcare pentru autoturisme, în interiorul perimetrului portuar.
+Terminalul auto de la dana PL6 se află în perimetrul Portului Constanța, administrat de C.N. Administrația Porturilor Maritime S.A. Constanța. Extinderea a cerut o platformă de parcare pentru autoturisme, care organizează staționarea și o separă de circulația operațională a terminalului.
 
-## Specificul platformelor portuare
+## Ce am proiectat
 
-O platformă dintr-un terminal auto nu se dimensionează ca o parcare obișnuită. Factorii determinanți sunt diferiți:
-
-- **Încărcări concentrate și repetate** din manevrele vehiculelor și ale utilajelor de manipulare
-- **Mediu agresiv** — proximitatea mării accelerează degradarea betoanelor și coroziunea elementelor metalice
-- **Scurgerea apelor** pe suprafețe mari, cu pante reduse impuse de funcționalitatea platformei
-- **Continuitatea operării** — lucrările se execută fără oprirea activității terminalului
-
-## Documentația elaborată
-
-Am parcurs fazele DTAC și PTE: documentația pentru autorizarea executării lucrărilor și proiectul tehnic de execuție, cu detaliile necesare realizării platformei de parcaje.
-
-Proiectele din perimetru portuar presupun, suplimentar față de o lucrare obișnuită, corelarea cu regulamentele de exploatare ale administrației portuare și cu restricțiile de acces specifice.
-
-## Ce aduce comunității
-
-Infrastructura portuară are efecte care depășesc perimetrul în care se află:
-
-- **Capacitate de operare crescută** pentru terminal, cu efect asupra fluxului de mărfuri prin portul Constanța
-- **Organizarea staționării**, care elimină ocuparea necontrolată a căilor de circulație interioare
-- **Siguranța manevrelor** pe o platformă proiectată pentru tipurile de vehicule care o folosesc efectiv
-- **Reducerea timpilor de așteptare**, cu efect asupra costurilor logistice
-
-## Îmbunătățiri în amplasament
-
-Platforma de parcaje introduce o suprafață dimensionată pentru încărcările reale și pentru mediul agresiv din zona portuară. Sistematizarea verticală asigură scurgerea apelor pe o suprafață întinsă cu pante reduse, iar organizarea fluxurilor separă staționarea de circulația operațională a terminalului.
+Am elaborat DTAC și PTE, cu detaliile necesare execuției platformei. Platforma e dimensionată pentru încărcările reale din manevrele vehiculelor și pentru mediul agresiv din zona portuară. Sistematizarea verticală asigură scurgerea apelor pe o suprafață întinsă, cu pante reduse. Proiectul s-a corelat cu regulamentele de exploatare ale administrației portuare și cu restricțiile de acces din port.

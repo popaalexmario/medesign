@@ -1,7 +1,7 @@
 ---
 title: "Amenajare Port Turistic în Municipiul Fetești"
 seoTitle: "Port turistic Fetești, brațul Borcea"
-description: "Proiectare circulatii, parcaje si platforma portuara pe bratul Borcea, Dunare."
+description: "Studiu de fezabilitate pentru portul turistic din Fetești: circulații, parcaje și platformă portuară pe brațul Borcea al Dunării."
 categories: ["Drumuri", "Amenajări Hidrotehnice"]
 faza: "SF"
 location: "Municipiul Fetești, Județul Ialomița"
@@ -14,37 +14,14 @@ gallery: []
 order: 12
 ---
 
-Proiectare circulatii, parcaje si platforma portuara pe bratul Borcea, Dunare.
+Studiu de fezabilitate pentru un port turistic pe brațul Borcea al Dunării, în Municipiul Fetești.
 
 ## Contextul proiectului
 
-Amenajarea portului turistic din Municipiul Fetești a vizat zona brațului Borcea al Dunării, combinând componenta rutieră cu cea hidrotehnică.
+Amenajarea vizează malul brațului Borcea din apropierea orașului, un amplasament neamenajat până acum. Portul ar da locuitorilor și vizitatorilor un acces organizat la Dunăre și o bază pentru turismul fluvial.
 
-## Ce a cuprins studiul
+## Ce am proiectat
 
-- **Circulații** în incinta amenajării
-- **Parcaje** pentru vizitatori
-- **Platformă portuară** la malul brațului Borcea
+Studiul de fezabilitate, elaborat pentru U.A.T. Municipiul Fetești, combină partea rutieră cu cea hidrotehnică. A cuprins circulațiile din incintă, parcajele pentru vizitatori și platforma portuară de la malul brațului Borcea. Cotele de amenajare sunt stabilite în raport cu variația nivelurilor Dunării, astfel încât platforma să rămână utilizabilă pe durata sezonului, iar malul să fie protejat împotriva eroziunii.
 
-## Specificul amenajărilor la Dunăre
-
-Proiectarea unei platforme portuare pe un braț al Dunării este condiționată de regimul hidrologic. Variația nivelurilor între ape mari și ape mici determină cotele de amenajare, soluția de protecție a malului și modul în care platforma rămâne utilizabilă pe durata sezonului.
-
-La acestea se adaugă cerințele specifice de avizare pentru lucrări în albie și în zona de protecție a cursului de apă, care influențează semnificativ calendarul proiectului.
-
-## Faza documentației
-
-Proiectul a fost elaborat la nivel de studiu de fezabilitate — faza în care se compară scenariile de amenajare și se fundamentează indicatorii tehnico-economici, înainte de angajarea cheltuielilor pentru proiectul tehnic.
-
-## Ce aduce comunității
-
-Amenajarea unui port turistic la brațul Borcea deschide o direcție de dezvoltare pentru Fetești:
-
-- **Acces organizat la Dunăre**, pentru locuitori și pentru vizitatori
-- **Potențial economic local** — turismul fluvial generează activitate pentru serviciile din oraș
-- **Valorificarea unui amplasament** până acum neamenajat, aflat în proximitatea orașului
-- **Infrastructură de agrement** într-o zonă unde alternativele sunt limitate
-
-## Îmbunătățiri în amplasament
-
-Studiul propune circulații și parcaje care fac zona accesibilă și utilizabilă, împreună cu platforma portuară la malul brațului Borcea. Cotele de amenajare sunt stabilite în raport cu variația nivelurilor Dunării, astfel încât amenajarea să rămână funcțională pe durata sezonului, iar malul să fie protejat împotriva eroziunii.
+În faza SF se compară scenariile de amenajare și se fundamentează indicatorii tehnico-economici, înainte de proiectul tehnic.

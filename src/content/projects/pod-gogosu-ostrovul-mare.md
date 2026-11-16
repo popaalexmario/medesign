@@ -1,7 +1,7 @@
 ---
 title: "Lucrări de Reparații Pod Suspendat peste Brațul Gogoșu — Dunăre"
 seoTitle: "Reparații pod suspendat Gogoșu, Dunăre"
-description: "Documentații de avizare a lucrărilor de intervenție la obiectivele Hidroelectrica SA-SH Porțile de Fier. Lucrări de reparații pod suspendat peste brațul Gogo..."
+description: "Expertiză tehnică și DALI pentru reparațiile podului suspendat peste brațul Gogoșu al Dunării, la Ostrovul Mare, pentru Hidroelectrica SH Porțile de Fier."
 categories: ["Poduri"]
 faza: "DALI"
 location: "Ostrovul Mare"
@@ -14,29 +14,14 @@ gallery: []
 order: 0
 ---
 
-Documentații de avizare a lucrărilor de intervenție la obiectivele Hidroelectrica SA-SH Porțile de Fier. Lucrări de reparații pod suspendat peste brațul Gogoșu + Expertiză tehnică.
+Expertiză tehnică și documentație de avizare a lucrărilor de intervenție (DALI) pentru reparațiile podului suspendat peste brațul Gogoșu al Dunării, la Ostrovul Mare.
 
 ## Contextul proiectului
 
-Podul suspendat peste brațul Gogoșu, în zona Ostrovul Mare, face parte dintre obiectivele Hidroelectrica S.A. — Sucursala Hidrocentrale Porțile de Fier. Documentația a cuprins expertiza tehnică și documentația de avizare a lucrărilor de intervenție.
+Podul face parte dintre obiectivele Hidroelectrica S.A., Sucursala Hidrocentrale Porțile de Fier. Este un pod suspendat cu lungimea totală de 360 m și deschiderea principală de 240 m, pe drumul județean DJ606G, între Balta Verde și insula Ostrovul Mare. Asigură accesul spre insulă și spre Hidrocentrala Porțile de Fier II, iar alternativele de traversare în zonă sunt puține.
 
-## Contextul de exploatare
+## Ce am proiectat
 
-Fiind vorba de un obiectiv din administrarea unui operator energetic, intervenția se corelează cu regimul de exploatare al amenajării hidroenergetice și cu procedurile interne ale beneficiarului.
+Lucrarea a început cu expertiza tehnică, obligatorie la intervențiile pe construcții existente. La un pod suspendat, starea cablurilor, a ancorajelor și a pilonilor decide ce soluții sunt admisibile. Pe baza ei am elaborat DALI, care fundamentează lucrările de reparații. Intervenția se corelează cu regimul de exploatare al amenajării hidroenergetice și cu procedurile interne ale beneficiarului.
 
-## Documentația elaborată
-
-Proiectul a fost elaborat la nivel de DALI, precedat de expertiza tehnică — obligatorie la intervențiile asupra construcțiilor existente și, în cazul unei structuri suspendate, determinantă pentru stabilirea soluțiilor admisibile.
-
-## Ce aduce comunității
-
-Podul suspendat peste brațul Gogoșu deservește o zonă în care alternativele de traversare sunt limitate:
-
-- **Menținerea accesului** către și dinspre Ostrovul Mare
-- **Siguranța utilizatorilor**, prin evaluarea stării reale a elementelor de care depinde structura
-- **Continuitatea exploatării** amenajării hidroenergetice, care depinde de accesul la obiective
-- **Prelungirea duratei de viață** a unei structuri existente, în locul costului unei construcții noi
-
-## Îmbunătățiri în amplasament
-
-Expertiza tehnică stabilește starea cablurilor, a ancorajelor și a pilonilor — elementele critice ale unei structuri suspendate, la care pierderea unui component nu are, de regulă, rezervă. Documentația de intervenție fundamentează lucrările necesare readucerii structurii la parametri verificați, corelate cu regimul de exploatare al amenajării.
+Sursă pentru datele podului: [Wikipedia, Ostrovul Mare Bridge](https://en.wikipedia.org/wiki/Ostrovul_Mare_Bridge) (în engleză).
