@@ -30,4 +30,7 @@ export default defineConfig({
     trailingSlash(),
   ],
   site: 'https://me-design.ro',
+  // Paginile se încarcă în fundal când mouse-ul trece peste link (pe telefon,
+  // când linkul apare pe ecran), deci click-ul deschide pagina aproape instant.
+  prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
 });

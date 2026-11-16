@@ -246,6 +246,12 @@ const siteGraph = {
         scroll-behavior: smooth;
       }
 
+      /* Trecere lină între pagini (Chrome, Edge, Safari recente), fără JavaScript. */
+      @view-transition { navigation: auto; }
+      @media (prefers-reduced-motion: reduce) {
+        @view-transition { navigation: none; }
+      }
+
       body {
         font-family: 'Inter', system-ui, sans-serif;
         color: #1e293b;
