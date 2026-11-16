@@ -9,9 +9,14 @@ beneficiar: "Aninoasa commune (local authority)"
 
 Design for the upgrading of 6 local streets with a total length of 2.20 km.
 
+
 ## Project background
 
 Aninoasa commune, in Dâmbovița County, started the upgrading of six local streets, 2.20 km in total. Rural local roads often reach the point where the existing pavement structure no longer matches today's traffic, and the stormwater collection system is incomplete or silted up.
+
+## Funding
+
+The investment is funded through the „Anghel Saligny” National Investment Programme and appears on Aninoasa Town Hall's list of ongoing projects ([source, in Romanian](https://aninoasa.com/primaria-aninoasa/proiecte/proiecte-in-derulare/)). The photos in the gallery show the streets after construction.
 
 ## What the documentation covered
 

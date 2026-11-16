@@ -20,6 +20,10 @@ Proiectare pentru modernizarea a 6 străzi locale cu lungimea totală de 2,20 km
 
 Comuna Aninoasa, din județul Dâmbovița, a inițiat modernizarea a șase străzi locale, însumând 2,20 km. Drumurile de interes local din mediul rural ajung frecvent în situația în care structura rutieră existentă nu mai corespunde traficului actual, iar sistemul de colectare a apelor pluviale este incomplet sau colmatat.
 
+## Finanțare
+
+Investiția este finanțată prin Programul Național de Investiții „Anghel Saligny” și figurează pe lista proiectelor în derulare a Primăriei Aninoasa ([sursa](https://aninoasa.com/primaria-aninoasa/proiecte/proiecte-in-derulare/)). Fotografiile din galerie arată străzile după execuție.
+
 ## Ce a cuprins documentația
 
 Am elaborat documentația completă, parcurgând trei faze succesive pentru același obiectiv:
