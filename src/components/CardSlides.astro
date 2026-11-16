@@ -1,0 +1,109 @@
+---
+// Pozele unui proiect, derulabile direct din cardul din portofoliu:
+// săgeți pe desktop, glisare cu degetul pe telefon. Fiecare poză duce la
+// fișa proiectului. Butoanele stau în afara linkurilor (HTML valid).
+import { langFromPath } from '../i18n/paths';
+
+export interface Slide { src: string; srcset?: string }
+interface Props { slides: Slide[]; href: string; alt: string }
+
+const { slides, href, alt } = Astro.props;
+const en = langFromPath(Astro.url.pathname) === 'en';
+const many = slides.length > 1;
+const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
+---
+
+<div class="relative aspect-[16/10] bg-steel-100 overflow-hidden" data-slides>
+  <div class="flex h-full overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-track>
+    {slides.map((s, i) => (
+      <a href={href} class="block w-full h-full shrink-0 snap-center" tabindex={i === 0 ? undefined : -1} aria-hidden={i === 0 ? undefined : 'true'}>
+        <img
+          src={s.src}
+          srcset={s.srcset}
+          sizes={s.srcset ? sizes : undefined}
+          alt={i === 0 ? alt : `${alt}, ${en ? 'photo' : 'fotografia'} ${i + 1}`}
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+          decoding="async"
+          width="400"
+          height="250"
+        />
+      </a>
+    ))}
+  </div>
+
+  {many && (
+    <>
+      <button type="button" data-prev class="slide-btn left-2.5" aria-label={en ? 'Previous photo' : 'Poza anterioară'}>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button type="button" data-next class="slide-btn right-2.5" aria-label={en ? 'Next photo' : 'Poza următoare'}>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+      </button>
+      <span class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-full bg-black/55 text-white text-[12px] font-semibold tabular-nums pointer-events-none" data-count>
+        1 / {slides.length}
+      </span>
+    </>
+  )}
+</div>
+
+<style>
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #0a1628;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transition: opacity 0.2s ease, scale 0.1s ease;
+    z-index: 2;
+  }
+  [data-slides]:hover .slide-btn,
+  .slide-btn:focus-visible { opacity: 1; }
+  .slide-btn:active { scale: 0.94; }
+  .slide-btn[disabled] { opacity: 0 !important; pointer-events: none; }
+  /* Pe ecrane tactile săgețile sunt mereu vizibile, dar mai discrete. */
+  @media (hover: none) {
+    .slide-btn { opacity: 0.85; width: 2rem; height: 2rem; }
+  }
+</style>
+
+<script>
+  // Script procesat de Astro: inclus o singură dată, rulează după încărcarea paginii.
+  {
+    const state = (box: Element) => {
+      const track = box.querySelector<HTMLElement>('[data-track]')!;
+      const n = track.children.length;
+      const i = Math.round(track.scrollLeft / track.clientWidth);
+      const c = box.querySelector('[data-count]');
+      if (c) c.textContent = `${i + 1} / ${n}`;
+      const p = box.querySelector<HTMLButtonElement>('[data-prev]');
+      const q = box.querySelector<HTMLButtonElement>('[data-next]');
+      if (p) p.disabled = i <= 0;
+      if (q) q.disabled = i >= n - 1;
+    };
+    document.querySelectorAll('[data-slides]').forEach((box) => {
+      const track = box.querySelector<HTMLElement>('[data-track]')!;
+      let t: ReturnType<typeof setTimeout>;
+      track.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => state(box), 60); }, { passive: true });
+      state(box);
+    });
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as Element)?.closest?.('[data-prev],[data-next]');
+      const box = btn?.closest('[data-slides]');
+      if (!btn || !box) return;
+      e.preventDefault();
+      const track = box.querySelector<HTMLElement>('[data-track]')!;
+      const dir = btn.hasAttribute('data-next') ? 1 : -1;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      track.scrollBy({ left: dir * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
+</script>

@@ -9,8 +9,11 @@ judet: "Maramureș"
 beneficiar: "Consiliul Județean Maramureș"
 region: "transilvania"
 year: "2023"
-image: "/img/projects/PASAJ%20MARAMURES.jpg"
-gallery: []
+image: "/img/projects/vacari-pasaj.webp"
+coverFrom: "2026-07-20 20.23.18.jpg"
+gallery:
+  - src: "/img/projects/PASAJ%20MARAMURES.jpg"
+    caption: "Imagine din proiect"
 order: 9
 ---
 

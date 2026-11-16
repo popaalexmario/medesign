@@ -47,7 +47,7 @@ const gallery: Photo[] = [
   ...(d.image ? [{ thumb: d.image, full: d.image, fit: 'contain' as const }] : []),
   ...d.gallery.map((g) => {
     const item = typeof g === 'string' ? { src: g, caption: undefined } : g;
-    const caption = item.caption === 'Planșă din proiect' ? 'Project drawing' : undefined;
+    const caption = item.caption === 'Planșă din proiect' ? 'Project drawing' : item.caption === 'Imagine din proiect' ? 'Project image' : undefined;
     return { thumb: item.src, full: item.src, caption, fit: 'contain' as const };
   }),
   ...uploaded,
