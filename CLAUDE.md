@@ -182,6 +182,7 @@ fișierul urcat de Mario are prioritate, altfel `_site-oficial.png` (luat de pe
 site-ul oficial sau Commons; stemele sunt simboluri oficiale, art. 9 din Legea
 8/1996). Folder gol = apare numele pe card. Lipsesc: Hidroelectrica, APM
 Constanța, Fetești, Perșinari, Bughea de Jos.
+Logoul CNAIR e emblema de pe andnet.ro (domeniul cnair.ro e al altei firme!).
 „Marian Stanciu Internațional” (uzinator Gurasada) nu s-a confirmat în registre.
 
 ## Configurare externă

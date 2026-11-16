@@ -59,6 +59,7 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
         {navItems.map((item) => {
           const linkCls = [
             'hdr-link inline-flex items-center gap-1.5 text-[15px] font-medium transition-colors hover:text-accent-600 py-7',
+            item.href === portfolioHref && 'hdr-portfolio',
             isActive(item.href) ? 'is-active text-accent-600' : 'text-steel-600',
           ];
           if (item.href === servicesHref) return (
@@ -149,6 +150,9 @@ const chevron = '<svg class="w-3.5 h-3.5 transition-transform duration-200 group
   #header:not(.header-glass) .hdr-link.is-active { color: #f2c12e; }
   #header:not(.header-glass) .hdr-pill { color: #fff; border-color: rgba(255, 255, 255, 0.3); }
   #header:not(.header-glass) .hdr-icon { color: #fff; }
+  /* Portofoliul iese în evidență: galben peste fundal închis, auriu pe bara albă. */
+  #header:not(.header-glass) .hdr-link.hdr-portfolio { color: #f2c12e; }
+  #header.header-glass .hdr-link.hdr-portfolio { color: #8a6200; }
 
   /* Dropdown-urile se deschid la trecerea mouse-ului (și la focus, pentru tastatură). */
   .dropdown-panel {

@@ -1,106 +1,119 @@
 ---
-// Previzualizare: varianta C (grafit + galben de marcaj) aplicată pe partea de
-// sus a primei pagini, cu două fotografii. Pagină ascunsă (noindex, fără sitemap).
-// Textele sunt cele de pe prima pagină actuală.
+// Previzualizări (noindex, fără sitemap): variante pentru cifrele de pe prima
+// pagină și pentru fundalurile paginilor interioare. Textele sunt cele de acum.
 import Layout from '../layouts/Layout.astro';
 
-const options = [
-  { n: 6, src: '/img/projects/NOI.jpg', label: 'Poza 6: drum național noaptea, din dronă', origin: '50% 50%' },
-  { n: 2, src: '/img/projects/vacari-pasaj.webp', label: 'Poza 2: pasajul „Clubul Văcarilor”, Baia Mare', origin: '70% 50%' },
-];
+const contour = (k: number) => {
+  const pts: string[] = [];
+  for (let x = -100; x <= 1700; x += 40) {
+    const y = 160 + k * 22 + Math.sin(x / 210 + k * 0.55) * (50 - k) + Math.sin(x / 90 + k) * 8;
+    pts.push(`${x},${y.toFixed(1)}`);
+  }
+  return 'M' + pts.join(' L');
+};
+const contours = Array.from({ length: 12 }, (_, k) => contour(k - 6));
 
-const services = [
-  { t: 'Proiectare drumuri și platforme', d: 'Drumuri comunale, județene și naționale, intersecții, parcări.' },
-  { t: 'Proiectare poduri, pasaje, pasarele', d: 'Structuri de traversare rutiere și pietonale.' },
-  { t: 'Lucrări de sprijin și consolidări', d: 'Ziduri de sprijin, versanți, taluzuri.' },
+const bgs = [
+  { id: 1, name: 'Gri cald + fotografia de noapte în antet', page: '#f3f2ee', card: '#ffffff', header: 'photo' },
+  { id: 2, name: 'Nisip deschis + curbe de nivel galbene în antet', page: '#efeadf', card: '#fbf9f4', header: 'contour' },
+  { id: 3, name: 'Gri-albăstrui + lumină galbenă difuză în antet', page: '#eef0f3', card: '#ffffff', header: 'glow' },
 ];
 ---
 
-<Layout title="Varianta C" noindex>
-  <main class="vc">
-    <div class="bg-[#121417] text-white/70 text-center text-[13px] py-2.5 px-4">
-      Previzualizare, nu e publică. Mai jos sunt două versiuni ale primei pagini în varianta C. Derulează ca să le vezi pe amândouă.
-    </div>
+<Layout title="Variante" noindex>
+  <main class="bg-white">
+    <div class="bg-[#121417] text-white/70 text-center text-[13px] py-2.5 px-4">Previzualizare, nu e publică.</div>
 
-    {options.map((o) => (
-      <section class="relative">
-        <div class="bg-[#f2c12e] text-[#121417] text-center font-heading font-extrabold text-[15px] py-2">
-          Varianta C cu {o.label}
+    <!-- 1. Cifrele de pe prima pagină -->
+    <section class="container pt-10 pb-4">
+      <h1 class="font-heading font-extrabold text-[30px] text-brand-800">1. Cifrele de sub butoane</h1>
+      <p class="text-steel-500 text-[15px] mt-1">Trei variante în locul casetelor cu iconițe. Alege litera.</p>
+    </section>
+
+    {['A', 'B', 'C'].map((v) => (
+      <section class="relative overflow-hidden bg-[#121417] mx-3 md:mx-6 rounded-[28px] mb-6">
+        <img src="/img/hero-noapte.webp" alt="" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(18,20,23,.95) 0%, rgba(18,20,23,.78) 42%, rgba(18,20,23,.30) 100%)"></div>
+        <div class="relative px-6 md:px-16 py-12">
+          <span class="inline-block bg-[#f2c12e] text-[#121417] font-heading font-extrabold text-[14px] px-3 py-1 rounded-full">Varianta {v}</span>
+          <div class="flex flex-col sm:flex-row gap-4 mt-6">
+            <span class="inline-flex items-center justify-center bg-[#f2c12e] text-[#121417] px-8 py-4 rounded-full font-semibold text-[15px]">Discută proiectul tău →</span>
+            <span class="inline-flex items-center justify-center bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-[15px] border border-white/20">Vezi portofoliu</span>
+          </div>
+
+          {v === 'A' && (
+            <div class="flex items-stretch gap-8 mt-10">
+              <div class="border-l-[3px] border-[#f2c12e] pl-4">
+                <div class="font-heading font-extrabold text-white text-[40px] leading-none">2018</div>
+                <div class="text-white/55 text-[14px] mt-2">Pe piață din</div>
+              </div>
+              <div class="border-l-[3px] border-[#f2c12e] pl-4">
+                <div class="font-heading font-extrabold text-white text-[40px] leading-none">200+</div>
+                <div class="text-white/55 text-[14px] mt-2">Proiecte finalizate</div>
+              </div>
+            </div>
+          )}
+          {v === 'B' && (
+            <p class="mt-8 text-white/70 text-[15px] flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span>Pe piață din <strong class="text-white">2018</strong></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-[#f2c12e]"></span>
+              <span><strong class="text-white">200+</strong> proiecte finalizate</span>
+            </p>
+          )}
+          {v === 'C' && (
+            <div class="mt-10 inline-flex items-center rounded-full bg-black/35 backdrop-blur-md border border-white/10 px-2 py-2">
+              <span class="px-5 text-white"><span class="font-heading font-extrabold text-[22px]">2018</span> <span class="text-white/55 text-[13px] ml-1">pe piață din</span></span>
+              <span class="w-px h-7 bg-white/20"></span>
+              <span class="px-5 text-white"><span class="font-heading font-extrabold text-[22px] text-[#f2c12e]">200+</span> <span class="text-white/55 text-[13px] ml-1">proiecte finalizate</span></span>
+            </div>
+          )}
         </div>
+      </section>
+    ))}
 
-        <div class="relative min-h-[100svh] overflow-hidden bg-[#121417] flex flex-col">
-          <img src={o.src} alt="" class="kb absolute inset-0 w-full h-full object-cover" style={`transform-origin:${o.origin}`} />
-          <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(18,20,23,.95) 0%, rgba(18,20,23,.78) 42%, rgba(18,20,23,.30) 100%)"></div>
-          <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(0deg, #121417, transparent)"></div>
+    <!-- 2. Fundalurile paginilor interioare -->
+    <section class="container pt-10 pb-4">
+      <h2 class="font-heading font-extrabold text-[30px] text-brand-800">2. Fundalul paginilor (exemplu: Portofoliu)</h2>
+      <p class="text-steel-500 text-[15px] mt-1">În locul albului curat și al negrului mat. Alege numărul.</p>
+    </section>
 
-          <!-- bara de sus, ca pe site -->
-          <div class="relative container flex items-center justify-between h-20">
-            <div>
-              <span class="font-heading font-bold text-xl text-white">ME Design</span>
-              <span class="hidden sm:block text-[11px] text-white/50 font-medium tracking-wider uppercase -mt-1">Proiectare Infrastructură</span>
-            </div>
-            <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-white/75">
-              <span>Servicii ⌄</span><span>Portofoliu</span><span>Blog</span><span>Despre noi</span><span>Contact</span>
-              <span class="text-[13px] font-semibold border border-white/25 rounded-full px-3 py-1.5">EN</span>
-              <span class="bg-[#f2c12e] text-[#121417] px-5 py-2 rounded-full text-[14px] font-semibold">Solicită ofertă</span>
-            </div>
-            <span class="lg:hidden text-white/80 text-2xl">☰</span>
-          </div>
-
-          <div class="relative container flex-1 flex flex-col justify-center pb-16 pt-6">
-            <div class="max-w-2xl">
-              <h1 class="font-heading font-extrabold text-white leading-[1.04] tracking-[-0.03em] text-[42px] md:text-[64px] lg:text-[76px]">
-                Proiectăm cu <span class="text-[#f2c12e]">responsabilitate</span> pentru comunități.
-              </h1>
-              <p class="text-white/65 text-[16px] md:text-[20px] leading-relaxed mt-6 max-w-xl">
-                Servicii integrate de proiectare (CFDP): drumuri, poduri, pasaje, pasarele, lucrări de sprijin și consolidări pentru toate fazele de proiectare.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 mt-10">
-                <span class="inline-flex items-center justify-center gap-2 bg-[#f2c12e] text-[#121417] px-8 py-4 rounded-full font-semibold text-[15px]">Discută proiectul tău →</span>
-                <span class="inline-flex items-center justify-center bg-white/10 backdrop-blur text-white px-8 py-4 rounded-full font-semibold text-[15px] border border-white/20">Vezi portofoliu</span>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-4 mt-12 max-w-xl">
-              <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 text-center">
-                <div class="text-[30px] md:text-[40px] font-heading font-extrabold text-white">2018</div>
-                <div class="text-white/45 text-[13px] font-medium mt-1">Pe piață din</div>
-              </div>
-              <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 text-center">
-                <div class="text-[30px] md:text-[40px] font-heading font-extrabold text-white">200+</div>
-                <div class="text-white/45 text-[13px] font-medium mt-1">Proiecte finalizate</div>
-              </div>
-            </div>
+    {bgs.map((b) => (
+      <section class="mx-3 md:mx-6 mb-8 rounded-[28px] overflow-hidden border border-black/5" style={`background:${b.page}`}>
+        <div class="relative overflow-hidden bg-[#16191d]">
+          {b.header === 'photo' && (
+            <>
+              <img src="/img/hero-noapte.webp" alt="" class="absolute inset-0 w-full h-full object-cover opacity-70" style="object-position:50% 70%" />
+              <div class="absolute inset-0" style="background:linear-gradient(90deg, rgba(18,20,23,.92), rgba(18,20,23,.55))"></div>
+            </>
+          )}
+          {b.header === 'contour' && (
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <g fill="none" stroke="#f2c12e" stroke-width="1.1" opacity=".22">{contours.map((d) => <path d={d} />)}</g>
+            </svg>
+          )}
+          {b.header === 'glow' && (
+            <div class="absolute inset-0" style="background:radial-gradient(60% 120% at 85% 0%, rgba(242,193,46,.22), transparent 60%), radial-gradient(50% 100% at 0% 100%, rgba(91,143,208,.18), transparent 60%), linear-gradient(135deg, #1b1f24, #121417)"></div>
+          )}
+          <div class="relative px-6 md:px-14 pt-10 pb-12">
+            <span class="inline-block bg-[#f2c12e] text-[#121417] font-heading font-extrabold text-[13px] px-3 py-1 rounded-full">Fundal {b.id}: {b.name}</span>
+            <p class="text-[#f2c12e] font-semibold text-[13px] uppercase tracking-widest mt-6">Portofoliu</p>
+            <h3 class="font-heading font-extrabold text-white text-[36px] md:text-[48px] mt-2">Proiecte reprezentative</h3>
+            <p class="text-white/60 text-[16px] mt-2">O selecție din cele mai importante proiecte de infrastructură realizate de echipa ME Design.</p>
           </div>
         </div>
-
-        <!-- cum arată secțiunea următoare în aceeași paletă -->
-        <div class="bg-[#f4f4f2] py-16">
-          <div class="container">
-            <div class="text-center max-w-2xl mx-auto mb-8">
-              <span class="text-[#b8860b] font-semibold text-[13px] uppercase tracking-widest">Ce facem</span>
-              <h2 class="text-[30px] md:text-[42px] font-heading font-bold text-[#121417] mt-3">Servicii de proiectare complete</h2>
+        <div class="px-6 md:px-14 py-8 grid md:grid-cols-3 gap-5">
+          {['/img/projects/pod%20gogosu.jpg', '/img/projects/dn7.webp', '/img/projects/vacari-pasaj.webp'].map((src, i) => (
+            <div class="rounded-2xl overflow-hidden border border-black/5 shadow-sm" style={`background:${b.card}`}>
+              <img src={src} alt="" class="w-full aspect-[16/10] object-cover" loading="lazy" />
+              <div class="p-4">
+                <span class="text-[12px] font-semibold px-3 py-1 rounded-full bg-[#f2c12e]/20 text-[#6e4e00]">{['Poduri', 'Consolidări', 'Drumuri'][i]}</span>
+                <p class="font-heading font-bold text-[#121417] mt-3">{['Pod suspendat Gogoșu', 'Protecție versanți DN7', 'Pasaj „Clubul Văcarilor”'][i]}</p>
+                <p class="text-[#8a6200] font-semibold text-[13px] mt-3">Vezi proiectul →</p>
+              </div>
             </div>
-            <div class="grid md:grid-cols-3 gap-5">
-              {services.map((s) => (
-                <div class="bg-white rounded-2xl p-6 border border-black/5">
-                  <div class="w-12 h-12 rounded-xl bg-[#121417] flex items-center justify-center">
-                    <span class="w-5 h-1.5 rounded-full bg-[#f2c12e]"></span>
-                  </div>
-                  <h3 class="font-heading font-bold text-[18px] text-[#121417] mt-4">{s.t}</h3>
-                  <p class="text-[#5a6068] text-[14px] mt-2">{s.d}</p>
-                  <span class="inline-block text-[#b8860b] font-semibold text-[14px] mt-3">Detalii →</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     ))}
   </main>
 </Layout>
-
-<style>
-  .kb { animation: kb 24s ease-in-out infinite alternate; }
-  @keyframes kb { from { transform: scale(1); } to { transform: scale(1.09) translate3d(-1.5%, -1%, 0); } }
-  @media (prefers-reduced-motion: reduce) { .kb { animation: none; } }
-</style>
