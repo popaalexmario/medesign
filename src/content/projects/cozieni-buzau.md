@@ -32,6 +32,12 @@ Treisprezece drumuri pe un teritoriu cu relief variat nu pot fi tratate ca treis
 
 Am analizat rețeaua ca sistem, stabilind punctele de colectare și traseele de evacuare înainte de dimensionarea structurilor rutiere. Ordinea este esențială: o structură rutieră corect dimensionată, dar amplasată într-un teren îmbibat cu apă, se degradează în primele sezoane.
 
+## DC 60, legătura cu Pănătău
+
+Printre cele 13 drumuri este și DC 60, drumul comunal Cozieni – Punga – Pănătău, pe tronsonul din comuna Cozieni, de la satul Pietrosu (joncțiunea cu DJ 203L) până la limita cu comuna Pănătău. Pentru acest tronson, comuna Cozieni a obținut finanțare prin Programul Național de Investiții „Anghel Saligny”, în valoare de circa 11 milioane de lei. Tronsonul de 5,7 km de pe teritoriul comunei Pănătău a fost finanțat separat, prin Compania Națională de Investiții. Împreună, cele două tronsoane leagă zona de DN10, pe Valea Buzăului.
+
+Sursa: [Opinia Buzău](https://opiniabuzau.ro/primaria-cozieni-poate-pierde-o-finantare-de-110-miliarde-lei/) (27 noiembrie 2024).
+
 ## Documentația elaborată
 
 Proiectul a fost elaborat în faza DALI, ca intervenție asupra drumurilor existente.

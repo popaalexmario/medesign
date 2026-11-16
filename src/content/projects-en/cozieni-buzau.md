@@ -25,6 +25,12 @@ Thirteen roads across varied terrain cannot be treated as thirteen independent p
 
 We analysed the network as a system, fixing the collection points and the discharge routes before sizing the pavement structures. The order matters: a correctly sized pavement placed on waterlogged ground breaks up within the first few seasons.
 
+## DC 60, the link to Pănătău
+
+The 13 roads include DC 60, the Cozieni – Punga – Pănătău commune road, on the section within Cozieni commune, from Pietrosu village (junction with county road DJ 203L) to the boundary with Pănătău commune. For this section, Cozieni obtained funding of about RON 11 million through the „Anghel Saligny” National Investment Programme. The 5.7 km section in Pănătău commune was funded separately, through the National Investment Company (CNI). Together, the two sections connect the area to national road DN10 in the Buzău Valley.
+
+Source (in Romanian): [Opinia Buzău](https://opiniabuzau.ro/primaria-cozieni-poate-pierde-o-finantare-de-110-miliarde-lei/) (27 November 2024).
+
 ## Documentation produced
 
 The project was prepared at the intervention approval documentation stage (DALI), as an intervention on existing roads.
