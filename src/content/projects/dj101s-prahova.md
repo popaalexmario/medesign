@@ -1,7 +1,7 @@
 ---
 title: "Modernizare și Reabilitare DJ 101S în Județul Prahova"
 seoTitle: "Modernizare și reabilitare DJ 101S, Prahova"
-description: "Proiectare 12,15 km drum județean cu două poduri și consolidări terasament."
+description: "Proiectare 12,122 km drum județean cu două poduri și consolidări terasament."
 categories: ["Drumuri", "Poduri", "Consolidări"]
 faza: "DALI"
 location: "U.A.T. Consiliul Județean Prahova"
@@ -14,7 +14,7 @@ gallery: []
 order: 8
 ---
 
-Proiectare pentru modernizarea și reabilitarea a 12,15 km din DJ 101S, cu două poduri și consolidări de terasament, pentru Consiliul Județean Prahova.
+Proiectare pentru modernizarea și reabilitarea a 12,122 km din DJ 101S, cu două poduri și consolidări de terasament, pentru Consiliul Județean Prahova.
 
 ## Contextul proiectului
 
@@ -22,7 +22,7 @@ DJ 101S pornește din Comarnic, de la intersecția cu DN1, și trece prin Secăr
 
 ## Ce am proiectat
 
-Proiectul a fost elaborat în faza DALI, cu expertiza tehnică și studiile de teren aferente, și a tratat unitar cele trei categorii de lucrări: structura rutieră pe 12,15 km, cele două poduri și consolidările de terasament. Pentru podurile existente, evaluarea stării tehnice a stabilit încadrarea intervenției și soluțiile admisibile. Cotele podurilor au fost racordate la profilul longitudinal al drumului, iar consolidările au fost corelate cu încărcările din structura rutieră finală.
+Proiectul a fost elaborat în faza DALI, cu expertiza tehnică și studiile de teren aferente, și a tratat unitar cele trei categorii de lucrări: structura rutieră pe 12,122 km, cele două poduri și consolidările de terasament. Pentru podurile existente, evaluarea stării tehnice a stabilit încadrarea intervenției și soluțiile admisibile. Cotele podurilor au fost racordate la profilul longitudinal al drumului, iar consolidările au fost corelate cu încărcările din structura rutieră finală.
 
 ## Finanțare
 

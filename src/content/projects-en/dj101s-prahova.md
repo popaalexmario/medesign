@@ -1,13 +1,13 @@
 ---
 title: "Upgrading and Rehabilitation of County Road DJ 101S, Prahova County"
 seoTitle: "County road DJ 101S upgrade, Prahova"
-description: "Design of 12.15 km of county road with two bridges and embankment stabilisation."
+description: "Design of 12.122 km of county road with two bridges and embankment stabilisation."
 faza: "Intervention approval documentation (DALI)"
 location: "Prahova County Council"
 beneficiar: "Prahova County Council"
 ---
 
-Design for the upgrading and rehabilitation of 12.15 km of county road DJ 101S, with two bridges and embankment stabilisation, for Prahova County Council.
+Design for the upgrading and rehabilitation of 12.122 km of county road DJ 101S, with two bridges and embankment stabilisation, for Prahova County Council.
 
 ## Project background
 
@@ -15,7 +15,7 @@ DJ 101S starts in Comarnic, at the junction with national road DN1, and runs thr
 
 ## What we designed
 
-The project was prepared at the intervention approval documentation stage (DALI), with the related technical expertise and site investigations, and treated the three categories of works as a whole: the pavement structure over 12.15 km, the two bridges and the embankment stabilisation. For the existing bridges, the assessment of their technical condition determined how the intervention was classed and which solutions were admissible. The bridge levels were tied into the road's longitudinal profile, and the stabilisation was matched to the loads from the final pavement structure.
+The project was prepared at the intervention approval documentation stage (DALI), with the related technical expertise and site investigations, and treated the three categories of works as a whole: the pavement structure over 12.122 km, the two bridges and the embankment stabilisation. For the existing bridges, the assessment of their technical condition determined how the intervention was classed and which solutions were admissible. The bridge levels were tied into the road's longitudinal profile, and the stabilisation was matched to the loads from the final pavement structure.
 
 ## Funding
 
