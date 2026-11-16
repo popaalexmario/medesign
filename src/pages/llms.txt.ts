@@ -20,7 +20,7 @@ export const GET: APIRoute = async () => {
     '',
     '> Firmă românească de proiectare infrastructură, înființată în 2018, cu sediul în București: drumuri, poduri, pasaje, pasarele, poduri de cale ferată, lucrări de sprijin și consolidări, intervenții la monumente istorice, expertize tehnice și amenajări hidrotehnice. Lucrează pentru primării, consilii județene, administratori naționali de infrastructură și constructori, în toată România.',
     '',
-    'Proiectele sunt coordonate de ing. Mario Popa, inginer CFDP (căi ferate, drumuri și poduri), absolvent în 2016.',
+    'Proiectele sunt coordonate de ing. Mario Popa, inginer CFDP (căi ferate, drumuri și poduri), cu peste 10 ani de experiență în proiectarea infrastructurii.',
     '',
     'Contact: office@me-design.ro · +40 746 784 156 · ' + SITE + '/contact/',
     '',

@@ -154,8 +154,8 @@ eroare se vede.
   JSON-LD se scriu tot cu „/” final.
 - Proiectele au `seoTitle` (max ~52 caractere) în RO și EN; titlul lung rămâne
   în pagină. Titlurile care depășesc 65 de caractere cu sufix pierd „| ME Design”.
-- Autorul: ing. Mario Popa, inginer CFDP, absolvent 2016 (fără alte atestări
-  declarate deocamdată). Apare pe „Despre” (#mario-popa), ca autor al articolelor
+- Autorul: ing. Mario Popa, inginer CFDP, „peste 10 ani de experiență” (cerința lui;
+  nu se mai menționează anul absolvirii; fără alte atestări declarate deocamdată). Apare pe „Despre” (#mario-popa), ca autor al articolelor
   și ca Person în schema globală. Nu adăuga atestări sau ani de experiență nedeclarați.
 - Schema globală (WebSite, Organization, Person, ProfessionalService) e construită în
   `Layout.astro` din `services.ts`. `sameAs` e gol până primim profilurile firmei.
