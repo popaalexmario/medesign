@@ -41,7 +41,7 @@ export const regions: Region[] = [
     id: 'transilvania',
     name: 'Transilvania și Banat',
     shortName: 'Transilvania',
-    judete: ['Alba', 'Arad', 'Bistrița-Năsăud', 'Brașov', 'Caraș-Severin', 'Cluj', 'Covasna', 'Harghita', 'Hunedoara', 'Maramureș', 'Mureș', 'Sălaj', 'Sibiu', 'Timiș'],
+    judete: ['Alba', 'Arad', 'Bihor', 'Bistrița-Năsăud', 'Brașov', 'Caraș-Severin', 'Cluj', 'Covasna', 'Harghita', 'Hunedoara', 'Maramureș', 'Mureș', 'Sălaj', 'Sibiu', 'Timiș'],
     acces: 'A1 prin Valea Oltului și A3',
     intro:
       'Regiune în care am elaborat documentații pentru structuri complexe, inclusiv poduri clasate ca monumente istorice și pasaje pe infrastructura feroviară majoră.',
