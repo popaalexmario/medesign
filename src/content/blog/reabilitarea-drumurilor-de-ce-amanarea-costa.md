@@ -70,7 +70,7 @@ La **Cozieni, județul Buzău**, am proiectat 13 drumuri locale și comunale în
 
 La **Aninoasa, județul Dâmbovița**, 6 străzi locale pe 2,20 km, cu DALI, documentație pentru autorizare și proiect tehnic de execuție.
 
-Pe **DJ 101S, în Prahova**, modernizare și reabilitare pe 12,15 km, cu două poduri și consolidări de terasament în aceeași documentație. Un caz clar în care drumul, lucrările de artă și consolidările nu se pot trata separat.
+Pe **DJ 101S, în Prahova**, modernizare și reabilitare pe 12,122 km, cu două poduri și consolidări de terasament în aceeași documentație. Un caz clar în care drumul, lucrările de artă și consolidările nu se pot trata separat.
 
 La **Craiova**, închiderea inelului de trafic din zona de sud: stradă nouă de 2,18 km cu patru benzi, casetarea canalului Craiovița pe 1.800 ml, trei sensuri giratorii, piste de biciclete și spații pietonale. Aici componenta hidrotehnică a cântărit cât cea rutieră.
 

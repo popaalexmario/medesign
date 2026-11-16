@@ -82,7 +82,7 @@ Pe **DN 7, în județul Vâlcea**, am elaborat proiectul tehnic de execuție și
 
 La **Bughea de Jos, județul Argeș**, infrastructura verde-albastră a însemnat amenajarea malurilor cu ziduri de sprijin, trotuare și pasarele pentru continuitatea circulației. Consolidarea malurilor, componenta hidrotehnică și amenajarea spațiului public s-au tratat împreună.
 
-Pe **DJ 101S, în Prahova**, consolidările de terasament au făcut parte din modernizarea a 12,15 km de drum județean, alături de două poduri. La **Craiova**, consolidările au intrat în proiectul de închidere a inelului de trafic din zona de sud, care a inclus și casetarea canalului Craiovița pe 1.800 ml.
+Pe **DJ 101S, în Prahova**, consolidările de terasament au făcut parte din modernizarea a 12,122 km de drum județean, alături de două poduri. La **Craiova**, consolidările au intrat în proiectul de închidere a inelului de trafic din zona de sud, care a inclus și casetarea canalului Craiovița pe 1.800 ml.
 
 Observația care se repetă: consolidările nu se pot trata separat de drum. Un proiect care modernizează carosabilul fără să atace instabilitatea versantului de alături amână problema, n-o rezolvă. De aceea, în documentațiile noastre, drumul, lucrările de artă și consolidările sunt părți din aceeași soluție.
 

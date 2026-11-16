@@ -66,7 +66,7 @@ Podul de pe strada Gladiolelor din Sibiu, în cartierul Terezian, a fost o repar
 
 La podul suspendat peste brațul Gogoșu, pentru Hidroelectrica SA, Sucursala Hidrocentrale Porțile de Fier, am făcut expertiza tehnică și documentația de avizare a lucrărilor de intervenție. O structură suspendată peste Dunăre cere alt tip de evaluare decât un pod cu grinzi.
 
-Pe DJ 101S, în Prahova, cele două poduri de pe traseu au intrat în aceeași documentație cu modernizarea celor 12,15 km de drum și cu consolidările de terasament.
+Pe DJ 101S, în Prahova, cele două poduri de pe traseu au intrat în aceeași documentație cu modernizarea celor 12,122 km de drum și cu consolidările de terasament.
 
 Iar pe infrastructura majoră am elaborat detaliile de uzinare și execuție pentru pasajul de pe A0 peste A2, la km 53+069, și pentru pasajul superior din Tronsonul 3 Gurasada–Simeria.
 
