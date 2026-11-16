@@ -13,15 +13,6 @@ Intervention approval documentation for Hidroelectrica SA, Porțile de Fier Hydr
 
 The suspension bridge over the Gogoșu branch, in the Ostrovul Mare area, is one of the assets of Hidroelectrica S.A., Porțile de Fier Hydropower Plants Branch. The work covered the structural assessment and the intervention approval documentation.
 
-## What is particular about suspension structures
-
-A suspension bridge behaves in a fundamentally different way from a girder bridge. Its safety depends on the cables, the anchorages and the towers, and assessing them raises specific problems:
-
-- **The condition of the cables** cannot be judged visually along their whole length; deterioration often starts inside the strand or at the anchorage
-- **The anchorages** are the critical elements, and they are hard to reach for inspection
-- **Sensitivity to dynamic actions** is greater than for rigid structures
-- **Losing one element** of the suspension system usually leaves no reserve
-
 ## Operating context
 
 Since the asset belongs to an energy operator, the intervention has to fit the operating regime of the hydropower scheme and the beneficiary's internal procedures.
