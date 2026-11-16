@@ -42,6 +42,14 @@ Ce urmează e la fel de previzibil. Documentație incompletă, care nu trece de 
 
 Proiectarea e un procent mic din valoarea investiției. E și componenta care decide dacă restul bugetului e cheltuit bine.
 
+## La o platformă, o curte sau o parcare
+
+Pentru lucrările private, factorii sunt aceiași, doar că se cântăresc altfel. Suprafața contează mai puțin decât diferența de nivel a terenului. O platformă de 3.000 mp pe un teren plat e mai simplă decât una de 1.000 mp pe o pantă, lângă un vecin mai jos.
+
+Contează și ce vehicule intră, pentru că decid structura rutieră și geometria. Contează unde poate fi dusă apa: într-o rețea existentă, într-un șanț sau în teren. Și contează accesul: dintr-o stradă de cartier e o discuție scurtă, dintr-un drum județean sau național înseamnă un proiect de racord și acte de la administratorul drumului.
+
+Dacă proiectul de arhitectură există deja, partea de drumuri și sistematizare verticală se poate oferta separat, pe planul de situație existent.
+
 ## Ca să primești un număr care înseamnă ceva
 
 Trimite-ne, pe scurt, ce vrei să realizezi, unde, și dacă intervii pe ceva existent sau construiești nou. Adaugă dimensiunile aproximative, ce documente ai deja (carte funciară, certificat de urbanism, studii mai vechi) și până când ai nevoie de documentație.

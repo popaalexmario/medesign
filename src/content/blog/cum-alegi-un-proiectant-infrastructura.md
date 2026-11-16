@@ -67,9 +67,15 @@ Promisiuni de termene care nu țin cont de avize. Proiectarea e partea predictib
 
 Și lipsa unei poziții clare despre încadrare: construcție nouă sau intervenție, regim CATUC sau HG 907/2016. Asta se stabilește înainte de contractare, nu pe parcurs.
 
+## Dacă ești arhitect sau constructor
+
+Uneori nu cauți un proiectant pentru toată lucrarea, ci doar pentru o parte din ea. Biroul de arhitectură are clădirea, structuristul și instalatorii, dar îi lipsește partea de drumuri: accesul din drumul public, platforma, parcarea, cotele și scurgerea apei. Sau ești constructor și ai nevoie de cineva care să răspundă repede la o problemă de pe șantier.
+
+Întrebările de mai sus rămân valabile, cu una în plus: a mai lucrat ca subcontractant pe specialitatea lui, într-un proiect coordonat de altcineva? Se vede imediat dacă știe să predea planșe care se potrivesc cu ale tale sau îți trimite un proiect separat, pe care trebuie să-l adaptezi tu.
+
 ## Despre noi
 
-Facem documentații de infrastructură din 2018, pentru primării, consilii județene, companii naționale, și ca subcontractant pentru antreprenori și uzinatori. Beneficiarii fiecărui proiect sunt trecuți în [portofoliu](/portofoliu), cu fază și perioadă, ca să poți verifica.
+Facem documentații de infrastructură din 2018, pentru primării, consilii județene, companii naționale, și ca subcontractant pentru antreprenori, uzinatori și birouri de arhitectură. Pentru investitori privați facem partea de drumuri, platforme, parcări și sistematizare verticală. Beneficiarii fiecărui proiect sunt trecuți în [portofoliu](/portofoliu), cu fază și perioadă, ca să poți verifica.
 
 Dacă ai de ales între oferte și vrei o a doua opinie pe partea tehnică, [scrie-ne](/contact). Spunem și când o lucrare nu e pentru noi.
 

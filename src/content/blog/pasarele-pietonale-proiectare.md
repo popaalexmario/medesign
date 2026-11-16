@@ -1,7 +1,7 @@
 ---
 title: "Pasarele pietonale: de ce o structură ușoară e mai greu de proiectat"
 description: "Vibrațiile din pașii oamenilor, cota față de ape mari, accesul pentru cărucioare și biciclete. Ce decide proiectarea unei pasarele, dincolo de încărcare."
-pubDate: 2026-11-19
+pubDate: 2026-11-28
 category: "Tehnic"
 image: "/img/blog/cover-pasarela-orava.webp"
 imageAlt: "Pasarelă pietonală suspendată peste râul Orava"

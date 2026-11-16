@@ -74,6 +74,16 @@ fișierul românesc. **La un proiect nou, adaugă și fișierul EN**, altfel nu 
 în portofoliul englez. Formularul EN trimite `lang=en`; emailul vine cu „[EN]”
 în subiect.
 
+## Publicul-țintă al blogului (nov. 2026)
+
+Pe lângă autoritățile publice, articolele noi țintesc: investitori privați care
+au nevoie de sistematizare verticală, platforme, curți, parcări și accese la drum;
+birouri de arhitectură care au nevoie doar de partea de drumuri; constructori de
+lucrări mici care au nevoie de asistență tehnică, optimizare sau reproiectare.
+Articolele din seria asta: acces-drum-public, ape-pluviale, sistematizare-verticala,
+proiectare-parcare (art. 406 CATUC), specialitatea-drumuri, optimizare-reproiectare.
+OG 43/1997 art. 46 verificat pe legeaz.net (lege5 nu afișează articolul gratuit).
+
 ## Reguli de scriere pentru articole
 
 Stabilite după ce textele inițiale au fost comparate cu ghidul Wikipedia
@@ -214,7 +224,7 @@ Logoul CNAIR e emblema de pe andnet.ro (domeniul cnair.ro e al altei firme!).
 - Recomandări de la beneficiari (Lugoj, Craiova, Cozieni) — cel mai mare câștig
   de conversie disponibil.
 - Codul poștal al sediului, pentru schema LocalBusiness.
-- 26 de articole publicate la 15.11.2026.
+- Articole programate până la 28.11.2026 (șase noi pentru publicul privat).
 
 ## Surse online
 

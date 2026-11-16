@@ -224,4 +224,86 @@ export const DIAGRAMS = [
     ],
     footer: 'Termenele curg de la documentația completă. Actele autorității de mediu au procedura lor.',
   },
+  {
+    file: 'acces-drum-public-pasi', kind: 'steps', cols: 1,
+    title: 'Un acces nou din drumul public, pe pași',
+    subtitle: 'OG nr. 43/1997, art. 46, și CATUC, art. 266',
+    steps: [
+      { t: 'Certificatul de urbanism cere acordul de racordare', s: 'acord de racordare la rețeaua căilor de comunicații (art. 266)' },
+      { t: 'Discuție cu administratorul drumului pe o schiță de acces', s: 'înainte de proiectul complet', hi: true },
+      { t: 'Acordul prealabil al administratorului drumului', s: 'permite accesul în principiu, pe baza proiectului' },
+      { t: 'Autorizația de construire' },
+      { t: 'Autorizația de amplasare și/sau de acces în zona drumului', s: 'se eliberează după încheierea contractului cu administratorul' },
+      { t: 'Execuția, pentru funcțiunea aprobată', s: 'schimbarea destinației cere aprobarea administratorului' },
+    ],
+  },
+  {
+    file: 'ape-pluviale-etape', kind: 'columns', joiner: ['→', '→'],
+    title: 'Unde duci apa de pe o platformă',
+    subtitle: 'Trei etape, în ordinea din articol',
+    cols: [
+      { head: '1. Panta', color: '#334155', rows: [
+        'Conduce apa departe de clădire',
+        'Se stabilește odată cu cotele',
+        'O platformă fără pantă ține apa pe loc',
+      ] },
+      { head: '2. Colectarea', color: '#1e3a5f', rows: [
+        'Rigole și guri de scurgere',
+        'Rigolă carosabilă de-a curmezișul accesului',
+        'Locurile de adunare se aleg, nu se lasă la întâmplare',
+      ] },
+      { head: '3. Evacuarea', color: '#d97706', rows: [
+        'Rețea pluvială, dacă operatorul o acceptă',
+        'Emisar: șanț sau curs de apă',
+        'Infiltrare, doar pe teren care o permite',
+      ] },
+    ],
+    footer: 'Infiltrarea se decide din studiul geotehnic, nu din ochi.',
+  },
+  {
+    file: 'parcare-art-406', kind: 'columns',
+    title: 'Parcările exterioare și art. 406 din CATUC',
+    subtitle: 'Obligațiile din lit. c)–e) și ce rămâne de decis în proiect',
+    cols: [
+      { head: 'Ce cere legea', color: '#1e3a5f', rows: [
+        { k: 'De la 1.01.2027', v: 'Parcări exterioare peste 500 mp: birouri, comerț, industrie, depozitare, plus cele noi deschise publicului' },
+        { k: 'Lit. c)', v: 'Dispozitive pentru permeabilitate, infiltrare sau evaporare a apei pluviale' },
+        { k: 'Lit. d)', v: 'Arbori sau umbrire pe cel puțin 30% din suprafață' },
+        { k: 'Lit. e)', v: 'Excepții: patrimoniu sau cerințe imposibile tehnic și economic' },
+      ] },
+      { head: 'Ce decide proiectul', color: '#d97706', rows: [
+        { k: 'Vehiculele', v: 'Cel mai greu vehicul decide structura și razele' },
+        { k: 'Terenul', v: 'Studiul geotehnic spune dacă apa se poate infiltra' },
+        { k: 'Apa', v: 'Unde ajunge și prin ce e preluată' },
+        { k: 'Accesul și cotele', v: 'Racordul la stradă și sistematizarea verticală' },
+      ] },
+    ],
+    footer: 'Litera d) nu repetă pragul de 500 mp și data: aplicarea se clarifică la certificatul de urbanism.',
+  },
+  {
+    file: 'specialitati-proiect-hala', kind: 'table',
+    title: 'Cine face ce în proiectul unei hale cu platformă',
+    subtitle: 'Împărțirea obișnuită a specialităților',
+    widths: [1, 2.6],
+    head: ['Specialitatea', 'Ce acoperă'],
+    rows: [
+      ['Arhitectură', 'Clădirea, planul de situație, cota ±0,00, coordonarea proiectului'],
+      ['Structură', 'Rezistența clădirii și fundațiile'],
+      ['Instalații', 'Instalațiile interioare și rețelele până la branșament'],
+      { cells: ['Drumuri', 'Accesul și racordul la drum, circulații, platforme, parcări, sistematizare verticală, ape pluviale de suprafață, semnalizare'], hi: true },
+    ],
+    footer: 'Granița cu instalațiile se stabilește clar la canalizarea pluvială.',
+  },
+  {
+    file: 'modificare-proiect-cai', kind: 'steps', cols: 1,
+    title: 'Vrei să schimbi proiectul: ce cale urmezi',
+    subtitle: 'CATUC, art. 293',
+    steps: [
+      { t: 'Înainte de autorizație: modifici proiectul', s: 'cel mai ieftin moment pentru o revizuire', hi: true },
+      { t: 'După autorizație, modificare locală a soluției tehnice', s: 'dispoziție de șantier, elaborată în prealabil de proiectant (alin. (8))' },
+      { t: 'Modificare de temă, în limitele avizelor și reglementărilor', s: 'autorizație de modificare, cu PAC actualizat (alin. (1)–(5))' },
+      { t: 'Modificare care iese din limitele avizelor', s: 'autorizarea se reia (alin. (6))' },
+    ],
+    footer: 'Autorizația de modificare se cere înainte de lucrările modificate și în valabilitatea autorizației inițiale.',
+  },
 ];

@@ -114,6 +114,12 @@ Art. 582 adaugă că procedurile de elaborare, avizare și autorizare începute 
 
 Pentru investițiile pornite după 25 august 2026, parcursul se structurează pe cele șapte stadii introduse de CATUC.
 
+## Dacă ești investitor privat
+
+Structura SF / DALI, cu indicatori aprobați prin hotărâre, ține de investițiile publice. La o hală, un depozit sau o parcare construite de o firmă, ce contează de regulă e documentația pentru autorizare (PAC, fostul DTAC) și, după ea, proiectul tehnic de execuție.
+
+Și acolo partea de drumuri are locul ei. Planul de situație din PAC trebuie să arate cotele terenului amenajat, în cote absolute, și accesurile (anexa nr. 2 la CATUC). Dacă biroul de arhitectură nu are un inginer de drumuri în echipă, partea asta se poate preda separat. Ce acoperă, pe pagina serviciului de [proiectare drumuri și platforme](/servicii/proiectare-drumuri).
+
 ## Cum ajutăm
 
 Elaborăm documentații în toate fazele și am trecut, pe proiecte reale, prin fiecare dintre situațiile de mai sus.
@@ -128,4 +134,4 @@ Dacă pregătești un proiect și nu ești sigur ce documentație îți trebuie,
 
 ---
 
-**Surse.** Dispozițiile tranzitorii de la art. 577 și 582 se regăsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf). Structura SF / DALI / PT rămâne cea din HG nr. 907/2016. Formularele noi de autorizare sunt aprobate prin Ordinul MDLPA nr. 975/2026, publicat în Monitorul Oficial nr. 711 din 26 august 2026.
+**Surse.** Dispozițiile tranzitorii de la art. 577 și 582 și conținutul-cadru al PAC (anexa nr. 2) se regăsesc în [textul Legii nr. 169/2026 publicat în Monitorul Oficial, Partea I, nr. 661 din 10 august 2026](https://www.aicps.ro/media/content/2026-08/monitorul-oficial-partea-i-nr-661-10-august-2026-catuc_6a8d68372f0fc.pdf). Structura SF / DALI / PT rămâne cea din HG nr. 907/2016. Formularele noi de autorizare sunt aprobate prin Ordinul MDLPA nr. 975/2026, publicat în Monitorul Oficial nr. 711 din 26 august 2026.

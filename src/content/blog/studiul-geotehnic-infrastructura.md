@@ -44,6 +44,12 @@ Vechimea. Un studiu de acum cinci ani pe un versant activ nu mai descrie versant
 
 Și apa. Nivelul apei subterane măsurat într-o lună secetoasă nu e cel din primăvară. Cine nu ține cont de asta descoperă problema la săpătură.
 
+## La o platformă sau o parcare
+
+Pe lucrările private, studiul geotehnic e uneori comandat doar pentru fundațiile clădirii, iar platforma din jurul ei rămâne „pe teren bun". Pe o platformă pe care manevrează camioane, terenul de sub structura rutieră contează la fel de mult. Merită ca forajele să acopere și zona ei.
+
+Iar de la 1 ianuarie 2027, pentru parcările exterioare de peste 500 mp asociate clădirilor de birouri, comerciale, industriale sau de depozitare, art. 406 din CATUC cere dispozitive care favorizează infiltrarea sau evaporarea apei pluviale. Dacă terenul permite infiltrarea, tot studiul geotehnic o spune. Cere-o explicit în temă.
+
 ## Ce se întâmplă la săpătură
 
 Oricât de bun e studiul, terenul are surprize între foraje. De aceea proiectul stabilește faze determinante la fundul săpăturii, unde proiectantul și, după caz, geotehnicianul confirmă că terenul găsit corespunde celui din studiu. Dacă nu, soluția se adaptează prin [asistență tehnică](/blog/asistenta-tehnica-proiectant-santier).
@@ -54,6 +60,6 @@ Dacă trebuie să tai din bugetul unei documentații, taie din altă parte. Un f
 
 ---
 
-**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 265, 299, 490 și 491. [Ordinul MDLPA nr. 27/2023](https://lege5.ro/gratuit/geztemrzha2dk/ordinul-nr-27-2023-pentru-aprobarea-reglementarii-tehnice-normativ-privind-documentatiile-geotehnice-pentru-constructii-indicativ-np-074-2022) pentru aprobarea normativului NP 074-2022, publicat în M. Of. nr. 56 din 20 ianuarie 2023.
+**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 265, 299, 406, 490 și 491. [Ordinul MDLPA nr. 27/2023](https://lege5.ro/gratuit/geztemrzha2dk/ordinul-nr-27-2023-pentru-aprobarea-reglementarii-tehnice-normativ-privind-documentatiile-geotehnice-pentru-constructii-indicativ-np-074-2022) pentru aprobarea normativului NP 074-2022, publicat în M. Of. nr. 56 din 20 ianuarie 2023.
 
 Imagine de copertă: instalație de foraj pentru investigații geotehnice, Helsinki. Foto: [Coen](https://commons.wikimedia.org/wiki/File:GM100_GT_drill_rig_by_Hermannin_rantatie_in_Kyläsaari,_Helsinki,_Finland,_2021.jpg), licență [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), Wikimedia Commons.

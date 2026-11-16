@@ -1,7 +1,7 @@
 ---
 title: "Rosturi, aparate de reazem, hidroizolație: unde începe un pod să moară"
 description: "Piesele mici ale unui pod cedează primele și, neînlocuite la timp, iau structura cu ele. Ce se degradează, de ce și ce se face fără reparație capitală."
-pubDate: 2026-11-17
+pubDate: 2026-11-26
 category: "Tehnic"
 image: "/img/projects/pod%20gladiolelor.png"
 imageAlt: "Podul de pe strada Gladiolelor din Sibiu"

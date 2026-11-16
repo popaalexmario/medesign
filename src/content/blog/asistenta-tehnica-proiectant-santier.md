@@ -58,8 +58,14 @@ Pe lucrările de versant, de consolidare sau de fundații la poduri, investigaț
 
 Pe DN7, în defileul Oltului, am elaborat proiectul tehnic pentru protecția versanților pe patru sectoare și am asigurat asistența tehnică pe durata execuției. Soluțiile au fost adaptate la condițiile găsite efectiv pe fiecare sector, iar lucrările s-au încheiat cu aproximativ nouă luni înainte de termenul contractual. Detalii pe [pagina proiectului](/portofoliu/dn7-versanti-valcea).
 
+## Și la lucrările mici
+
+Pe o platformă de hală sau pe o parcare, problemele sunt mai mici, dar vin la fel de repede. Constructorul găsește la săpătură un pământ moale sub platformă. Accesul trebuie mutat cu câțiva metri pentru un stâlp care nu era pe ridicarea topografică. Furnizorul nu mai are bordurile din caietul de sarcini.
+
+Pe o lucrare mică nu există de obicei o echipă de supervizare care să ia decizia. Cineva trebuie totuși să o ia, cu semnătură, iar CATUC spune cine: proiectantul, prin dispoziție de șantier, elaborată înainte ca modificarea să se execute (art. 293 alin. (8)).
+
 Un proiect bun fără asistență tehnică e jumătate de serviciu. Când compari oferte de proiectare, întreabă cine vine pe șantier și cât de repede. Dacă vrei să discutăm despre o lucrare care urmează să intre în execuție, [scrie-ne](/contact).
 
 ---
 
-**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 426 și 521. Datele despre finalizarea lucrărilor de pe DN7 provin din comunicarea publică a DRDP Craiova.
+**Surse.** [Codul amenajării teritoriului, urbanismului și construcțiilor (Legea nr. 169/2026)](https://lege5.ro/Gratuit/ge4tanjtgazti/codul-amenajarii-teritoriului-urbanismului-si-constructiilor-din-05082026), art. 293, 426 și 521. Datele despre finalizarea lucrărilor de pe DN7 provin din comunicarea publică a DRDP Craiova.
