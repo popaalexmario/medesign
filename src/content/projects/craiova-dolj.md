@@ -2,7 +2,7 @@
 title: "Închidere Inel de Trafic Zona de Sud a Municipiului Craiova – Casetare Canal Deschis, Modernizare Str. Râului cu Străpungere DN56 – DN55 Joncțiune cu Aleea 2 Bechet"
 seoTitle: "Inel de trafic sud Craiova, casetare canal"
 description: "Stradă nouă de 2,18 km cu 4 benzi și casetarea canalului Craiovița pe 1.800 m, în sudul Craiovei. Investiție de peste 39 mil. euro, cu finanțare europeană."
-categories: ["Drumuri", "Consolidări"]
+categories: ["Drumuri", "Consolidări", "Amenajări Hidrotehnice"]
 faza: "DALI+DTAC+PTE"
 location: "U.A.T. Municipiul Craiova, Județul Dolj"
 judet: "Dolj"
