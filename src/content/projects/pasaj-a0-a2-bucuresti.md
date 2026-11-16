@@ -1,7 +1,7 @@
 ---
 title: "Pasaj pe A0 peste A2 Km 53+069"
 seoTitle: "Pasaj A0 peste A2, km 53+069"
-description: "Detalii de uzinare si executie pentru pasajul auto pe A0 peste A2 Km 53+069."
+description: "Detalii de uzinare și de execuție pentru pasajul de pe A0 peste A2, la km 53+069, pe Lotul 1 al Autostrăzii de Centură București Sud."
 categories: ["Poduri"]
 faza: "DE"
 location: "București"
@@ -15,38 +15,24 @@ gallery: []
 order: 15
 ---
 
-Detalii de uzinare si executie pentru pasajul auto pe A0 peste A2 Km 53+069.
+Pasajul care duce Autostrada de Centură a Bucureștiului (A0) peste Autostrada Soarelui (A2), la km 53+069. Am elaborat detaliile de uzinare și de execuție ale structurii.
 
 ## Contextul proiectului
 
-Pasajul de pe Autostrada A0 peste Autostrada A2, la km 53+069, face parte din centura de autostradă a Municipiului București. Am elaborat **detaliile de uzinare și de execuție** pentru structura pasajului rutier.
+Pasajul se află pe Lotul 1 al A0 Sud (km 52+070–69+000), lotul care asigură conexiunea autostrăzii de centură cu A2. Beneficiarul final este CNAIR, iar lotul a fost proiectat și executat de Alsim Alarko Sanayi Tesisleri ve Ticaret A.Ş.
 
-Beneficiarul final al lucrării este **C.N.A.I.R. S.A.**, iar execuția lotului a revenit constructorului **Alsim Alarko Sanayi Tesisleri ve Ticaret A.Ş.** Documentația a fost elaborată pentru **MS Interproiect Engineering SRL**, uzinatorul structurii metalice, în lanțul de execuție al proiectului.
+## Ce am proiectat
 
-## Ce înseamnă faza DE
+Am lucrat pentru MS Interproiect Engineering SRL, uzinatorul structurii metalice. În faza DE proiectul devine instrucțiune directă pentru atelier și șantier: detalii de uzinare cu geometrie și toleranțe, detalii de îmbinare și de montaj, succesiunea de execuție.
 
-Detaliile de execuție reprezintă nivelul de documentație la care proiectul devine instrucțiune directă pentru atelier și pentru șantier. La acest nivel nu se mai discută soluția, ci modul concret în care aceasta se materializează:
+La o intersecție între două autostrăzi, gabaritele și clasele de încărcare sunt mai mari decât pe rețeaua obișnuită, iar autostrada traversată rămâne în exploatare pe durata lucrărilor. La acest nivel de detaliu, o cotă greșită nu se corectează pe șantier. Se reface elementul.
 
-- **Detalii de uzinare** pentru elementele prefabricate în atelier, cu geometrie și toleranțe
-- **Planuri de armare** complete, cu poziții, diametre și fasonări
-- **Detalii de îmbinare** și de montaj
-- **Succesiunea tehnologică** de execuție
+## Finanțare
 
-## Exigențele proiectelor de autostradă
+Contractul pentru Lotul 1 a fost semnat de CNAIR cu Alsim Alarko în august 2019, pentru proiectare și execuție, cu o valoare de circa 830 de milioane de lei fără TVA. La semnare, proiectul A0, inclus în Master Planul General de Transport, era prevăzut spre finanțare prin Programul Operațional Infrastructură Mare (POIM) 2014–2020.
 
-O intersecție între două autostrăzi impune cerințe superioare celor de pe rețeaua obișnuită: gabarite de liberă trecere mai mari, clase de încărcare superioare și condiții stricte de execuție sub trafic, întrucât autostrada traversată rămâne în exploatare.
+## Stadiu
 
-La acest nivel de detaliu, o cotă greșită nu se corectează pe șantier — se corectează prin refacerea elementului. Precizia documentației are consecință economică directă.
+Ultimii 10 km ai Lotului 1 au fost deschiși circulației la 31 iulie 2024, odată cu legătura dintre A0 și A2. Din acel moment, sudul Ilfovului are acces direct pe autostradă spre litoral.
 
-## Ce aduce comunității
-
-Centura de autostradă a Bucureștiului are efecte la scara întregii regiuni:
-
-- **Devierea traficului de tranzit** dinspre arterele orașului, cu efect asupra congestiei și a calității aerului
-- **Reducerea traficului greu** pe centura rutieră existentă, care traversează zone locuite
-- **Legătura directă între coridoarele majore**, fără traversarea capitalei
-- **Timpi de parcurs previzibili** pentru transportul de marfă dinspre și către portul Constanța
-
-## Îmbunătățiri în amplasament
-
-Pasajul de la km 53+069 asigură supratraversarea autostrăzii A2 de către A0, cu gabaritele și clasele de încărcare impuse unei intersecții între două autostrăzi. Execuția s-a realizat în condițiile menținerii în exploatare a autostrăzii traversate, ceea ce a determinat nivelul de detaliere necesar documentației.
+Surse: [Economica.net](https://www.economica.net/autostrada-0-centura-bucuresti-contractul-cu-turcii-de-la-alsim-alarko-pentru-lotul-1-va-fi-semnat-astazi_173039.html) (26.08.2019); [Agerpres](https://agerpres.ro/economic/2024/07/30/pistol-maine-ora-18-00-deschidem-circulatia-pe-ultimii-10-km-ai-lotului-1-al-a0-sud--1334515) (30.07.2024).

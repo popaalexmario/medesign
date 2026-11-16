@@ -1,46 +1,22 @@
 ---
 title: "Upgrading of Infrastructure around Emil Rebreanu, Saturn, George Bacovia and Libertății Streets, Section 1, Onești Municipality, Bacău County"
 seoTitle: "Emil Rebreanu street upgrade, Onești"
-description: "Design of sidewalks and parking."
+description: "DALI documentation for sidewalks and parking around Emil Rebreanu, Saturn, George Bacovia and Libertății streets, Section 1, Onești."
 faza: "Intervention approval documentation (DALI)"
 location: "Onești Municipality, Bacău County"
 beneficiar: "Onești Municipality (local authority)"
 ---
 
-Design of sidewalks and parking.
+Sidewalks and parking for a residential neighbourhood in Onești, designed together so that they work as one system.
 
 ## Project background
 
-The infrastructure upgrade in the area of Emil Rebreanu, Saturn, George Bacovia and Libertății streets in Onești covered, on Section 1, the design of the sidewalks and parking spaces.
+Onești Municipality prepared the upgrade of the infrastructure around Emil Rebreanu, Saturn, George Bacovia and Libertății streets. Section 1, which we designed, covers the sidewalks and parking. It is a densely built residential area, where the sidewalk was missing in places or taken up by cars, and pedestrians stepped onto the carriageway.
 
-## Why pedestrian space matters
+## What we designed
 
-In residential areas, sidewalks and parking decide how the street actually works. When pedestrian space is missing or taken up by illegally parked cars, pedestrians step onto the carriageway, and the risk rises especially for children and for people with reduced mobility.
+We prepared the intervention approval documentation (DALI) for Onești Municipality, as an intervention on existing infrastructure.
 
-Designing the two components together solves the problem at its source: parking spaces that are properly sized and placed free up the sidewalk, and a continuous sidewalk, without breaks at every access, becomes usable.
+Parking and sidewalks were treated together. Properly sized and placed parking spaces free up the sidewalk, and the sidewalk stays continuous, without breaks at property accesses. The design dealt with the tie-in to the existing levels of buildings and accesses, drainage without ponding along the line between sidewalk and carriageway, and access for people with reduced mobility.
 
-## Design elements
-
-In a densely built residential area, the solution has to deal at the same time with:
-
-- Continuity of the pedestrian route, including at intersections and property accesses
-- Tie-in to the existing levels of the buildings and accesses
-- Drainage without ponding along the line between sidewalk and carriageway
-- Accessibility for people with disabilities
-
-## Documentation produced
-
-The project was prepared at the intervention approval documentation stage (DALI), as an intervention on existing infrastructure, for Onești Municipality.
-
-## What it brings to the community
-
-In a residential neighbourhood, sidewalks and parking decide everyday safety:
-
-- Pedestrians no longer step onto the carriageway where the sidewalk was missing or occupied by cars
-- Safety for children and elderly people, the groups most exposed when there is no pedestrian space
-- Accessibility for people with reduced mobility, through compliant slopes and transitions
-- Orderly parking, through properly sized and placed parking spaces
-
-## Improvements on site
-
-Around Emil Rebreanu, Saturn, George Bacovia and Libertății streets, the works introduce continuous sidewalks, without breaks at property accesses, and parking that frees up the pedestrian space. Tying in to the existing building levels and draining the line between sidewalk and carriageway removes the ponding that was degrading the area.
+The aim is simple to describe: pedestrians, especially children and elderly people, should no longer have to walk in the road.

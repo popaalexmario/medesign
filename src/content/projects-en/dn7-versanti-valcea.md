@@ -8,52 +8,32 @@ beneficiar: "C.N.A.I.R. S.A. (Romanian National Company for Road Infrastructure 
 beneficiarPrin: "through the general contractor"
 ---
 
-The road sections studied are part of DN7 București – Titu – Târgoviște – Pitești – Arad and include zones that endanger traffic safety, because material detached from the slopes causes accidents with material damage and serious injuries.
+Slope protection on four sections of DN7 in the Olt Gorge, between Călimănești-Căciulata and Câineni, where falling rock was reaching the carriageway.
 
 ## Project background
 
-The sections studied, km 198+200 to 207+000, km 216+000 to 219+000, km 224+000 to 227+300 and km 228+000 to 233+200, are part of DN7, in the Lotrișor area, Vâlcea County. The final client is C.N.A.I.R. S.A., and the documentation was prepared under the design-and-build contract, for the general contractor.
+The sections km 198+200 to 207+000, km 216+000 to 219+000, km 224+000 to 227+300 and km 228+000 to 233+200 add up to 20.30 km of DN7, in the Lotrișor area, Vâlcea County. The steep slopes rise right next to the road platform. The rock is weathered by repeated freeze-thaw cycles, and block detachment, rockfalls and debris flows from the slopes have caused accidents and blocked the carriageway over the years.
 
-On these sections, material detached from the slopes reaches the carriageway, causing accidents with material damage and serious injuries.
+The geotechnical study placed the site in geotechnical category 3, major geotechnical risk. The area taken up by the stabilisation and strengthening works is about 101.5 ha.
 
-## Why the Olt Gorge is difficult
+## What we designed
 
-Here DN7 runs through a gorge, with steep slopes right next to the road platform. The conditions that make the area a problem:
+The contract was design-and-build. We worked for the general contractor, with CNAIR as the final client. We prepared the detailed technical design (PTE) and provided technical assistance (AT) during the works.
 
-- Little working space between the carriageway and the toe of the slope
-- Mechanisms that change from one section to the next: block detachment, erosion, surface instability
-- Heavy traffic on a route with no reasonable alternative, which rules out long closures
-- A rainfall regime that triggers episodes of instability
+The solutions were set section by section, according to the slope configuration and the detachment mechanism identified in each zone. A single solution over 20 km would have been oversized in some places and insufficient in others. On slopes, the conditions found during excavation often differ from the investigations, and technical assistance allowed the design to be adapted as the work went on.
 
-## A section-by-section approach
+Based on the design, the following were built:
 
-The four sections add up to more than 20 km. A single solution applied uniformly would have been either oversized on some sections or insufficient on others. The solutions were set section by section, according to the slope configuration and the detachment mechanism identified in each zone.
-
-## Documentation and assistance
-
-We prepared the detailed technical design (PTE) and provided **technical assistance** (AT) throughout construction. This is needed especially on slope works, where the actual conditions found during excavation call for adjustments.
-
-## The completed works
-
-The slope stabilisation and protection works were completed about 9 months ahead of the contractual deadline, which was August 2027. Based on the design, the following were built:
-
-- 6,000 m² of retention systems for blocks at risk of falling
 - 65,965 m² of anchored mesh protection systems
+- 6,000 m² of retention systems for blocks at risk of falling
 - 2,650 m³ of damaged gabions replaced
 
-Traffic restrictions on DN7 did not last for the whole contract period. They were put in place in stages, on the sections being worked on, and lifted as the works on each section were finished. On a route with no reasonable alternative, that mattered as much as the deadline.
+## Funding
 
-The figures come from the public statement by DRDP Craiova (the regional roads and bridges directorate) on the completion of the works.
+The investment belongs to CNAIR. The contract was signed by the Craiova Regional Directorate for Roads and Bridges (DRDP Craiova), is worth 47 million lei and runs for 40 months: 4 months for the detailed design and 36 months for the works. The issue of the construction start authorisation was announced in August 2024.
 
-## What it brings to the community
+## Status
 
-DN7 through the Olt Gorge is a route with no reasonable alternative, and its safety has direct effects:
+The works were completed about 9 months ahead of the contractual deadline, which was August 2027. Traffic restrictions were put in place in stages, on the sections being worked on, and lifted as the work on each was finished. On a route with no reasonable alternative between Oltenia and Transylvania, that mattered as much as the deadline.
 
-- Protecting the lives of road users on sections where material falling from the slopes caused accidents with serious injuries
-- Keeping the route open, avoiding detours of more than a hundred kilometres if it were closed
-- A continuous link between Oltenia and Transylvania, on one of the busiest routes in the country
-- Lower indirect costs borne by hauliers and local communities every time the road is blocked
-
-## Improvements on site
-
-On the four sections, totalling more than 20 km, the protection solutions differ according to the configuration of each slope and the detachment mechanism identified: anchored mesh over almost 66,000 m² of slope, retention systems for blocks at risk of falling, and new gabions in place of the damaged ones. Technical assistance during construction made it possible to adapt to the actual conditions found during excavation. This is needed especially on slope works, where preliminary investigations cannot fully capture the variability of the ground.
+Sources: DRDP Craiova's public statement on the completion of the works; [Economedia](https://economedia.ro/dn-7-valea-oltului-cnair-a-semnat-un-contract-de-47-milioane-lei-si-o-durata-de-3-ani-pentru-consolidarea-versantilor-si-montarea-plaselor-de-protectie-intre-calimanesti-si-caineni-circulatia-va-fi.html) (25.02.2024, in Romanian); [Economedia](https://economedia.ro/dn-7-valea-oltului-incep-lucrarile-pentru-montarea-plaselor-de-siguranta-intre-caciulata-si-caineni.html) (06.08.2024, in Romanian).

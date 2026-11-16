@@ -15,52 +15,32 @@ gallery: []
 order: 2
 ---
 
-Sectoarele de drum analizate fac parte din DN7 București – Titu – Târgoviște – Pitești – Arad și prezintă zone care pun în pericol siguranța circulației, datorită materialului desprins din versanți ce generează accidente soldate cu pagube materiale și vătămări corporale grave.
+Protecția versanților pe patru sectoare ale DN7 din defileul Oltului, între Călimănești-Căciulata și Câineni, unde căderile de pietre ajungeau pe carosabil.
 
 ## Contextul proiectului
 
-Sectoarele analizate — km 198+200–207+000, km 216+000–219+000, km 224+000–227+300 și km 228+000–233+200 — fac parte din DN7, în zona Lotrișor, județul Vâlcea. Beneficiarul final al lucrării este C.N.A.I.R. S.A., iar documentația a fost elaborată în cadrul contractului de proiectare și execuție, pentru antreprenorul general.
+Sectoarele km 198+200–207+000, km 216+000–219+000, km 224+000–227+300 și km 228+000–233+200 însumează 20,30 km din DN7, în zona Lotrișor, județul Vâlcea. Versanții abrupți stau imediat lângă platforma drumului. Rocile sunt alterate de ciclurile repetate de îngheț-dezgheț, iar desprinderile de blocuri, ebulmentele și scurgerile de pe versant au produs de-a lungul timpului accidente și blocări ale carosabilului.
 
-Pe aceste tronsoane, materialul desprins din versanți ajunge pe partea carosabilă, generând accidente soldate cu pagube materiale și vătămări corporale grave.
+Studiul geotehnic a încadrat amplasamentul în categoria geotehnică 3, cu risc geotehnic major. Suprafața ocupată de lucrările de stabilizare și consolidare este de aproximativ 101,5 ha.
 
-## De ce defileul Oltului este dificil
+## Ce am proiectat
 
-DN7 traversează aici un defileu, cu versanți abrupți imediat adiacenți platformei drumului. Condițiile care fac zona problematică:
+Contractul a fost de tip proiectare și execuție. Am lucrat pentru antreprenorul general, beneficiarul final fiind CNAIR. Am elaborat proiectul tehnic de execuție și am asigurat asistența tehnică pe durata lucrărilor.
 
-- **Spațiu de intervenție redus** între carosabil și baza versantului
-- **Mecanisme diferite de la un sector la altul** — desprinderi de blocuri, eroziune, instabilități de suprafață
-- **Trafic intens** pe o rută fără alternativă rezonabilă, ceea ce exclude închiderea prelungită
-- **Regim pluviometric** care declanșează episoade de instabilitate
+Soluțiile au fost stabilite pe sectoare, după configurația versantului și mecanismul de desprindere identificat pe fiecare zonă. O soluție unică pe 20 km ar fi fost supradimensionată pe unele porțiuni și insuficientă pe altele. Pe versant, condițiile găsite la săpătură diferă des de cele din investigații, iar asistența tehnică a permis adaptarea din mers.
 
-## Abordarea pe sectoare
+Pe baza proiectului s-au executat:
 
-Cele patru tronsoane însumează peste 20 km. O soluție unică aplicată uniform ar fi fost fie supradimensionată pe unele sectoare, fie insuficientă pe altele. Soluțiile au fost stabilite diferențiat, în funcție de configurația versantului și de mecanismul de desprindere identificat pe fiecare zonă.
-
-## Documentația și asistența
-
-Am elaborat proiectul tehnic de execuție și am asigurat **asistența tehnică** pe durata execuției, necesară în special pe lucrări de versant, unde condițiile reale descoperite la săpătură impun adaptări.
-
-## Lucrarea finalizată
-
-Lucrările de consolidare și protecție a versanților au fost finalizate cu aproximativ 9 luni înainte de termenul contractual, care era august 2027. Pe baza proiectului s-au executat:
-
-- 6.000 mp de sisteme de reținere a blocurilor cu risc de prăbușire
 - 65.965 mp de sisteme de protecție cu plase ancorate
+- 6.000 mp de sisteme de reținere a blocurilor cu risc de prăbușire
 - 2.650 mc de gabioane degradate înlocuite
 
-Restricțiile de circulație pe DN7 nu au durat pe toată perioada contractului. Au fost instituite etapizat, pe sectoarele în lucru, și ridicate pe măsură ce intervențiile de pe fiecare sector se încheiau. Pe o rută fără alternativă rezonabilă, asta a contat la fel de mult ca termenul.
+## Finanțare
 
-Datele provin din comunicarea publică a DRDP Craiova privind finalizarea lucrărilor.
+Investiția aparține CNAIR. Contractul a fost semnat de Direcția Regională de Drumuri și Poduri Craiova, are o valoare de 47 de milioane de lei și o durată de 40 de luni: 4 luni pentru proiectul tehnic de execuție și 36 de luni pentru lucrări. Emiterea autorizației de începere a lucrărilor a fost anunțată în august 2024.
 
-## Ce aduce comunității
+## Stadiu
 
-DN7 prin defileul Oltului este o rută fără alternativă rezonabilă, iar siguranța ei are efecte directe:
+Lucrările au fost finalizate cu aproximativ 9 luni înainte de termenul contractual, care era august 2027. Restricțiile de circulație au fost instituite etapizat, pe sectoarele în lucru, și ridicate pe măsură ce intervențiile se încheiau. Pe o rută fără alternativă rezonabilă între Oltenia și Transilvania, asta a contat la fel de mult ca termenul.
 
-- **Protecția vieții participanților la trafic** pe sectoare unde materialul desprins din versanți producea accidente cu vătămări corporale grave
-- **Menținerea rutei deschise**, evitând ocolișuri de peste o sută de kilometri în cazul unei indisponibilizări
-- **Continuitatea legăturii** între Oltenia și Transilvania, pe unul dintre cele mai circulate trasee din țară
-- **Reducerea costurilor indirecte** suportate de transportatori și de comunitățile locale la fiecare blocare a drumului
-
-## Îmbunătățiri în amplasament
-
-Pe cele patru sectoare, însumând peste 20 km, soluțiile de protecție sunt diferențiate în funcție de configurația fiecărui versant și de mecanismul de desprindere identificat: plase ancorate pe aproape 66.000 mp de versant, sisteme de reținere pentru blocurile cu risc de prăbușire și gabioane noi în locul celor degradate. Asistența tehnică pe durata execuției a permis adaptarea la condițiile reale descoperite la săpătură, necesară în special pe lucrări de versant, unde investigațiile preliminare nu pot acoperi integral variabilitatea terenului.
+Surse: comunicarea publică a DRDP Craiova privind finalizarea lucrărilor; [Economedia](https://economedia.ro/dn-7-valea-oltului-cnair-a-semnat-un-contract-de-47-milioane-lei-si-o-durata-de-3-ani-pentru-consolidarea-versantilor-si-montarea-plaselor-de-protectie-intre-calimanesti-si-caineni-circulatia-va-fi.html) (25.02.2024); [Economedia](https://economedia.ro/dn-7-valea-oltului-incep-lucrarile-pentru-montarea-plaselor-de-siguranta-intre-caciulata-si-caineni.html) (06.08.2024).
