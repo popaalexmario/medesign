@@ -36,7 +36,7 @@ const services = [
 <Layout title="Servicii" description="Servicii complete de proiectare infrastructură: drumuri, poduri, pasaje, pasarele și lucrări de sprijin și consolidări.">
   <Header />
 
-  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-8 page-hero">
     <div class="container">
       <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest">Serviciile noastre</span>
       <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3">
@@ -48,7 +48,7 @@ const services = [
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-page">
     <div class="container space-y-10">
       {services.map((service, i) => (
         <div class={`flex flex-col ${i % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`} data-aos="fade-up">
@@ -104,7 +104,7 @@ const services = [
     </div>
   </section>
 
-  <section class="section-padding bg-steel-50 border-t border-steel-100">
+  <section class="section-padding bg-page-alt border-t border-steel-100">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
         <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest">Specializări</span>
@@ -142,7 +142,7 @@ const services = [
   <Lightbox />
 
   <!-- Next page navigation -->
-  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+  <section class="next-nav py-10 bg-page-alt border-t border-steel-100">
     <div class="container flex items-center justify-between">
       <p class="text-steel-500 text-[14px]">Continuă să explorezi</p>
       <a href="/portofoliu" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-colors group">

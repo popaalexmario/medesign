@@ -8,7 +8,7 @@ import { servicePagesEn } from '../../data/services.en';
 <Layout title="Services" description="Infrastructure design in Romania: roads, bridges and overpasses, railway structures, retaining works, hydraulic works, heritage structures, assessments.">
   <Header />
 
-  <section class="pt-28 pb-8 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-8 page-hero">
     <div class="container">
       <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest">Services</span>
       <h1 class="text-[36px] md:text-[52px] font-heading font-extrabold text-white mt-3">
@@ -20,7 +20,7 @@ import { servicePagesEn } from '../../data/services.en';
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-page">
     <div class="container">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {servicePagesEn.map((s, i) => (
@@ -49,7 +49,7 @@ import { servicePagesEn } from '../../data/services.en';
     </div>
   </section>
 
-  <section class="next-nav py-10 bg-steel-50 border-t border-steel-100">
+  <section class="next-nav py-10 bg-page-alt border-t border-steel-100">
     <div class="container flex items-center justify-between gap-4">
       <p class="text-steel-500 text-[14px]">See the work behind each service</p>
       <a href="/en/portfolio" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-700 text-white px-6 py-3 rounded-full font-semibold text-[14px] transition-colors group">

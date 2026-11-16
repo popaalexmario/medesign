@@ -93,7 +93,7 @@ const jsonLd = [
 >
   <Header />
 
-  <section class="pt-28 pb-10 bg-gradient-to-br from-brand-900 to-brand-700">
+  <section class="pt-28 pb-10 page-hero">
     <div class="container max-w-4xl">
       <nav class="flex items-center gap-2 text-white/50 text-[13px] mb-6 flex-wrap" aria-label="Breadcrumb">
         <a href="/en/" class="hover:text-white transition-colors">Home</a>
@@ -125,7 +125,7 @@ const jsonLd = [
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-page">
     <div class="container max-w-4xl">
       <PhotoGrid photos={gallery} alt={d.title} title={false} class="mb-8" />
 
@@ -195,7 +195,7 @@ const jsonLd = [
   </section>
 
   {related.length > 0 && (
-    <section class="section-padding bg-steel-50">
+    <section class="section-padding bg-page-alt">
       <div class="container">
         <h2 class="text-[24px] md:text-[30px] font-heading font-bold text-brand-800 mb-7" data-aos="fade-up">
           Related projects

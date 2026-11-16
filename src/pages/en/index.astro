@@ -84,20 +84,17 @@ const jsonLd = {
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-4 mt-12 max-w-xl">
-        {stats.map((s, i) => (
-          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6 text-center">
-            <div class="text-[26px] md:text-[38px] font-heading font-extrabold text-white">{s.value}</div>
-            <div class="text-white/50 text-[13px] font-medium mt-1">{s.label}</div>
-          </div>
-        ))}
+      <div class="mt-12 inline-flex flex-wrap items-center rounded-full bg-black/35 backdrop-blur-md border border-white/10 px-2 py-2">
+        <span class="px-4 md:px-5 text-white whitespace-nowrap"><span class="font-heading font-extrabold text-[20px] md:text-[22px]">2018</span> <span class="text-white/55 text-[13px] ml-1">in business since</span></span>
+        <span class="w-px h-7 bg-white/20"></span>
+        <span class="px-4 md:px-5 text-white whitespace-nowrap"><span class="font-heading font-extrabold text-[20px] md:text-[22px] text-accent-500">200+</span> <span class="text-white/55 text-[13px] ml-1">projects delivered</span></span>
       </div>
       <div class="pb-14 md:pb-20"></div>
     </div>
   </section>
 
   <!-- Proiecte -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-page">
     <div class="container">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div class="max-w-2xl" data-aos="fade-up">
@@ -167,7 +164,7 @@ const jsonLd = {
   </section>
 
   <!-- Servicii -->
-  <section class="section-padding bg-steel-50">
+  <section class="section-padding bg-page-alt">
     <div class="container">
       <div class="max-w-2xl mb-8" data-aos="fade-up">
         <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest">Services</span>
@@ -184,7 +181,7 @@ const jsonLd = {
     </div>
   </section>
 
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-page">
     <div class="container">
       <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up">
         <span class="text-accent-600 font-semibold text-[13px] uppercase tracking-widest">Clients</span>

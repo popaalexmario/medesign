@@ -302,10 +302,17 @@ const siteGraph = {
       }
       :focus:not(:focus-visible) { outline: none; }
 
+      /* Antetul paginilor interioare (fundal 3): grafit cu lumină galbenă difuză. */
+      .page-hero {
+        background:
+          radial-gradient(60% 120% at 85% 0%, rgba(242, 193, 46, 0.2), transparent 60%),
+          radial-gradient(50% 100% at 0% 100%, rgba(91, 143, 208, 0.16), transparent 60%),
+          linear-gradient(135deg, #1b1f24, #121417);
+      }
+
       .glass-card {
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.8);
+        background: #fff;
+        border: 1px solid rgba(18, 20, 23, 0.06);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
       }
 
@@ -579,7 +586,7 @@ const siteGraph = {
     )}
 
   </head>
-  <body class="bg-white">
+  <body class="bg-page">
     <slot />
     <CookieConsent lang={lang} />
 

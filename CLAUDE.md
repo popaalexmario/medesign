@@ -155,6 +155,11 @@ eroare se vede.
 - Fundalul primei pagini: `public/img/hero-noapte.webp` (drum noaptea, din dronă),
   cu zoom lent (CSS). Bara de sus e albă cu text închis la derulare și
   transparentă cu text alb peste fundalul închis (`Header.astro`).
+- Fundalul paginilor (varianta 3): `bg-page` #eef0f3 și `bg-page-alt` #e5e8ec în
+  loc de alb/gri; cardurile rămân albe. Antetul paginilor interioare: clasa
+  `page-hero` (grafit cu lumină galbenă difuză), definită în `Layout.astro`.
+- Cifrele de pe prima pagină: pastilă translucidă (2018 / 200+), fără casete.
+- Titlul de îndemn: „Ai nevoie de proiectare?” (nu „proiect de infrastructură”).
 - Pagina /proba e doar pentru previzualizări (noindex, fără sitemap).
 
 ## SEO tehnic

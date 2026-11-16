@@ -25,6 +25,8 @@ export default {
           600: '#8a6200',
           700: '#6e4e00',
         },
+        // Fundalul paginilor (varianta 3): gri-albăstrui deschis, cu o nuanță mai închisă pentru alternanță.
+        page: { DEFAULT: '#eef0f3', alt: '#e5e8ec' },
         steel: {
           50: '#f8fafc',
           100: '#f1f5f9',
