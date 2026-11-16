@@ -55,7 +55,7 @@ const fade = dark ? 'from-brand-900' : 'from-steel-50';
             <li class="shrink-0 w-[200px] px-3 flex flex-col items-center text-center">
               <div class:list={['w-[176px] h-[88px] rounded-xl bg-white flex items-center justify-center p-3', dark ? 'shadow-sm' : 'border border-steel-100 shadow-sm']}>
                 {c.src ? (
-                  <img src={c.src} alt={copy === 0 ? c.name : ''} class="max-h-full max-w-full object-contain" loading="lazy" />
+                  <img src={c.src} alt={`Logo ${c.name}`} class="max-h-full max-w-full object-contain" loading="lazy" />
                 ) : (
                   <span class="text-brand-800 font-heading font-extrabold text-[15px] leading-tight">{c.name.split(',')[0]}</span>
                 )}

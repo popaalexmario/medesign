@@ -94,7 +94,7 @@ const stats = [
               <a href="/contact" class:list={['more', t.dark && '!text-accent-400']}>Ai un proiect similar</a>
             </div>
           </div>
-          <img src={t.img} alt="" class="mt-10 md:mt-12 w-full aspect-[4/3] md:aspect-[16/7] object-cover" loading="lazy" width="1400" height="612" />
+          <img src={t.img} alt={t.title} class="mt-10 md:mt-12 w-full aspect-[4/3] md:aspect-[16/7] object-cover" loading="lazy" width="1400" height="612" />
         </section>
       ))}
 
@@ -109,7 +109,7 @@ const stats = [
               <span class:list={['more mt-4 inline-block', t.dark && '!text-accent-400']}>Vezi proiectul</span>
             </div>
             <div class="mt-8 flex-1 min-h-[220px] overflow-hidden">
-              <img src={t.img} alt="" class="w-full h-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]" loading="lazy" width="700" height="525" />
+              <img src={t.img} alt={t.title} class="w-full h-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]" loading="lazy" width="700" height="525" />
             </div>
           </a>
         ))}

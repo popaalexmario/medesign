@@ -84,7 +84,7 @@ const many = photos.length > 1;
             data-thumb={i}
             data-active={i === 0 ? 'true' : 'false'}
           >
-            <img src={p.thumb} alt="" class="w-full h-full object-cover" loading="lazy" width="96" height="64" />
+            <img src={p.thumb} alt={p.caption ?? `${alt}, ${en ? "image" : "imaginea"} ${i + 1}`} class="w-full h-full object-cover" loading="lazy" width="96" height="64" />
           </button>
         ))}
       </div>

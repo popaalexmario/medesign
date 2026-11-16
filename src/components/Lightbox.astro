@@ -24,7 +24,7 @@ const en = langFromPath(Astro.url.pathname) === 'en';
 
   <!-- Image container -->
   <div class="absolute inset-0 flex items-center justify-center p-6 md:p-12">
-    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl lightbox-image" />
+    <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt={en ? "Enlarged image" : "Imagine mărită"} class="max-w-full max-h-full object-contain rounded-xl shadow-2xl lightbox-image" />
   </div>
 
   <!-- Caption -->
