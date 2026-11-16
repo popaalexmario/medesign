@@ -1,10 +1,12 @@
 ---
 // Pozele unui proiect, derulabile direct din cardul din portofoliu:
 // săgeți pe desktop, glisare cu degetul pe telefon. Fiecare poză duce la
-// fișa proiectului. Butoanele stau în afara linkurilor (HTML valid).
+// fișa proiectului. După ultima poză, săgeata duce înapoi la prima.
+// Planșele (fit: 'contain') apar întregi, pe fond alb.
+// Butoanele stau în afara linkurilor (HTML valid).
 import { langFromPath } from '../i18n/paths';
 
-export interface Slide { src: string; srcset?: string }
+export interface Slide { src: string; srcset?: string; fit?: 'contain' }
 interface Props { slides: Slide[]; href: string; alt: string }
 
 const { slides, href, alt } = Astro.props;
@@ -22,7 +24,7 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
           srcset={s.srcset}
           sizes={s.srcset ? sizes : undefined}
           alt={i === 0 ? alt : `${alt}, ${en ? 'photo' : 'fotografia'} ${i + 1}`}
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          class:list={['w-full h-full transition-transform duration-500', s.fit === 'contain' ? 'object-contain bg-white p-2' : 'object-cover group-hover:scale-105']}
           loading="lazy"
           decoding="async"
           width="400"
@@ -86,8 +88,9 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
       if (c) c.textContent = `${i + 1} / ${n}`;
       const p = box.querySelector<HTMLButtonElement>('[data-prev]');
       const q = box.querySelector<HTMLButtonElement>('[data-next]');
-      if (p) p.disabled = i <= 0;
-      if (q) q.disabled = i >= n - 1;
+      // Săgețile sunt mereu active: de la ultima poză se revine la prima și invers.
+      if (p) p.disabled = false;
+      if (q) q.disabled = false;
     };
     document.querySelectorAll('[data-slides]').forEach((box) => {
       const track = box.querySelector<HTMLElement>('[data-track]')!;
@@ -103,7 +106,10 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
       const track = box.querySelector<HTMLElement>('[data-track]')!;
       const dir = btn.hasAttribute('data-next') ? 1 : -1;
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      track.scrollBy({ left: dir * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
+      const n = track.children.length;
+      const i = Math.round(track.scrollLeft / track.clientWidth);
+      const next = (i + dir + n) % n;
+      track.scrollTo({ left: next * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
     });
   }
 </script>

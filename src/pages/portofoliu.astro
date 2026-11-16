@@ -15,14 +15,18 @@ const entries = (await getCollection('projects', ({ data }) => !data.draft)).sor
 );
 const projects = entries.map((e) => ({ slug: e.slug, ...e.data, desc: e.data.description }));
 
-// Pentru fiecare card: coperta, apoi pozele urcate în poze/proiecte/<slug>/.
+// Pentru fiecare card, aceleași imagini ca în fișa proiectului: coperta, planșele
+// din `gallery` (afișate întregi) și pozele urcate în poze/proiecte/<slug>/.
 const slidesBySlug = new Map<string, Slide[]>();
 for (const e of entries) {
   const cover: Slide[] = e.data.image ? [{ src: e.data.image, srcset: cardSrcset(e.data.image) }] : [];
+  const plans: Slide[] = (e.data.gallery ?? [])
+    .filter((g) => g.src !== e.data.image)
+    .map((g) => ({ src: g.src, srcset: cardSrcset(g.src), fit: 'contain' as const }));
   const extra = (await projectPhotos(e.slug))
     .filter((ph) => ph.name !== e.data.coverFrom)
     .map((ph) => ({ src: ph.thumb, srcset: `${ph.thumb} 800w, ${ph.full} 1600w` }));
-  slidesBySlug.set(e.slug, [...cover, ...extra].slice(0, 8));
+  slidesBySlug.set(e.slug, [...cover, ...plans, ...extra]);
 }
 
 const beneficiari = [...new Set(entries.map((e) => e.data.beneficiar).filter(Boolean))].sort(
