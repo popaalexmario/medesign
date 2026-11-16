@@ -165,6 +165,9 @@ Constanța, Fetești, Perșinari, Bughea de Jos.
 - Google Search Console: proprietate de tip Domeniu, verificată prin DNS,
   sitemap trimis.
 - Google Analytics `G-ZYECGEV54N`, încărcat o singură dată din `Layout.astro`.
+- Fonturile (Plus Jakarta Sans, Inter) sunt găzduite local prin `@fontsource`
+  (importate în `Layout.astro`, licențe OFL în `public/fonts/`). Nu reintroduce
+  linkuri către fonts.googleapis.com / fonts.gstatic.com.
 
 ## Rămas de făcut
 
