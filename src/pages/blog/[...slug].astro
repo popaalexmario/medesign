@@ -50,7 +50,7 @@ const jsonLd = [
     datePublished: post.data.pubDate.toISOString(),
     dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
     inLanguage: 'ro-RO',
-    author: { '@id': 'https://me-design.ro/#organization' },
+    author: { '@id': 'https://me-design.ro/despre/#mario-popa' },
     publisher: { '@id': 'https://me-design.ro/#organization' },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     ...(post.data.keywords.length > 0 && { keywords: post.data.keywords.join(', ') }),
@@ -96,6 +96,8 @@ const jsonLd = [
       </h1>
 
       <div class="flex items-center gap-3 text-white/50 text-[14px] mt-5 flex-wrap">
+        <a href="/despre/#mario-popa" class="text-white/80 hover:text-white font-medium" rel="author">Ing. Mario Popa</a>
+        <span>·</span>
         <time datetime={post.data.pubDate.toISOString()}>{fmtDate(post.data.pubDate)}</time>
         <span>·</span>
         <span>{readingTime} min citire</span>

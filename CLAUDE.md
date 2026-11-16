@@ -154,7 +154,10 @@ eroare se vede.
   JSON-LD se scriu tot cu „/” final.
 - Proiectele au `seoTitle` (max ~52 caractere) în RO și EN; titlul lung rămâne
   în pagină. Titlurile care depășesc 65 de caractere cu sufix pierd „| ME Design”.
-- Schema globală (WebSite, Organization, ProfessionalService) e construită în
+- Autorul: ing. Mario Popa, inginer CFDP, absolvent 2016 (fără alte atestări
+  declarate deocamdată). Apare pe „Despre” (#mario-popa), ca autor al articolelor
+  și ca Person în schema globală. Nu adăuga atestări sau ani de experiență nedeclarați.
+- Schema globală (WebSite, Organization, Person, ProfessionalService) e construită în
   `Layout.astro` din `services.ts`. `sameAs` e gol până primim profilurile firmei.
 - Sitemap cu `<lastmod>` pentru articole (din `astro.config.mjs`).
 - IndexNow: `.github/workflows/indexnow.yml` anunță Bing la fiecare push în
