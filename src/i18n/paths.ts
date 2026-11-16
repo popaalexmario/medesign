@@ -56,6 +56,7 @@ export const categoryEn: Record<string, string> = {
   'Monument Istoric': 'Historic monument',
   Parc: 'Parks',
   'Infrastructură apă': 'Water infrastructure',
+  'Baze sportive': 'Sports facilities',
 };
 
 export const regionEn: Record<string, string> = {
