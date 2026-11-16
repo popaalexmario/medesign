@@ -30,6 +30,14 @@ On a listed structure, the intervention cannot be chosen on technical grounds al
 
 For Lugoj Municipality, we went through the intervention approval documentation (DALI), building permit design (DTAC) and detailed technical design (PTE) phases, starting from a measured survey of the actual structure and from the structural assessment.
 
+## Funding and construction
+
+The rehabilitation has approved funding of about RON 17 million through the „Anghel Saligny” National Investment Programme. By Local Council Decision no. 77/2026, Lugoj approved paying from the local budget 20% of the amount expected to be settled in 2026.
+
+On 28 August 2026 the steel structure and reinforcement were partially accepted, with the designer, the site supervisor and the client present, and the concrete deck slab of the carriageway was cast the next day. The bridge reopened to traffic and pedestrians on 3 November 2026, after about five and a half months of works. Lighting, some finishes and work on the four towers continue without closing the bridge.
+
+Sources (in Romanian): [VesTIM](https://vestim.ro/podul-de-fier-din-lugoj-redeschis-dupa-cinci-luni-si-jumatate/) (3 November 2026), [Radio România Reșița](https://www.radioresita.ro/actualitate/podul-de-fier-din-lugoj-a-fost-redeschis-circulatiei-rutiere-si-pietonale) (3 November 2026) and [28 August 2026](https://www.radioresita.ro/actualitate/podul-de-fier-din-lugoj-tot-mai-aproape-de-redeschidere), [Lugoj Local Council Decision 77/2026](https://hotarari.ro/lugoj/hcl-77-2026).
+
 ## What it brings to the community
 
 A bridge from 1902, listed as a historic monument, matters to Lugoj in two ways:

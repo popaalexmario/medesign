@@ -11,7 +11,15 @@ Roundabout on a national road with 2 traffic lanes of 5.50 m.
 
 ## Project background
 
-The intersection of Regiment V Vânători Street, Ferdinand I Boulevard and the national road in Alba Iulia was studied for conversion into a roundabout.
+The intersection sits at the southern entrance to Alba Iulia, in the Partoș district, where Regiment V Vânători Street and Ferdinand I Boulevard meet DN CALB, the city bypass that links to the Alba Iulia Sud junction of the A10 motorway.
+
+In the existing layout there is no left turn from DN CALB onto the boulevard. Drivers coming off the motorway have to continue to the U-turn point at Liliacului Street, about 800 m away, or to the level crossing on Mărășești Street, about 3.5 km away, to get into the city. As a result, the Alba Iulia Sud junction was hardly used. On Regiment V Vânători Street, public transport crossed the path of vehicles moving from the middle lane towards DN CALB.
+
+## Status
+
+Alba Iulia Local Council approved the project at its meeting of 20 December 2023, with a value of more than RON 5 million, and the scheme was included in the city's 2024 budget for detailed design and construction.
+
+Sources (in Romanian): [Ziarul Unirea](https://ziarulunirea.ro/sens-giratoriu-poleit-cu-aur-la-alba-iulia-peste-5-milioane-de-lei-vor-fi-alocati-prin-hotararea-consiliului-local-864299/) (20 December 2023), [Alba Iulia Info](https://www.albaiuliainfo.ro/sens-giratoriu-langa-pasarela-din-partos-pentru-acces-mai-usor-spre-intrarea-pe-autostrada-a10-nodul-alba-iulia-sud-66311.html), [Alba Iulia 2024 budget presentation](https://www.apulum.ro/ro/pdf6/Municipiul_Alba_Iulia_-_Prezentare_Buget_2024_05022024.pdf).
 
 ## The solution studied
 

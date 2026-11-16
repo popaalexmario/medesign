@@ -18,7 +18,15 @@ Amenajare sens giratoriu pe drum național cu 2 benzi de circulație de 5,50 m.
 
 ## Contextul proiectului
 
-Intersecția dintre strada Regiment V Vânători, B-dul Ferdinand I și drumul național din Municipiul Alba Iulia a fost analizată în vederea amenajării unui sens giratoriu.
+Intersecția se află la intrarea de sud în Alba Iulia, în cartierul Partoș, acolo unde strada Regiment V Vânători și B-dul Ferdinand I întâlnesc DN CALB, centura orașului, care face legătura cu nodul Alba Iulia Sud al autostrăzii A10.
+
+În configurația existentă nu se poate vira la stânga de pe DN CALB spre bulevard. Pentru a intra în oraș, șoferii veniți de pe autostradă trebuie să meargă până la punctul de întoarcere de la strada Liliacului, la circa 800 m, sau până la trecerea la nivel cu calea ferată de pe strada Mărășești, la circa 3,5 km. De aceea nodul Alba Iulia Sud era foarte puțin folosit. Pe strada Regiment V Vânători, fluxul transportului în comun se intersecta cu vehiculele care treceau de pe banda mediană spre DN CALB.
+
+## Stadiu
+
+Consiliul Local Alba Iulia a aprobat proiectul în ședința din 20 decembrie 2023, cu o valoare de peste 5 milioane de lei, iar obiectivul a fost inclus în bugetul municipiului pe 2024 pentru proiect tehnic și execuție.
+
+Surse: [Ziarul Unirea](https://ziarulunirea.ro/sens-giratoriu-poleit-cu-aur-la-alba-iulia-peste-5-milioane-de-lei-vor-fi-alocati-prin-hotararea-consiliului-local-864299/) (20 decembrie 2023), [Alba Iulia Info](https://www.albaiuliainfo.ro/sens-giratoriu-langa-pasarela-din-partos-pentru-acces-mai-usor-spre-intrarea-pe-autostrada-a10-nodul-alba-iulia-sud-66311.html), [prezentarea bugetului Municipiului Alba Iulia pe 2024](https://www.apulum.ro/ro/pdf6/Municipiul_Alba_Iulia_-_Prezentare_Buget_2024_05022024.pdf).
 
 ## Soluția analizată
 

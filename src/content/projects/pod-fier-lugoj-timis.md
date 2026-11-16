@@ -37,6 +37,14 @@ La o construcție clasată, soluțiile de intervenție nu se aleg exclusiv pe cr
 
 Am parcurs fazele DALI, DTAC și PTE, pornind de la relevarea efectivă a structurii și de la expertiza tehnică, pentru U.A.T. Municipiul Lugoj.
 
+## Finanțare și execuție
+
+Reabilitarea are o finanțare aprobată de aproximativ 17 milioane de lei prin Programul Național de Investiții „Anghel Saligny”. Prin HCL nr. 77/2026, Consiliul Local Lugoj a aprobat plata din bugetul local a 20% din suma estimată a fi decontată în 2026.
+
+Pe 28 august 2026 s-a făcut recepția parțială a structurii metalice și a armăturii, în prezența proiectantului, a dirigintelui de șantier și a beneficiarului, iar a doua zi s-a turnat placa de beton a părții carosabile. Podul a fost redeschis circulației rutiere și pietonale pe 3 noiembrie 2026, după aproximativ cinci luni și jumătate de lucrări. Iluminatul, unele finisaje și intervențiile la cele patru turnuri continuă fără să oprească circulația.
+
+Surse: [VesTIM](https://vestim.ro/podul-de-fier-din-lugoj-redeschis-dupa-cinci-luni-si-jumatate/) (3 noiembrie 2026), [Radio România Reșița](https://www.radioresita.ro/actualitate/podul-de-fier-din-lugoj-a-fost-redeschis-circulatiei-rutiere-si-pietonale) (3 noiembrie 2026) și [28 august 2026](https://www.radioresita.ro/actualitate/podul-de-fier-din-lugoj-tot-mai-aproape-de-redeschidere), [HCL Lugoj nr. 77/2026](https://hotarari.ro/lugoj/hcl-77-2026).
+
 ## Ce aduce comunității
 
 Un pod din 1902, clasat ca monument istoric, are pentru Lugoj o dublă valoare:
