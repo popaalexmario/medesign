@@ -1,12 +1,12 @@
 ---
 title: "Extindere și Modernizare Terminal Auto Dana PL6 din Portul de Lucru Municipiul Constanța"
 seoTitle: "Terminal auto Dana PL6, Portul Constanța"
-description: "DTAC și PTE pentru platforma de parcare a autoturismelor la extinderea și modernizarea Terminalului Auto Dana PL6 din Portul Constanța."
+description: "Sistematizare verticală (DTAC și PTE) pentru extinderea și modernizarea Terminalului Auto Dana PL6 din Portul de Lucru Constanța, pentru Romcargo Maritim S.A."
 categories: ["Drumuri"]
 faza: "DTAC+PTE"
-location: "Portul Constanța"
+location: "Incinta portului, Dana PL6, Portul de Lucru, Municipiul Constanța"
 judet: "Constanța"
-beneficiar: "C.N. Administrația Porturilor Maritime S.A. Constanța"
+beneficiar: "Romcargo Maritim S.A."
 region: "dobrogea"
 year: "2024"
 image: "/img/projects/PORT%20CONSTANTA.png"
@@ -14,12 +14,12 @@ gallery: []
 order: 6
 ---
 
-Platforma de parcare pentru autoturisme din cadrul extinderii și modernizării Terminalului Auto Dana PL6, în Portul Constanța.
+Proiectul de sistematizare verticală, în fazele DTAC și PTE, pentru extinderea și modernizarea Terminalului Auto de la Dana PL6, în Portul de Lucru din Constanța.
 
 ## Contextul proiectului
 
-Terminalul auto de la dana PL6 se află în perimetrul Portului Constanța, administrat de C.N. Administrația Porturilor Maritime S.A. Constanța. Extinderea a cerut o platformă de parcare pentru autoturisme, care organizează staționarea și o separă de circulația operațională a terminalului.
+Terminalul auto de la dana PL6 se află în incinta Portului Constanța, în zona Portului de Lucru. Beneficiarul investiției este Romcargo Maritim S.A. Extinderea și modernizarea terminalului au cuprins și platforma de parcare a autoturismelor, care organizează staționarea și o separă de circulația operațională.
 
 ## Ce am proiectat
 
-Am elaborat DTAC și PTE, cu detaliile necesare execuției platformei. Platforma e dimensionată pentru încărcările reale din manevrele vehiculelor și pentru mediul agresiv din zona portuară. Sistematizarea verticală asigură scurgerea apelor pe o suprafață întinsă, cu pante reduse. Proiectul s-a corelat cu regulamentele de exploatare ale administrației portuare și cu restricțiile de acces din port.
+Am elaborat specialitatea de sistematizare verticală, în fazele DTAC și PTE: cotele platformei, pantele și scurgerea apelor pe o suprafață întinsă, cu pante reduse, în corelare cu regulile de exploatare și cu restricțiile de acces din port.
