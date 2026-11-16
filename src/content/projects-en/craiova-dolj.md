@@ -30,9 +30,11 @@ The project was prepared at the intervention approval documentation (DALI), buil
 
 Work started with money from the local budget. Craiova Municipality later signed an EU funding contract for culverting the entire collector canal and building the new artery. The total value of the project is more than EUR 39 million, of which about EUR 22 million is non-reimbursable funding. According to the mayor, the funding comes through the Sustainable Development and Just Transition Programme.
 
+The construction contract was signed on 14 July 2026, worth RON 149,077,584 excluding VAT, with a contractors' joint venture led by Omega Star Sistems SRL.
+
 On site, the canal is being closed with precast concrete box units placed in the existing channel, and the four-lane artery will run on top. The new artery gives the city a modern exit and eases traffic in this area.
 
-The funding figures come from the public announcement made by the Mayor of Craiova when the contract was signed, also reported by the local press.
+Sources for the funding and construction figures: the public announcement by the Mayor of Craiova, reported by [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 November 2026, in Romanian) and by fonduri-structurale.ro.
 
 ## What it brings to the community
 

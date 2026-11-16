@@ -40,9 +40,11 @@ Proiectul a fost elaborat în fazele DALI, DTAC și PTE, pentru U.A.T. Municipiu
 
 Lucrarea a început cu fonduri din bugetul local. Ulterior, Municipiul Craiova a semnat contractul de finanțare din fonduri europene pentru casetarea integrală a canalului colector și construirea noii artere. Valoarea totală a proiectului depășește 39 de milioane de euro, din care aproximativ 22 de milioane de euro reprezintă finanțare nerambursabilă. Potrivit primarului, finanțarea vine prin Programul Dezvoltare Durabilă și Tranziție Justă.
 
+Contractul de execuție a fost semnat pe 14 iulie 2026, în valoare de 149.077.584 lei fără TVA, cu o asociere de constructori condusă de Omega Star Sistems SRL.
+
 Pe șantier, canalul se închide cu casete prefabricate din beton, montate în albia existentă, peste care va trece artera cu patru benzi. Noua arteră asigură o ieșire modernă din municipiu și fluidizează traficul în această zonă.
 
-Datele despre finanțare provin din anunțul public al primarului Municipiului Craiova la semnarea contractului, preluat și de presa locală.
+Sursele datelor despre finanțare și execuție: anunțul public al primarului Municipiului Craiova, preluat de [Arena Construct](https://arenaconstruct.ro/inchiderea-inelului-rutier-din-sudul-craiovei-proiectul-a-primit-finantare-europeana/) (11 noiembrie 2026) și de fonduri-structurale.ro („Peste 39 de milioane de euro pentru modernizarea canalului colector de pe strada Râului din Craiova”).
 
 ## Ce aduce comunității
 
