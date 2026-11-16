@@ -9,6 +9,7 @@ judet: "Bihor"
 beneficiar: "S.C. Compania de Apă Oradea S.A."
 region: "transilvania"
 year: "2026"
+image: "/img/projects/uzina5-plan.webp"
 gallery: []
 order: 0.5
 ---
@@ -22,3 +23,5 @@ Uzina 5 este stația de tratare a apei potabile din zona de sud-est a municipiul
 ## Ce am proiectat
 
 Lucrările se execută în incinta existentă, care se extinde cu 5.524 mp, astfel încât să fie respectate distanțele minime de protecție sanitară cerute de legislația în vigoare. Am elaborat documentația în fazele DTAC și PTE.
+
+Planul de situație al circulației interioare cuprinde o platformă nouă de 2.775 mp, drumuri și platforme pe trei axe, trotuare care leagă clădirile și șanțuri absorbante de pământ pe 405 m și 167 m pentru apele pluviale. În incintă se reabilitează construcții existente ale stației, între care filtrele rapide, galeria tehnologică și rezervoarele de apă filtrată, și se construiesc obiecte noi, supraterane și subterane.

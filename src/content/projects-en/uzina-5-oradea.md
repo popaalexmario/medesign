@@ -16,3 +16,5 @@ Uzina 5 is the drinking water treatment plant in the south-east of Oradea. The 2
 ## What we designed
 
 The works are carried out within the existing site, which is extended by 5,524 m² so that the minimum sanitary protection distances required by law are met. We prepared the documentation at the DTAC and PTE stages.
+
+The internal circulation site plan includes a new 2,775 m² platform, roads and hardstandings along three alignments, footways linking the buildings, and earth soakaway ditches of 405 m and 167 m for stormwater. Within the site, existing structures of the plant are rehabilitated, including the rapid filters, the pipe gallery and the filtered water tanks, and new above-ground and underground structures are built.
