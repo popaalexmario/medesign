@@ -3,12 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const values = [
-  { icon: '🛡️', title: 'Responsabilitate', desc: 'Punem comunitatea și siguranța oamenilor înaintea comodității.' },
-  { icon: '📐', title: 'Rigoare', desc: 'Nu presupunem. Calculăm, verificăm și demonstrăm.' },
-  { icon: '🧠', title: 'Gândire inginerească', desc: 'Nu copiem soluții. Înțelegem problema și alegem soluția potrivită.' },
-  { icon: '✍️', title: 'Asumare', desc: 'Putem pune numele nostru pe ceea ce proiectăm.' },
-];
 import LogoMarquee from '../components/LogoMarquee.astro';
 
 
@@ -100,25 +94,6 @@ import LogoMarquee from '../components/LogoMarquee.astro';
             Prin fiecare proiect, vrem să ridicăm standardul de calitate al proiectării și să construim o firmă de care atât clienții, cât și oamenii care lucrează în ea să poată fi mândri.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-page-alt">
-    <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-7">
-        <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800" data-aos="fade-up">
-          Valorile noastre
-        </h2>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {values.map((item, i) => (
-          <div class="glass-card rounded-2xl p-4 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay={i * 80}>
-            <span class="text-[40px]">{item.icon}</span>
-            <h3 class="font-heading font-bold text-[16px] text-brand-800 mt-2">{item.title}</h3>
-            <p class="text-steel-500 text-[13px] mt-1 leading-relaxed">{item.desc}</p>
-          </div>
-        ))}
       </div>
     </div>
   </section>

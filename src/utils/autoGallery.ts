@@ -31,7 +31,7 @@ function captionFrom(file: string): string | undefined {
 
 // fit: 'cover' pentru fotografii, 'contain' pentru planșe și randări, care
 // trebuie văzute întregi. name: numele fișierului urcat, ca să evităm dublurile.
-export type Photo = { thumb: string; full: string; caption?: string; fit?: 'cover' | 'contain'; name?: string };
+export type Photo = { card: string; thumb: string; full: string; caption?: string; fit?: 'cover' | 'contain'; name?: string };
 
 async function build(map: Record<string, Mod>, slug: string): Promise<Photo[]> {
   const entries = Object.entries(map)
@@ -42,9 +42,10 @@ async function build(map: Record<string, Mod>, slug: string): Promise<Photo[]> {
     entries.map(async ([p, mod]) => {
       const img = mod.default;
       const thumb = await getImage({ src: img, width: Math.min(800, img.width), format: 'webp', quality: 78 });
+      const card = await getImage({ src: img, width: Math.min(640, img.width), format: 'webp', quality: 72 });
       const full = await getImage({ src: img, width: Math.min(1600, img.width), format: 'webp', quality: 82 });
       const name = p.split('/').pop()!;
-      return { thumb: thumb.src, full: full.src, caption: captionFrom(name), fit: 'cover' as const, name };
+      return { card: card.src, thumb: thumb.src, full: full.src, caption: captionFrom(name), fit: 'cover' as const, name };
     })
   );
 }

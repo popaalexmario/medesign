@@ -20,12 +20,14 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
     {slides.map((s, i) => (
       <a href={href} class="block w-full h-full shrink-0 snap-center" tabindex={i === 0 ? undefined : -1} aria-hidden={i === 0 ? undefined : 'true'}>
         <img
-          src={s.src}
-          srcset={s.srcset}
+          src={i === 0 ? s.src : undefined}
+          srcset={i === 0 ? s.srcset : undefined}
+          data-src={i === 0 ? undefined : s.src}
+          data-srcset={i === 0 ? undefined : s.srcset}
           sizes={s.srcset ? sizes : undefined}
           alt={i === 0 ? alt : `${alt}, ${en ? 'photo' : 'fotografia'} ${i + 1}`}
           class:list={['w-full h-full transition-transform duration-500', s.fit === 'contain' ? 'object-contain bg-white p-2' : 'object-cover group-hover:scale-105']}
-          loading="lazy"
+          loading={i === 0 ? 'lazy' : undefined}
           decoding="async"
           width="400"
           height="250"
@@ -92,8 +94,23 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
       if (p) p.disabled = false;
       if (q) q.disabled = false;
     };
+    // Pozele 2, 3... se descarcă abia când vizitatorul arată că vrea să le vadă:
+    // trece cu mouse-ul peste card, atinge caruselul sau apasă o săgeată.
+    const wake = (box: Element) => {
+      box.querySelectorAll<HTMLImageElement>('img[data-src]').forEach((img) => {
+        if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+        img.src = img.dataset.src!;
+        img.removeAttribute('data-src');
+        img.removeAttribute('data-srcset');
+      });
+    };
     document.querySelectorAll('[data-slides]').forEach((box) => {
       const track = box.querySelector<HTMLElement>('[data-track]')!;
+      const once = () => wake(box);
+      box.addEventListener('pointerenter', once, { once: true });
+      box.addEventListener('touchstart', once, { once: true, passive: true });
+      box.addEventListener('focusin', once, { once: true });
+      track.addEventListener('scroll', once, { once: true, passive: true });
       let t: ReturnType<typeof setTimeout>;
       track.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => state(box), 60); }, { passive: true });
       state(box);
@@ -103,6 +120,7 @@ const sizes = '(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw';
       const box = btn?.closest('[data-slides]');
       if (!btn || !box) return;
       e.preventDefault();
+      wake(box);
       const track = box.querySelector<HTMLElement>('[data-track]')!;
       const dir = btn.hasAttribute('data-next') ? 1 : -1;
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -148,6 +148,9 @@ eroare se vede.
   final. Se afișează „Beneficiar final" plus veriga. Folosit la DN7, Pasaj A0,
   Gurasada.
 - Imagini: maximum 1600px lățime, variantă de 800px în `sm/` pentru `srcset`.
+  Cardurile din portofoliu folosesc varianta de 640px din `card/` (webp): după o
+  copertă sau planșă nouă rulează `node scripts/card-images.mjs`. În carusel, pozele
+  2, 3... se descarcă doar la interacțiune (`CardSlides.astro`).
   Nu pune planșe CAD ca thumbnail, sunt ilizibile la dimensiunea cardului.
 
 ## Vizibilitate în asistenții AI

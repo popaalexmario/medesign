@@ -6,7 +6,7 @@ import Lightbox from '../../components/Lightbox.astro';
 import LogoMarquee from '../../components/LogoMarquee.astro';
 
 import { getCollection } from 'astro:content';
-import { cardSrcset, CARD_SIZES } from '../../utils/img';
+import { cardSrcset, cardImage, CARD_SIZES } from '../../utils/img';
 import CardSlides, { type Slide } from '../../components/CardSlides.astro';
 import { projectPhotos } from '../../utils/autoGallery';
 import { categoryEn } from '../../i18n/paths';
@@ -25,13 +25,13 @@ const projects = entries.map((e) => {
 // din `gallery` (afișate întregi) și pozele urcate în poze/proiecte/<slug>/.
 const slidesBySlug = new Map<string, Slide[]>();
 for (const e of entries) {
-  const cover: Slide[] = e.data.image ? [{ src: e.data.image, srcset: cardSrcset(e.data.image) }] : [];
+  const cover: Slide[] = e.data.image ? [{ src: cardImage(e.data.image) }] : [];
   const plans: Slide[] = (e.data.gallery ?? [])
     .filter((g) => g.src !== e.data.image)
-    .map((g) => ({ src: g.src, srcset: cardSrcset(g.src), fit: 'contain' as const }));
+    .map((g) => ({ src: cardImage(g.src), fit: 'contain' as const }));
   const extra = (await projectPhotos(e.slug))
     .filter((ph) => ph.name !== e.data.coverFrom)
-    .map((ph) => ({ src: ph.thumb, srcset: `${ph.thumb} 800w, ${ph.full} 1600w` }));
+    .map((ph) => ({ src: ph.card }));
   slidesBySlug.set(e.slug, [...cover, ...plans, ...extra]);
 }
 
@@ -106,7 +106,7 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
             id={project.slug}
             class="group glass-card rounded-2xl overflow-hidden hover:shadow-xl transition-all project-card flex flex-col"
             data-aos="fade-up"
-            data-aos-delay={i * 60}
+            data-aos-delay={(i % 3) * 60}
             data-categories={project.categories.join(',')}
             data-search={`${project.title} ${project.location} ${project.desc}`.toLowerCase()}
           >
