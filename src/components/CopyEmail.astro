@@ -1,0 +1,63 @@
+---
+// Buton mic „Copiază” lângă adresa de email. Folosește Clipboard API, cu
+// rezervă prin selectare de text pentru browserele vechi.
+import { langFromPath } from '../i18n/paths';
+
+interface Props { email?: string; tone?: 'dark' | 'light'; class?: string }
+const { email = 'office@me-design.ro', tone = 'dark', class: cls = '' } = Astro.props;
+const en = langFromPath(Astro.url.pathname) === 'en';
+const label = en ? 'Copy' : 'Copiază';
+const done = en ? 'Copied' : 'Copiat';
+---
+
+<button
+  type="button"
+  data-copy={email}
+  data-label={label}
+  data-done={done}
+  aria-label={en ? `Copy email address ${email}` : `Copiază adresa de email ${email}`}
+  class:list={[
+    'copy-email inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[12px] font-semibold transition-colors shrink-0',
+    tone === 'dark' ? 'bg-white/10 text-white/70 hover:bg-white/15 hover:text-white' : 'bg-brand-800/5 text-steel-600 hover:bg-brand-800/10 hover:text-brand-800',
+    cls,
+  ]}
+>
+  <svg class="w-3.5 h-3.5" data-icon-copy fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" stroke-width="2"/><path d="M5 15V6a2 2 0 012-2h9" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="w-3.5 h-3.5 hidden" data-icon-done fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span data-text>{label}</span>
+</button>
+
+<script>
+  {
+    const fallback = (text: string) => {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } finally { ta.remove(); }
+    };
+    document.addEventListener('click', async (e) => {
+      const btn = (e.target as Element)?.closest?.<HTMLButtonElement>('[data-copy]');
+      if (!btn) return;
+      e.preventDefault();
+      const text = btn.dataset.copy!;
+      try {
+        if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
+        else fallback(text);
+      } catch { fallback(text); }
+      const t = btn.querySelector('[data-text]')!;
+      btn.querySelector('[data-icon-copy]')!.classList.add('hidden');
+      btn.querySelector('[data-icon-done]')!.classList.remove('hidden');
+      t.textContent = btn.dataset.done!;
+      clearTimeout(Number(btn.dataset.timer));
+      btn.dataset.timer = String(setTimeout(() => {
+        t.textContent = btn.dataset.label!;
+        btn.querySelector('[data-icon-copy]')!.classList.remove('hidden');
+        btn.querySelector('[data-icon-done]')!.classList.add('hidden');
+      }, 1800));
+    });
+  }
+</script>
