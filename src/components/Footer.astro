@@ -49,10 +49,10 @@ const t = en
 
       <div>
         <h4 class="font-heading font-semibold text-[15px] mb-4 text-white/80 uppercase tracking-wider">{t.services}</h4>
-        <ul class="space-y-2.5">
+        <ul class="space-y-1.5 md:space-y-2.5">
           {services.map((item) => (
             <li>
-              <a href={item.href} class="text-white/50 hover:text-accent-400 text-[14px] transition-colors">
+              <a href={item.href} class="inline-block py-1 md:py-0 text-white/50 hover:text-accent-400 text-[14px] transition-colors">
                 {item.label}
               </a>
             </li>
@@ -62,10 +62,10 @@ const t = en
 
       <div>
         <h4 class="font-heading font-semibold text-[15px] mb-4 text-white/80 uppercase tracking-wider">{t.company}</h4>
-        <ul class="space-y-2.5">
+        <ul class="space-y-1.5 md:space-y-2.5">
           {links.map((item) => (
             <li>
-              <a href={item.href} class="text-white/50 hover:text-accent-400 text-[14px] transition-colors">
+              <a href={item.href} class="inline-block py-1 md:py-0 text-white/50 hover:text-accent-400 text-[14px] transition-colors">
                 {item.label}
               </a>
             </li>
@@ -87,7 +87,7 @@ const t = en
             <svg class="w-5 h-5 text-accent-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <span class="flex flex-wrap items-center gap-2"><a href={t.mail} class="text-white/50 hover:text-accent-400 transition-colors">office@me-design.ro</a><CopyEmail tone="dark" class="!px-2.5 !py-1 !text-[11px]" /></span>
+            <span class="flex flex-wrap items-center gap-2"><a href={t.mail} class="text-white/50 hover:text-accent-400 transition-colors">office@me-design.ro</a><CopyEmail tone="dark" class="!px-2.5 !py-1 !text-[12px]" /></span>
           </li>
           <li class="flex items-start gap-3">
             <svg class="w-5 h-5 text-accent-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,14 +100,14 @@ const t = en
     </div>
 
     <div class="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-white/30 text-[13px]">
+      <p class="text-white/30 text-[13px] text-center sm:text-left">
         &copy; {currentYear} Mario Engineering Design SRL. {t.rights}
       </p>
-      <div class="flex items-center gap-5">
-        <a href="/termeni-si-conditii" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">{t.terms}</a>
-        <a href="/politica-de-confidentialitate" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">{t.privacy}</a>
-        <a href="/politica-cookies" class="text-white/30 hover:text-white/60 text-[13px] transition-colors">{t.cookies}</a>
-        <button type="button" data-cookie-settings class="text-white/30 hover:text-white/60 text-[13px] transition-colors">{en ? 'Cookie settings' : 'Setări cookie-uri'}</button>
+      <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
+        <a href="/termeni-si-conditii" class="py-2 sm:py-0 text-white/30 hover:text-white/60 text-[13px] transition-colors whitespace-nowrap">{t.terms}</a>
+        <a href="/politica-de-confidentialitate" class="py-2 sm:py-0 text-white/30 hover:text-white/60 text-[13px] transition-colors whitespace-nowrap">{t.privacy}</a>
+        <a href="/politica-cookies" class="py-2 sm:py-0 text-white/30 hover:text-white/60 text-[13px] transition-colors whitespace-nowrap">{t.cookies}</a>
+        <button type="button" data-cookie-settings class="py-2 sm:py-0 text-white/30 hover:text-white/60 text-[13px] transition-colors whitespace-nowrap">{en ? 'Cookie settings' : 'Setări cookie-uri'}</button>
       </div>
     </div>
   </div>
