@@ -32,12 +32,6 @@ const services = [
   },
 ];
 
-const process = [
-  { step: '01', title: 'Analiză', desc: 'Evaluăm cerințele proiectului, studiem amplasamentul și identificăm soluțiile optime.', icon: '🔍' },
-  { step: '02', title: 'Proiectare', desc: 'Elaborăm documentația tehnică completă cu respectarea tuturor normativelor în vigoare.', icon: '📐' },
-  { step: '03', title: 'Sprijin obținere avize', desc: 'Întocmim documentații pentru obținerea avizelor și acordurilor necesare de la autoritățile competente în concordanță cu Certificatul de Urbanism.', icon: '📋' },
-  { step: '04', title: 'Livrare', desc: 'Predăm proiectul finalizat și oferim suport pe toată durata implementării.', icon: '🚀' },
-];
 
 const reasons = [
   { icon: '🏗️', title: 'Experiență dovedită', desc: 'Peste 8 ani în proiectarea infrastructurii, cu peste 200 de proiecte livrate.' },
@@ -146,40 +140,6 @@ const reasons = [
               </div>
             </div>
           </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCES with animated timeline -->
-  <section class="section-padding dark-glow text-white relative overflow-hidden">
-    <div class="container">
-      <div class="text-center max-w-2xl mx-auto mb-8">
-        <span class="text-accent-400 font-semibold text-[13px] uppercase tracking-widest" data-aos="fade-up">Cum lucrăm</span>
-        <h2 class="text-[32px] md:text-[44px] font-heading font-bold text-white mt-3" data-aos="fade-up" data-aos-delay="50">
-          Proces transparent, rezultate predictibile
-        </h2>
-      </div>
-
-      <!-- Timeline desktop -->
-      <div class="hidden md:block relative mb-8">
-        <div class="absolute top-12 left-[12%] right-[12%] h-0.5 bg-white/10 rounded-full overflow-hidden">
-          <div class="h-full bg-gradient-to-r from-accent-500 via-white/40 to-accent-500 rounded-full timeline-progress" style="width: 0%"></div>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-4 gap-8">
-        {process.map((item, i) => (
-          <div class="relative process-step" data-aos="fade-up" data-aos-delay={i * 150}>
-            <div class="text-center md:text-left">
-              <div class="relative inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/5 border border-white/10 mb-5 mx-auto md:mx-0">
-                <span class="text-[28px]">{item.icon}</span>
-                <span class="absolute -top-2 -right-2 w-7 h-7 rounded-lg bg-accent-500 text-brand-800 text-[11px] font-bold flex items-center justify-center shadow-lg shadow-accent-500/30">{item.step}</span>
-              </div>
-              <h3 class="font-heading font-bold text-[18px] text-white">{item.title}</h3>
-              <p class="text-white/50 text-[14px] mt-3 leading-relaxed">{item.desc}</p>
-            </div>
-          </div>
         ))}
       </div>
     </div>
