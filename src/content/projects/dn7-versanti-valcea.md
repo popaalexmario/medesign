@@ -12,7 +12,7 @@ region: "oltenia"
 year: "2025–2026"
 image: "/img/projects/dn7.webp"
 gallery: []
-order: 2
+order: 0.2
 ---
 
 Protecția versanților pe patru sectoare ale DN7 din defileul Oltului, între Călimănești-Căciulata și Câineni, unde căderile de pietre ajungeau pe carosabil.
