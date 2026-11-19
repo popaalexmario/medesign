@@ -160,6 +160,9 @@ eroare se vede.
 - Datele structurate: AboutPage (Despre), ContactPage, CollectionPage cu ItemList
   (Portofoliu), FAQPage pe servicii, BlogPosting pe articole. Întrebările frecvente
   din `services.ts` apar și în `/llms.txt`.
+- `public/_headers` (Cloudflare Pages) pune pe `/` și `/en/` antetul
+  `Link: </llms.txt>; rel="describedby"` (RFC 8288), cerut de verificatorul
+  isitagentready.com. Nu declarăm api-catalog: nu avem API public.
 - `src/pages/llms.txt.ts` generează `/llms.txt` la fiecare build din servicii,
   proiecte și articolele publicate. Nu se editează de mână.
 - Cloudflare adaugă peste robots.txt un bloc „Cloudflare Managed content” care

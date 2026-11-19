@@ -1,0 +1,7 @@
+# Antete HTTP adăugate de Cloudflare Pages (https://developers.cloudflare.com/pages/configuration/headers/).
+# Link (RFC 8288): pagina principală trimite agenților către rezumatul site-ului
+# pentru mașini, /llms.txt. Fără api-catalog sau service-desc: site-ul nu are un API public.
+/
+  Link: </llms.txt>; rel="describedby"; type="text/plain"
+/en/
+  Link: </llms.txt>; rel="describedby"; type="text/plain"
