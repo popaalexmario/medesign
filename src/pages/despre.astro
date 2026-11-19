@@ -9,7 +9,7 @@ import LogoMarquee from '../components/LogoMarquee.astro';
 // Etapele unei colaborări.
 ---
 
-<Layout title="Despre noi" description="Despre ME Design - echipă de profesioniști cu peste 8 ani experiență în proiectarea infrastructurii.">
+<Layout title="Despre noi" jsonLd={{ "@context": "https://schema.org", "@type": "AboutPage", "@id": "https://me-design.ro/despre/#webpage", url: "https://me-design.ro/despre/", name: "Despre ME Design", inLanguage: "ro-RO", about: { "@id": "https://me-design.ro/#organization" }, mainEntity: { "@id": "https://me-design.ro/#organization" } }} description="Mario Engineering Design SRL, firmă de proiectare infrastructură din București, înființată în 2018. Proiecte coordonate de ing. Mario Popa, inginer CFDP. ISO 9001, 14001, 45001.">
   <Header />
 
   <section class="pt-28 pb-8 page-hero">

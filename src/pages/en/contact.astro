@@ -5,7 +5,7 @@ import CopyEmail from '../../components/CopyEmail.astro';
 import Footer from '../../components/Footer.astro';
 ---
 
-<Layout title="Contact" description="Contact ME Design, infrastructure design firm in Bucharest, Romania. Send the project location and brief; we reply within one working day.">
+<Layout title="Contact" jsonLd={{ "@context": "https://schema.org", "@type": "ContactPage", "@id": "https://me-design.ro/en/contact/#webpage", url: "https://me-design.ro/en/contact/", name: "Contact ME Design", inLanguage: "en", about: { "@id": "https://me-design.ro/#organization" } }} description="Contact ME Design, infrastructure design firm in Bucharest, Romania. Send the project location and brief; we reply within one working day.">
   <Header />
 
   <section class="relative pt-28 md:pt-32 pb-16 md:pb-24 page-hero overflow-hidden">

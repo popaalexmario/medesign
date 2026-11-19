@@ -49,7 +49,7 @@ const allCats = [...new Set(projects.flatMap(p => p.categories))];
 const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
 ---
 
-<Layout title="Portfolio" description="ME Design portfolio: roads, bridges, railway overbridges, slope stabilisation and hydraulic works designed across Romania, with phases and clients.">
+<Layout jsonLd={{ "@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://me-design.ro/en/portfolio/#webpage", url: "https://me-design.ro/en/portfolio/", name: "ME Design portfolio", inLanguage: "en", about: { "@id": "https://me-design.ro/#organization" }, mainEntity: { "@type": "ItemList", numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `https://me-design.ro/en/portfolio/${p.slug}/`, name: p.title })) } }} title="Portfolio" description="ME Design portfolio: roads, bridges, railway overbridges, slope stabilisation and hydraulic works designed across Romania, with phases and clients.">
   <Header />
 
   <section class="pt-28 pb-8 page-hero">

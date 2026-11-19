@@ -6,7 +6,7 @@ export interface ServiceLink {
 
 /** Toate serviciile, în ordinea în care apar în liste. */
 export const serviceLinks: ServiceLink[] = [
-  { slug: 'proiectare-drumuri', title: 'Proiectare drumuri și platforme', short: 'Drumuri comunale, județene și naționale' },
+  { slug: 'proiectare-drumuri', title: 'Proiectare drumuri și platforme', short: 'Drumuri, platforme, parcări, accese și sistematizare verticală' },
   { slug: 'proiectare-poduri-pasaje', title: 'Proiectare poduri, pasaje, pasarele', short: 'Structuri de traversare rutiere și pietonale' },
   { slug: 'lucrari-consolidare', title: 'Lucrări de sprijin și consolidări', short: 'Ziduri de sprijin, versanți, taluzuri' },
   { slug: 'poduri-cale-ferata', title: 'Poduri și pasaje de cale ferată', short: 'Structuri peste și sub calea ferată' },
@@ -88,6 +88,22 @@ export const servicePages: ServicePage[] = [
       {
         q: "Proiectați și drumuri cu finanțare europeană?",
         a: "Da, avem experiență cu documentații pentru proiecte finanțate din PNRR, POR, POIM și alte programe europene, inclusiv documentațiile specifice cerute de finanțatori.",
+      },
+      {
+        q: "Ce este sistematizarea verticală și când am nevoie de ea?",
+        a: "Sistematizarea verticală stabilește cotele terenului amenajat, adică ale platformelor, parcărilor, aleilor și accesurilor, față de stradă, de terenul existent și de cota ±0,00 a clădirii, astfel încât apa pluvială să fie preluată și să nu ajungă la clădire sau la vecini. Planul de situație din proiectul pentru autorizarea construirii (PAC) trebuie să arate cotele terenului natural și amenajat în cote absolute (anexa nr. 2 la Legea nr. 169/2026).",
+      },
+      {
+        q: "Am nevoie de acordul administratorului drumului pentru un acces nou la proprietate?",
+        a: "Da, dacă accesul se face în zona unui drum public. Potrivit art. 46 alin. (1) din OG nr. 43/1997, accesurile se realizează pe baza autorizației de construire și doar cu acordul prealabil și autorizația de amplasare și/sau de acces emise de administratorul drumului: primăria, consiliul județean sau CNAIR, după categoria drumului.",
+      },
+      {
+        q: "Ce se schimbă pentru parcările noi din 2027?",
+        a: "De la 1 ianuarie 2027, parcările exterioare de peste 500 mp asociate clădirilor de birouri, comerciale, industriale sau de depozitare, precum și parcările noi deschise publicului de peste 500 mp, trebuie să includă dispozitive care favorizează infiltrarea sau evaporarea apei pluviale (art. 406 lit. c) din Legea nr. 169/2026). Litera d) cere arbori sau umbrire pe cel puțin 30% din suprafață.",
+      },
+      {
+        q: "Puteți face doar partea de drumuri dintr-un proiect de arhitectură?",
+        a: "Da. Pentru birouri de arhitectură și investitori privați elaborăm separat specialitatea drumuri: accesul și racordul la drumul public, platformele, parcările, sistematizarea verticală și preluarea apelor pluviale de suprafață, pe planul de situație existent, în fazele PAC și PTE.",
       },
     ],
   },

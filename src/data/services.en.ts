@@ -16,7 +16,7 @@ export const servicePagesEn: ServicePage[] = [
   {
     slug: "proiectare-drumuri",
     title: "Road and platform design",
-    short: "Local, county and national roads",
+    short: "Roads, platforms, car parks, accesses and site grading",
     h1: "Road<br />and Platform Design",
     lead: "Complete design packages for local, county and national roads, from feasibility study to execution details.",
     description: "Design of local, county and national roads in Romania: pavement structures, junctions, roundabouts, car parks, platforms and site grading.",
@@ -70,6 +70,18 @@ export const servicePagesEn: ServicePage[] = [
       {
         q: "Do you design EU-funded roads?",
         a: "Yes. We have prepared documentation for projects funded under PNRR (Romania's Recovery and Resilience Plan), POR, POIM and other EU programmes, including the specific documents the funding bodies require.",
+      },
+      {
+        q: "What is site grading (sistematizare verticală) and when do I need it?",
+        a: "Site grading sets the finished levels of platforms, car parks, paths and accesses relative to the street, the existing ground and the building's ±0.00 level, so that rainwater is collected and kept away from the building and the neighbours. Under Romanian law (Annex 2 to Law 169/2026), the site plan in the building permit design must show natural and finished ground levels as absolute elevations.",
+      },
+      {
+        q: "Do I need the road administrator's approval for a new access to my property?",
+        a: "Yes, if the access is within the zone of a public road. Under Article 46(1) of Government Ordinance 43/1997, accesses require a building permit plus the prior agreement and the access permit issued by the road administrator: the municipality, the county council or CNAIR, depending on the road category.",
+      },
+      {
+        q: "Can you design only the roads part of an architectural project?",
+        a: "Yes. For architecture firms and private investors we prepare the roads discipline separately: the access and connection to the public road, platforms, car parks, site grading and surface water drainage, on the existing site plan, at building permit and detailed design stages.",
       },
     ],
   },

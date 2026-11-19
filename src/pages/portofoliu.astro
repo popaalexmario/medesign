@@ -43,7 +43,7 @@ const allCats = [...new Set(projects.flatMap(p => p.categories))];
 const categories = ['Toate', ...categoryOrder.filter(c => allCats.includes(c)), ...allCats.filter(c => !categoryOrder.includes(c))];
 ---
 
-<Layout title="Portofoliu" description="Portofoliul ME Design - proiecte reprezentative de infrastructură finalizate cu succes în toată România.">
+<Layout jsonLd={{ "@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://me-design.ro/portofoliu/#webpage", url: "https://me-design.ro/portofoliu/", name: "Portofoliu ME Design", inLanguage: "ro-RO", about: { "@id": "https://me-design.ro/#organization" }, mainEntity: { "@type": "ItemList", numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `https://me-design.ro/portofoliu/${p.slug}/`, name: p.title })) } }} title="Portofoliu" description="Proiecte ME Design în toată România: drumuri, poduri, consolidări, sistematizare verticală și amenajări hidrotehnice, cu faza de proiectare, beneficiarul și perioada.">
   <Header />
 
   <section class="pt-28 pb-8 page-hero">

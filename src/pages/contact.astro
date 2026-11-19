@@ -5,7 +5,7 @@ import CopyEmail from '../components/CopyEmail.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Contact" description="Contactează ME Design pentru o consultanță gratuită în proiectare infrastructură.">
+<Layout title="Contact" jsonLd={{ "@context": "https://schema.org", "@type": "ContactPage", "@id": "https://me-design.ro/contact/#webpage", url: "https://me-design.ro/contact/", name: "Contact ME Design", inLanguage: "ro-RO", about: { "@id": "https://me-design.ro/#organization" } }} description="Contact ME Design, proiectare infrastructură în București: office@me-design.ro, +40 746 784 156. Trimite amplasamentul și tema, răspundem în cel mult o zi lucrătoare.">
   <Header />
 
   <section class="relative pt-28 md:pt-32 pb-16 md:pb-24 page-hero overflow-hidden">

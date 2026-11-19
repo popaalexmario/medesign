@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { serviceLinks } from '../data/services';
+import { serviceLinks, servicePages } from '../data/services';
 import { isPublished } from '../utils/published';
 
 // Rezumat al site-ului pentru asistenții AI (convenția llms.txt).
@@ -18,7 +18,7 @@ export const GET: APIRoute = async () => {
   const lines = [
     '# ME Design (Mario Engineering Design SRL)',
     '',
-    '> Firmă românească de proiectare infrastructură, înființată în 2018, cu sediul în București: drumuri, poduri, pasaje, pasarele, poduri de cale ferată, lucrări de sprijin și consolidări, intervenții la monumente istorice, expertize tehnice și amenajări hidrotehnice. Lucrează pentru primării, consilii județene, administratori naționali de infrastructură și constructori, în toată România.',
+    '> Firmă românească de proiectare infrastructură, înființată în 2018, cu sediul în București: drumuri, poduri, pasaje, pasarele, poduri de cale ferată, lucrări de sprijin și consolidări, intervenții la monumente istorice, expertize tehnice și amenajări hidrotehnice. Lucrează pentru primării, consilii județene, administratori naționali de infrastructură, constructori, birouri de arhitectură și investitori privați, în toată România. Pentru investiții private face partea de drumuri: accese la drumul public, platforme, parcări, sistematizare verticală și preluarea apelor pluviale.',
     '',
     'Proiectele sunt coordonate de ing. Mario Popa, inginer CFDP (căi ferate, drumuri și poduri), cu peste 10 ani de experiență în proiectarea infrastructurii.',
     '',
@@ -26,7 +26,11 @@ export const GET: APIRoute = async () => {
     '',
     '## Servicii',
     '',
-    ...serviceLinks.map((s) => `- [${s.title}](${SITE}/servicii/${s.slug}/): ${s.short}`),
+    ...servicePages.map((s) => `- [${s.title}](${SITE}/servicii/${s.slug}/): ${s.description}`),
+    '',
+    '## Întrebări frecvente',
+    '',
+    ...servicePages.flatMap((s) => s.faq.map((f) => `- **${f.q}** ${f.a} ([${s.title}](${SITE}/servicii/${s.slug}/))`)),
     '',
     '## Proiecte din portofoliu',
     '',

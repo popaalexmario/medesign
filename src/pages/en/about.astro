@@ -8,7 +8,7 @@ import LogoMarquee from '../../components/LogoMarquee.astro';
 
 ---
 
-<Layout title="About us" description="Mario Engineering Design SRL, Bucharest: infrastructure design firm founded in 2018, ISO 9001, 14001 and 45001 certified. Roads, bridges, retaining works.">
+<Layout title="About us" jsonLd={{ "@context": "https://schema.org", "@type": "AboutPage", "@id": "https://me-design.ro/en/about/#webpage", url: "https://me-design.ro/en/about/", name: "About ME Design", inLanguage: "en", about: { "@id": "https://me-design.ro/#organization" }, mainEntity: { "@id": "https://me-design.ro/#organization" } }} description="Mario Engineering Design SRL, Bucharest: infrastructure design firm founded in 2018, ISO 9001, 14001 and 45001 certified. Roads, bridges, retaining works.">
   <Header />
 
   <section class="pt-28 pb-8 page-hero">
