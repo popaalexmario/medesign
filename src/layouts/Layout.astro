@@ -1,5 +1,6 @@
 ---
 import CookieConsent from '../components/CookieConsent.astro';
+import AgentTools from '../components/AgentTools.astro';
 // Fonturile sunt găzduite pe domeniul propriu (pachetele @fontsource, licență
 // SIL Open Font License 1.1), nu se mai încarcă de pe serverele Google.
 import '@fontsource/plus-jakarta-sans/latin-400.css';
@@ -595,6 +596,7 @@ const siteGraph = {
   <body class="bg-page">
     <slot />
     <CookieConsent lang={lang} />
+    <AgentTools />
 
     <script is:inline src="/vendor/aos/aos.js"></script>
     <script is:inline>

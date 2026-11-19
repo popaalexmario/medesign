@@ -1,0 +1,98 @@
+---
+// WebMCP: unelte expuse agenților AI din browser (https://webmachinelearning.github.io/webmcp/).
+// Doar citire și navigare pe site; nu trimit nimic și nu modifică nimic.
+// Specificația folosește document.modelContext; Chrome a avut-o și pe navigator.modelContext.
+import { servicePages } from '../data/services';
+
+const SITE = 'https://me-design.ro';
+const services = servicePages.map((s) => ({ title: s.title, description: s.description, url: `${SITE}/servicii/${s.slug}/` }));
+---
+
+<script is:inline type="application/json" id="agent-services" set:html={JSON.stringify(services)}></script>
+
+<script>
+  {
+    const mc = (document as any).modelContext ?? (navigator as any).modelContext;
+    if (mc && typeof mc.registerTool === 'function') {
+      const SITE = 'https://me-design.ro';
+      const services = JSON.parse(document.getElementById('agent-services')?.textContent || '[]');
+      const pages: Record<string, string> = {
+        home: '/', services: '/servicii/', portfolio: '/portofoliu/', blog: '/blog/',
+        about: '/despre/', contact: '/contact/', english: '/en/',
+      };
+      const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+      const controller = new AbortController();
+      const opts = { signal: controller.signal };
+      addEventListener('pagehide', () => controller.abort(), { once: true });
+
+      const tools = [
+        {
+          name: 'list_services',
+          title: 'List design services',
+          description: 'List the infrastructure design services offered by ME Design (Mario Engineering Design SRL, Romania), with a description and page URL for each.',
+          inputSchema: { type: 'object', properties: {} },
+          annotations: { readOnlyHint: true },
+          execute: async () => ({ services }),
+        },
+        {
+          name: 'search_projects',
+          title: 'Search portfolio projects',
+          description: 'Search ME Design portfolio projects by free text (place, county, client, structure type) and/or category. Text is matched without diacritics. Returns title, phase, year, location, client and URL.',
+          inputSchema: {
+            type: 'object',
+            properties: {
+              query: { type: 'string', description: 'Free text, e.g. "pod", "Craiova", "parcare".' },
+              category: { type: 'string', description: 'Optional category, e.g. Drumuri, Poduri, Consolidări, Pasarele, Parc, Amenajări Hidrotehnice, Monument Istoric.' },
+            },
+          },
+          annotations: { readOnlyHint: true },
+          execute: async (input: { query?: string; category?: string }) => {
+            const res = await fetch('/agents/projects.json');
+            const all = await res.json();
+            const q = norm(input?.query || '');
+            const c = norm(input?.category || '');
+            const hits = all.filter((p: any) =>
+              (!q || norm([p.title, p.description, p.location, p.client].join(' ')).includes(q)) &&
+              (!c || p.categories.some((x: string) => norm(x) === c))
+            );
+            return { count: hits.length, projects: hits };
+          },
+        },
+        {
+          name: 'get_contact',
+          title: 'Get contact details',
+          description: 'Get ME Design contact details (email, phone, office address, contact form URL) and what to include in a design request.',
+          inputSchema: { type: 'object', properties: {} },
+          annotations: { readOnlyHint: true },
+          execute: async () => ({
+            company: 'Mario Engineering Design SRL',
+            email: 'office@me-design.ro',
+            phone: '+40 746 784 156',
+            address: 'Str. Avionului 26, Et. 1, Ap. B, Sector 1, București, România',
+            contact_form: `${SITE}/contact/`,
+            include_in_request: ['project type', 'location (county, locality)', 'design phase needed', 'desired deadline', 'short description', 'contact name and phone'],
+          }),
+        },
+        {
+          name: 'open_page',
+          title: 'Open a site page',
+          description: 'Navigate the browser to a main page of the ME Design site.',
+          inputSchema: {
+            type: 'object',
+            properties: { page: { type: 'string', enum: Object.keys(pages) } },
+            required: ['page'],
+          },
+          execute: async (input: { page: string }) => {
+            const path = pages[input?.page];
+            if (!path) throw new Error('Unknown page');
+            location.assign(path);
+            return { navigating_to: SITE + path };
+          },
+        },
+      ];
+      for (const t of tools) {
+        try { Promise.resolve(mc.registerTool(t, opts)).catch(() => {}); } catch { /* API încă experimental */ }
+      }
+    }
+  }
+</script>

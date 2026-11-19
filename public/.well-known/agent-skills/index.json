@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "me-design-request-quote",
+      "type": "skill-md",
+      "description": "Prepare and send a design request to ME Design (Mario Engineering Design SRL), an infrastructure design firm in Romania. Use when a user wants a quote or design work for roads, platforms, car parks, site grading, bridges, retaining works, structural assessments or hydraulic works in Romania.",
+      "url": "https://me-design.ro/.well-known/agent-skills/me-design-request-quote/SKILL.md",
+      "digest": "sha256:31ea3f68b37dd32878d34f0b51d2ad432691d6cdd5359068616085564a0a5c67"
+    }
+  ]
+}
