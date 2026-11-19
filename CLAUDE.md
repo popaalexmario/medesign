@@ -155,7 +155,8 @@ eroare se vede.
 
 ## Vizibilitate în asistenții AI
 
-- `public/robots.txt` permite explicit boții AI de căutare (OAI-SearchBot,
+- `public/robots.txt` are `Content-Signal: search=yes, ai-input=yes, ai-train=no`
+  (nu depindem de blocul Cloudflare, care nu-l mai include). Permite explicit boții AI de căutare (OAI-SearchBot,
   ChatGPT-User, PerplexityBot, Claude-SearchBot etc.).
 - Datele structurate: AboutPage (Despre), ContactPage, CollectionPage cu ItemList
   (Portofoliu), FAQPage pe servicii, BlogPosting pe articole. Întrebările frecvente

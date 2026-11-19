@@ -1,5 +1,8 @@
 # Motoarele de căutare și asistenții AI care citează surse au acces la tot site-ul.
+# Content Signals (https://contentsignals.org/): da pentru căutare și pentru
+# răspunsurile asistenților AI care citează site-ul, nu pentru antrenarea modelelor.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Asistenți AI care caută pe web și citează site-ul în răspunsuri
