@@ -172,6 +172,10 @@ eroare se vede.
   ar descrie servicii care nu există (fără API, fără autentificare, fără magazin).
 - `src/pages/llms.txt.ts` generează `/llms.txt` la fiecare build din servicii,
   proiecte și articolele publicate. Nu se editează de mână.
+- Cloudflare (verificat nov. 2026): AI Crawler and Agent access policies = Search
+  Allow, Training Disallow, Agents Allow; Bot Fight Mode pornit (protejează formularul).
+  PerplexityBot primește 403 din cauza Bot Fight Mode (probabil nu e bot verificat);
+  Perplexity-User trece. Decizie: rămâne așa.
 - Cloudflare adaugă peste robots.txt un bloc „Cloudflare Managed content” care
   blochează boții de training și poate da 403 boților AI. Se controlează din
   dashboard (AI Crawl Control / Bots), nu din repo.
