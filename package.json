@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "node scripts/agent-skills.mjs && astro build",
+    "build": "node scripts/agent-skills.mjs && astro build && node scripts/markdown-pages.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -21,6 +21,9 @@
   },
   "devDependencies": {
     "aos": "^2.3.4",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "linkedom": "^0.18.15",
+    "turndown": "^7.2.5",
+    "turndown-plugin-gfm": "^1.0.2"
   }
 }

@@ -171,6 +171,11 @@ eroare se vede.
   cu `index.json` generat la build de `scripts/agent-skills.mjs` (amprenta SHA-256).
   NU publicăm api-catalog, OAuth/OIDC, A2A, MCP server card, DNS-AID sau ACP:
   ar descrie servicii care nu există (fără API, fără autentificare, fără magazin).
+- **Markdown for Agents** (fără plan Pro): la build, `scripts/markdown-pages.mjs`
+  scrie `index.md` lângă fiecare `index.html` (fără header/footer/scripturi);
+  `functions/_middleware.js` îl servește la `Accept: text/markdown` (noindex, Vary: Accept).
+  `public/_routes.json` scoate imaginile, fonturile, scripturile, .txt/.xml din funcții.
+  Testat local cu `wrangler pages dev dist`.
 - `src/pages/llms.txt.ts` generează `/llms.txt` la fiecare build din servicii,
   proiecte și articolele publicate. Nu se editează de mână.
 - Cloudflare (verificat nov. 2026): AI Crawler and Agent access policies = Search
