@@ -2,44 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { getCollection } from 'astro:content';
-import { servicePages } from '../data/services';
+import { faqItems, faqLd } from '../data/faq';
+import FaqSection from '../components/FaqSection.astro';
 import { lastModified, formatRo } from '../utils/pageDates';
 
-// Întrebări frecvente pe prima pagină. Cifrele se calculează din portofoliu;
-// celelalte răspunsuri sunt cele verificate de pe paginile de servicii.
-const portfolio = await getCollection('projects', ({ data }) => !data.draft);
-const judete = [...new Set(portfolio.map((p) => p.data.judet).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ro'));
-const pick = (slug: string, q: string) => {
-  const f = servicePages.find((s) => s.slug === slug)?.faq.find((x) => x.q === q);
-  if (!f) throw new Error(`FAQ lipsă: ${slug} / ${q}`);
-  return { ...f, href: `/servicii/${slug}/` };
-};
-const homeFaq = [
-  {
-    q: 'Ce face ME Design?',
-    a: `Mario Engineering Design SRL este o firmă de proiectare infrastructură din București, înființată în decembrie 2018. Proiectăm drumuri, platforme și parcări, poduri, pasaje și pasarele, poduri de cale ferată, lucrări de sprijin și consolidări, intervenții la monumente istorice, expertize tehnice și amenajări hidrotehnice. Avem peste 200 de proiecte finalizate, iar ${portfolio.length} dintre ele sunt prezentate în portofoliu, cu faza de proiectare, beneficiarul și anul. Firma este certificată ISO 9001, ISO 14001 și ISO 45001.`,
-    href: '/despre/',
-  },
-  {
-    q: 'În ce zone lucrați?',
-    a: `În toată România. Proiectele din portofoliu sunt din ${judete.length} județe: ${judete.join(', ')}. Sediul este în București, iar pentru fazele determinante și asistența tehnică venim pe șantier.`,
-    href: '/portofoliu/',
-  },
-  {
-    q: 'Ce faze de proiectare acoperiți?',
-    a: 'Toate fazele: studiu de fezabilitate (SF), documentație de avizare a lucrărilor de intervenții (DALI), documentația pentru autorizarea construirii (PAC, fostul DTAC) și proiect tehnic de execuție (PTE). Facem și expertize tehnice la construcții existente și asigurăm asistența tehnică pe durata execuției, până la recepție.',
-    href: '/servicii/',
-  },
-  pick('proiectare-drumuri', 'Ce este sistematizarea verticală și când am nevoie de ea?'),
-  pick('proiectare-drumuri', 'Am nevoie de acordul administratorului drumului pentru un acces nou la proprietate?'),
-  pick('proiectare-drumuri', 'Puteți face doar partea de drumuri dintr-un proiect de arhitectură?'),
-  pick('expertize-tehnice', 'Expertiza înlocuiește proiectul?'),
-];
+const F = await faqItems();
+const homeFaq = [F.despre, F.zone, F.faze, F.sistematizare, F.acces, F.doarDrumuri, F.expertiza];
 
 const SITE = 'https://me-design.ro';
 const PUBLISHED = '2026-03-10'; // primul commit al paginii
-const modified = lastModified(['src/pages/index.astro', 'src/data/services.ts', 'src/content/projects']);
+const modified = lastModified(['src/pages/index.astro', 'src/data/services.ts', 'src/data/faq.ts', 'src/content/projects']);
 const homeLd = [
   {
     '@context': 'https://schema.org',
@@ -53,12 +25,7 @@ const homeLd = [
     datePublished: PUBLISHED,
     ...(modified ? { dateModified: modified } : {}),
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    '@id': `${SITE}/#faq`,
-    mainEntity: homeFaq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-  },
+  faqLd(`${SITE}/#faq`, homeFaq),
 ];
 
 const stats = [
@@ -479,26 +446,11 @@ const reasons = [
   </script>
 
   <!-- Întrebări frecvente (vizibile, aceleași texte ca în schema FAQPage) -->
-  <section class="section-padding bg-page" id="intrebari">
-    <div class="container max-w-3xl">
-      <h2 class="text-[28px] md:text-[40px] font-heading font-bold text-brand-800 text-center">Întrebări frecvente</h2>
-      <div class="mt-8 space-y-3">
-        {homeFaq.map((f, i) => (
-          <details class="group bg-white rounded-2xl border border-steel-100 px-5 md:px-6 py-4" open={i === 0}>
-            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-              <h3 class="font-heading font-bold text-[16px] md:text-[17px] text-brand-800">{f.q}</h3>
-              <span class="shrink-0 mt-1 text-accent-600 transition-transform group-open:rotate-45 text-[20px] leading-none" aria-hidden="true">+</span>
-            </summary>
-            <p class="text-steel-600 text-[15px] leading-relaxed mt-3">{f.a}</p>
-            <a href={f.href} class="inline-block mt-2 text-accent-700 font-semibold text-[14px] hover:underline">Detalii →</a>
-          </details>
-        ))}
-      </div>
-      <p class="text-center text-steel-500 text-[13px] mt-6">
-        Publicat: <time datetime={PUBLISHED}>{formatRo(PUBLISHED)}</time>{modified && <> · Actualizat: <time datetime={modified}>{formatRo(modified)}</time></>}
-      </p>
-    </div>
-  </section>
+  <FaqSection items={homeFaq}>
+    <p class="text-center text-steel-500 text-[13px] mt-6">
+      Publicat: <time datetime={PUBLISHED}>{formatRo(PUBLISHED)}</time>{modified && <> · Actualizat: <time datetime={modified}>{formatRo(modified)}</time></>}
+    </p>
+  </FaqSection>
 
   <!-- CTA with animated gradient -->
   <section class="section-padding bg-page-alt">

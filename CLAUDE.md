@@ -176,6 +176,8 @@ eroare se vede.
   `functions/_middleware.js` îl servește la `Accept: text/markdown` (noindex, Vary: Accept).
   `public/_routes.json` scoate imaginile, fonturile, scripturile, .txt/.xml din funcții.
   Testat local cu `wrangler pages dev dist`.
+- Întrebările frecvente de pe prima pagină și de pe Contact vin din `src/data/faq.ts`
+  (componenta `FaqSection.astro`, schema cu `faqLd`).
 - Prima pagină are „Întrebări frecvente” vizibile (aceleași texte în FAQPage) și
   „Publicat / Actualizat”: data de actualizare vine din git log
   (`src/utils/pageDates.ts`); pe Cloudflare istoricul e adus de `scripts/git-history.mjs`.
