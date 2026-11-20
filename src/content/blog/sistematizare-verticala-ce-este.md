@@ -3,6 +3,8 @@ title: "Sistematizarea verticală: ce este și când îți trebuie"
 description: "Ce conține proiectul de sistematizare verticală pentru o hală, o curte sau o platformă, ce cere CATUC la autorizare și unde se greșește cel mai des."
 pubDate: 2026-11-21
 category: "Ghiduri"
+image: "/img/blog/cover-sistematizare-verticala-ce-este.webp"
+imageAlt: "Ilustrație: secțiune prin teren cu stradă, platformă în pantă și clădire, cu cote"
 keywords: ["sistematizare verticală", "proiect sistematizare verticală", "cote teren amenajat", "platformă hală", "scurgerea apelor pluviale", "plan de situație PAC"]
 ---
 

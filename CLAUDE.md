@@ -54,6 +54,13 @@ Schemele de tip flux/tabel/coloane se generează cu
 ele se ia doar din articol. Desenele tehnice (secțiuni, profile) sunt făcute de
 mână. Fiecare articol publicat are cel puțin o schiță.
 
+**Poză de copertă obligatorie (cerința lui Mario, nov. 2026).** Orice articol are
+`image` și `imageAlt` în frontmatter. Întâi se caută o fotografie potrivită (Commons,
+regulile de mai jos); dacă nu există, se generează o ilustrație cu
+`node scripts/covers/generate.mjs` (desen per articol în `scripts/covers/scenes.mjs`,
+ieșire `public/img/blog/cover-<slug>.webp`, 1200x630, culorile site-ului). Un articol
+fără copertă nu se publică.
+
 **Fotografii de pe net.** Doar Wikimedia Commons cu licență liberă (CC0, CC BY,
 CC BY-SA), verificată pe pagina fișierului. Sub poză: autorul și licența, cu
 link. Se stochează în `public/img/blog/foto/`, webp ~1100px. API-ul Commons

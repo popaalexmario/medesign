@@ -3,6 +3,8 @@ title: "Partea de drumuri dintr-un proiect de arhitectură"
 description: "Pentru arhitecți: ce acoperă specialitatea drumuri și sistematizare verticală la o hală sau un ansamblu, când o chemi în proiect și ce documente îți cere."
 pubDate: 2026-11-23
 category: "Ghiduri"
+image: "/img/blog/cover-specialitatea-drumuri-proiect-arhitectura.webp"
+imageAlt: "Ilustrație: plan de situație cu clădirea arhitectului și partea de drumuri: acces, platformă, parcare"
 keywords: ["specialitatea drumuri", "proiectant drumuri pentru arhitecți", "sistematizare verticală PAC", "colaborare arhitect inginer drumuri", "proiect drumuri hală", "subcontractare proiectare drumuri"]
 ---
 

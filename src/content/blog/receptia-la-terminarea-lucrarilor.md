@@ -3,6 +3,8 @@ title: "Recepția la terminarea lucrărilor: când e lucrarea gata, legal"
 description: "Ce cere art. 280 din CATUC: recepția obligatorie, cine participă, ce documente se arată la control și de ce o lucrare fără recepție nu e terminată."
 pubDate: 2026-12-03
 category: "Legislație"
+image: "/img/blog/cover-receptia-la-terminarea-lucrarilor.webp"
+imageAlt: "Ilustrație: platformă și clădire finalizate, cu procesul-verbal de recepție semnat"
 keywords: ["receptia la terminarea lucrarilor", "receptie lucrari constructii", "finalizare lucrari CATUC", "proiect real executat", "art. 280 CATUC", "receptie platforma hala"]
 ---
 

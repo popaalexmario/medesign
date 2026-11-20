@@ -3,6 +3,8 @@ title: "Certificatul de urbanism: documentele complementare, pe înțeles"
 description: "Ce sunt documentațiile complementare din certificatul de urbanism, după art. 265 din CATUC, și care dintre ele contează pentru platforme, parcări și accese."
 pubDate: 2026-11-30
 category: "Ghiduri"
+image: "/img/blog/cover-certificat-urbanism-documentatii-complementare.webp"
+imageAlt: "Ilustrație: certificat de urbanism cu ștampilă și lista documentelor bifate"
 keywords: ["certificat de urbanism documente", "documentatii complementare CATUC", "studiu de circulatie", "studiu geotehnic autorizatie", "aviz certificat de urbanism", "art. 265 CATUC"]
 ---
 

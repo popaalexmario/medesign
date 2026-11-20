@@ -1,0 +1,137 @@
+// Desenele de copertă, câte unul pe articol (slug → SVG interior, pânză 1200x630).
+// Linii simple, în culorile site-ului. Fără text, în afară de cifre de cotă.
+const Y = '#f2c12e', L = '#cbd5e1', M = '#64748b', W = '#ffffff';
+const s = (c = L, w = 3) => `fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"`;
+
+export const scenes = {
+  'lucrari-fara-proiect-fara-autorizatie-riscuri': {
+    alt: 'Ilustrație: plan de execuție cu soluția bifată, alături de o platformă turnată fără proiect, fisurată',
+    svg: `
+      <rect x="170" y="150" width="380" height="300" rx="10" ${s(L)}/>
+      <path d="M210 210h300M210 250h220M210 290h260M210 330h180" ${s(M, 3)}/>
+      <path d="M410 370l40 40 80-90" ${s(Y, 8)}/>
+      <path d="M650 430h420" ${s(L, 4)}/>
+      <path d="M680 430l30-70h300l30 70" ${s(L, 3)}/>
+      <path d="M760 362l25 30-15 20 30 18" ${s(Y, 4)}/>
+      <path d="M900 362l-20 28 25 16" ${s(Y, 4)}/>
+      <path d="M700 470h360" ${s(M, 2)}/>
+      <circle cx="870" cy="250" r="55" ${s(Y, 6)}/><path d="M832 288l76-76" ${s(Y, 6)}/>`,
+  },
+  'acces-drum-public-aviz-administrator': {
+    alt: 'Ilustrație: drum public cu un acces nou spre o proprietate, poartă și podeț sub acces',
+    svg: `
+      <path d="M100 420h1000M100 520h1000" ${s(L, 4)}/>
+      <path d="M100 470h1000" stroke="${W}" stroke-width="3" stroke-dasharray="30 26" fill="none"/>
+      <path d="M100 400h1000" ${s(M, 2)} stroke-dasharray="6 8"/>
+      <path d="M500 420L540 220M740 420L700 220" ${s(Y, 5)}/>
+      <path d="M140 220h400M700 220h360" ${s(L, 4)}/>
+      ${[180, 240, 300, 360, 420, 480, 760, 820, 880, 940, 1000].map((x) => `<path d="M${x} 220v-50" ${s(M, 3)}/>`).join('')}
+      <path d="M540 220v-90M700 220v-90" ${s(Y, 5)}/>
+      <path d="M545 140l70 40M695 140l-70 40" ${s(Y, 3)}/>
+      <circle cx="620" cy="405" r="16" ${s(Y, 5)}/>
+      <path d="M900 420v-120" ${s(L, 4)}/><path d="M870 300l30-50 30 50z" ${s(Y, 5)}/>`,
+  },
+  'ape-pluviale-platforme-curti-parcari': {
+    alt: 'Ilustrație: platformă cu pantă, ploaie și apa colectată de o rigolă',
+    svg: `
+      ${[220, 330, 440, 550, 660, 770, 880, 990].map((x, i) => `<path d="M${x} ${120 + (i % 3) * 25}l-18 40" ${s(L, 3)}/>`).join('')}
+      <path d="M150 380L950 330" ${s(L, 6)}/>
+      <path d="M950 330h40v30h-40" ${s(Y, 5)}/>
+      <path d="M300 345l-90 6M600 326l-90 6M880 309l-90 6" ${s(Y, 4)}/>
+      <path d="M990 345c40 0 60 30 60 80" ${s(Y, 4)} stroke-dasharray="10 10"/>
+      <path d="M150 380v60h800v-110" ${s(M, 2)}/>`,
+  },
+  'sistematizare-verticala-ce-este': {
+    alt: 'Ilustrație: secțiune prin teren cu stradă, platformă în pantă și clădire, cu cote',
+    svg: `
+      <path d="M100 420h240l60-40 420-30h220" ${s(L, 6)}/>
+      <path d="M100 450c200-10 400-80 700-120s250-20 300-20" ${s(M, 3)} stroke-dasharray="12 10"/>
+      <rect x="840" y="220" width="200" height="130" ${s(L, 4)}/><path d="M830 220l110-60 110 60" ${s(L, 4)}/>
+      <path d="M800 338v24M788 338h24M788 362h24" ${s(Y, 4)}/>
+      <path d="M760 300l-300 25" ${s(Y, 4)}/><path d="M470 314l-12 12 16 4" ${s(Y, 4)}/>
+      <path d="M420 384v30" ${s(Y, 4)}/><path d="M405 414h30" ${s(Y, 4)}/>`,
+  },
+  'specialitatea-drumuri-proiect-arhitectura': {
+    alt: 'Ilustrație: plan de situație cu clădirea arhitectului și partea de drumuri: acces, platformă, parcare',
+    svg: `
+      <rect x="160" y="110" width="880" height="420" rx="10" ${s(M, 3)}/>
+      <rect x="560" y="170" width="380" height="200" ${s(L, 5)}/>
+      <path d="M560 170l380 200M940 170l-380 200" ${s(M, 1.5)}/>
+      <path d="M160 460h880" ${s(L, 4)}/>
+      <path d="M300 460v-260h220v260" ${s(Y, 5)}/>
+      ${[0, 1, 2, 3].map((i) => `<path d="M${320 + i * 50} 230v80" ${s(Y, 3)}/>`).join('')}
+      <path d="M520 400h420" ${s(Y, 5)}/>`,
+  },
+  'optimizare-reproiectare-proiect-existent': {
+    alt: 'Ilustrație: planșă de proiect cu revizii marcate și o soluție înlocuită',
+    svg: `
+      <rect x="200" y="120" width="560" height="400" rx="10" ${s(L, 4)}/>
+      <path d="M250 200h300M250 250h420M250 300h360M250 350h260M250 400h380" ${s(M, 3)}/>
+      <path d="M240 290c80-30 300-30 400 0" ${s(Y, 5)}/>
+      <ellipse cx="560" cy="250" rx="140" ry="40" ${s(Y, 4)}/>
+      <path d="M850 160l-160 260-10 50 40-30 160-260z" ${s(Y, 5)}/>
+      <path d="M830 190l40 25" ${s(Y, 4)}/>
+      <path d="M880 420h160M880 460h120" ${s(L, 3)}/>`,
+  },
+  'teren-fara-acces-drum-public-servitute': {
+    alt: 'Ilustrație: plan de parcele, cu un teren fără ieșire la drum și coridorul servituții de trecere',
+    svg: `
+      <path d="M120 470h960M120 540h960" ${s(L, 5)}/>
+      <path d="M200 470V140h250v330M450 470V140h300v330M750 470V140h260v330" ${s(M, 3)}/>
+      <path d="M200 300h810" ${s(M, 3)}/>
+      <rect x="460" y="150" width="280" height="140" ${s(Y, 5)}/>
+      <path d="M560 290v180M640 290v180" ${s(Y, 4)} stroke-dasharray="14 10"/>
+      <path d="M600 450v-120" ${s(Y, 4)}/><path d="M585 345l15-20 15 20" ${s(Y, 4)}/>`,
+  },
+  'ridicare-topografica-ce-trebuie-sa-contina': {
+    alt: 'Ilustrație: stație totală pe trepied și curbe de nivel ale terenului',
+    svg: `
+      ${[0, 1, 2, 3, 4].map((i) => `<path d="M120 ${360 + i * 40}c200 -${40 - i * 6} 420 ${30 - i * 4} 620 -${20 - i * 2}s260 ${30 - i * 3} 340 -${10 + i * 2}" ${s(i % 2 ? M : L, 3)}/>`).join('')}
+      <path d="M760 320l-60 220M760 320l0 220M760 320l60 220" ${s(L, 4)}/>
+      <rect x="725" y="240" width="70" height="80" rx="8" ${s(Y, 5)}/>
+      <circle cx="760" cy="270" r="14" ${s(Y, 4)}/>
+      <path d="M795 270h120" ${s(Y, 3)} stroke-dasharray="10 10"/>
+      <path d="M930 200v120M915 200h30" ${s(L, 4)}/>`,
+  },
+  'certificat-urbanism-documentatii-complementare': {
+    alt: 'Ilustrație: certificat de urbanism cu ștampilă și lista documentelor bifate',
+    svg: `
+      <rect x="300" y="140" width="380" height="400" rx="10" ${s(M, 3)}/>
+      <rect x="260" y="110" width="380" height="400" rx="10" fill="#121417" ${s(L, 4)}/>
+      ${[0, 1, 2, 3, 4].map((i) => `<path d="M300 ${190 + i * 60}l14 14 26-30" ${s(Y, 5)}/><path d="M360 ${190 + i * 60}h220" ${s(M, 3)}/>`).join('')}
+      <circle cx="820" cy="320" r="90" ${s(Y, 5)}/><circle cx="820" cy="320" r="62" ${s(Y, 3)}/>
+      <path d="M790 320l22 22 40-46" ${s(Y, 5)}/>`,
+  },
+  'constructie-langa-vecin-expertiza-vecinatati': {
+    alt: 'Ilustrație: săpătură sprijinită la limita proprietății, lângă fundația unei clădiri vecine',
+    svg: `
+      <path d="M100 330h480v140h340V330h180" ${s(L, 5)}/>
+      <rect x="200" y="170" width="300" height="160" ${s(L, 4)}/><path d="M190 170l160-70 160 70" ${s(L, 4)}/>
+      <rect x="200" y="330" width="300" height="40" ${s(M, 3)}/>
+      <path d="M560 300v200" ${s(Y, 8)}/>
+      <path d="M500 370l60 100V370z" fill="${Y}" fill-opacity="0.18" ${s(Y, 3)} stroke-dasharray="10 8"/>
+      <path d="M540 120v380" ${s(M, 2)} stroke-dasharray="12 10"/>`,
+  },
+  'organizare-de-santier-ce-contine': {
+    alt: 'Ilustrație: șantier cu împrejmuire, poartă, rampă de spălare și macara',
+    svg: `
+      <path d="M120 470h960" ${s(L, 4)}/>
+      <path d="M160 470V330M1040 470V330M160 330h340M700 330h340" ${s(M, 3)}/>
+      ${[200, 240, 280, 320, 360, 400, 440, 480, 740, 780, 820, 860, 900, 940, 980, 1020].map((x) => `<path d="M${x} 470V330" ${s(M, 2)}/>`).join('')}
+      <rect x="520" y="440" width="160" height="30" ${s(Y, 4)}/>
+      <path d="M540 430c10-14 20-14 30 0M600 430c10-14 20-14 30 0" ${s(Y, 3)}/>
+      <path d="M820 330V110h20v220M840 130h200M840 130l-60 0M1000 130v90" ${s(L, 4)}/>
+      <rect x="985" y="220" width="30" height="24" ${s(Y, 3)}/>`,
+  },
+  'receptia-la-terminarea-lucrarilor': {
+    alt: 'Ilustrație: platformă și clădire finalizate, cu procesul-verbal de recepție semnat',
+    svg: `
+      <path d="M120 450h620" ${s(L, 5)}/>
+      <rect x="380" y="250" width="300" height="200" ${s(L, 4)}/><path d="M370 250l160-80 160 80" ${s(L, 4)}/>
+      <path d="M140 430h220" ${s(M, 3)}/>
+      <rect x="780" y="140" width="280" height="360" rx="12" ${s(Y, 4)}/>
+      <rect x="870" y="120" width="100" height="40" rx="8" ${s(Y, 4)}/>
+      ${[0, 1, 2].map((i) => `<path d="M820 ${220 + i * 60}h200" ${s(M, 3)}/>`).join('')}
+      <path d="M840 430c30-40 50 20 80-10s40-20 60 0" ${s(Y, 4)}/>`,
+  },
+};

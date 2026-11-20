@@ -3,6 +3,8 @@ title: "Fără proiect, fără autorizație: ce riști și cum intri în legalit
 description: "De ce o platformă, o curte sau un acces făcute din ochi ies mai scump, ce spune CATUC despre lucrările neautorizate și cum funcționează autorizația de regularizare."
 pubDate: 2026-11-17
 category: "Legislație"
+image: "/img/blog/cover-lucrari-fara-proiect-fara-autorizatie-riscuri.webp"
+imageAlt: "Ilustrație: plan de execuție cu soluția bifată, alături de o platformă turnată fără proiect, fisurată"
 keywords: ["lucrări fără autorizație", "autorizație de regularizare", "intrare în legalitate construcție", "art. 301 CATUC", "proiect de specialitate", "construcție neautorizată"]
 ---
 

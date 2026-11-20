@@ -3,6 +3,8 @@ title: "Ridicarea topografică: ce trebuie să conțină ca să nu refaci proiec
 description: "Ce cere CATUC de la studiul topografic pentru autorizare, ce elemente lipsesc cel mai des și de ce o ridicare incompletă se plătește la proiectare și pe șantier."
 pubDate: 2026-11-29
 category: "Ghiduri"
+image: "/img/blog/cover-ridicare-topografica-ce-trebuie-sa-contina.webp"
+imageAlt: "Ilustrație: stație totală pe trepied și curbe de nivel ale terenului"
 keywords: ["ridicare topografică", "studiu topografic autorizație", "plan topografic Stereo 70", "topografie pentru proiect", "ridicare topo platformă", "studiu topografic CATUC"]
 ---
 

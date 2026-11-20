@@ -3,6 +3,8 @@ title: "Optimizarea unui proiect existent: când merită și ce se poate schimba
 description: "Proiect prea scump sau soluție nepotrivită cu terenul? Ce se poate optimiza la drumuri și platforme și ce cere CATUC după autorizare."
 pubDate: 2026-11-24
 category: "Ghiduri"
+image: "/img/blog/cover-optimizare-reproiectare-proiect-existent.webp"
+imageAlt: "Ilustrație: planșă de proiect cu revizii marcate și o soluție înlocuită"
 keywords: ["optimizare proiect", "reproiectare", "dispoziție de șantier", "autorizație de modificare", "art. 293 CATUC", "verificare soluție proiect"]
 ---
 

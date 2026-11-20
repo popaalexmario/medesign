@@ -3,6 +3,8 @@ title: "Apa pe platforme, curți și parcări: unde o duci"
 description: "Cum se preiau apele pluviale de pe o platformă carosabilă, o curte sau o parcare: pante, rigole, șanțuri absorbante, infiltrare. Cu exemple din proiecte reale."
 pubDate: 2026-11-20
 category: "Tehnic"
+image: "/img/blog/cover-ape-pluviale-platforme-curti-parcari.webp"
+imageAlt: "Ilustrație: platformă cu pantă, ploaie și apa colectată de o rigolă"
 keywords: ["ape pluviale platformă", "scurgerea apelor curte", "rigolă carosabilă", "șanț absorbant", "infiltrare ape pluviale", "drenaj parcare"]
 ---
 

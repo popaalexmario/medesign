@@ -3,6 +3,8 @@ title: "Organizarea de șantier: ce trebuie să conțină și cine o face"
 description: "Ce cere art. 517 din CATUC pentru organizarea de șantier: accese, rampă de spălare, ocuparea temporară a drumului, avize, deșeuri și obligațiile constructorului."
 pubDate: 2026-12-02
 category: "Ghiduri"
+image: "/img/blog/cover-organizare-de-santier-ce-contine.webp"
+imageAlt: "Ilustrație: șantier cu împrejmuire, poartă, rampă de spălare și macara"
 keywords: ["organizare de santier", "proiect organizare de santier", "rampa de spalare santier", "ocupare temporara domeniu public", "acces santier drum public", "art. 517 CATUC"]
 ---
 

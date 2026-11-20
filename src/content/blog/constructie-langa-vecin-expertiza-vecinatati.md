@@ -3,6 +3,8 @@ title: "Construiești lângă vecin: expertiza privind influența asupra vecinil
 description: "Când cere certificatul de urbanism expertiza privind vecinătățile, ce stabilește ea și de ce o săpătură la limita proprietății are nevoie de ea."
 pubDate: 2026-12-01
 category: "Legislație"
+image: "/img/blog/cover-constructie-langa-vecin-expertiza-vecinatati.webp"
+imageAlt: "Ilustrație: săpătură sprijinită la limita proprietății, lângă fundația unei clădiri vecine"
 keywords: ["expertiza vecinatati", "influenta asupra vecinatatilor", "sapatura langa casa vecinului", "zid de sprijin la limita proprietatii", "expertiza tehnica preliminara", "art. 265 lit. b CATUC"]
 ---
 

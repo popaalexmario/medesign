@@ -3,6 +3,8 @@ title: "Teren fără ieșire la drum public: accesul și servitutea de trecere"
 description: "Ce spune CATUC despre accesul unui teren la drumul public, când ajunge o servitute de trecere și ce trebuie să conțină proiectul pentru drumul de acces."
 pubDate: 2026-11-27
 category: "Legislație"
+image: "/img/blog/cover-teren-fara-acces-drum-public-servitute.webp"
+imageAlt: "Ilustrație: plan de parcele, cu un teren fără ieșire la drum și coridorul servituții de trecere"
 keywords: ["teren fără acces la drum", "servitute de trecere", "acces la drum public teren", "teren construibil acces", "drum de acces privat", "parcelare acces"]
 ---
 

@@ -3,6 +3,8 @@ title: "Accesul din drumul public: acordul administratorului drumului"
 description: "Ce acte cere administratorul drumului pentru accesul la o hală, o curte sau o parcare, ce spune OG 43/1997 și de ce accesul se proiectează primul."
 pubDate: 2026-11-19
 category: "Legislație"
+image: "/img/blog/cover-acces-drum-public-aviz-administrator.webp"
+imageAlt: "Ilustrație: drum public cu un acces nou spre o proprietate, poartă și podeț sub acces"
 keywords: ["acces drum public", "acord prealabil administrator drum", "autorizație de acces în zona drumului", "acces din drum județean", "acces din DN", "OG 43/1997 art. 46"]
 ---
 
