@@ -319,4 +319,93 @@ export const DIAGRAMS = [
       { t: 'Fără regularizare: desființare', s: 'de către autoritate sau prin instanță (alin. (5), (12))' },
     ],
   },
+  {
+    file: 'acces-teren-servitute', kind: 'columns',
+    title: 'Are terenul acces la drumul public?',
+    subtitle: 'CATUC, art. 159 și 219',
+    cols: [
+      { head: 'Acces direct', color: '#1e3a5f', rows: [
+        'Latura terenului dă în drumul public',
+        'Racordul la drum cere acordul administratorului',
+      ] },
+      { head: 'Acces indirect', color: '#334155', rows: [
+        'Prin servitute de trecere legal constituită',
+        'Forma juridică o stabilește notarul sau avocatul',
+        'Lățimea și traseul, după vehiculele care vor circula',
+      ] },
+      { head: 'Fără acces', color: '#d97706', rows: [
+        'Terenul nu îndeplinește condiția de teren construibil',
+        'La parcelare, fiecare lot are nevoie de acces',
+      ] },
+    ],
+    footer: 'O potecă folosită de ani de zile nu e o servitute legal constituită.',
+  },
+  {
+    file: 'ridicare-topografica-continut', kind: 'columns',
+    title: 'Ce trebuie să apară în ridicarea topografică',
+    subtitle: 'CATUC, art. 265 alin. (2) lit. d) și anexa nr. 2',
+    cols: [
+      { head: 'Cerut de lege', color: '#1e3a5f', rows: [
+        'Stereo 70, recepționat de oficiul de cadastru',
+        'Relieful și numărul cadastral',
+        'Repere de trasare, rețele, cămine, stâlpi',
+        'Împrejmuiri cotate pe verticală, arbori',
+        'Spațiul public din care se face accesul',
+      ] },
+      { head: 'Lipsește des', color: '#d97706', rows: [
+        'Cotele străzii: ax, bordură, rigolă sau șanț',
+        'Căminele cu cota de capac și de radier',
+        'O fâșie din terenul vecinilor',
+        'Puncte destul de dese pe teren în pantă',
+      ] },
+    ],
+    footer: 'Traseul exact al rețelelor subterane vine din avizul operatorului.',
+  },
+  {
+    file: 'documentatii-complementare-cu', kind: 'table',
+    title: 'Documentațiile complementare care contează pentru drumuri',
+    subtitle: 'CATUC, art. 265 alin. (2), după specificul lucrării',
+    widths: [0.5, 1.6, 2],
+    head: ['Lit.', 'Document', 'De ce contează'],
+    rows: [
+      ['a)', 'Studiul geotehnic, cu referat Af', 'Pe ce teren stă platforma, dacă apa se infiltrează'],
+      ['b)', 'Expertiza privind vecinătățile', 'Săpătura sau construcția poate afecta clădirile de alături'],
+      { cells: ['d)', 'Studiul topografic Stereo 70', 'Baza pentru cote, accese și sistematizare verticală'], hi: true },
+      ['i)', 'Autorizația pentru vegetație', 'Arbori tăiați pe amplasament'],
+      ['m)', 'Studiul de circulație', 'Numai în cazurile justificate legal'],
+    ],
+    footer: 'Responsabilitatea potrivirii proiectului cu ele revine echipei de specialiști (alin. (9)).',
+  },
+  {
+    file: 'organizare-santier-art-517', kind: 'columns',
+    title: 'Organizarea de șantier după CATUC',
+    subtitle: 'Art. 517: proiect întocmit de antreprenorul general, supus autorizării',
+    cols: [
+      { head: 'Ce cuprinde', color: '#1e3a5f', rows: [
+        'Împrejmuire și accesuri',
+        'Rampă de spălare: platformă betonată, apa colectată',
+        'Depozite de materiale și de deșeuri',
+        'Ocuparea temporară a drumului, doar dacă e absolut necesar',
+        'Avize pentru utilități și contract pentru deșeuri',
+      ] },
+      { head: 'Obligațiile executantului', color: '#d97706', rows: [
+        'Obține avizele și acordurile',
+        'Construiește doar pe terenurile proprii, la minimul necesar',
+        'Readuce terenurile ocupate la forma inițială',
+      ] },
+    ],
+  },
+  {
+    file: 'receptie-terminare-lucrari', kind: 'steps', cols: 1,
+    title: 'De la ultimul camion la lucrarea finalizată',
+    subtitle: 'CATUC, art. 280',
+    steps: [
+      { t: 'Recepții parțiale pe parcurs, dacă e nevoie', s: 'pe stadii fizice de execuție (alin. (6))' },
+      { t: 'Înștiințarea autorității despre data finalizării', s: 'în scris sau digital (alin. (10))' },
+      { t: 'Regularizarea valorii lucrărilor și a cotelor legale', s: 'între finalizare și recepție (alin. (9))' },
+      { t: 'Recepția la terminarea lucrărilor', s: 'cu reprezentantul emitentului autorizației (alin. (3))', hi: true },
+      { t: 'Lucrarea e finalizată', s: 'tot ce e în autorizație și în proiect, plus recepția (alin. (1))' },
+    ],
+    footer: 'Fără autorizație, lucrarea nu poate fi recepționată (alin. (8)).',
+  },
 ];

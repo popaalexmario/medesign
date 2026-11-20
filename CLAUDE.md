@@ -257,7 +257,9 @@ Logoul CNAIR e emblema de pe andnet.ro (domeniul cnair.ro e al altei firme!).
 - Recomandări de la beneficiari (Lugoj, Craiova, Cozieni) — cel mai mare câștig
   de conversie disponibil.
 - Codul poștal al sediului, pentru schema LocalBusiness.
-- Articole programate până la 28.11.2026 (șase noi pentru publicul privat).
+- Articole programate până la 03.12.2026. Seria a doua (27.11–03.12): teren fără acces/servitute,
+  ridicare topografică, documentații complementare din CU, expertiza vecinătăților,
+  organizarea de șantier, recepția la terminarea lucrărilor.
 
 ## Surse online
 
