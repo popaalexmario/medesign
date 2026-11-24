@@ -134,4 +134,84 @@ export const scenes = {
       ${[0, 1, 2].map((i) => `<path d="M820 ${220 + i * 60}h200" ${s(M, 3)}/>`).join('')}
       <path d="M840 430c30-40 50 20 80-10s40-20 60 0" ${s(Y, 4)}/>`,
   },
+
+  'hale-peste-1000-mp-2027-acoperis-verde-parcare': {
+    alt: 'Ilustrație: hală cu acoperiș verde și parcare cu arbori și copertine fotovoltaice',
+    svg: `
+      <rect x="160" y="230" width="460" height="200" ${s(L, 4)}/>
+      <path d="M160 230h460" ${s(Y, 10)}/>
+      ${[200, 260, 320, 380, 440, 500, 560].map((x) => `<path d="M${x} 222c8-22 16-22 24 0" ${s(Y, 3)}/>`).join('')}
+      <rect x="250" y="330" width="90" height="100" ${s(M, 3)}/>
+      <path d="M120 430h980" ${s(L, 4)}/>
+      ${[0, 1, 2, 3].map((i) => `<path d="M${680 + i * 100} 430v-60" ${s(W, 2)}/>`).join('')}
+      <path d="M660 300h360" ${s(Y, 5)}/><path d="M700 300v130M980 300v130" ${s(M, 3)}/>
+      ${[690, 760, 830, 900, 970].map((x) => `<path d="M${x} 290l20-30" ${s(Y, 3)}/>`).join('')}
+      <circle cx="1060" cy="360" r="34" ${s(Y, 4)}/><path d="M1060 394v36" ${s(L, 4)}/>`,
+  },
+  'bransamente-traversare-drum-acord-administrator': {
+    alt: 'Ilustrație: secțiune prin drum cu un branșament trecut pe sub carosabil până la clădire',
+    svg: `
+      <path d="M120 300h300M780 300h300" ${s(L, 4)}/>
+      <path d="M420 300h360" ${s(L, 8)}/>
+      <path d="M560 300h40M650 300h40" stroke="${W}" stroke-width="3" fill="none"/>
+      <path d="M120 300v200h960V300" ${s(M, 2)}/>
+      <circle cx="220" cy="420" r="26" ${s(L, 4)}/>
+      <path d="M246 420h560l60-60v-60" ${s(Y, 6)}/>
+      <rect x="840" y="160" width="200" height="140" ${s(L, 4)}/><path d="M830 160l110-60 110 60" ${s(L, 4)}/>
+      <rect x="196" y="270" width="48" height="30" ${s(Y, 3)}/>`,
+  },
+  'faze-determinante-santier-cine-semneaza': {
+    alt: 'Ilustrație: straturi ale unei platforme înainte de acoperire și un proces-verbal semnat',
+    svg: `
+      <path d="M120 470h600" ${s(L, 4)}/>
+      <rect x="160" y="400" width="520" height="70" ${s(M, 3)}/>
+      <rect x="160" y="350" width="520" height="50" ${s(L, 3)}/>
+      <rect x="160" y="320" width="380" height="30" ${s(Y, 4)}/>
+      <path d="M560 300l60-40" ${s(Y, 4)}/><path d="M612 250l20 4-8 18" ${s(Y, 4)}/>
+      <rect x="800" y="150" width="260" height="340" rx="12" ${s(Y, 4)}/>
+      ${[0, 1, 2].map((i) => `<path d="M840 ${210 + i * 50}h180" ${s(M, 3)}/>`).join('')}
+      ${[0, 1, 2].map((i) => `<path d="M840 ${380 + i * 30}c20-14 30 8 50-4" ${s(i === 2 ? Y : L, 3)}/>`).join('')}`,
+  },
+  'proiect-real-executat-as-built': {
+    alt: 'Ilustrație: planșa proiectului tehnic suprapusă cu cotele măsurate după execuție',
+    svg: `
+      <rect x="180" y="120" width="560" height="380" rx="10" ${s(M, 3)}/>
+      <path d="M220 400L460 360l220-20" ${s(M, 4)} stroke-dasharray="14 10"/>
+      <path d="M220 410L460 375l220-30" ${s(Y, 5)}/>
+      ${[[300, 398], [460, 375], [620, 352]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="7" fill="${Y}"/>`).join('')}
+      <path d="M230 200h200M230 240h150" ${s(L, 3)}/>
+      <path d="M840 360l-50 140M840 360v140M840 360l50 140" ${s(L, 4)}/>
+      <rect x="810" y="300" width="60" height="60" rx="8" ${s(Y, 4)}/>`,
+  },
+  'autorizatia-de-regularizare-pas-cu-pas': {
+    alt: 'Ilustrație: platformă existentă, dosar cu pașii de regularizare și un calendar',
+    svg: `
+      <path d="M120 450h520" ${s(L, 5)}/>
+      <path d="M160 450l30-60h360l30 60" ${s(L, 3)}/>
+      <rect x="700" y="130" width="300" height="360" rx="12" ${s(L, 4)}/>
+      ${[0, 1, 2, 3, 4].map((i) => `<circle cx="745" cy="${190 + i * 60}" r="14" ${s(Y, 4)}/><path d="M775 ${190 + i * 60}h180" ${s(M, 3)}/>`).join('')}
+      <path d="M745 204v32M745 264v32M745 324v32M745 384v32" ${s(Y, 2)}/>
+      <rect x="250" y="140" width="220" height="190" rx="10" ${s(Y, 4)}/>
+      <path d="M250 190h220M300 120v40M420 120v40" ${s(Y, 4)}/>
+      <path d="M330 250l30 30 50-60" ${s(L, 5)}/>`,
+  },
+  'drumuri-ansamblu-locuinte-privat-sau-public': {
+    alt: 'Ilustrație: plan al unui ansamblu de case cu drumul privat legat de strada publică',
+    svg: `
+      <path d="M120 520h960" ${s(L, 6)}/>
+      <path d="M560 520V200h80v320" ${s(Y, 5)}/>
+      <circle cx="600" cy="170" r="60" ${s(Y, 5)}/>
+      ${[[300, 230], [300, 360], [780, 230], [780, 360]].map(([x, y]) => `<rect x="${x}" y="${y}" width="130" height="90" ${s(L, 4)}/><path d="M${x + 130} ${y + 45}h${x < 600 ? 130 : -0}" ${s(M, 2)}/>`).join('')}
+      <path d="M430 275h130M430 405h130M640 275h140M640 405h140" ${s(M, 3)} stroke-dasharray="10 8"/>
+      <path d="M600 300v160" ${s(W, 2)} stroke-dasharray="18 14"/>`,
+  },
+  'contract-de-proiectare-ce-sa-cuprinda': {
+    alt: 'Ilustrație: contract de proiectare cu lista de clauze bifate și semnătura',
+    svg: `
+      <rect x="380" y="100" width="440" height="440" rx="12" ${s(L, 4)}/>
+      <path d="M430 160h260" ${s(L, 5)}/>
+      ${[0, 1, 2, 3, 4, 5].map((i) => `<path d="M430 ${220 + i * 45}l12 12 22-26" ${s(Y, 4)}/><path d="M480 ${220 + i * 45}h280" ${s(M, 3)}/>`).join('')}
+      <path d="M600 500c30-40 50 20 80-10s40-20 60 0" ${s(Y, 4)}/>
+      <path d="M900 200l-120 200-8 40 32-24 120-200z" ${s(Y, 4)}/>`,
+  },
 };
