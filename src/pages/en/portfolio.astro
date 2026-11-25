@@ -162,7 +162,9 @@ const categories = ['All', ...categoryOrder.filter(c => allCats.includes(c)), ..
         const searchMatch = searchQuery === '' || searchText.includes(searchQuery);
         const show = catMatch && searchMatch;
         card.style.display = show ? '' : 'none';
-        if (show) visible++;
+        // Cardurile ajunse în vârf după filtrare n-au fost încă derulate în ecran,
+        // deci animația de apariție (AOS) le-ar lăsa transparente. Le arătăm direct.
+        if (show) { card.classList.add('aos-animate'); visible++; }
       });
       noResults.classList.toggle('hidden', visible > 0);
     }
