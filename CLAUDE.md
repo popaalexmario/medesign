@@ -237,7 +237,9 @@ eroare se vede.
 `src/data/clienti.ts`. Fiecare colaborator are folderul `poze/logouri/<id>/`:
 fișierul urcat de Mario are prioritate, altfel `_site-oficial.png` (luat de pe
 site-ul oficial sau Commons; stemele sunt simboluri oficiale, art. 9 din Legea
-8/1996). Folder gol = apare numele pe card. Lipsesc: Perșinari, Romcargo Maritim, Compania de Apă Oradea, Scobinți.
+8/1996). Folder gol = apare numele pe card. Lipsesc: Perșinari, Romcargo Maritim, Compania de Apă Oradea, Scobinți, CNI (cni.ro
+dă 403 din afara României), Savoy Grup Energy, Holtex Grup Invest, Fisker Copiers
+(antreprenori, fără site public; denumiri verificate în registru, nov. 2026).
 Terminalul PL6 Constanța e pentru Romcargo Maritim S.A. (nu APM Constanța). Fetești: stema de pe Commons (Free Art License); Hidroelectrica:
 logoul trimis de Mario.
 Logoul CNAIR e emblema de pe andnet.ro (domeniul cnair.ro e al altei firme!).

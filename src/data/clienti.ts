@@ -15,6 +15,7 @@ export const clienti: Client[] = [
   { id: 'cfr', name: 'Compania Națională de Căi Ferate „CFR” S.A.' },
   { id: 'hidroelectrica', name: 'S.P.E.E.H. Hidroelectrica S.A.' },
   { id: 'romcargo-maritim', name: 'Romcargo Maritim S.A.' },
+  { id: 'cni', name: 'Compania Națională de Investiții S.A.' },
   { id: 'apa-oradea', name: 'Compania de Apă Oradea S.A.' },
   { id: 'cj-prahova', name: 'Consiliul Județean Prahova' },
   { id: 'cj-maramures', name: 'Consiliul Județean Maramureș' },
@@ -30,4 +31,7 @@ export const clienti: Client[] = [
   { id: 'cozieni', name: 'Comuna Cozieni, județul Buzău' },
   { id: 'scobinti', name: 'Comuna Scobinți, județul Iași' },
   { id: 'ms-interproiect', name: 'MS Interproiect Engineering S.R.L.' },
+  { id: 'savoy-grup-energy', name: 'Savoy Grup Energy S.R.L.' },
+  { id: 'holtex-grup-invest', name: 'Holtex Grup Invest S.R.L.' },
+  { id: 'fisker-copiers', name: 'Fisker Copiers S.R.L.' },
 ];
